@@ -1,24 +1,6 @@
 """
 SYNALIGN — proof-of-concept audit harness
 =======================================
-Linguistic dependencies REMOVED. Goal reframed: improve a chatbot's general
-performance (robustness + behavioral quality), not cross-language equity.
-
-What changed vs the language version
-------------------------------------
-  - No languages, no translate-pivot, no multilingual judge, no Indic anchors.
-  - The counterfactual axis is now INPUT ROBUSTNESS: hold the persona +
-    eligibility truth fixed, and vary how the QUESTION is posed
-    (clean / vague / missing-info / typo-heavy / misleading). Eligibility is
-    invariant to phrasing, so any score drop is a pure system-behavior failure.
-  - Plus an optional eligibility-IRRELEVANT attribute perturbation (a fairness
-    invariance check) that also needs no language.
-  - Because every remaining gap is BEHAVIORAL, it is alignment-fixable. We
-    simulate an SFT+KTO-improved assistant and re-audit to show the gap closes
-    (the language gap could not be closed this way).
-
-Ground truth is still the deterministic rule engine, so correctness is
-judge-free. Stats still carry bootstrap CIs + Holm correction.
 """
 
 from __future__ import annotations
