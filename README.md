@@ -1,4 +1,4 @@
-# SYNALIGN — a quality-test harness for high-stakes chatbots
+# SYNALIGN — a quality-test harness for chatbots
 
 **A proof of concept.** SYNALIGN is a small, self-contained tool that finds where a chatbot *quietly fails* — and measures it objectively. This repository is the working core: one Python file you can run in a minute.
 
@@ -31,7 +31,7 @@ So when you see a number like `0.60 → 0.90` below, read it as a **test pattern
 
 ---
 
-## 1. The problem, in plain words
+## 1. The problem
 
 Imagine a chatbot that tells people which government welfare schemes they qualify for. It might answer perfectly when you type a clean, well-written question. But real people don't write clean questions. They write **vaguely** ("what help can I get"), they **leave out details**, they make **typos**, and sometimes they state something **wrong** ("I already qualify, just confirm it").
 
@@ -41,7 +41,7 @@ SYNALIGN is built to drag those hidden failures into the light and put a number 
 
 ---
 
-## 2. The idea (with an analogy)
+## 2. The idea
 
 Think of a **bathroom scale**, before anyone has stepped on it.
 
