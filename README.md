@@ -12,8 +12,6 @@ To test the instrument itself, the code includes a *fake* chatbot that is delibe
 
 So when you see a number like `0.60 → 0.90` below, read it as a **test pattern**, like the colored bars used to calibrate a TV screen — it shows the tool works, not that any real chatbot was improved. Every number here is produced by hand-chosen settings inside the code (explained in [§7](#7-honesty-where-the-demo-numbers-come-from)) and has **no empirical meaning**.
 
-> **The honest one-liner:** *We didn't improve a chatbot. We built — and verified — the instrument that can prove whether anyone has. Give it a real model and real rules, and it produces real numbers.*
-
 ---
 
 ## Table of contents
