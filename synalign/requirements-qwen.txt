@@ -1,0 +1,9 @@
+# Only needed for the local Qwen3-0.6B (transformers) backend.
+# Install AFTER requirements.txt:  pip install -r requirements-qwen.txt
+#
+# For the Ollama backend instead, you do NOT need torch/transformers — just
+# `pip install requests` and a running Ollama server (see README).
+torch
+transformers>=4.51
+accelerate
+requests

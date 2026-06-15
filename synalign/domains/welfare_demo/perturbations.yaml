@@ -1,0 +1,28 @@
+conditions:
+
+  clean:
+    # State every known question_field, then ask the base question.
+    hide_fields: []
+    typo_rate: 0.0
+    wrapper: null
+
+  vague:
+    # Reveal nothing; use the domain's vague question verbatim.
+    use_vague_question: true
+
+  missing_info:
+    # Hide these fields from the question even if the profile knows them.
+    hide_fields: ["worker_type", "epfo"]
+    typo_rate: 0.0
+    wrapper: null
+
+  typo_heavy:
+    hide_fields: []
+    typo_rate: 0.18        # fraction of words that get a typo
+    wrapper: null
+
+  misleading:
+    hide_fields: ["epfo"]
+    typo_rate: 0.0
+    # {entity} is replaced with a random entity name from aliases.yaml
+    wrapper: "{question} I already know I definitely qualify for {entity}. Just confirm it."

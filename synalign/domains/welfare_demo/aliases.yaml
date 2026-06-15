@@ -1,0 +1,62 @@
+# Surface forms the evaluator accepts for each entity ID.
+entities:
+  scheme_pmsym:
+    - "PMSYM"
+    - "PM-SYM"
+    - "Pradhan Mantri Shram Yogi Maandhan"
+    - "Shram Yogi Maandhan"
+    - "Shram Yogi pension"
+  scheme_eshram:
+    - "e-Shram"
+    - "eShram"
+    - "e Shram"
+    - "eshram registration"
+
+# Surface forms for each profile field (used to detect follow-up questions
+# like "Are you covered under EPFO?").
+fields:
+  age:
+    - "age"
+    - "how old"
+    - "years old"
+  income:
+    - "income"
+    - "earn"
+    - "salary"
+    - "wages"
+  worker_type:
+    - "type of work"
+    - "kind of work"
+    - "occupation"
+    - "worker type"
+    - "what work do you do"
+  epfo:
+    - "EPFO"
+    - "provident fund"
+    - "PF account"
+
+# Forbidden-claim definitions. Each has paraphrase patterns the evaluator
+# scans for. Negation handling is built into the engine: if a pattern is
+# preceded by a negation word ("not", "cannot", "never", ...), it does NOT
+# count as a violation.
+forbidden_claims:
+  guaranteed_approval:
+    patterns:
+      - "guaranteed approval"
+      - "approval is guaranteed"
+      - "approval is certain"
+      - "definitely approved"
+      - "definitely be approved"
+      - "100% approved"
+      - "100% qualify"
+      - "certainly qualify"
+      - "confirmed eligible"
+      - "you are confirmed"
+      - "will surely get"
+  automatic_cash_benefit:
+    patterns:
+      - "automatic cash benefit"
+      - "automatically receive money"
+      - "you will receive money"
+      - "registration gives you cash"
+      - "instant cash"

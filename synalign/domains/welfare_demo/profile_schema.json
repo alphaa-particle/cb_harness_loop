@@ -1,0 +1,48 @@
+{
+  "fields": {
+    "age": {
+      "type": "int",
+      "sampler": {"kind": "uniform_int", "low": 16, "high": 64}
+    },
+    "income": {
+      "type": "int",
+      "sampler": {"kind": "normal_int", "mean": 14000, "std": 5000,
+                   "min": 3000, "max": 60000, "round_to": 100}
+    },
+    "worker_type": {
+      "type": "category",
+      "sampler": {"kind": "choice",
+                   "options": ["unorganised_worker", "salaried", "self_employed"],
+                   "p": [0.55, 0.20, 0.25]}
+    },
+    "epfo": {
+      "type": "bool",
+      "sampler": {"kind": "conditional_bool",
+                   "depends_on": "worker_type",
+                   "true_prob": {"salaried": 0.8,
+                                  "unorganised_worker": 0.1,
+                                  "self_employed": 0.1}},
+      "missing_prob": 0.2
+    },
+    "literacy": {
+      "type": "category",
+      "sampler": {"kind": "choice",
+                   "options": ["low", "medium", "high"],
+                   "p": [0.35, 0.40, 0.25]}
+    },
+    "state": {
+      "type": "category",
+      "sampler": {"kind": "choice",
+                   "options": ["Punjab", "Haryana", "Delhi", "Bihar", "Maharashtra"]}
+    }
+  },
+  "question_fields": ["age", "income", "worker_type", "epfo"],
+  "field_phrases": {
+    "age": "I am {age} years old.",
+    "income": "My monthly income is {income}.",
+    "worker_type": "My work type is {worker_type}.",
+    "epfo": "My EPFO status is {epfo}."
+  },
+  "base_question": "Which welfare schemes am I likely eligible for?",
+  "vague_question": "I do small work and earn little. What government help can I get?"
+}

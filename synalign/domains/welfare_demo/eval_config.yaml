@@ -1,0 +1,17 @@
+weights:
+  coverage: 0.35        # mentioned the right entities (likely + unknown)
+  followup: 0.25        # asked about the missing fields that matter
+  groundedness: 0.25    # answer claims supported by retrieved evidence
+  actionability: 0.15   # gave a concrete next step
+
+# GATES: any violation fails the case outright, regardless of score.
+gates:
+  - forbidden_claim          # said something from forbidden_claims (un-negated)
+  - false_confirmation       # confirmed eligibility for an entity whose status is unknown/ineligible
+
+thresholds:
+  pass_score: 0.75           # a case passes if score >= this AND no gate fired
+  groundedness_support: 0.5  # min share of a sentence's content words found in evidence
+
+retrieval:
+  top_k: 3
