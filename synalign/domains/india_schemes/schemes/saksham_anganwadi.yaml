@@ -1,0 +1,132 @@
+id: saksham_anganwadi
+name: Mission Saksham Anganwadi and Poshan 2.0 – Supplementary Nutrition
+short_name: Poshan 2.0
+names_hi: []
+aliases:
+- Poshan 2.0
+- Saksham Anganwadi
+- Anganwadi Services
+- Integrated Child Development Services (ICDS)
+- Supplementary Nutrition Programme
+- anganwadi poshahar
+level: central
+state: ''
+ministry: Ministry of Women and Child Development
+category: food
+summary: Anganwadi Centres give extra food (supplementary nutrition) to children aged 6 months to 6 years, to pregnant women and breastfeeding mothers, and to adolescent girls aged 14 to 18 in Aspirational Districts and North-Eastern states. There is no caste, religion or income condition; the person only has to register at the nearest Anganwadi Centre.
+sections:
+  eligibility:
+  - Children aged 6 months to 6 years get supplementary nutrition.
+  - Pregnant women, and mothers for up to 6 months after the birth.
+  - Adolescent girls aged 14 to 18 years, but only in Aspirational Districts and in Assam and the other North-Eastern states.
+  - Anyone who qualifies can join. There is no caste, religion or income condition.
+  - The beneficiary must register at the nearest Anganwadi Centre with Aadhaar. A child can be registered using the mother's Aadhaar.
+  - Families staying in an Anganwadi area, even for a short time, can register there. A registration can be moved to the new centre through Poshan Tracker.
+  exclusions:
+  - Food is given only to people registered at an Anganwadi Centre.
+  - Adolescent girls outside Aspirational Districts and the North-Eastern states (including Assam) are not covered.
+  benefits:
+  - Food is given for at least 300 days a year, about 25 days a month.
+  - Children aged 3 to 6 years get a morning snack and a hot cooked meal at the Anganwadi.
+  - Children aged 6 months to 3 years, pregnant women, breastfeeding mothers, severely malnourished children and eligible adolescent girls get take-home ration (prepared food, not raw grain). It is given twice a month, preferably on the 1st and 15th.
+  - 'Daily food norm: 500 kcal and 12 to 15 g protein for children aged 6 to 72 months, and 800 kcal and 20 to 25 g protein for severely malnourished children.'
+  - 'Daily food norm: 600 kcal and 18 to 20 g protein for pregnant women, breastfeeding mothers and adolescent girls.'
+  - The Anganwadi also gives pre-school education, nutrition and health education, vaccination, health check-ups and referrals to hospitals.
+  how_to_apply:
+  - Go to the nearest Anganwadi Centre and register with the Anganwadi worker.
+  - Bring Aadhaar. If you do not have it, the Anganwadi worker and supervisors are supposed to help you get one.
+  - Your details and the food you receive are recorded on the Poshan Tracker app.
+  documents:
+  - Aadhaar of the beneficiary. For a child, the mother's Aadhaar is enough.
+  - A child does not need their own Aadhaar card.
+rules:
+  gender: any
+facts:
+- key: days_per_year
+  statement: Under Poshan 2.0, Anganwadis give food for at least 300 days a year.
+  value: 300 days
+  accept:
+  - '300'
+  - 300 din
+  question: For how many days a year does the Anganwadi give food under Poshan 2.0?
+  question_hi: पोषण 2.0 में आंगनवाड़ी साल में कितने दिन खाना देती है?
+  question_hi_latn: Poshan 2.0 me Anganwadi saal me kitne din khana deti hai?
+  source: 1
+  status: verified
+- key: child_age_range
+  statement: Children aged 6 months to 6 years get supplementary nutrition from the Anganwadi.
+  value: 6 months to 6 years
+  accept:
+  - 6 months - 6 years
+  - 6 mahine se 6 saal
+  - six months to six years
+  question: Children of what age get food from the Anganwadi under Poshan 2.0?
+  question_hi: पोषण 2.0 में किस उम्र के बच्चों को आंगनवाड़ी से पोषाहार मिलता है?
+  question_hi_latn: Poshan 2.0 me kis umar ke bachchon ko Anganwadi se poshahar milta hai?
+  source: 1
+  status: verified
+- key: adolescent_girl_age
+  statement: Adolescent girls aged 14 to 18 years are covered, but only in Aspirational Districts and the North-Eastern states.
+  value: 14 to 18 years
+  accept:
+  - 14-18
+  - 14 se 18 saal
+  - 14 to 18
+  question: What age of adolescent girls get food under Poshan 2.0?
+  question_hi: पोषण 2.0 में किस उम्र की किशोरियों को पोषाहार मिलता है?
+  question_hi_latn: Poshan 2.0 me kis umar ki kishoriyon ko poshahar milta hai?
+  source: 1
+  status: verified
+- key: child_calorie_norm
+  statement: Food for a child aged 6 to 72 months should give 500 kcal and 12 to 15 g protein a day.
+  value: 500 kcal
+  accept:
+  - '500'
+  - 500 calories
+  - 500 calorie
+  question: How many calories a day should Poshan 2.0 food give a small child?
+  question_hi: पोषण 2.0 में छोटे बच्चे को रोज़ कितनी कैलोरी का पोषाहार मिलना चाहिए?
+  question_hi_latn: Poshan 2.0 me chhote bachche ko roz kitni calorie ka poshahar milna chahiye?
+  source: 1
+  status: verified
+- key: thr_frequency
+  statement: Take-home ration is given twice a month, preferably on the 1st and 15th.
+  value: twice a month
+  accept:
+  - 2 times a month
+  - mahine me do baar
+  - 1st and 15th
+  question: How often is take-home ration given under Poshan 2.0?
+  question_hi: पोषण 2.0 में टेक होम राशन महीने में कितनी बार मिलता है?
+  question_hi_latn: Poshan 2.0 me take home ration mahine me kitni baar milta hai?
+  source: 1
+  status: verified
+situations:
+- question: My son is 2 years old and looks too thin. Can we get nutritious food for him from a government centre near our home?
+  language: en
+- question: मैं गर्भवती हूँ। क्या मुझे गाँव की आंगनवाड़ी से पौष्टिक खाना या राशन मिल सकता है?
+  language: hi
+sources:
+- title: Mission Saksham Anganwadi and Poshan 2.0 Scheme Guidelines
+  url: https://wcd.gov.in/documents/uploaded/Mission%20Saksham%20Anganwadi%20and%20Poshan%202.0%20scheme%20guidelines.pdf
+  publisher: Ministry of Women and Child Development, Government of India
+  accessed: '2026-10-03'
+- title: Mission Saksham Anganwadi & POSHAN 2.0
+  url: https://wcd.gov.in/offerings/nutrition-mission-saksham-anganwadi-and-poshan-2-0-mission-saksham-anganwadi-poshan-2-0
+  publisher: Ministry of Women and Child Development, Government of India
+  accessed: '2026-10-03'
+- title: Revision in Mission Saksham Anganwadi and Poshan 2.0 Guidelines (24 June 2024)
+  url: https://wcd.gov.in/documents/uploaded/Revision_in_Mission_Saksham_Anganwadi_Poshan2.0_Guidelines.pdf
+  publisher: Ministry of Women and Child Development, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme guidelines (sent to states in August 2022) approve it for the 15th Finance Commission period, 2021-22 to 2025-26. I could not open an official page confirming the period after March 2026. The scheme is clearly still running, though: the ministry page lists food grain allocation letters for 2025-2026 and newer circulars. The June 2024 revision changed only Poshan Tracker equipment and staff travel, not what beneficiaries get. The guidelines say the nutrition norms are under revision, so the calorie and protein figures may have changed. The guidelines set cost norms per beneficiary per day: Rs 8 for a child, Rs 12 for a severely malnourished child, and Rs 9.50 for pregnant women, breastfeeding mothers and adolescent girls. This is what the government spends on food, not cash paid to families, and it may have been revised. Each state chooses its own menu and take-home ration products. Newer circulars may have added steps on Poshan Tracker (for example a nominee module
+    and APAAR ID), so ask the local Anganwadi worker about the current procedure. Under the National Food Security Act 2013, pregnant women, mothers up to 6 months after birth, and children aged 6 months to 6 years have a legal right to this food. No age or income rule is set, because the beneficiaries are children and women of all ages and there is no income test.'
+  - 'Checker: Aadhaar and face-recognition rules are out of date. A WCD circular dated 30.05.2025 (https://wcd.gov.in/documents/uploaded/1748855151_DSe2Tlw651.pdf) made face recognition (FRS) mandatory for take-home ration distribution from 01.07.2025 and added FRS at registration from 01.08.2025. Pregnant women, breastfeeding mothers and adolescent girls must now register with their own Aadhaar through e-KYC plus face recognition. Children 0-6 are registered with the Aadhaar of the mother, father or guardian plus face recognition. Beneficiaries can also do the photo capture and e-KYC themselves through the Poshan Tracker citizen module. The record''s how_to_apply and documents sections leave all of this out. Saying only that a child can use ''the mother''s Aadhaar'', or that someone without Aadhaar will be helped to get one, may mislead users about what they need now.'
+  - 'Checker: The adolescent-girl coverage area is ambiguous. The guidelines'' ''Aspirational Districts of States including Assam and North-Eastern States'' could mean only aspirational districts. The record states that all of Assam and the North-East is covered, which follows the WCD page''s wording (''Aspirational Districts and North-Eastern Regions'') but is not certain.'
+  - 'Checker: The rule that people staying only temporarily can register applies, in the guidelines, to pregnant women, breastfeeding mothers and children up to 6. The record says ''families'', which is broader.'
+  - 'Checker: Sources are official (wcd.gov.in). I found no copied sentences.'

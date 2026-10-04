@@ -1,0 +1,157 @@
+id: pmmvy
+name: Pradhan Mantri Matru Vandana Yojana
+short_name: PMMVY
+names_hi: []
+aliases:
+- Matru Vandana Yojana
+- PM Matru Vandana Yojana
+- Pradhan Mantri Matritva Vandana Yojana
+- PMMVY 2.0
+- Maternity Benefit Programme
+- प्रधान मंत्री मातृ वंदना योजना
+level: central
+state: ''
+ministry: Ministry of Women and Child Development
+category: women_child
+summary: PMMVY gives cash to pregnant women and new mothers from disadvantaged groups. They get Rs 5,000 in two instalments for the first child, and Rs 6,000 in one instalment if the second child is a girl. The money is paid straight into the woman's Aadhaar-linked bank or post office account.
+sections:
+  eligibility:
+  - Open to pregnant women and breastfeeding mothers.
+  - The woman must be between 18 years 7 months and 55 years old when the child is born.
+  - 'She must belong to at least one listed disadvantaged group: SC or ST, disabled (40% or more), BPL ration card, NFSA ration card, Ayushman Bharat PM-JAY, e-Shram card, PM Kisan farmer, or MGNREGA job card.'
+  - A net family income below Rs 8 lakh a year also counts as a qualifying group, even if none of the other groups apply.
+  - Pregnant or breastfeeding Anganwadi workers, Anganwadi helpers and ASHAs also qualify.
+  - The benefit covers the first child, and also the second child if the second child is a girl.
+  - For the second-child benefit, the pregnancy must be registered before delivery. The rules apply to births from 1 April 2022.
+  - The woman needs an Aadhaar number and a bank or post office account linked to Aadhaar.
+  exclusions:
+  - Women with regular jobs in the Central Government, a State Government or a public sector undertaking cannot apply.
+  - Women who already get similar maternity benefits under another law cannot apply.
+  - There is no payment if the second child is a boy, and none for a third or later child.
+  benefits:
+  - 'First child: Rs 5,000 in two instalments.'
+  - First instalment of Rs 3,000 once the pregnancy is registered and at least one ante-natal check-up is done within 6 months of the last menstrual period.
+  - Second instalment of Rs 2,000 once the birth is registered and the baby has had the first round of vaccines (BCG, OPV, DPT and Hepatitis-B), which are due by 14 weeks.
+  - 'Second child who is a girl: Rs 6,000 in one instalment after the birth, once she has had all vaccines due up to 14 weeks.'
+  - If the second pregnancy gives twins or more and at least one baby is a girl, the second-girl benefit is paid.
+  - After a miscarriage or stillbirth, the woman counts as a new beneficiary in her next pregnancy.
+  how_to_apply:
+  - Register at the nearest Anganwadi Centre or approved health facility. The Anganwadi worker or ASHA can fill in the form online on pmmvy.wcd.gov.in.
+  - You can also register yourself on the PMMVY portal or the PMMVY mobile app.
+  - Apply within 270 days of the child's birth. For the second girl child, the pregnancy must be registered before delivery.
+  - Since 21 May 2025, every new enrolment needs face authentication. For help, call the PMMVY helpline 1515.
+  documents:
+  - The woman's Aadhaar card.
+  - A bank or post office account linked to Aadhaar.
+  - The Mother and Child Protection (MCP) card or RCH card.
+  - Proof of one eligibility group, for example a caste certificate, ration card, e-Shram card, MGNREGA job card, Ayushman card or income certificate.
+  - For the later payment, the child's birth registration and vaccination record.
+  - A mobile number.
+rules:
+  age_max: 55
+  gender: female
+facts:
+- key: first_child_total
+  statement: For the first child, PMMVY pays Rs 5,000 in two instalments.
+  value: Rs 5,000
+  accept:
+  - '5000'
+  - 5,000
+  - ₹5000
+  - ₹5,000
+  - 5 thousand
+  - paanch hazaar
+  question: How much money does PMMVY give for the first child?
+  question_hi: प्रधानमंत्री मातृ वंदना योजना में पहले बच्चे के लिए कितना पैसा मिलता है?
+  question_hi_latn: PM Matru Vandana Yojana me pehle bachche ke liye kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: second_girl_child_amount
+  statement: If the second child is a girl, PMMVY pays Rs 6,000 in one instalment after the birth.
+  value: Rs 6,000
+  accept:
+  - '6000'
+  - 6,000
+  - ₹6000
+  - ₹6,000
+  - 6 thousand
+  - chhe hazaar
+  question: How much does PMMVY give if the second child is a girl?
+  question_hi: मातृ वंदना योजना में दूसरी संतान बेटी होने पर कितना पैसा मिलता है?
+  question_hi_latn: Matru Vandana Yojana me doosra bachcha beti ho to kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: first_instalment_amount
+  statement: The first PMMVY instalment is Rs 3,000. It is paid after the pregnancy is registered and at least one ante-natal check-up is done.
+  value: Rs 3,000
+  accept:
+  - '3000'
+  - 3,000
+  - ₹3000
+  - ₹3,000
+  - teen hazaar
+  question: How much is the first instalment under PMMVY?
+  question_hi: मातृ वंदना योजना की पहली किस्त कितने रुपये की है?
+  question_hi_latn: Matru Vandana Yojana ki pehli kist kitne rupaye ki hai?
+  source: 1
+  status: verified
+- key: age_max
+  statement: The woman must be no older than 55 years when the child is born.
+  value: '55'
+  accept:
+  - 55 years
+  - 55 saal
+  - fifty-five
+  question: What is the maximum age for getting PMMVY?
+  question_hi: मातृ वंदना योजना का लाभ लेने के लिए अधिकतम उम्र कितनी है?
+  question_hi_latn: Matru Vandana Yojana ka labh lene ke liye maximum umar kitni hai?
+  source: 1
+  status: verified
+- key: application_deadline
+  statement: A PMMVY application must be made within 270 days of the child's birth.
+  value: 270 days
+  accept:
+  - '270'
+  - 270 din
+  - nine months
+  question: Within how many days of the baby's birth must I apply for PMMVY?
+  question_hi: बच्चे के जन्म के कितने दिन के अंदर मातृ वंदना योजना में आवेदन करना होता है?
+  question_hi_latn: Bachche ke janam ke kitne din ke andar Matru Vandana Yojana me apply karna hota hai?
+  source: 1
+  status: verified
+situations:
+- question: I am four months pregnant with my first baby and my husband has an MGNREGA job card. Is there any government money for me during pregnancy?
+  language: en
+- question: मेरी पहली संतान बेटी है और अब मैं फिर से गर्भवती हूँ। अगर दूसरी भी बेटी हुई तो क्या सरकार से कोई पैसा मिलेगा?
+  language: hi
+sources:
+- title: Pradhan Mantri Matru Vandana Yojana (PMMVY)
+  url: https://wcd.gov.in/offerings/pradhan-mantri-matru-vandana-yojana
+  publisher: Ministry of Women and Child Development, Government of India
+  accessed: '2026-10-03'
+- title: PMMVY Frequently Asked Questions
+  url: https://pmmvy.wcd.gov.in/Home/FrequentlyAskedQuestions
+  publisher: Ministry of Women and Child Development (PMMVY portal)
+  accessed: '2026-10-03'
+- title: Mission Shakti Guidelines 2021-22 to 2025-26
+  url: https://pmmvy.wcd.gov.in/WebsiteContent/assets/pdf/Mission%20Shakti%20Guidelines%202021-22%20to%202025-26.pdf
+  publisher: Ministry of Women and Child Development, Government of India
+  accessed: '2026-10-03'
+- title: PMMVY portal home page
+  url: https://pmmvy.wcd.gov.in/
+  publisher: Ministry of Women and Child Development (PMMVY portal)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is running: the PMMVY portal showed payment figures up to 31-08-2026. It is part of Mission Shakti, whose guidelines cover 2021-22 to 2025-26. I could not open an official page confirming the scheme period after March 2026. Official wording differs in two places. (1) For the first instalment, the Mission Shakti guidelines and the WCD page require at least one ante-natal check-up within 6 months of the last period, but the portal FAQ says at least two check-ups, ''preferably'' within six months. (2) The guidelines PDF says to apply within 730 days of pregnancy (counted from the last period), while the WCD page and FAQ say within 270 days of birth. The Rs 8 lakh income test is only one of several qualifying groups, not an overall ceiling, so no income rule is set. The minimum age is 18 years 7 months, so age_min is left out rather than rounded. The guidelines say any Janani Suraksha Yojana money for an institutional delivery is paid on top, so that a woman gets about
+    Rs 6,000 on average. Some states run their own extra maternity schemes.'
+  - 'Checker: The two official sources disagree on the first-instalment condition: the WCD page and guidelines say at least one ANC within 6 months of the LMP, the portal FAQ says at least two ANCs, preferably within 6 months. The record''s benefit text states only the ''one ANC'' version as fact. The chatbot should mention the difference or tell users to check with the Anganwadi worker.'
+  - 'Checker: The age wording differs at the boundary: the WCD page says 18 years 7 months to 55 years, the FAQ says less than 55 years. The record''s fact text (''no older than 55'') follows the WCD page.'
+  - 'Checker: Hindi name: the official logo uses ''प्रधानमंत्री'' as one word. Add ''प्रधानमंत्री मातृ वंदना योजना'' as a variant.'
+  - 'Checker: The alias ''Pradhan Mantri Matritva Vandana Yojana'' does not appear on any official page I opened, so it is not an official name. It may still help matching but should not be shown as the scheme name.'
+  - 'Checker: The guidelines also list ''any other category as may be prescribed by the Central Government'' as an eligibility group. The record leaves this out (minor).'
+  - 'Checker: All sources are official (wcd.gov.in, pmmvy.wcd.gov.in). I found no text copied from the sources. Scheme status: the portal showed data updated 31-08-2026 (4.39 crore beneficiaries paid). No official page I could open confirms the approved scheme period after 2025-26.'
+  - Hindi name not confirmed on an official page; kept only as a search alias.

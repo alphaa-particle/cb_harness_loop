@@ -1,0 +1,134 @@
+id: ignoaps
+name: Indira Gandhi National Old Age Pension Scheme
+short_name: IGNOAPS
+names_hi: []
+aliases:
+- old age pension
+- vriddhavastha pension yojana
+- budhapa pension
+- NSAP old age pension
+- National Old Age Pension Scheme (NOAPS)
+- vridha pension
+level: central
+state: ''
+ministry: Ministry of Rural Development (Department of Rural Development)
+category: pension
+summary: A monthly pension for people aged 60 or more from households below the poverty line (BPL). The centre pays Rs 200 a month from age 60 to 79 and Rs 500 a month from age 80, and most states add their own top-up.
+sections:
+  eligibility:
+  - Aged 60 years or more.
+  - Belongs to a household below the poverty line (BPL), as identified by the State or UT.
+  - If an eligible person's name is missing from the BPL list, the guidelines say they should not be left out; their eligibility can be checked and they can be added (following a Supreme Court direction).
+  - Every person aged 60 or more in a BPL family can get the pension, so more than one member of the same family can get it.
+  exclusions:
+  - People under 60 years of age (they may fit other NSAP pensions, such as the widow or disability pension).
+  - People from households that are not below the poverty line are not covered by the central scheme; some states run their own pensions for them.
+  benefits:
+  - Central pension of Rs 200 per month for ages 60 to 79.
+  - Rs 500 per month from age 80 onwards.
+  - States are urged to add at least an equal amount, so the actual monthly pension is usually higher and differs from state to state.
+  - Paid preferably into a bank or post office account, ideally every month; some states pay quarterly or half-yearly in advance.
+  - Each pensioner gets a pension passbook showing the sanction and payment details.
+  how_to_apply:
+  - Apply through the Gram Panchayat (villages) or Municipality (towns), or the state's social welfare or pension department; application forms should be free.
+  - Online applications can be made through the NSAP 'SAMBAL' mobile app or the state's pension portal.
+  - The application is checked, discussed in the Gram Sabha or Ward Sabha, and sanctioned at block or municipality level; a decision should come within 60 days.
+  - If the application is rejected, the reason must be given, and the applicant can file a first appeal and then a second appeal to authorities named by the state.
+  documents:
+  - 'Age proof: birth certificate or school certificate; if these are not available, ration card or voter ID (EPIC); if there is no valid document, an age certificate from a government hospital medical officer.'
+  - Proof that the household is in the BPL list.
+  - Bank or post office savings account details.
+rules:
+  age_min: 60
+  gender: any
+facts:
+- key: min_age
+  statement: Aged 60 years or more.
+  value: '60'
+  accept:
+  - 60 years
+  - sixty
+  - 60 saal
+  question: What is the minimum age to get the IGNOAPS old age pension?
+  question_hi: इंदिरा गांधी राष्ट्रीय वृद्धावस्था पेंशन योजना में पेंशन के लिए कम से कम कितनी उम्र होनी चाहिए?
+  question_hi_latn: Indira Gandhi Rashtriya Vriddhavastha Pension Yojana me pension ke liye kam se kam kitni umar honi chahiye?
+  source: 1
+  status: unverified
+- key: pension_age_60_79
+  statement: Central pension of Rs 200 per month for ages 60 to 79.
+  value: Rs 200
+  accept:
+  - '200'
+  - ₹200
+  - 200 rupaye
+  question: How much monthly pension does the centre pay under IGNOAPS for people aged 60 to 79?
+  question_hi: इंदिरा गांधी वृद्धावस्था पेंशन योजना में 60 से 79 साल वालों को केंद्र से हर महीने कितनी पेंशन मिलती है?
+  question_hi_latn: Indira Gandhi Vriddhavastha Pension Yojana me 60 se 79 saal walon ko kendra se har mahine kitni pension milti hai?
+  source: 1
+  status: unverified
+- key: pension_age_80_plus
+  statement: Rs 500 per month from age 80 onwards.
+  value: Rs 500
+  accept:
+  - '500'
+  - ₹500
+  - 500 rupaye
+  question: How much monthly pension does IGNOAPS pay to people aged 80 and above?
+  question_hi: इंदिरा गांधी वृद्धावस्था पेंशन योजना में 80 साल से ऊपर वालों को हर महीने कितनी पेंशन मिलती है?
+  question_hi_latn: Indira Gandhi Vriddhavastha Pension Yojana me 80 saal se upar walon ko har mahine kitni pension milti hai?
+  source: 1
+  status: unverified
+- key: higher_pension_age
+  statement: Rs 500 per month from age 80 onwards.
+  value: '80'
+  accept:
+  - 80 years
+  - eighty
+  - 80 saal
+  question: From what age does the IGNOAPS pension go up to Rs 500 a month?
+  question_hi: इंदिरा गांधी वृद्धावस्था पेंशन योजना में किस उम्र से 500 रुपये महीना पेंशन मिलती है?
+  question_hi_latn: Indira Gandhi Vriddhavastha Pension Yojana me kis umar se 500 rupaye mahina pension milti hai?
+  source: 3
+  status: unverified
+- key: decision_time
+  statement: The application is checked, discussed in the Gram Sabha or Ward Sabha, and sanctioned at block or municipality level; a decision should come within 60 days.
+  value: 60 days
+  accept:
+  - 60 din
+  - sixty days
+  - 2 months
+  question: Within how many days should an IGNOAPS old age pension application be decided?
+  question_hi: इंदिरा गांधी वृद्धावस्था पेंशन का आवेदन कितने दिनों में मंज़ूर या खारिज होना चाहिए?
+  question_hi_latn: Indira Gandhi Vriddhavastha Pension ka aavedan kitne dinon me manzoor ya khaarij hona chahiye?
+  source: 3
+  status: unverified
+situations:
+- question: My father is 72 years old, has no income, and we have a BPL card. Can he get a monthly pension from the government?
+  language: en
+- question: मेरी माँ 65 साल की हैं और हमारा परिवार गरीबी रेखा से नीचे (बीपीएल) है, क्या उन्हें हर महीने बुढ़ापा पेंशन मिल सकती है?
+  language: hi
+sources:
+- title: Home | National Social Assistance Programme (NSAP) | Ministry of Rural Development
+  url: https://nsap.dord.gov.in/
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+- title: NSAP Frequently Asked Questions
+  url: https://nsap.dord.gov.in/circular.do?method=faq
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+- title: National Social Assistance Programme - Programme Guidelines (October 2014)
+  url: https://nsap.dord.gov.in/Guidelines/nsap_guidelines_oct2014.pdf
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+- title: NSAP - About Us
+  url: https://nsap.dord.gov.in/circular.do?method=aboutus
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is running and new applications are accepted through the states. The central amounts of Rs 200 (age 60 to 79) and Rs 500 (age 80 and above) shown on the NSAP portal in 2026 are the same as in the October 2014 guidelines. What a pensioner actually receives depends heavily on the state top-up. The NSAP FAQ, which may be out of date, says the total ranges from Rs 200 to Rs 1,000 a month across states. Whether a new name is added also depends on the state''s BPL list and the number of central pensions given to the state; states may pay extra pensions from their own funds. The NSAP site lists a notification under the Aadhaar Act, 2016, so Aadhaar (or proof of enrolment) is likely required, but that notification was not opened. The old address nsap.nic.in no longer works; the portal is now nsap.dord.gov.in. The scheme replaced the 1995 National Old Age Pension Scheme in 2007, which lowered the age from 65 to 60 and changed the condition from ''destitute'' to ''BPL''. No
+    official Hindi name was found on the pages opened.'
+  - No independent check was returned for this scheme.

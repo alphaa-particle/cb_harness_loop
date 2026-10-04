@@ -36,12 +36,29 @@
                    "options": ["Punjab", "Haryana", "Delhi", "Bihar", "Maharashtra"]}
     }
   },
+  "population": {
+    "file": "../jansankhya/synthetic_population_imputed.csv",
+    "id_column": "worker_id",
+    "fields": {
+      "age": {"column": "age"},
+      "income": {"column": "annual_wage_inr", "divide_by": 12, "round_to": 100, "min": 100},
+      "worker_type": {"column": "contract_status",
+                       "map": {"written": "salaried", "verbal": "unorganised_worker", "none": "unorganised_worker"}},
+      "state": {"column": "state"}
+    }
+  },
   "question_fields": ["age", "income", "worker_type", "epfo"],
   "field_phrases": {
     "age": "I am {age} years old.",
     "income": "My monthly income is {income}.",
     "worker_type": "My work type is {worker_type}.",
     "epfo": "My EPFO status is {epfo}."
+  },
+  "field_labels": {
+    "age": "age",
+    "income": "monthly income",
+    "worker_type": "work type",
+    "epfo": "EPFO status"
   },
   "base_question": "Which welfare schemes am I likely eligible for?",
   "vague_question": "I do small work and earn little. What government help can I get?"

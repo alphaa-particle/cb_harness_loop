@@ -1,0 +1,148 @@
+id: pmfby
+name: Pradhan Mantri Fasal Bima Yojana
+short_name: PMFBY
+names_hi:
+- प्रधानमंत्री फसल बीमा योजना
+aliases:
+- PM Fasal Bima Yojana
+- fasal bima yojana
+- pradhan mantri fasal beema yojana
+- PM crop insurance scheme
+- fasal bima
+- PMFBY crop insurance
+level: central
+state: ''
+ministry: Department of Agriculture and Farmers Welfare, Ministry of Agriculture and Farmers Welfare
+category: insurance
+summary: Crop insurance for farmers, including tenant farmers and sharecroppers, who grow notified crops in notified areas. The farmer pays a small premium (at most 2% for Kharif, 1.5% for Rabi and 5% for commercial or horticultural crops) and is paid for crop loss caused by natural calamities, pests and diseases.
+sections:
+  eligibility:
+  - Any farmer growing a notified crop in a notified area can be insured, including tenant farmers and sharecroppers.
+  - The farmer must have an insurable interest in the crop and land, shown by land records (such as RoR or LPC) or a tenancy or sharecropping agreement accepted by the State.
+  - Tribal farmers and forest dwellers cultivating forest land under the Forest Rights Act can also be insured.
+  - Joining is voluntary for all farmers, including those who have a Kisan Credit Card or crop loan.
+  - Farmers with a KCC or crop loan for a notified crop are enrolled through their bank automatically unless they opt out in writing at least 7 days before the enrolment cut-off date.
+  - The farmer must give an Aadhaar number and declare the crop sown or to be sown.
+  - Enrolment must be done before the cut-off date notified by the State, which normally is not later than 15 July for Kharif, 15 December for Rabi and 15 February for summer crops.
+  exclusions:
+  - Losses caused by war, nuclear risks, malicious damage or other preventable risks are not covered.
+  - A loan taken only against gold, fixed deposits or other collateral, without insurable interest in notified land and crop, does not qualify for cover.
+  - Farmers who enrol, or whose premium is debited, after the damaging event has happened cannot claim localized calamity loss for that event.
+  - Crops that the State has not notified for that area and season are not covered.
+  benefits:
+  - For Kharif food grain and oilseed crops, the farmer pays at most 2% of the sum insured as premium (or the actuarial rate if lower).
+  - For Rabi food grain and oilseed crops, the farmer pays at most 1.5% of the sum insured as premium.
+  - For annual commercial and horticultural crops, the farmer pays at most 5% of the sum insured as premium.
+  - The rest of the premium is paid by the Centre and the State, shared 50:50, or 90:10 in Himalayan and North-Eastern States.
+  - Basic cover pays for yield loss of standing crops from sowing to harvest due to drought, dry spells, flood, inundation, pests and diseases, landslides, fire from lightning, storm, hailstorm and cyclone.
+  - Where the State notifies them, extra covers include prevented sowing, mid-season adversity, localized calamities, and post-harvest loss for up to 14 days for crops left to dry in the field.
+  how_to_apply:
+  - Farmers with a KCC or crop loan are enrolled through their bank branch or PACS; they may opt out by giving a written declaration at least 7 days before the cut-off date.
+  - Other farmers can apply at a bank branch, a Common Service Centre (CSC), through an authorised insurance intermediary, or themselves on the National Crop Insurance Portal (pmfby.gov.in) or the Crop Insurance App.
+  - Apply and pay the premium before the cut-off date notified by your State for the crop and season.
+  - Report crop loss from hailstorm, landslide, inundation, cloud burst or lightning fire within 72 hours through the Crop Insurance App, the Krishi Rakshak Portal and Helpline, the insurance company's toll-free number, your bank or local agriculture officials.
+  documents:
+  - Land record such as Record of Rights (RoR) or Land Possession Certificate (LPC).
+  - For tenant farmers and sharecroppers, the contract or agreement or other document notified by the State.
+  - Aadhaar number.
+  - Bank account details (account number and IFSC) for receiving claims.
+  - Declaration of the crop sown or intended to be sown, with area.
+rules:
+  gender: any
+facts:
+- key: premium_kharif
+  statement: For Kharif food grain and oilseed crops, the farmer pays at most 2% of the sum insured as premium.
+  value: 2%
+  accept:
+  - '2'
+  - 2 percent
+  - 2 per cent
+  - two percent
+  - do pratishat
+  question: How much premium does a farmer pay for a Kharif crop under PM Fasal Bima Yojana?
+  question_hi: प्रधानमंत्री फसल बीमा योजना में खरीफ फसल के लिए किसान को कितना प्रीमियम देना पड़ता है?
+  question_hi_latn: PM Fasal Bima Yojana me kharif fasal ke liye kisan ko kitna premium dena padta hai?
+  source: 1
+  status: verified
+- key: premium_rabi
+  statement: For Rabi food grain and oilseed crops, the farmer pays at most 1.5% of the sum insured as premium.
+  value: 1.5%
+  accept:
+  - '1.5'
+  - 1.5 percent
+  - 1.5 per cent
+  - dedh pratishat
+  question: What premium does a farmer pay for a Rabi crop like wheat under PMFBY?
+  question_hi: फसल बीमा योजना (PMFBY) में गेहूं जैसी रबी फसल का प्रीमियम कितना है?
+  question_hi_latn: PMFBY me gehu jaisi rabi fasal ka premium kitna hai?
+  source: 1
+  status: verified
+- key: premium_commercial_horticulture
+  statement: For annual commercial and horticultural crops, the farmer pays at most 5% of the sum insured as premium.
+  value: 5%
+  accept:
+  - '5'
+  - 5 percent
+  - 5 per cent
+  - paanch pratishat
+  question: How much premium do I pay under PM Fasal Bima Yojana for commercial or horticulture crops like cotton or vegetables?
+  question_hi: प्रधानमंत्री फसल बीमा योजना में कपास या बागवानी फसलों का प्रीमियम कितना है?
+  question_hi_latn: PM Fasal Bima Yojana me kapas ya bagwani fasal ka premium kitna hai?
+  source: 1
+  status: verified
+- key: loss_intimation_time
+  statement: Crop loss from a localized calamity such as hailstorm must be reported within 72 hours.
+  value: 72 hours
+  accept:
+  - '72'
+  - 72 ghante
+  - 3 days
+  - teen din
+  question: Within how much time must I report hailstorm crop damage under PM Fasal Bima Yojana?
+  question_hi: प्रधानमंत्री फसल बीमा योजना में ओलावृष्टि से फसल नुकसान की सूचना कितने समय में देनी होती है?
+  question_hi_latn: PM Fasal Bima Yojana me olavrishti se fasal nuksan ki suchna kitne samay me deni hoti hai?
+  source: 1
+  status: verified
+- key: post_harvest_cover_period
+  statement: Post-harvest loss cover lasts up to 14 days for crops left to dry in the field after harvest.
+  value: 14 days
+  accept:
+  - '14'
+  - two weeks
+  - 2 weeks
+  - do hafte
+  question: For how many days after harvest is a crop drying in the field covered under PMFBY?
+  question_hi: फसल बीमा योजना में कटाई के बाद खेत में सूख रही फसल कितने दिन तक बीमित रहती है?
+  question_hi_latn: Fasal Bima Yojana me katai ke baad khet me sookh rahi fasal kitne din tak bimit rehti hai?
+  source: 1
+  status: verified
+situations:
+- language: en
+  question: I grow paddy on rented land and I'm afraid a flood or drought will ruin my crop this season. How can I insure my crop cheaply?
+- language: hi
+  question: मैं बटाई पर गेहूं बोता हूँ, ओले या बेमौसम बारिश से फसल खराब हो जाए तो मुआवज़ा मिले, इसके लिए कौन सा सरकारी बीमा लूँ?
+sources:
+- title: Pradhan Mantri Fasal Bima Yojana (PMFBY) Operational Guidelines 2023 (effective from Kharif 2023)
+  url: https://agriwelfare.gov.in/Documents/operational_guidelines_pmfby_2023.pdf
+  publisher: Department of Agriculture and Farmers Welfare, Government of India
+  accessed: '2026-10-03'
+- title: Major Schemes of the Ministry (lists PMFBY and its 2023 guidelines)
+  url: https://agriwelfare.gov.in/en/Major
+  publisher: Department of Agriculture and Farmers Welfare, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Rules here follow the PMFBY Operational Guidelines 2023, effective from Kharif 2023. The Department of Agriculture''s major-schemes page (dated 06-07-2026) still lists PMFBY, so it appears to be running, but I could not open an official notice confirming the approved scheme period beyond 2025-26 or any rule changes for Kharif 2026 (for example, new localized covers announced later). Notified crops, cut-off dates, sum insured and actual premium in rupees differ by State, district and season. Some States pay part or all of the farmer''s premium; the farmer may then pay only a token amount of at least Re 1. The optional add-on for crop loss from wild animal attack, where a State offers it, gets no central subsidy and its premium is paid by the farmer unless the State helps. The KRPH helpline number was not shown on the pages I could open.'
+  - 'Checker: names_hi is empty, but agriwelfare.gov.in/en/Major shows the official Hindi name प्रधानमंत्री फसल बीमा योजना.'
+  - 'Checker: The status note is out of date. The PIB backgrounder of 29 Aug 2026 (PRID 2304549) says 25 States/UTs are running PMFBY in Kharif 2026, Rs 12,200 crore is allocated in the 2026-27 budget, and Bihar joins from Rabi 2026-27. A Department of Expenditure OM dated 6 Apr 2026 (posted on the AIF portal circulars page) temporarily extended PMFBY to 30.09.2026 or until 16th Finance Commission approval, whichever is earlier. I did not see a PMFBY-specific notice for after 30.09.2026, but the portal pmfby.gov.in was live and updated on 01 Oct 2026.'
+  - 'Checker: The status note says the KRPH helpline number was not found. It is 14447, shown on the pmfby.gov.in home page, in the guidelines and in the PIB release. how_to_apply should name the Crop Insurance App and KRPH 14447 as the first channels instead of ''the insurance company''s toll-free number''.'
+  - 'Checker: Post-harvest cover is missing its peril limit. It applies only to hailstorm, cyclone, cyclonic rain and unseasonal rain, for crops kept in cut-and-spread condition in the field.'
+  - 'Checker: The exclusion for late enrolment also covers post-harvest loss claims (para 21.6.10.8) and applies when the farmer''s data was not uploaded to NCIP. The record mentions only localized calamities.'
+  - 'Checker: Not mentioned: the Centre''s subsidy share is capped at an actuarial rate of 25% (irrigated) or 30% (rainfed).'
+  - 'Checker: The basic cover list should say ''wide-spread'' pest and disease attack. The guidelines cover these risks on an area basis, not for a single farm.'
+  - 'Checker: I could not confirm whether any rule changes for Kharif 2026 exist, such as a change to wild-animal cover. The statement that the wild-animal add-on gets no central subsidy matches the 2023 guidelines (para 5.2.5) only.'
+  - 'Checker: All cited sources are official.'
+  - Official Hindi name added from https://agriwelfare.gov.in/en/Major.

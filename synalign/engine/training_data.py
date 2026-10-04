@@ -1,104 +1,100 @@
-import json
+"""Training data built from audit records.
 
-from engine.config import OUTPUT_DIR
+Each example pairs the prompt the assistant really builds (engine/enforcement.py)
+with the answer the ground truth calls for. The evidence in that prompt is the
+labelled gold evidence, looked up by ID — never a search prediction.
+"""
+
 from engine.domain_pack import DomainPack
+from engine.enforcement import build_messages
+from engine.schemas import RetrievedChunk
+
+_DECISIONS = ("likely_eligible", "unknown_due_to_missing_info", "ineligible")
 
 
-def write_ideal_answer(record: dict, pack: DomainPack) -> str:
-    """Compose an ideal answer from the behavioral spec.
+def gold_chunks(record: dict, retriever) -> list[RetrievedChunk]:
+    """Fetch labelled evidence, never replace it with the retriever's prediction."""
+    ids = record["ground_truth"]["gold_chunk_ids"]
+    if not ids:
+        raise ValueError(f"No gold evidence supplied for {record.get('case_id', 'record')}")
+    chunks = retriever.get_chunks_by_ids(ids)
+    if [chunk.chunk_id for chunk in chunks] != ids:
+        missing = set(ids) - {chunk.chunk_id for chunk in chunks}
+        raise ValueError(f"Gold evidence missing from the selected corpus: {sorted(missing)}")
+    return chunks
 
-    MVP: template using human-readable entity names from aliases.yaml.
-    Stage 2: replace the template with a strong-LLM call conditioned on
-    ground_truth + gold chunk text, keeping the human-review step.
-    """
+
+def scheme_names(pack: DomainPack, retriever) -> dict[str, str]:
+    """How each scheme is named in a target answer: corpus titles, then the pack's own names."""
+    names: dict[str, str] = {}
+    for doc in retriever.documents:
+        if doc.scheme_key not in names or doc.is_rules:
+            names[doc.scheme_key] = doc.title or doc.scheme_key
+    if pack.uses_own_documents():
+        names.update({key: aliases[0] for key, aliases in pack.entity_aliases().items() if aliases})
+    return names
+
+
+def _ineligibility_reasons(record: dict, pack: DomainPack) -> dict[str, str]:
     gt = record["ground_truth"]
-    names = {eid: aliases[0] for eid, aliases in pack.entity_aliases().items()}
-    field_names = {fid: aliases[0] for fid, aliases in pack.field_aliases().items()}
+    if "ineligibility_reasons" in gt:
+        return gt["ineligibility_reasons"]
+    # Audits saved before reasons were recorded: the pack's rules can restate
+    # them, but only for the documents those rules were written for.
+    if pack.uses_own_documents() and "visible" in record:
+        return pack.build_ground_truth(record.get("profile", {}), record["visible"]).get(
+            "ineligibility_reasons", {})
+    return {}
 
-    lines = ["Here is a careful assessment based on the official documents."]
 
-    if gt["likely_eligible"]:
-        lines.append("Likely options for you:")
-        for eid in gt["likely_eligible"]:
-            lines.append(f"- {names.get(eid, eid)}: you appear to meet the stated criteria.")
+def ideal_answer(record: dict, pack: DomainPack, names: dict[str, str] | None = None) -> str:
+    """The answer the ground truth calls for, in the structure the system prompt asks for."""
+    gt = record["ground_truth"]
+    names = names or {}
+    labels = pack.profile_schema.get("field_labels", {})
 
-    if gt["unknown_due_to_missing_info"]:
-        lines.append("Cannot be confirmed yet:")
-        for eid in gt["unknown_due_to_missing_info"]:
-            lines.append(f"- {names.get(eid, eid)}: a key detail is missing, so I can't confirm this yet.")
+    def listed(ids):
+        return ", ".join(names.get(x, x) for x in ids)
 
-    for fid in gt["must_ask_about"]:
-        lines.append(f"Could you tell me your {field_names.get(fid, fid)}?")
-
+    none = "none based on the provided information"
+    parts = [f"Likely eligible: {listed(gt['likely_eligible']) or none}.",
+             f"Needs confirmation: {listed(gt['unknown_due_to_missing_info']) or 'none'}.",
+             f"Not likely eligible: {listed(gt['ineligible']) or none}."]
     if gt["ineligible"]:
-        for eid in gt["ineligible"]:
-            lines.append(f"{names.get(eid, eid)} does not appear to fit based on what you shared.")
-
-    lines.append("Please note this is not a final approval; official verification is required. "
-                 "A good next step is to gather your documents and check the official portal.")
-    return "\n".join(lines)
-
-
-def create_sft_data(pack: DomainPack, label: str = "baseline") -> str:
-    """SFT examples from FAILED TRAIN-split cases only. Output requires expert review."""
-    in_path = OUTPUT_DIR / f"audit_{label}.jsonl"
-    out_path = OUTPUT_DIR / "sft_train.jsonl"
-
-    n = 0
-    with open(in_path, encoding="utf-8") as fin, open(out_path, "w", encoding="utf-8") as fout:
-        for line in fin:
-            r = json.loads(line)
-            if r["split"] != "train" or r["evaluation"]["passed"]:
-                continue
-            example = {
-                "messages": [
-                    {"role": "system",
-                     "content": "You are a careful document-grounded assistant. Ask follow-up "
-                                "questions when key information is missing, never guarantee "
-                                "outcomes, and ground every claim in the provided documents."},
-                    {"role": "user", "content": r["question"]},
-                    {"role": "assistant", "content": write_ideal_answer(r, pack)},
-                ],
-                "case_id": r["case_id"],
-                "needs_expert_review": True,
-            }
-            fout.write(json.dumps(example, ensure_ascii=False) + "\n")
-            n += 1
-    print(f"Wrote {n} SFT examples (train-split failures) to {out_path}")
-    return str(out_path)
+        reasons = _ineligibility_reasons(record, pack)
+        parts.append("Reason: " + " | ".join(
+            f"{names.get(s, s)}: "
+            f"{reasons.get(s) or 'the reviewed eligibility label indicates that the criteria are not met'}"
+            for s in gt["ineligible"]) + ".")
+    # Ask in the order the pack lists its fields, so targets are stable.
+    order = pack.profile_schema.get("question_fields", [])
+    asked = sorted(gt["must_ask_about"], key=lambda f: (order.index(f) if f in order else len(order), f))
+    missing = ", ".join(labels.get(f, f) for f in asked)
+    parts.append(f"Missing details: please share your {missing}." if missing else "Missing details: none.")
+    parts.append(pack.prompts["closing"])
+    return " ".join(parts)
 
 
-def create_preference_data(pack: DomainPack, label: str = "baseline") -> str:
-    """Good/bad pairs from TRAIN split: model's failing answer = rejected,
-    ideal answer = chosen. Gate violations are always rejected."""
-    in_path = OUTPUT_DIR / f"audit_{label}.jsonl"
-    out_path = OUTPUT_DIR / "preference_train.jsonl"
+def make_example(record: dict, pack: DomainPack, retriever, names: dict[str, str] | None = None) -> dict:
+    """One supervised fine-tuning example: enforced prompt -> ideal answer."""
+    gt = record["ground_truth"]
+    for field in (*_DECISIONS, "must_ask_about"):
+        if field not in gt or not isinstance(gt[field], list) or not all(isinstance(x, str) for x in gt[field]):
+            raise ValueError(f"Reviewed ground_truth.{field} list required for {record.get('case_id')}")
+    decisions = [s for field in _DECISIONS for s in gt[field]]
+    if len(set(decisions)) != len(decisions):
+        raise ValueError(f"Conflicting or duplicate eligibility labels for {record.get('case_id')}")
+    messages = build_messages(pack, record["question"], gold_chunks(record, retriever))
+    messages.append({"role": "assistant", "content": ideal_answer(record, pack, names)})
+    return {"messages": messages, "case_id": record["case_id"], "split": record["split"],
+            "condition": record["condition"]}
 
-    n = 0
-    with open(in_path, encoding="utf-8") as fin, open(out_path, "w", encoding="utf-8") as fout:
-        for line in fin:
-            r = json.loads(line)
-            if r["split"] != "train":
-                continue
-            ev = r["evaluation"]
-            if ev["passed"]:
-                # Passing answers become positive examples.
-                fout.write(json.dumps({
-                    "prompt": r["question"], "completion": r["answer"],
-                    "label": True, "score": ev["overall_score"],
-                }, ensure_ascii=False) + "\n")
-            else:
-                # Failing answer = negative; ideal answer = paired positive.
-                fout.write(json.dumps({
-                    "prompt": r["question"], "completion": r["answer"],
-                    "label": False, "score": ev["overall_score"],
-                    "gate_violations": ev["gate_violations"],
-                }, ensure_ascii=False) + "\n")
-                fout.write(json.dumps({
-                    "prompt": r["question"],
-                    "completion": write_ideal_answer(r, pack),
-                    "label": True, "score": 1.0, "synthetic_ideal": True,
-                }, ensure_ascii=False) + "\n")
-            n += 1
-    print(f"Wrote preference data for {n} train cases to {out_path}")
-    return str(out_path)
+
+def make_preference_pair(record: dict, example: dict) -> dict | None:
+    """For a failed case: the assistant's own answer (rejected) against the ideal one (chosen)."""
+    evaluation = record.get("evaluation")
+    if not evaluation or evaluation["passed"] or "answer" not in record:
+        return None
+    return {"messages": example["messages"][:-1], "chosen": example["messages"][-1]["content"],
+            "rejected": record["answer"], "gate_violations": evaluation["gate_violations"],
+            "case_id": record["case_id"]}

@@ -21,6 +21,13 @@ _AFFIRM_PATTERNS = (
     "you will get", "you will receive", "you do qualify",
 )
 
+_FOLLOWUP_REQUEST = re.compile(
+    r"^(?:(?:please|kindly)\s+)?(?:share|provide|tell me|confirm|clarify|specify)\b"
+    r"|^(?:could|can|would) you\s+(?:share|provide|tell|confirm|clarify|specify)\b"
+    r"|^I (?:need to know|need you to (?:share|provide|confirm))\b",
+    re.IGNORECASE,
+)
+
 
 def _word_pattern(phrase: str) -> re.Pattern:
     """Compile a phrase into a word-boundary-safe, whitespace-flexible regex."""
@@ -47,28 +54,24 @@ def _sentences(text: str) -> list[str]:
 
 class Evaluator:
     def __init__(self, pack: DomainPack):
-        self.pack = pack
         cfg = pack.eval_config
         self.weights = cfg["weights"]
         self.pass_score = float(cfg["thresholds"]["pass_score"])
         self.support_threshold = float(cfg["thresholds"]["groundedness_support"])
 
-        self.entity_aliases = pack.entity_aliases()
-        self.field_aliases = pack.field_aliases()
-        self.forbidden = pack.forbidden_claims()
-
         # Precompile alias patterns once.
         self._entity_patterns = {
             eid: [_word_pattern(a) for a in aliases]
-            for eid, aliases in self.entity_aliases.items()
+            for eid, aliases in pack.entity_aliases().items()
         }
+        # A field's own ID ("worker_type", "worker type") always counts as naming it.
         self._field_patterns = {
-            fid: [_word_pattern(a) for a in aliases]
-            for fid, aliases in self.field_aliases.items()
+            fid: [_word_pattern(a) for a in dict.fromkeys([*aliases, fid, fid.replace("_", " ")])]
+            for fid, aliases in pack.field_aliases().items()
         }
         self._forbidden_patterns = {
             cid: [_word_pattern(p) for p in patterns]
-            for cid, patterns in self.forbidden.items()
+            for cid, patterns in pack.forbidden_claims().items()
         }
 
     # ---------------- Layer 1: deterministic constraints -----------------
@@ -83,10 +86,14 @@ class Evaluator:
         return found / len(expected_entities)
 
     def followup(self, answer_text: str, must_ask_about: list[str]) -> float:
-        """Credit only real question sentences that mention the missing field."""
+        """Credit questions and explicit requests for missing information."""
         if not must_ask_about:
             return 1.0
-        question_sentences = [s for s in _sentences(answer_text) if s.endswith("?")]
+        # A structured answer may prefix its request with a section label.
+        candidates = [re.sub(r"^(?:[-*]\s+)?(?:missing details|follow-up|next step):\s*", "", s,
+                             flags=re.IGNORECASE) for s in _sentences(answer_text)]
+        question_sentences = [s for s in candidates
+                              if s.endswith("?") or _FOLLOWUP_REQUEST.search(s)]
         if not question_sentences:
             return 0.0
         asked = 0

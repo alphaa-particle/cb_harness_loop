@@ -1,0 +1,128 @@
+id: ignwps
+name: Indira Gandhi National Widow Pension Scheme
+short_name: IGNWPS
+names_hi:
+- इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना
+aliases:
+- widow pension yojana
+- vidhwa pension yojana
+- Indira Gandhi vidhwa pension
+- NSAP widow pension
+- National Widow Pension Scheme
+level: central
+state: ''
+ministry: Ministry of Rural Development, Department of Rural Development (National Social Assistance Programme, NSAP)
+category: pension
+summary: 'A monthly central pension for widows aged 40 or above from below-poverty-line (BPL) households: Rs 300 a month up to age 79 and Rs 500 a month from age 80. Many states add their own amount on top, so the total paid varies by state.'
+sections:
+  eligibility:
+  - Must be a widow.
+  - Aged 40 years or above.
+  - Must belong to a household below the poverty line (BPL).
+  - If her name is missing from the BPL list but she is otherwise deserving, officials are told not to leave her out and to check and establish her eligibility.
+  - A widow living with AIDS can be covered even if her household is not BPL, provided none of the exclusions below apply to her.
+  exclusions:
+  - Widows from households that are not BPL are not covered by the central scheme, except the special case of widows living with AIDS.
+  - A widow living with AIDS who is not BPL is still excluded if she has a government job, owns 5 acres or more of land, or owns a four-wheeler for her own use.
+  - The pension can be stopped after the yearly verification if the household is no longer BPL or if she has moved away; it can be restored on appeal if she becomes eligible again.
+  benefits:
+  - Central pension of Rs 300 a month from age 40 to 79.
+  - Central pension of Rs 500 a month from age 80 onwards.
+  - States are urged to add at least an equal amount from their own funds, so the total pension differs from state to state.
+  - Paid preferably every month into a bank or post office account; no one should be denied the pension only because she has no bank account or Aadhaar number.
+  how_to_apply:
+  - Fill the NSAP application form and submit it at your Gram Panchayat (in villages) or Municipality or ward office (in towns); forms are meant to be free and also available on state websites.
+  - The application is verified, discussed in the Gram Sabha or Ward Sabha, and then approved by the Block or Municipality level Sanctioning Authority, which issues a sanction order and a pension passbook.
+  - The whole process from application to sanction or rejection should not take more than 60 days.
+  - If the application is rejected, a first appeal can be made to the Appellate Authority and a second appeal to the Reviewing Authority named by the state.
+  documents:
+  - 'Proof of age: birth certificate or school certificate; if not available, ration card or voter ID (EPIC); if none of these, an age certificate from a government hospital medical officer.'
+  - 'Proof of widowhood: the husband''s death certificate showing her name, or a certificate from the Revenue Authority named by the state.'
+  - BPL details of the household (BPL family ID number).
+  - Aadhaar number, voter ID number and ration card number, if available.
+  - Bank or post office account details (if available) and a photograph.
+rules:
+  age_min: 40
+  gender: female
+facts:
+- key: min_age
+  statement: A widow can get this pension from age 40.
+  value: '40'
+  accept:
+  - 40 years
+  - 40 saal
+  - forty
+  question: From what age can a widow get the Indira Gandhi National Widow Pension?
+  question_hi: इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?
+  question_hi_latn: Indira Gandhi vidhwa pension yojana me kitni umar se pension milti hai?
+  source: 2
+  status: verified
+- key: monthly_pension_40_to_79
+  statement: The central pension is Rs 300 a month for widows aged 40 to 79.
+  value: Rs 300
+  accept:
+  - '300'
+  - ₹300
+  - 300 rupees
+  - 300 rupaye
+  question: How much pension per month does the central government pay under the Indira Gandhi National Widow Pension Scheme?
+  question_hi: इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में केंद्र सरकार हर महीने कितनी पेंशन देती है?
+  question_hi_latn: Indira Gandhi vidhwa pension yojana me kendra sarkar har mahine kitni pension deti hai?
+  source: 1
+  status: verified
+- key: monthly_pension_80_plus
+  statement: From age 80 the central widow pension is Rs 500 a month.
+  value: Rs 500
+  accept:
+  - '500'
+  - ₹500
+  - 500 rupees
+  - 500 rupaye
+  question: How much is the Indira Gandhi National Widow Pension after the widow turns 80?
+  question_hi: इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में 80 साल की उम्र के बाद कितनी पेंशन मिलती है?
+  question_hi_latn: Indira Gandhi vidhwa pension yojana me 80 saal ke baad kitni pension milti hai?
+  source: 1
+  status: verified
+- key: max_processing_days
+  statement: A widow pension application should be sanctioned or rejected within 60 days.
+  value: 60 days
+  accept:
+  - '60'
+  - sixty days
+  - 60 din
+  question: Within how many days should an application under the Indira Gandhi National Widow Pension Scheme be decided?
+  question_hi: इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना का आवेदन कितने दिनों में मंजूर या खारिज होना चाहिए?
+  question_hi_latn: Indira Gandhi vidhwa pension yojana ka aavedan kitne dino me manjoor ya khaarij hona chahiye?
+  source: 2
+  status: verified
+situations:
+- question: My husband died last year. I am 45 and our family is on the BPL list. Is there a monthly government pension I can get?
+  language: en
+- question: मेरे पति की मृत्यु हो चुकी है, मेरी उम्र 52 साल है और हमारा परिवार गरीबी रेखा (BPL) से नीचे है। क्या मुझे सरकार से हर महीने पेंशन मिल सकती है?
+  language: hi
+sources:
+- title: National Social Assistance Programme - About Us
+  url: https://nsap.dord.gov.in/circular.do?method=aboutus
+  publisher: Ministry of Rural Development, Government of India (NSAP portal)
+  accessed: '2026-10-03'
+- title: National Social Assistance Programme - Programme Guidelines (October 2014)
+  url: https://nsap.dord.gov.in/Guidelines/nsap_guidelines_oct2014.pdf
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+- title: National Social Assistance Programme portal - Home and FAQ
+  url: https://nsap.dord.gov.in/
+  publisher: Ministry of Rural Development, Government of India (NSAP portal)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Current rules taken from the NSAP About Us page and the October 2014 guidelines: widows aged 40 and above, Rs 300 a month (40-79) and Rs 500 a month (80+). Conflicting older figures still appear on the same official portal: the home page and FAQ say widows aged 40-59, and the FAQ shows an older central rate of Rs 200 a month; the scheme started in 2009 for ages 40-64. Treat these as outdated. The amounts shown are only the central share; most states add their own top-up and some run their own widow pension with different rules, so the actual amount and process differ by state. The scheme is open and is run by state governments (often the social welfare or rural development department); central funding is capped by each state''s estimated BPL numbers, and states may cover extra beneficiaries from their own money. No official Hindi name was found on the pages used. The old nsap.nic.in address did not resolve; the portal is now at nsap.dord.gov.in.'
+  - 'Checker: names_hi is empty, but an official Hindi name exists: इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना (MoRD Hindi office memo of 30.06.2011, and myScheme). The status note''s claim that no official Hindi name exists is wrong.'
+  - 'Checker: how_to_apply leaves out the online route that myScheme lists: apply through the UMANG app or web.umang.gov.in by searching NSAP and choosing Apply Online. Application status can also be tracked on the NSAP portal or in UMANG.'
+  - 'Checker: myScheme gives the age band as 40-79 and says from 80 the pension is Rs 500. The record''s ''40 or above'' with Rs 500 from 80 matches the 2014 guidelines and About Us. Note that the 2012 office memo states central eligibility as 40-79.'
+  - 'Checker: Payment modes: myScheme says the pension can be received in a bank account, a post office account, by postal money order, or in cash. The record mentions only bank or post office accounts.'
+  - 'Checker: An important practical point sits only in the status note, not in eligibility: central funding is capped per state (an April 2026 MoRD letter confirms allocation by ''State Cap''). An eligible widow may get only a state-funded pension, or be waitlisted, once the cap is reached.'
+  - 'Checker: No copied text found. Sources are official (nsap.dord.gov.in).'
+  - Official Hindi name added from https://nsap.dord.gov.in/Guidelines/hindi_wps.pdf.

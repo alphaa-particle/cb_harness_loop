@@ -1,0 +1,1062 @@
+{
+ "54": {
+  "build_seconds": 0.1,
+  "baseline": {
+   "in_prompt": "282/304",
+   "abstain": "9/12",
+   "type=eligibility": "52/52",
+   "type=fact": "149/162",
+   "type=situation": "29/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "81/92",
+   "language=hi_latn": "53/60",
+   "ms_per_q_with_embedding": 26.4,
+   "ms_per_q_retrieval_only": 0.27
+  },
+  "fusion_gate_0.05": {
+   "in_prompt": "288/304",
+   "abstain": "9/12",
+   "fixed": 6,
+   "broken": 0,
+   "diff_points": 1.97,
+   "ci95": [
+    0.33,
+    4.32
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->153",
+    "type=situation": "29->31",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->87",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->293",
+   "fixed_ids": [
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "nikshay_poshan__monthly_amount__hi",
+    "nikshay_poshan__payment_mode__hi",
+    "pm_kisan__situation_2",
+    "pmay_g__situation_2"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.27
+  },
+  "fusion_convex_0.10 (runner-up)": {
+   "in_prompt": "287/304",
+   "abstain": "9/12",
+   "fixed": 8,
+   "broken": 3,
+   "diff_points": 1.64,
+   "ci95": [
+    -0.39,
+    4.3
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "52->50 DOWN",
+    "type=fact": "149->153",
+    "type=situation": "29->32",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->86",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {
+    "hi": 2,
+    "hi_latn": 1,
+    "eligibility": 2,
+    "fact": 1
+   },
+   "gold_scheme_in_prompt": "289->291",
+   "fixed_ids": [
+    "igndps__situation_2",
+    "ignwps__monthly_pension_80_plus__hi",
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "nikshay_poshan__monthly_amount__hi",
+    "nikshay_poshan__payment_mode__hi",
+    "pm_kisan__situation_2",
+    "pmay_g__situation_2"
+   ],
+   "broken_ids": [
+    "ignwps__eligibility_4",
+    "ignwps__eligibility_6",
+    "pm_kmy__land_limit__hi_latn"
+   ],
+   "ms_per_q_retrieval_only": 0.23
+  },
+  "scheme_first (patched module)": {
+   "in_prompt": "288/304",
+   "abstain": "9/12",
+   "fixed": 6,
+   "broken": 0,
+   "diff_points": 1.97,
+   "ci95": [
+    0.33,
+    4.32
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->153",
+    "type=situation": "29->31",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->87",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->292",
+   "fixed_ids": [
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "nikshay_poshan__monthly_amount__hi",
+    "nikshay_poshan__payment_mode__hi",
+    "pm_kisan__situation_2",
+    "pmay_g__situation_2"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.3
+  },
+  "romanise_char": {
+   "in_prompt": "287/304",
+   "abstain": "9/12",
+   "fixed": 5,
+   "broken": 0,
+   "diff_points": 1.64,
+   "ci95": [
+    0.0,
+    3.85
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->153",
+    "type=situation": "29->30",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->86",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->292",
+   "fixed_ids": [
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "nikshay_poshan__monthly_amount__hi",
+    "nikshay_poshan__payment_mode__hi",
+    "pm_kisan__situation_2"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.29
+  },
+  "abstention floor 0.54 (not recommended)": {
+   "in_prompt": "282/304",
+   "abstain": "10/12",
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 1,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->149",
+    "type=situation": "29->29",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->81",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->289",
+   "fixed_ids": [],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.26
+  },
+  "abstention agree 0.56 (not recommended)": {
+   "in_prompt": "282/304",
+   "abstain": "10/12",
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 1,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->149",
+    "type=situation": "29->29",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->81",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->289",
+   "fixed_ids": [],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.27
+  },
+  "composition_check": "composed retriever reproduces baseline and each single proposal exactly",
+  "gate+romanise": {
+   "in_prompt": "288/304",
+   "abstain": "9/12",
+   "fixed": 6,
+   "broken": 0,
+   "diff_points": 1.97,
+   "ci95": [
+    0.33,
+    4.32
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->153",
+    "type=situation": "29->31",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->87",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->293",
+   "fixed_ids": [
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "nikshay_poshan__monthly_amount__hi",
+    "nikshay_poshan__payment_mode__hi",
+    "pm_kisan__situation_2",
+    "pmay_g__situation_2"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.31
+  },
+  "gate+scheme_first": {
+   "in_prompt": "288/304",
+   "abstain": "9/12",
+   "fixed": 6,
+   "broken": 0,
+   "diff_points": 1.97,
+   "ci95": [
+    0.33,
+    4.32
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->153",
+    "type=situation": "29->31",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->87",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->292",
+   "fixed_ids": [
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "nikshay_poshan__monthly_amount__hi",
+    "nikshay_poshan__payment_mode__hi",
+    "pm_kisan__situation_2",
+    "pmay_g__situation_2"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.3
+  },
+  "romanise+scheme_first": {
+   "in_prompt": "288/304",
+   "abstain": "9/12",
+   "fixed": 6,
+   "broken": 0,
+   "diff_points": 1.97,
+   "ci95": [
+    0.33,
+    4.32
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->153",
+    "type=situation": "29->31",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->87",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->292",
+   "fixed_ids": [
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "nikshay_poshan__monthly_amount__hi",
+    "nikshay_poshan__payment_mode__hi",
+    "pm_kisan__situation_2",
+    "pmay_g__situation_2"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.33
+  },
+  "gate+romanise+scheme_first": {
+   "in_prompt": "288/304",
+   "abstain": "9/12",
+   "fixed": 6,
+   "broken": 0,
+   "diff_points": 1.97,
+   "ci95": [
+    0.33,
+    4.32
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->153",
+    "type=situation": "29->31",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->87",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->292",
+   "fixed_ids": [
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "nikshay_poshan__monthly_amount__hi",
+    "nikshay_poshan__payment_mode__hi",
+    "pm_kisan__situation_2",
+    "pmay_g__situation_2"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.33
+  },
+  "scheme_first lead only (second_weight 0, admit all)": {
+   "in_prompt": "284/304",
+   "abstain": "9/12",
+   "fixed": 2,
+   "broken": 0,
+   "diff_points": 0.66,
+   "ci95": [
+    0.0,
+    1.89
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "52->52",
+    "type=fact": "149->149",
+    "type=situation": "29->31",
+    "type=typo": "52->52",
+    "language=en": "148->148",
+    "language=hi": "81->83",
+    "language=hi_latn": "53->53"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "289->293",
+   "fixed_ids": [
+    "pm_kisan__situation_2",
+    "pmay_g__situation_2"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 0.3
+  },
+  "budget_top_k_2_3_5": {
+   "baseline": {
+    "2": "246/304",
+    "3": "282/304",
+    "5": "294/304"
+   },
+   "gate": {
+    "2": "251/304",
+    "3": "288/304",
+    "5": "295/304"
+   },
+   "romanise": {
+    "2": "250/304",
+    "3": "287/304",
+    "5": "295/304"
+   },
+   "scheme_first": {
+    "2": "252/304",
+    "3": "288/304",
+    "5": "294/304"
+   },
+   "gate+romanise": {
+    "2": "251/304",
+    "3": "288/304",
+    "5": "295/304"
+   }
+  },
+  "robustness_code_default_fusion": {
+   "alt_baseline": "273/304",
+   "gate": {
+    "in_prompt": "289/304",
+    "fixed": 16,
+    "broken": 0,
+    "ci95": [
+     1.99,
+     9.85
+    ],
+    "abstain_change": 0
+   },
+   "romanise": {
+    "in_prompt": "277/304",
+    "fixed": 4,
+    "broken": 0,
+    "ci95": [
+     0.0,
+     3.25
+    ],
+    "abstain_change": 0
+   },
+   "scheme_first": {
+    "in_prompt": "284/304",
+    "fixed": 12,
+    "broken": 1,
+    "ci95": [
+     0.77,
+     7.36
+    ],
+    "abstain_change": 0
+   },
+   "gate+romanise": {
+    "in_prompt": "289/304",
+    "fixed": 16,
+    "broken": 0,
+    "ci95": [
+     1.99,
+     9.85
+    ],
+    "abstain_change": 0
+   }
+  },
+  "threshold_stability_probe": {
+   "gate margin 0.04": {
+    "in_prompt": "288/304",
+    "fixed": 6,
+    "broken": 0,
+    "ci95": [
+     0.33,
+     4.32
+    ]
+   },
+   "gate margin 0.06": {
+    "in_prompt": "288/304",
+    "fixed": 6,
+    "broken": 0,
+    "ci95": [
+     0.33,
+     4.32
+    ]
+   },
+   "scheme lead_gap 0.08": {
+    "in_prompt": "288/304",
+    "fixed": 6,
+    "broken": 0,
+    "ci95": [
+     0.33,
+     4.32
+    ]
+   },
+   "scheme lead_gap 0.12": {
+    "in_prompt": "286/304",
+    "fixed": 4,
+    "broken": 0,
+    "ci95": [
+     0.0,
+     3.12
+    ]
+   }
+  },
+  "sft_out_of_sample": {
+   "n": 206,
+   "gate": {
+    "scheme_in": "205->205/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 0,
+    "en": "102->102/102",
+    "hi": "103->103/104"
+   },
+   "romanise": {
+    "scheme_in": "205->205/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 0,
+    "en": "102->102/102",
+    "hi": "103->103/104"
+   },
+   "scheme_first": {
+    "scheme_in": "205->204/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 1,
+    "en": "102->102/102",
+    "hi": "103->102/104"
+   },
+   "gate+romanise": {
+    "scheme_in": "205->205/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 0,
+    "en": "102->102/102",
+    "hi": "103->103/104"
+   },
+   "gate+romanise+scheme_first": {
+    "scheme_in": "205->203/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 2,
+    "en": "102->102/102",
+    "hi": "103->101/104"
+   },
+   "floor 0.54": {
+    "scheme_in": "205->205/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 0,
+    "en": "102->102/102",
+    "hi": "103->103/104"
+   }
+  }
+ },
+ "scale": {
+  "build_seconds": 6.4,
+  "baseline": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "type=eligibility": "47/52",
+   "type=fact": "147/162",
+   "type=situation": "16/36",
+   "type=typo": "51/54",
+   "language=en": "136/152",
+   "language=hi": "75/92",
+   "language=hi_latn": "50/60",
+   "ms_per_q_with_embedding": 25.7,
+   "ms_per_q_retrieval_only": 2.88
+  },
+  "fusion_gate_0.05": {
+   "in_prompt": "264/304",
+   "abstain": "5/12",
+   "fixed": 4,
+   "broken": 1,
+   "diff_points": 0.99,
+   "ci95": [
+    -0.74,
+    3.5
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->151",
+    "type=situation": "16->15 DOWN",
+    "type=typo": "51->51",
+    "language=en": "136->136",
+    "language=hi": "75->77",
+    "language=hi_latn": "50->51"
+   },
+   "broken_by_slice": {
+    "hi": 1,
+    "situation": 1
+   },
+   "gold_scheme_in_prompt": "266->269",
+   "fixed_ids": [
+    "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+    "pm_kisan__annual_amount__hi",
+    "pm_kisan__instalment_amount__hi",
+    "pm_kisan__instalments_per_year__hi"
+   ],
+   "broken_ids": [
+    "ignwps__situation_2"
+   ],
+   "ms_per_q_retrieval_only": 2.91
+  },
+  "fusion_convex_0.10 (runner-up)": {
+   "in_prompt": "267/304",
+   "abstain": "5/12",
+   "fixed": 7,
+   "broken": 1,
+   "diff_points": 1.97,
+   "ci95": [
+    0.0,
+    5.0
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->150",
+    "type=situation": "16->19",
+    "type=typo": "51->51",
+    "language=en": "136->138",
+    "language=hi": "75->79",
+    "language=hi_latn": "50->50"
+   },
+   "broken_by_slice": {
+    "hi_latn": 1,
+    "fact": 1
+   },
+   "gold_scheme_in_prompt": "266->272",
+   "fixed_ids": [
+    "nfsa_pmgkay__situation_1",
+    "nmmss__situation_2",
+    "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+    "pm_kisan__annual_amount__hi",
+    "pm_kisan__instalment_amount__hi",
+    "pm_kisan__instalments_per_year__hi",
+    "pmay_g__situation_1"
+   ],
+   "broken_ids": [
+    "pm_kmy__land_limit__hi_latn"
+   ],
+   "ms_per_q_retrieval_only": 2.66
+  },
+  "scheme_first (patched module)": {
+   "in_prompt": "264/304",
+   "abstain": "5/12",
+   "fixed": 3,
+   "broken": 0,
+   "diff_points": 0.99,
+   "ci95": [
+    0.0,
+    2.86
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->148",
+    "type=situation": "16->18",
+    "type=typo": "51->51",
+    "language=en": "136->138",
+    "language=hi": "75->76",
+    "language=hi_latn": "50->50"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "266->269",
+   "fixed_ids": [
+    "pm_kisan__instalment_amount__hi",
+    "pm_kisan__situation_1",
+    "pmay_g__situation_1"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 3.19
+  },
+  "romanise_char": {
+   "in_prompt": "263/304",
+   "abstain": "5/12",
+   "fixed": 2,
+   "broken": 0,
+   "diff_points": 0.66,
+   "ci95": [
+    0.0,
+    2.29
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->149",
+    "type=situation": "16->16",
+    "type=typo": "51->51",
+    "language=en": "136->136",
+    "language=hi": "75->77",
+    "language=hi_latn": "50->50"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "266->268",
+   "fixed_ids": [
+    "pm_kisan__instalment_amount__hi",
+    "pm_kisan__instalments_per_year__hi"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 3.31
+  },
+  "abstention floor 0.54 (not recommended)": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->147",
+    "type=situation": "16->16",
+    "type=typo": "51->51",
+    "language=en": "136->136",
+    "language=hi": "75->75",
+    "language=hi_latn": "50->50"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "266->266",
+   "fixed_ids": [],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 3.22
+  },
+  "abstention agree 0.56 (not recommended)": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->147",
+    "type=situation": "16->16",
+    "type=typo": "51->51",
+    "language=en": "136->136",
+    "language=hi": "75->75",
+    "language=hi_latn": "50->50"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "266->266",
+   "fixed_ids": [],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 3.23
+  },
+  "composition_check": "composed retriever reproduces baseline and each single proposal exactly",
+  "gate+romanise": {
+   "in_prompt": "264/304",
+   "abstain": "5/12",
+   "fixed": 4,
+   "broken": 1,
+   "diff_points": 0.99,
+   "ci95": [
+    -0.74,
+    3.5
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->151",
+    "type=situation": "16->15 DOWN",
+    "type=typo": "51->51",
+    "language=en": "136->136",
+    "language=hi": "75->77",
+    "language=hi_latn": "50->51"
+   },
+   "broken_by_slice": {
+    "hi": 1,
+    "situation": 1
+   },
+   "gold_scheme_in_prompt": "266->269",
+   "fixed_ids": [
+    "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+    "pm_kisan__annual_amount__hi",
+    "pm_kisan__instalment_amount__hi",
+    "pm_kisan__instalments_per_year__hi"
+   ],
+   "broken_ids": [
+    "ignwps__situation_2"
+   ],
+   "ms_per_q_retrieval_only": 3.02
+  },
+  "gate+scheme_first": {
+   "in_prompt": "265/304",
+   "abstain": "5/12",
+   "fixed": 5,
+   "broken": 1,
+   "diff_points": 1.32,
+   "ci95": [
+    -0.74,
+    4.64
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->151",
+    "type=situation": "16->16",
+    "type=typo": "51->51",
+    "language=en": "136->137",
+    "language=hi": "75->77",
+    "language=hi_latn": "50->51"
+   },
+   "broken_by_slice": {
+    "hi": 1,
+    "situation": 1
+   },
+   "gold_scheme_in_prompt": "266->270",
+   "fixed_ids": [
+    "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+    "pm_kisan__annual_amount__hi",
+    "pm_kisan__instalment_amount__hi",
+    "pm_kisan__instalments_per_year__hi",
+    "pm_kisan__situation_1"
+   ],
+   "broken_ids": [
+    "ignwps__situation_2"
+   ],
+   "ms_per_q_retrieval_only": 3.03
+  },
+  "romanise+scheme_first": {
+   "in_prompt": "265/304",
+   "abstain": "5/12",
+   "fixed": 4,
+   "broken": 0,
+   "diff_points": 1.32,
+   "ci95": [
+    0.0,
+    3.96
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->149",
+    "type=situation": "16->18",
+    "type=typo": "51->51",
+    "language=en": "136->138",
+    "language=hi": "75->77",
+    "language=hi_latn": "50->50"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "266->270",
+   "fixed_ids": [
+    "pm_kisan__instalment_amount__hi",
+    "pm_kisan__instalments_per_year__hi",
+    "pm_kisan__situation_1",
+    "pmay_g__situation_1"
+   ],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 3.27
+  },
+  "gate+romanise+scheme_first": {
+   "in_prompt": "265/304",
+   "abstain": "5/12",
+   "fixed": 5,
+   "broken": 1,
+   "diff_points": 1.32,
+   "ci95": [
+    -0.74,
+    4.64
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->151",
+    "type=situation": "16->16",
+    "type=typo": "51->51",
+    "language=en": "136->137",
+    "language=hi": "75->77",
+    "language=hi_latn": "50->51"
+   },
+   "broken_by_slice": {
+    "hi": 1,
+    "situation": 1
+   },
+   "gold_scheme_in_prompt": "266->270",
+   "fixed_ids": [
+    "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+    "pm_kisan__annual_amount__hi",
+    "pm_kisan__instalment_amount__hi",
+    "pm_kisan__instalments_per_year__hi",
+    "pm_kisan__situation_1"
+   ],
+   "broken_ids": [
+    "ignwps__situation_2"
+   ],
+   "ms_per_q_retrieval_only": 3.16
+  },
+  "scheme_first lead only (second_weight 0, admit all)": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 0,
+   "slices": {
+    "type=eligibility": "47->47",
+    "type=fact": "147->147",
+    "type=situation": "16->16",
+    "type=typo": "51->51",
+    "language=en": "136->136",
+    "language=hi": "75->75",
+    "language=hi_latn": "50->50"
+   },
+   "broken_by_slice": {},
+   "gold_scheme_in_prompt": "266->266",
+   "fixed_ids": [],
+   "broken_ids": [],
+   "ms_per_q_retrieval_only": 3.1
+  },
+  "budget_top_k_2_3_5": {
+   "baseline": {
+    "2": "235/304",
+    "3": "261/304",
+    "5": "276/304"
+   },
+   "gate": {
+    "2": "234/304",
+    "3": "264/304",
+    "5": "277/304"
+   },
+   "romanise": {
+    "2": "235/304",
+    "3": "263/304",
+    "5": "278/304"
+   },
+   "scheme_first": {
+    "2": "235/304",
+    "3": "264/304",
+    "5": "276/304"
+   },
+   "gate+romanise": {
+    "2": "234/304",
+    "3": "264/304",
+    "5": "277/304"
+   }
+  },
+  "robustness_code_default_fusion": {
+   "alt_baseline": "254/304",
+   "gate": {
+    "in_prompt": "264/304",
+    "fixed": 17,
+    "broken": 7,
+    "ci95": [
+     -0.96,
+     7.64
+    ],
+    "abstain_change": 0
+   },
+   "romanise": {
+    "in_prompt": "259/304",
+    "fixed": 7,
+    "broken": 2,
+    "ci95": [
+     -1.28,
+     4.45
+    ],
+    "abstain_change": 0
+   },
+   "scheme_first": {
+    "in_prompt": "266/304",
+    "fixed": 12,
+    "broken": 0,
+    "ci95": [
+     1.71,
+     6.92
+    ],
+    "abstain_change": 0
+   },
+   "gate+romanise": {
+    "in_prompt": "265/304",
+    "fixed": 18,
+    "broken": 7,
+    "ci95": [
+     -0.83,
+     8.33
+    ],
+    "abstain_change": 0
+   }
+  },
+  "threshold_stability_probe": {
+   "gate margin 0.04": {
+    "in_prompt": "265/304",
+    "fixed": 5,
+    "broken": 1,
+    "ci95": [
+     -0.43,
+     4.08
+    ]
+   },
+   "gate margin 0.06": {
+    "in_prompt": "262/304",
+    "fixed": 2,
+    "broken": 1,
+    "ci95": [
+     -0.9,
+     2.08
+    ]
+   },
+   "scheme lead_gap 0.08": {
+    "in_prompt": "265/304",
+    "fixed": 4,
+    "broken": 0,
+    "ci95": [
+     0.0,
+     3.96
+    ]
+   },
+   "scheme lead_gap 0.12": {
+    "in_prompt": "264/304",
+    "fixed": 3,
+    "broken": 0,
+    "ci95": [
+     0.0,
+     2.86
+    ]
+   }
+  },
+  "sft_out_of_sample": {
+   "n": 206,
+   "gate": {
+    "scheme_in": "194->193/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 1,
+    "en": "101->101/102",
+    "hi": "93->92/104"
+   },
+   "romanise": {
+    "scheme_in": "194->194/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 0,
+    "en": "101->101/102",
+    "hi": "93->93/104"
+   },
+   "scheme_first": {
+    "scheme_in": "194->195/206",
+    "refused": "0->0",
+    "fixed": 1,
+    "broken": 0,
+    "en": "101->102/102",
+    "hi": "93->93/104"
+   },
+   "gate+romanise": {
+    "scheme_in": "194->193/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 1,
+    "en": "101->101/102",
+    "hi": "93->92/104"
+   },
+   "gate+romanise+scheme_first": {
+    "scheme_in": "194->193/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 1,
+    "en": "101->101/102",
+    "hi": "93->92/104"
+   },
+   "floor 0.54": {
+    "scheme_in": "194->194/206",
+    "refused": "0->0",
+    "fixed": 0,
+    "broken": 0,
+    "en": "101->101/102",
+    "hi": "93->93/104"
+   }
+  }
+ }
+}

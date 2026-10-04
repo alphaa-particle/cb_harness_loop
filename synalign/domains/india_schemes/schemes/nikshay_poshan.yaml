@@ -1,0 +1,132 @@
+id: nikshay_poshan
+name: Ni-kshay Poshan Yojana
+short_name: NPY
+names_hi: []
+aliases:
+- Nikshay Poshan Yojana
+- nikshay poshan yojna
+- Nutritional Support to TB patients
+- TB poshan yojana
+level: central
+state: ''
+ministry: Ministry of Health and Family Welfare (Central TB Division, National TB Elimination Programme)
+category: health
+summary: Gives every TB patient registered (notified) on the Ni-kshay portal money every month for nutritious food for the whole time they are on TB treatment, paid by direct bank transfer. The amount was raised from Rs 500 to Rs 1,000 per month in late 2024.
+sections:
+  eligibility:
+  - You must be a TB (tuberculosis) patient who is notified (registered) on the Ni-kshay portal.
+  - Patients treated in the private sector qualify too, as long as they are notified on Ni-kshay.
+  - New, previously treated and drug-resistant TB patients are all covered.
+  - There is no age or income limit; all notified TB patients are beneficiaries.
+  - Children with TB are covered; if the child has no bank account, the money goes to a parent's or guardian's account.
+  - Patients notified on or after 1 April 2018, and those already on treatment on that date, are eligible.
+  exclusions:
+  - A TB patient who is not notified on the Ni-kshay portal cannot receive the payment.
+  - Payments are only for the period the patient is on anti-TB treatment; they stop when treatment ends.
+  benefits:
+  - Rs 1,000 per month for as long as the patient is on TB treatment (raised from Rs 500 per month; increase announced in late 2024).
+  - Money is paid by Direct Benefit Transfer into the bank account, preferably an Aadhaar-linked account.
+  - 'Under the 2018 payment schedule, the first payment comes when the patient is notified, and later payments come at follow-up points during treatment (for a new patient: at about 2 months and at the end of 6 months).'
+  - If treatment is extended, payment continues for the extra months.
+  - Some states may give a food basket of at least the same value instead of cash, with central approval.
+  how_to_apply:
+  - There is no separate application; the doctor or facility treating your TB notifies you on the Ni-kshay portal.
+  - Give your bank account and Aadhaar details to the TB health staff so they can be entered on Ni-kshay.
+  - If you have no bank account, health staff will help you open one, preferably under Jan Dhan Yojana, and help with Aadhaar enrolment.
+  - Call the Ni-kshay helpline 1800-11-6666 for help.
+  documents:
+  - Bank account details of the patient (or of a parent or guardian for a child).
+  - Aadhaar number (preferred for payment; health staff help with enrolment if you do not have one).
+  - TB diagnosis notified on the Ni-kshay portal by the treating facility.
+rules:
+  gender: any
+facts:
+- key: monthly_amount
+  statement: Ni-kshay Poshan Yojana pays Rs 1,000 per month to every notified TB patient during treatment.
+  value: Rs 1,000
+  accept:
+  - '1000'
+  - 1,000
+  - Rs 1000
+  - Rs. 1000
+  - ₹1,000
+  - ek hazar
+  question: How much money does Ni-kshay Poshan Yojana give a TB patient every month?
+  question_hi: निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?
+  question_hi_latn: Nikshay Poshan Yojana me TB mareez ko har mahine kitne rupaye milte hain?
+  source: 3
+  status: verified
+- key: previous_monthly_amount
+  statement: Before the 2024 increase, the scheme paid Rs 500 per month.
+  value: Rs 500
+  accept:
+  - '500'
+  - Rs 500
+  - Rs. 500
+  - ₹500
+  - paanch sau
+  question: What was the monthly amount under Ni-kshay Poshan Yojana before it was increased?
+  question_hi: निक्षय पोषण योजना में राशि बढ़ने से पहले हर महीने कितना पैसा मिलता था?
+  question_hi_latn: Nikshay Poshan Yojana me rashi badhne se pehle har mahine kitna paisa milta tha?
+  source: 1
+  status: verified
+- key: payment_mode
+  statement: The money is paid by Direct Benefit Transfer into the patient's bank account.
+  value: Direct Benefit Transfer
+  accept:
+  - DBT
+  - bank transfer
+  - bank account me
+  - direct bank transfer
+  question: How is Ni-kshay Poshan Yojana money paid to TB patients?
+  question_hi: निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?
+  question_hi_latn: Nikshay Poshan Yojana ka paisa TB mareez ko kaise milta hai?
+  source: 1
+  status: verified
+- key: helpline
+  statement: The Ni-kshay helpline number is 1800-11-6666.
+  value: 1800-11-6666
+  accept:
+  - '1800116666'
+  - 1800 11 6666
+  - 1800-116-666
+  question: What is the helpline number for Ni-kshay Poshan Yojana and TB patients?
+  question_hi: निक्षय पोषण योजना या टीबी मरीज़ों के लिए हेल्पलाइन नंबर क्या है?
+  question_hi_latn: Nikshay Poshan Yojana ya TB mareezon ke liye helpline number kya hai?
+  source: 4
+  status: verified
+situations:
+- question: I was just diagnosed with TB at a private clinic and cannot afford good food during treatment. Is there any government money for my diet?
+  language: en
+- question: मुझे टीबी हुई है और इलाज चल रहा है, क्या सरकार खाने-पीने के लिए हर महीने कुछ पैसा देती है?
+  language: hi
+sources:
+- title: 'Nutritional Support to TB patients (Nikshay Poshan Yojana): scheme details'
+  url: https://tbcindia.mohfw.gov.in/wp-content/uploads/2023/05/6851513623Nutrition-support-DBT-Scheme-details.pdf
+  publisher: Central TB Division, Ministry of Health and Family Welfare
+  accessed: '2026-10-03'
+- title: FAQs
+  url: https://tbcindia.mohfw.gov.in/faqs/
+  publisher: Central TB Division, Ministry of Health and Family Welfare
+  accessed: '2026-10-03'
+- title: 'Press release (7 December 2024): launch of the 100-day Intensified TB Elimination Campaign'
+  url: https://tbcindia.mohfw.gov.in/press-release-link-on-pib-4/
+  publisher: Central TB Division, Ministry of Health and Family Welfare (PIB release)
+  accessed: '2026-10-03'
+- title: Ni-kshay portal
+  url: https://www.nikshay.in/
+  publisher: Central TB Division, Ministry of Health and Family Welfare
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Ongoing (started 1 April 2018). A Ministry press release dated 7 December 2024 (on the Central TB Division site) says monthly support was raised from Rs 500 to Rs 1,000 for all TB patients. However, the CTD FAQ page and the 2018 scheme document still say Rs 500. No official page I could open gave the exact start date of the Rs 1,000 rate or any revised instalment schedule. The instalment timing here is from the 2018 document. The same release mentions added energy boosters for TB patients and food support for household contacts under PM TB Mukt Bharat Abhiyaan (Ni-kshay Mitra), which are separate initiatives; details were not checked. Funding follows NHM centre-state cost sharing. Some states give food in kind instead of cash. No official Hindi name was found on the pages opened.'
+  - 'Checker: Conflicting official text: the CTD FAQ page (tbcindia.mohfw.gov.in/faqs/) still says Rs 500 a month. If the corpus retrieves that page, users will get the old amount, so it should be excluded or labelled as outdated.'
+  - 'Checker: The date the Rs 1,000 rate took effect was not found on any official page I opened.'
+  - 'Checker: Missing related benefits in the 2026 CTD campaign document: every TB patient''s BMI is checked, and patients with BMI below 18.5 get energy-dense nutritional supplements for the first 2 months. Payments can go to a post office account as well as a bank account. Ni-kshay Mitra food baskets (18 kg a month) now also reach household contacts. These are related to NPY but are separate from the cash payment.'
+  - 'Checker: DBT Bharat also lists a separate cash scheme, ''NIKSHAY - Tribal TB Patients'', under MoHFW. I did not check its details, but a tribal patient asking about TB money support might be eligible for it as well.'
+  - 'Checker: The extension amounts in the 2018 schedule (Rs 1,000 for a two-month extension, or Rs 500 for one month) are at the old rate and should not be quoted as current.'
+  - 'Checker: Minor: the eligibility line ''all notified TB patients are beneficiaries'' is almost word for word from the 2018 document. It is short and factual, but it could be reworded.'
+  - 'Checker: ''No age or income limit'' is a fair reading of ''all notified TB patients'', but the source does not say it in so many words.'

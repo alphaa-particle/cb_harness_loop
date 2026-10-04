@@ -1,0 +1,162 @@
+id: naps
+name: National Apprenticeship Promotion Scheme
+short_name: NAPS
+names_hi:
+- प्रधानमंत्री राष्ट्रीय शिक्षुता संवर्धन योजना
+aliases:
+- NAPS-2
+- PM-NAPS
+- Pradhan Mantri National Apprenticeship Promotion Scheme
+- apprenticeship yojana
+- rashtriya shikshuta samvardhan yojana
+- apprentice stipend scheme
+level: central
+state: ''
+ministry: Ministry of Skill Development and Entrepreneurship
+category: skills_employment
+summary: Helps young people aged 14 to 35 learn a trade as apprentices in companies. The employer pays a monthly stipend, and the Central Government pays 25% of it (up to Rs 1,500 a month) straight into the apprentice's bank account. NAPS-2 formally ended on 31 March 2026 and ran on a temporary extension to 30 September 2026 while its successor (PM-NAPS 3.0) awaits approval, so check its current status.
+sections:
+  eligibility:
+  - Aged 14 to 35 years (the age group the Central Government support is designed for).
+  - At least 14 years old, or at least 18 years old for training in hazardous industries.
+  - Has passed at least Class 5 (for optional trades) and has the education, technical and physical fitness standards set for the chosen trade.
+  - Has an Aadhaar number and is registered on the Apprenticeship Training Portal.
+  - Has signed a contract of apprenticeship with an establishment, and the contract is registered on the portal.
+  - Can be an ITI pass-out, a graduate or diploma holder, someone who finished an NSQF-aligned course (such as PMKVY), a student pursuing graduation or a diploma, or a fresher.
+  exclusions:
+  - The Central Government's share of the stipend is paid only for a person's first apprenticeship training.
+  - A person can do at most two apprenticeship trainings, and the second cannot be in the same trade.
+  - There must be a gap of at least one year between two apprenticeship trainings after a completed training (some exceptions apply, for example when the employer was at fault).
+  - A person whose earlier apprenticeship contract was ended because they did not follow its terms cannot get another apprenticeship contract.
+  benefits:
+  - The Central Government pays 25% of the stipend, up to Rs 1,500 per month, directly to the apprentice by DBT during training.
+  - The employer pays the rest of the stipend; from 11 September 2025 the minimum monthly stipend is Rs 6,800 for Class 5 to 9 pass, Rs 8,200 for Class 10 pass, and Rs 9,600 for Class 12 pass, National or State certificate holders, and vocational (technician vocational) apprentices.
+  - The minimum monthly stipend is Rs 10,900 for technician apprentices or diploma holders and Rs 12,300 for graduate or degree apprentices.
+  - Hands-on on-the-job training at a real workplace; freshers without prior training first get basic training.
+  how_to_apply:
+  - Register as a candidate on the Apprenticeship Training Portal (apprenticeshipindia.gov.in) and complete Aadhaar e-KYC.
+  - Search apprenticeship openings posted by companies, apply, and accept an offer online.
+  - Sign the apprenticeship contract online with the company; training is counted from the date the contract is registered on the portal.
+  documents:
+  - Aadhaar number (or a Unique Identification Number for some Jammu & Kashmir and North-East candidates).
+  - Certificates of the education or technical qualification required for the trade.
+  - Bank account details to receive the government's share of the stipend by DBT.
+rules:
+  age_min: 14
+  age_max: 35
+  gender: any
+facts:
+- key: govt_stipend_share_max
+  statement: The Central Government pays 25% of the stipend, up to Rs 1,500 per month, directly to the apprentice by DBT during training.
+  value: Rs 1,500
+  accept:
+  - '1500'
+  - 1,500
+  - ₹1,500
+  - Rs 1500
+  question: What is the maximum monthly stipend support the government pays under NAPS?
+  question_hi: NAPS में सरकार अप्रेंटिस को हर महीने अधिकतम कितना वजीफा देती है?
+  question_hi_latn: NAPS me sarkar apprentice ko har mahine zyada se zyada kitna stipend deti hai?
+  source: 1
+  status: verified
+- key: govt_stipend_share_percent
+  statement: The Central Government pays 25% of the stipend, up to Rs 1,500 per month, directly to the apprentice by DBT during training.
+  value: 25%
+  accept:
+  - 25 percent
+  - 25 per cent
+  - '25'
+  - one-fourth
+  - एक चौथाई
+  question: What share of the apprentice stipend does the government pay under NAPS?
+  question_hi: NAPS में सरकार वजीफे का कितना हिस्सा देती है?
+  question_hi_latn: NAPS me sarkar stipend ka kitna hissa deti hai?
+  source: 1
+  status: verified
+- key: age_max
+  statement: Aged 14 to 35 years (the age group the Central Government support is designed for).
+  value: '35'
+  accept:
+  - 35 years
+  - 35 saal
+  - 35 वर्ष
+  question: What is the upper age limit for NAPS apprenticeship support?
+  question_hi: NAPS में अप्रेंटिसशिप सहायता के लिए अधिकतम उम्र कितनी है?
+  question_hi_latn: NAPS me apprenticeship ke liye maximum age kitni hai?
+  source: 1
+  status: verified
+- key: min_stipend_class10
+  statement: The employer pays the rest of the stipend; from 11 September 2025 the minimum monthly stipend is Rs 6,800 for Class 5 to 9 pass, Rs 8,200 for Class 10 pass, and Rs 9,600 for Class 12 pass, National or State certificate holders, and vocational (technician vocational) apprentices.
+  value: Rs 8,200
+  accept:
+  - '8200'
+  - 8,200
+  - ₹8,200
+  - Rs 8200
+  question: What is the minimum monthly stipend for a Class 10 pass apprentice under NAPS?
+  question_hi: NAPS के तहत 10वीं पास अप्रेंटिस को कम से कम कितना मासिक वजीफा मिलता है?
+  question_hi_latn: NAPS me 10vi pass apprentice ko kam se kam kitna monthly stipend milta hai?
+  source: 3
+  status: verified
+- key: min_stipend_graduate
+  statement: The minimum monthly stipend is Rs 10,900 for technician apprentices or diploma holders and Rs 12,300 for graduate or degree apprentices.
+  value: Rs 12,300
+  accept:
+  - '12300'
+  - 12,300
+  - ₹12,300
+  - Rs 12300
+  question: What is the minimum monthly stipend for a graduate apprentice under NAPS?
+  question_hi: NAPS के तहत ग्रेजुएट अप्रेंटिस को कम से कम कितना मासिक वजीफा मिलता है?
+  question_hi_latn: NAPS me graduate apprentice ko kam se kam kitna monthly stipend milta hai?
+  source: 3
+  status: verified
+situations:
+- language: en
+  question: I passed Class 12 and want to learn a trade by working in a factory while earning a stipend. Does the government pay part of the stipend?
+- language: hi
+  question: मैं 10वीं पास हूँ और किसी कंपनी में अप्रेंटिस बनकर काम सीखना चाहता हूँ, क्या सरकार वजीफे में कुछ पैसा देती है?
+sources:
+- title: Cabinet Approves Continuation and Restructuring of Skill India Programme (7 Feb 2025)
+  url: https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2100845
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: केंद्रीय मंत्रिमंडल ने कौशल भारत कार्यक्रम को जारी रखने और पुनर्गठन को मंजूरी दी (Hindi release, 7 Feb 2025)
+  url: https://pib.gov.in/PressReleasePage.aspx?PRID=2100898
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: 'Gazette Notification G.S.R. 610(E): Apprenticeship (Amendment) Rules, 2025, with MSDE cover letter dated 11 Sept 2025'
+  url: https://naps-cdn.s3.ap-south-1.amazonaws.com/Gazette+Notification+on+Apprenticeship+(Amendment)+Rules%2C+2025.pdf
+  publisher: Ministry of Skill Development and Entrepreneurship (via Apprenticeship Training Portal)
+  accessed: '2026-10-03'
+- title: 'OM dated 23.04.2026: Interim extension of schemes of MSDE beyond 31.03.2026 - Continuation of NAPS-2 up to 30.09.2026'
+  url: https://naps-cdn.s3.ap-south-1.amazonaws.com/OM+dated+23.04.2026+-+Interim+Extension+of+schemesof+MSDE+-+NAPS+-+reg..pdf
+  publisher: Ministry of Skill Development and Entrepreneurship (via Apprenticeship Training Portal)
+  accessed: '2026-10-03'
+- title: FAQs - Apprenticeship under the Apprentices Act, 1961
+  url: https://naps-cdn.s3.ap-south-1.amazonaws.com/Updated+Faq.pdf
+  publisher: Apprenticeship Training Portal (MSDE / NSDC)
+  accessed: '2026-10-03'
+- title: Apprenticeship Training Portal - Home
+  url: https://www.apprenticeshipindia.gov.in/
+  publisher: Ministry of Skill Development and Entrepreneurship
+  accessed: '2026-10-03'
+- title: Central Apprenticeship Council recommends 36% Increase in Stipend under NAPS and NATS (26 May 2025)
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2131391
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: STATUS: An MSDE office memorandum dated 23 April 2026 says NAPS-2, which belongs to the 15th Finance Commission period, formally ended on 31 March 2026. It was continued on the same terms up to 30 September 2026, or until PM-NAPS 3.0 is approved, whichever comes first. The PM-NAPS 3.0 proposal was before the Expenditure Finance Committee. Today (3 October 2026) is after that date, and I found no official notice of PM-NAPS 3.0 approval or a further extension. The apprenticeship portal still shows live openings, but the DBT support terms may change. STIPEND: the minimum stipend rates come from the Apprenticeship (Amendment) Rules, 2025, in force from 11 September 2025, after the Central Apprenticeship Council recommended a roughly 36% rise from the old Rs 5,000 to Rs 9,000 range. These are statutory minimums under the Apprentices Act and apply to apprentices generally, not only under NAPS. The same rules cap a person at two apprenticeships, limit the Central Government stipend
+    share to the first apprenticeship, and set a minimum gap between trainings. That gap is 3 months when a contract ends for reasons such as health, money or relocation, and there is no waiting period for women. The 14 to 35 age band comes from the Feb 2025 Cabinet release. Under the Act the minimum age is 14, or 18 for hazardous industries. The older portal FAQ describes NAPS-1 features: reimbursement of the stipend share to employers, and basic training cost support of up to Rs 7,500 for 500 hours. Under NAPS-2 the government share goes directly to the apprentice by DBT, and I could not confirm the basic training cost support for NAPS-2 (the NAPS-2 guidelines PDF would not render), so it is left out. Graduate and diploma apprentices in some trades fall under a separate scheme, NATS (Ministry of Education).'
+  - Whether the scheme is still open to new applicants was not clear.
+  - 'Checker: STATUS UNCLEAR: The OM ends NAPS-2''s interim continuation on 30.09.2026. The portal notices list on 3 Oct 2026 has OMs up to 28.07.2026 (optional-trade eligibility) and 13.07.2026, but no OM extending NAPS-2 past 30.09.2026 and no notice approving PM-NAPS 3.0. Apprenticeship openings are still posted (about 7.22 lakh active vacancies), and apprenticeship under the Act continues regardless. Whether the Rs 1,500 DBT support is still being paid for new contracts after 30 Sep 2026 cannot be confirmed.'
+  - 'Checker: Missing condition: under the Apprenticeship Rules (portal FAQ, rule 11 sub-rule 1AAAA), fresher apprentices in basic training are paid only 50% of the prescribed stipend for up to 3 months. The record presents the minimum stipend without this.'
+  - 'Checker: Missing detail: the prescribed minimum stipend rises by 10% in the second year and a further 15% in the third year (rule 11, confirmed in the 2025 Gazette annexure).'
+  - 'Checker: Missing condition: the government''s 25% share is paid by DBT only if the scheme conditions are met. Otherwise the establishment must pay the full stipend (note in the 2025 Gazette contract form).'
+  - 'Checker: rules.age_max=35 could wrongly tell people over 35 they cannot be apprentices at all. The Act sets no upper age; 35 is the NAPS support band.'
+  - 'Checker: Several sources are amazonaws.com (naps-cdn) URLs. They are linked from the official apprenticeshipindia.gov.in notices list, so they are acceptable, but they are not gov.in domains.'
+  - 'Checker: Jan Vishwas (Amendment of Provisions) Act, 2026 amendments to the Apprentices Act took effect on 22 June 2026 (S.O. 3185(E)). I did not check what they change. They do not appear to affect the stipend or age figures.'

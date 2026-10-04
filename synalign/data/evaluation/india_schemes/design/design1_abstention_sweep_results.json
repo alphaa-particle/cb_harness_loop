@@ -1,0 +1,980 @@
+{
+ "baseline floor 0.50": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "no floor (reference)": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "0/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "0/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "0/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "0/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "floor 0.52": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "floor 0.54": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "10/12",
+   "abstain_absent": "4/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": [
+    "absent__kalia__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "floor 0.56": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "10/12",
+   "abstain_absent": "4/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 2,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "pm_svanidhi__situation_2"
+   ],
+   "newly_abstained": [
+    "absent__kalia__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + gap(top1-top10 section) < 0.03": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "259/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 8,
+   "fixed": 0,
+   "broken": 2,
+   "diff_points": -0.66,
+   "ci95": [
+    -1.79,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "e_shram__situation_1",
+    "nmmss__situation_2",
+    "nmmss__eligibility_2",
+    "nmmss__eligibility_4",
+    "pm_svanidhi__situation_1",
+    "pm_svanidhi__situation_2"
+   ],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + gap(top1-top10 section) < 0.04": {
+  "54": {
+   "in_prompt": "281/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 3,
+   "fixed": 0,
+   "broken": 1,
+   "diff_points": -0.33,
+   "ci95": [
+    -1.27,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "igndps__situation_2",
+    "nmmss__eligibility_2"
+   ],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "254/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 21,
+   "fixed": 0,
+   "broken": 7,
+   "diff_points": -2.3,
+   "ci95": [
+    -4.79,
+    -0.51
+   ],
+   "newly_refused_answerable": [
+    "day_nrlm__situation_1",
+    "e_shram__helpline__hi",
+    "e_shram__situation_1",
+    "e_shram__situation_2",
+    "igndps__situation_2",
+    "ignwps__situation_1"
+   ],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + gap(top1-top10 section) < 0.05": {
+  "54": {
+   "in_prompt": "280/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 5,
+   "fixed": 0,
+   "broken": 2,
+   "diff_points": -0.66,
+   "ci95": [
+    -2.55,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "igndps__situation_2",
+    "nmmss__eligibility_2",
+    "nmmss__eligibility_4",
+    "nps_vatsalya__situation_2"
+   ],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "249/304",
+   "abstain": "6/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 30,
+   "fixed": 0,
+   "broken": 12,
+   "diff_points": -3.95,
+   "ci95": [
+    -7.14,
+    -1.59
+   ],
+   "newly_refused_answerable": [
+    "day_nrlm__situation_1",
+    "day_nrlm__situation_2",
+    "e_shram__helpline__hi",
+    "e_shram__situation_1",
+    "e_shram__situation_2",
+    "igndps__situation_2"
+   ],
+   "newly_abstained": [
+    "off_topic__15"
+   ]
+  }
+ },
+ "0.50 + gap(best-10th scheme) < 0.03": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "259/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 7,
+   "fixed": 0,
+   "broken": 2,
+   "diff_points": -0.66,
+   "ci95": [
+    -1.79,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "e_shram__situation_1",
+    "nmmss__situation_2",
+    "nmmss__eligibility_4",
+    "pm_svanidhi__situation_1",
+    "pm_svanidhi__situation_2",
+    "pm_vidyalaxmi__situation_2"
+   ],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + gap(best-10th scheme) < 0.05": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "253/304",
+   "abstain": "6/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 23,
+   "fixed": 0,
+   "broken": 8,
+   "diff_points": -2.63,
+   "ci95": [
+    -5.03,
+    -0.77
+   ],
+   "newly_refused_answerable": [
+    "day_nrlm__situation_1",
+    "day_nrlm__situation_2",
+    "e_shram__helpline__hi",
+    "e_shram__situation_1",
+    "e_shram__situation_2",
+    "igndps__situation_2"
+   ],
+   "newly_abstained": [
+    "off_topic__15"
+   ]
+  }
+ },
+ "0.50 + gap(best-10th scheme) < 0.07": {
+  "54": {
+   "in_prompt": "280/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 5,
+   "fixed": 0,
+   "broken": 2,
+   "diff_points": -0.66,
+   "ci95": [
+    -2.55,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "igndps__situation_2",
+    "nmmss__eligibility_2",
+    "nmmss__eligibility_4",
+    "nps_vatsalya__situation_2"
+   ],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "239/304",
+   "abstain": "6/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 41,
+   "fixed": 0,
+   "broken": 22,
+   "diff_points": -7.24,
+   "ci95": [
+    -11.01,
+    -4.14
+   ],
+   "newly_refused_answerable": [
+    "day_nrlm__situation_1",
+    "day_nrlm__situation_2",
+    "e_shram__minimum_age__hi",
+    "e_shram__helpline__hi",
+    "e_shram__situation_1",
+    "e_shram__situation_2"
+   ],
+   "newly_abstained": [
+    "off_topic__15"
+   ]
+  }
+ },
+ "0.50 + (no lexical agreement and max < 0.56)": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "10/12",
+   "abstain_absent": "4/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": [
+    "absent__kalia__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + (no lexical agreement and max < 0.60)": {
+  "54": {
+   "in_prompt": "281/304",
+   "abstain": "11/12",
+   "abstain_absent": "5/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 2,
+   "fixed": 0,
+   "broken": 1,
+   "diff_points": -0.33,
+   "ci95": [
+    -1.33,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "nfsa_pmgkay__situation_2"
+   ],
+   "newly_abstained": [
+    "absent__kalia__en",
+    "absent__rythu_bharosa__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "258/304",
+   "abstain": "6/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 4,
+   "fixed": 0,
+   "broken": 3,
+   "diff_points": -0.99,
+   "ci95": [
+    -2.0,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "e_shram__helpline__hi",
+    "pm_kisan__situation_2",
+    "pm_svanidhi__situation_2",
+    "pmsby__cover_period__hi"
+   ],
+   "newly_abstained": [
+    "off_topic__15"
+   ]
+  }
+ },
+ "0.50 + (no lexical agreement and max < 0.64)": {
+  "54": {
+   "in_prompt": "280/304",
+   "abstain": "12/12",
+   "abstain_absent": "6/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 6,
+   "fixed": 0,
+   "broken": 2,
+   "diff_points": -0.66,
+   "ci95": [
+    -1.89,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "igndps__situation_2",
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "nfsa_pmgkay__situation_2",
+    "pm_kisan__situation_1"
+   ],
+   "newly_abstained": [
+    "absent__kalia__en",
+    "absent__rythu_bharosa__en",
+    "absent__kanya_sumangala__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "251/304",
+   "abstain": "6/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 14,
+   "fixed": 0,
+   "broken": 10,
+   "diff_points": -3.29,
+   "ci95": [
+    -6.08,
+    -1.08
+   ],
+   "newly_refused_answerable": [
+    "e_shram__helpline__hi",
+    "e_shram__situation_2",
+    "jssk__free_diet_normal_delivery__hi",
+    "jssk__free_diet_caesarean__hi",
+    "jssk__situation_1",
+    "jssk__situation_2"
+   ],
+   "newly_abstained": [
+    "off_topic__15"
+   ]
+  }
+ },
+ "0.50 + (top1 - corpus mean) < 0.15": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + (top1 - corpus mean) < 0.20": {
+  "54": {
+   "in_prompt": "278/304",
+   "abstain": "10/12",
+   "abstain_absent": "4/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 8,
+   "fixed": 0,
+   "broken": 4,
+   "diff_points": -1.32,
+   "ci95": [
+    -4.0,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "igndps__situation_2",
+    "nmmss__eligibility_2",
+    "nmmss__eligibility_4",
+    "nps_vatsalya__situation_2",
+    "pm_svanidhi__situation_2",
+    "pm_yasasvi__eligibility_2"
+   ],
+   "newly_abstained": [
+    "absent__kanya_sumangala__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + (top1 - corpus mean) < 0.25": {
+  "54": {
+   "in_prompt": "249/304",
+   "abstain": "12/12",
+   "abstain_absent": "6/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 39,
+   "fixed": 0,
+   "broken": 33,
+   "diff_points": -10.86,
+   "ci95": [
+    -18.29,
+    -5.66
+   ],
+   "newly_refused_answerable": [
+    "day_nrlm__situation_1",
+    "day_nrlm__situation_2",
+    "e_shram__situation_2",
+    "igndps__situation_2",
+    "ignwps__situation_2",
+    "nfsa_pmgkay__situation_2"
+   ],
+   "newly_abstained": [
+    "absent__kalia__en",
+    "absent__rythu_bharosa__en",
+    "absent__kanya_sumangala__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + top-5 sections from 5 different schemes": {
+  "54": {
+   "in_prompt": "281/304",
+   "abstain": "10/12",
+   "abstain_absent": "4/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 2,
+   "fixed": 0,
+   "broken": 1,
+   "diff_points": -0.33,
+   "ci95": [
+    -1.09,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "ignwps__situation_2"
+   ],
+   "newly_abstained": [
+    "absent__kanya_sumangala__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "253/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 22,
+   "fixed": 0,
+   "broken": 8,
+   "diff_points": -2.63,
+   "ci95": [
+    -4.87,
+    -0.82
+   ],
+   "newly_refused_answerable": [
+    "day_nrlm__situation_1",
+    "day_nrlm__situation_2",
+    "e_shram__minimum_age__hi",
+    "e_shram__helpline__hi",
+    "e_shram__situation_1",
+    "igndps__situation_1"
+   ],
+   "newly_abstained": [
+    "absent__kalia__hi",
+    "absent__rythu_bharosa__hi",
+    "absent__kanya_sumangala__en",
+    "off_topic__15"
+   ]
+  }
+ },
+ "0.50 + >=3 of 4 runners-up same form, other scheme": {
+  "54": {
+   "in_prompt": "275/304",
+   "abstain": "11/12",
+   "abstain_absent": "5/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 8,
+   "fixed": 0,
+   "broken": 7,
+   "diff_points": -2.3,
+   "ci95": [
+    -4.62,
+    -0.64
+   ],
+   "newly_refused_answerable": [
+    "ignwps__situation_2",
+    "nmmss__eligibility_2",
+    "nmmss__eligibility_4",
+    "pm_kmy__situation_2",
+    "pm_svanidhi__second_loan_amount__hi",
+    "pm_svanidhi__interest_subsidy__hi"
+   ],
+   "newly_abstained": [
+    "absent__rythu_bharosa__en",
+    "absent__kanya_sumangala__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "238/304",
+   "abstain": "11/12",
+   "abstain_absent": "5/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 34,
+   "fixed": 0,
+   "broken": 23,
+   "diff_points": -7.57,
+   "ci95": [
+    -11.28,
+    -4.24
+   ],
+   "newly_refused_answerable": [
+    "e_shram__minimum_age__hi",
+    "e_shram__helpline__hi",
+    "igndps__situation_2",
+    "ignwps__min_age__hi_latn",
+    "ignwps__monthly_pension_40_to_79__hi_latn",
+    "ignwps__monthly_pension_80_plus__hi_latn"
+   ],
+   "newly_abstained": [
+    "absent__kalia__hi",
+    "absent__rythu_bharosa__en",
+    "absent__rythu_bharosa__hi",
+    "absent__kanya_sumangala__en",
+    "absent__kanya_sumangala__hi",
+    "off_topic__15"
+   ]
+  }
+ },
+ "0.50 + 4 of 4 runners-up same form, other scheme": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "10/12",
+   "abstain_absent": "4/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": [
+    "absent__kanya_sumangala__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "257/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 6,
+   "fixed": 0,
+   "broken": 4,
+   "diff_points": -1.32,
+   "ci95": [
+    -2.87,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "e_shram__minimum_age__hi",
+    "e_shram__helpline__hi",
+    "igndps__situation_2",
+    "jssk__situation_1",
+    "nfsa_pmgkay__situation_2",
+    "pmjdy__overdraft_age_range__hi"
+   ],
+   "newly_abstained": [
+    "absent__kalia__hi",
+    "absent__rythu_bharosa__hi",
+    "absent__kanya_sumangala__en",
+    "off_topic__15"
+   ]
+  }
+ },
+ "0.50 + z(top1) < 2.5": {
+  "54": {
+   "in_prompt": "282/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 1,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + z(top1) < 3.0": {
+  "54": {
+   "in_prompt": "267/304",
+   "abstain": "9/12",
+   "abstain_absent": "3/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 18,
+   "fixed": 0,
+   "broken": 15,
+   "diff_points": -4.93,
+   "ci95": [
+    -10.06,
+    -1.33
+   ],
+   "newly_refused_answerable": [
+    "e_shram__situation_2",
+    "igndps__situation_2",
+    "ignwps__situation_2",
+    "nmmss__eligibility_2",
+    "nmmss__eligibility_4",
+    "nps_vatsalya__situation_2"
+   ],
+   "newly_abstained": []
+  },
+  "scale": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "newly_refused_answerable": [],
+   "newly_abstained": []
+  }
+ },
+ "0.50 + z(top1) < 3.5": {
+  "54": {
+   "in_prompt": "245/304",
+   "abstain": "12/12",
+   "abstain_absent": "6/6",
+   "abstain_offtopic": "6/6",
+   "answerable_refused": 42,
+   "fixed": 0,
+   "broken": 37,
+   "diff_points": -12.17,
+   "ci95": [
+    -20.29,
+    -6.45
+   ],
+   "newly_refused_answerable": [
+    "day_nrlm__situation_1",
+    "e_shram__situation_2",
+    "igndps__situation_2",
+    "ignwps__situation_1",
+    "ignwps__situation_2",
+    "nfsa_pmgkay__situation_2"
+   ],
+   "newly_abstained": [
+    "absent__kalia__en",
+    "absent__rythu_bharosa__en",
+    "absent__kanya_sumangala__en"
+   ]
+  },
+  "scale": {
+   "in_prompt": "260/304",
+   "abstain": "5/12",
+   "abstain_absent": "0/6",
+   "abstain_offtopic": "5/6",
+   "answerable_refused": 3,
+   "fixed": 0,
+   "broken": 1,
+   "diff_points": -0.33,
+   "ci95": [
+    -1.04,
+    0.0
+   ],
+   "newly_refused_answerable": [
+    "e_shram__situation_2",
+    "nmmss__eligibility_4",
+    "pm_kisan__situation_1"
+   ],
+   "newly_abstained": []
+  }
+ }
+}

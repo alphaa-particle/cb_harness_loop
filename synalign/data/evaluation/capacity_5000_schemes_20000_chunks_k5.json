@@ -1,0 +1,28 @@
+{
+  "source": "synthetic named-scheme questions; not real-world accuracy",
+  "platform": "arm64",
+  "python": "3.12.13",
+  "corpus_sha256": "d06a4533440fa4617b82847c52394a44f8a4a4748e84eac005a1232dc4455b0d",
+  "chunks": 20000,
+  "questions": 200,
+  "top_k": 5,
+  "build_seconds": 3.86,
+  "sparse_matrices_mib": 430.08,
+  "current_retrieval": {
+    "median_ms": 1.382,
+    "p95_ms": 1.471
+  },
+  "previous_retrieval": {
+    "median_ms": 58.466,
+    "p95_ms": 59.349
+  },
+  "hit_rate_at_k": 1.0,
+  "previous_hit_rate_at_k": 1.0,
+  "mean_recall_at_k": 1.0,
+  "gold_chunks_verified": 20000,
+  "failed_examples": [],
+  "concurrency": 1,
+  "includes_model_inference": false,
+  "schemes": 5000,
+  "chunks_per_scheme": 4
+}

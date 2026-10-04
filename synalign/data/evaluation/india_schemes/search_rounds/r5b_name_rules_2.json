@@ -1,0 +1,268 @@
+{
+  "label": "r5b_name_rules_2",
+  "note": "Round 5 again without its everyday-phrase test, which rejected real names that other schemes mention (PM Kisan, e-Shram, PM SVANidhi). Instead, only a parenthesised single word is a short form; a parenthesised description ('Medical Treatment', 'old name') is not a name. All other round-5 corrections kept.",
+  "change": {
+    "name_rules": 2
+  },
+  "before": {
+    "method": "fusion",
+    "top_k": 3,
+    "min_score": 0.5,
+    "fusion_weights": {
+      "bm25": 0.25,
+      "char": 0.25,
+      "dense": 1.0
+    },
+    "rrf_k": 20,
+    "fusion_depth": 50,
+    "add_named_schemes": true
+  },
+  "verdict": "NO CLEAR DIFFERENCE",
+  "problems": [
+    "(weak) A1 54 schemes: net gain 0"
+  ],
+  "sizes": {
+    "54 schemes": {
+      "answerable": 482,
+      "in_prompt": [
+        435,
+        435
+      ],
+      "fixed": [],
+      "broken": [],
+      "gain_points": 0.0,
+      "ci95_points": [
+        0.0,
+        0.0
+      ],
+      "slices": {
+        "questions:language=en": [
+          148,
+          148
+        ],
+        "questions:language=hi": [
+          81,
+          81
+        ],
+        "questions:language=hi_latn": [
+          53,
+          53
+        ],
+        "questions:type=eligibility": [
+          52,
+          52
+        ],
+        "questions:type=fact": [
+          149,
+          149
+        ],
+        "questions:type=situation": [
+          29,
+          29
+        ],
+        "questions:type=typo": [
+          52,
+          52
+        ],
+        "usecases:language=en": [
+          153,
+          153
+        ],
+        "usecases:type=apply": [
+          33,
+          33
+        ],
+        "usecases:type=apply_eligibility": [
+          16,
+          16
+        ],
+        "usecases:type=benefits": [
+          23,
+          23
+        ],
+        "usecases:type=category": [
+          8,
+          8
+        ],
+        "usecases:type=compare": [
+          10,
+          10
+        ],
+        "usecases:type=documents": [
+          27,
+          27
+        ],
+        "usecases:type=exclusions": [
+          36,
+          36
+        ]
+      },
+      "scheme_in_prompt": [
+        470,
+        470
+      ],
+      "answerable_refused": [
+        1,
+        1
+      ],
+      "not_found_refused": [
+        9,
+        9,
+        12
+      ],
+      "budgets": {
+        "3": [
+          435,
+          435
+        ],
+        "2": [
+          356,
+          356
+        ],
+        "5": [
+          466,
+          466
+        ]
+      },
+      "wordings": {
+        "questions": 206,
+        "scheme_lost": 0,
+        "newly_refused": 0,
+        "scheme_in_prompt": [
+          206,
+          206
+        ]
+      },
+      "ms_per_question": [
+        0.31,
+        0.31
+      ],
+      "guards_failed": [],
+      "gain_not_shown": [
+        "A1 54 schemes: net gain 0"
+      ]
+    },
+    "background scale": {
+      "answerable": 482,
+      "in_prompt": [
+        410,
+        411
+      ],
+      "fixed": [
+        "usecases:compare__nmmss__pm_vidyalaxmi_2"
+      ],
+      "broken": [],
+      "gain_points": 0.21,
+      "ci95_points": [
+        0.0,
+        0.76
+      ],
+      "slices": {
+        "questions:language=en": [
+          136,
+          136
+        ],
+        "questions:language=hi": [
+          81,
+          81
+        ],
+        "questions:language=hi_latn": [
+          50,
+          50
+        ],
+        "questions:type=eligibility": [
+          52,
+          52
+        ],
+        "questions:type=fact": [
+          148,
+          148
+        ],
+        "questions:type=situation": [
+          16,
+          16
+        ],
+        "questions:type=typo": [
+          51,
+          51
+        ],
+        "usecases:language=en": [
+          143,
+          144
+        ],
+        "usecases:type=apply": [
+          33,
+          33
+        ],
+        "usecases:type=apply_eligibility": [
+          15,
+          15
+        ],
+        "usecases:type=benefits": [
+          18,
+          18
+        ],
+        "usecases:type=category": [
+          2,
+          2
+        ],
+        "usecases:type=compare": [
+          9,
+          10
+        ],
+        "usecases:type=documents": [
+          30,
+          30
+        ],
+        "usecases:type=exclusions": [
+          36,
+          36
+        ]
+      },
+      "scheme_in_prompt": [
+        449,
+        450
+      ],
+      "answerable_refused": [
+        0,
+        0
+      ],
+      "not_found_refused": [
+        5,
+        5,
+        12
+      ],
+      "budgets": {
+        "3": [
+          410,
+          411
+        ],
+        "2": [
+          335,
+          337
+        ],
+        "5": [
+          444,
+          444
+        ]
+      },
+      "wordings": {
+        "questions": 206,
+        "scheme_lost": 0,
+        "newly_refused": 0,
+        "scheme_in_prompt": [
+          206,
+          206
+        ]
+      },
+      "ms_per_question": [
+        3.45,
+        3.46
+      ],
+      "guards_failed": [],
+      "gain_not_shown": []
+    }
+  },
+  "answer_check": "passed (+2 answers at each size, none lost, no new wrong yes)",
+  "outcome": "adopted as a defect fix on the owner's decision (search: no clear difference; practice answers passed), then undone at close-out: on the exam at 4,600 schemes it broke 4 search questions and 6 answers (original questions: 541 -> 536 correct) where round 4 alone broke none in search"
+}

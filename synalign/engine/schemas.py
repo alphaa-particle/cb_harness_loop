@@ -22,12 +22,18 @@ class RetrievedChunk:
     chunk_id: str
     text: str
     score: float
+    title: str = ""
+    scheme_id: str = ""             # sections of one scheme share this
+    section: str = ""               # "rules" marks the eligibility-rule section
+    source: str = ""                # the official page the section was written from, if known
 
 
 @dataclass
 class AssistantAnswer:
     answer_text: str
     retrieved_chunks: list[RetrievedChunk] = field(default_factory=list)
+    # answered / no_evidence / unclear / blocked — see engine/enforcement.py
+    mode: str = "answered"
 
 
 @dataclass

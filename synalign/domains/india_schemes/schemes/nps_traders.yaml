@@ -1,0 +1,154 @@
+id: nps_traders
+name: National Pension Scheme for Traders and Self-Employed Persons
+short_name: NPS-Traders
+names_hi:
+- व्यापारियों के लिए राष्ट्रीय पेंशन योजना
+aliases:
+- NPS Traders
+- NPS-TSEP
+- Pradhan Mantri Laghu Vyapari Maan-dhan Yojana
+- PM-LVM
+- vyapari pension yojana
+- dukandar pension yojana
+level: central
+state: ''
+ministry: Ministry of Labour and Employment
+category: pension
+summary: A voluntary pension scheme for small shopkeepers, retail traders and self-employed people aged 18 to 40 whose yearly turnover is Rs 1.5 crore or less. The trader pays a small monthly amount, the government pays the same amount, and the trader gets a pension of at least Rs 3,000 a month from age 60.
+sections:
+  eligibility:
+  - Self-employed shop owner, retail trader or similar small businessperson, for example a rice or oil mill owner, workshop owner, commission agent, real estate broker, or small hotel or restaurant owner.
+  - Aged 18 to 40 when joining.
+  - Annual business turnover of not more than Rs 1.5 crore.
+  - Has an Aadhaar card and a savings bank or Jan Dhan account with IFSC.
+  exclusions:
+  - People older than 40 cannot join.
+  - Income tax payers cannot join.
+  - Members of EPFO, ESIC or the government-funded NPS cannot join.
+  - People already enrolled in PM Shram Yogi Maan-dhan (PM-SYM) or PM Kisan Maan-dhan cannot join.
+  benefits:
+  - A minimum assured pension of Rs 3,000 per month from age 60.
+  - The trader pays Rs 55 to Rs 200 a month depending on age at joining (Rs 55 at 18, Rs 200 at 40) until age 60, and the Central Government adds an equal amount.
+  - If the pensioner dies, the spouse gets 50% of the pension as family pension; family pension is only for the spouse.
+  - If the member dies before 60 after paying regularly, the spouse can continue the scheme or take back the member's share with interest.
+  - Leaving within 10 years returns only the trader's own contribution with savings bank interest; leaving after 10 years but before 60 returns it with the interest earned by the fund or savings bank interest, whichever is higher. The government's share is not paid out on exit.
+  how_to_apply:
+  - Visit the nearest Common Service Centre (CSC) and enrol using Aadhaar and a savings or Jan Dhan bank account on self-declaration, or self-enrol on the official portal maandhan.in.
+  - The first contribution is paid in cash at the CSC; later contributions are auto-debited monthly (quarterly, half-yearly or yearly payment is also allowed).
+  - Enrolment is free; if payments stop, the account can be revived by paying the dues with a small interest charge.
+  - 'Helpline: 14434 or 1800 2676 888.'
+  documents:
+  - Aadhaar card (the date of birth in Aadhaar is used and cannot be changed later).
+  - Savings bank or Jan Dhan account number with IFSC.
+  - Self-declaration of eligibility.
+rules:
+  age_min: 18
+  age_max: 40
+  gender: any
+facts:
+- key: monthly_pension
+  statement: Members get a minimum pension of Rs 3,000 per month from age 60.
+  value: Rs 3,000
+  accept:
+  - '3000'
+  - 3,000
+  - ₹3000
+  - Rs 3000
+  - 3 hazaar
+  question: How much pension does the NPS for Traders scheme give every month?
+  question_hi: व्यापारियों के लिए राष्ट्रीय पेंशन योजना में हर महीने कितनी पेंशन मिलती है?
+  question_hi_latn: NPS Traders yojana me har mahine kitni pension milti hai?
+  source: 1
+  status: verified
+- key: entry_age
+  statement: Only traders aged 18 to 40 can join.
+  value: 18 to 40
+  accept:
+  - 18-40
+  - 18 se 40
+  - between 18 and 40
+  - 18 to 40 years
+  question: What is the age limit to join NPS-Traders?
+  question_hi: एनपीएस-ट्रेडर्स योजना में किस उम्र में जुड़ सकते हैं?
+  question_hi_latn: NPS Traders yojana me kis umar me jud sakte hain?
+  source: 1
+  status: verified
+- key: turnover_limit
+  statement: The business's annual turnover must not be more than Rs 1.5 crore.
+  value: Rs 1.5 crore
+  accept:
+  - 1.5 crore
+  - 150 lakh
+  - '15000000'
+  - 1,50,00,000
+  - ₹1.5 crore
+  - dedh crore
+  question: What is the maximum yearly turnover allowed for the NPS for Traders scheme?
+  question_hi: एनपीएस-ट्रेडर्स योजना के लिए दुकान का सालाना टर्नओवर कितना तक होना चाहिए?
+  question_hi_latn: NPS Traders yojana ke liye dukaan ka saalana turnover kitna tak hona chahiye?
+  source: 1
+  status: verified
+- key: monthly_contribution
+  statement: The trader pays Rs 55 to Rs 200 a month depending on joining age, and the government adds the same amount.
+  value: Rs 55 to Rs 200
+  accept:
+  - 55 to 200
+  - Rs 55 - Rs 200
+  - 55-200
+  - ₹55 to ₹200
+  question: How much do I have to pay every month in NPS-Traders?
+  question_hi: एनपीएस-ट्रेडर्स योजना में हर महीने कितना पैसा जमा करना होता है?
+  question_hi_latn: NPS Traders yojana me har mahine kitna paisa jama karna hota hai?
+  source: 3
+  status: verified
+- key: family_pension
+  statement: After the pensioner's death, the spouse gets 50% of the pension.
+  value: 50%
+  accept:
+  - 50 percent
+  - half
+  - aadha
+  - 50 per cent
+  question: How much pension does the spouse get under NPS-Traders after the trader dies?
+  question_hi: एनपीएस-ट्रेडर्स में व्यापारी की मृत्यु के बाद पति या पत्नी को कितनी पेंशन मिलती है?
+  question_hi_latn: NPS Traders me vyapari ki maut ke baad pati ya patni ko kitni pension milti hai?
+  source: 2
+  status: verified
+situations:
+- language: en
+  question: I am 35 and run a small grocery shop with yearly sales of about Rs 20 lakh. I don't pay income tax and have no PF. Which government pension scheme is meant for shopkeepers like me?
+- language: hi
+  question: मैं 32 साल का छोटा दुकानदार हूँ, दुकान का साल का टर्नओवर करीब 30 लाख है और मैं आयकर नहीं भरता। दुकानदारों और व्यापारियों के लिए सरकार की कौन सी पेंशन योजना है?
+sources:
+- title: NPS-Traders (scheme page)
+  url: https://maandhan.in/show_content.php?lang=1&level=1&ls_id=29&lid=29&page=6
+  publisher: Maandhan portal, Ministry of Labour & Employment, Government of India
+  accessed: '2026-10-03'
+- title: FAQs of NPS-Traders
+  url: https://maandhan.in/show_content.php?lang=1&level=1&ls_id=78&lid=64&page=74
+  publisher: Maandhan portal, Ministry of Labour & Employment, Government of India
+  accessed: '2026-10-03'
+- title: Contribution Chart
+  url: https://maandhan.in/show_content.php?lang=1&level=1&ls_id=138&lid=115&page=6
+  publisher: Maandhan portal, Ministry of Labour & Employment, Government of India
+  accessed: '2026-10-03'
+- title: Maandhan portal (Hindi)
+  url: https://maandhan.in/show_content.php?lang=2&level=1&ls_id=29&lid=29&page=6
+  publisher: Maandhan portal, Ministry of Labour & Employment, Government of India
+  accessed: '2026-10-03'
+- title: Schemes and Services
+  url: https://www.labour.gov.in/offerings
+  publisher: Ministry of Labour & Employment, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Uncertain whether new enrolments are still actively taken. The official Maandhan portal (footer updated 14/08/2026) still describes the scheme and its enrolment, exit and FAQ pages. However, the Ministry of Labour''s redesigned ''Schemes and Services'' list (checked 2026-10-03) shows PM-SYM but not NPS-Traders, and the old labour.gov.in/nps-traders page no longer shows any content. Before relying on it, check at a CSC or on helpline 14434. This scheme is different from the PFRDA-run National Pension System (NPS); its pension is managed and paid by LIC. The turnover limit (Rs 1.5 crore) is a limit on business turnover, not income, so it is not stored as an income rule. The portal FAQ gives the notification as S.O. 2615(E) dated 22.02.2019, which may be a typo; the date was not checked. The alias ''Pradhan Mantri Laghu Vyapari Maan-dhan'' was the name proposed for the scheme before launch.'
+  - Whether the scheme is still open to new applicants was not clear.
+  - 'Checker: Status unclear, and this matters most for this scheme. The Maandhan portal (footer last updated 14/08/2026) still lists NPS-Traders in its Schemes menu and has its scheme page and FAQ. But the Ministry of Labour''s current ''Schemes and Services'' page (labour.gov.in/offerings, checked 2026-10-03) lists PM Shram Yogi Maan-dhan and not NPS-Traders, and the Ministry''s schemes archive does not list it either. I found no official notice saying the scheme was closed or merged. The chatbot should tell users to confirm at a CSC or on 14434 before relying on it.'
+  - 'Checker: Notification date: the FAQ says the scheme was notified by S.O. 2615(E) dated 22.02.2019. That is earlier than the scheme''s 2019 launch, so it may be a typo. I did not check the Gazette, and the record should not state the date as fact.'
+  - 'Checker: The alias ''Pradhan Mantri Laghu Vyapari Maan-dhan Yojana'' / ''PM-LVM'' does not appear on any official page I opened. The status_note says it was the pre-launch name, and I could not check that.'
+  - 'Checker: Exclusions vary between official pages. The FAQ lists income tax payers, members of government-funded NPS, ESIC, EPFO, and PM-SYM members. The scheme page adds PM-KMY. The record''s list is the union of both, which is fine, but the source for PM-KMY is the scheme page, not the FAQ.'
+  - 'Checker: The ''Documents'' list (Aadhaar, bank account with IFSC, self-declaration) is a fair reading of the scheme page and FAQ. No official NPS-Traders page I opened gives a separate documents list.'

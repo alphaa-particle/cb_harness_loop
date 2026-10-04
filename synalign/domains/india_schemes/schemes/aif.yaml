@@ -1,0 +1,160 @@
+id: aif
+name: Agriculture Infrastructure Fund
+short_name: AIF
+names_hi:
+- कृषि अवसंरचना कोष
+aliases:
+- Agri Infra Fund
+- Agri Infrastructure Fund
+- krishi avsanrachna kosh
+- AIF loan scheme
+- agriculture infrastructure fund yojana
+level: central
+state: ''
+ministry: Department of Agriculture and Farmers Welfare, Ministry of Agriculture and Farmers Welfare
+category: agriculture
+summary: A financing facility that gives 3% yearly interest subvention for up to 7 years and a government-paid credit guarantee on bank loans of up to Rs 2 crore per project. It is open to farmers, FPOs, PACS, SHGs, agri-entrepreneurs, start-ups and others building post-harvest and community farming infrastructure such as warehouses and cold storage.
+sections:
+  eligibility:
+  - Individual farmers, agri-entrepreneurs and start-ups can apply.
+  - Farmer Producer Organisations (FPOs) and their federations, Self Help Groups and their federations, and Joint Liability Groups can apply.
+  - Primary Agricultural Credit Societies (PACS), marketing and multipurpose cooperative societies, and national and state federations of cooperatives can apply.
+  - APMCs, State agencies, and PPP projects sponsored by Central, State or local bodies can apply.
+  - The loan must be for an eligible post-harvest management project or community farming asset, such as warehouses, cold storage, sorting and grading units, primary processing, or smart and precision farming infrastructure.
+  - The applicant must put in at least 10% of the fixed project cost as own contribution (margin).
+  - A private applicant can get benefits for up to 25 projects, each in a different village or town with its own LGD code.
+  exclusions:
+  - Standalone secondary processing units are not eligible.
+  - Tractors and non-refrigerated transport vehicles cannot be financed for individual farmers.
+  - Projects for alcoholic beverages, textile weaving, cosmetic products, bamboo furniture or textiles, and protein powder supplements are listed as ineligible.
+  - The interest subvention does not apply to the part of a loan above Rs 2 crore per project.
+  benefits:
+  - Interest subvention of 3% a year on loans up to Rs 2 crore per project in one location.
+  - The interest subvention is given for up to 7 years.
+  - On the subvented loan amount, the lender's interest rate is capped at 9%.
+  - Credit guarantee cover under CGTMSE for loans up to Rs 2 crore without collateral, with the guarantee fee paid by the Government for up to 7 years.
+  - Repayment period of up to 7 years, including a moratorium of 6 months to 2 years.
+  - Can be combined with subsidies from other Central and State schemes (such as PMKSY, PMFME and PM-KUSUM) for eligible projects.
+  how_to_apply:
+  - Register on the AIF portal agriinfra.dac.gov.in using your mobile number and an Aadhaar-based OTP.
+  - Fill the online application, choose the bank or lending institution, and upload a Detailed Project Report (DPR); DPR templates are on the portal in English and Hindi.
+  - The Central PMU checks the application and sends it to the chosen lender, which appraises and sanctions the loan, normally within 60 days.
+  documents:
+  - Bank's loan application form or request letter for an AIF loan, with passport-size photographs.
+  - Identity proof such as Voter ID, PAN, Aadhaar or driving licence, and address proof.
+  - Land ownership or lease documents for the project site.
+  - Detailed Project Report with required permissions, layout plans and building sanctions.
+  - Bank statements, repayment record of existing loans and, if available, income tax returns and balance sheets for the past three years.
+  - For firms and organisations, registration proof (such as DIC or Udyam registration, firm or company registration) and GST certificate.
+rules:
+  gender: any
+facts:
+- key: interest_subvention_rate
+  statement: AIF loans get interest subvention of 3% a year.
+  value: 3%
+  accept:
+  - '3'
+  - 3 percent
+  - 3 per cent
+  - teen pratishat
+  question: How much interest subvention do I get on a loan under the Agriculture Infrastructure Fund?
+  question_hi: कृषि अवसंरचना कोष (एग्रीकल्चर इंफ्रास्ट्रक्चर फंड) के लोन पर ब्याज में कितनी छूट मिलती है?
+  question_hi_latn: Agriculture Infrastructure Fund ke loan par byaj me kitni chhoot milti hai?
+  source: 2
+  status: verified
+- key: subvention_loan_limit
+  statement: The interest subvention and credit guarantee apply to loans up to Rs 2 crore per project.
+  value: Rs 2 crore
+  accept:
+  - 2 crore
+  - 200 lakh
+  - '20000000'
+  - do crore
+  - 2 करोड़
+  question: Up to what loan amount is the Agriculture Infrastructure Fund interest subvention given?
+  question_hi: कृषि अवसंरचना कोष में ब्याज छूट कितने रुपये तक के लोन पर मिलती है?
+  question_hi_latn: Agri Infra Fund me byaj chhoot kitne rupaye tak ke loan par milti hai?
+  source: 2
+  status: verified
+- key: subvention_period
+  statement: The interest subvention is given for up to 7 years.
+  value: 7 years
+  accept:
+  - '7'
+  - seven years
+  - saat saal
+  question: For how many years is interest subvention given under the Agriculture Infrastructure Fund?
+  question_hi: कृषि अवसंरचना कोष में ब्याज छूट कितने साल तक मिलती है?
+  question_hi_latn: Agriculture Infrastructure Fund me byaj chhoot kitne saal tak milti hai?
+  source: 2
+  status: verified
+- key: own_contribution
+  statement: The borrower must put in at least 10% of the fixed project cost.
+  value: 10%
+  accept:
+  - '10'
+  - 10 percent
+  - 10 per cent
+  - das pratishat
+  question: How much of the project cost must I put in myself for an Agriculture Infrastructure Fund loan?
+  question_hi: कृषि अवसंरचना कोष के लोन में मुझे खुद प्रोजेक्ट लागत का कितना हिस्सा लगाना होगा?
+  question_hi_latn: AIF loan me mujhe khud project cost ka kitna hissa lagana hoga?
+  source: 4
+  status: verified
+- key: max_projects
+  statement: A private applicant can get benefits for up to 25 projects in different locations.
+  value: '25'
+  accept:
+  - twenty five
+  - pachchis
+  question: How many projects can one applicant set up under the Agriculture Infrastructure Fund?
+  question_hi: कृषि अवसंरचना कोष में एक आवेदक कितने प्रोजेक्ट ले सकता है?
+  question_hi_latn: Agri Infra Fund me ek aavedak kitne project le sakta hai?
+  source: 4
+  status: verified
+situations:
+- language: en
+  question: Our farmer group wants to build a warehouse and cold storage in our village. Is there a government-backed bank loan with interest relief for this?
+- language: hi_latn
+  question: Main kisan hoon aur apne gaon me fal-sabzi ki grading aur packing unit lagana chahta hoon, kya koi sarkari loan hai jisme byaj kam lage?
+sources:
+- title: Agriculture Infrastructure Fund - Scheme Overview
+  url: https://agriinfra.dac.gov.in/Home/SchemeOverview
+  publisher: Department of Agriculture and Farmers Welfare, Government of India
+  accessed: '2026-10-03'
+- title: Agriculture Infrastructure Fund - Key Features
+  url: https://agriinfra.dac.gov.in/Home/MainFeatures
+  publisher: Department of Agriculture and Farmers Welfare, Government of India
+  accessed: '2026-10-03'
+- title: Agriculture Infrastructure Fund - Who Can Apply
+  url: https://agriinfra.dac.gov.in/Home/WhoCanApply
+  publisher: Department of Agriculture and Farmers Welfare, Government of India
+  accessed: '2026-10-03'
+- title: Agriculture Infrastructure Fund - FAQs
+  url: https://agriinfra.dac.gov.in/Home/FAQs
+  publisher: Department of Agriculture and Farmers Welfare, Government of India
+  accessed: '2026-10-03'
+- title: Agriculture Infrastructure Fund - Eligible Projects
+  url: https://agriinfra.dac.gov.in/Home/EligibleProjects
+  publisher: Department of Agriculture and Farmers Welfare, Government of India
+  accessed: '2026-10-03'
+- title: Agriculture Infrastructure Fund - Document Checklist
+  url: https://agriinfra.dac.gov.in/Home/CheckList
+  publisher: Department of Agriculture and Farmers Welfare, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The AIF portal says the scheme runs from 2020-21 to 2032-33, with loans to be disbursed within six years from 2020-21 (that is, up to 2025-26), and a fund size of Rs 1 lakh crore. Search results from February 2026 pointed to a Prime Minister''s announcement doubling the loan target to Rs 2 lakh crore, possibly with a changed timeline, but I could not open that official page (pmindia.gov.in returned 403), so it is not confirmed here. Check agriinfra.dac.gov.in or a bank for whether new loans are still being sanctioned in 2026-27. The 25-project limit does not apply to State agencies, cooperative federations or FPO federations. The 9% lending-rate cap is taken from the portal FAQ; several cooperative banks list lower rates. Loans can be larger than Rs 2 crore, but only the first Rs 2 crore gets the subvention.'
+  - Whether the scheme is still open to new applicants was not clear.
+  - 'Checker: The status note misses the most important current fact. A DA&FW Office Memorandum dated 30 Sep 2026 (AIF portal circulars, ''AIF Temporary Extension letter_30.09.2026'') extends AIF to 31.03.2027 or 16th FC approval, whichever is earlier. It also says no fresh approval or sanction is permitted from the 15th FC outlay and that only committed liabilities may be paid. New loan sanctions may therefore be paused from 1 Oct 2026, so still_open is unclear. The chatbot should not tell users new AIF loans are available without checking with the portal or a bank.'
+  - 'Checker: Before this, sanctions were active in mid-2026. The NLMC minutes of 9 Jul 2026 describe a campaign from 19 Jun to 20 Jul 2026 to sanction loans, with more than two lakh projects sanctioned.'
+  - 'Checker: The status note mentions an unverified ''Rs 2 lakh crore'' announcement. Remove it or mark it clearly as unconfirmed.'
+  - 'Checker: The 25-project exemption in the status note is narrower than the September 2024 guidelines, which also exempt cooperatives, FPOs and SHGs.'
+  - 'Checker: Credit guarantee details are incomplete: FPOs can use NABSanrakshan, and PACS warehouse loans have had 2+8 year cover since 24.09.2025. ''Without collateral'' was not seen on an official page.'
+  - 'Checker: The 9% cap comes only from the FAQ. The guidelines leave the cap to lender agreements.'
+  - 'Checker: The Aadhaar-OTP registration step in how_to_apply was not checked.'
+  - 'Checker: The sources are official, but most items cite the AIF portal FAQ. The guidelines PDF is the stronger source.'
+  - 'Statement not confirmed: Prime Minister''s announcement doubling the loan target to Rs 2 lakh crore (No such figure appears in the AIF circulars I checked, the PIB releases I opened (PRID 2222807, 2227847) or the NLMC minutes of 9 Jul 2026. Leave it out of the record.)'

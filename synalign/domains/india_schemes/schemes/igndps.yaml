@@ -1,0 +1,133 @@
+id: igndps
+name: Indira Gandhi National Disability Pension Scheme
+short_name: IGNDPS
+names_hi:
+- इंदिरा गांधी राष्ट्रीय अपंगता पेंशन योजना
+- myScheme Hindi uses इंदिरा गांधी राष्ट्रीय विकलांग पेंशन योजना
+aliases:
+- viklang pension yojana
+- divyang pension yojana
+- NSAP disability pension
+- Indira Gandhi viklang pension
+- National Disability Pension Scheme
+level: central
+state: ''
+ministry: Ministry of Rural Development, Department of Rural Development (National Social Assistance Programme, NSAP)
+category: pension
+summary: 'A monthly central pension for people aged 18 or above with severe (80% or more) or multiple disabilities from below-poverty-line (BPL) households: Rs 300 a month up to age 79 and Rs 500 a month from age 80. Many states add their own amount on top.'
+sections:
+  eligibility:
+  - Aged 18 years or above.
+  - Has a severe disability of 80% or more, or multiple disabilities (two or more disabilities together).
+  - Persons with dwarfism are also eligible.
+  - Must belong to a household below the poverty line (BPL).
+  - If the name is missing from the BPL list but the person is otherwise deserving, officials are told not to leave them out and to check and establish eligibility.
+  exclusions:
+  - People from households that are not BPL are not covered by the central scheme.
+  - A certified disability below 80% does not meet the central scheme's severity level, unless the person has multiple disabilities; some states run their own disability pensions with different rules.
+  - The pension can be stopped after the yearly verification if the household is no longer BPL or the person has moved away; it can be restored on appeal if they become eligible again.
+  benefits:
+  - Central pension of Rs 300 a month from age 18 to 79.
+  - Central pension of Rs 500 a month from age 80 onwards.
+  - States are urged to add at least an equal amount from their own funds, so the total pension differs from state to state.
+  - Paid preferably every month into a bank or post office account; no one should be denied the pension only because they have no bank account or Aadhaar number.
+  how_to_apply:
+  - Fill the NSAP application form and submit it at your Gram Panchayat (in villages) or Municipality or ward office (in towns).
+  - States are told to hold disability camps, with free transport, where disability certificates are issued on the spot.
+  - The application is verified, discussed in the Gram Sabha or Ward Sabha, and approved by the Block or Municipality level Sanctioning Authority; the whole process should not take more than 60 days.
+  - If the application is rejected, a first appeal can be made to the Appellate Authority and a second appeal to the Reviewing Authority named by the state.
+  documents:
+  - Disability certificate showing the type and level of disability.
+  - 'Proof of age: birth certificate or school certificate; if not available, ration card or voter ID (EPIC); if none of these, an age certificate from a government hospital medical officer.'
+  - BPL details of the household (BPL family ID number).
+  - Aadhaar number, voter ID number and ration card number, if available.
+  - Bank or post office account details (if available) and a photograph.
+rules:
+  age_min: 18
+  gender: any
+facts:
+- key: min_age
+  statement: A person with a severe or multiple disability can get this pension from age 18.
+  value: '18'
+  accept:
+  - 18 years
+  - 18 saal
+  - eighteen
+  question: From what age can someone get the Indira Gandhi National Disability Pension?
+  question_hi: इंदिरा गांधी राष्ट्रीय विकलांगता पेंशन योजना (IGNDPS) में कितनी उम्र से पेंशन मिलती है?
+  question_hi_latn: Indira Gandhi viklang pension yojana (IGNDPS) me kitni umar se pension milti hai?
+  source: 2
+  status: verified
+- key: min_disability_level
+  statement: The disability must be severe, at 80% or more, or the person must have multiple disabilities.
+  value: 80%
+  accept:
+  - '80'
+  - 80 percent
+  - 80 pratishat
+  - 80 प्रतिशत
+  question: How much disability is needed for the Indira Gandhi National Disability Pension?
+  question_hi: इंदिरा गांधी राष्ट्रीय विकलांगता पेंशन योजना (IGNDPS) के लिए कितने प्रतिशत विकलांगता जरूरी है?
+  question_hi_latn: Indira Gandhi viklang pension yojana (IGNDPS) ke liye kitne pratishat viklangta zaroori hai?
+  source: 2
+  status: verified
+- key: monthly_pension_18_to_79
+  statement: The central pension is Rs 300 a month for beneficiaries aged 18 to 79.
+  value: Rs 300
+  accept:
+  - '300'
+  - ₹300
+  - 300 rupees
+  - 300 rupaye
+  question: How much monthly pension does the central government give under the Indira Gandhi National Disability Pension Scheme?
+  question_hi: इंदिरा गांधी राष्ट्रीय विकलांगता पेंशन योजना (IGNDPS) में केंद्र सरकार हर महीने कितनी पेंशन देती है?
+  question_hi_latn: Indira Gandhi viklang pension yojana (IGNDPS) me kendra sarkar har mahine kitni pension deti hai?
+  source: 1
+  status: verified
+- key: monthly_pension_80_plus
+  statement: From age 80 the central disability pension is Rs 500 a month.
+  value: Rs 500
+  accept:
+  - '500'
+  - ₹500
+  - 500 rupees
+  - 500 rupaye
+  question: How much is the Indira Gandhi National Disability Pension after age 80?
+  question_hi: इंदिरा गांधी राष्ट्रीय विकलांगता पेंशन योजना (IGNDPS) में 80 साल के बाद कितनी पेंशन मिलती है?
+  question_hi_latn: Indira Gandhi viklang pension yojana (IGNDPS) me 80 saal ke baad kitni pension milti hai?
+  source: 1
+  status: verified
+situations:
+- question: My son is 25 and has a 90% disability certificate. We are a BPL family. Can he get a monthly pension from the government?
+  language: en
+- question: Mera bhai 30 saal ka hai, uski viklangta 80 pratishat hai aur hum BPL parivar hain. Kya use sarkar se har mahine pension mil sakti hai?
+  language: hi_latn
+sources:
+- title: National Social Assistance Programme - About Us
+  url: https://nsap.dord.gov.in/circular.do?method=aboutus
+  publisher: Ministry of Rural Development, Government of India (NSAP portal)
+  accessed: '2026-10-03'
+- title: National Social Assistance Programme - Programme Guidelines (October 2014)
+  url: https://nsap.dord.gov.in/Guidelines/nsap_guidelines_oct2014.pdf
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+- title: National Social Assistance Programme portal - Home and FAQ
+  url: https://nsap.dord.gov.in/
+  publisher: Ministry of Rural Development, Government of India (NSAP portal)
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Current rules taken from the NSAP About Us page and the October 2014 guidelines: age 18 and above, severe (80% or more) or multiple disabilities, Rs 300 a month (18-79) and Rs 500 a month (80+). Conflicting older figures still appear on the same official portal: the home page and FAQ say ages 18-59, and the FAQ shows an older central rate of Rs 200 a month; the scheme started in 2009 for ages 18-64. Treat these as outdated. The 2014 guidelines define severe and multiple disability using the older Persons with Disabilities Act 1995 and National Trust Act 1999; certificates are now issued under the Rights of Persons with Disabilities Act 2016, and states may apply the definitions differently. The amounts shown are only the central share; most states add a top-up or run their own disability pension with different rules and lower thresholds. The scheme is open and run by state governments; central funding is capped by each state''s estimated BPL numbers. No official Hindi name was
+    found on the pages used; Hindi questions use a descriptive name plus the abbreviation IGNDPS.'
+  - 'Checker: names_hi is empty, but the Ministry''s Hindi office memo (30.06.2011) calls the scheme इंदिरा गांधी राष्ट्रीय अपंगता पेंशन योजना, and myScheme Hindi uses इंदिरा गांधी राष्ट्रीय विकलांग पेंशन योजना. The Hindi questions use a third, unofficial form (विकलांगता). The status note''s claim that no official Hindi name exists is wrong.'
+  - 'Checker: The ''multiple disabilities below 80% still qualify'' reading in exclusions is not stated plainly in any official source, and section 2.3 of the guidelines and myScheme stress 80%. Reword it as uncertain, or tell users to check with the state, so people with under 80% are not misled.'
+  - 'Checker: ''Persons with dwarfism are also eligible'' is confirmed (section 2.3 and myScheme), but the record should make clear they still need to be 18+ and BPL.'
+  - 'Checker: how_to_apply leaves out the online route through the UMANG app or web.umang.gov.in (NSAP, Apply Online) that myScheme lists, and status tracking on the NSAP portal.'
+  - 'Checker: Documents: myScheme says the disability certificate (80% and more) is accepted from a Chief Medical Officer, Community Health Centre or Primary Health Centre. It also lists an Aadhaar card and passport-size photos. Worth adding.'
+  - 'Checker: The central funding cap per state (confirmed in an April 2026 MoRD letter on FY 2026-27 allocation) appears only in the status note.'
+  - 'Checker: No copied text found. Sources are official.'
+  - Official Hindi name added from https://nsap.dord.gov.in/Guidelines/hindi_igndps.pdf.
+  - 'Statement not confirmed: A certified disability below 80% does not meet the central scheme''s severity level, unless the person has multiple disabilities (This is the writer''s reading of the rules. Para 1.2.5 together with the About Us ''severe or multiple'' wording supports it. Section 2.3 says only that the level has to be 80%, and myScheme asks for a certificate of 80% and more. No official page says outright that multiple disabilities below 80% qualify.)'

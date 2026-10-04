@@ -1,0 +1,282 @@
+{
+  "label": "r5_name_rules_2",
+  "note": "Round 4's name matching, corrected after an independent code review: the slot given up is the least useful one (another scheme's section, then an overview), never the rules of a named or top-ranked scheme; everyday phrases (word pairs used in 2+ other schemes' text) and short forms used elsewhere are handled; joining words (for, scheme, yojana) no longer block a name; aliases are read like titles; a Hindi full stop no longer sticks to a name; a named scheme without rules brings its best section; several missing schemes come in the order the question names them.",
+  "change": {
+    "name_rules": 2
+  },
+  "before": {
+    "method": "fusion",
+    "top_k": 3,
+    "min_score": 0.5,
+    "fusion_weights": {
+      "bm25": 0.25,
+      "char": 0.25,
+      "dense": 1.0
+    },
+    "rrf_k": 20,
+    "fusion_depth": 50,
+    "add_named_schemes": true
+  },
+  "verdict": "UNDO",
+  "problems": [
+    "A5 54 schemes: scheme in prompt [470, 469]",
+    "(weak) A1 54 schemes: net gain 0",
+    "A5 background scale: scheme in prompt [449, 446]",
+    "(weak) A1 background scale: net gain 0",
+    "(weak) A6 background scale: interval reaches -0.63 points"
+  ],
+  "sizes": {
+    "54 schemes": {
+      "answerable": 482,
+      "in_prompt": [
+        435,
+        435
+      ],
+      "fixed": [],
+      "broken": [],
+      "gain_points": 0.0,
+      "ci95_points": [
+        0.0,
+        0.0
+      ],
+      "slices": {
+        "questions:language=en": [
+          148,
+          148
+        ],
+        "questions:language=hi": [
+          81,
+          81
+        ],
+        "questions:language=hi_latn": [
+          53,
+          53
+        ],
+        "questions:type=eligibility": [
+          52,
+          52
+        ],
+        "questions:type=fact": [
+          149,
+          149
+        ],
+        "questions:type=situation": [
+          29,
+          29
+        ],
+        "questions:type=typo": [
+          52,
+          52
+        ],
+        "usecases:language=en": [
+          153,
+          153
+        ],
+        "usecases:type=apply": [
+          33,
+          33
+        ],
+        "usecases:type=apply_eligibility": [
+          16,
+          16
+        ],
+        "usecases:type=benefits": [
+          23,
+          23
+        ],
+        "usecases:type=category": [
+          8,
+          8
+        ],
+        "usecases:type=compare": [
+          10,
+          10
+        ],
+        "usecases:type=documents": [
+          27,
+          27
+        ],
+        "usecases:type=exclusions": [
+          36,
+          36
+        ]
+      },
+      "scheme_in_prompt": [
+        470,
+        469
+      ],
+      "answerable_refused": [
+        1,
+        1
+      ],
+      "not_found_refused": [
+        9,
+        9,
+        12
+      ],
+      "budgets": {
+        "3": [
+          435,
+          435
+        ],
+        "2": [
+          356,
+          356
+        ],
+        "5": [
+          466,
+          466
+        ]
+      },
+      "wordings": {
+        "questions": 206,
+        "scheme_lost": 0,
+        "newly_refused": 0,
+        "scheme_in_prompt": [
+          206,
+          206
+        ]
+      },
+      "ms_per_question": [
+        0.31,
+        0.31
+      ],
+      "guards_failed": [
+        "A5 54 schemes: scheme in prompt [470, 469]"
+      ],
+      "gain_not_shown": [
+        "A1 54 schemes: net gain 0"
+      ]
+    },
+    "background scale": {
+      "answerable": 482,
+      "in_prompt": [
+        410,
+        410
+      ],
+      "fixed": [
+        "usecases:compare__nmmss__pm_vidyalaxmi_2"
+      ],
+      "broken": [
+        "usecases:compare__day_nrlm__pm_svanidhi_1"
+      ],
+      "gain_points": 0.0,
+      "ci95_points": [
+        -0.63,
+        0.69
+      ],
+      "slices": {
+        "questions:language=en": [
+          136,
+          136
+        ],
+        "questions:language=hi": [
+          81,
+          81
+        ],
+        "questions:language=hi_latn": [
+          50,
+          50
+        ],
+        "questions:type=eligibility": [
+          52,
+          52
+        ],
+        "questions:type=fact": [
+          148,
+          148
+        ],
+        "questions:type=situation": [
+          16,
+          16
+        ],
+        "questions:type=typo": [
+          51,
+          51
+        ],
+        "usecases:language=en": [
+          143,
+          143
+        ],
+        "usecases:type=apply": [
+          33,
+          33
+        ],
+        "usecases:type=apply_eligibility": [
+          15,
+          15
+        ],
+        "usecases:type=benefits": [
+          18,
+          18
+        ],
+        "usecases:type=category": [
+          2,
+          2
+        ],
+        "usecases:type=compare": [
+          9,
+          9
+        ],
+        "usecases:type=documents": [
+          30,
+          30
+        ],
+        "usecases:type=exclusions": [
+          36,
+          36
+        ]
+      },
+      "scheme_in_prompt": [
+        449,
+        446
+      ],
+      "answerable_refused": [
+        0,
+        0
+      ],
+      "not_found_refused": [
+        5,
+        5,
+        12
+      ],
+      "budgets": {
+        "3": [
+          410,
+          410
+        ],
+        "2": [
+          335,
+          336
+        ],
+        "5": [
+          444,
+          444
+        ]
+      },
+      "wordings": {
+        "questions": 206,
+        "scheme_lost": 0,
+        "newly_refused": 0,
+        "scheme_in_prompt": [
+          206,
+          206
+        ]
+      },
+      "ms_per_question": [
+        3.48,
+        3.48
+      ],
+      "guards_failed": [
+        "A5 background scale: scheme in prompt [449, 446]"
+      ],
+      "gain_not_shown": [
+        "A1 background scale: net gain 0",
+        "A6 background scale: interval reaches -0.63 points"
+      ]
+    }
+  },
+  "answer_check": "not run (search check UNDO: A5)",
+  "superseded_by": "r5b_name_rules_2",
+  "outcome": "undone; its everyday-phrase test rejected real names"
+}

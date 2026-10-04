@@ -1,0 +1,158 @@
+764 test questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search char_tfidf           hit@1 0.8347  in-prompt 0.725  abstain 0.0  (0.4 ms/q)
+search bm25                 hit@1 0.7972  in-prompt 0.7  abstain 0.0909  (0.1 ms/q)
+search dense                hit@1 0.9569  in-prompt 0.9278  abstain 0.5455  (40.9 ms/q)
+search fusion               hit@1 0.9583  in-prompt 0.9056  abstain 0.5455  (52.6 ms/q)
+search fusion_no_glossary   hit@1 0.9486  in-prompt 0.9028  abstain 0.5455  (44.9 ms/q)
+  closed_book: 50/764
+  closed_book: 100/764
+  closed_book: 150/764
+  closed_book: 200/764
+  closed_book: 250/764
+  closed_book: 300/764
+  closed_book: 350/764
+  closed_book: 400/764
+  closed_book: 450/764
+  closed_book: 500/764
+  closed_book: 550/764
+  closed_book: 600/764
+  closed_book: 650/764
+  closed_book: 700/764
+  closed_book: 750/764
+answers closed_book  correct 0.1715  (1.194 s/answer)
+  rules_only: 50/764
+  rules_only: 100/764
+  rules_only: 150/764
+  rules_only: 200/764
+  rules_only: 250/764
+  rules_only: 300/764
+  rules_only: 350/764
+  rules_only: 400/764
+  rules_only: 450/764
+  rules_only: 500/764
+  rules_only: 550/764
+  rules_only: 600/764
+  rules_only: 650/764
+  rules_only: 700/764
+  rules_only: 750/764
+answers rules_only   correct 0.7369  (0.031 s/answer)
+  old_search: 50/764
+  old_search: 100/764
+  old_search: 150/764
+  old_search: 200/764
+  old_search: 250/764
+  old_search: 300/764
+  old_search: 350/764
+  old_search: 400/764
+  old_search: 450/764
+  old_search: 500/764
+  old_search: 550/764
+  old_search: 600/764
+  old_search: 650/764
+  old_search: 700/764
+  old_search: 750/764
+answers old_search   correct 0.6165  (1.721 s/answer)
+  meaning: 50/764
+  meaning: 100/764
+  meaning: 150/764
+  meaning: 200/764
+  meaning: 250/764
+  meaning: 300/764
+  meaning: 350/764
+  meaning: 400/764
+  meaning: 450/764
+  meaning: 500/764
+  meaning: 550/764
+  meaning: 600/764
+  meaning: 650/764
+  meaning: 700/764
+  meaning: 750/764
+answers meaning      correct 0.7788  (2.385 s/answer)
+  fusion: 50/764
+  fusion: 100/764
+  fusion: 150/764
+  fusion: 200/764
+  fusion: 250/764
+  fusion: 300/764
+  fusion: 350/764
+  fusion: 400/764
+  fusion: 450/764
+  fusion: 500/764
+  fusion: 550/764
+  fusion: 600/764
+  fusion: 650/764
+  fusion: 700/764
+  fusion: 750/764
+answers fusion       correct 0.7644  (1.332 s/answer)
+  oracle: 50/764
+  oracle: 100/764
+  oracle: 150/764
+  oracle: 200/764
+  oracle: 250/764
+  oracle: 300/764
+  oracle: 350/764
+  oracle: 400/764
+  oracle: 450/764
+  oracle: 500/764
+  oracle: 550/764
+  oracle: 600/764
+  oracle: 650/764
+  oracle: 700/764
+answers oracle       correct 0.8153  (1.092 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/test_final/report.md
+764 test questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search char_tfidf           hit@1 0.7486  in-prompt 0.6264  abstain 0.0  (1.9 ms/q)
+search bm25                 hit@1 0.7458  in-prompt 0.6639  abstain 0.0455  (0.6 ms/q)
+search dense                hit@1 0.8389  in-prompt 0.8514  abstain 0.2273  (43.5 ms/q)
+search fusion               hit@1 0.9042  in-prompt 0.8736  abstain 0.2273  (48.2 ms/q)
+search fusion_no_glossary   hit@1 0.9028  in-prompt 0.875  abstain 0.2273  (43.5 ms/q)
+  old_search: 50/764
+  old_search: 100/764
+  old_search: 150/764
+  old_search: 200/764
+  old_search: 250/764
+  old_search: 300/764
+  old_search: 350/764
+  old_search: 400/764
+  old_search: 450/764
+  old_search: 500/764
+  old_search: 550/764
+  old_search: 600/764
+  old_search: 650/764
+  old_search: 700/764
+  old_search: 750/764
+answers old_search   correct 0.5445  (1.22 s/answer)
+  meaning: 50/764
+  meaning: 100/764
+  meaning: 150/764
+  meaning: 200/764
+  meaning: 250/764
+  meaning: 300/764
+  meaning: 350/764
+  meaning: 400/764
+  meaning: 450/764
+  meaning: 500/764
+  meaning: 550/764
+  meaning: 600/764
+  meaning: 650/764
+  meaning: 700/764
+  meaning: 750/764
+answers meaning      correct 0.6898  (1.363 s/answer)
+  fusion: 50/764
+  fusion: 100/764
+  fusion: 150/764
+  fusion: 200/764
+  fusion: 250/764
+  fusion: 300/764
+  fusion: 350/764
+  fusion: 400/764
+  fusion: 450/764
+  fusion: 500/764
+  fusion: 550/764
+  fusion: 600/764
+  fusion: 650/764
+  fusion: 700/764
+  fusion: 750/764
+answers fusion       correct 0.7094  (1.239 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/test_scale/report.md
+ALL_TEST_RUNS_DONE

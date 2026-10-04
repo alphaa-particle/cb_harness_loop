@@ -1,0 +1,144 @@
+id: ssy
+name: Sukanya Samriddhi Account Scheme
+short_name: SSY
+names_hi:
+- सुकन्या समृद्धि खाता
+aliases:
+- Sukanya Samriddhi Yojana
+- Sukanya Samriddhi Account
+- SSA
+- sukanya yojana
+- sukanya samridhi khata
+- beti ka sukanya khata
+level: central
+state: ''
+ministry: Ministry of Finance, Department of Economic Affairs (National Savings Institute)
+category: women_child
+summary: A government small-savings account for a girl child, opened by her parent or guardian before she turns 10, at a post office or authorised bank. Yearly deposits from Rs 250 to Rs 1.5 lakh earn a government-set interest rate with tax benefits, and the account matures 21 years after opening.
+sections:
+  eligibility:
+  - The account is opened in the name of a girl child by her parent or guardian.
+  - The girl must be aged 9 or younger on the day the account is opened; it cannot be opened once she turns 10.
+  - Each girl can have only one account.
+  - A family can open accounts for at most 2 girls; more are allowed only when twins or triplets are born in the first or second birth, backed by an affidavit and birth certificates.
+  exclusions:
+  - A girl who has already turned 10 cannot get a new account.
+  - A girl who already has an account cannot open a second one.
+  - A third girl in the same family cannot get an account unless the extra girls are twins or triplets from the first or second birth.
+  benefits:
+  - You can deposit from Rs 250 up to Rs 1.5 lakh (Rs 1,50,000) in a financial year, in multiples of Rs 50; at least Rs 250 must be deposited each year.
+  - Deposits are made for 15 years from opening, and the account matures after 21 years.
+  - Interest is fixed by the government and changed from time to time; it was 8.2% a year from 1 January 2024 to 30 September 2026, added to the account once a year.
+  - Up to 50% of the balance (as at the end of the previous financial year) can be withdrawn for the girl's education once she turns 18 or passes Class 10, whichever is earlier.
+  - The account can be closed early for the girl's marriage after she turns 18, and on serious compassionate grounds (such as a life-threatening illness or the guardian's death) after 5 years.
+  - Deposits get income tax deduction under Section 80C and the interest earned is tax free.
+  how_to_apply:
+  - Open the account at any post office or authorised bank branch by filling Form-1.
+  - The parent or guardian runs the account until the girl turns 18; after that she can operate it herself.
+  - If the minimum Rs 250 is missed in a year, the account can be revived within 15 years of opening by paying Rs 50 penalty for each missed year plus the missed minimum deposits.
+  - The account can be transferred to any post office or bank anywhere in India.
+  documents:
+  - Birth certificate of the girl child.
+  - Identity and address (KYC) documents of the parent or guardian.
+  - 'For a third account due to twins or triplets: an affidavit from the guardian with the children''s birth certificates.'
+rules:
+  age_max: 9
+  gender: female
+facts:
+- key: girl_age_limit
+  statement: The account can be opened only for a girl who has not yet turned 10.
+  value: '10'
+  accept:
+  - 10 years
+  - ten
+  - ten years
+  - before 10
+  question: Up to what age of my daughter can I open a Sukanya Samriddhi account?
+  question_hi: सुकन्या समृद्धि खाता बेटी की किस उम्र तक खुलवाया जा सकता है?
+  question_hi_latn: Sukanya Samriddhi khata beti ki kis umar tak khulwaya ja sakta hai?
+  source: 1
+  status: verified
+- key: min_yearly_deposit
+  statement: At least Rs 250 must be deposited in the account every financial year.
+  value: Rs 250
+  accept:
+  - '250'
+  - ₹250
+  - 250 rupees
+  - Rs. 250
+  question: What is the minimum amount I must deposit each year in Sukanya Samriddhi Yojana?
+  question_hi: सुकन्या समृद्धि खाते में साल में कम से कम कितना पैसा जमा करना होता है?
+  question_hi_latn: Sukanya Samriddhi khate me saal me kam se kam kitna paisa jama karna hota hai?
+  source: 2
+  status: verified
+- key: max_yearly_deposit
+  statement: No more than Rs 1.5 lakh can be deposited in the account in one financial year.
+  value: Rs 1.5 lakh
+  accept:
+  - '150000'
+  - 1,50,000
+  - 1.5 lakh
+  - Rs 1,50,000
+  - ₹1.5 lakh
+  - one lakh fifty thousand
+  question: What is the maximum I can deposit in a year in Sukanya Samriddhi Yojana?
+  question_hi: सुकन्या समृद्धि योजना में एक साल में ज़्यादा से ज़्यादा कितना पैसा जमा कर सकते हैं?
+  question_hi_latn: Sukanya Samriddhi yojana me ek saal me zyada se zyada kitna paisa jama kar sakte hain?
+  source: 2
+  status: verified
+- key: maturity_period
+  statement: The account matures 21 years after the date it was opened.
+  value: 21 years
+  accept:
+  - '21'
+  - twenty-one years
+  - 21 saal
+  question: After how many years does a Sukanya Samriddhi account mature?
+  question_hi: सुकन्या समृद्धि खाता कितने साल में मैच्योर होता है?
+  question_hi_latn: Sukanya Samriddhi khata kitne saal me mature hota hai?
+  source: 2
+  status: verified
+- key: deposit_period
+  statement: Deposits can be made for 15 years from the date the account is opened.
+  value: 15 years
+  accept:
+  - '15'
+  - fifteen years
+  - 15 saal
+  question: For how many years do I have to keep depositing in Sukanya Samriddhi Yojana?
+  question_hi: सुकन्या समृद्धि खाते में कितने साल तक पैसा जमा करना होता है?
+  question_hi_latn: Sukanya Samriddhi khate me kitne saal tak paisa jama karna padta hai?
+  source: 2
+  status: verified
+situations:
+- language: en
+  question: I have a 4-year-old daughter and want to put aside a small amount every year in a safe government savings account for her education and marriage. What account can I open for her at the post office?
+- language: hi
+  question: मेरी बेटी 2 साल की है, उसकी पढ़ाई और शादी के लिए हर साल थोड़ा पैसा बचाना चाहता हूँ, बेटी के नाम पर कौन सा सरकारी बचत खाता खुलवाऊँ?
+sources:
+- title: Sukanya Samriddhi Account Scheme (key features)
+  url: https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=89
+  publisher: National Savings Institute, Ministry of Finance (DEA), Government of India
+  accessed: '2026-10-03'
+- title: Sukanya Samriddhi Account Scheme, 2019 (G.S.R. 914(E) dated 12/12/2019, amended by G.S.R. 288(E) dated 05/05/2020)
+  url: https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=171
+  publisher: National Savings Institute, Ministry of Finance (DEA), Government of India
+  accessed: '2026-10-03'
+- title: Sukanya Samriddhi Account Scheme - Interest Rate Since Inception
+  url: https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=179
+  publisher: National Savings Institute, Ministry of Finance (DEA), Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Open for new accounts. The age rule (aged 9 or younger, i.e. under 10) applies to the girl child, not to the parent or guardian who opens the account. The interest rate is revised by the government every quarter: the NSI table shows 8.2% for 01.01.2024 to 30.09.2026, and the rate for October-December 2026 was not yet shown when the page was checked on 2026-10-03. The rules on the NSI site are the 2019 scheme as amended in May 2020; any later amendments (for example on who may act as guardian, or residency rules from the Government Savings Promotion General Rules, 2018) were not checked. The India Post and myScheme pages for this scheme would not load, so all facts come from the National Savings Institute (Ministry of Finance) pages.'
+  - 'Checker: Missing key condition: India Post''s SSA eligibility section says the account holder must be a resident citizen of India. The SSA Rules 2016 definition (NSI Id_Pk=177) requires the girl to be a resident Indian citizen at opening and until maturity or closure. India Post also says NRIs are not eligible for small savings accounts. The record never mentions residency.'
+  - 'Checker: Missing condition: the twins/triplets exception does not apply to a girl from the second birth if the first birth already gave two or more surviving girls.'
+  - 'Checker: Outdated status_note: it says the October-December 2026 rate was not yet published. India Post''s ''Interest Rates (New)'' table (w.e.f. 01.10.2026 to 31.12.2026) shows 8.2% for the Sukanya Samriddhi Account. The NSI table had not been updated beyond 30.09.2026.'
+  - 'Checker: Missing: if the girl dies, the account is closed at once using Form-2 with a death certificate, and the balance goes to the guardian.'
+  - 'Checker: Conditions missing from the marriage-closure and education-withdrawal statements (listed in the item notes). Without them, readers may think the money is freely available at 18.'
+  - 'Checker: Tax caveat (not checked on an official tax page): the Section 80C deduction is usable only by people who choose the old tax regime, and the new regime is now the default. The Income-tax Act, 2025, believed to apply from 1 April 2026, may have renumbered these sections. Check on incometaxindia.gov.in before telling citizens ''Section 80C''.'
+  - 'Checker: The writer cited only NSI pages. I cross-checked every number against the separate official India Post SSA page (indiapost.gov.in/banking-services/savings) and found no differences. That India Post page is a better primary source than the old URL that returned 404.'
+  - 'Checker: Not checked: the 2024 Ministry of Finance guidelines on irregular small-savings accounts (for example, accounts opened by grandparents who are not natural or legal guardians must move to the natural or legal guardian). These may affect who can be ''guardian''. The writer also flagged this as unchecked.'

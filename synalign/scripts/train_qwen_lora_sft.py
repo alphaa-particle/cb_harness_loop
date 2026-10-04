@@ -1,4 +1,16 @@
-import os
+"""LoRA fine-tuning on a GPU machine. Defaults reproduce the earlier demo run.
+
+    python scripts/train_qwen_lora_sft.py                                   # the demo run's files
+    python scripts/train_qwen_lora_sft.py --model models/Qwen3.5-0.8B \
+        --train data/training/india_schemes/sft_train.jsonl \
+        --dev data/training/india_schemes/sft_dev.jsonl --output models/qwen3.5-0.8b-schemes-lora
+
+Needs requirements-model.txt; Qwen3.5 needs a recent transformers (5.x).
+Only the assistant's reply is trained on; the prompt is masked out.
+"""
+
+import argparse
+
 import torch
 from datasets import load_dataset
 from peft import LoraConfig, get_peft_model
@@ -9,10 +21,13 @@ from transformers import (
     TrainingArguments,
 )
 
-MODEL_PATH = "models/qwen-0.8b"
-TRAIN_FILE = "data/training/sft_train.jsonl"
-DEV_FILE = "data/training/sft_dev.jsonl"
-OUTPUT_DIR = "models/qwen-0.8b-synalign-lora"
+_args = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+_args.add_argument("--model", default="models/qwen-0.8b")
+_args.add_argument("--train", default="data/training/sft_train.jsonl")
+_args.add_argument("--dev", default="data/training/sft_dev.jsonl")
+_args.add_argument("--output", default="models/qwen-0.8b-synalign-lora")
+_args = _args.parse_args()
+MODEL_PATH, TRAIN_FILE, DEV_FILE, OUTPUT_DIR = _args.model, _args.train, _args.dev, _args.output
 
 MAX_LENGTH = 1024
 

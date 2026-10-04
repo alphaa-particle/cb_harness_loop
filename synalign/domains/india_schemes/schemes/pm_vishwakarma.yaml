@@ -1,0 +1,145 @@
+id: pm_vishwakarma
+name: PM Vishwakarma
+short_name: PM Vishwakarma
+names_hi:
+- पीएम विश्वकर्मा योजना
+- प्रधानमंत्री विश्वकर्मा योजना
+aliases:
+- PM Vishwakarma Yojana
+- vishwakarma yojana
+- pm vishwakarma scheme
+- vishwakarma loan yojana
+- pm vishwakarma toolkit yojana
+level: central
+state: ''
+ministry: Ministry of Micro, Small and Medium Enterprises
+category: credit_enterprise
+summary: 'Support for self-employed traditional artisans and craftspeople in 18 listed trades: a certificate and ID card, paid skill training, a toolkit incentive of up to Rs 15,000, and collateral-free loans of up to Rs 1 lakh and then Rs 2 lakh at 5% interest.'
+sections:
+  eligibility:
+  - 'Must work with hands and tools in one of the 18 listed family-based traditional trades: carpenter, boat maker, armourer, blacksmith, hammer and tool kit maker, locksmith, sculptor/stone carver, goldsmith, potter, cobbler/shoesmith, mason, basket/mat/broom maker, doll and toy maker, barber, garland maker, washerman, tailor, or fishing net maker.'
+  - Must be self-employed in the unorganised sector.
+  - Must be at least 18 years old on the date of registration.
+  - Must be actually working in the trade on the date of registration.
+  - Only one member of a family can register; a family means husband, wife and unmarried children.
+  exclusions:
+  - People in government service and their family members cannot apply.
+  - People who took a loan in the past 5 years under a similar central or state government self-employment or business credit scheme, such as PMEGP, PM SVANidhi or MUDRA, are not eligible.
+  - According to the portal FAQ, anyone who has taken a PMEGP loan cannot apply, and anyone with an unpaid PM SVANidhi or MUDRA loan cannot apply until it is repaid.
+  benefits:
+  - Recognition as a Vishwakarma through a PM Vishwakarma certificate and ID card.
+  - Skill verification followed by 5-7 days (40 hours) of basic training, with optional 15 days (120 hours) of advanced training, and a stipend of Rs 500 per day during training.
+  - Toolkit incentive of up to Rs 15,000 to buy modern tools.
+  - First collateral-free loan of up to Rs 1 lakh, repaid over 18 months; a second loan of up to Rs 2 lakh, repaid over 30 months, for those who keep the first loan account regular and have adopted digital transactions or taken advanced training.
+  - The borrower pays a concessional interest rate of 5%, the Ministry of MSME pays interest subvention capped at 8%, and no guarantee fee is charged.
+  - Re 1 for each digital transaction, for up to 100 transactions a month, plus marketing support such as quality certification, branding, e-commerce linkage and trade fairs.
+  how_to_apply:
+  - Register on the official portal pmvishwakarma.gov.in.
+  - For help, go to the nearest Common Service Centre (CSC), MSME Development and Facilitation Office (MSME-DFO) or District Industries Centre (DIC).
+  - The application is checked by the local Gram Pradhan or urban local body and by district officials before benefits are given.
+  documents:
+  - Aadhaar card.
+  - Mobile number.
+  - Bank account details.
+  - Ration card; if you do not have one, Aadhaar cards of all family members.
+rules:
+  age_min: 18
+  gender: any
+facts:
+- key: min_age
+  statement: You must be at least 18 years old on the date of registration.
+  value: '18'
+  accept:
+  - 18 years
+  - 18 saal
+  - eighteen
+  question: What is the minimum age to register for PM Vishwakarma?
+  question_hi: पीएम विश्वकर्मा योजना में पंजीकरण के लिए कम से कम उम्र कितनी होनी चाहिए?
+  question_hi_latn: PM Vishwakarma yojana me registration ke liye kam se kam umar kitni honi chahiye?
+  source: 1
+  status: verified
+- key: toolkit_incentive
+  statement: PM Vishwakarma gives a toolkit incentive of up to Rs 15,000.
+  value: Rs 15,000
+  accept:
+  - '15000'
+  - 15,000
+  - Rs 15000
+  - 15 hazar
+  question: How much money does PM Vishwakarma give for buying tools?
+  question_hi: पीएम विश्वकर्मा योजना में औज़ार (टूलकिट) खरीदने के लिए कितने पैसे मिलते हैं?
+  question_hi_latn: PM Vishwakarma me toolkit ke liye kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: training_stipend
+  statement: A stipend of Rs 500 per day is paid during PM Vishwakarma training.
+  value: Rs 500 per day
+  accept:
+  - '500'
+  - Rs 500
+  - 500 per day
+  - 500 rupaye roz
+  question: How much stipend is paid during PM Vishwakarma training?
+  question_hi: पीएम विश्वकर्मा की ट्रेनिंग के दौरान रोज़ कितना भत्ता मिलता है?
+  question_hi_latn: PM Vishwakarma training me roz kitna stipend milta hai?
+  source: 1
+  status: verified
+- key: first_loan_amount
+  statement: The first collateral-free loan is up to Rs 1 lakh, repaid over 18 months.
+  value: Rs 1 lakh
+  accept:
+  - 1 lakh
+  - '100000'
+  - 1,00,000
+  - ek lakh
+  question: How much loan can I get in the first tranche of PM Vishwakarma?
+  question_hi: पीएम विश्वकर्मा योजना में पहली किस्त में कितना लोन मिलता है?
+  question_hi_latn: PM Vishwakarma me pehli kisht me kitna loan milta hai?
+  source: 1
+  status: verified
+- key: interest_rate
+  statement: The borrower pays a concessional interest rate of 5% on PM Vishwakarma loans.
+  value: 5%
+  accept:
+  - 5 percent
+  - 5 per cent
+  - '5'
+  - paanch percent
+  question: What interest rate is charged on a PM Vishwakarma loan?
+  question_hi: पीएम विश्वकर्मा लोन पर कितना ब्याज लगता है?
+  question_hi_latn: PM Vishwakarma loan par kitna byaj lagta hai?
+  source: 1
+  status: verified
+situations:
+- question: I am a carpenter working on my own in my village. Is there a government scheme that gives training, money for tools and a cheap loan for people like me?
+  language: en
+- question: मैं अपने घर से दर्जी का काम करता हूँ। नए औज़ार और कम ब्याज वाले लोन के लिए कौन सी सरकारी योजना है?
+  language: hi
+sources:
+- title: 'PM Vishwakarma - official portal (home page: eligibility, trades, benefits)'
+  url: https://pmvishwakarma.gov.in/
+  publisher: Ministry of Micro, Small and Medium Enterprises, Government of India
+  accessed: '2026-10-03'
+- title: PM Vishwakarma - Frequently Asked Questions
+  url: https://pmvishwakarma.gov.in/Home/FAQ
+  publisher: Ministry of Micro, Small and Medium Enterprises, Government of India
+  accessed: '2026-10-03'
+- title: PM Vishwakarma - How to Register
+  url: https://pmvishwakarma.gov.in/Home/HowToRegister
+  publisher: Ministry of Micro, Small and Medium Enterprises, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Conflicting official wording on earlier loans: the portal eligibility text bars anyone who took a PMEGP, PM SVANidhi or MUDRA loan in the past 5 years, while the portal FAQ says people who have fully repaid a PM SVANidhi or MUDRA loan can apply (PMEGP borrowers cannot). Applicants should confirm at a CSC or DIC. The home page calls the toolkit benefit a Rs 15,000 grant; the FAQ says up to Rs 15,000. The pages opened did not state the scheme''s end date or whether new registrations are open today; the full guidelines PDF was too large to open and PIB was blocked, so check the portal before advising. No official Hindi name was found on the pages opened. The verification step (Gram Pradhan/urban local body, then district) is taken from the official login roles listed on the portal.'
+  - Whether the scheme is still open to new applicants was not clear.
+  - 'Checker: How to apply is misleading. The PIB Backgrounder (16 Sep 2026) says applications can be made only through Common Service Centres (CSCs). The record tells people to register on the portal themselves.'
+  - 'Checker: Missing loan condition: only people who have completed Basic Training can get the first loan tranche (PIB Backgrounder).'
+  - 'Checker: Registration status is missing. The portal shows the target of 30,00,000 registrations was ''already achieved in September 2025''. PIB (16 and 18 Sep 2026) confirms 30 lakh registered. West Bengal joined only in May 2026 and has received over 7 lakh applications. I found no official statement on whether new registrations are open in other states, so the chatbot should not promise that registration is open.'
+  - 'Checker: The status_note says the end date could not be found. PIB gives an outlay of Rs 13,000 crore for FY 2023-24 to FY 2027-28, so the scheme period is known.'
+  - 'Checker: The status_note reports a ''conflict'' about earlier loans. PIB resolves it: borrowers who have fully repaid a MUDRA or SVANidhi loan are eligible. Portal FAQ #24 says PMEGP borrowers cannot apply.'
+  - 'Checker: Verification has three tiers: Gram Panchayat or urban local body, then the District Implementation Committee, then approval by a Screening Committee. The record leaves out the Screening Committee approval step.'
+  - 'Checker: Official Hindi names exist (see names_hi), but the record has none.'
+  - Official Hindi name added from https://www.pib.gov.in/PressReleasePage.aspx?PRID=2311858&reg=48&lang=2.

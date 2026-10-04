@@ -1,0 +1,159 @@
+id: kcc
+name: Kisan Credit Card (KCC) Scheme with Modified Interest Subvention Scheme (MISS)
+short_name: KCC
+names_hi:
+- किसान क्रेडिट कार्ड
+aliases:
+- Kisan Credit Card
+- kisan credit card yojana
+- KCC loan
+- kisan card
+- Modified Interest Subvention Scheme
+- MISS-KCC
+level: central
+state: ''
+ministry: Ministry of Agriculture & Farmers Welfare (Department of Agriculture & Farmers Welfare, Credit Division); loans given by banks under RBI rules
+category: agriculture
+summary: A revolving bank loan account with a RuPay card that farmers, tenant farmers, sharecroppers, livestock keepers and fishers can use for farming costs. Under the Modified Interest Subvention Scheme, short-term loans up to Rs 3 lakh carry 7% interest, which drops to 4% if repaid on time.
+sections:
+  eligibility:
+  - Farmers who own and cultivate land, either alone or jointly.
+  - Tenant farmers, oral lessees and sharecroppers.
+  - Self Help Groups or Joint Liability Groups of farmers, including groups of tenant farmers and sharecroppers.
+  - Dairy, poultry, sheep, goat, pig and rabbit farmers with their own, rented or leased sheds, individually, jointly or in groups.
+  - Fishers and fish farmers who own or lease a pond, tank, open water body, hatchery or registered fishing boat and hold the required fishing licence.
+  exclusions:
+  - 'Only one KCC per farmer: the application asks you to declare that you have no KCC from another bank branch.'
+  - If you already have a combined KCC for crops and allied activities, a separate livestock or fisheries KCC is not issued; the existing limit is raised instead.
+  benefits:
+  - Short-term loans up to Rs 3 lakh for crops and allied activities at 7% interest a year, because the government pays banks a 1.5% interest subvention.
+  - Repay on time and you get a further 3% Prompt Repayment Incentive, so the effective interest becomes 4% a year.
+  - For a KCC used only for animal husbandry or fisheries, the interest benefit covers loans up to Rs 2 lakh, within the overall Rs 3 lakh.
+  - No collateral security or margin is needed for agricultural loans up to Rs 2 lakh (from 1 January 2025).
+  - Each bank decides how long the Kisan Credit Card stays valid and when it is reviewed. The credit limit itself is set for five years. The card is a smart card that also works as a debit card, and the bank may issue it as a RuPay or EMV chip card. Farmers can draw money at the bank branch, by cheque, at ATMs, through bank agents (business correspondents), on PoS machines at input dealers, and through mobile banking.
+  - The credit limit is based on the crop's scale of finance times the area farmed, plus 10% for household and post-harvest needs and 20% for farm asset upkeep, and it rises by 10% each year.
+  how_to_apply:
+  - 'Fill in the KCC application form at a bank branch in your area: a public sector, private, regional rural, small finance or cooperative bank.'
+  - PM-KISAN beneficiaries can use a simple one-page KCC form at the bank branch where they receive PM-KISAN money.
+  - For a livestock or fisheries KCC, the bank should issue the card within 15 days of a complete application, and processing fees are waived for limits up to Rs 3 lakh.
+  - For help with a livestock KCC, you can also contact the State Animal Husbandry Department.
+  documents:
+  - Identity proof such as Aadhaar, Voter ID, PAN card, driving licence or passport.
+  - Address proof such as Aadhaar, Voter ID, passport or a recent electricity or telephone bill.
+  - Recent passport-size photographs.
+  - Land records, or details of land you farm as owner, lessee or sharecropper.
+  - 'For livestock or fisheries: details of the animals or birds, the shed or pond, and the fishing licence where needed.'
+rules:
+  gender: any
+facts:
+- key: interest_rate
+  statement: Under MISS, banks give KCC short-term loans up to Rs 3 lakh at 7% interest a year.
+  value: 7%
+  accept:
+  - 7 percent
+  - 7 per cent
+  - seven percent
+  - 7 pratishat
+  question: What is the interest rate on a Kisan Credit Card loan?
+  question_hi: किसान क्रेडिट कार्ड लोन पर कितना ब्याज लगता है?
+  question_hi_latn: Kisan Credit Card loan par kitna byaj lagta hai?
+  source: 1
+  status: verified
+- key: effective_rate_on_time
+  statement: Farmers who repay their KCC loan on time effectively pay 4% interest a year after the 3% prompt repayment incentive.
+  value: 4%
+  accept:
+  - 4 percent
+  - 4 per cent
+  - four percent
+  - 4 pratishat
+  question: How much interest do I pay on a Kisan Credit Card loan if I repay on time?
+  question_hi: समय पर चुकाने पर किसान क्रेडिट कार्ड लोन पर कितना ब्याज लगता है?
+  question_hi_latn: KCC loan time par chukane par kitna byaj lagta hai?
+  source: 1
+  status: verified
+- key: subvention_loan_limit
+  statement: The cheaper KCC interest under MISS applies to short-term loans up to Rs 3 lakh per farmer.
+  value: Rs 3 lakh
+  accept:
+  - 3 lakh
+  - '300000'
+  - 3,00,000
+  - ₹3 lakh
+  - teen lakh
+  question: Up to what loan amount does the low Kisan Credit Card interest rate apply?
+  question_hi: किसान क्रेडिट कार्ड पर सस्ता ब्याज कितने रुपये तक के लोन पर मिलता है?
+  question_hi_latn: Kisan Credit Card par sasta byaj kitne rupaye tak ke loan par milta hai?
+  source: 1
+  status: verified
+- key: collateral_free_limit
+  statement: Banks cannot ask for collateral or margin on agricultural loans up to Rs 2 lakh.
+  value: Rs 2 lakh
+  accept:
+  - 2 lakh
+  - '200000'
+  - 2,00,000
+  - ₹2 lakh
+  - do lakh
+  question: Up to what amount can I get a Kisan Credit Card loan without collateral?
+  question_hi: किसान क्रेडिट कार्ड पर बिना गिरवी के कितने रुपये तक का लोन मिल सकता है?
+  question_hi_latn: Kisan Credit Card par bina girvi ke kitna loan mil sakta hai?
+  source: 3
+  status: verified
+situations:
+- question: I farm on land I have taken on lease and I need money for seeds and fertiliser this season at a low interest rate. What can I get from a bank?
+  language: en
+- question: Mujhe kheti ke liye beej aur khad ka paisa chahiye. Bank se kam byaj par baar-baar nikal sakne wala loan kaise milega?
+  language: hi_latn
+sources:
+- title: Department of Agriculture & Farmers Welfare Annual Report 2024-25 (English), chapters 1 and 12 on agricultural credit and MISS
+  url: https://agriwelfare.gov.in/Documents/AR_Eng_2024_25.pdf
+  publisher: Department of Agriculture & Farmers Welfare, Ministry of Agriculture & Farmers Welfare
+  accessed: '2026-10-03'
+- title: Master Circular - Kisan Credit Card (KCC) Scheme, 4 July 2018
+  url: https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11325&Mode=0
+  publisher: Reserve Bank of India
+  accessed: '2026-10-03'
+- title: Credit Flow to Agriculture - Collateral free agricultural loans, 6 December 2024
+  url: https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12755&Mode=0
+  publisher: Reserve Bank of India
+  accessed: '2026-10-03'
+- title: Kisan Credit Card (KCC) Scheme - working capital for Animal Husbandry and Fisheries, 4 February 2019
+  url: https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11462&Mode=0
+  publisher: Reserve Bank of India
+  accessed: '2026-10-03'
+- title: AHDF Kisan Credit Card leaflet (English)
+  url: https://www.dahd.gov.in/sites/default/files/2026-01/KCCLeaflet-E-F.pdf
+  publisher: Department of Animal Husbandry and Dairying, Ministry of Fisheries, Animal Husbandry and Dairying
+  accessed: '2026-10-03'
+- title: AHDF Kisan Credit Card leaflet (Hindi)
+  url: https://www.dahd.gov.in/sites/default/files/2026-01/KCCLeaflet-H-F.pdf
+  publisher: Department of Animal Husbandry and Dairying, Ministry of Fisheries, Animal Husbandry and Dairying
+  accessed: '2026-10-03'
+- title: Guidelines/SoP for exclusive KCC for Animal Husbandry, Dairying and Fisheries farmers, 8 October 2021
+  url: https://www.dahd.gov.in/sites/default/files/2023-08/AHDF-KCCGuidelines.pdf
+  publisher: Department of Animal Husbandry and Dairying / Department of Financial Services
+  accessed: '2026-10-03'
+- title: Loan application form for agricultural credit for PM-KISAN beneficiaries (KCC)
+  url: https://fw.pmkisan.gov.in/Documents/Kcc.pdf
+  publisher: Department of Agriculture & Farmers Welfare, Ministry of Agriculture & Farmers Welfare
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Loan limit under MISS: the official pages I could open give the subsidised loan limit as Rs 3 lakh. These are the DA&FW Annual Report 2024-25 and the DAHD leaflet uploaded in January 2026. The Union Budget 2025-26 announced raising the MISS limit to Rs 5 lakh for KCC loans, but I could not open an official page confirming this has taken effect (indiabudget.gov.in and pib.gov.in were blocked). Users should check the current limit with their bank. MISS is approved by the Government year by year, so its continuation for the current year should also be checked. The collateral-free limit was raised from Rs 1.6 lakh to Rs 2 lakh from 1 January 2025. The 2018 RBI master circular still shows older figures (Rs 1 lakh) and calls crop insurance compulsory, so insurance and collateral details there are out of date. In November 2025 the RBI merged its instructions into new Master Directions; their PDFs were behind a CAPTCHA, so the 2018 master circular was the latest full KCC text I could
+    read. Banks may set their own age limits, documents and processing fees. The 15-day issue time and the fee waiver up to Rs 3 lakh are stated officially only for the livestock and fisheries (AHDF) KCC.'
+  - 'Checker: card_validity fact is wrong as worded. RBI leaves the card''s validity to the bank; only the credit limit is fixed for 5 years. Reword it to: ''the KCC limit is sanctioned for 5 years, rising 10% a year; banks set the card''s validity and review''. Also drop ''RuPay'' as a fixed rule.'
+  - 'Checker: Still open: KCC itself is a standing bank product and open. The interest benefit (MISS) is approved one financial year at a time. The latest official approval I saw is for FY 2025-26 (DA&FW letter of 16 June 2025). The DA&FW Credit page, updated 11-07-2026, lists no FY 2026-27 guideline. The 7%/4% figures for 2026-27 are therefore not confirmed. The FY 2025-26 letter also kept the limit at Rs 3 lakh even after the Budget 2025-26 promise of Rs 5 lakh.'
+  - 'Checker: Missing condition: the interest benefit applies only for lenders covered by MISS: PSBs, private banks (rural and semi-urban branches only), SFBs, RRBs, cooperative banks and computerised PACS. A loan from a private bank''s urban branch would not get the 7% rate under MISS.'
+  - 'Checker: Missing condition: the 3% prompt repayment incentive is lost if the loan is repaid more than one year after it was taken (MISS 2025-26).'
+  - 'Checker: The status_note says the 15-day issue time and the Rs 3 lakh fee waiver are official only for the AHDF KCC. That is not accurate. The AHDF SoP cites an IBA advisory (04.02.2019) waiving processing, documentation, inspection, ledger folio and other service charges on all KCC and crop loans up to Rs 3 lakh. It also asks banks to issue KCCs to PM-KISAN beneficiaries within two weeks.'
+  - 'Checker: Collateral nuance: the AHDF SoP and the RBI master circular allow collateral-free limits up to Rs 3 lakh where there is a tie-up arrangement, such as a milk union. The AHDF SoP still shows the old Rs 1.6 lakh base figure.'
+  - 'Checker: The One Farmer-One KCC rule is now formal. The MISS 2025-26 letter makes banks take an undertaking that the applicant has no other KCC, and it denies the interest benefit on duplicate accounts. This backs the record''s exclusion, which could say so.'
+  - 'Checker: The PM-KISAN one-page KCC form (fw.pmkisan.gov.in/Documents/Kcc.pdf) exists and pulls KYC from the PM-KISAN account. It does not itself say the farmer must apply at the branch where PM-KISAN money is received, so that phrase goes slightly beyond the source.'
+  - 'Checker: The 2018 RBI master circular is out of date on collateral (Rs 1 lakh) and on compulsory crop insurance. The record''s status_note already says so. I did not verify the November 2025 RBI Master Directions.'
+  - Fact card_validity corrected from '5 years' to 'No fixed card validity is set by RBI. Each bank decides how long the card is valid and how often it is reviewed. What is fixed for 5 years is the KCC credit limit, which for most farmers is raised by 10% in each of years 2 to 5.' per https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11325&Mode=0.
+  - 'Statement corrected per https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11325&Mode=0: Each bank decides how long the Kisan Credit Card stays valid and when it is reviewed. The credit limit itself is set for five years. The card is a smart card that also works as a debit card, and the bank may issue it as a RuPay or EMV chip card. Farmers can draw money at the bank branch, by cheque, at ATMs, through bank agents (business correspondents), on PoS machines at input dealers, and through mobile banking.'
+  - 'Fact card_validity dropped: its value ''No fixed card validity is set by RBI. Each bank decides how long the card is valid and how often it is reviewed. What is fixed for 5 years is the KCC credit limit, which for most farmers is raised by 10% in each of years 2 to 5.'' is not stated in the scheme''s sections.'

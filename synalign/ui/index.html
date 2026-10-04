@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scheme Helper</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --panel: #ffffff; --text: #1d232b; --muted: #5d6875; --line: #dde2e8;
+    --accent: #1f5fbf; --accent-text: #ffffff;
+    --ok: #1e7a46; --ok-bg: #e6f4ec; --info: #3d4a59; --info-bg: #eceff3;
+    --warn: #8a5a00; --warn-bg: #fdf3e0; --bad: #a3261f; --bad-bg: #fbe9e7;
+    --rules: #6a3fb5; --rules-bg: #f1ebfb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161b; --panel: #1b2027; --text: #e7ebf0; --muted: #9aa5b1; --line: #2c333c;
+      --accent: #6aa3ff; --accent-text: #0b1220;
+      --ok: #7fd3a3; --ok-bg: #173126; --info: #c3ccd6; --info-bg: #232a33;
+      --warn: #f1c46b; --warn-bg: #33291a; --bad: #ff9b92; --bad-bg: #3a1d1b;
+      --rules: #c8a8ff; --rules-bg: #2a2140;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", "Noto Sans", "Noto Sans Devanagari", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 16px; }
+  .status { font-size: .85rem; color: var(--muted); margin-bottom: 16px; }
+  .status b { color: var(--text); font-weight: 600; }
+  form { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  label { font-weight: 600; display: block; margin-bottom: 6px; }
+  textarea { width: 100%; min-height: 90px; resize: vertical; padding: 10px 12px; font: inherit; color: var(--text);
+             background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
+  textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+  button { font: inherit; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--text);
+           padding: 8px 14px; cursor: pointer; }
+  button.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); font-weight: 600; }
+  button:disabled { opacity: .55; cursor: default; }
+  .examples button { font-size: .85rem; padding: 4px 10px; }
+  .note { font-size: .85rem; color: var(--muted); margin: 12px 0 0; }
+  #result { margin-top: 20px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+  .chip { display: inline-block; border-radius: 999px; padding: 3px 12px; font-size: .85rem; font-weight: 600; margin-bottom: 10px; }
+  .answered { color: var(--ok); background: var(--ok-bg); }
+  .rules_only, .model_error { color: var(--info); background: var(--info-bg); }
+  .no_evidence, .unclear, .empty { color: var(--warn); background: var(--warn-bg); }
+  .blocked { color: var(--bad); background: var(--bad-bg); }
+  .answer { white-space: pre-wrap; margin: 0; }
+  .disclaimer { font-size: .85rem; color: var(--muted); margin-top: 10px; }
+  h2 { font-size: 1.05rem; margin: 22px 0 10px; }
+  .evidence h3 { font-size: 1rem; margin: 0 0 6px; }
+  .badge { font-size: .75rem; font-weight: 600; border-radius: 6px; padding: 2px 8px; margin-left: 6px; vertical-align: middle; }
+  .badge.rules { color: var(--rules); background: var(--rules-bg); }
+  .badge.other { color: var(--muted); background: var(--bg); border: 1px solid var(--line); }
+  .evidence pre { white-space: pre-wrap; font: inherit; margin: 0; }
+  .meta { font-size: .8rem; color: var(--muted); margin-top: 8px; overflow-wrap: anywhere; }
+  .meta a { color: var(--accent); }
+  .feedback { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .feedback input { flex: 1 1 220px; min-width: 0; padding: 7px 10px; font: inherit; color: var(--text);
+                    background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
+  .thanks { color: var(--ok); font-size: .9rem; }
+  .error { color: var(--bad); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Scheme Helper</h1>
+  <p class="sub">Ask about Indian government welfare schemes in English or Hindi. / सरकारी योजनाओं के बारे में हिंदी या अंग्रेज़ी में पूछिए।</p>
+  <div class="status" id="status">Checking the service…</div>
+
+  <form id="ask">
+    <label for="question">Your question</label>
+    <textarea id="question" maxlength="2000" placeholder="For example: I am 35 and earn 12,000 a month. Can I join a pension scheme?" required></textarea>
+    <div class="row">
+      <button type="submit" class="primary" id="send">Ask</button>
+      <button type="button" id="clear">New question</button>
+    </div>
+    <div class="row examples" aria-label="Example questions">
+      <button type="button">What is the maximum age to join Atal Pension Yojana?</button>
+      <button type="button">पीएम किसान में साल में कितने पैसे मिलते हैं?</button>
+      <button type="button">I am a street vendor and need a small loan for my cart.</button>
+      <button type="button">I am 45 years old. Can I apply for PMJJBY?</button>
+      <button type="button">What is the capital of France?</button>
+    </div>
+    <p class="note">This is an information tool, not an application or a decision. Final approval is always made by the government office.</p>
+  </form>
+
+  <div id="result" aria-live="polite"></div>
+</main>
+
+<script>
+const LABELS = {
+  answered: "Written by the AI from the scheme rules below. It can make mistakes, so please check the rules.",
+  rules_only: "No AI used: these are the matching official rules.",
+  model_error: "The AI did not answer, so the matching official rules are shown.",
+  no_evidence: "No matching scheme was found. The AI was not asked.",
+  unclear: "The question could not be read. The AI was not asked.",
+  blocked: "The AI's answer made a promise it is not allowed to make, so its answer was removed and the rules are shown.",
+  empty: "Please type a question.",
+};
+const SECTION_NAMES = { rules: "Eligibility rules", benefits: "Benefits", application: "How to apply",
+                        documents: "Documents", overview: "Overview" };
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls;
+                                 if (text !== undefined) n.textContent = text; return n; };
+
+async function status() {
+  try {
+    const s = await (await fetch("/")).json();
+    const parts = [["Schemes", s.domain], ["Sections", s.chunks], ["Search", s.retrieval_method],
+                   ["AI", s.model_ready ? (s.model || "on") : "off (rules are shown instead)"]];
+    $("status").textContent = "";
+    parts.forEach(([k, v], i) => { if (i) $("status").append(" · "); $("status").append(k + ": ");
+                                   $("status").append(el("b", "", String(v))); });
+  } catch (e) { $("status").textContent = "The service is not reachable."; }
+}
+
+function show(question, data) {
+  const out = $("result"); out.textContent = "";
+  const card = el("section", "card");
+  card.append(el("span", "chip " + (data.mode || "empty"), LABELS[data.mode] || data.mode));
+  card.append(el("p", "answer", data.answer));
+  if (data.mode === "answered") card.append(el("p", "disclaimer", "Final approval is made by the government office, not by this tool."));
+  const fb = el("div", "feedback");
+  const note = el("input"); note.placeholder = "Optional: what was wrong?"; note.setAttribute("aria-label", "Feedback note");
+  const send = async (rating) => {
+    fb.querySelectorAll("button").forEach(b => b.disabled = true);
+    try {
+      await fetch("/feedback", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question, answer: data.answer, mode: data.mode, rating, note: note.value,
+                               evidence_ids: (data.evidence || []).map(e => e.chunk_id) }) });
+      fb.append(el("span", "thanks", "Thank you, saved."));
+    } catch (e) { fb.append(el("span", "error", "Could not save.")); }
+  };
+  const up = el("button", "", "👍 Helpful"); up.type = "button"; up.onclick = () => send("up");
+  const down = el("button", "", "👎 Not right"); down.type = "button"; down.onclick = () => send("down");
+  fb.append(up, down, note);
+  card.append(fb);
+  out.append(card);
+  if (data.evidence && data.evidence.length && data.mode !== "rules_only" && data.mode !== "model_error" && data.mode !== "blocked") {
+    out.append(el("h2", "", "The official information this answer is based on"));
+    data.evidence.forEach(e => {
+      const c = el("article", "card evidence");
+      const h = el("h3", "", e.title || e.chunk_id);
+      h.append(el("span", "badge " + (e.section === "rules" ? "rules" : "other"), SECTION_NAMES[e.section] || e.section || "section"));
+      c.append(h, el("pre", "", e.text));
+      const meta = el("div", "meta", "Match " + Number(e.score).toFixed(2) + (e.source ? " · Source: " : ""));
+      if (e.source && /^https:\/\//.test(e.source)) {
+        const a = el("a", "", e.source); a.href = e.source; a.target = "_blank"; a.rel = "noopener noreferrer"; meta.append(a);
+      }
+      c.append(meta); out.append(c);
+    });
+  }
+}
+
+$("ask").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  const question = $("question").value.trim();
+  if (!question) return show(question, { mode: "empty", answer: LABELS.empty });
+  $("send").disabled = true; $("send").textContent = "Thinking…";
+  $("result").textContent = "";
+  try {
+    const r = await fetch("/ask", { method: "POST", headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify({ question }) });
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.detail || r.statusText);
+    show(question, data);
+  } catch (e) {
+    $("result").textContent = ""; $("result").append(el("p", "error", "Something went wrong: " + e.message));
+  } finally { $("send").disabled = false; $("send").textContent = "Ask"; }
+});
+$("clear").onclick = () => { $("question").value = ""; $("result").textContent = ""; $("question").focus(); };
+document.querySelectorAll(".examples button").forEach(b => b.onclick = () => { $("question").value = b.textContent; $("ask").requestSubmit(); });
+status();
+</script>
+</body>
+</html>

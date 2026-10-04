@@ -1,0 +1,152 @@
+id: pm_surya_ghar
+name: 'PM Surya Ghar: Muft Bijli Yojana'
+short_name: 'PMSG: MBY'
+names_hi:
+- 'प्रधानमंत्री सूर्य घर: मुफ्त बिजली योजना'
+aliases:
+- PM Surya Ghar Yojana
+- Muft Bijli Yojana
+- surya ghar yojna
+- rooftop solar subsidy yojana
+- PM Surya Ghar free electricity scheme
+- Grid Connected Rooftop Solar Programme Phase II
+level: central
+state: ''
+ministry: Ministry of New and Renewable Energy
+category: energy
+summary: Gives households a central subsidy of up to Rs 78,000 to put grid-connected solar panels on their roof. The aim is up to 300 units of free or low-cost electricity a month. The scheme is set to run until 31 March 2027.
+sections:
+  eligibility:
+  - Must be a residential electricity consumer with a valid consumer account number from the local electricity distribution company (DISCOM).
+  - The solar plant must be grid-connected and linked to that household's residential power connection.
+  - Panels must be on a roof, terrace or balcony, or on an elevated structure (ground-mounted elevated structures are allowed).
+  - The system must be installed by a vendor registered on the PM Surya Ghar National Portal.
+  - Solar modules must be made in India from Indian-made cells (Domestic Content Requirement).
+  - Group housing societies and RWAs can get the subsidy for common facilities, including EV charging, up to 500 kW, counted at 3 kW per house.
+  exclusions:
+  - Non-residential connections such as government, commercial and industrial users get no subsidy.
+  - Off-grid systems that are not connected to the grid are not eligible.
+  - Systems using imported (non-DCR) solar modules are not eligible.
+  - A system that is shifted to a new location cannot get the subsidy again; it is given only once per installation.
+  - A home that already got a central rooftop solar subsidy can claim only for added capacity, up to 3 kW in total.
+  benefits:
+  - Central subsidy of Rs 30,000 per kW for the first 2 kW, so a 2 kW system gets Rs 60,000.
+  - Rs 18,000 for the third kW and no extra subsidy beyond 3 kW, so the maximum central subsidy is Rs 78,000.
+  - In special category areas (Uttarakhand, Himachal Pradesh, J&K, Ladakh, North-Eastern states including Sikkim, Andaman and Nicobar, Lakshadweep) the rates are Rs 33,000 per kW for the first 2 kW and Rs 19,800 for the third kW.
+  - The scheme aims to help households get up to 300 units of free or low-cost electricity a month from their own panels.
+  - Registered vendors must repair and maintain the system free of cost for 5 years from commissioning.
+  - Low-interest bank loans (about repo rate plus 0.5 per cent) are planned for systems up to 3 kW and can be chosen through the National Portal.
+  how_to_apply:
+  - Register on the National Portal pmsuryaghar.gov.in using your DISCOM consumer account number, then choose a vendor registered on the portal.
+  - After the vendor installs the system, upload the system details and geo-tagged photos on the portal; the DISCOM then inspects the system and fits the net meter.
+  - After DISCOM approval, the subsidy is released to your bank account (or loan account) and is meant to be processed within 15 days.
+  documents:
+  - Electricity consumer account number (from your electricity bill).
+  - Bank account details with a cancelled cheque, passbook or bank statement.
+  - Geo-tagged photos and other installation details uploaded on the portal after installation.
+  - Loan account details, if the system is paid for with a bank loan.
+rules:
+  gender: any
+facts:
+- key: subsidy_per_kw_first_2kw
+  statement: Central subsidy of Rs 30,000 per kW for the first 2 kW.
+  value: Rs 30,000
+  accept:
+  - '30000'
+  - 30,000
+  - ₹30,000
+  - 30 hazar
+  question: How much subsidy per kW does PM Surya Ghar give for the first 2 kW?
+  question_hi: पीएम सूर्य घर योजना में पहले 2 किलोवाट पर प्रति किलोवाट कितनी सब्सिडी मिलती है?
+  question_hi_latn: PM Surya Ghar Yojana me pehle 2 kilowatt par prati kilowatt kitni subsidy milti hai?
+  source: 1
+  status: unverified
+- key: subsidy_2kw_total
+  statement: A 2 kW rooftop system gets Rs 60,000 central subsidy under PM Surya Ghar.
+  value: Rs 60,000
+  accept:
+  - '60000'
+  - 60,000
+  - ₹60,000
+  - 60 hazar
+  question: How much total subsidy will I get for a 2 kW rooftop solar system under PM Surya Ghar?
+  question_hi: पीएम सूर्य घर योजना में 2 किलोवाट का सोलर लगाने पर कुल कितनी सब्सिडी मिलेगी?
+  question_hi_latn: PM Surya Ghar Yojana me 2 kilowatt ka solar lagane par kul kitni subsidy milegi?
+  source: 1
+  status: unverified
+- key: max_subsidy
+  statement: The maximum central subsidy under PM Surya Ghar is Rs 78,000, for systems of 3 kW or more.
+  value: Rs 78,000
+  accept:
+  - '78000'
+  - 78,000
+  - ₹78,000
+  - 78 hazar
+  question: What is the maximum subsidy under PM Surya Ghar Muft Bijli Yojana?
+  question_hi: पीएम सूर्य घर मुफ्त बिजली योजना में ज़्यादा से ज़्यादा कितनी सब्सिडी मिलती है?
+  question_hi_latn: PM Surya Ghar Muft Bijli Yojana me zyada se zyada kitni subsidy milti hai?
+  source: 1
+  status: unverified
+- key: free_units_target
+  statement: The scheme aims to help households get up to 300 units of free or low-cost electricity a month.
+  value: 300 units
+  accept:
+  - '300'
+  - 300 unit
+  - teen sau unit
+  question: How many units of free electricity a month does PM Surya Ghar aim to give?
+  question_hi: पीएम सूर्य घर योजना से हर महीने कितनी यूनिट मुफ्त बिजली मिलने का लक्ष्य है?
+  question_hi_latn: PM Surya Ghar Yojana se har mahine kitni unit muft bijli milne ka lakshya hai?
+  source: 1
+  status: unverified
+- key: free_maintenance_period
+  statement: Registered vendors must repair and maintain the system free of cost for 5 years from commissioning.
+  value: 5 years
+  accept:
+  - '5'
+  - five years
+  - 5 saal
+  - paanch saal
+  question: For how many years will the vendor maintain my solar system for free under PM Surya Ghar?
+  question_hi: पीएम सूर्य घर योजना में वेंडर कितने साल तक सोलर सिस्टम की मुफ्त मरम्मत करेगा?
+  question_hi_latn: PM Surya Ghar Yojana me vendor kitne saal tak solar system ki muft marammat karega?
+  source: 1
+  status: unverified
+situations:
+- question: My electricity bill is very high and I want to put solar panels on the roof of my house. Will the government pay part of the cost?
+  language: en
+- question: Ghar ki chhat par solar panel lagwana hai taaki bijli ka bill kam ho, sarkar se kitni subsidy milegi aur kahan apply karein?
+  language: hi_latn
+sources:
+- title: 'Operational Guidelines for Implementation of PM Surya Ghar: Muft Bijli Yojana for the component ''CFA to Residential Consumers'' (OM dated 07.06.2024)'
+  url: https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2024/07/202407021768035484.pdf
+  publisher: Ministry of New and Renewable Energy, Government of India
+  accessed: '2026-10-03'
+- title: 'Notice: Operational Guidelines for Implementation of the component ''Central Financial Assistance to Residential Consumers'' of PM-Surya Ghar: Muft Bijli Yojana'
+  url: https://mnre.gov.in/en/notice/operational-guidelines-for-implementation-of-the-component-central-financial-assistance-to-residential-consumers-of-pm-surya-ghar-muft-bijli-yojana/
+  publisher: Ministry of New and Renewable Energy, Government of India
+  accessed: '2026-10-03'
+- title: 'Amendment in Guidelines for Implementation of PM-Surya Ghar: Muft Bijli Yojana for the component of ''CFA to residential consumers'' (OM dated 07.07.2025)'
+  url: https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2025/07/202507081690964295.pdf
+  publisher: Ministry of New and Renewable Energy, Government of India
+  accessed: '2026-10-03'
+- title: 'Clarification in Guidelines for Implementation of PM-Surya Ghar: Muft Bijli Yojana (OM dated 13.02.2025)'
+  url: https://cdnbbsr.s3waas.gov.in/s3716e1b8c6cd17b771da77391355749f3/uploads/2025/02/202502141369282676.pdf
+  publisher: Ministry of New and Renewable Energy, Government of India
+  accessed: '2026-10-03'
+- title: Ministry of New and Renewable Energy - Home
+  url: https://mnre.gov.in/
+  publisher: Ministry of New and Renewable Energy, Government of India
+  accessed: '2026-10-03'
+- title: National Portal for Rooftop Solar (PM Surya Ghar)
+  url: https://pmsuryaghar.gov.in/
+  publisher: Ministry of New and Renewable Energy, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme was approved on 29 Feb 2024 with a total budget of Rs 75,021 crore. Its guidelines set it to run until 31 March 2027, so it should still be open in October 2026, but it may end or change after that date. The subsidy rates come from the MNRE guidelines of 7 June 2024. The amendment of 7 July 2025 and the clarification of 13 Feb 2025 did not change the rates. The clarification allowed ground-mounted elevated systems, and the amendment removed old Phase II applications that had not been installed by 1 April 2025; those households can apply again under this scheme. The guidelines say the benchmark cost, and so possibly the subsidy, may be revised at the mid-term review, so check the current rate on pmsuryaghar.gov.in. States may add their own subsidy on top of the central amount. The 300 units of free electricity is a target that depends on system size and use; it is not a fixed cash benefit. The low-interest loan is described as planned, and the actual terms vary by
+    bank. The pmsuryaghar.gov.in portal could not be read by the fetcher because it loads its content with scripts, so these facts come from the MNRE guideline PDFs. The Hindi name was taken from the bilingual MNRE home page.'
+  - No independent check was returned for this scheme.

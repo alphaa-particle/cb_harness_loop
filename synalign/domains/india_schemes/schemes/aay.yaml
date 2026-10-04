@@ -1,0 +1,135 @@
+id: aay
+name: Antyodaya Anna Yojana
+short_name: AAY
+names_hi:
+- अंत्योदय अन्न योजना
+aliases:
+- Antyodaya ration card
+- AAY ration card
+- antyoday anna yojana
+- antyodaya yojana
+- 35 kilo ration card
+level: central
+state: ''
+ministry: Department of Food and Public Distribution, Ministry of Consumer Affairs, Food and Public Distribution
+category: food
+summary: Antyodaya Anna Yojana gives the poorest of the poor households a fixed 35 kg of foodgrains per family every month, and under PMGKAY this grain is free of cost. States pick the families (such as landless labourers, destitute people, primitive tribal households, and widows, disabled or elderly people without support) and give them an AAY ration card. The scheme is active and is part of the National Food Security Act.
+sections:
+  eligibility:
+  - Meant for the poorest of the poor households, identified by the State/UT government under the AAY guidelines.
+  - Landless agricultural labourers, marginal farmers, and rural artisans or craftsmen such as potters, tanners, weavers, blacksmiths and carpenters.
+  - Slum dwellers, destitute persons, and people earning a daily living in the informal sector, such as porters, coolies, rickshaw pullers, hand-cart pullers, fruit and flower sellers, snake charmers, rag pickers and cobblers, in rural or urban areas.
+  - Households headed by a widow, a terminally ill or disabled person, or a person aged 60 years or more, with no assured means of living or social support.
+  - Widows, terminally ill or disabled persons, persons aged 60 years or more, and single women or single men who have no family or social support and no assured income.
+  - All primitive tribal households.
+  - Eligible BPL families with an HIV-positive member are to be included on priority.
+  - Up to 2.5 crore poorest families can be covered across the country, within ceilings fixed for each state.
+  exclusions:
+  - Only households identified by the state under the AAY guidelines get an AAY card, and a state can add families only within the ceiling the Centre has fixed for it.
+  - Ineligible, fake or duplicate ration cards are removed when states verify their lists.
+  benefits:
+  - Each AAY household gets 35 kg of foodgrains per month, whatever the size of the family.
+  - Under PMGKAY the grain is given free of cost; free distribution started on 1 January 2023 and has been continued for five years from 1 January 2024.
+  - Before free distribution, the prices in the Act were Rs 3 per kg for rice, Rs 2 per kg for wheat and Rs 1 per kg for coarse grains.
+  - Under One Nation One Ration Card, the grain can be taken from any ePoS-enabled ration shop in India.
+  - If the state does not supply the entitled grain, the household can claim a food security allowance from the state government.
+  how_to_apply:
+  - Approach the Food and Civil Supplies office of your State/UT; states identify AAY families and issue them a distinctive AAY ration card.
+  - Collect grain from your fair price (ration) shop with the AAY ration card; any household member can collect it.
+  - For complaints, use your state helpline or the District Grievance Redressal Officer, and appeal to the State Food Commission if needed. The department lists toll-free number 1967 and Anna Sahayata IVRS 14457.
+  documents:
+  - AAY ration card to collect grain.
+  - Identity is checked at the ration shop by Aadhaar-based fingerprint or iris scan, or by Aadhaar OTP or PDS OTP.
+  - If Aadhaar authentication fails, or Aadhaar is missing or not linked, one of 8 alternative identity documents notified on 08.02.2017 can be used; genuine beneficiaries should not be refused grain.
+  - The documents needed for a new AAY card are decided by your state government.
+rules:
+  gender: any
+facts:
+- key: grain_per_family
+  statement: Each Antyodaya household gets 35 kg of foodgrains per month.
+  value: 35 kg
+  accept:
+  - '35'
+  - 35kg
+  - 35 kilo
+  - thirty-five kg
+  - 35 किलो
+  question: How much grain does a family get every month under Antyodaya Anna Yojana?
+  question_hi: अंत्योदय अन्न योजना में परिवार को हर महीने कितना अनाज मिलता है?
+  question_hi_latn: Antyodaya Anna Yojana me parivar ko har mahine kitna anaj milta hai?
+  source: 2
+  status: unverified
+- key: cost_of_grain
+  statement: Under PMGKAY, AAY grain is given free of cost.
+  value: free of cost
+  accept:
+  - free
+  - '0'
+  - Rs 0
+  - muft
+  - निःशुल्क
+  - मुफ्त
+  question: Do Antyodaya Anna Yojana card holders have to pay for their grain now?
+  question_hi: क्या अंत्योदय अन्न योजना कार्ड वालों को अब अनाज के लिए पैसा देना पड़ता है?
+  question_hi_latn: Kya Antyodaya Anna Yojana card walon ko ab anaj ke liye paisa dena padta hai?
+  source: 3
+  status: unverified
+- key: elderly_criterion_age
+  statement: Elderly persons aged 60 years or more with no assured income or support are among the groups covered.
+  value: '60'
+  accept:
+  - 60 years
+  - sixty
+  - 60 saal
+  - 60 वर्ष
+  question: From what age are elderly people without support counted for Antyodaya Anna Yojana?
+  question_hi: अंत्योदय अन्न योजना में बिना सहारे वाले बुजुर्ग की उम्र कितनी होनी चाहिए?
+  question_hi_latn: Antyodaya Anna Yojana me bina sahare wale buzurg ki umar kitni honi chahiye?
+  source: 1
+  status: unverified
+- key: national_ceiling_families
+  statement: Up to 2.5 crore poorest families can be covered under AAY across India.
+  value: 2.5 crore
+  accept:
+  - 2.50 crore
+  - 25 million
+  - 2.5 करोड़
+  - dhai crore
+  question: How many families can be covered under Antyodaya Anna Yojana across India?
+  question_hi: पूरे देश में अंत्योदय अन्न योजना में कितने परिवारों को शामिल किया जा सकता है?
+  question_hi_latn: Poore desh me Antyodaya Anna Yojana me kitne parivaron ko shamil kiya ja sakta hai?
+  source: 2
+  status: unverified
+situations:
+- language: en
+  question: I am a 65-year-old widow living alone with no income and nobody to support me. Is there a special ration card for the very poorest that gives a fixed large amount of grain to the household every month?
+- language: hi
+  question: मैं भूमिहीन खेतिहर मजदूर हूँ और मेरा परिवार बहुत गरीब है। सबसे गरीब परिवारों वाला राशन कार्ड कैसे मिलेगा जिसमें पूरे परिवार को हर महीने ज़्यादा अनाज मिलता है?
+sources:
+- title: Implementation of National Food Security Act (NFSA) - criteria for identification of AAY households
+  url: https://dfpd.gov.in/implementation-of-nfsa/en
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+- title: FAQs (AAY scheme, ration cards, NFSA, One Nation One Ration Card)
+  url: https://dfpd.gov.in/faqs/en
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)
+  url: https://dfpd.gov.in/pradhan-mantri-garib-kalyan-anna-yojana/en
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+- title: The National Food Security Act, 2013 (Gazette of India text)
+  url: https://dfpd.gov.in/WriteReadData/Other/nfsa_1.pdf
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+- title: प्रधानमंत्री गरीब कल्याण अन्न योजना (पीएमजीकेएवाई) - Hindi page
+  url: https://dfpd.gov.in/pradhan-mantri-garib-kalyan-anna-yojana/hi
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Active. AAY was launched in December 2000 and is now part of the National Food Security Act, 2013. Under PMGKAY the 35 kg is free for five years from 1 January 2024. By calculation that runs to the end of December 2028, but no end date is stated. The 60-year age is only one of several alternative criteria (others include landless labourers, artisans, destitute people and primitive tribal households), so age is not a required condition and no age rule is set. The national ceiling is 2.5 crore families. The latest count on the pages read is old (2.42 crore AAY cards as on 30.09.2014). Because each state has a fixed AAY ceiling, a new family may be added only when a place is free; actual practice, card colour and documents vary by state. The older AAY retail prices in the FAQ (Rs 2 per kg wheat, Rs 3 per kg rice) and the NFSA prices are no longer charged while PMGKAY makes the grain free.'
+  - No independent check was returned for this scheme.

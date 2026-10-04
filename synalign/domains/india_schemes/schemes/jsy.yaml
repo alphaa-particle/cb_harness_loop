@@ -1,0 +1,141 @@
+id: jsy
+name: Janani Suraksha Yojana
+short_name: JSY
+names_hi: []
+aliases:
+- Janani Suraksha Yojna
+- JSY yojana
+- janani suraksha
+- National Maternity Benefit Scheme
+level: central
+state: ''
+ministry: Ministry of Health and Family Welfare (National Health Mission)
+category: women_child
+summary: A cash payment under the National Health Mission for pregnant women who give birth in a government health facility or an accredited private hospital. In the 10 Low Performing States every woman delivering in a government facility qualifies; in other states it is for BPL, SC and ST women. The scheme is still running.
+sections:
+  eligibility:
+  - 'You must be a pregnant woman who gives birth in a health facility: a sub-centre, PHC, CHC, FRU, the general ward of a district or state hospital, or an accredited private institution.'
+  - In the 10 Low Performing States (Uttar Pradesh, Uttarakhand, Bihar, Jharkhand, Madhya Pradesh, Chhattisgarh, Assam, Rajasthan, Odisha, Jammu and Kashmir), every pregnant woman who delivers in a government health centre qualifies.
+  - In all other states and UTs (called High Performing States), only women from BPL, Scheduled Caste or Scheduled Tribe families qualify.
+  - In every state, BPL, SC and ST women also qualify if they deliver in an accredited private institution, but they must show a BPL or SC/ST certificate and a referral slip.
+  - In the Low Performing States there is no age limit and no limit on the number of births for delivery in a government or accredited facility.
+  exclusions:
+  - In the High Performing States, women who are not BPL, SC or ST do not get the cash payment.
+  - Births in a private hospital that is not accredited for JSY are not covered.
+  - The government does not pay the bill of a private hospital; a woman who chooses an accredited private hospital gets only her fixed cash amount.
+  benefits:
+  - In the Low Performing States, a mother in a rural area gets Rs 1,400 for giving birth in a health facility.
+  - In the Low Performing States, a mother in an urban area gets Rs 1,000.
+  - In the High Performing States, an eligible mother gets Rs 700 in a rural area and Rs 600 in an urban area.
+  - The cash is meant to be paid in full at the health facility at the time of delivery.
+  - A BPL woman aged 19 years or more who gives birth at home gets Rs 500 per delivery, for up to 2 live births (older rule; see status note).
+  - The ASHA worker who helps the mother gets her own separate payment (Rs 600 in rural areas, Rs 400 in urban areas); this is separate from the mother's amount.
+  how_to_apply:
+  - Register your pregnancy early with your ASHA, ANM or anganwadi worker; you will get a JSY card together with the Mother and Child Health (MCH) card.
+  - Go to a government health centre or an accredited private hospital for the delivery; the cash is handed over at the facility.
+  - If you go to an accredited private hospital, or deliver away from your usual home, carry a referral slip from your ASHA, ANM or medical officer.
+  - Complaints about eligibility, amount or delay can be taken to the grievance cell set up in each district.
+  documents:
+  - JSY card together with the Mother and Child Health (MCH) card.
+  - BPL certificate (needed in High Performing States and for home delivery); where BPL cards are not issued, the state may let the gram pradhan or ward member certify the family as poor.
+  - SC or ST certificate, if claiming on that basis.
+  - Referral slip from the ASHA, ANM or medical officer when delivering in an accredited private institution or away from home.
+rules:
+  gender: female
+facts:
+- key: lps_rural_mother_amount
+  statement: In Low Performing States such as Uttar Pradesh or Bihar, a rural mother gets Rs 1,400 for delivering in a health facility.
+  value: Rs 1,400
+  accept:
+  - '1400'
+  - 1,400
+  - Rs 1400
+  - Rs. 1400
+  - ₹1,400
+  question: How much money does Janani Suraksha Yojana give a rural mother in a state like UP or Bihar?
+  question_hi: जननी सुरक्षा योजना में यूपी या बिहार के गाँव की महिला को डिलीवरी पर कितने पैसे मिलते हैं?
+  question_hi_latn: Janani Suraksha Yojana me UP ya Bihar ke gaon ki mahila ko delivery par kitne paise milte hain?
+  source: 1
+  status: verified
+- key: lps_urban_mother_amount
+  statement: In Low Performing States, a mother living in an urban area gets Rs 1,000 for an institutional delivery.
+  value: Rs 1,000
+  accept:
+  - '1000'
+  - 1,000
+  - Rs 1000
+  - Rs. 1000
+  - ₹1,000
+  question: How much does Janani Suraksha Yojana pay a mother living in a city in a state like UP or Bihar?
+  question_hi: जननी सुरक्षा योजना में यूपी-बिहार जैसे राज्यों के शहर में रहने वाली महिला को कितने पैसे मिलते हैं?
+  question_hi_latn: Janani Suraksha Yojana me UP-Bihar jaise rajyon ke shahar me rehne wali mahila ko kitne paise milte hain?
+  source: 1
+  status: verified
+- key: hps_rural_mother_amount
+  statement: In High Performing States, an eligible rural mother gets Rs 700.
+  value: Rs 700
+  accept:
+  - '700'
+  - Rs 700
+  - Rs. 700
+  - ₹700
+  question: How much does Janani Suraksha Yojana give a poor rural mother in a state like Maharashtra or Tamil Nadu?
+  question_hi: जननी सुरक्षा योजना में महाराष्ट्र या तमिलनाडु जैसे राज्यों में गाँव की गरीब महिला को कितना पैसा मिलता है?
+  question_hi_latn: Janani Suraksha Yojana me Maharashtra ya Tamil Nadu jaise rajyon me gaon ki garib mahila ko kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: hps_urban_mother_amount
+  statement: In High Performing States, an eligible urban mother gets Rs 600.
+  value: Rs 600
+  accept:
+  - '600'
+  - Rs 600
+  - Rs. 600
+  - ₹600
+  question: How much does Janani Suraksha Yojana give a poor mother living in a city in a state like Maharashtra or Karnataka?
+  question_hi: जननी सुरक्षा योजना में महाराष्ट्र या कर्नाटक जैसे राज्यों के शहर की गरीब महिला को कितना पैसा मिलता है?
+  question_hi_latn: Janani Suraksha Yojana me Maharashtra ya Karnataka jaise rajyon ke shahar ki garib mahila ko kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: home_delivery_amount
+  statement: A BPL woman aged 19 or more who delivers at home gets Rs 500 per delivery, for up to 2 live births.
+  value: Rs 500
+  accept:
+  - '500'
+  - Rs 500
+  - Rs. 500
+  - ₹500
+  question: Does Janani Suraksha Yojana give any money if the delivery happens at home, and how much?
+  question_hi: जननी सुरक्षा योजना में घर पर डिलीवरी होने पर कितना पैसा मिलता है?
+  question_hi_latn: Janani Suraksha Yojana me ghar par delivery hone par kitna paisa milta hai?
+  source: 2
+  status: verified
+situations:
+- question: I am pregnant and from a poor family in Bihar. Will the government give me cash if I deliver my baby in the government hospital?
+  language: en
+- question: मैं गर्भवती हूँ और गरीब परिवार से हूँ। सरकारी अस्पताल में डिलीवरी कराने पर क्या सरकार कुछ नकद पैसे देती है?
+  language: hi
+sources:
+- title: Janani Suraksha Yojana
+  url: https://nhm.gov.in/index1.php?lang=1&level=3&sublinkid=841&lid=309
+  publisher: National Health Mission, Ministry of Health and Family Welfare
+  accessed: '2026-10-03'
+- title: 'Janani Suraksha Yojana: Features and Frequently Asked Questions and Answers'
+  url: https://nhm.gov.in/images/pdf/programmes/jsy/guidelines/jsy_guidelines_2006.pdf
+  publisher: Maternal Health Division, Ministry of Health and Family Welfare
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Listed as an active scheme on the NHM website (launched 12 April 2005). The current NHM page gives the cash amounts and says HPS eligibility is BPL/SC/ST women delivering in government centres, with no age or birth-number limits mentioned. The older MoHFW Features and FAQ document (around 2009) limited HPS benefits to BPL women aged 19 and above and to 2 live births, and is the only source for the Rs 500 home-delivery rule; whether these older limits still apply was not confirmed. Check with the local ASHA/ANM. The two documents also differ on the HPS ASHA package (Rs 600 rural on the NHM page versus Rs 200 in the older document) and on whether all LPS women (not only BPL/SC/ST) are covered in accredited private hospitals. One FAQ answer lists 8 LPS states, while the main text lists 10. Uttaranchal and Orissa are now Uttarakhand and Odisha. Jammu and Kashmir is now a Union Territory, and how Ladakh is treated was not checked. The pages used do not say whether payment is now
+    made by bank transfer or what Aadhaar/bank details are needed. States may add their own top-ups. JSY is separate from PMMVY and from JSSK (which covers free delivery services).'
+  - 'Checker: The alias ''National Maternity Benefit Scheme'' is wrong. NMBS was the older scheme that JSY replaced from 2005-06 (old FAQ Q.1); its cash benefits were folded into JSY. Keeping it as an alias could send general maternity-benefit questions (which may be about PMMVY) to JSY. Remove it or mark it as the predecessor scheme.'
+  - 'Checker: The payment-mode statement is outdated or not verified. ''Cash paid in full at the facility at delivery'' comes from the old 2006-2009 guidance. That document also says that in accredited private institutions only at least three-quarters must be paid at delivery. None of the pages I opened confirm how JSY is paid today (for example by DBT to a bank account). The chatbot should not promise cash in hand at the hospital.'
+  - 'Checker: The eligibility section leaves out the possible HPS age-19 and 2-live-birth limits; they appear only in the status note. Someone in an HPS state having a third child could be told she qualifies when she might not. Add a caveat to the eligibility text itself.'
+  - 'Checker: Internal inconsistency: eligibility bullet 1 says the woman must give birth in a health facility, but the benefits list a home-delivery payment.'
+  - 'Checker: Missing from the old guidance: no ASHA package is paid for deliveries in accredited private institutions (para 4.5). The benefit is still paid if the baby is stillborn (FAQ Q.13), and if a child dies after the benefit was paid, the next birth is still covered (FAQ Q.12).'
+  - 'Checker: The writer''s cited documents disagree on accredited private institutions in LPS. The old table (para 4.3) covers all women, while the NHM page and the old Note 1 say BPL/SC/ST only. The record follows the NHM page, which is the safer choice.'
+  - 'Checker: names_hi is empty.'
+  - 'Checker: No official page other than the two the writer cited could be opened to check the amounts independently. myScheme loaded no scheme content and india.gov.in returned 403. DBT Bharat''s central scheme list does show ''Janani suraksha yojana'' under MoHFW, which supports that the scheme is current.'

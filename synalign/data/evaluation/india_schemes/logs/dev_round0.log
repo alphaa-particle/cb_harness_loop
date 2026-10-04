@@ -1,0 +1,49 @@
+316 dev questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search char_tfidf           hit@1 0.8026  in-prompt 0.75  abstain 0.0833  (0.4 ms/q)
+search bm25                 hit@1 0.7664  in-prompt 0.7434  abstain 0.1667  (0.1 ms/q)
+search dense                hit@1 0.9145  in-prompt 0.9145  abstain 0.75  (3068.0 ms/q)
+search fusion               hit@1 0.9145  in-prompt 0.9276  abstain 0.75  (1181.1 ms/q)
+search fusion_no_glossary   hit@1 0.9013  in-prompt 0.9013  abstain 0.75  (45.5 ms/q)
+  closed_book: 50/316
+  closed_book: 100/316
+  closed_book: 150/316
+  closed_book: 200/316
+  closed_book: 250/316
+  closed_book: 300/316
+answers closed_book  correct 0.1519  (1.152 s/answer)
+  rules_only: 50/316
+  rules_only: 100/316
+  rules_only: 150/316
+  rules_only: 200/316
+  rules_only: 250/316
+  rules_only: 300/316
+answers rules_only   correct 0.7437  (0.034 s/answer)
+  old_search: 50/316
+  old_search: 100/316
+  old_search: 150/316
+  old_search: 200/316
+  old_search: 250/316
+  old_search: 300/316
+answers old_search   correct 0.6297  (1.162 s/answer)
+  meaning: 50/316
+  meaning: 100/316
+  meaning: 150/316
+  meaning: 200/316
+  meaning: 250/316
+  meaning: 300/316
+answers meaning      correct 0.7722  (1.142 s/answer)
+  fusion: 50/316
+  fusion: 100/316
+  fusion: 150/316
+  fusion: 200/316
+  fusion: 250/316
+  fusion: 300/316
+answers fusion       correct 0.7911  (1.276 s/answer)
+  oracle: 50/316
+  oracle: 100/316
+  oracle: 150/316
+  oracle: 200/316
+  oracle: 250/316
+  oracle: 300/316
+answers oracle       correct 0.8158  (1.125 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/dev_round0/report.md

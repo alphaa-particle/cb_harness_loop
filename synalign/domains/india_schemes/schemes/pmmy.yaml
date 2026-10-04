@@ -1,0 +1,124 @@
+id: pmmy
+name: Pradhan Mantri MUDRA Yojana
+short_name: PMMY
+names_hi:
+- प्रधानमंत्री मुद्रा योजना
+- पीएमएमवाई)
+aliases:
+- MUDRA loan
+- mudra yojana
+- pradhan mantri mudra yojana
+- PM mudra loan
+- shishu kishore tarun loan
+level: central
+state: ''
+ministry: Ministry of Finance, Department of Financial Services
+category: credit_enterprise
+summary: 'Loans without collateral for micro enterprises doing non-farm business, or allied activities such as poultry, dairy and beekeeping. Banks, NBFCs and microfinance institutions give the loans in four categories: Shishu (up to Rs 50,000), Kishore (up to Rs 5 lakh), Tarun (up to Rs 10 lakh) and Tarun Plus (up to Rs 20 lakh, for those who repaid a Tarun loan).'
+sections:
+  eligibility:
+  - Meant for micro enterprises (small businesses) that need institutional credit.
+  - The loan must be for a non-agricultural activity; allied activities such as poultry, dairy and beekeeping are also covered.
+  - The loan can be for a term loan, working capital, or both.
+  - Tarun Plus loans (above Rs 10 lakh) are only for entrepreneurs who took and fully repaid an earlier loan under the Tarun category.
+  exclusions:
+  - Farming itself is not covered; the loan is for non-agricultural purposes and allied activities only.
+  benefits:
+  - 'Shishu: loan of up to Rs 50,000.'
+  - 'Kishore: loan above Rs 50,000 and up to Rs 5 lakh.'
+  - 'Tarun: loan above Rs 5 lakh and up to Rs 10 lakh.'
+  - 'Tarun Plus: loan above Rs 10 lakh and up to Rs 20 lakh, available from 24 October 2024 to those who repaid an earlier Tarun loan.'
+  - No collateral (security) is required.
+  how_to_apply:
+  - 'Apply at a member lending institution: a public sector bank, private sector bank, foreign bank, Regional Rural Bank, Small Finance Bank, NBFC, or microfinance institution (MFI or NBFC-MFI).'
+  documents: []
+rules:
+  gender: any
+facts:
+- key: shishu_limit
+  statement: A Shishu loan under PM MUDRA Yojana is up to Rs 50,000.
+  value: Rs 50,000
+  accept:
+  - '50000'
+  - 50,000
+  - Rs 50000
+  - 50 hazar
+  question: What is the maximum Shishu loan under PM MUDRA Yojana?
+  question_hi: प्रधानमंत्री मुद्रा योजना में शिशु लोन ज़्यादा से ज़्यादा कितने का मिलता है?
+  question_hi_latn: Mudra yojana me Shishu loan zyada se zyada kitne ka milta hai?
+  source: 1
+  status: verified
+- key: kishore_limit
+  statement: A Kishore loan is above Rs 50,000 and up to Rs 5 lakh.
+  value: Rs 5 lakh
+  accept:
+  - 5 lakh
+  - '500000'
+  - 5,00,000
+  - paanch lakh
+  question: What is the maximum Kishore loan under PM MUDRA Yojana?
+  question_hi: मुद्रा योजना में किशोर लोन की अधिकतम राशि कितनी है?
+  question_hi_latn: Mudra loan Kishore category me maximum kitna loan milta hai?
+  source: 1
+  status: verified
+- key: tarun_limit
+  statement: A Tarun loan is above Rs 5 lakh and up to Rs 10 lakh.
+  value: Rs 10 lakh
+  accept:
+  - 10 lakh
+  - '1000000'
+  - 10,00,000
+  - das lakh
+  question: Up to how much can a Tarun loan under PM MUDRA Yojana be?
+  question_hi: मुद्रा योजना के तरुण लोन में अधिकतम कितना लोन मिलता है?
+  question_hi_latn: Mudra Tarun loan me kitne lakh tak ka loan milta hai?
+  source: 1
+  status: verified
+- key: tarun_plus_limit
+  statement: A Tarun Plus loan is above Rs 10 lakh and up to Rs 20 lakh, for those who repaid an earlier Tarun loan.
+  value: Rs 20 lakh
+  accept:
+  - 20 lakh
+  - '2000000'
+  - 20,00,000
+  - bees lakh
+  question: What is the maximum loan under MUDRA Tarun Plus?
+  question_hi: मुद्रा योजना में तरुण प्लस लोन कितने तक का मिलता है?
+  question_hi_latn: Mudra Tarun Plus me kitne lakh tak loan mil sakta hai?
+  source: 1
+  status: verified
+- key: collateral_required
+  statement: No collateral is required for a MUDRA loan.
+  value: No collateral
+  accept:
+  - 'no'
+  - not required
+  - nahi
+  - koi girvi nahi
+  question: Do I need to give collateral for a PM MUDRA Yojana loan?
+  question_hi: क्या मुद्रा लोन के लिए कुछ गिरवी रखना पड़ता है?
+  question_hi_latn: Kya Mudra loan ke liye kuch girvi rakhna padta hai?
+  source: 1
+  status: verified
+situations:
+- question: I run a small mobile repair shop and need about Rs 3 lakh to expand it, but I have no property to give as security. Which government loan scheme can help me?
+  language: en
+- question: मेरी छोटी किराने की दुकान है, उसे बढ़ाने के लिए बिना गारंटी के 2 लाख रुपये का लोन चाहिए। कौन सी सरकारी योजना है?
+  language: hi
+sources:
+- title: Pradhan Mantri MUDRA Yojana (PMMY)
+  url: https://financialservices.gov.in/pradhan-mantri-mudra-yojana-pmmy
+  publisher: Department of Financial Services, Ministry of Finance, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: All figures come from the Department of Financial Services page (its progress figures are dated 28.02.2025). The official MUDRA site (mudra.org.in) failed a certificate check and could not be opened, so detailed borrower eligibility, the documents list and interest rates could not be confirmed from an official page; the DFS page does not state an interest rate, which is set by the lending institution. Tarun Plus (above Rs 10 lakh up to Rs 20 lakh) applies from 24.10.2024 only to those who repaid a Tarun loan. No official Hindi name was found on the page opened. Note: holding an unpaid MUDRA loan can affect eligibility for PM Vishwakarma.'
+  - 'Checker: PIB describes the loans as being for non-corporate, non-farm income-generating activities in manufacturing, trading and services. The record never says ''non-corporate''.'
+  - 'Checker: Interest rate: PIB says it is governed by RBI guidelines and has flexible repayment terms. The record correctly says the lender sets the rate.'
+  - 'Checker: The scheme is still running. The PIB release of 8 Apr 2026 marks 11 years, and the Finance Minister says it will continue. DFS progress figures (28.02.2025) are superseded by PIB figures as on 27.03.2026: 57.79 crore loans, Rs 40.07 lakh crore.'
+  - 'Checker: The documents list is empty.'
+  - 'Checker: No official Hindi name is in the record, though one exists (see names_hi).'
+  - Official Hindi name added from https://www.pib.gov.in/PressReleasePage.aspx?PRID=2249938&reg=48&lang=2.

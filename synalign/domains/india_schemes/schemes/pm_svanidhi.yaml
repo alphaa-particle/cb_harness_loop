@@ -1,0 +1,159 @@
+id: pm_svanidhi
+name: PM Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi)
+short_name: PM SVANidhi
+names_hi:
+- पीएम स्ट्रीट वेंडर्स आत्मनिर्भर निधि
+- पीएम स्वनिधि
+aliases:
+- Pradhan Mantri Street Vendor's AtmaNirbhar Nidhi
+- PM Svanidhi Yojana
+- pm swanidhi
+- svanidhi yojana
+- street vendor loan scheme
+- rehdi patri loan yojana
+level: central
+state: ''
+ministry: Ministry of Housing and Urban Affairs (with Department of Financial Services)
+category: credit_enterprise
+summary: 'PM SVANidhi gives street vendors working capital loans without collateral in three steps: up to Rs 15,000, then Rs 25,000, then Rs 50,000. It also gives a 7% interest subsidy, cashback on digital payments and a RuPay credit card for vendors who repay well. New loans can be given until 31 March 2030 under the restructured scheme.'
+sections:
+  eligibility:
+  - Must be a street vendor who sells goods or services to the public on streets, footpaths or other public places, from a temporary stall or by moving from place to place; seasonal or year-round, mobile or stationary.
+  - Must be an adult aged 18 years or above; there is no upper age limit.
+  - Vendors in cities and towns must hold a Certificate of Vending (CoV), Identity Card or Letter of Recommendation (LoR) issued by the Urban Local Body or Town Vending Committee.
+  - Vendors in census towns and peri-urban areas must have an LoR approved by the Block Development Officer (BDO).
+  - The 2nd and 3rd loans are given only after the previous loan is fully repaid.
+  - 'For the credit card only: must have repaid the 2nd loan and be eligible for or have taken the 3rd loan, and be aged 21 to 65 years.'
+  exclusions:
+  - People below 18 years of age.
+  - A lender may refuse the loan if the applicant has an existing loan classified as NPA or written off by any lender (a low credit score alone is not a reason to refuse).
+  - Manually issued LoRs are not valid; the LoR must be issued through the PM SVANidhi portal.
+  benefits:
+  - 'Working capital loans without collateral in three tranches: 1st loan of up to Rs 15,000 (repay in 12 months), 2nd loan of up to Rs 25,000 (repay in 18 months) and 3rd loan of up to Rs 50,000 (repay in 36 months).'
+  - Interest subsidy of 7% per year, credited to the borrower's account every quarter; for example, up to Rs 603 on a Rs 15,000 first loan repaid on time.
+  - 'Cashback on digital transactions: Rs 1 per transaction, up to Rs 100 a month and up to Rs 1,200 a year in each tranche.'
+  - Extra cashback of up to Rs 100 a quarter (maximum Rs 400 a year) for digital wholesale purchases of at least Rs 2,000.
+  - No processing fee on the 1st and 2nd loans, no margin money, no guarantee fee and no penalty for early repayment.
+  - A lifetime-free, UPI-linked RuPay credit card with a limit of up to Rs 30,000 (starting at Rs 10,000), valid for 5 years.
+  how_to_apply:
+  - Apply online on the PM SVANidhi portal (pmsvanidhi.mohua.gov.in) or the PM SVANidhi mobile app; new loans can be given until 31 March 2030.
+  - Vendors without a CoV or ID card submit a 'LoR cum loan application'; the ULB or Block office verifies it and issues the LoR digitally, and the loan request then goes to the chosen bank.
+  - Help is available at ULB offices, Block offices, Common Service Centres (CSCs) and from resource persons appointed by ULBs.
+  - Linking your mobile number with Aadhaar is advised for smooth processing.
+  documents:
+  - Certificate of Vending, Identity Card or LoR from the ULB/Town Vending Committee, or LoR approved by the BDO.
+  - Aadhaar card (Voter ID only for vendors from Assam and Meghalaya who do not have Aadhaar).
+  - Savings bank account passbook or bank statement.
+  - A valid UPI ID linked to the vendor's bank account.
+  - 'For the credit card: PAN card as well.'
+rules:
+  age_min: 18
+  gender: any
+facts:
+- key: first_loan_amount
+  statement: The 1st loan under PM SVANidhi is up to Rs 15,000, repayable in 12 months.
+  value: Rs 15,000
+  accept:
+  - '15000'
+  - 15,000
+  - Rs 15000
+  - ₹15,000
+  - 15 hazar
+  question: How much loan do I get the first time under PM SVANidhi?
+  question_hi: पीएम स्वनिधि योजना में पहली बार कितना लोन मिलता है?
+  question_hi_latn: PM SVANidhi me pehli baar kitna loan milta hai?
+  source: 3
+  status: verified
+- key: second_loan_amount
+  statement: The 2nd loan under PM SVANidhi is up to Rs 25,000, repayable in 18 months.
+  value: Rs 25,000
+  accept:
+  - '25000'
+  - 25,000
+  - Rs 25000
+  - ₹25,000
+  - 25 hazar
+  question: How much is the second loan under PM SVANidhi?
+  question_hi: पीएम स्वनिधि योजना में दूसरा लोन कितना मिलता है?
+  question_hi_latn: PM SVANidhi me doosra loan kitna milta hai?
+  source: 3
+  status: verified
+- key: third_loan_amount
+  statement: The 3rd loan under PM SVANidhi is up to Rs 50,000, repayable in 36 months.
+  value: Rs 50,000
+  accept:
+  - '50000'
+  - 50,000
+  - Rs 50000
+  - ₹50,000
+  - 50 hazar
+  question: What is the third loan amount under PM SVANidhi?
+  question_hi: पीएम स्वनिधि योजना में तीसरा लोन कितने का होता है?
+  question_hi_latn: PM SVANidhi me teesra loan kitne ka hota hai?
+  source: 3
+  status: verified
+- key: interest_subsidy
+  statement: PM SVANidhi borrowers get an interest subsidy of 7% per year, credited every quarter.
+  value: 7%
+  accept:
+  - '7'
+  - 7 percent
+  - 7 per cent
+  - seven percent
+  - 7 pratishat
+  question: How much interest subsidy is given under PM SVANidhi?
+  question_hi: पीएम स्वनिधि योजना में ब्याज पर कितनी सब्सिडी मिलती है?
+  question_hi_latn: PM SVANidhi me byaj par kitni subsidy milti hai?
+  source: 2
+  status: verified
+- key: lending_period_end
+  statement: New PM SVANidhi loans can be given until 31 March 2030.
+  value: 31 March 2030
+  accept:
+  - March 31, 2030
+  - 31.03.2030
+  - March 2030
+  - '2030'
+  question: Till when can I apply for a loan under PM SVANidhi?
+  question_hi: पीएम स्वनिधि योजना में लोन के लिए कब तक आवेदन कर सकते हैं?
+  question_hi_latn: PM SVANidhi me loan ke liye kab tak apply kar sakte hain?
+  source: 2
+  status: verified
+situations:
+- question: I sell vegetables from a handcart in my town and need about 15,000 rupees to buy stock, but I have nothing to give as security. Which government loan can I get?
+  language: en
+- question: मैं सड़क किनारे चाय का ठेला लगाता हूँ, धंधा बढ़ाने के लिए बिना गारंटी का छोटा लोन कहाँ से मिलेगा?
+  language: hi
+sources:
+- title: PM SVANidhi portal
+  url: https://pmsvanidhi.mohua.gov.in/
+  publisher: Ministry of Housing and Urban Affairs
+  accessed: '2026-10-03'
+- title: PM SVANidhi Scheme Guidelines (restructured scheme)
+  url: https://pmsvanidhi.mohua.gov.in/Default/ViewFile/?id=Scheme+Guidelines.pdf&path=MiscFiles
+  publisher: Ministry of Housing and Urban Affairs
+  accessed: '2026-10-03'
+- title: PM SVANidhi Loan Operational Guidelines
+  url: https://pmsvanidhi.mohua.gov.in/Default/ViewFile/?id=Loan+Operations+Guidelines.pdf&path=MiscFiles
+  publisher: Ministry of Housing and Urban Affairs
+  accessed: '2026-10-03'
+- title: PM SVANidhi Credit Card Operational Guidelines
+  url: https://pmsvanidhi.mohua.gov.in/Default/ViewFile/?id=Credit+Card+guidelines.pdf&path=MiscFiles
+  publisher: Ministry of Housing and Urban Affairs
+  accessed: '2026-10-03'
+- title: PM SVANidhi FAQ (Hindi)
+  url: https://pmsvanidhi.mohua.gov.in/Default/ViewFile/?id=FAQHindi.pdf&path=MiscFiles
+  publisher: Ministry of Housing and Urban Affairs
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme was launched in June 2020, first for lending up to 31 March 2022, then extended to 31 December 2024. The restructured scheme extends the lending period to 31 March 2030, with interest subsidy and cashback paid until 31 March 2033. Loan amounts went up from Rs 10,000 / Rs 20,000 / Rs 50,000 to Rs 15,000 / Rs 25,000 / Rs 50,000. The 2020 FAQ PDFs still on the portal show the old Rs 10,000 limit, a March 2022 end date, an older cashback of Rs 50-100 a month and the 24 March 2020 vending cut-off; these are out of date. The interest rate itself is set by each lender''s policy or RBI norms; the 7% subsidy reduces it. The scheme now covers census towns and peri-urban areas step by step, so availability there may vary. I could not open PIB or myScheme.'
+  - 'Checker: Source 5 (the Hindi FAQ PDF) is the outdated 2020 FAQ. It gives a Rs 10,000 loan, a scheme period to March 2022, the 24 March 2020 vending cut-off and old cashback of Rs 50-100 a month. Use it only for the Hindi scheme name, never for facts. The writer flagged this.'
+  - 'Checker: Missing condition: coverage is limited to States/UTs that have notified rules and schemes under the Street Vendors Act, 2014 (Scheme Guidelines para 3). Census towns and peri-urban areas are being added step by step.'
+  - 'Checker: Missing condition: interest subsidy is paid only for months in which the loan account is ''standard'' (not NPA) on the claim dates.'
+  - 'Checker: Minimum loan amounts per tranche (Rs 5,000 / Rs 15,000 / Rs 30,000) are not mentioned. This is minor, but useful for ''how much can I get'' answers.'
+  - 'Checker: The 3rd-tranche processing fee follows the lender''s policy. The record implies this by naming only the 1st and 2nd loans, but it could say so plainly.'
+  - 'Checker: All sources are official MoHUA portal files. Wording is paraphrased; I saw no copied sentences.'

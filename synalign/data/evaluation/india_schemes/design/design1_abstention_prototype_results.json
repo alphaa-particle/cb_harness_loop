@@ -1,0 +1,106 @@
+{
+ "54": {
+  "baseline": {
+   "in_prompt": "282/304",
+   "abstain": "9/12",
+   "type=eligibility": "52/52",
+   "type=fact": "149/162",
+   "type=situation": "29/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "81/92",
+   "language=hi_latn": "53/60",
+   "ms_per_question": 64.3
+  },
+  "floor_054": {
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95_points": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 1,
+   "new": {
+    "in_prompt": "282/304",
+    "abstain": "10/12"
+   },
+   "answerable_refused": 1,
+   "baseline_answerable_refused": 1,
+   "newly_abstained": [
+    "absent__kalia__en"
+   ],
+   "ms_per_question": 42.2
+  },
+  "agree_056": {
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95_points": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 1,
+   "new": {
+    "in_prompt": "282/304",
+    "abstain": "10/12"
+   },
+   "answerable_refused": 1,
+   "baseline_answerable_refused": 1,
+   "newly_abstained": [
+    "absent__kalia__en"
+   ],
+   "ms_per_question": 31.9
+  }
+ },
+ "scale": {
+  "baseline": {
+   "in_prompt": "261/304",
+   "abstain": "5/12",
+   "type=eligibility": "47/52",
+   "type=fact": "147/162",
+   "type=situation": "16/36",
+   "type=typo": "51/54",
+   "language=en": "136/152",
+   "language=hi": "75/92",
+   "language=hi_latn": "50/60",
+   "ms_per_question": 80.2
+  },
+  "floor_054": {
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95_points": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 0,
+   "new": {
+    "in_prompt": "261/304",
+    "abstain": "5/12"
+   },
+   "answerable_refused": 0,
+   "baseline_answerable_refused": 0,
+   "newly_abstained": [],
+   "ms_per_question": 64.3
+  },
+  "agree_056": {
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95_points": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 0,
+   "new": {
+    "in_prompt": "261/304",
+    "abstain": "5/12"
+   },
+   "answerable_refused": 0,
+   "baseline_answerable_refused": 0,
+   "newly_abstained": [],
+   "ms_per_question": 39.0
+  }
+ }
+}

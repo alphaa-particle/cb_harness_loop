@@ -1,0 +1,10 @@
+[54] built retriever over 286 sections in 0.2s
+54    baseline      {"in_prompt@k2": 246, "in_prompt@k3": 282, "in_prompt@k5": 294, "MRR_gold_section@20": 0.836, "MRR_gold_scheme@20": 0.9442, "scheme_top1": 278}
+54    convex_w0.10  {"in_prompt@k2": 253, "in_prompt@k3": 287, "in_prompt@k5": 295, "MRR_gold_section@20": 0.8506, "MRR_gold_scheme@20": 0.9611, "scheme_top1": 287}
+54    convex_w0.20  {"in_prompt@k2": 254, "in_prompt@k3": 285, "in_prompt@k5": 294, "MRR_gold_section@20": 0.8329, "MRR_gold_scheme@20": 0.9626, "scheme_top1": 288}
+54    gated_m0.05   {"in_prompt@k2": 251, "in_prompt@k3": 288, "in_prompt@k5": 295, "MRR_gold_section@20": 0.8504, "MRR_gold_scheme@20": 0.9565, "scheme_top1": 284}
+[scale] built retriever over 27593 sections in 8.1s
+scale baseline      {"in_prompt@k2": 235, "in_prompt@k3": 261, "in_prompt@k5": 276, "MRR_gold_section@20": 0.785, "MRR_gold_scheme@20": 0.9012, "scheme_top1": 266}
+scale convex_w0.10  {"in_prompt@k2": 236, "in_prompt@k3": 267, "in_prompt@k5": 281, "MRR_gold_section@20": 0.8039, "MRR_gold_scheme@20": 0.9127, "scheme_top1": 270}
+scale convex_w0.20  {"in_prompt@k2": 235, "in_prompt@k3": 270, "in_prompt@k5": 285, "MRR_gold_section@20": 0.785, "MRR_gold_scheme@20": 0.9184, "scheme_top1": 270}
+scale gated_m0.05   {"in_prompt@k2": 234, "in_prompt@k3": 264, "in_prompt@k5": 277, "MRR_gold_section@20": 0.7868, "MRR_gold_scheme@20": 0.9029, "scheme_top1": 268}

@@ -1,0 +1,11 @@
+# Only needed to run or fine-tune a local model. Install AFTER requirements.txt:
+#   pip install -r requirements-model.txt
+#
+# Nothing here is needed for the naive baseline audit, search, the /context
+# endpoint, training-data generation or the test suite.
+torch
+transformers>=4.51
+accelerate
+requests        # Ollama backend
+peft            # scripts/train_qwen_lora_sft.py, scripts/merge_qwen_lora.py
+datasets        # scripts/train_qwen_lora_sft.py

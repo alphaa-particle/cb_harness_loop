@@ -1,0 +1,154 @@
+id: pm_sym
+name: Pradhan Mantri Shram Yogi Maan-dhan
+short_name: PM-SYM
+names_hi:
+- प्रधानमंत्री श्रम योगी मानधन योजना
+aliases:
+- PMSYM
+- PM Shram Yogi Maandhan Yojana
+- shram yogi maandhan
+- shramyogi mandhan yojana
+- maandhan pension yojana
+- unorganised worker pension scheme
+level: central
+state: ''
+ministry: Ministry of Labour and Employment
+category: pension
+summary: A voluntary pension scheme for unorganised workers aged 18 to 40 who earn Rs 15,000 a month or less. The worker pays a small monthly amount, the government pays the same amount, and the worker gets a pension of at least Rs 3,000 a month from age 60.
+sections:
+  eligibility:
+  - Works in the unorganised sector, for example as a street vendor, domestic worker, rickshaw puller, head loader, construction or farm labourer, beedi, handloom or leather worker, or in similar work.
+  - Aged 18 to 40 when joining.
+  - Monthly income of Rs 15,000 or less.
+  - Has an Aadhaar card and a savings bank or Jan Dhan account with IFSC.
+  exclusions:
+  - People older than 40 cannot join.
+  - Members of EPFO, ESIC or NPS (organised-sector coverage) cannot join.
+  - Income tax payers cannot join.
+  - People already getting benefits from another government pension scheme are not eligible, according to the PIB note on the scheme.
+  benefits:
+  - A minimum assured pension of Rs 3,000 per month for life from age 60.
+  - The worker pays Rs 55 to Rs 200 a month depending on age at joining (Rs 55 at 18, Rs 105 at 30, Rs 200 at 40) until age 60, and the Central Government adds an equal amount every month.
+  - If the pensioner dies, the spouse gets 50% of the pension as family pension; family pension is only for the spouse.
+  - If the member dies before 60 after paying regularly, the spouse can continue the scheme and later get the pension, or take back the member's contribution with interest.
+  - Leaving within 10 years returns the worker's own contribution with savings bank interest; leaving after 10 years but before 60 returns it with the interest earned by the fund or savings bank interest, whichever is higher.
+  how_to_apply:
+  - Visit the nearest Common Service Centre (CSC) with Aadhaar and bank account details, or self-enrol on the official portal maandhan.in.
+  - The first contribution is paid in cash at the CSC; after that it is auto-debited from the bank account each month (quarterly, half-yearly or yearly payment is also possible).
+  - A Shram Yogi pension card and account number are given after enrolment; enrolment is free.
+  - 'Helpline: 14434 or 1800 2676 888.'
+  documents:
+  - Aadhaar card.
+  - Savings bank or Jan Dhan account details with IFSC.
+  - Mobile number.
+  - Self-certification form and consent for auto-debit; no separate proof of age or income is required.
+rules:
+  age_min: 18
+  age_max: 40
+  monthly_income_max: 15000
+  gender: any
+facts:
+- key: monthly_pension
+  statement: Members get a minimum pension of Rs 3,000 per month from age 60.
+  value: Rs 3,000
+  accept:
+  - '3000'
+  - 3,000
+  - ₹3000
+  - Rs 3000
+  - 3 hazaar
+  question: How much monthly pension does PM Shram Yogi Maandhan give?
+  question_hi: प्रधानमंत्री श्रम योगी मानधन योजना में हर महीने कितनी पेंशन मिलती है?
+  question_hi_latn: PM Shram Yogi Maandhan yojana me har mahine kitni pension milti hai?
+  source: 1
+  status: verified
+- key: entry_age
+  statement: Only people aged 18 to 40 can join.
+  value: 18 to 40
+  accept:
+  - 18-40
+  - 18 se 40
+  - between 18 and 40
+  - 18 to 40 years
+  question: What is the age limit to join PM-SYM?
+  question_hi: श्रम योगी मानधन योजना में किस उम्र में जुड़ सकते हैं?
+  question_hi_latn: Shram Yogi Maandhan yojana me kis umar me jud sakte hain?
+  source: 1
+  status: verified
+- key: monthly_income_limit
+  statement: The worker's monthly income must be Rs 15,000 or less.
+  value: Rs 15,000
+  accept:
+  - '15000'
+  - 15,000
+  - ₹15000
+  - 15 hazaar
+  question: What is the maximum monthly income allowed for PM Shram Yogi Maandhan?
+  question_hi: श्रम योगी मानधन योजना के लिए महीने की आमदनी कितनी तक होनी चाहिए?
+  question_hi_latn: Shram Yogi Maandhan ke liye mahine ki aamdani kitni tak honi chahiye?
+  source: 1
+  status: verified
+- key: monthly_contribution
+  statement: The worker pays Rs 55 to Rs 200 a month depending on joining age, and the government pays the same amount.
+  value: Rs 55 to Rs 200
+  accept:
+  - 55 to 200
+  - Rs 55 - Rs 200
+  - 55-200
+  - ₹55 to ₹200
+  question: How much do I have to pay every month in PM-SYM?
+  question_hi: पीएम-एसवाईएम में हर महीने कितना पैसा जमा करना होता है?
+  question_hi_latn: PM-SYM me har mahine kitna paisa jama karna hota hai?
+  source: 3
+  status: verified
+- key: family_pension
+  statement: After the pensioner's death, the spouse gets 50% of the pension.
+  value: 50%
+  accept:
+  - 50 percent
+  - half
+  - aadha
+  - 50 per cent
+  question: How much pension does the spouse get under PM Shram Yogi Maandhan if the pensioner dies?
+  question_hi: श्रम योगी मानधन में पेंशनधारी की मृत्यु के बाद पति या पत्नी को कितनी पेंशन मिलती है?
+  question_hi_latn: Shram Yogi Maandhan me pensioner ki maut ke baad pati ya patni ko kitni pension milti hai?
+  source: 2
+  status: verified
+situations:
+- language: en
+  question: I am a 30-year-old domestic worker earning about Rs 9,000 a month, with no PF and I don't pay income tax. Is there a government scheme where I pay a little every month and get a pension in old age?
+- language: hi_latn
+  question: Main rickshaw chalata hoon, umar 28 saal hai aur mahine ki kamai 10 hazaar hai. Budhape me har mahine pension mile, iske liye kaun si sarkari yojana hai?
+sources:
+- title: PM-SYM (scheme page)
+  url: https://maandhan.in/show_content.php?lang=1&level=1&ls_id=28&lid=28&page=6
+  publisher: Maandhan portal, Ministry of Labour & Employment, Government of India
+  accessed: '2026-10-03'
+- title: FAQs of PM-SYM
+  url: https://maandhan.in/show_content.php?lang=1&level=1&ls_id=79&lid=63&page=74
+  publisher: Maandhan portal, Ministry of Labour & Employment, Government of India
+  accessed: '2026-10-03'
+- title: Contribution Chart
+  url: https://maandhan.in/show_content.php?lang=1&level=1&ls_id=138&lid=115&page=6
+  publisher: Maandhan portal, Ministry of Labour & Employment, Government of India
+  accessed: '2026-10-03'
+- title: 'Pradhan Mantri Shram Yogi Maandhan Yojana: Ensuring Financial Security for India''s Unorganised Workforce (4 March 2025)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/mar/doc202534512301.pdf
+  publisher: Press Information Bureau Research Unit, Government of India
+  accessed: '2026-10-03'
+- title: Maandhan portal (Hindi)
+  url: https://maandhan.in/show_content.php?lang=2&level=1&ls_id=28&lid=28&page=6
+  publisher: Maandhan portal, Ministry of Labour & Employment, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Open for enrolment: the official Maandhan portal (footer updated 14/08/2026) and the Ministry of Labour website''s scheme list both still show it. Small wording difference on income: the scheme page says monthly income of Rs 15,000 or below, while one portal FAQ says less than Rs 15,000. The exclusion for people getting another government pension appears in the March 2025 PIB note but not on the Maandhan scheme page. If a member later joins EPFO (organised sector), the portal FAQ says they may stay in the scheme but the government share stops and they must pay that share too, or they can withdraw with interest. The old labour.gov.in/pm-sym page no longer shows content after the ministry''s website was redesigned. Pension money is managed and paid by LIC.'
+  - 'Checker: Missing benefit: the PIB note says permanent disability caused by an accident before 60 is handled like death. The spouse can continue, or the contribution is paid back with the higher of fund or savings-bank interest.'
+  - 'Checker: Missing: the rule for missed payments. The PIB note says a member can regularise by paying all dues plus any penalty the government decides, and that the revival window for dormant accounts was extended from 1 to 3 years.'
+  - 'Checker: The interest paid on a refund after death before 60 differs between the official FAQ (savings-bank rate) and the PIB note (higher of fund or savings-bank rate). If the record gives a rate, it should name both sources.'
+  - 'Checker: The 10-year exit rules are sourced only from the PIB note, not from the Maandhan PM-SYM pages the record cites. The PIB note should be cited for that statement.'
+  - 'Checker: The exclusion for people already getting another government pension appears only in the PIB note, not on the Maandhan scheme page or FAQ (the writer noted this).'
+  - 'Checker: Still open: the Maandhan portal (footer last updated 14/08/2026) and the Ministry of Labour ''Schemes and Services'' page (checked 2026-10-03) both list PM Shram Yogi Maan-dhan.'

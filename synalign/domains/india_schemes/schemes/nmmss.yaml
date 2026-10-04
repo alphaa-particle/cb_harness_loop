@@ -1,0 +1,144 @@
+id: nmmss
+name: National Means-cum-Merit Scholarship Scheme
+short_name: NMMSS
+names_hi:
+- राष्ट्रीय साधन-सह-योग्यता छात्रवृत्ति योजना
+aliases:
+- NMMS scholarship
+- NMMS exam
+- national means cum merit scholarship
+- nmms chhatravritti yojana
+- means cum merit scholarship class 8
+level: central
+state: ''
+ministry: Ministry of Education, Department of School Education and Literacy
+category: education
+summary: A central scholarship of Rs 12,000 a year for bright students from low-income families studying in Class 9 to 12 in government, government-aided and local body schools. Students are chosen through a state-level test taken in Class 8, and 1,00,000 new scholarships are given every year.
+sections:
+  eligibility:
+  - Parents' income from all sources must be no more than Rs 3,50,000 a year.
+  - You need at least 55% marks (or an equivalent grade) in the Class 7 exam to sit the selection test. SC/ST students get a 5% relaxation.
+  - You must study as a regular student in a government, government-aided or local body school.
+  - You must pass the state's selection test in Class 8 (Mental Ability Test and Scholastic Aptitude Test) with at least 40% marks in aggregate. The cut-off for SC/ST students is 32%.
+  - At the time of selection you need at least 55% marks (or an equivalent grade) in the Class 8 exam. SC/ST students get a 5% relaxation.
+  - You must be promoted from Class 8 to Class 9 to start receiving the scholarship.
+  - To continue, you must pass Class 9 and Class 11 in the first attempt, and you need at least 60% marks in Class 10 (5% lower for SC/ST students).
+  exclusions:
+  - Students of Kendriya Vidyalayas and Jawahar Navodaya Vidyalayas.
+  - Students of residential schools run by Central or State Government institutions that provide boarding, lodging and education.
+  - Students of private schools.
+  - Diploma or certificate-level courses and studies abroad are not covered.
+  - A student can hold only one Central Government scholarship.
+  - The scholarship stops if there is a gap of one academic session, and once stopped it cannot be restarted.
+  benefits:
+  - Rs 12,000 a year (Rs 1,000 a month) for each selected student.
+  - Paid for up to four years, from Class 9 to Class 12.
+  - 1,00,000 fresh scholarships every year, divided among States and UTs by a fixed quota.
+  - The money is sent directly to the student's bank account through DBT.
+  how_to_apply:
+  - While in Class 8, take the NMMSS selection test (MAT and SAT) conducted by your State/UT education department, usually around November.
+  - If selected, create a One Time Registration (OTR) on the National Scholarship Portal (scholarships.gov.in) and apply for the fresh scholarship.
+  - Your school verifies the application, then the State nodal officer approves it.
+  - Apply for renewal on NSP every year within the deadline, or the scholarship is discontinued.
+  documents:
+  - Income certificate of the parent or guardian, issued by the competent State/UT authority.
+  - Caste certificate, if applicable.
+  - Aadhaar number and a mobile number linked with Aadhaar (for OTR).
+  - Bank account in the student's name, preferably in SBI or another core-banking bank.
+rules:
+  annual_income_max: 350000
+  gender: any
+facts:
+- key: scholarship_amount
+  statement: The NMMSS scholarship is Rs 12,000 a year (Rs 1,000 a month).
+  value: Rs 12,000
+  accept:
+  - '12000'
+  - 12,000
+  - Rs 12000
+  - 1000 per month
+  - Rs 1,000 a month
+  question: How much money does the NMMS scholarship give each year?
+  question_hi: एनएमएमएस (NMMS) छात्रवृत्ति में हर साल कितने पैसे मिलते हैं?
+  question_hi_latn: NMMS scholarship me har saal kitna paisa milta hai?
+  source: 1
+  status: unverified
+- key: income_limit
+  statement: Parents' income from all sources must be no more than Rs 3,50,000 a year.
+  value: Rs 3,50,000
+  accept:
+  - '350000'
+  - 3,50,000
+  - 3.5 lakh
+  - Rs 3.5 lakh
+  - saade teen lakh
+  question: What is the parents' income limit for the NMMS scholarship?
+  question_hi: एनएमएमएस (NMMS) छात्रवृत्ति के लिए माता-पिता की आय सीमा कितनी है?
+  question_hi_latn: NMMS scholarship ke liye parents ki income limit kitni hai?
+  source: 1
+  status: unverified
+- key: class7_marks
+  statement: You need at least 55% marks in Class 7 to sit the NMMSS selection test (5% relaxation for SC/ST).
+  value: 55%
+  accept:
+  - '55'
+  - 55 percent
+  - 50% for SC/ST
+  question: How many marks in Class 7 are needed to appear in the NMMS exam?
+  question_hi: एनएमएमएस (NMMS) परीक्षा में बैठने के लिए सातवीं कक्षा में कितने अंक चाहिए?
+  question_hi_latn: NMMS exam dene ke liye 7th class me kitne marks chahiye?
+  source: 1
+  status: unverified
+- key: qualifying_marks
+  statement: You must score at least 40% in aggregate in MAT and SAT; the cut-off for SC/ST is 32%.
+  value: 40%
+  accept:
+  - '40'
+  - 40 percent
+  - 32% for SC/ST
+  question: What marks are needed to qualify in the NMMS selection exam?
+  question_hi: एनएमएमएस (NMMS) चयन परीक्षा पास करने के लिए कितने अंक चाहिए?
+  question_hi_latn: NMMS exam qualify karne ke liye kitne marks chahiye?
+  source: 1
+  status: unverified
+- key: renewal_class10_marks
+  statement: To keep the scholarship after Class 10 you need at least 60% marks in Class 10 (5% lower for SC/ST).
+  value: 60%
+  accept:
+  - '60'
+  - 60 percent
+  - 55% for SC/ST
+  question: How many marks in Class 10 are needed to keep the NMMS scholarship in Class 11 and 12?
+  question_hi: एनएमएमएस (NMMS) छात्रवृत्ति 11वीं-12वीं में जारी रखने के लिए दसवीं में कितने अंक चाहिए?
+  question_hi_latn: NMMS scholarship 11th-12th me chalu rakhne ke liye 10th me kitne marks chahiye?
+  source: 1
+  status: unverified
+situations:
+- language: en
+  question: My son is in Class 8 at a government school and our family income is about 2 lakh a year. Is there an exam he can write to get a scholarship every year until Class 12?
+- language: hi
+  question: मेरी बेटी सरकारी स्कूल में आठवीं कक्षा में पढ़ती है और हमारी सालाना आय तीन लाख से कम है। क्या कोई परीक्षा है जिससे उसे बारहवीं तक हर साल छात्रवृत्ति मिल सके?
+sources:
+- title: Revised guidelines of Central Sector National Means-cum-Merit Scholarship Scheme (NMMSS), March 2022
+  url: https://scholarships.gov.in/public/schemeGuidelines/NMMSSGuidelines.pdf
+  publisher: Department of School Education & Literacy, Ministry of Education (hosted on National Scholarship Portal)
+  accessed: '2026-10-03'
+- title: National Means-cum-merit Scholarship Scheme
+  url: https://www.dsel-education.gov.in/offerings/schemes-and-services/details/national-means-cum-merit-scholarship-scheme-IzNyYTMtQWa
+  publisher: Department of School Education & Literacy, Ministry of Education
+  accessed: '2026-10-03'
+- title: FAQs on online submission of applications under NMMSS
+  url: https://scholarships.gov.in/public/FAQ/NMSSS_FAQ.pdf
+  publisher: Department of School Education & Literacy, Ministry of Education (hosted on National Scholarship Portal)
+  accessed: '2026-10-03'
+- title: Schemes on NSP (Department of School Education & Literacy listing)
+  url: https://scholarships.gov.in/All-Scholarships
+  publisher: National Scholarship Portal, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The Cabinet approved continuing the scheme from FY 2021-22 to FY 2025-26 with Rs 1,827 crore, and the revised guidelines (March 2022) apply from FY 2022-23. On 3 Oct 2026 NSP showed NMMSS open for AY 2026-27 (student applications from 1 June to 31 Oct 2026), but I found no official order extending the scheme beyond 2025-26. Each State/UT runs its own selection test, sets its own exam dates and applies its own reservation rules. The NSP FAQ says ''relaxable by 50% for SC/ST'' in one place, which appears to be a typo; the guidelines and the Department''s page say 5%. The Hindi name comes from the Department''s website in Hindi view, which may be machine-translated.'
+  - No independent check was returned for this scheme.

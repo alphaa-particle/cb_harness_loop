@@ -1,0 +1,149 @@
+id: pm_usp_csss
+name: PM Uchchatar Shiksha Protsahan (PM-USP) Central Sector Scheme of Scholarship for College and University Students
+short_name: PM-USP CSSS
+names_hi: []
+aliases:
+- Central Sector Scheme of Scholarship
+- CSSS scholarship
+- pm usp yojana
+- pradhan mantri uchchatar shiksha protsahan yojana
+- central sector scholarship for college students
+- NSP central sector scholarship
+level: central
+state: ''
+ministry: Ministry of Education, Department of Higher Education
+category: education
+summary: A Ministry of Education merit-cum-means scholarship for students who scored above the 80th percentile in their Class 12 board exam and whose family income is up to Rs 4.5 lakh a year. It pays Rs 12,000 a year for the first three years of college and Rs 20,000 a year at postgraduate level, and also in the 4th and 5th years of longer professional courses.
+sections:
+  eligibility:
+  - You passed Class 12 (10+2 or equivalent) and scored above the 80th percentile of successful candidates in your stream in your board's exam.
+  - Your name must be in the merit list that your board (State board, CBSE or CISCE) shares on the National Scholarship Portal.
+  - Gross parental or family income of up to Rs 4,50,000 (4.5 lakh) a year.
+  - Fresh applicants must have passed Class 12 in the previous academic year and joined the first year of a regular degree course.
+  - Your college or institution must be recognised by AICTE or the relevant regulatory body and have a valid AISHE code.
+  - You must not be getting any other merit scholarship, state scholarship, fee waiver or fee reimbursement.
+  - To renew each year you need at least 50% marks in the annual exam and at least 75% attendance.
+  exclusions:
+  - Students in correspondence or distance-mode courses.
+  - Students doing diploma courses.
+  - Students who took a gap (drop) year after Class 12.
+  - Students already receiving another scholarship, fee waiver or fee reimbursement.
+  - Students facing complaints of indiscipline, criminal behaviour or ragging lose the scholarship.
+  benefits:
+  - Rs 12,000 a year for the first three years of graduation in college and university courses.
+  - Rs 20,000 a year at postgraduate level.
+  - In five-year or integrated professional courses, Rs 20,000 a year in the 4th and 5th years.
+  - B.Tech or B.E. students get Rs 12,000 a year for years 1 to 3 and Rs 20,000 in the 4th year.
+  - The scholarship is renewed year by year, for a total of no more than 5 years.
+  - Up to 82,000 fresh scholarships a year, half of them for girls, paid by DBT into the student's Aadhaar-seeded bank account.
+  how_to_apply:
+  - Create a One Time Registration (OTR) on the National Scholarship Portal (scholarships.gov.in) using Aadhaar and the mobile number linked to it.
+  - Log in, choose your domicile state and the Post-Matric option, select the PM-USP Central Sector Scheme, fill the form and upload documents. Applying is free.
+  - Your college (institute nodal officer) verifies the application first, then the state nodal agency.
+  - Apply for renewal on NSP every year before the deadline. If you miss one year, you can apply for renewal the next year if you still qualify.
+  documents:
+  - Class 12 mark sheet (fresh applicants).
+  - Family income certificate (needed only for fresh applicants).
+  - Caste or category certificate for reserved-category students.
+  - Disability certificate, if applicable.
+  - Previous year's mark sheet (for renewal).
+  - Aadhaar number and an Aadhaar-seeded bank account in the student's own name.
+rules:
+  annual_income_max: 450000
+  gender: any
+facts:
+- key: income_limit
+  statement: Family income must be up to Rs 4,50,000 (4.5 lakh) a year.
+  value: 4.5 lakh
+  accept:
+  - '450000'
+  - 4,50,000
+  - Rs 4.5 lakh
+  - 4.5 lakh rupees
+  - saade chaar lakh
+  question: What is the family income limit for the PM-USP Central Sector Scholarship?
+  question_hi: पीएम-यूएसपी सेंट्रल सेक्टर छात्रवृत्ति के लिए परिवार की आय सीमा कितनी है?
+  question_hi_latn: PM-USP Central Sector Scholarship ke liye family income limit kitni hai?
+  source: 1
+  status: unverified
+- key: percentile_required
+  statement: You must be above the 80th percentile of successful candidates in your stream in the Class 12 board exam.
+  value: 80th
+  accept:
+  - '80'
+  - 80th percentile
+  - top 20 percentile
+  - top 20 percent
+  question: What percentile in Class 12 do I need for the PM-USP Central Sector Scholarship?
+  question_hi: पीएम-यूएसपी सेंट्रल सेक्टर छात्रवृत्ति के लिए 12वीं में कितना पर्सेंटाइल चाहिए?
+  question_hi_latn: PM-USP CSSS scholarship ke liye 12th me kitna percentile chahiye?
+  source: 1
+  status: unverified
+- key: graduation_amount
+  statement: Graduation students get Rs 12,000 a year for the first three years.
+  value: Rs 12,000
+  accept:
+  - '12000'
+  - 12,000
+  - Rs 12000
+  - 12 hazar
+  question: How much money does the PM-USP Central Sector Scholarship give per year during graduation?
+  question_hi: पीएम-यूएसपी सेंट्रल सेक्टर छात्रवृत्ति में ग्रेजुएशन के दौरान साल में कितने पैसे मिलते हैं?
+  question_hi_latn: PM-USP Central Sector Scholarship me graduation ke time saal ka kitna paisa milta hai?
+  source: 1
+  status: unverified
+- key: pg_amount
+  statement: Postgraduate students get Rs 20,000 a year.
+  value: Rs 20,000
+  accept:
+  - '20000'
+  - 20,000
+  - Rs 20000
+  - 20 hazar
+  question: How much does the PM-USP Central Sector Scholarship pay per year for a postgraduate course?
+  question_hi: पीएम-यूएसपी सेंट्रल सेक्टर छात्रवृत्ति में पोस्ट ग्रेजुएशन के लिए साल में कितना मिलता है?
+  question_hi_latn: PM-USP Central Sector Scholarship me PG ke liye saal ka kitna milta hai?
+  source: 1
+  status: unverified
+- key: renewal_marks
+  statement: To renew the scholarship each year you need at least 50% marks in the annual exam and 75% attendance.
+  value: 50%
+  accept:
+  - '50'
+  - 50 percent
+  - fifty percent
+  question: How many marks do I need each year to renew the PM-USP Central Sector Scholarship?
+  question_hi: पीएम-यूएसपी सेंट्रल सेक्टर छात्रवृत्ति को हर साल रिन्यू कराने के लिए कितने अंक चाहिए?
+  question_hi_latn: PM-USP CSSS scholarship renew karne ke liye har saal kitne marks chahiye?
+  source: 1
+  status: unverified
+situations:
+- language: en
+  question: I scored in the top 20 percentile of my state board in Class 12, my family earns about 3 lakh a year, and I just joined a BSc course. Is there a central government scholarship that will pay me every year of college?
+- language: hi_latn
+  question: Maine 12th board me top 20 percentile me jagah banayi hai aur ghar ki income 4 lakh se kam hai. College ki padhai ke liye har saal milne wali sarkari scholarship kaun si hai?
+sources:
+- title: Guidelines for the Component Scheme - Central Sector Scheme of Scholarship for College and University Students (PM-USP CSSS), applicable from academic year 2022-23
+  url: https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf
+  publisher: Department of Higher Education, Ministry of Education (hosted on National Scholarship Portal)
+  accessed: '2026-10-03'
+- title: PM-USP Central Sector Scheme of Scholarship for College and University Students - FAQs 2025-26
+  url: https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf
+  publisher: Department of Higher Education, Ministry of Education (hosted on National Scholarship Portal)
+  accessed: '2026-10-03'
+- title: Schemes on NSP (Department of Higher Education listing)
+  url: https://scholarships.gov.in/All-Scholarships
+  publisher: National Scholarship Portal, Government of India
+  accessed: '2026-10-03'
+- title: National Scholarship Portal home page (announcements)
+  url: https://scholarships.gov.in/
+  publisher: National Scholarship Portal, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The guidelines apply from academic year 2022-23 onwards, and the rates apply from FY 2022-23 (for AY 2021-22 the rate was Rs 10,000 a year). On 3 Oct 2026 the NSP scheme list showed PM-USP CSSS only for RENEWAL applications for AY 2026-27, with the student window shown as 1 June 2026 to 30 Sept 2026. The NSP home page announcement, however, said renewal applications close on 31 Oct 2026. Neither page showed a fresh-application window for 2026-27, so whether new students can apply this year is unconfirmed. Check NSP before advising a new applicant. Slots: up to 82,000 fresh scholarships a year, shared among state boards (with CBSE and CISCE shares) by each state''s population aged 18-25. 50% of slots are for girls, the stream ratio is 3:3:1 (Humanities:Science:Commerce), and central reservation applies (SC 15%, ST 7.5%, OBC 27%, plus 5% for students with benchmark disabilities). Conflict: the guidelines bar any other scholarship, but an NSP announcement says that from AY 2026-27
+    a student may apply for one merit-based scheme plus welfare-based schemes. No official Hindi name was seen on an official page.'
+  - No independent check was returned for this scheme.

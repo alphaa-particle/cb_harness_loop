@@ -1,0 +1,12 @@
+316 dev questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.9145  in-prompt 0.9309  abstain 0.75  (58.5 ms/q)
+  fusion: 50/316
+  fusion: 100/316
+  fusion: 150/316
+  fusion: 200/316
+  fusion: 250/316
+  fusion: 300/316
+answers fusion       correct 0.8165  (1.224 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/e2e_r1_q_54/report.md
+316 dev questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.875  in-prompt 0.8651  abstain 0.4167  (47.9 ms/q)

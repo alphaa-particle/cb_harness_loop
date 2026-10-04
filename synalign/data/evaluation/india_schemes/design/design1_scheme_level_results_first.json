@@ -1,0 +1,1462 @@
+[
+ {
+  "size": "54",
+  "name": "F lam0 nomargin",
+  "in_prompt": "269/304",
+  "abstain": "9/12",
+  "fixed": 1,
+  "broken": 14,
+  "diff": -4.28,
+  "ci": [
+   -7.86,
+   -0.8099999999999999
+  ],
+  "ms": 0.07,
+  "by": {
+   "type=eligibility": "51/52",
+   "type=fact": "138/162",
+   "type=situation": "30/36",
+   "type=typo": "50/54",
+   "language=en": "144/152",
+   "language=hi": "76/92",
+   "language=hi_latn": "49/60"
+  },
+  "broken_ex": [
+   [
+    "nikshay_poshan__payment_mode__en",
+    "How is Ni-kshay Poshan Yojana money paid to TB patients?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "nfbs__eligibility"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi_latn",
+    "Nikshay Poshan Yojana ka paisa TB mareez ko kaise milta hai?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "nfbs__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "pm_usp_csss__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_lock_in__hi",
+    "एनपीएस वात्सल्य से आंशिक निकासी कितने साल बाद कर सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "nikshay_poshan__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+    "Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sakte hain?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "mission_vatsalya__eligibility"
+    ]
+   ],
+   [
+    "pmay_g__eligibility_2",
+    "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+    [
+     "pmay_u2__eligibility",
+     "pmay_u2__eligibility_2",
+     "pmay_u2__overview"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__en",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pm_vbry__eligibility"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__typo",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pm_vbry__eligibility"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "pm_svanidhi__situation_1",
+    "I sell vegetables from a handcart in my town and need about 15,000 rupees to buy stock, bu"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F lam0.5 nomargin",
+  "in_prompt": "271/304",
+  "abstain": "9/12",
+  "fixed": 3,
+  "broken": 14,
+  "diff": -3.62,
+  "ci": [
+   -7.199999999999999,
+   0.0
+  ],
+  "ms": 0.07,
+  "by": {
+   "type=eligibility": "51/52",
+   "type=fact": "139/162",
+   "type=situation": "31/36",
+   "type=typo": "50/54",
+   "language=en": "144/152",
+   "language=hi": "78/92",
+   "language=hi_latn": "49/60"
+  },
+  "broken_ex": [
+   [
+    "nikshay_poshan__payment_mode__en",
+    "How is Ni-kshay Poshan Yojana money paid to TB patients?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "pm_kisan__eligibility"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi_latn",
+    "Nikshay Poshan Yojana ka paisa TB mareez ko kaise milta hai?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "nfbs__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "nmmss__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_lock_in__hi",
+    "एनपीएस वात्सल्य से आंशिक निकासी कितने साल बाद कर सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "nikshay_poshan__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+    "Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sakte hain?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "mission_vatsalya__eligibility"
+    ]
+   ],
+   [
+    "pmay_g__eligibility_2",
+    "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+    [
+     "pmay_u2__eligibility",
+     "pmay_u2__eligibility_2",
+     "pmay_u2__overview"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__en",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pm_vbry__eligibility"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__typo",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pm_vbry__eligibility"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "nikshay_poshan__monthly_amount__hi",
+    "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+   ],
+   [
+    "pm_kisan__situation_2",
+    "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+   ],
+   [
+    "pm_svanidhi__situation_1",
+    "I sell vegetables from a handcart in my town and need about 15,000 rupees to buy stock, bu"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F lam1 nomargin",
+  "in_prompt": "268/304",
+  "abstain": "9/12",
+  "fixed": 3,
+  "broken": 17,
+  "diff": -4.61,
+  "ci": [
+   -7.9799999999999995,
+   -1.27
+  ],
+  "ms": 0.07,
+  "by": {
+   "type=eligibility": "51/52",
+   "type=fact": "137/162",
+   "type=situation": "30/36",
+   "type=typo": "50/54",
+   "language=en": "142/152",
+   "language=hi": "78/92",
+   "language=hi_latn": "48/60"
+  },
+  "broken_ex": [
+   [
+    "nfsa_pmgkay__situation_1",
+    "We are a family of five living on daily wages and we have no ration card. How can each of ",
+    [
+     "aay__eligibility",
+     "aay__eligibility_2",
+     "aay__benefits"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__en",
+    "How is Ni-kshay Poshan Yojana money paid to TB patients?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "pm_kisan__eligibility"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi_latn",
+    "Nikshay Poshan Yojana ka paisa TB mareez ko kaise milta hai?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "nfbs__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "nmmss__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_lock_in__hi",
+    "एनपीएस वात्सल्य से आंशिक निकासी कितने साल बाद कर सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "nikshay_poshan__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+    "Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sakte hain?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "mission_vatsalya__eligibility"
+    ]
+   ],
+   [
+    "pm_kisan__pension_exclusion_limit__en",
+    "From what monthly pension amount is a retired person not eligible for PM-KISAN?",
+    [
+     "pm_kmy__eligibility",
+     "pm_kmy__eligibility_2",
+     "pm_kmy__benefits"
+    ]
+   ],
+   [
+    "pm_kmy__land_limit__hi_latn",
+    "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+    [
+     "pm_kisan__eligibility",
+     "pm_kisan__eligibility_2",
+     "pm_kisan__overview"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "nikshay_poshan__monthly_amount__hi",
+    "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+   ],
+   [
+    "pm_kisan__situation_2",
+    "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+   ],
+   [
+    "pm_svanidhi__situation_1",
+    "I sell vegetables from a handcart in my town and need about 15,000 rupees to buy stock, bu"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F lam0 ratio0.9",
+  "in_prompt": "281/304",
+  "abstain": "9/12",
+  "fixed": 0,
+  "broken": 1,
+  "diff": -0.33,
+  "ci": [
+   -1.24,
+   0.0
+  ],
+  "ms": 0.07,
+  "by": {
+   "type=eligibility": "51/52",
+   "type=fact": "149/162",
+   "type=situation": "29/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "80/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [
+   [
+    "pmay_g__eligibility_2",
+    "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+    [
+     "pmay_u2__eligibility",
+     "pmay_u2__eligibility_2",
+     "pmay_u2__overview"
+    ]
+   ]
+  ],
+  "fixed_ex": []
+ },
+ {
+  "size": "54",
+  "name": "F lam0 ratio0.8",
+  "in_prompt": "276/304",
+  "abstain": "9/12",
+  "fixed": 1,
+  "broken": 7,
+  "diff": -1.97,
+  "ci": [
+   -4.9,
+   0.42
+  ],
+  "ms": 0.08,
+  "by": {
+   "type=eligibility": "51/52",
+   "type=fact": "144/162",
+   "type=situation": "30/36",
+   "type=typo": "51/54",
+   "language=en": "147/152",
+   "language=hi": "78/92",
+   "language=hi_latn": "51/60"
+  },
+  "broken_ex": [
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "pm_usp_csss__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+    "Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sakte hain?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "mission_vatsalya__eligibility"
+    ]
+   ],
+   [
+    "pmay_g__eligibility_2",
+    "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+    [
+     "pmay_u2__eligibility",
+     "pmay_u2__eligibility_2",
+     "pmay_u2__overview"
+    ]
+   ],
+   [
+    "pmsby__cover_period__en",
+    "For which period does the PM Suraksha Bima Yojana cover run each year?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ],
+   [
+    "pmsby__cover_period__typo",
+    "For which period ddoes the PM Suraksha Bima Yojana cover run each year?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ],
+   [
+    "pmsby__cover_period__hi",
+    "प्रधानमंत्री सुरक्षा बीमा योजना का कवर हर साल किस तारीख से किस तारीख तक रहता है?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmfby__eligibility"
+    ]
+   ],
+   [
+    "pmsby__cover_period__hi_latn",
+    "Suraksha Bima Yojana ka cover har saal kab se kab tak rehta hai?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "pm_svanidhi__situation_1",
+    "I sell vegetables from a handcart in my town and need about 15,000 rupees to buy stock, bu"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F lam0 dgap0.03",
+  "in_prompt": "281/304",
+  "abstain": "9/12",
+  "fixed": 0,
+  "broken": 1,
+  "diff": -0.33,
+  "ci": [
+   -1.24,
+   0.0
+  ],
+  "ms": 0.08,
+  "by": {
+   "type=eligibility": "51/52",
+   "type=fact": "149/162",
+   "type=situation": "29/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "80/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [
+   [
+    "pmay_g__eligibility_2",
+    "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+    [
+     "pmay_u2__eligibility",
+     "pmay_u2__eligibility_2",
+     "pmay_u2__overview"
+    ]
+   ]
+  ],
+  "fixed_ex": []
+ },
+ {
+  "size": "54",
+  "name": "F lam0 dgap0.06",
+  "in_prompt": "281/304",
+  "abstain": "9/12",
+  "fixed": 0,
+  "broken": 1,
+  "diff": -0.33,
+  "ci": [
+   -1.24,
+   0.0
+  ],
+  "ms": 0.08,
+  "by": {
+   "type=eligibility": "51/52",
+   "type=fact": "149/162",
+   "type=situation": "29/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "80/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [
+   [
+    "pmay_g__eligibility_2",
+    "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+    [
+     "pmay_u2__eligibility",
+     "pmay_u2__eligibility_2",
+     "pmay_u2__overview"
+    ]
+   ]
+  ],
+  "fixed_ex": []
+ },
+ {
+  "size": "54",
+  "name": "F lam0 dgap0.10",
+  "in_prompt": "278/304",
+  "abstain": "9/12",
+  "fixed": 1,
+  "broken": 5,
+  "diff": -1.32,
+  "ci": [
+   -3.5700000000000003,
+   0.5599999999999999
+  ],
+  "ms": 0.07,
+  "by": {
+   "type=eligibility": "51/52",
+   "type=fact": "146/162",
+   "type=situation": "30/36",
+   "type=typo": "51/54",
+   "language=en": "147/152",
+   "language=hi": "79/92",
+   "language=hi_latn": "52/60"
+  },
+  "broken_ex": [
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "pm_usp_csss__eligibility"
+    ]
+   ],
+   [
+    "pmay_g__eligibility_2",
+    "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+    [
+     "pmay_u2__eligibility",
+     "pmay_u2__eligibility_2",
+     "pmay_u2__overview"
+    ]
+   ],
+   [
+    "pmsby__cover_period__en",
+    "For which period does the PM Suraksha Bima Yojana cover run each year?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ],
+   [
+    "pmsby__cover_period__typo",
+    "For which period ddoes the PM Suraksha Bima Yojana cover run each year?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ],
+   [
+    "pmsby__cover_period__hi_latn",
+    "Suraksha Bima Yojana ka cover har saal kab se kab tak rehta hai?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "pm_svanidhi__situation_1",
+    "I sell vegetables from a handcart in my town and need about 15,000 rupees to buy stock, bu"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F lam0 nevermargin",
+  "in_prompt": "275/304",
+  "abstain": "9/12",
+  "fixed": 0,
+  "broken": 7,
+  "diff": -2.3,
+  "ci": [
+   -6.04,
+   0.0
+  ],
+  "ms": 0.07,
+  "by": {
+   "type=eligibility": "48/52",
+   "type=fact": "148/162",
+   "type=situation": "27/36",
+   "type=typo": "52/54",
+   "language=en": "146/152",
+   "language=hi": "76/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [
+   [
+    "ignwps__min_age__hi",
+    "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?",
+    [
+     "igndps__eligibility",
+     "igndps__benefits",
+     "igndps__overview"
+    ]
+   ],
+   [
+    "ignwps__situation_1",
+    "My husband died last year. I am 45 and our family is on the BPL list. Is there a monthly g",
+    [
+     "ignoaps__eligibility",
+     "ignoaps__overview",
+     "ignoaps__benefits"
+    ]
+   ],
+   [
+    "ignwps__eligibility_2",
+    "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+    [
+     "igndps__eligibility",
+     "igndps__benefits",
+     "igndps__overview"
+    ]
+   ],
+   [
+    "ignwps__eligibility_4",
+    "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+    [
+     "igndps__eligibility",
+     "igndps__benefits",
+     "igndps__overview"
+    ]
+   ],
+   [
+    "ignwps__eligibility_6",
+    "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?",
+    [
+     "igndps__eligibility",
+     "igndps__benefits",
+     "igndps__overview"
+    ]
+   ],
+   [
+    "pmay_g__eligibility_2",
+    "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+    [
+     "pmay_u2__eligibility",
+     "pmay_u2__eligibility_2",
+     "pmay_u2__overview"
+    ]
+   ],
+   [
+    "pmmvy__situation_1",
+    "I am four months pregnant with my first baby and my husband has an MGNREGA job card. Is th",
+    [
+     "vb_g_ram_g__eligibility",
+     "vb_g_ram_g__documents",
+     "vb_g_ram_g__benefits"
+    ]
+   ]
+  ],
+  "fixed_ex": []
+ },
+ {
+  "size": "scale",
+  "name": "F lam0 nomargin",
+  "in_prompt": "252/304",
+  "abstain": "5/12",
+  "fixed": 4,
+  "broken": 13,
+  "diff": -2.96,
+  "ci": [
+   -7.290000000000001,
+   1.96
+  ],
+  "ms": 0.44,
+  "by": {
+   "type=eligibility": "50/52",
+   "type=fact": "137/162",
+   "type=situation": "16/36",
+   "type=typo": "49/54",
+   "language=en": "131/152",
+   "language=hi": "74/92",
+   "language=hi_latn": "47/60"
+  },
+  "broken_ex": [
+   [
+    "nikshay_poshan__payment_mode__en",
+    "How is Ni-kshay Poshan Yojana money paid to TB patients?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "ms__bsaidspky__rules"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi",
+    "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "ms__gascstpsfcad__rules"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi_latn",
+    "Nikshay Poshan Yojana ka paisa TB mareez ko kaise milta hai?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "nfbs__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "ms__cea__rules"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_lock_in__hi",
+    "एनपीएस वात्सल्य से आंशिक निकासी कितने साल बाद कर सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "ms__nspybocwwb__rules"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__en",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pmmy__eligibility"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__typo",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pmmy__eligibility"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__hi",
+    "मातृ वंदना योजना की पहली किस्त कितने रुपये की है?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "ms__vmyg__rules"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "ignwps__min_age__hi",
+    "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+   ],
+   [
+    "ignwps__eligibility_2",
+    "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_4",
+    "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_6",
+    "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F lam0.5 nomargin",
+  "in_prompt": "255/304",
+  "abstain": "5/12",
+  "fixed": 8,
+  "broken": 14,
+  "diff": -1.97,
+  "ci": [
+   -6.76,
+   3.65
+  ],
+  "ms": 0.29,
+  "by": {
+   "type=eligibility": "50/52",
+   "type=fact": "137/162",
+   "type=situation": "19/36",
+   "type=typo": "49/54",
+   "language=en": "134/152",
+   "language=hi": "74/92",
+   "language=hi_latn": "47/60"
+  },
+  "broken_ex": [
+   [
+    "jssk__free_diet_normal_delivery__hi",
+    "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?",
+    [
+     "ms__mspynsuwmamc3y6y__rules",
+     "ms__mspynsuwmamc3y6y__application",
+     "jssk__eligibility"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__en",
+    "How is Ni-kshay Poshan Yojana money paid to TB patients?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "ms__bsaidspky__rules"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi",
+    "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "pm_kisan__eligibility"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi_latn",
+    "Nikshay Poshan Yojana ka paisa TB mareez ko kaise milta hai?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "ms__pm-poshan__rules"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "nmmss__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_lock_in__hi",
+    "एनपीएस वात्सल्य से आंशिक निकासी कितने साल बाद कर सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "ms__nspybocwwb__rules"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__en",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pm_vidyalaxmi__eligibility"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__typo",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pm_vidyalaxmi__eligibility"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "igndps__situation_1",
+    "My son is 25 and has a 90% disability certificate. We are a BPL family. Can he get a month"
+   ],
+   [
+    "ignwps__min_age__hi",
+    "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+   ],
+   [
+    "ignwps__eligibility_2",
+    "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_4",
+    "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_6",
+    "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+   ],
+   [
+    "pm_kisan__instalment_amount__hi",
+    "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+   ],
+   [
+    "pm_kisan__situation_1",
+    "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+   ],
+   [
+    "pm_yasasvi__situation_1",
+    "I am from an OBC family earning under Rs 2 lakh a year and I am in Class 9 at a government"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F lam1 nomargin",
+  "in_prompt": "257/304",
+  "abstain": "5/12",
+  "fixed": 10,
+  "broken": 14,
+  "diff": -1.32,
+  "ci": [
+   -6.3100000000000005,
+   4.52
+  ],
+  "ms": 0.31,
+  "by": {
+   "type=eligibility": "50/52",
+   "type=fact": "138/162",
+   "type=situation": "20/36",
+   "type=typo": "49/54",
+   "language=en": "135/152",
+   "language=hi": "75/92",
+   "language=hi_latn": "47/60"
+  },
+  "broken_ex": [
+   [
+    "jssk__free_diet_normal_delivery__hi",
+    "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?",
+    [
+     "ms__mspynsuwmamc3y6y__rules",
+     "ms__mspynsuwmamc3y6y__application",
+     "jssk__eligibility"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__en",
+    "How is Ni-kshay Poshan Yojana money paid to TB patients?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "ms__bsaidspky__rules"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi",
+    "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "pm_kisan__eligibility"
+    ]
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi_latn",
+    "Nikshay Poshan Yojana ka paisa TB mareez ko kaise milta hai?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "ms__pm-poshan__rules"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "nmmss__eligibility"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_lock_in__hi",
+    "एनपीएस वात्सल्य से आंशिक निकासी कितने साल बाद कर सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "ms__nspybocwwb__rules"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__en",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pm_vidyalaxmi__eligibility"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__typo",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pm_vidyalaxmi__eligibility"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "igndps__situation_1",
+    "My son is 25 and has a 90% disability certificate. We are a BPL family. Can he get a month"
+   ],
+   [
+    "ignwps__min_age__hi",
+    "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+   ],
+   [
+    "ignwps__eligibility_2",
+    "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_4",
+    "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_6",
+    "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+   ],
+   [
+    "nmmss__situation_1",
+    "My son is in Class 8 at a government school and our family income is about 2 lakh a year. "
+   ],
+   [
+    "pm_kisan__instalment_amount__hi",
+    "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+   ],
+   [
+    "pm_kisan__instalments_per_year__hi",
+    "पीएम किसान की साल में कितनी किस्तें आती हैं?"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F lam0 ratio0.9",
+  "in_prompt": "262/304",
+  "abstain": "5/12",
+  "fixed": 1,
+  "broken": 0,
+  "diff": 0.33,
+  "ci": [
+   0.0,
+   1.09
+  ],
+  "ms": 0.31,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "148/162",
+   "type=situation": "16/36",
+   "type=typo": "51/54",
+   "language=en": "136/152",
+   "language=hi": "76/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "ignwps__min_age__hi",
+    "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F lam0 ratio0.8",
+  "in_prompt": "260/304",
+  "abstain": "5/12",
+  "fixed": 4,
+  "broken": 5,
+  "diff": -0.33,
+  "ci": [
+   -3.8699999999999997,
+   3.45
+  ],
+  "ms": 0.45,
+  "by": {
+   "type=eligibility": "50/52",
+   "type=fact": "144/162",
+   "type=situation": "16/36",
+   "type=typo": "50/54",
+   "language=en": "134/152",
+   "language=hi": "77/92",
+   "language=hi_latn": "49/60"
+  },
+  "broken_ex": [
+   [
+    "nikshay_poshan__payment_mode__hi",
+    "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?",
+    [
+     "nikshay_poshan__eligibility",
+     "nikshay_poshan__overview",
+     "ms__gascstpsfcad__rules"
+    ]
+   ],
+   [
+    "pmsby__cover_period__en",
+    "For which period does the PM Suraksha Bima Yojana cover run each year?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ],
+   [
+    "pmsby__cover_period__typo",
+    "For which period ddoes the PM Suraksha Bima Yojana cover run each year?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ],
+   [
+    "pmsby__cover_period__hi",
+    "प्रधानमंत्री सुरक्षा बीमा योजना का कवर हर साल किस तारीख से किस तारीख तक रहता है?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "ms__ksis__rules"
+    ]
+   ],
+   [
+    "pmsby__cover_period__hi_latn",
+    "Suraksha Bima Yojana ka cover har saal kab se kab tak rehta hai?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "ms__erky__rules"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "ignwps__min_age__hi",
+    "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+   ],
+   [
+    "ignwps__eligibility_2",
+    "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_4",
+    "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_6",
+    "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F lam0 dgap0.03",
+  "in_prompt": "264/304",
+  "abstain": "5/12",
+  "fixed": 4,
+  "broken": 1,
+  "diff": 0.99,
+  "ci": [
+   -0.84,
+   4.07
+  ],
+  "ms": 0.39,
+  "by": {
+   "type=eligibility": "50/52",
+   "type=fact": "147/162",
+   "type=situation": "16/36",
+   "type=typo": "51/54",
+   "language=en": "136/152",
+   "language=hi": "79/92",
+   "language=hi_latn": "49/60"
+  },
+  "broken_ex": [
+   [
+    "pmmvy__first_instalment_amount__hi_latn",
+    "Matru Vandana Yojana ki pehli kist kitne rupaye ki hai?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "ms__vmyg__rules"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "ignwps__min_age__hi",
+    "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+   ],
+   [
+    "ignwps__eligibility_2",
+    "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_4",
+    "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_6",
+    "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F lam0 dgap0.06",
+  "in_prompt": "261/304",
+  "abstain": "5/12",
+  "fixed": 4,
+  "broken": 4,
+  "diff": 0.0,
+  "ci": [
+   -2.4,
+   3.4099999999999997
+  ],
+  "ms": 0.33,
+  "by": {
+   "type=eligibility": "50/52",
+   "type=fact": "144/162",
+   "type=situation": "16/36",
+   "type=typo": "51/54",
+   "language=en": "136/152",
+   "language=hi": "77/92",
+   "language=hi_latn": "48/60"
+  },
+  "broken_ex": [
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "ms__cea__rules"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__hi",
+    "मातृ वंदना योजना की पहली किस्त कितने रुपये की है?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "ms__vmyg__rules"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__hi_latn",
+    "Matru Vandana Yojana ki pehli kist kitne rupaye ki hai?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "ms__vmyg__rules"
+    ]
+   ],
+   [
+    "pmsby__cover_period__hi_latn",
+    "Suraksha Bima Yojana ka cover har saal kab se kab tak rehta hai?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "ms__erky__rules"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "ignwps__min_age__hi",
+    "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+   ],
+   [
+    "ignwps__eligibility_2",
+    "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_4",
+    "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_6",
+    "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F lam0 dgap0.10",
+  "in_prompt": "255/304",
+  "abstain": "5/12",
+  "fixed": 4,
+  "broken": 10,
+  "diff": -1.97,
+  "ci": [
+   -6.11,
+   2.42
+  ],
+  "ms": 0.41,
+  "by": {
+   "type=eligibility": "50/52",
+   "type=fact": "140/162",
+   "type=situation": "16/36",
+   "type=typo": "49/54",
+   "language=en": "132/152",
+   "language=hi": "75/92",
+   "language=hi_latn": "48/60"
+  },
+  "broken_ex": [
+   [
+    "nps_vatsalya__partial_withdrawal_limit__hi",
+    "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "ms__cea__rules"
+    ]
+   ],
+   [
+    "nps_vatsalya__partial_withdrawal_lock_in__hi",
+    "एनपीएस वात्सल्य से आंशिक निकासी कितने साल बाद कर सकते हैं?",
+    [
+     "nps_vatsalya__eligibility",
+     "nps_vatsalya__overview",
+     "ms__nspybocwwb__rules"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__en",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pmmy__eligibility"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__typo",
+    "How much is the first instalment under PMMVY?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "pmmy__eligibility"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__hi",
+    "मातृ वंदना योजना की पहली किस्त कितने रुपये की है?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "ms__vmyg__rules"
+    ]
+   ],
+   [
+    "pmmvy__first_instalment_amount__hi_latn",
+    "Matru Vandana Yojana ki pehli kist kitne rupaye ki hai?",
+    [
+     "pmmvy__eligibility",
+     "pmmvy__overview",
+     "ms__vmyg__rules"
+    ]
+   ],
+   [
+    "pmsby__cover_period__en",
+    "For which period does the PM Suraksha Bima Yojana cover run each year?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ],
+   [
+    "pmsby__cover_period__typo",
+    "For which period ddoes the PM Suraksha Bima Yojana cover run each year?",
+    [
+     "pmsby__eligibility",
+     "pmsby__overview",
+     "pmjjby__eligibility"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "ignwps__min_age__hi",
+    "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+   ],
+   [
+    "ignwps__eligibility_2",
+    "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_4",
+    "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+   ],
+   [
+    "ignwps__eligibility_6",
+    "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F lam0 nevermargin",
+  "in_prompt": "262/304",
+  "abstain": "5/12",
+  "fixed": 1,
+  "broken": 0,
+  "diff": 0.33,
+  "ci": [
+   0.0,
+   1.09
+  ],
+  "ms": 0.34,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "147/162",
+   "type=situation": "16/36",
+   "type=typo": "52/54",
+   "language=en": "137/152",
+   "language=hi": "75/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "ignwps__max_processing_days__typo",
+    "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension "
+   ]
+  ]
+ }
+]

@@ -1,0 +1,167 @@
+id: pmis
+name: Prime Minister Internship Scheme
+short_name: PMIS
+names_hi:
+- प्रधानमंत्री प्रशिक्षण योजना
+aliases:
+- PM Internship Scheme
+- Prime Minister's Internship Scheme
+- pm internship yojana
+- pradhan mantri internship yojana
+- PMIS pilot
+- pm internship 9000 stipend
+level: central
+state: ''
+ministry: Ministry of Corporate Affairs
+category: skills_employment
+summary: Offers paid internships of 6 or 9 months in top companies to Indian youth aged 18 to 25 who are not in full-time jobs. Interns get Rs 9,000 a month, a one-time grant of Rs 6,000 and insurance cover. It is still a pilot project, extended until December 2026, and applications are taken on a rolling basis.
+sections:
+  eligibility:
+  - Must be an Indian national.
+  - Aged 18 to 25 years on the date the application is submitted.
+  - Must not be in a full-time job.
+  - Must have passed Class 10 (High School) or Class 12, or hold an ITI certificate or a polytechnic diploma, or a graduate degree (such as BA, B.Sc., B.Com, BCA, BBA, B.Pharma, B.E./B.Tech) or a postgraduate degree (such as MA, M.Sc., M.Com, MCA, M.Tech).
+  - Must not be in full-time education; however, people in online or distance courses, and final-year full-time graduate or postgraduate students, can apply.
+  - Final-year students must submit a No Objection Certificate (NOC) from their institution confirming the internship will not affect their studies.
+  exclusions:
+  - Graduates or postgraduates of IITs, IIMs, National Law Universities, IISER, NIDs, IIITs and IISc.
+  - Holders of CA, CMA, CS, MBBS, BDS, MD, MS, MBA (or equivalent), MPhil or PhD.
+  - Anyone currently in a skill, apprenticeship, internship or training programme under a Central or State Government scheme, or who has ever completed apprenticeship or training under NATS or NAPS.
+  - Anyone whose own income, or the income of a parent or spouse, was more than Rs 12 lakh (Rs 12,00,000) in the previous financial year.
+  - Anyone who, or whose parent or spouse, is a permanent or regular government employee (Central or State Government, UT administration, PSU, statutory body or local body); contractual employees do not count.
+  benefits:
+  - 'Rs 9,000 a month for the whole internship: Rs 900 from the company and Rs 8,100 from the government, paid by DBT into the intern''s Aadhaar-seeded bank account.'
+  - 'A one-time grant of Rs 6,000 for incidental costs, paid by DBT in two parts of Rs 3,000: the first within 15 days of joining and the second within 15 days of completing 3 months.'
+  - Life and personal accident insurance cover equal to PMJJBY and PMSBY, provided by the government; companies may add extra accident cover.
+  - The internship lasts either 6 or 9 months depending on the company and role, and at least half of it is spent in actual work, not in a classroom.
+  - The company's Rs 900 share may be reduced in line with the intern's attendance, and the government share is adjusted to match.
+  how_to_apply:
+  - Register on the PMIS portal (pminternship.mca.gov.in) or the PMIS mobile app with your Aadhaar-linked mobile number and complete e-KYC (for example through DigiLocker).
+  - Fill in your profile, education and bank details; the portal creates a resume for you.
+  - Browse internships by state, district, sector, role and qualification, and apply; applications are open on a rolling basis during the pilot.
+  - Shortlisted applications go to companies, which select interns and send offers; accept your offer on the portal.
+  documents:
+  - Aadhaar card.
+  - Educational certificates.
+  - Proof of age.
+  - Details of a bank account seeded with Aadhaar, for DBT payments.
+  - 'For final-year students: an NOC from the institution signed by the Head of Department, Dean, Principal or Training & Placement Officer.'
+rules:
+  age_min: 18
+  age_max: 25
+  annual_income_max: 1200000
+  gender: any
+facts:
+- key: monthly_assistance
+  statement: 'Rs 9,000 a month for the whole internship: Rs 900 from the company and Rs 8,100 from the government, paid by DBT into the intern''s Aadhaar-seeded bank account.'
+  value: Rs 9,000
+  accept:
+  - '9000'
+  - 9,000
+  - ₹9,000
+  - Rs 9000
+  - nau hazar
+  question: How much monthly stipend do interns get under the PM Internship Scheme?
+  question_hi: पीएम इंटर्नशिप योजना में हर महीने कितने पैसे मिलते हैं?
+  question_hi_latn: PM Internship Yojana me har mahine kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: one_time_grant
+  statement: 'A one-time grant of Rs 6,000 for incidental costs, paid by DBT in two parts of Rs 3,000: the first within 15 days of joining and the second within 15 days of completing 3 months.'
+  value: Rs 6,000
+  accept:
+  - '6000'
+  - 6,000
+  - ₹6,000
+  - Rs 6000
+  question: How much one-time grant is given under the PM Internship Scheme?
+  question_hi: पीएम इंटर्नशिप योजना में एक बार का अनुदान कितना मिलता है?
+  question_hi_latn: PM Internship Scheme me ek baar ki grant kitni milti hai?
+  source: 1
+  status: verified
+- key: age_limit
+  statement: Aged 18 to 25 years on the date the application is submitted.
+  value: 18 to 25
+  accept:
+  - 18-25
+  - 18 se 25
+  - 18 to 25 years
+  - 18–25
+  question: What is the age limit for the PM Internship Scheme?
+  question_hi: पीएम इंटर्नशिप योजना के लिए उम्र सीमा क्या है?
+  question_hi_latn: PM Internship Scheme ke liye age limit kya hai?
+  source: 1
+  status: verified
+- key: income_limit
+  statement: Anyone whose own income, or the income of a parent or spouse, was more than Rs 12 lakh (Rs 12,00,000) in the previous financial year.
+  value: Rs 12 lakh
+  accept:
+  - 12 lakh
+  - '1200000'
+  - 12,00,000
+  - ₹12 lakh
+  - 12 लाख
+  question: What is the income limit for the PM Internship Scheme?
+  question_hi: पीएम इंटर्नशिप योजना में आय की सीमा कितनी है?
+  question_hi_latn: PM Internship Scheme me income limit kitni hai?
+  source: 1
+  status: verified
+- key: internship_duration
+  statement: The internship lasts either 6 or 9 months depending on the company and role, and at least half of it is spent in actual work, not in a classroom.
+  value: 6 or 9 months
+  accept:
+  - 6 months or 9 months
+  - 6-9 months
+  - 6 ya 9 mahine
+  - 6 या 9 महीने
+  question: How long is the internship under the PM Internship Scheme?
+  question_hi: पीएम इंटर्नशिप योजना में इंटर्नशिप कितने महीने की होती है?
+  question_hi_latn: PM Internship Scheme me internship kitne mahine ki hoti hai?
+  source: 1
+  status: verified
+situations:
+- language: en
+  question: I am 22, finished my B.Com and I am not working. Is there a government programme that pays me to intern at a big company for a few months?
+- language: hi_latn
+  question: Main 19 saal ka hoon, ITI kiya hai aur koi naukri nahi hai. Kya sarkar kisi badi company me paid internship dilati hai?
+sources:
+- title: Guidelines for Prime Minister Internship Scheme (PMIS) - Pilot Project (FY 2025-26 & 26-27), MCA Office Memorandum dated 12.03.2026, circulated by UGC (D.O. No.6-1/2026, 16 April 2026)
+  url: https://www.ugc.gov.in/pdfnews/0696290_PMIS_Guidelines.pdf
+  publisher: Ministry of Corporate Affairs / University Grants Commission
+  accessed: '2026-10-03'
+- title: MCA expands eligibility criteria of the Prime Minister Internship Scheme (PMIS) to include final-year graduate and post graduate students (22 Apr 2026)
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2254498
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: एमसीए ने प्रधानमंत्री प्रशिक्षण योजना (पीएमआईएस) के पात्रता मानदंडों का विस्तार किया (Hindi release, 22 Apr 2026)
+  url: https://pib.gov.in/PressReleasePage.aspx?PRID=2254534
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: 'A Pathway to Professional Growth: PM''s Internship Scheme (PIB Research Unit, 12 Oct 2024)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/oct/doc20241012415201.pdf
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: Prime Minister's Internship Scheme
+  url: https://www.myscheme.gov.in/hi/schemes/pmis
+  publisher: myScheme, Government of India
+  accessed: '2026-10-03'
+- title: Ministry of Corporate Affairs hosts the PMIS Industry Awards (14 Aug 2026)
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2299703
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: STILL A PILOT: PMIS has not been rolled out as a full scheme. The MCA office memorandum of 12 March 2026 extended the pilot until December 2026 with a target of 1.10 lakh internships, and its third round was running in April to August 2026. Nothing official yet says what happens after December 2026. RULES CHANGED IN 2026: the March 2026 guidelines replaced the 2024-25 pilot terms. The age band moved from 21-24 to 18-25. The family income ceiling rose from Rs 8 lakh (FY 2023-24) to Rs 12 lakh (previous FY). Monthly support rose from Rs 5,000 (Rs 4,500 government plus Rs 500 company) to Rs 9,000 (Rs 8,100 plus Rs 900). Duration changed from 12 months to 6 or 9 months, and some postgraduate degrees (MA, M.Sc., M.Com, MCA, M.Tech) became eligible. Interns already in the earlier pilot keep their 12-month duration but get Rs 9,000 from March 2026. Final-year students were added on 22 April 2026 and need an NOC. The myScheme PMIS page still shows the old figures (21-24 years, Rs 5,000,
+    Rs 8 lakh, 12 months); it was used only for the document list and registration steps. The 12 March 2026 guidelines still exclude MBA, MD, MS, MPhil and PhD holders, even though some unofficial sites say MBAs are now eligible. INCOME RULE: the Rs 12 lakh limit applies to each family member separately (self, parents, spouse), not to the combined household income. HINDI NAME: PIB''s Hindi release translates the scheme as ''प्रधानमंत्री प्रशिक्षण योजना''. People may also say ''पीएम इंटर्नशिप योजना'', but I did not see that form on an official page.'
+  - 'Checker: names_hi is incomplete. MCA''s own Hindi FAQ (PMIS portal) uses ''प्रधानमंत्री इंटर्नशिप योजना'' / ''पीएम इंटर्नशिप योजना'', which is the name citizens will actually use. ''प्रधानमंत्री प्रशिक्षण योजना'' (PIB) literally means ''PM Training Scheme'' and could be confused with other training schemes. The status note''s claim that ''पीएम इंटर्नशिप योजना'' is not on any official page is wrong.'
+  - 'Checker: Documents list includes ''Proof of age'' (taken from the stale myScheme page). The official FAQ says age is read from Aadhaar, and lists Aadhaar e-KYC, proof of educational qualifications and an online self-declaration of eligibility.'
+  - 'Checker: Missing practical limits from the official FAQ: at most 3 active applications at a time; no application fee; each posting has its own application window.'
+  - 'Checker: Insurance nuance: guidelines and FAQ say MCA provides PMJJBY/PMSBY-equivalent cover through group insurance. But a portal notice says Round II interns were paid Rs 456 to take PMJJBY/PMSBY themselves, and the amount would be deducted from the government share if they did not update their details by 15.05.2026. Cover arrangements may differ by round.'
+  - 'Checker: Source 4 (PIB Research Unit, Oct 2024) and source 5 (myScheme) describe the outdated 2024-25 pilot terms (12 months, Rs 5,000, 21-24, Rs 8 lakh). Keeping them as sources risks the chatbot pulling outdated figures; label them clearly as superseded or drop them.'
+  - 'Checker: The duration sentence (''at least half ... not in a classroom'') closely follows the guidelines wording. It is not verbatim, but it could be reworded more.'
+  - 'Checker: After December 2026 the pilot''s future is unknown. This is correctly flagged in the record.'
+  - 'Checker on the status note: MCA added them through an Addendum to the Guidelines dated 08.04.2026. PIB announced it on 22.04.2026.'
+  - 'Checker on the status note: PIB of 22 Apr 2026 says the third round is underway with rolling postings. I saw no official end date of August 2026. The portal on 3 Oct 2026 still says companies post on an ongoing basis (about 2.85 lakh opportunities shown).'

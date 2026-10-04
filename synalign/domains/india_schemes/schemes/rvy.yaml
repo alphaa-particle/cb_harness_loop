@@ -1,0 +1,127 @@
+id: rvy
+name: Rashtriya Vayoshri Yojana
+short_name: RVY
+names_hi:
+- राष्ट्रीय वयोश्री योजना
+aliases:
+- Vayoshri Yojana
+- rashtriya vayoshree yojana
+- vayoshri yojna
+- RVY scheme
+- senior citizen upkaran yojana
+level: central
+state: ''
+ministry: Department of Social Justice and Empowerment, Ministry of Social Justice and Empowerment (implemented by ALIMCO)
+category: social_assistance
+summary: RVY gives free assisted-living devices such as walking sticks, walkers, wheelchairs, hearing aids, spectacles and dentures to senior citizens aged 60 or above who have an age-related disability or infirmity. Seniors must be from a BPL family or have a monthly income of Rs 15,000 or less.
+sections:
+  eligibility:
+  - Must be a senior citizen aged 60 years or above.
+  - Must belong to the BPL category, shown by a BPL ration card, proof of old age pension under IGNOAPS or a state/UT pension scheme, or a certificate from the district authority.
+  - Seniors who are not BPL can also apply if their monthly income from all sources is Rs 15,000 or less.
+  - Must have an age-related disability or infirmity, such as low vision, hearing loss, loss of teeth or difficulty in walking.
+  - Must have an Aadhaar card or Aadhaar enrolment slip.
+  - A medical officer's certificate is needed for loss of vision, hearing impairment, loss of teeth, or locomotor disability needing a wheelchair.
+  exclusions:
+  - People below 60 years of age.
+  - Non-BPL seniors whose monthly income from all sources is more than Rs 15,000.
+  - Anyone who received the same device free from any government source (including local bodies and public undertakings) in the last 3 years.
+  benefits:
+  - Assisted-living devices are given free of cost to eligible senior citizens.
+  - Devices include walking sticks, crutches, walkers, wheelchairs (including commode wheelchairs), hearing aids, spectacles, artificial dentures, knee/spinal/cervical braces, cushions and orthotic or prosthetic appliances.
+  - In OPD mode at ALIMCO centres, the device can be given on the same day as the assessment or on a day set by the OPD in-charge.
+  how_to_apply:
+  - Attend an RVY camp in your district, where seniors are assessed and devices are then distributed.
+  - Or visit an ALIMCO production centre or regional marketing centre (OPD mode) to be assessed and get the device.
+  - Call ALIMCO's toll-free number 1800-180-5129 to find the nearest centre or camp.
+  documents:
+  - Aadhaar card or Aadhaar enrolment slip.
+  - 'Proof of BPL status: BPL ration card, proof of IGNOAPS or state old age pension, or district authority certificate; or proof that monthly income is Rs 15,000 or less.'
+  - Medical officer's certificate for loss of vision, hearing impairment, loss of teeth, or locomotor disability needing a wheelchair.
+rules:
+  age_min: 60
+  monthly_income_max: 15000
+  gender: any
+facts:
+- key: min_age
+  statement: Rashtriya Vayoshri Yojana is for senior citizens aged 60 years or above.
+  value: 60 years
+  accept:
+  - '60'
+  - sixty
+  - 60 saal
+  - 60 yrs
+  question: What is the minimum age to get devices under Rashtriya Vayoshri Yojana?
+  question_hi: राष्ट्रीय वयोश्री योजना में उपकरण पाने के लिए न्यूनतम उम्र कितनी है?
+  question_hi_latn: Rashtriya Vayoshri Yojana me upkaran ke liye kam se kam umar kitni honi chahiye?
+  source: 1
+  status: verified
+- key: monthly_income_limit
+  statement: Seniors who are not BPL can get RVY devices if their monthly income from all sources is Rs 15,000 or less.
+  value: Rs 15,000
+  accept:
+  - '15000'
+  - 15,000
+  - Rs 15000
+  - ₹15,000
+  - 15 thousand
+  question: What is the monthly income limit for non-BPL seniors under Rashtriya Vayoshri Yojana?
+  question_hi: राष्ट्रीय वयोश्री योजना में बीपीएल कार्ड न हो तो मासिक आय की सीमा कितनी है?
+  question_hi_latn: Vayoshri Yojana me BPL card nahi hai to mahine ki income kitni tak honi chahiye?
+  source: 1
+  status: verified
+- key: repeat_gap
+  statement: A senior cannot get the same device under RVY if they got it free from any government source in the last 3 years.
+  value: 3 years
+  accept:
+  - '3'
+  - three years
+  - 3 saal
+  - teen saal
+  question: Under Rashtriya Vayoshri Yojana, after how many years can I get the same device again?
+  question_hi: राष्ट्रीय वयोश्री योजना में वही उपकरण दोबारा कितने साल बाद मिल सकता है?
+  question_hi_latn: Vayoshri Yojana me wahi upkaran dobara kitne saal baad milta hai?
+  source: 1
+  status: verified
+- key: toll_free_number
+  statement: ALIMCO's toll-free number for RVY is 1800-180-5129.
+  value: 1800-180-5129
+  accept:
+  - '18001805129'
+  - 1800 180 5129
+  question: What is the toll-free helpline number for Rashtriya Vayoshri Yojana?
+  question_hi: राष्ट्रीय वयोश्री योजना का टोल-फ्री नंबर क्या है?
+  question_hi_latn: Rashtriya Vayoshri Yojana ka toll free number kya hai?
+  source: 1
+  status: verified
+situations:
+- question: My mother is 72, cannot hear properly and needs a walker, and we have a BPL ration card. Is there a government scheme that gives such devices for free?
+  language: en
+- question: Mere dadaji 68 saal ke hain, unke daant gir gaye hain aur chashma bhi chahiye, ghar ki kamai 10,000 mahina hai. Sarkar se muft upkaran kaise milega?
+  language: hi_latn
+sources:
+- title: Rashtriya Vayoshri Yojana (RVY)
+  url: https://www.alimco.in/RVY
+  publisher: Artificial Limbs Manufacturing Corporation of India (ALIMCO), Ministry of Social Justice and Empowerment
+  accessed: '2026-10-03'
+- title: Atal Vayo Abhyuday Yojana (AVYAY) scheme page
+  url: https://socialjustice.gov.in/schemes/43
+  publisher: Department of Social Justice and Empowerment, Ministry of Social Justice and Empowerment
+  accessed: '2026-10-03'
+- title: ALIMCO Hindi page (राष्ट्रीय वयोश्री योजना)
+  url: https://www.alimco.in/hi/RVY
+  publisher: Artificial Limbs Manufacturing Corporation of India (ALIMCO)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: RVY started on 1 April 2017 and was first paid for from the Senior Citizens'' Welfare Fund. The Department of Social Justice''s AVYAY page now lists it as a component of Atal Vayo Abhyuday Yojana, a central sector scheme, and ALIMCO runs it. I could not open the full RVY/AVYAY guidelines (para 9 eligibility), the myScheme page or PIB, so eligibility comes from ALIMCO''s RVY page. ALIMCO''s Hindi homepage words the income rule a little differently: it describes BPL seniors with monthly income not above Rs 15,000. The English RVY page says a senior can qualify either as BPL or, if not BPL, with income up to Rs 15,000. The ''free of cost'' benefit is based on ALIMCO''s wording; the page does not give one clear sentence saying it. The exact device list may vary by camp.'
+  - 'Checker: The benefits list includes ''orthotic or prosthetic appliances''. ALIMCO''s RVY device list does not have them. It lists walking sticks, elbow/axilla crutches, foldable walkers, tripods/tetrapods, hearing aids, dentures, spectacles, wheelchairs, commode wheelchairs, folding commode chairs, cushions, knee braces, spinal supports, cervical collars, LS belts and walker-rollators. Remove the orthotic/prosthetic item unless a guideline confirms it.'
+  - 'Checker: ''Free of cost'' is not stated as a rule on ALIMCO''s RVY page. It is only implied, by the exclusion of devices already received free from Government and by beneficiary testimonials. I could not open the RVY/AVYAY guidelines (para 9) or PIB to confirm it. The summary''s word ''free'' rests on inference.'
+  - 'Checker: ALIMCO''s English and Hindi pages word the income rule differently. English: BPL, OR non-BPL with income up to Rs 15,000. Hindi: BPL seniors with income up to Rs 15,000. The record follows the English page; the conflict should stay flagged.'
+  - 'Checker: The facts and the toll-free number rest on one official page (alimco.in/RVY). The MSJE AVYAY page confirms only that RVY is a Central Sector component of AVYAY and that devices must meet BIS standards. It does not give the age or income figures.'
+  - 'Checker: Status basis: the MSJE AVYAY page (last updated 28 September 2026) still lists RVY as a component, and ALIMCO describes camp and OPD modes in the present tense. No end date was found. I could not see the formal AVYAY approval period for 2026-27 onward, so ''yes'' rests on these current official listings, not on an approval order.'
+  - 'Checker: Possibly missing route: the ARJUN portal is titled ''ADIP & RVY Joint Interface for Unique Nomination'', so online nomination for RVY may be possible. The page would not render for me to confirm.'
+  - 'Checker: All sources are official (alimco.in, socialjustice.gov.in).'

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-02",
+  "python": "3.12.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "fastapi": "0.142.2",
+    "pydantic": "2.13.5",
+    "PyYAML": "6.0.3"
+  },
+  "scifact": {
+    "source": "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/scifact.zip",
+    "official_md5": "5f7d1de60b170fc8027bb7898e2efca1",
+    "archive_sha256": "536e14446a0ba56ed1398ab1055f39fe852686ecad24a6306c80c490fa8e0165",
+    "corpus_documents": 5183,
+    "test_queries": 300,
+    "domain": "scientific claim retrieval, not welfare"
+  },
+  "models": {
+    "fresh_llm_inference": false,
+    "reason": "No local model weights, torch or transformers available; Qwen/Ollama routing tested using generation stubs."
+  },
+  "measurements": {
+    "concurrency": 1,
+    "model_latency_included": false,
+    "capacity_memory": "Sparse matrices only; excludes Python objects, vocabulary, runtime and models."
+  },
+  "fixtures": {
+    "corpus.jsonl": {
+      "sha256": "a505f2fffa1402e1e73c72b1958181741b8551e0990e72400c2c419a15808759",
+      "kind": "Agent-authored fictional engineering fixtures, not expert-reviewed real welfare labels"
+    },
+    "questions.jsonl": {
+      "sha256": "f2f1ddd3699a003ef724c889724add5827b3ec1756aabeb306d47a3d6f503753",
+      "kind": "Agent-authored fictional engineering fixtures, not expert-reviewed real welfare labels"
+    }
+  }
+}

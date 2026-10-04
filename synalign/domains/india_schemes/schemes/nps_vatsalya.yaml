@@ -1,0 +1,149 @@
+id: nps_vatsalya
+name: NPS Vatsalya
+short_name: NPS Vatsalya
+names_hi:
+- एनपीएस वात्सल्य योजना
+- 'short form: एनपीएस वात्सल्य)'
+aliases:
+- NPS Vatsalya Yojana
+- NPS Vatsalya Scheme
+- NPS for minors
+- NPS for children
+- vatsalya pension yojana
+- bachchon ke liye NPS
+level: central
+state: ''
+ministry: Ministry of Finance (Department of Financial Services); regulated and administered by PFRDA
+category: pension
+summary: A long-term savings and pension account under the National Pension System that a parent or guardian opens in the name of a child under 18, with as little as Rs 250 a year. When the child turns 18, they can move the money to a regular NPS account or take part of it out, and they can withdraw it all if the total is less than Rs 8 lakh.
+sections:
+  eligibility:
+  - The child must be below 18 years of age (17 or younger) when the account is opened.
+  - Open to Indian citizens under 18, including Non-Resident Indians (NRIs) and Overseas Citizens of India (OCIs).
+  - A parent or legal guardian opens and runs the account in the child's name. The child is the only beneficiary.
+  - The minimum contribution is Rs 250 to open the account and at least Rs 250 in each financial year. There is no upper limit.
+  - For an NRI or OCI child, a bank account must be given (the minor's own or joint NRE/NRO account).
+  exclusions:
+  - Anyone who has already turned 18 cannot open an NPS Vatsalya account. They can join the regular NPS instead.
+  benefits:
+  - A pension fund registered with PFRDA, chosen by the guardian, invests the money. Returns are market-linked, with an indicative 50% to 75% in equity.
+  - Partial withdrawals are allowed only after 3 years from opening the account. You can take out up to 25% of the money paid in (not the returns) for the child's education, treatment of specified illnesses, or disability of more than 75%.
+  - Up to 2 partial withdrawals are allowed before age 18. After completing KYC, 2 more are allowed between ages 18 and 21.
+  - 'At 18 the account can continue for up to 3 more years. After fresh KYC, the young person has three choices: move the full amount into regular NPS (All Citizen Model), take up to 80% as a lump sum and use the rest to buy an annuity, or withdraw everything if the total is less than Rs 8 lakh.'
+  - If no choice is made by age 21, the account moves to a higher-equity scheme of the same pension fund and follows regular NPS rules.
+  - If the child dies, the entire amount saved is paid to the guardian, nominee or legal heirs.
+  how_to_apply:
+  - Open online on the eNPS platform of NPS Trust (npstrust.org.in) or through the online service of a Point of Presence.
+  - Or visit a Point of Presence registered with PFRDA, such as a bank, India Post or a pension fund.
+  - When opening the account, the guardian chooses a Central Recordkeeping Agency and a pension fund. Parents, relatives and friends can then pay in by cash, cheque or online.
+  - At 18, the young person must complete fresh KYC and give nominee details before any withdrawal or change is allowed.
+  documents:
+  - 'Proof of the child''s date of birth: birth certificate, school leaving certificate, matriculation certificate, PAN or passport.'
+  - 'Guardian''s identity and address proof (KYC): Aadhaar, driving licence, passport, voter ID, NREGA job card or National Population Register document.'
+  - Guardian's PAN, or Form 60.
+  - Copy of the court order, if a court-appointed legal guardian opens the account.
+  - 'For NRI/OCI guardians: the minor''s own or joint NRE/NRO bank account.'
+rules:
+  age_max: 17
+  gender: any
+facts:
+- key: minimum_contribution
+  statement: The minimum contribution is Rs 250 to open the account and Rs 250 in each financial year.
+  value: Rs 250
+  accept:
+  - '250'
+  - ₹250
+  - 250 rupees
+  - Rs. 250
+  question: What is the minimum amount needed to open an NPS Vatsalya account?
+  question_hi: एनपीएस वात्सल्य खाता खोलने के लिए कम से कम कितने पैसे चाहिए?
+  question_hi_latn: NPS Vatsalya khata kholne ke liye kam se kam kitna paisa chahiye?
+  source: 2
+  status: verified
+- key: child_age_limit
+  statement: An NPS Vatsalya account can be opened only for a child below 18 years of age.
+  value: below 18
+  accept:
+  - under 18
+  - less than 18
+  - '18'
+  - 0 to 17
+  - '17'
+  question: Up to what age can a child be enrolled in NPS Vatsalya?
+  question_hi: एनपीएस वात्सल्य में किस उम्र तक के बच्चे का खाता खुल सकता है?
+  question_hi_latn: NPS Vatsalya me kis umar tak ke bacche ka khata khul sakta hai?
+  source: 2
+  status: verified
+- key: partial_withdrawal_limit
+  statement: A partial withdrawal can be up to 25% of the money paid in, not counting returns.
+  value: 25%
+  accept:
+  - 25 percent
+  - 25 per cent
+  - one-fourth
+  - '25'
+  question: How much money can be withdrawn early from NPS Vatsalya for my child's education?
+  question_hi: बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?
+  question_hi_latn: Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sakte hain?
+  source: 2
+  status: verified
+- key: partial_withdrawal_lock_in
+  statement: Partial withdrawal is allowed only after 3 years from opening the account.
+  value: 3 years
+  accept:
+  - three years
+  - 3 saal
+  - '3'
+  question: After how many years can I make a partial withdrawal from NPS Vatsalya?
+  question_hi: एनपीएस वात्सल्य से आंशिक निकासी कितने साल बाद कर सकते हैं?
+  question_hi_latn: NPS Vatsalya se partial withdrawal kitne saal baad kar sakte hain?
+  source: 2
+  status: verified
+- key: full_withdrawal_threshold
+  statement: After 18, the whole amount can be withdrawn as a lump sum only if the total is less than Rs 8 lakh.
+  value: Rs 8 lakh
+  accept:
+  - 8 lakh
+  - '800000'
+  - 8,00,000
+  - ₹8 lakh
+  question: Up to what amount can the full NPS Vatsalya money be withdrawn at once after the child turns 18?
+  question_hi: 18 साल होने के बाद एनपीएस वात्सल्य का पूरा पैसा एक साथ कितनी रकम तक निकाल सकते हैं?
+  question_hi_latn: 18 saal hone ke baad NPS Vatsalya ka poora paisa ek saath kitni rakam tak nikal sakte hain?
+  source: 2
+  status: verified
+situations:
+- question: My son is 6 years old. Is there a government pension account I can open in his name and add a small amount to every year until he grows up?
+  language: en
+- question: Meri beti 10 saal ki hai, main uske naam par lambi avadhi ka pension khata kholna chahta hoon jisme saal me kam se kam thoda paisa daal sakoon. Kaun si sarkari yojana hai?
+  language: hi_latn
+sources:
+- title: NPS Vatsalya - scheme page
+  url: https://www.pfrda.org.in/web/pfrda/schemes/nps-vatsalya
+  publisher: Pension Fund Regulatory and Development Authority (PFRDA)
+  accessed: '2026-10-03'
+- title: NPS Vatsalya Scheme Guidelines 2025 (Circular PFRDA/2026/02/NPS-Vatsalya/01, 7 January 2026)
+  url: https://pfrda.org.in/documents/33652/153574/NPS+Vatsalya+Scheme+Guidelines+2025.pdf
+  publisher: Pension Fund Regulatory and Development Authority (PFRDA)
+  accessed: '2026-10-03'
+- title: Notification of effective date of NPS Vatsalya Scheme Guidelines 2025 (27 February 2026)
+  url: https://pfrda.org.in/w/regulatory-framework/circulars/active-circulars/notification-of-effective-date-of-nps-vatsalya-scheme-guidelines-2025
+  publisher: Pension Fund Regulatory and Development Authority (PFRDA)
+  accessed: '2026-10-03'
+- title: FAQs - NPS Vatsalya
+  url: https://www.pfrda.org.in/web/pfrda/w/faqs/nps-vatsalya
+  publisher: Pension Fund Regulatory and Development Authority (PFRDA)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The rules changed in 2026. The NPS Vatsalya Scheme Guidelines 2025 (PFRDA circular of 7 January 2026, in force from 23 February 2026) replaced the rules of 18 September 2024. The old rules set a minimum of Rs 1,000 a year, allowed up to 3 partial withdrawals before 18, and allowed a full lump-sum exit at 18 only if the total was Rs 2.5 lakh or less. PFRDA''s FAQ page still shows those old figures, so this record follows the 2025 Guidelines and the current scheme page. The FAQ also says the minor must be an Indian citizen, while the 2025 Guidelines say NRIs and OCIs under 18 can join. PFRDA''s scheme page adds two points: later contributions can be as small as Rs 10, and under the old tax regime contributions get a deduction of up to Rs 50,000. Tax treatment should be rechecked under the Income-tax Act, 2025. Returns are market-linked and not guaranteed. The scheme is open for new accounts. No official Hindi name was found.'
+  - 'Checker: An official Hindi name exists: ''एनपीएस वात्सल्य योजना'' appears in PFRDA''s Hindi circular of 27 Feb 2026. Add it to names_hi and correct the status note.'
+  - 'Checker: The equity statement is incomplete and could mislead about risk. The current PFRDA scheme page lets pension funds design their own NPS Vatsalya allocation with up to 100% in equity, or follow an indicative pattern capped at 75% equity. The Guidelines'' para 12 is to be read with circular PFRDA/2026/09/REG-PF/03 of 23 Feb 2026.'
+  - 'Checker: Missing condition: for a partial withdrawal or exit at 18, a bank account of the minor, or a joint account with the minor, is required (Guidelines para 7(vi)). The record mentions a bank account only for NRI/OCI children.'
+  - 'Checker: Missing condition: if fresh KYC is not done after 18, no transactions are allowed until 21, after which the account becomes dormant (Guidelines para 7(iii)). Para 13.2(iv) separately describes moving to a higher-equity scheme at 21. The two clauses sit side by side and should both be reflected.'
+  - 'Checker: The scheme-page URL cited as source 1 (pfrda.org.in/web/pfrda/schemes/nps-vatsalya) now redirects to /web/pfrda/schemes/national-pension-system/nps-vatsalya. Update the link.'
+  - 'Checker: The 80% lump-sum option is described without its condition. The scheme page applies it when the corpus is Rs 8 lakh or more, with at least 20% going into an annuity.'
+  - Official Hindi name added from https://pfrda.org.in/documents/33652/153574/Circular+NPS+Vatsalya+Scheme+Guidelines+2025+effective+from+23rd+Feb+2026.pdf.

@@ -1,0 +1,874 @@
+{
+ "rules_one_slot": {
+  "54/questions": {
+   "base": {
+    "in_prompt": "282/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "149/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "53/60"
+   },
+   "new": {
+    "in_prompt": "283/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "150/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "54/60"
+   },
+   "fixed": 1,
+   "broken": 0,
+   "diff_points": 0.33,
+   "ci95_points": [
+    0.0,
+    1.15
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "54/usecase_questions": {
+   "base": {
+    "in_prompt": "146/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "16/18",
+    "type=benefits": "23/36",
+    "type=category": "8/8",
+    "type=compare": "3/10",
+    "type=documents": "27/34",
+    "type=exclusions": "36/36",
+    "language=en": "146/178"
+   },
+   "new": {
+    "in_prompt": "155/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "18/18",
+    "type=benefits": "28/36",
+    "type=category": "8/8",
+    "type=compare": "3/10",
+    "type=documents": "29/34",
+    "type=exclusions": "36/36",
+    "language=en": "155/178"
+   },
+   "fixed": 9,
+   "broken": 0,
+   "diff_points": 5.06,
+   "ci95_points": [
+    1.2,
+    9.21
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "scale/questions": {
+   "base": {
+    "in_prompt": "261/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "147/162",
+    "type=situation": "16/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "50/60"
+   },
+   "new": {
+    "in_prompt": "263/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "148/162",
+    "type=situation": "17/36",
+    "type=typo": "51/54",
+    "language=en": "137/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "51/60"
+   },
+   "fixed": 2,
+   "broken": 0,
+   "diff_points": 0.66,
+   "ci95_points": [
+    0.0,
+    1.8900000000000001
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "scale/usecase_questions": {
+   "base": {
+    "in_prompt": "137/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "15/18",
+    "type=benefits": "18/36",
+    "type=category": "2/8",
+    "type=compare": "3/10",
+    "type=documents": "30/34",
+    "type=exclusions": "36/36",
+    "language=en": "137/178"
+   },
+   "new": {
+    "in_prompt": "145/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "17/18",
+    "type=benefits": "22/36",
+    "type=category": "2/8",
+    "type=compare": "3/10",
+    "type=documents": "32/34",
+    "type=exclusions": "36/36",
+    "language=en": "145/178"
+   },
+   "fixed": 8,
+   "broken": 0,
+   "diff_points": 4.49,
+   "ci95_points": [
+    1.16,
+    8.33
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  }
+ },
+ "all3": {
+  "54/questions": {
+   "base": {
+    "in_prompt": "282/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "149/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "53/60"
+   },
+   "new": {
+    "in_prompt": "288/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "155/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "83/92",
+    "language=hi_latn": "57/60"
+   },
+   "fixed": 8,
+   "broken": 2,
+   "diff_points": 1.97,
+   "ci95_points": [
+    -0.64,
+    4.67
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "pm_kmy__pension_start_age__en",
+     "At what age does the PM Kisan Maandhan pension start?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__benefits",
+      "pm_kisan__how_to_apply"
+     ]
+    ],
+    [
+     "pm_kmy__pension_start_age__typo",
+     "At what age does the PM Kisan Maandhan prnsion start?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__benefits",
+      "pm_kisan__how_to_apply"
+     ]
+    ]
+   ]
+  },
+  "54/usecase_questions": {
+   "base": {
+    "in_prompt": "146/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "16/18",
+    "type=benefits": "23/36",
+    "type=category": "8/8",
+    "type=compare": "3/10",
+    "type=documents": "27/34",
+    "type=exclusions": "36/36",
+    "language=en": "146/178"
+   },
+   "new": {
+    "in_prompt": "177/178",
+    "abstain": "0/0",
+    "type=apply": "36/36",
+    "type=apply_eligibility": "18/18",
+    "type=benefits": "35/36",
+    "type=category": "8/8",
+    "type=compare": "10/10",
+    "type=documents": "34/34",
+    "type=exclusions": "36/36",
+    "language=en": "177/178"
+   },
+   "fixed": 31,
+   "broken": 0,
+   "diff_points": 17.42,
+   "ci95_points": [
+    10.81,
+    25.669999999999998
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "scale/questions": {
+   "base": {
+    "in_prompt": "261/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "147/162",
+    "type=situation": "16/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "50/60"
+   },
+   "new": {
+    "in_prompt": "265/304",
+    "abstain": "5/12",
+    "type=eligibility": "52/52",
+    "type=fact": "151/162",
+    "type=situation": "17/36",
+    "type=typo": "45/54",
+    "language=en": "126/152",
+    "language=hi": "84/92",
+    "language=hi_latn": "55/60"
+   },
+   "fixed": 17,
+   "broken": 13,
+   "diff_points": 1.32,
+   "ci95_points": [
+    -4.93,
+    6.67
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "igndps__min_age__en",
+     "From what age can someone get the Indira Gandhi National Disability Pension?",
+     [
+      "ms__dp-gbocwwb__rules",
+      "ms__dpabocwwb__rules",
+      "ms__dpbbocwwb__rules"
+     ]
+    ],
+    [
+     "igndps__min_age__typo",
+     "From what ag can someobe get the undira Gandhi Nstional Disability Pension?",
+     [
+      "ms__dp-gbocwwb__rules",
+      "ms__dpabocwwb__rules",
+      "ms__dpmbocwwb__rules"
+     ]
+    ],
+    [
+     "igndps__min_disability_level__en",
+     "How much disability is needed for the Indira Gandhi National Disability Pension?",
+     [
+      "ms__dphpbocwwb__rules",
+      "ms__dp-gbocwwb__rules",
+      "ms__dpbbocwwb__rules"
+     ]
+    ],
+    [
+     "igndps__min_disability_level__typo",
+     "How much disability is needed foor the Indir Gandhi National Disability Pension?",
+     [
+      "ms__dphpbocwwb__rules",
+      "ms__dp-gbocwwb__rules",
+      "ms__dpbbocwwb__rules"
+     ]
+    ],
+    [
+     "igndps__monthly_pension_18_to_79__typo",
+     "How mych monthly pension does the central government give under the Indira Gandhi Natonal ",
+     [
+      "ms__dphpbocwwb__rules",
+      "ms__dp-gbocwwb__rules",
+      "ms__dpabocwwb__rules"
+     ]
+    ],
+    [
+     "igndps__monthly_pension_80_plus__en",
+     "How much is the Indira Gandhi National Disability Pension after age 80?",
+     [
+      "ms__dp-gbocwwb__rules",
+      "ms__dpabocwwb__rules",
+      "ms__dpbbocwwb__rules"
+     ]
+    ],
+    [
+     "igndps__monthly_pension_80_plus__typo",
+     "How mudh is the Indira Gandhi National Disability Pension after aage 80?",
+     [
+      "ms__dp-gbocwwb__rules",
+      "ms__dpabocwwb__rules",
+      "ms__dpbbocwwb__rules"
+     ]
+    ],
+    [
+     "ignwps__min_age__en",
+     "From what age can a widow get the Indira Gandhi National Widow Pension?",
+     [
+      "ms__wphbocwwb__rules",
+      "ms__dpswdwp__rules",
+      "ms__wpcbocwwb__rules"
+     ]
+    ]
+   ]
+  },
+  "scale/usecase_questions": {
+   "base": {
+    "in_prompt": "137/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "15/18",
+    "type=benefits": "18/36",
+    "type=category": "2/8",
+    "type=compare": "3/10",
+    "type=documents": "30/34",
+    "type=exclusions": "36/36",
+    "language=en": "137/178"
+   },
+   "new": {
+    "in_prompt": "171/178",
+    "abstain": "0/0",
+    "type=apply": "36/36",
+    "type=apply_eligibility": "18/18",
+    "type=benefits": "35/36",
+    "type=category": "2/8",
+    "type=compare": "10/10",
+    "type=documents": "34/34",
+    "type=exclusions": "36/36",
+    "language=en": "171/178"
+   },
+   "fixed": 34,
+   "broken": 0,
+   "diff_points": 19.1,
+   "ci95_points": [
+    12.97,
+    26.51
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  }
+ },
+ "all3+unique": {
+  "54/questions": {
+   "base": {
+    "in_prompt": "282/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "149/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "53/60"
+   },
+   "new": {
+    "in_prompt": "288/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "155/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "83/92",
+    "language=hi_latn": "57/60"
+   },
+   "fixed": 8,
+   "broken": 2,
+   "diff_points": 1.97,
+   "ci95_points": [
+    -0.64,
+    4.67
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "pm_kmy__pension_start_age__en",
+     "At what age does the PM Kisan Maandhan pension start?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__benefits",
+      "pm_kisan__how_to_apply"
+     ]
+    ],
+    [
+     "pm_kmy__pension_start_age__typo",
+     "At what age does the PM Kisan Maandhan prnsion start?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__benefits",
+      "pm_kisan__how_to_apply"
+     ]
+    ]
+   ]
+  },
+  "54/usecase_questions": {
+   "base": {
+    "in_prompt": "146/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "16/18",
+    "type=benefits": "23/36",
+    "type=category": "8/8",
+    "type=compare": "3/10",
+    "type=documents": "27/34",
+    "type=exclusions": "36/36",
+    "language=en": "146/178"
+   },
+   "new": {
+    "in_prompt": "177/178",
+    "abstain": "0/0",
+    "type=apply": "36/36",
+    "type=apply_eligibility": "18/18",
+    "type=benefits": "35/36",
+    "type=category": "8/8",
+    "type=compare": "10/10",
+    "type=documents": "34/34",
+    "type=exclusions": "36/36",
+    "language=en": "177/178"
+   },
+   "fixed": 31,
+   "broken": 0,
+   "diff_points": 17.42,
+   "ci95_points": [
+    10.81,
+    25.669999999999998
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "scale/questions": {
+   "base": {
+    "in_prompt": "261/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "147/162",
+    "type=situation": "16/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "50/60"
+   },
+   "new": {
+    "in_prompt": "276/304",
+    "abstain": "5/12",
+    "type=eligibility": "52/52",
+    "type=fact": "156/162",
+    "type=situation": "17/36",
+    "type=typo": "51/54",
+    "language=en": "137/152",
+    "language=hi": "84/92",
+    "language=hi_latn": "55/60"
+   },
+   "fixed": 17,
+   "broken": 2,
+   "diff_points": 4.93,
+   "ci95_points": [
+    0.59,
+    11.31
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "pm_kmy__pension_start_age__en",
+     "At what age does the PM Kisan Maandhan pension start?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__benefits",
+      "pm_kisan__how_to_apply"
+     ]
+    ],
+    [
+     "pm_kmy__pension_start_age__typo",
+     "At what age does the PM Kisan Maandhan prnsion start?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__benefits",
+      "pm_kisan__how_to_apply"
+     ]
+    ]
+   ]
+  },
+  "scale/usecase_questions": {
+   "base": {
+    "in_prompt": "137/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "15/18",
+    "type=benefits": "18/36",
+    "type=category": "2/8",
+    "type=compare": "3/10",
+    "type=documents": "30/34",
+    "type=exclusions": "36/36",
+    "language=en": "137/178"
+   },
+   "new": {
+    "in_prompt": "171/178",
+    "abstain": "0/0",
+    "type=apply": "36/36",
+    "type=apply_eligibility": "18/18",
+    "type=benefits": "35/36",
+    "type=category": "2/8",
+    "type=compare": "10/10",
+    "type=documents": "34/34",
+    "type=exclusions": "36/36",
+    "language=en": "171/178"
+   },
+   "fixed": 34,
+   "broken": 0,
+   "diff_points": 19.1,
+   "ci95_points": [
+    12.97,
+    26.51
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  }
+ },
+ "all3+keep_top": {
+  "54/questions": {
+   "base": {
+    "in_prompt": "282/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "149/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "53/60"
+   },
+   "new": {
+    "in_prompt": "286/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "152/162",
+    "type=situation": "29/36",
+    "type=typo": "53/54",
+    "language=en": "149/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "56/60"
+   },
+   "fixed": 4,
+   "broken": 0,
+   "diff_points": 1.32,
+   "ci95_points": [
+    0.32,
+    2.59
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "54/usecase_questions": {
+   "base": {
+    "in_prompt": "146/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "16/18",
+    "type=benefits": "23/36",
+    "type=category": "8/8",
+    "type=compare": "3/10",
+    "type=documents": "27/34",
+    "type=exclusions": "36/36",
+    "language=en": "146/178"
+   },
+   "new": {
+    "in_prompt": "176/178",
+    "abstain": "0/0",
+    "type=apply": "36/36",
+    "type=apply_eligibility": "18/18",
+    "type=benefits": "34/36",
+    "type=category": "8/8",
+    "type=compare": "10/10",
+    "type=documents": "34/34",
+    "type=exclusions": "36/36",
+    "language=en": "176/178"
+   },
+   "fixed": 30,
+   "broken": 0,
+   "diff_points": 16.85,
+   "ci95_points": [
+    10.56,
+    24.88
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "scale/questions": {
+   "base": {
+    "in_prompt": "261/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "147/162",
+    "type=situation": "16/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "50/60"
+   },
+   "new": {
+    "in_prompt": "268/304",
+    "abstain": "5/12",
+    "type=eligibility": "52/52",
+    "type=fact": "150/162",
+    "type=situation": "17/36",
+    "type=typo": "49/54",
+    "language=en": "133/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "54/60"
+   },
+   "fixed": 12,
+   "broken": 5,
+   "diff_points": 2.3,
+   "ci95_points": [
+    -0.96,
+    5.74
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "igndps__monthly_pension_18_to_79__typo",
+     "How mych monthly pension does the central government give under the Indira Gandhi Natonal ",
+     [
+      "igndps__eligibility",
+      "ms__dphpbocwwb__rules",
+      "ms__dp-gbocwwb__rules"
+     ]
+    ],
+    [
+     "igndps__monthly_pension_80_plus__en",
+     "How much is the Indira Gandhi National Disability Pension after age 80?",
+     [
+      "igndps__eligibility",
+      "ms__dp-gbocwwb__rules",
+      "ms__dpabocwwb__rules"
+     ]
+    ],
+    [
+     "igndps__monthly_pension_80_plus__typo",
+     "How mudh is the Indira Gandhi National Disability Pension after aage 80?",
+     [
+      "igndps__eligibility",
+      "ms__dp-gbocwwb__rules",
+      "ms__dpabocwwb__rules"
+     ]
+    ],
+    [
+     "ignwps__monthly_pension_80_plus__en",
+     "How much is the Indira Gandhi National Widow Pension after the widow turns 80?",
+     [
+      "ignwps__eligibility",
+      "ms__wphbocwwb__rules",
+      "ms__dpswdwp__rules"
+     ]
+    ],
+    [
+     "ignwps__monthly_pension_80_plus__typo",
+     "How much is thw India Gandhi National Widow Pension after the sidow turns 80?",
+     [
+      "ignwps__eligibility",
+      "ms__wphbocwwb__rules",
+      "ms__dpswdwp__rules"
+     ]
+    ]
+   ]
+  },
+  "scale/usecase_questions": {
+   "base": {
+    "in_prompt": "137/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "15/18",
+    "type=benefits": "18/36",
+    "type=category": "2/8",
+    "type=compare": "3/10",
+    "type=documents": "30/34",
+    "type=exclusions": "36/36",
+    "language=en": "137/178"
+   },
+   "new": {
+    "in_prompt": "169/178",
+    "abstain": "0/0",
+    "type=apply": "36/36",
+    "type=apply_eligibility": "17/18",
+    "type=benefits": "35/36",
+    "type=category": "2/8",
+    "type=compare": "10/10",
+    "type=documents": "33/34",
+    "type=exclusions": "36/36",
+    "language=en": "169/178"
+   },
+   "fixed": 32,
+   "broken": 0,
+   "diff_points": 17.98,
+   "ci95_points": [
+    11.83,
+    25.740000000000002
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  }
+ },
+ "all3+unique+keep_top": {
+  "54/questions": {
+   "base": {
+    "in_prompt": "282/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "149/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "53/60"
+   },
+   "new": {
+    "in_prompt": "286/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "152/162",
+    "type=situation": "29/36",
+    "type=typo": "53/54",
+    "language=en": "149/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "56/60"
+   },
+   "fixed": 4,
+   "broken": 0,
+   "diff_points": 1.32,
+   "ci95_points": [
+    0.32,
+    2.59
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "54/usecase_questions": {
+   "base": {
+    "in_prompt": "146/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "16/18",
+    "type=benefits": "23/36",
+    "type=category": "8/8",
+    "type=compare": "3/10",
+    "type=documents": "27/34",
+    "type=exclusions": "36/36",
+    "language=en": "146/178"
+   },
+   "new": {
+    "in_prompt": "176/178",
+    "abstain": "0/0",
+    "type=apply": "36/36",
+    "type=apply_eligibility": "18/18",
+    "type=benefits": "34/36",
+    "type=category": "8/8",
+    "type=compare": "10/10",
+    "type=documents": "34/34",
+    "type=exclusions": "36/36",
+    "language=en": "176/178"
+   },
+   "fixed": 30,
+   "broken": 0,
+   "diff_points": 16.85,
+   "ci95_points": [
+    10.56,
+    24.88
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "scale/questions": {
+   "base": {
+    "in_prompt": "261/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "147/162",
+    "type=situation": "16/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "50/60"
+   },
+   "new": {
+    "in_prompt": "273/304",
+    "abstain": "5/12",
+    "type=eligibility": "52/52",
+    "type=fact": "152/162",
+    "type=situation": "17/36",
+    "type=typo": "52/54",
+    "language=en": "138/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "54/60"
+   },
+   "fixed": 12,
+   "broken": 0,
+   "diff_points": 3.95,
+   "ci95_points": [
+    1.24,
+    8.18
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  },
+  "scale/usecase_questions": {
+   "base": {
+    "in_prompt": "137/178",
+    "abstain": "0/0",
+    "type=apply": "33/36",
+    "type=apply_eligibility": "15/18",
+    "type=benefits": "18/36",
+    "type=category": "2/8",
+    "type=compare": "3/10",
+    "type=documents": "30/34",
+    "type=exclusions": "36/36",
+    "language=en": "137/178"
+   },
+   "new": {
+    "in_prompt": "169/178",
+    "abstain": "0/0",
+    "type=apply": "36/36",
+    "type=apply_eligibility": "17/18",
+    "type=benefits": "35/36",
+    "type=category": "2/8",
+    "type=compare": "10/10",
+    "type=documents": "33/34",
+    "type=exclusions": "36/36",
+    "language=en": "169/178"
+   },
+   "fixed": 32,
+   "broken": 0,
+   "diff_points": 17.98,
+   "ci95_points": [
+    11.83,
+    25.740000000000002
+   ],
+   "abstain_change": 0,
+   "broken_examples": []
+  }
+ }
+}

@@ -1,7 +1,7 @@
 import re
 
 from engine.domain_pack import DomainPack
-from engine.retriever import TfidfRetriever
+from engine.retriever import Retriever
 from engine.schemas import AssistantAnswer
 
 
@@ -14,8 +14,7 @@ class NaiveBaselineAssistant:
     has real failures to surface.
     """
 
-    def __init__(self, pack: DomainPack, retriever: TfidfRetriever):
-        self.pack = pack
+    def __init__(self, pack: DomainPack, retriever: Retriever):
         self.retriever = retriever
 
     # -- crude fact extraction from the question only ---------------------
@@ -46,7 +45,6 @@ class NaiveBaselineAssistant:
         facts = self._extract_facts(question)
 
         lines = ["Here is an assessment based on the documents I found."]
-        mentioned_anything = False
 
         for chunk in chunks:
             name_line = chunk.text.splitlines()[0].replace("#", "").strip()
@@ -62,50 +60,34 @@ class NaiveBaselineAssistant:
 
             if rules_ok:
                 lines.append(f"- {name_line}: this looks relevant to you and you may be eligible.")
-                mentioned_anything = True
             else:
                 lines.append(f"- {name_line}: based on what you shared, this does not seem to fit.")
-                mentioned_anything = True
 
-        if not mentioned_anything:
+        if not chunks:
             lines.append("I could not find a clearly matching option.")
 
         lines.append("Final eligibility depends on official verification.")
         return AssistantAnswer(answer_text="\n".join(lines), retrieved_chunks=chunks)
 
 
-class OllamaAssistant:
-    """A real local LLM behind the same interface. Requires Ollama running locally."""
+BACKENDS = ("naive", "rules_only", "llama_cpp", "transformers", "ollama")
+NO_MODEL_BACKENDS = ("naive", "rules_only")
 
-    SYSTEM_RULES = (
-        "You are a careful document-grounded assistant.\n"
-        "1. Use ONLY the provided context.\n"
-        "2. If information needed for a decision is missing, ask a short follow-up question.\n"
-        "3. Never guarantee approval or promise outcomes; final decisions need official verification.\n"
-        "4. Clearly separate 'likely eligible' from 'cannot be confirmed yet'.\n"
-        "5. Refer to the document sections you used."
-    )
 
-    def __init__(self, pack: DomainPack, retriever: TfidfRetriever,
-                 model: str = "qwen2.5:0.5b", host: str = "http://localhost:11434"):
-        self.retriever = retriever
-        self.model = model
-        self.host = host
-
-    def answer(self, question: str) -> AssistantAnswer:
-        import requests
-
-        chunks = self.retriever.retrieve(question)
-        context = "\n\n".join(c.text for c in chunks)
-        prompt = (
-            f"{self.SYSTEM_RULES}\n\nRetrieved context:\n{context}\n\n"
-            f"User question:\n{question}\n\nWrite a helpful answer:"
-        )
-        resp = requests.post(
-            f"{self.host}/api/generate",
-            json={"model": self.model, "prompt": prompt, "stream": False},
-            timeout=120,
-        )
-        resp.raise_for_status()
-        text = resp.json().get("response", "").strip()
-        return AssistantAnswer(answer_text=text, retrieved_chunks=chunks)
+def make_assistant(backend: str, pack: DomainPack, retriever: Retriever, **kwargs):
+    """Build the assistant for a backend. Model libraries are imported only if needed."""
+    if backend == "naive":
+        return NaiveBaselineAssistant(pack, retriever)
+    if backend == "rules_only":
+        from engine.llm_assistant import RulesOnlyAssistant
+        return RulesOnlyAssistant(pack, retriever)
+    if backend == "llama_cpp":
+        from engine.llm_assistant import LlamaCppAssistant
+        return LlamaCppAssistant(pack, retriever, **kwargs)
+    if backend == "transformers":
+        from engine.llm_assistant import TransformersAssistant
+        return TransformersAssistant(pack, retriever, **kwargs)
+    if backend == "ollama":
+        from engine.llm_assistant import OllamaAssistant
+        return OllamaAssistant(pack, retriever, **kwargs)
+    raise ValueError(f"Unknown assistant backend: {backend!r}; choose from {BACKENDS}")

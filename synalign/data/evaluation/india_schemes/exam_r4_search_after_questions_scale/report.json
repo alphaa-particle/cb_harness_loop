@@ -1,0 +1,333 @@
+{
+  "questions_file": "/Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/domains/india_schemes/evaluation/questions.jsonl",
+  "questions_sha256": "b77812e2d673715e0ab8bd6a8b07ec070e207a45ef4ef1ab95324fcd5b37d943",
+  "split": "test",
+  "min_score": 0.5,
+  "corpus": "data/external/scale_corpus/corpus.jsonl",
+  "top_k": 3,
+  "retrieval": {
+    "method": "fusion",
+    "top_k": 3,
+    "min_score": 0.5,
+    "fusion_weights": {
+      "bm25": 0.25,
+      "char": 0.25,
+      "dense": 1.0
+    },
+    "rrf_k": 20,
+    "fusion_depth": 50,
+    "add_named_schemes": true
+  },
+  "search": {
+    "fusion": {
+      "build_seconds": 7.6,
+      "ms_per_question": 37.36,
+      "scheme_hit1": {
+        "all": {
+          "n": 720,
+          "rate": 0.9042,
+          "ci95": [
+            0.8794,
+            0.9273
+          ]
+        },
+        "type=eligibility": {
+          "n": 124,
+          "rate": 0.9597,
+          "ci95": [
+            0.8965,
+            1.0
+          ]
+        },
+        "type=fact": {
+          "n": 393,
+          "rate": 0.9517,
+          "ci95": [
+            0.9256,
+            0.9751
+          ]
+        },
+        "type=situation": {
+          "n": 72,
+          "rate": 0.4722,
+          "ci95": [
+            0.3472,
+            0.5972
+          ]
+        },
+        "type=typo": {
+          "n": 131,
+          "rate": 0.9466,
+          "ci95": [
+            0.9008,
+            0.9846
+          ]
+        },
+        "language=en": {
+          "n": 360,
+          "rate": 0.9222,
+          "ci95": [
+            0.8873,
+            0.9502
+          ]
+        },
+        "language=hi": {
+          "n": 217,
+          "rate": 0.8618,
+          "ci95": [
+            0.8034,
+            0.9159
+          ]
+        },
+        "language=hi_latn": {
+          "n": 143,
+          "rate": 0.9231,
+          "ci95": [
+            0.8809,
+            0.958
+          ]
+        }
+      },
+      "scheme_hit3": {
+        "all": {
+          "n": 720,
+          "rate": 0.9514,
+          "ci95": [
+            0.9355,
+            0.9661
+          ]
+        },
+        "type=eligibility": {
+          "n": 124,
+          "rate": 0.9758,
+          "ci95": [
+            0.9237,
+            1.0
+          ]
+        },
+        "type=fact": {
+          "n": 393,
+          "rate": 0.9898,
+          "ci95": [
+            0.979,
+            1.0
+          ]
+        },
+        "type=situation": {
+          "n": 72,
+          "rate": 0.625,
+          "ci95": [
+            0.5,
+            0.7361
+          ]
+        },
+        "type=typo": {
+          "n": 131,
+          "rate": 0.9924,
+          "ci95": [
+            0.9767,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 360,
+          "rate": 0.9722,
+          "ci95": [
+            0.9545,
+            0.9868
+          ]
+        },
+        "language=hi": {
+          "n": 217,
+          "rate": 0.9124,
+          "ci95": [
+            0.8636,
+            0.9565
+          ]
+        },
+        "language=hi_latn": {
+          "n": 143,
+          "rate": 0.958,
+          "ci95": [
+            0.9275,
+            0.986
+          ]
+        }
+      },
+      "scheme_mrr": {
+        "all": {
+          "n": 720,
+          "rate": 0.929,
+          "ci95": [
+            0.9096,
+            0.9467
+          ]
+        },
+        "type=eligibility": {
+          "n": 124,
+          "rate": 0.9677,
+          "ci95": [
+            0.9127,
+            1.0
+          ]
+        },
+        "type=fact": {
+          "n": 393,
+          "rate": 0.9712,
+          "ci95": [
+            0.9543,
+            0.9871
+          ]
+        },
+        "type=situation": {
+          "n": 72,
+          "rate": 0.5592,
+          "ci95": [
+            0.44,
+            0.6695
+          ]
+        },
+        "type=typo": {
+          "n": 131,
+          "rate": 0.9688,
+          "ci95": [
+            0.9427,
+            0.9897
+          ]
+        },
+        "language=en": {
+          "n": 360,
+          "rate": 0.9483,
+          "ci95": [
+            0.9261,
+            0.9671
+          ]
+        },
+        "language=hi": {
+          "n": 217,
+          "rate": 0.8883,
+          "ci95": [
+            0.8379,
+            0.9338
+          ]
+        },
+        "language=hi_latn": {
+          "n": 143,
+          "rate": 0.942,
+          "ci95": [
+            0.9094,
+            0.969
+          ]
+        }
+      },
+      "answer_in_prompt": {
+        "all": {
+          "n": 720,
+          "rate": 0.8792,
+          "ci95": [
+            0.837,
+            0.9162
+          ]
+        },
+        "type=eligibility": {
+          "n": 124,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=fact": {
+          "n": 393,
+          "rate": 0.883,
+          "ci95": [
+            0.8218,
+            0.9369
+          ]
+        },
+        "type=situation": {
+          "n": 72,
+          "rate": 0.5694,
+          "ci95": [
+            0.4444,
+            0.6944
+          ]
+        },
+        "type=typo": {
+          "n": 131,
+          "rate": 0.9237,
+          "ci95": [
+            0.8636,
+            0.9705
+          ]
+        },
+        "language=en": {
+          "n": 360,
+          "rate": 0.925,
+          "ci95": [
+            0.8842,
+            0.9597
+          ]
+        },
+        "language=hi": {
+          "n": 217,
+          "rate": 0.8341,
+          "ci95": [
+            0.7681,
+            0.8916
+          ]
+        },
+        "language=hi_latn": {
+          "n": 143,
+          "rate": 0.8322,
+          "ci95": [
+            0.7483,
+            0.9007
+          ]
+        }
+      },
+      "abstained": {
+        "all": {
+          "n": 44,
+          "rate": 0.2273,
+          "ci95": [
+            0.102,
+            0.3846
+          ]
+        },
+        "type=absent": {
+          "n": 30,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "type=off_topic": {
+          "n": 14,
+          "rate": 0.7143,
+          "ci95": [
+            0.4286,
+            0.9286
+          ]
+        },
+        "language=en": {
+          "n": 25,
+          "rate": 0.32,
+          "ci95": [
+            0.16,
+            0.52
+          ]
+        },
+        "language=hi": {
+          "n": 19,
+          "rate": 0.1053,
+          "ci95": [
+            0.0,
+            0.2632
+          ]
+        }
+      }
+    }
+  }
+}

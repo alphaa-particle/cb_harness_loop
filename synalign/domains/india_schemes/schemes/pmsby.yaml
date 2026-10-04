@@ -1,0 +1,137 @@
+id: pmsby
+name: Pradhan Mantri Suraksha Bima Yojana
+short_name: PMSBY
+names_hi: []
+aliases:
+- Suraksha Bima Yojana
+- PM Suraksha Bima Yojana
+- suraksha bima accident insurance
+- PMSBY accident bima
+- 20 rupaye wala bima
+level: central
+state: ''
+ministry: Ministry of Finance, Department of Financial Services
+category: insurance
+summary: A one-year accident insurance, renewed every year, for bank or post office account holders aged 18 to 70. It pays Rs 2 lakh for accidental death or full disability and Rs 1 lakh for partial disability, for a premium of Rs 20 a year taken automatically from the account.
+sections:
+  eligibility:
+  - Aged 18 to 70 years.
+  - Holds an individual or joint savings account with a participating bank or post office.
+  - Agrees to join and allows the yearly premium to be auto-debited from that account.
+  - A person can be covered through only one account, even if they have several.
+  - In a joint account, each holder who meets the conditions can join by paying Rs 20 each.
+  exclusions:
+  - Cover ends on reaching age 70 (age nearest birthday).
+  - Cover ends if the bank account is closed or does not have enough balance to pay the premium.
+  - Only accidents are covered; death by suicide is not covered, though murder is.
+  - If enrolled through more than one account, the extra premium is forfeited and cover is given through one account only.
+  benefits:
+  - Rs 2 lakh on death due to an accident.
+  - Rs 2 lakh for total and permanent loss of both eyes, both hands or both feet, or of one eye together with one hand or foot.
+  - Rs 1 lakh for permanent loss of one eye or of one hand or foot (partial disability).
+  - The premium is Rs 20 a year, auto-debited from the account in one instalment.
+  - Cover lasts one year, from 1 June to 31 May, is renewed every year, and is in addition to any other insurance the person has.
+  how_to_apply:
+  - Go to the bank branch or post office where you have your savings account and submit the scheme form with your consent for auto-debit.
+  - Late joining during the year is allowed on payment of the premium. If you leave the scheme, you can rejoin in a later year by paying the annual premium, and cover starts from the date the premium is debited.
+  - Claims are filed through the bank or post office by the insured person, or by the nominee or legal heirs. Disability amounts go to the insured person's account and death amounts to the nominee's account.
+  documents:
+  - A savings account with a participating bank or post office.
+  - The filled scheme enrolment form with consent for auto-debit of the premium.
+rules:
+  age_min: 18
+  age_max: 70
+  gender: any
+facts:
+- key: annual_premium
+  statement: The PMSBY premium is Rs 20 a year.
+  value: Rs 20
+  accept:
+  - '20'
+  - ₹20
+  - Rs. 20
+  - 20 rupees
+  question: How much is the yearly premium for PM Suraksha Bima Yojana?
+  question_hi: प्रधानमंत्री सुरक्षा बीमा योजना का सालाना प्रीमियम कितना है?
+  question_hi_latn: PM Suraksha Bima Yojana ka saal ka premium kitna hai?
+  source: 1
+  status: verified
+- key: accidental_death_cover
+  statement: PMSBY pays Rs 2 lakh on death due to an accident.
+  value: Rs 2 lakh
+  accept:
+  - 2 lakh
+  - '200000'
+  - 2,00,000
+  - ₹2 lakh
+  - Rs. 2 lakh
+  - two lakh
+  question: How much does PM Suraksha Bima Yojana pay if the insured person dies in an accident?
+  question_hi: प्रधानमंत्री सुरक्षा बीमा योजना में दुर्घटना से मृत्यु होने पर कितना पैसा मिलता है?
+  question_hi_latn: Suraksha Bima Yojana me accident se maut hone par kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: partial_disability_cover
+  statement: PMSBY pays Rs 1 lakh for permanent loss of one eye or of one hand or foot.
+  value: Rs 1 lakh
+  accept:
+  - 1 lakh
+  - '100000'
+  - 1,00,000
+  - ₹1 lakh
+  - Rs. 1 lakh
+  - one lakh
+  question: How much does PM Suraksha Bima Yojana pay for partial disability from an accident?
+  question_hi: प्रधानमंत्री सुरक्षा बीमा योजना में दुर्घटना से आंशिक विकलांगता होने पर कितना पैसा मिलता है?
+  question_hi_latn: Suraksha Bima Yojana me accident se aanshik viklangta hone par kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: max_age
+  statement: PMSBY is for people aged 18 to 70 years.
+  value: '70'
+  accept:
+  - 70 years
+  - seventy
+  question: What is the maximum age for PM Suraksha Bima Yojana?
+  question_hi: प्रधानमंत्री सुरक्षा बीमा योजना में अधिकतम उम्र कितनी है?
+  question_hi_latn: Suraksha Bima Yojana me maximum umar kitni hai?
+  source: 1
+  status: verified
+- key: cover_period
+  statement: PMSBY cover runs from 1 June to 31 May each year.
+  value: 1 June to 31 May
+  accept:
+  - June to May
+  - 1st June to 31st May
+  question: For which period does the PM Suraksha Bima Yojana cover run each year?
+  question_hi: प्रधानमंत्री सुरक्षा बीमा योजना का कवर हर साल किस तारीख से किस तारीख तक रहता है?
+  question_hi_latn: Suraksha Bima Yojana ka cover har saal kab se kab tak rehta hai?
+  source: 2
+  status: verified
+situations:
+- language: en
+  question: I am 62 and work as a daily-wage labourer. Is there a very cheap insurance through my bank account that pays if I die or become disabled in an accident?
+- language: hi
+  question: मैं 60 साल का मज़दूर हूँ, क्या बैंक खाते से बहुत कम पैसे में दुर्घटना बीमा मिल सकता है जो मौत या अपंगता पर पैसा दे?
+sources:
+- title: Pradhan Mantri Suraksha Bima Yojana (PMSBY) - Frequently Asked Questions
+  url: https://financialservices.gov.in/pmsby
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Suraksha Bima Yojana (PMSBY)
+  url: https://financialservices.gov.in/pradhan-mantri-suraksha-bima-yojana-pmsby
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: 'Insurance for All: Expanding Coverage, Strengthening Social Security (PIB Backgrounder, 23 April 2026)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/apr/doc2026423855201.pdf
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is running and open to new members. A 23 April 2026 PIB backgrounder confirms the Rs 20 premium, the 18-70 age range and the Rs 2 lakh / Rs 1 lakh cover, and reports 57.11 crore enrolments as of February 2026. DFS showed 50.15 crore as of 28 February 2025. Some older material shows a lower premium; that is outdated. The scheme portal jansuraksha.gov.in failed its certificate check, so the official rules PDF and an official Hindi name could not be checked, and names_hi is left empty. The DFS FAQ does not list KYC or Aadhaar rules or other ways to enrol, such as net banking. This is a different cover from the RuPay card accident insurance that comes with a Jan Dhan account. The termination age is counted as age nearest birthday.'
+  - 'Checker: The summary line ''Rs 1 lakh for partial disability'' can mislead. Only the listed losses are covered: sight of one eye, or use of one hand or foot. The DFS FAQ says no benefit is paid for other partial disability. Both disability benefit lines should use the official wording (''loss of sight'', ''loss of use'').'
+  - 'Checker: The record does not say who provides the cover. The DFS page names public sector general insurers and other approved general insurers working with banks.'
+  - 'Checker: names_hi is empty, but the Hindi questions use a Hindi name. No official Hindi name was verified.'

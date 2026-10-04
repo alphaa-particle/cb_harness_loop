@@ -1,0 +1,623 @@
+{
+  "corpus_sha256": "e4122aeb15a12cdbff2ae3df72b8d685f7d24c51225e3cbfd1eba9cb963af9c1",
+  "method": "hybrid",
+  "split": "dev",
+  "questions": 18,
+  "answerable": 15,
+  "unanswerable": 3,
+  "selection_rule": "maximize balanced correct-hit/abstention accuracy; ties prefer positive recall then lower threshold",
+  "selected": {
+    "min_score": 0.16,
+    "positive_hit_and_accept_rate": 1.0,
+    "abstention_accuracy": 1.0,
+    "balanced_accuracy": 1.0
+  },
+  "candidates": [
+    {
+      "min_score": 0.0,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.01,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.02,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.03,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.04,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.05,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.06,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.07,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.08,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.09,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.3333333333333333,
+      "balanced_accuracy": 0.6666666666666666
+    },
+    {
+      "min_score": 0.1,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.3333333333333333,
+      "balanced_accuracy": 0.6666666666666666
+    },
+    {
+      "min_score": 0.11,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.3333333333333333,
+      "balanced_accuracy": 0.6666666666666666
+    },
+    {
+      "min_score": 0.12,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.6666666666666666,
+      "balanced_accuracy": 0.8333333333333333
+    },
+    {
+      "min_score": 0.13,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.6666666666666666,
+      "balanced_accuracy": 0.8333333333333333
+    },
+    {
+      "min_score": 0.14,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.6666666666666666,
+      "balanced_accuracy": 0.8333333333333333
+    },
+    {
+      "min_score": 0.15,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 0.6666666666666666,
+      "balanced_accuracy": 0.8333333333333333
+    },
+    {
+      "min_score": 0.16,
+      "positive_hit_and_accept_rate": 1.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 1.0
+    },
+    {
+      "min_score": 0.17,
+      "positive_hit_and_accept_rate": 0.8666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.9333333333333333
+    },
+    {
+      "min_score": 0.18,
+      "positive_hit_and_accept_rate": 0.8666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.9333333333333333
+    },
+    {
+      "min_score": 0.19,
+      "positive_hit_and_accept_rate": 0.8666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.9333333333333333
+    },
+    {
+      "min_score": 0.2,
+      "positive_hit_and_accept_rate": 0.8666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.9333333333333333
+    },
+    {
+      "min_score": 0.21,
+      "positive_hit_and_accept_rate": 0.8666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.9333333333333333
+    },
+    {
+      "min_score": 0.22,
+      "positive_hit_and_accept_rate": 0.8,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.9
+    },
+    {
+      "min_score": 0.23,
+      "positive_hit_and_accept_rate": 0.8,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.9
+    },
+    {
+      "min_score": 0.24,
+      "positive_hit_and_accept_rate": 0.8,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.9
+    },
+    {
+      "min_score": 0.25,
+      "positive_hit_and_accept_rate": 0.7333333333333333,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.8666666666666667
+    },
+    {
+      "min_score": 0.26,
+      "positive_hit_and_accept_rate": 0.6,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.8
+    },
+    {
+      "min_score": 0.27,
+      "positive_hit_and_accept_rate": 0.6,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.8
+    },
+    {
+      "min_score": 0.28,
+      "positive_hit_and_accept_rate": 0.5333333333333333,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7666666666666666
+    },
+    {
+      "min_score": 0.29,
+      "positive_hit_and_accept_rate": 0.5333333333333333,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7666666666666666
+    },
+    {
+      "min_score": 0.3,
+      "positive_hit_and_accept_rate": 0.5333333333333333,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7666666666666666
+    },
+    {
+      "min_score": 0.31,
+      "positive_hit_and_accept_rate": 0.5333333333333333,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7666666666666666
+    },
+    {
+      "min_score": 0.32,
+      "positive_hit_and_accept_rate": 0.5333333333333333,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7666666666666666
+    },
+    {
+      "min_score": 0.33,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.34,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.35,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.36,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.37,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.38,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.39,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.4,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.41,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.42,
+      "positive_hit_and_accept_rate": 0.4666666666666667,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7333333333333334
+    },
+    {
+      "min_score": 0.43,
+      "positive_hit_and_accept_rate": 0.4,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.7
+    },
+    {
+      "min_score": 0.44,
+      "positive_hit_and_accept_rate": 0.2,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.6
+    },
+    {
+      "min_score": 0.45,
+      "positive_hit_and_accept_rate": 0.2,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.6
+    },
+    {
+      "min_score": 0.46,
+      "positive_hit_and_accept_rate": 0.2,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.6
+    },
+    {
+      "min_score": 0.47,
+      "positive_hit_and_accept_rate": 0.2,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.6
+    },
+    {
+      "min_score": 0.48,
+      "positive_hit_and_accept_rate": 0.13333333333333333,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5666666666666667
+    },
+    {
+      "min_score": 0.49,
+      "positive_hit_and_accept_rate": 0.13333333333333333,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5666666666666667
+    },
+    {
+      "min_score": 0.5,
+      "positive_hit_and_accept_rate": 0.13333333333333333,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5666666666666667
+    },
+    {
+      "min_score": 0.51,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.52,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.53,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.54,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.55,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.56,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.57,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.58,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.59,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.6,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.61,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.62,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.63,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.64,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.65,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.66,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.67,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.68,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.69,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.7,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.71,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.72,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.73,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.74,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.75,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.76,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.77,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.78,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.79,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.8,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.81,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.82,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.83,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.84,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.85,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.86,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.87,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.88,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.89,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.9,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.91,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.92,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.93,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.94,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.95,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.96,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.97,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.98,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 0.99,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "min_score": 1.0,
+      "positive_hit_and_accept_rate": 0.0,
+      "abstention_accuracy": 1.0,
+      "balanced_accuracy": 0.5
+    }
+  ]
+}

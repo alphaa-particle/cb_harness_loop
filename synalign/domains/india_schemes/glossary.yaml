@@ -1,0 +1,128 @@
+# Hindi and Hinglish words people use, mapped to the English words the scheme
+# documents use. Added to the question for word and letter matching only; meaning
+# search does not need it. One entry per spelling; keep entries plain and checked.
+किसान: farmer
+kisan: farmer
+kisaan: farmer
+पेंशन: pension
+penshan: pension
+बुढ़ापा: old age pension
+बुढ़ापे: old age pension
+budhapa: old age pension
+budhape: old age pension
+वृद्धावस्था: old age
+vridh: old age
+विधवा: widow
+vidhwa: widow
+vidhva: widow
+दिव्यांग: disability disabled
+divyang: disability disabled
+विकलांग: disability disabled
+viklang: disability disabled
+छात्रवृत्ति: scholarship
+chhatravritti: scholarship
+chatravriti: scholarship
+आवास: housing house
+awas: housing house
+aawas: housing house
+मकान: house housing
+makaan: house housing
+makan: house housing
+घर: house housing
+ghar: house housing
+बेटी: girl daughter
+beti: girl daughter
+बालिका: girl child
+महिला: women woman
+mahila: women woman
+गर्भवती: pregnant pregnancy maternity
+garbhvati: pregnant pregnancy maternity
+बीमा: insurance
+bima: insurance
+beema: insurance
+ऋण: loan credit
+karz: loan credit
+karza: loan credit
+कर्ज़: loan credit
+लोन: loan credit
+सिलेंडर: lpg cooking gas cylinder
+cylinder: lpg cooking gas
+रसोई: lpg cooking gas
+मज़दूर: worker labourer
+mazdoor: worker labourer
+majdoor: worker labourer
+श्रमिक: worker labourer
+shramik: worker labourer
+राशन: ration food grain
+rashan: ration food grain
+इलाज: treatment hospital health
+ilaj: treatment hospital health
+ilaaj: treatment hospital health
+अस्पताल: hospital health
+aspatal: hospital health
+स्वास्थ्य: health
+swasthya: health
+रोज़गार: employment job work
+rozgar: employment job work
+rojgar: employment job work
+नौकरी: job employment
+naukri: job employment
+शिक्षा: education
+shiksha: education
+पढ़ाई: education study
+padhai: education study
+बिजली: electricity power
+bijli: electricity power
+सौर: solar
+saur: solar
+फसल: crop
+fasal: crop
+खेती: farming agriculture crop
+kheti: farming agriculture crop
+पशु: livestock animal
+pashu: livestock animal
+मछली: fish fisheries
+machli: fish fisheries
+खाता: bank account
+khata: bank account
+बचत: savings
+bachat: savings
+व्यापार: business enterprise
+vyapar: business enterprise
+दुकान: shop business vendor
+dukaan: shop business vendor
+dukan: shop business vendor
+धंधा: business work
+dhandha: business work
+प्रशिक्षण: training skill
+prashikshan: training skill
+कौशल: skill training
+kaushal: skill training
+छात्र: student
+chhatra: student
+बच्चा: child children
+bachcha: child children
+bacche: child children
+शौचालय: toilet sanitation
+shauchalay: toilet sanitation
+उम्र: age
+umar: age
+umra: age
+आयु: age
+aayu: age
+आय: income
+aay: income
+कमाई: income earnings
+kamai: income earnings
+योजना: scheme yojana
+yojana: scheme yojana
+yojna: scheme yojana
+पात्रता: eligibility eligible
+patrata: eligibility eligible
+दस्तावेज़: documents
+dastavez: documents
+कागज़: documents papers
+kagaz: documents papers
+आवेदन: apply application
+aavedan: apply application
+avedan: apply application

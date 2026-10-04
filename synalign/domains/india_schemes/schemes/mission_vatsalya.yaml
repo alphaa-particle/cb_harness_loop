@@ -1,0 +1,140 @@
+id: mission_vatsalya
+name: Mission Vatsalya – Sponsorship Support (non-institutional care)
+short_name: Mission Vatsalya Sponsorship
+names_hi: []
+aliases:
+- Mission Vatsalya
+- Mission Vatsalya Yojana
+- Vatsalya sponsorship yojana
+- Child Protection Services (CPS) scheme
+- Integrated Child Protection Scheme (ICPS)
+level: central
+state: ''
+ministry: Ministry of Women and Child Development
+category: women_child
+summary: 'Under Mission Vatsalya, a vulnerable child living with their own family or relatives can get Rs 4,000 a month for schooling, health and food, so the child does not have to be placed in a children''s home. Each case is checked and approved in the district: the District Child Protection Unit and a district committee recommend it, and the District Magistrate approves it.'
+sections:
+  eligibility:
+  - The child must be under 18. Sponsorship can continue only until the child turns 18.
+  - A child whose mother is widowed, divorced, or abandoned by the family.
+  - An orphaned child living with relatives (extended family).
+  - A child whose parents have a life-threatening or terminal illness, or cannot care for the child either financially or physically.
+  - 'A child in need of care and protection under the Juvenile Justice Act, 2015. Examples: homeless, hit by a natural disaster, child labour, child marriage, trafficked, affected by HIV/AIDS, disabled, missing or runaway, begging or living on the street, or abused.'
+  - A child covered under the PM CARES for Children Scheme.
+  - For preventive sponsorship (help so the child can stay in the family), family income must not be above Rs 72,000 a year in rural areas or Rs 96,000 a year in other areas.
+  - A child in a children's home can also be sent back to the family with sponsorship, if the Child Welfare Committee or Juvenile Justice Board recommends it.
+  exclusions:
+  - Sponsorship stops if the child has to be placed in a children's home.
+  - Sponsorship is reviewed and stopped for a time if a school-going child is irregular at school for more than 30 days. This does not apply to children with special needs.
+  benefits:
+  - Rs 4,000 per month for each child.
+  - The money is paid every month into a bank or post office account in the child's name. The guardian, preferably the mother, runs the account.
+  - The district committee decides how long sponsorship lasts, case by case. Continuing it up to age 18 needs written reasons from the Juvenile Justice Board, Child Welfare Committee or Children's Court.
+  - The District Child Protection Unit may arrange a yearly health check-up for the child, and its workers visit the home and school every quarter.
+  - State governments may add their own extra money on top.
+  how_to_apply:
+  - Contact the District Child Protection Unit (DCPU) in your district. DCPU workers, the Gram Panchayat and the Urban Ward Committee also find needy families.
+  - The DCPU or the child's family can upload the request on the Mission Vatsalya portal.
+  - The Sponsorship and Foster Care Approval Committee usually meets in the first week of each quarter and recommends cases. The District Magistrate gives final approval.
+  - If a child is in danger or needs care urgently, call the Child Helpline 1098.
+  documents:
+  - The national guidelines do not give a fixed list of documents. Ask the District Child Protection Unit what papers your state needs.
+  - For an extension, the committee looks at the child's yearly health check-up report and a report from home and school visits.
+rules:
+  gender: any
+facts:
+- key: monthly_amount
+  statement: Mission Vatsalya sponsorship pays Rs 4,000 per month for each child.
+  value: Rs 4,000
+  accept:
+  - '4000'
+  - 4,000
+  - ₹4000
+  - ₹4,000
+  - 4 thousand
+  - chaar hazaar
+  question: How much money per month does Mission Vatsalya sponsorship give?
+  question_hi: मिशन वात्सल्य स्पॉन्सरशिप में हर महीने कितने पैसे मिलते हैं?
+  question_hi_latn: Mission Vatsalya sponsorship me har mahine kitne paise milte hain?
+  source: 1
+  status: verified
+- key: rural_income_limit
+  statement: For preventive sponsorship in rural areas, family income must not be above Rs 72,000 a year.
+  value: Rs 72,000
+  accept:
+  - '72000'
+  - 72,000
+  - ₹72,000
+  - 72 hazaar
+  question: What is the family income limit for Mission Vatsalya sponsorship in a village?
+  question_hi: गांव में मिशन वात्सल्य स्पॉन्सरशिप के लिए परिवार की सालाना आय सीमा कितनी है?
+  question_hi_latn: Gaon me Mission Vatsalya sponsorship ke liye parivar ki saalana aay seema kitni hai?
+  source: 1
+  status: verified
+- key: urban_income_limit
+  statement: For preventive sponsorship outside rural areas, family income must not be above Rs 96,000 a year.
+  value: Rs 96,000
+  accept:
+  - '96000'
+  - 96,000
+  - ₹96,000
+  - 96 hazaar
+  question: What is the family income limit for Mission Vatsalya sponsorship in a town or city?
+  question_hi: शहर में मिशन वात्सल्य स्पॉन्सरशिप के लिए परिवार की सालाना आय सीमा कितनी है?
+  question_hi_latn: Shahar me Mission Vatsalya sponsorship ke liye parivar ki saalana income limit kitni hai?
+  source: 1
+  status: verified
+- key: child_age_limit
+  statement: Mission Vatsalya sponsorship can continue only until the child turns 18.
+  value: '18'
+  accept:
+  - 18 years
+  - 18 saal
+  - eighteen
+  question: Up to what age can a child get Mission Vatsalya sponsorship?
+  question_hi: मिशन वात्सल्य स्पॉन्सरशिप बच्चे को किस उम्र तक मिलती है?
+  question_hi_latn: Mission Vatsalya sponsorship bachche ko kis umar tak milti hai?
+  source: 1
+  status: verified
+- key: school_absence_limit
+  statement: Sponsorship can be stopped for a time if a school-going child is irregular at school for more than 30 days.
+  value: 30 days
+  accept:
+  - '30'
+  - 30 din
+  - one month
+  question: How many days of missing school can stop Mission Vatsalya sponsorship?
+  question_hi: कितने दिन स्कूल न जाने पर मिशन वात्सल्य स्पॉन्सरशिप रुक सकती है?
+  question_hi_latn: Kitne din school na jane par Mission Vatsalya sponsorship ruk sakti hai?
+  source: 1
+  status: verified
+situations:
+- question: My husband died last year and I can barely afford to keep my two children in school in our village. Is there any monthly government help for the children?
+  language: en
+- question: मेरे भतीजे के माता-पिता दोनों नहीं रहे और वह हमारे साथ रहता है। क्या उसकी पढ़ाई और खर्च के लिए सरकार से हर महीने पैसा मिल सकता है?
+  language: hi
+sources:
+- title: Mission Vatsalya Implementation Guidelines (2022)
+  url: https://wcd.gov.in/documents/uploaded/1714390625_pDwvtjA0sD.pdf
+  publisher: Ministry of Women and Child Development, Government of India
+  accessed: '2026-10-03'
+- title: Mission Vatsalya Scheme
+  url: https://wcd.gov.in/offerings/mission-vatsalya-scheme
+  publisher: Ministry of Women and Child Development, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The figures come from the Mission Vatsalya guidelines sent to states on 5 July 2022, which apply from 1 April 2022. The guidelines tie sponsorship to the Mission''s period and say it ''may be extended upto 2025-26''. I could not open an official page confirming that the scheme or new sponsorships continue after March 2026 (the Mission Vatsalya portal returned 403). Sponsorship is not automatic: it depends on the district committee recommending the case, the District Magistrate approving it, and budget being available. States may add money on top or run it under their own names. The income limits (Rs 72,000 rural, Rs 96,000 other areas) apply only to preventive sponsorship. No income limit is stated for children returning from children''s homes, so no income rule is set. The age limit applies to the child, not to the parent or guardian who asks, so no age rule is set. The same Rs 4,000 a month is the norm for foster care, and for after care for young people leaving homes (age
+    18 to 21, can be extended to 23). Children under the PM CARES for Children Scheme also get Rs 4,000 a month for non-institutional care.'
+  - Whether the scheme is still open to new applicants was not clear.
+  - 'Checker: The eligibility criterion is changed: the guidelines cover parents who cannot care for the child ''both financially and physically'', but the record says ''either financially or physically''. That makes eligibility look wider than it is.'
+  - 'Checker: The record says ''The DCPU or the child''s family can upload the request on the Mission Vatsalya portal''. In the guidelines, this step is described for a child who is in institutional care, not for every applicant.'
+  - 'Checker: The documents section says the guidelines give no fixed list. It leaves out the Aadhaar rule: Gazette notification S.O. 1694(E) of 11 April 2023 (https://wcd.gov.in/images/uploaded/1709975712_karZuHgdn8.pdf) requires proof of Aadhaar, or an Aadhaar enrolment request plus other documents such as a birth certificate or school ID and proof of relationship to the guardian, for Mission Vatsalya benefits. It also says no child may be denied for lacking Aadhaar.'
+  - 'Checker: The guidelines say the SFCAC reviews and sanctions sponsorship only for preventive cases. Rehabilitative cases go through the CWC/JJB before reaching the DCPU. The summary simplifies this to ''DCPU and a district committee recommend''.'
+  - 'Checker: Continuation is not clear: the guidelines make sponsorship co-terminus with the Mission and extendable ''upto 2025-26''. The WCD page lists no 2026-27 document for Mission Vatsalya, and the Mission Vatsalya portal returned 403. I could not confirm that new sponsorships are being approved after March 2026.'
+  - 'Checker: Sources are official (wcd.gov.in). I found no copied sentences. The eligibility list follows the guidelines'' order closely but is reworded.'
+  - 'Statement to correct: ''Sponsorship lasts at least one year and can continue until the child turns 18''. The checker read "For government-aided sponsorship, the guidelines leave the length to the SFCAC case by case, make it co-terminus with Mission Vatsalya, and say it may be extended up to 2025-26; extension up to age 18 needs written reasons from the JJB/CWC/Children''s Court. The ''minimum one year'' wording appears only in the paragraph on private-aided sponsorship." on https://wcd.gov.in/documents/uploaded/1714390625_pDwvtjA0sD.pdf.'
+  - '2026-10-03: the checker''s corrections above were applied to the statements; re-read the official page before relying on them.'

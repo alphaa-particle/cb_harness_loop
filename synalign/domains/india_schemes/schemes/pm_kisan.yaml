@@ -1,0 +1,142 @@
+id: pm_kisan
+name: Pradhan Mantri Kisan Samman Nidhi
+short_name: PM-KISAN
+names_hi:
+- प्रधानमंत्री किसान सम्मान निधि
+aliases:
+- PM Kisan
+- pm kisan yojana
+- kisan samman nidhi
+- pradhan mantri kisan samman nidhi yojana
+- PM Kisan Samman Nidhi Yojana
+- 6000 wali kisan yojana
+level: central
+state: ''
+ministry: Ministry of Agriculture & Farmers Welfare (Department of Agriculture & Farmers Welfare)
+category: agriculture
+summary: Gives Rs 6,000 a year, paid as three instalments of Rs 2,000, directly into the bank accounts of farmer families who own cultivable land. Families with a better-off member, such as income tax payers, government employees or pensioners getting Rs 10,000 or more a month, are left out.
+sections:
+  eligibility:
+  - Your family must own cultivable land, and the names must be entered in the state or UT land records.
+  - For this scheme a farmer family means husband, wife and minor children.
+  - There is no upper limit on land size; the original 2-hectare cap was dropped when the scheme was opened to all landholding farmer families.
+  - Eligibility is judged on land ownership recorded as on 01.02.2019; land received later by inheritance after the owner's death still counts, but land bought or gifted after that date does not make the new owner eligible.
+  - An Aadhaar number and a bank account seeded with Aadhaar are compulsory.
+  - e-KYC must be completed before payments are released.
+  - In some North-Eastern states and in Jharkhand, land certificates from village authorities or verified lineage records are accepted where regular land records do not exist.
+  exclusions:
+  - Institutional landholders, and (for newly added beneficiaries) Non-Resident Indians as defined under the Income Tax Act.
+  - Families where any member holds or has held a constitutional post, or is or was a Union or State minister, MP, MLA, MLC, mayor of a municipal corporation or chairperson of a district panchayat.
+  - Families where any member is a serving or retired officer or employee of the Central or State Government, a central or state PSU or a government autonomous body, or a regular employee of a local body; Multi Tasking Staff, Class IV and Group D staff are not excluded.
+  - Families with a retired pensioner whose monthly pension is Rs 10,000 or more (Multi Tasking Staff, Class IV and Group D pensioners are not excluded).
+  - Families where any member paid income tax in the last assessment year.
+  - 'Families with a practising professional registered with a professional body: doctor, engineer, lawyer, chartered accountant or architect.'
+  benefits:
+  - Rs 6,000 per year for each eligible farmer family.
+  - The money comes in three equal instalments of Rs 2,000 each, one every four months (April-July, August-November and December-March).
+  - Payments go by Direct Benefit Transfer straight into the family's Aadhaar-seeded bank account.
+  - The Central Government bears the full cost; the farmer pays nothing.
+  how_to_apply:
+  - Register yourself on the PM-KISAN portal (pmkisan.gov.in) or the PM-KISAN mobile app, or get help at a Common Service Centre (CSC).
+  - The state government checks your land records and the exclusion rules before your name is approved; beneficiary lists are displayed at village level.
+  - Complete e-KYC by OTP, fingerprint (biometric) or face authentication in the PM-KISAN app.
+  - If you are eligible but left out, raise a complaint on the PM-KISAN portal or CPGRAMS, or approach the district grievance committee.
+  documents:
+  - Aadhaar card.
+  - Bank account number and IFSC of an account linked to Aadhaar.
+  - Land record details of the family's cultivable land.
+  - Mobile number for SMS alerts and OTP-based e-KYC.
+  - Self-declaration that no family member falls in an excluded category, with consent for Aadhaar-based checks.
+rules:
+  gender: any
+facts:
+- key: annual_amount
+  statement: An eligible farmer family receives Rs 6,000 in a year under PM-KISAN.
+  value: Rs 6,000
+  accept:
+  - '6000'
+  - 6,000
+  - Rs 6000
+  - ₹6,000
+  - 6 hazar
+  question: How much money does PM-KISAN give a farmer family in a year?
+  question_hi: पीएम किसान योजना में एक साल में कितना पैसा मिलता है?
+  question_hi_latn: PM Kisan me saal me kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: instalment_amount
+  statement: Each PM-KISAN instalment is Rs 2,000.
+  value: Rs 2,000
+  accept:
+  - '2000'
+  - 2,000
+  - Rs 2000
+  - ₹2,000
+  - do hazar
+  question: How much is one PM-KISAN instalment?
+  question_hi: पीएम किसान की एक किस्त कितने रुपये की होती है?
+  question_hi_latn: PM Kisan ki ek kist kitne rupaye ki hoti hai?
+  source: 1
+  status: verified
+- key: instalments_per_year
+  statement: PM-KISAN money is paid in three instalments a year, one every four months.
+  value: three
+  accept:
+  - '3'
+  - teen
+  - तीन
+  question: How many PM-KISAN instalments come in a year?
+  question_hi: पीएम किसान की साल में कितनी किस्तें आती हैं?
+  question_hi_latn: PM Kisan ki saal me kitni kiste aati hain?
+  source: 1
+  status: verified
+- key: pension_exclusion_limit
+  statement: A retired pensioner drawing a monthly pension of Rs 10,000 or more makes the family ineligible for PM-KISAN (Class IV, Group D and Multi Tasking Staff excepted).
+  value: Rs 10,000
+  accept:
+  - '10000'
+  - 10,000
+  - Rs 10000
+  - ₹10,000
+  - das hazar
+  question: From what monthly pension amount is a retired person not eligible for PM-KISAN?
+  question_hi: कितनी मासिक पेंशन मिलने पर रिटायर व्यक्ति पीएम किसान के लिए अपात्र हो जाता है?
+  question_hi_latn: Kitni mahine ki pension milne par retired vyakti PM Kisan ke liye ayogya ho jata hai?
+  source: 1
+  status: verified
+situations:
+- question: I own a small farm in my village. Is there a government scheme that puts money into my bank account every few months to help with farming costs?
+  language: en
+- question: मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती है, और मुझे यह कैसे मिलेगा?
+  language: hi
+sources:
+- title: PM-KISAN Operational Guidelines (Revised as on 29.03.2020)
+  url: https://fw.pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf
+  publisher: Department of Agriculture & Farmers Welfare, Ministry of Agriculture & Farmers Welfare
+  accessed: '2026-10-03'
+- title: 23rd Instalment of PM-KISAN (backgrounder, 20 June 2026)
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc2026620898101.pdf
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: PM-KISAN portal home page
+  url: https://fw.pmkisan.gov.in/
+  publisher: Department of Agriculture & Farmers Welfare, Ministry of Agriculture & Farmers Welfare
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) original scheme note 2018-19
+  url: https://fw.pmkisan.gov.in/Documents/PMKisanSamanNidhi.pdf
+  publisher: Department of Agriculture & Farmers Welfare, Ministry of Agriculture & Farmers Welfare
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is running and open: the 23rd instalment was released on 20 June 2026, and the amount is still Rs 6,000 a year (the Union Budget 2026-27 set aside Rs 60,000 crore). The 2020 guidelines fix 01.02.2019 as the land-ownership cut-off date, except for inheritance, ''for the next 5 years''. That period has passed, and I could not find an official page saying whether the cut-off was changed, so people who got land after that date should check with the state agriculture department. Non-official reports say a Farmer ID (AgriStack) is now required for new registrations in many states; I could not confirm this on an official page. The original 2018-19 note and the first FAQ give a 2-hectare limit; the revised 2020 guidelines cover all landholding families. The 2026 PIB backgrounder calls PM-KISAN ''centrally sponsored'', but the guidelines call it a Central Sector Scheme fully funded by the Centre. pmkisan.gov.in failed certificate checks, so documents were read from the fw.pmkisan.gov.in
+    mirror. The revised FAQ there is a scanned image and was not used. Some states add their own payments on top of PM-KISAN; those are not covered here.'
+  - 'Checker: Missing condition: the Annual Report 2024-25 (section 10.2) says FRA patta holders and PVTG farmers can register without the usual land record, and their e-KYC requirement has been relaxed for now. The record states land records and e-KYC as absolute rules, which may wrongly turn away forest-rights holders.'
+  - 'Checker: How to apply is incomplete. The Annual Report 2024-25 also lets farmers enrol through the local Patwari, Revenue Officer or the State Nodal Officer (PM-Kisan), not only the portal, app or CSC.'
+  - 'Checker: The cut-off rule in the guidelines (para 5.2) was set for the next 5 years from 2019. The original note says only the Cabinet can change it within those 5 years. That period is over, and I found no official page with a newer rule. The eligibility text states the 01.02.2019 rule as if it still applies without question; it should carry the caveat that is now only in status_note.'
+  - 'Checker: The 2026 PIB backgrounder calls PM-KISAN ''centrally sponsored'', which contradicts the guidelines, the original note and the Annual Report (Central Sector, 100% GoI). The record rightly relies on the guidelines.'
+  - 'Checker: The Farmer ID (AgriStack) requirement is not confirmed on any official page I could open. The PIB 2026 backgrounder mentions AgriStack only for West Bengal services and does not make it a registration condition. Keep it out of the record as written.'
+  - 'Checker: The ''district grievance committee'' wording is a loose summary. The guidelines (para 7.2) set up State and District Level Grievance Redressal Monitoring Committees. The PIB 2026 backgrounder confirms the portal and CPGRAMS routes.'
+  - 'Checker: I could not confirm whether the 24th instalment had been paid by 2026-10-03. The scheme is clearly running: 23rd instalment on 20 June 2026, and a Budget 2026-27 allocation of Rs 60,000 crore.'

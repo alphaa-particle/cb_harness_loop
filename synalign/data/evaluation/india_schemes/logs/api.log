@@ -1,0 +1,27 @@
+ready: Qwen3-Embedding-0.6B-Q8_0.gguf at http://127.0.0.1:8091
+ready: Qwen3.5-0.8B-Q8_0.gguf at http://127.0.0.1:8092
+Open http://127.0.0.1:8000/ui
+INFO:     Started server process [70511]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:49311 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49313 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49323 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49323 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49323 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49338 - "GET /ui HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49338 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49338 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49338 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49350 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49339 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49339 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49407 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49409 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49412 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49416 - "POST /ask HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [70511]

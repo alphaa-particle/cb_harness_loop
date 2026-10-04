@@ -1,0 +1,150 @@
+id: pmay_g
+name: Pradhan Mantri Awaas Yojana - Gramin
+short_name: PMAY-G
+names_hi:
+- प्रधान मंत्री आवास योजना-ग्रामीण
+aliases:
+- PM Awas Yojana Gramin
+- pradhan mantri gramin awas yojana
+- pm awas gramin
+- PMAY Gramin
+- gramin awas yojana
+- Indira Awaas Yojana (old name)
+level: central
+state: ''
+ministry: Ministry of Rural Development (Department of Rural Development)
+category: housing
+summary: 'PMAY-G gives money to poor rural families who have no house or live in a kutcha house so they can build a pucca house. The grant is Rs 1.20 lakh in plain areas and Rs 1.30 lakh in hill, north-eastern and difficult areas. The scheme is still running: its second phase adds 2 crore more houses, and the overall target is 4.95 crore houses by March 2029.'
+sections:
+  eligibility:
+  - You must live in a rural area (a village).
+  - Your household has no house, or lives in a kutcha house.
+  - Your present house has no more than 2 rooms.
+  - No member of your household owns a pucca house.
+  - Families are chosen from the SECC 2011 housing-deprivation data and the Awaas+ survey lists, and the Gram Sabha checks the list.
+  - 'These families get top priority (automatic inclusion): those with no shelter, destitute families living on alms, manual scavengers, Primitive Tribal Group families and legally freed bonded labourers.'
+  exclusions:
+  - Anyone in the household owns a motorised three-wheeler or four-wheeler, or mechanised three- or four-wheeler farm equipment.
+  - Anyone in the household has a Kisan Credit Card with a limit of Rs 50,000 or more.
+  - Any household member is a government employee, or the household runs a non-farm business registered with the government.
+  - Any household member earns more than Rs 15,000 a month.
+  - Anyone in the household pays income tax or professional tax.
+  - The household owns 2.5 acres or more of irrigated land, or 5 acres or more of unirrigated land.
+  benefits:
+  - Rs 1.20 lakh to build a pucca house in plain areas.
+  - Rs 1.30 lakh in hill states and UTs (Himachal Pradesh, Uttarakhand, Jammu and Kashmir, Ladakh), North-Eastern states, difficult areas and IAP districts.
+  - Up to 90/95 days of unskilled wage work under MGNREGS for building your own house, on top of the grant.
+  - Rs 12,000 for a toilet, through Swachh Bharat Mission (Grameen), MGNREGS or another funding source.
+  - The house must be at least 25 square metres, with a space for clean cooking. Officials also help with house designs and trained masons.
+  - If you want one, officials help you get a bank loan of up to Rs 70,000. All payments go by DBT into your Aadhaar-linked bank or post office account.
+  how_to_apply:
+  - You cannot just fill in a form. Households are picked from the SECC 2011 and Awaas+ lists, which the Gram Sabha verifies and puts into a Permanent Wait List.
+  - New households were added through the Awaas+ 2024 Android app, either by a self-survey with Aadhaar face authentication or through a surveyor assigned to the Gram Panchayat.
+  - Ask your Gram Panchayat or block office about your status. The Permanent Wait List and beneficiary details can be checked on pmayg.dord.gov.in.
+  documents:
+  - Aadhaar of the chosen beneficiary, for face-authentication e-KYC in the Awaas+ 2024 survey.
+  - Aadhaar numbers and mobile numbers of all household members.
+  - MGNREGA job card, which is checked before the list goes to the Gram Sabha.
+  - Bank account details. These are optional at the survey stage because payments can go through the Aadhaar Payment Bridge.
+rules:
+  monthly_income_max: 15000
+  gender: any
+facts:
+- key: unit_assistance_plain
+  statement: In plain areas, PMAY-G gives Rs 1.20 lakh to build a house.
+  value: Rs 1.20 lakh
+  accept:
+  - 1.20 lakh
+  - 1.2 lakh
+  - '120000'
+  - 1,20,000
+  - Rs 1,20,000
+  question: How much money does PMAY-G give to build a house in plain areas?
+  question_hi: प्रधानमंत्री आवास योजना ग्रामीण में मैदानी इलाकों में घर बनाने के लिए कितना पैसा मिलता है?
+  question_hi_latn: PM Awas Yojana Gramin me maidani ilaakon me ghar banane ke liye kitna paisa milta hai?
+  source: 3
+  status: unverified
+- key: unit_assistance_hilly
+  statement: In hill states, North-Eastern states, difficult areas and IAP districts, PMAY-G gives Rs 1.30 lakh.
+  value: Rs 1.30 lakh
+  accept:
+  - 1.30 lakh
+  - 1.3 lakh
+  - '130000'
+  - 1,30,000
+  - Rs 1,30,000
+  question: How much does PMAY-G give in hilly or north-eastern states?
+  question_hi: पहाड़ी या पूर्वोत्तर राज्यों में प्रधानमंत्री आवास योजना ग्रामीण में कितनी राशि मिलती है?
+  question_hi_latn: Pahadi ya North East rajyon me PM Awas Yojana Gramin me kitna paisa milta hai?
+  source: 3
+  status: unverified
+- key: mgnregs_wage_days
+  statement: A PMAY-G beneficiary gets up to 90/95 days of unskilled wage work under MGNREGS for building the house.
+  value: 90/95
+  accept:
+  - 90 or 95
+  - 90-95
+  - '90'
+  - '95'
+  question: How many days of MGNREGA wages does a PMAY-G beneficiary get for building the house?
+  question_hi: प्रधानमंत्री आवास योजना ग्रामीण में घर बनाने के लिए मनरेगा से कितने दिन की मज़दूरी मिलती है?
+  question_hi_latn: PMAY Gramin me ghar banane ke liye MGNREGA se kitne din ki mazdoori milti hai?
+  source: 3
+  status: unverified
+- key: toilet_assistance
+  statement: PMAY-G beneficiaries get Rs 12,000 for a toilet through SBM-G, MGNREGS or another source.
+  value: Rs 12,000
+  accept:
+  - '12000'
+  - 12,000
+  - Rs 12000
+  question: How much help for a toilet comes with a PMAY-G house?
+  question_hi: प्रधानमंत्री आवास योजना ग्रामीण के घर के साथ शौचालय के लिए कितना पैसा मिलता है?
+  question_hi_latn: PM Awas Gramin ke ghar ke saath toilet ke liye kitna paisa milta hai?
+  source: 3
+  status: unverified
+- key: monthly_income_exclusion
+  statement: A household is left out of PMAY-G if any member earns more than Rs 15,000 a month.
+  value: Rs 15,000
+  accept:
+  - '15000'
+  - 15,000
+  - Rs 15000
+  question: Above what monthly income is a household left out of PMAY-G?
+  question_hi: प्रधानमंत्री आवास योजना ग्रामीण में परिवार के किसी सदस्य की मासिक आय कितनी से ज़्यादा होने पर लाभ नहीं मिलता?
+  question_hi_latn: PM Awas Gramin me ghar ke kisi sadasya ki mahine ki kamai kitni se zyada ho to labh nahi milta?
+  source: 2
+  status: unverified
+situations:
+- language: en
+  question: My family lives in a village in a kutcha mud house and we cannot afford to build a pucca house. Is there any government help for us?
+- language: hi
+  question: गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के लिए मदद मिल सकती है?
+sources:
+- title: Pradhan Mantri Awaas Yojana - Gramin portal (home page)
+  url: https://pmayg.dord.gov.in/
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+- title: PMAY-G - Am I Eligible?
+  url: https://pmayg.dord.gov.in/netiayHome/questions.html
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+- title: Framework for Implementation of PMAY-G (2022)
+  url: https://pmayg.dord.gov.in/netiayHome/Uploaded/Guidelines-English_Book_Final.pdf
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+- title: SOP for Self Survey and Assisted Survey on the Awaas+ 2024 mobile application (letter dated 27 December 2024)
+  url: https://dashboard.pmayg.dord.gov.in/netiay/awaasplus2.0_Doc/SOP_AwaasPlus2024.pdf
+  publisher: Ministry of Rural Development, Rural Housing Division
+  accessed: '2026-10-03'
+- title: PMAY-G - About Us
+  url: https://pmayg.dord.gov.in/netiayHome/about.aspx
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is active. A December 2024 Ministry letter says the target is 4.95 crore houses by March 2029, including 2 crore more houses approved by the Cabinet, with the beneficiary list updated through the Awaas+ 2024 survey under revised exclusion rules. The official sources disagree on the exclusion rules. The portal''s ''Am I Eligible'' checker (used here) uses a Rs 15,000 monthly income limit and no longer counts two-wheelers, fishing boats, fridges or landline phones. The 2022 Framework still lists 13 exclusions with a Rs 10,000 monthly income limit. The Rs 1.20 lakh and Rs 1.30 lakh amounts come from the 2022 Framework, and no official revision was found. Some states add their own money on top. It is not clear whether the Awaas+ 2024 self-survey is still open in October 2026. The MGNREGS wage support is written as ''90/95 person days'', and the About page shows a typo (''90.95''). The portal has moved from pmayg.nic.in to pmayg.dord.gov.in.'
+  - No independent check was returned for this scheme.

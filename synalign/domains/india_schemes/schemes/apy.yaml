@@ -1,0 +1,165 @@
+id: apy
+name: Atal Pension Yojana
+short_name: APY
+names_hi:
+- अटल पेंशन योजना
+aliases:
+- Atal Pension Scheme
+- atal pension yojna
+- APY yojana
+- atal pension
+- atal pension yojana 5000 pension
+level: central
+state: ''
+ministry: Ministry of Finance, Department of Financial Services (administered by PFRDA)
+category: pension
+summary: A government-guaranteed pension scheme, mainly for unorganised-sector workers. People who join between 18 and 40 pay a small amount regularly and get a fixed pension of Rs 1,000 to Rs 5,000 a month from age 60, which then goes to the spouse. Since 1 October 2022, people who pay or have paid income tax cannot join.
+sections:
+  eligibility:
+  - Must be a citizen of India.
+  - You can join from age 18 up to your 40th birthday. After your 40th birthday you can no longer join, so in practice the joining age is 18 to 39.
+  - Must have a savings account in a bank or post office, because contributions are auto-debited from it.
+  - Must not be an income-tax payer now or in the past. This applies to new accounts opened from 1 October 2022.
+  - Meant mainly for workers in the unorganised sector, but any eligible citizen can join.
+  - You keep contributing until age 60, so you contribute for at least 20 years.
+  exclusions:
+  - From 1 October 2022, anyone who is or has been an income-tax payer cannot open a new APY account.
+  - If someone who joined on or after 1 October 2022 is later found to have been an income-tax payer, there is no penalty, but the account is closed and the money saved so far is returned.
+  - Each person can have only one APY account.
+  - People under 18, or past their 40th birthday, cannot join.
+  benefits:
+  - From age 60 you get a guaranteed monthly pension of Rs 1,000 to Rs 5,000, in slabs of Rs 1,000, 2,000, 3,000, 4,000 or 5,000. Your pension depends on the slab you choose and what you pay in.
+  - If investment returns are too low to pay the promised minimum pension, the Central Government covers the gap. If returns are higher, the pension can be higher.
+  - When the subscriber dies, the spouse gets the same pension for life. When both have died, the nominee gets the pension wealth built up until the subscriber's age 60.
+  - If the subscriber dies before 60, the spouse has two choices. They can keep paying into the account until the subscriber would have turned 60 and then get the pension, or they can take the whole amount saved.
+  - The monthly contribution depends on your joining age and pension slab. It is Rs 42 to Rs 210 a month if you join at 18, and Rs 291 to Rs 1,454 a month if you join at 40.
+  - You can leave the scheme early by choice, but you get back only your own contributions plus the earnings on them, minus account charges.
+  how_to_apply:
+  - Go to the bank branch or post office where you have your savings account and fill in the APY registration form.
+  - You can also join online through eAPY on the NPS Trust website (npstrust.org.in), or through net banking or the mobile app of some banks.
+  - Choose to pay monthly, quarterly or half-yearly by auto-debit. If a payment is late, the bank charges Rs 1 for every Rs 100 due, for each month of delay.
+  - You can raise or lower your pension slab once in each financial year.
+  documents:
+  - Details of your bank or post office savings account (mandatory).
+  - Nominee details (mandatory).
+  - Aadhaar number (useful but not mandatory when joining).
+  - Mobile number, to get updates.
+rules:
+  age_min: 18
+  age_max: 39
+  gender: any
+facts:
+- key: max_joining_age
+  statement: You can join APY only up to your 40th birthday.
+  value: 40th birthday
+  accept:
+  - '40'
+  - 40 years
+  - before 40
+  - '39'
+  question: What is the maximum age to join Atal Pension Yojana?
+  question_hi: अटल पेंशन योजना से जुड़ने की अधिकतम उम्र क्या है?
+  question_hi_latn: Atal Pension Yojana se judne ki maximum umar kitni hai?
+  source: 2
+  status: verified
+- key: monthly_pension_range
+  statement: APY pays a guaranteed monthly pension of Rs 1,000 to Rs 5,000 from age 60, depending on the slab chosen.
+  value: Rs 1,000 to Rs 5,000
+  accept:
+  - 1000 to 5000
+  - 1,000-5,000
+  - Rs 1000 se Rs 5000
+  - 1000-5000
+  question: How much pension per month will I get under Atal Pension Yojana?
+  question_hi: अटल पेंशन योजना में हर महीने कितनी पेंशन मिलती है?
+  question_hi_latn: Atal Pension Yojana me har mahine kitni pension milti hai?
+  source: 1
+  status: verified
+- key: pension_start_age
+  statement: The APY pension starts at age 60.
+  value: '60'
+  accept:
+  - 60 years
+  - sixty
+  - 60 saal
+  question: At what age does the Atal Pension Yojana pension start?
+  question_hi: अटल पेंशन योजना में पेंशन किस उम्र से मिलनी शुरू होती है?
+  question_hi_latn: Atal Pension Yojana me pension kis umar se milni shuru hoti hai?
+  source: 3
+  status: verified
+- key: income_tax_payer_bar_date
+  statement: From 1 October 2022, current or past income-tax payers cannot open a new APY account.
+  value: 1 October 2022
+  accept:
+  - 01-10-2022
+  - 1st October 2022
+  - October 2022
+  - 1.10.2022
+  question: From what date are income-tax payers not allowed to join Atal Pension Yojana?
+  question_hi: अटल पेंशन योजना में इनकम टैक्स भरने वाले किस तारीख से नहीं जुड़ सकते?
+  question_hi_latn: Atal Pension Yojana me income tax bharne wale kis tareekh se nahi jud sakte?
+  source: 2
+  status: verified
+- key: monthly_contribution_at_18
+  statement: If you join at 18, the monthly contribution is Rs 42 to Rs 210, depending on the pension slab.
+  value: Rs 42 to Rs 210
+  accept:
+  - 42 to 210
+  - 42-210
+  - Rs 42
+  - '42'
+  question: How much do I have to pay every month in Atal Pension Yojana if I join at 18?
+  question_hi: अगर मैं 18 साल की उम्र में अटल पेंशन योजना से जुड़ूँ तो हर महीने कितना पैसा देना होगा?
+  question_hi_latn: Agar main 18 saal ki umar me Atal Pension Yojana se judun to har mahine kitna paisa dena hoga?
+  source: 3
+  status: verified
+situations:
+- question: I'm 30, I run a small tea stall and I don't pay income tax. If I pay a small amount every month, is there a government scheme that guarantees me a pension of about Rs 5,000 a month after 60?
+  language: en
+- question: मैं 35 साल का दर्जी हूँ और इनकम टैक्स नहीं भरता। मुझे 60 साल के बाद 2,000 से 5,000 रुपये महीने की पक्की पेंशन चाहिए, जो मेरे बाद मेरी पत्नी को भी मिले। कौन सी सरकारी योजना है?
+  language: hi
+sources:
+- title: Atal Pension Yojana (APY) - scheme page
+  url: https://www.pfrda.org.in/web/pfrda/schemes/atal-pension-yojana-apy
+  publisher: Pension Fund Regulatory and Development Authority (PFRDA)
+  accessed: '2026-10-03'
+- title: FAQs - Atal Pension Yojana
+  url: https://pfrda.org.in/web/pfrda/w/faqs/atal-pension-yojana
+  publisher: Pension Fund Regulatory and Development Authority (PFRDA)
+  accessed: '2026-10-03'
+- title: 'Atal Pension Yojana (APY): Securing Retirement for India''s Unorganised Sector (8 May 2025)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/may/doc202558551701.pdf
+  publisher: Press Information Bureau (Research Unit), Government of India
+  accessed: '2026-10-03'
+- title: Atal Pension Yojana
+  url: https://financialservices.gov.in/atal-pension-yojana
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: Cabinet approves continuation of Atal Pension Yojana (APY) and extension of funding support for promotional and developmental activities and gap funding till 2030-31
+  url: https://www.pfrda.org.in/web/pfrda/w/cabinet-approves-continuation-of-atal-pension-yojana-apy-and-extension-of-funding-support-for-promotional-and-developmental-activities-and-gap-funding-till-2030-31
+  publisher: Pension Fund Regulatory and Development Authority (PFRDA)
+  accessed: '2026-10-03'
+- title: Eight Years of Atal Pension Yojana (APY) (9 May 2023)
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/may/doc202359196701.pdf
+  publisher: Press Information Bureau (Research Unit), Government of India
+  accessed: '2026-10-03'
+- title: About APY
+  url: https://npstrust.org.in/about-apy
+  publisher: NPS Trust (set up by PFRDA)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: New subscribers can still join. On 21 January 2026 the Union Cabinet approved continuing APY up to 2030-31, according to a PFRDA notice that also reported over 8.66 crore subscribers. The government co-contribution (50% of the contribution or Rs 1,000 a year, whichever was lower, for 5 years) applied only to people who joined between 1 June 2015 and 31 March 2016. It is no longer offered. Official pages word the age limit slightly differently: the PFRDA FAQ says you can join up to and including your 40th birthday, while the DFS FAQ says 18 years to 39 years 364 days. The rules here use 39 as the last full year of age, but a person can still join on their 40th birthday itself. Official pages also disagree on early exit: the PFRDA FAQ allows leaving before 60 by choice (you get back your own contributions plus earnings), while a 2025 PIB backgrounder says exit before 60 is only on death or terminal illness. The commonly quoted amounts returned to the nominee (Rs 1.7 lakh to Rs
+    8.5 lakh) and the full contribution table for every age and slab could not be confirmed on an official page that loaded, so they are left out. The Hindi name comes from the DFS page.'
+  - 'Checker: Documents list is incomplete. The PFRDA APY brochure says nominee and spouse details are both mandatory when opening the account, but the record lists only nominee details as mandatory.'
+  - 'Checker: Hindi-name provenance is wrong. The status note says the name came from the DFS page, but the DFS English page has no Devanagari scheme name. Cite the PFRDA Hindi page (pfrda.org.in/hi/web/pfrda/schemes/atal-pension-yojana-apy) or the Gazette instead.'
+  - 'Checker: Early-exit rules may change. A Gazette notification of 18 Aug 2025 (published 27 Aug 2025) added para 14 to the APY notification, saying PFRDA will set the detailed exit modalities. Recheck the exit statements against any later PFRDA circular. The 2015 Gazette para 13 itself allows voluntary exit before 60 with a refund of own contributions plus net interest; only the government co-contribution is forfeited. The NPS Trust About APY page says exit before 60 is allowed only on death or terminal disease, so official pages still conflict.'
+  - 'Checker: Exclusion wording: the ''no penalty'' part is the writer''s inference and is not in the 10 Aug 2022 Gazette. Say only that the account is closed and the savings are returned.'
+  - 'Checker: The contribution fact cites the PIB 2025 backgrounder (source 3), which itself footnotes a non-official site (atalpensionyojana.in). Cite the 2015 Gazette Annex-1 on the PFRDA site instead.'
+  - 'Checker: The status note says the full contribution table could not be found on an official page. It is in the 2015 Gazette Annex-1 on the PFRDA site.'
+  - 'Checker: Tax benefit is not mentioned. PIB 2025 says APY contributions qualify under Section 80CCD of the Income-tax Act (1961 numbering), and this should be checked against the Income-tax Act, 2025.'
+  - 'Checker: Minor: eAPY joining through npstrust.org.in/open-apy-account is confirmed by the PFRDA scheme page. Protean''s enps.nsdl.com eAPY link and the APY mobile app are also official routes.'
+  - 'Checker on the status note: Gazette Annex-1 gives the indicative corpus returned to the nominee as Rs 1.7, 3.4, 5.1, 6.8 and 8.5 lakh for the Rs 1,000 to Rs 5,000 slabs. The full table of monthly, quarterly and half-yearly contributions for ages 18 to 40 is in the same annex.'

@@ -1,0 +1,129 @@
+[
+ {
+  "size": "54",
+  "name": "F2 lam0.5 admit-all walk promote0.10",
+  "in_prompt": "284/304",
+  "abstain": "9/12",
+  "fixed": 2,
+  "broken": 0,
+  "diff": 0.66,
+  "ci": [
+   0.0,
+   1.8900000000000001
+  ],
+  "ms": 0.19,
+  "by": {
+   "type=eligibility": "52/52",
+   "type=fact": "149/162",
+   "type=situation": "31/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "83/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "pm_kisan__situation_2",
+    "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+   ],
+   [
+    "pmay_g__situation_2",
+    "गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F2 lam0 admit-all walk promote0.10",
+  "in_prompt": "284/304",
+  "abstain": "9/12",
+  "fixed": 2,
+  "broken": 0,
+  "diff": 0.66,
+  "ci": [
+   0.0,
+   1.8900000000000001
+  ],
+  "ms": 0.18,
+  "by": {
+   "type=eligibility": "52/52",
+   "type=fact": "149/162",
+   "type=situation": "31/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "83/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "pm_kisan__situation_2",
+    "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+   ],
+   [
+    "pmay_g__situation_2",
+    "गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F2 lam0.5 admit-all walk promote0.10",
+  "in_prompt": "263/304",
+  "abstain": "5/12",
+  "fixed": 2,
+  "broken": 0,
+  "diff": 0.66,
+  "ci": [
+   0.0,
+   1.8900000000000001
+  ],
+  "ms": 0.75,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "147/162",
+   "type=situation": "18/36",
+   "type=typo": "51/54",
+   "language=en": "138/152",
+   "language=hi": "75/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "pm_kisan__situation_1",
+    "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+   ],
+   [
+    "pmay_g__situation_1",
+    "My family lives in a village in a kutcha mud house and we cannot afford to build a pucca h"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F2 lam0 admit-all walk promote0.10",
+  "in_prompt": "261/304",
+  "abstain": "5/12",
+  "fixed": 0,
+  "broken": 0,
+  "diff": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "ms": 0.71,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "147/162",
+   "type=situation": "16/36",
+   "type=typo": "51/54",
+   "language=en": "136/152",
+   "language=hi": "75/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": []
+ }
+]

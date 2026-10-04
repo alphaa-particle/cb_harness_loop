@@ -1,0 +1,296 @@
+{
+  "label": "r3b_overview_last",
+  "note": "Round 3 again on top of 2b (round 1 undone). For a named scheme, its overview only fills slots its specific sections leave free; the prompt stays at 3 sections.",
+  "change": {
+    "overview_last": true
+  },
+  "before": {
+    "method": "fusion",
+    "top_k": 3,
+    "min_score": 0.5,
+    "fusion_weights": {
+      "bm25": 0.25,
+      "char": 0.25,
+      "dense": 1.0
+    },
+    "rrf_k": 20,
+    "fusion_depth": 50,
+    "named_schemes": true
+  },
+  "verdict": "KEEP",
+  "problems": [],
+  "sizes": {
+    "54 schemes": {
+      "answerable": 482,
+      "in_prompt": [
+        440,
+        455
+      ],
+      "fixed": [
+        "questions:ignwps__max_processing_days__hi_latn",
+        "questions:jssk__drop_back_after__hi_latn",
+        "questions:nikshay_poshan__payment_mode__typo",
+        "usecases:day_nrlm__benefits_2",
+        "usecases:day_nrlm__apply_eligibility",
+        "usecases:e_shram__benefits_2",
+        "usecases:jssk__benefits_2",
+        "usecases:nfsa_pmgkay__benefits_2",
+        "usecases:nikshay_poshan__benefits_1",
+        "usecases:nmmss__benefits_1",
+        "usecases:pm_kisan__benefits_1",
+        "usecases:pm_kmy__benefits_2",
+        "usecases:pm_svanidhi__benefits_2",
+        "usecases:pm_yasasvi__benefits_2",
+        "usecases:pm_yasasvi__apply_eligibility"
+      ],
+      "broken": [],
+      "gain_points": 3.11,
+      "ci95_points": [
+        1.69,
+        4.93
+      ],
+      "slices": {
+        "questions:language=en": [
+          148,
+          149
+        ],
+        "questions:language=hi": [
+          81,
+          81
+        ],
+        "questions:language=hi_latn": [
+          53,
+          55
+        ],
+        "questions:type=eligibility": [
+          52,
+          52
+        ],
+        "questions:type=fact": [
+          149,
+          151
+        ],
+        "questions:type=situation": [
+          29,
+          29
+        ],
+        "questions:type=typo": [
+          52,
+          53
+        ],
+        "usecases:language=en": [
+          158,
+          170
+        ],
+        "usecases:type=apply": [
+          33,
+          33
+        ],
+        "usecases:type=apply_eligibility": [
+          16,
+          18
+        ],
+        "usecases:type=benefits": [
+          23,
+          33
+        ],
+        "usecases:type=category": [
+          8,
+          8
+        ],
+        "usecases:type=compare": [
+          10,
+          10
+        ],
+        "usecases:type=documents": [
+          32,
+          32
+        ],
+        "usecases:type=exclusions": [
+          36,
+          36
+        ]
+      },
+      "scheme_in_prompt": [
+        470,
+        470
+      ],
+      "answerable_refused": [
+        1,
+        1
+      ],
+      "not_found_refused": [
+        9,
+        9,
+        12
+      ],
+      "budgets": {
+        "3": [
+          440,
+          455
+        ],
+        "2": [
+          353,
+          377
+        ],
+        "5": [
+          471,
+          473
+        ]
+      },
+      "wordings": {
+        "questions": 206,
+        "scheme_lost": 0,
+        "newly_refused": 0,
+        "scheme_in_prompt": [
+          206,
+          206
+        ]
+      },
+      "ms_per_question": [
+        0.31,
+        0.31
+      ],
+      "guards_failed": [],
+      "gain_not_shown": []
+    },
+    "background scale": {
+      "answerable": 482,
+      "in_prompt": [
+        415,
+        432
+      ],
+      "fixed": [
+        "questions:ignwps__max_processing_days__hi_latn",
+        "questions:jssk__drop_back_after__hi_latn",
+        "questions:nikshay_poshan__payment_mode__typo",
+        "questions:nps_vatsalya__partial_withdrawal_limit__hi_latn",
+        "usecases:day_nrlm__apply_eligibility",
+        "usecases:e_shram__benefits_2",
+        "usecases:jssk__benefits_1",
+        "usecases:jssk__benefits_2",
+        "usecases:nfsa_pmgkay__benefits_2",
+        "usecases:nikshay_poshan__benefits_1",
+        "usecases:nmmss__benefits_1",
+        "usecases:nps_vatsalya__benefits_1",
+        "usecases:pm_kisan__benefits_1",
+        "usecases:pm_kmy__benefits_2",
+        "usecases:pm_yasasvi__benefits_2",
+        "usecases:pm_yasasvi__apply_eligibility",
+        "usecases:pmjdy__benefits_2"
+      ],
+      "broken": [],
+      "gain_points": 3.53,
+      "ci95_points": [
+        2.03,
+        5.3
+      ],
+      "slices": {
+        "questions:language=en": [
+          136,
+          137
+        ],
+        "questions:language=hi": [
+          81,
+          81
+        ],
+        "questions:language=hi_latn": [
+          50,
+          53
+        ],
+        "questions:type=eligibility": [
+          52,
+          52
+        ],
+        "questions:type=fact": [
+          148,
+          151
+        ],
+        "questions:type=situation": [
+          16,
+          16
+        ],
+        "questions:type=typo": [
+          51,
+          52
+        ],
+        "usecases:language=en": [
+          148,
+          161
+        ],
+        "usecases:type=apply": [
+          33,
+          33
+        ],
+        "usecases:type=apply_eligibility": [
+          15,
+          17
+        ],
+        "usecases:type=benefits": [
+          21,
+          32
+        ],
+        "usecases:type=category": [
+          2,
+          2
+        ],
+        "usecases:type=compare": [
+          10,
+          10
+        ],
+        "usecases:type=documents": [
+          31,
+          31
+        ],
+        "usecases:type=exclusions": [
+          36,
+          36
+        ]
+      },
+      "scheme_in_prompt": [
+        450,
+        450
+      ],
+      "answerable_refused": [
+        0,
+        0
+      ],
+      "not_found_refused": [
+        5,
+        5,
+        12
+      ],
+      "budgets": {
+        "3": [
+          415,
+          432
+        ],
+        "2": [
+          335,
+          359
+        ],
+        "5": [
+          450,
+          452
+        ]
+      },
+      "wordings": {
+        "questions": 206,
+        "scheme_lost": 0,
+        "newly_refused": 0,
+        "scheme_in_prompt": [
+          206,
+          206
+        ]
+      },
+      "ms_per_question": [
+        3.49,
+        3.49
+      ],
+      "guards_failed": [],
+      "gain_not_shown": []
+    }
+  },
+  "answer_check": "stopped (measured on top of round 2b, which was undone)",
+  "outcome": "not adopted"
+}

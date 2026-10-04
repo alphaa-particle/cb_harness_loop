@@ -1,0 +1,156 @@
+id: pmkvy
+name: Pradhan Mantri Kaushal Vikas Yojana 4.0
+short_name: PMKVY 4.0
+names_hi:
+- प्रधानमंत्री कौशल विकास योजना 4.0
+aliases:
+- PMKVY
+- pm kaushal vikas yojana
+- pradhan mantri kaushal vikas yojana
+- kaushal vikas yojana
+- PMKVY 4
+- skill india free training
+level: central
+state: ''
+ministry: Ministry of Skill Development and Entrepreneurship
+category: skills_employment
+summary: Gives free, government-certified skill training (Short-Term Training) and certifies skills people already have (Recognition of Prior Learning) for Indians aged 15 to 59. You find and join batches through the Skill India Digital Hub. Its approved period ended in March 2026 and it was extended for a limited time to 30 September 2026, so check that batches are still open.
+sections:
+  eligibility:
+  - Must be an Indian national with a valid Aadhaar.
+  - Overall, PMKVY 4.0 is meant for people aged 15 to 59 years.
+  - Short-Term Training is for people aged 15 to 45 years.
+  - Short-Term Training mainly targets school or college dropouts and unemployed youth.
+  - Must have an Aadhaar-linked bank account.
+  - Must meet the entry conditions (such as education) set for the chosen job role.
+  - For Recognition of Prior Learning (RPL), you must already have the work experience in that job role that is specified for it.
+  exclusions:
+  - People younger than 15 cannot join.
+  - People older than 45 cannot join Short-Term Training.
+  benefits:
+  - Training, assessment and certification are free of cost for eligible candidates.
+  - Candidates who pass get a certificate mapped to the National Skills Qualification Framework (NSQF), which is linked with DigiLocker.
+  - Short-term courses include on-the-job training at a real workplace.
+  - Women, persons with disabilities and candidates in special areas (such as aspirational, border, tribal and Left Wing Extremism-affected districts) get support for boarding, lodging and travel; these special groups also get conveyance support in non-residential training.
+  - Training providers get up to Rs 5,000 per candidate with a disability to buy assistive devices and aids.
+  - Short micro-credential courses of 7.5 to 30 hours are also offered.
+  how_to_apply:
+  - Open the PMKVY page on Skill India Digital Hub (skillindiadigital.gov.in/pmkvy-landing) and click 'Show Interest'.
+  - Complete Aadhaar e-KYC and your profile, then browse and register for a training batch near you.
+  - You can also contact the nearest PMKVY training centre.
+  documents:
+  - Aadhaar card (Aadhaar e-KYC is needed to register).
+  - Details of an Aadhaar-linked bank account.
+  - Documents showing you meet the job role's entry conditions, such as education certificates.
+  - For RPL, proof of prior work experience in the job role, as specified for that role.
+rules:
+  age_min: 15
+  age_max: 59
+  gender: any
+facts:
+- key: overall_age_range
+  statement: Overall, PMKVY 4.0 is meant for people aged 15 to 59 years.
+  value: 15 to 59
+  accept:
+  - 15-59
+  - 15 se 59
+  - 15 to 59 years
+  - 15–59
+  question: What age group can benefit from PMKVY 4.0?
+  question_hi: प्रधानमंत्री कौशल विकास योजना 4.0 किस उम्र के लोगों के लिए है?
+  question_hi_latn: PMKVY 4.0 kis umar ke logon ke liye hai?
+  source: 1
+  status: verified
+- key: stt_age_range
+  statement: Short-Term Training is for people aged 15 to 45 years.
+  value: 15 to 45
+  accept:
+  - 15-45
+  - 15 se 45
+  - 15 to 45 years
+  - 15–45
+  question: What is the age limit for PMKVY short-term training?
+  question_hi: पीएमकेवीवाई की शॉर्ट टर्म ट्रेनिंग के लिए उम्र सीमा क्या है?
+  question_hi_latn: PMKVY short term training ke liye age limit kya hai?
+  source: 4
+  status: verified
+- key: training_fee
+  statement: Training, assessment and certification are free of cost for eligible candidates.
+  value: free of cost
+  accept:
+  - free
+  - no fee
+  - muft
+  - मुफ्त
+  - nishulk
+  - निःशुल्क
+  question: Do I have to pay any fee for PMKVY training?
+  question_hi: क्या पीएमकेवीवाई की ट्रेनिंग के लिए कोई फीस देनी पड़ती है?
+  question_hi_latn: Kya PMKVY training ke liye koi fees deni padti hai?
+  source: 3
+  status: verified
+- key: pwd_assistive_device_support
+  statement: Training providers get up to Rs 5,000 per candidate with a disability to buy assistive devices and aids.
+  value: Rs 5,000
+  accept:
+  - '5000'
+  - 5,000
+  - ₹5,000
+  - Rs 5000
+  question: How much support is given for assistive devices for disabled candidates under PMKVY?
+  question_hi: पीएमकेवीवाई में दिव्यांग उम्मीदवार के सहायक उपकरणों के लिए कितनी सहायता मिलती है?
+  question_hi_latn: PMKVY me divyang ummeedwar ke sahayak upkaran ke liye kitni madad milti hai?
+  source: 6
+  status: verified
+situations:
+- language: en
+  question: I left school after Class 10 and have no job. Where can I get free government skill training with a certificate?
+- language: hi
+  question: मेरी पढ़ाई बीच में छूट गई है और मैं बेरोजगार हूँ, क्या सरकार मुफ्त में कोई हुनर सिखाने वाली ट्रेनिंग और सर्टिफिकेट देती है?
+sources:
+- title: Cabinet Approves Continuation and Restructuring of Skill India Programme (7 Feb 2025)
+  url: https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2100845
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: केंद्रीय मंत्रिमंडल ने कौशल भारत कार्यक्रम को जारी रखने और पुनर्गठन को मंजूरी दी (Hindi release, 7 Feb 2025)
+  url: https://pib.gov.in/PressReleasePage.aspx?PRID=2100898
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Kaushal Vikas Yojna - Skill India Digital Hub
+  url: https://www.skillindiadigital.gov.in/pmkvy-landing
+  publisher: Ministry of Skill Development and Entrepreneurship (Skill India Digital Hub)
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Kaushal Vikas Yojana - Short Term Training
+  url: https://www.myscheme.gov.in/schemes/pmkvy-stt
+  publisher: myScheme, Government of India
+  accessed: '2026-10-03'
+- title: Under PMKVY, since 2015 till 30.6.2024, 1.48 crore candidates have been trained/oriented (22 Jul 2024)
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2034984
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: Skill India Mission (Lok Sabha reply, 8 Dec 2025)
+  url: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2200373
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: 'OM dated 23.04.2026: Interim extension of schemes of MSDE beyond 31.03.2026 (NAPS-2 up to 30.09.2026)'
+  url: https://naps-cdn.s3.ap-south-1.amazonaws.com/OM+dated+23.04.2026+-+Interim+Extension+of+schemesof+MSDE+-+NAPS+-+reg..pdf
+  publisher: Ministry of Skill Development and Entrepreneurship (via Apprenticeship Training Portal)
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Kaushal Vikas Yojana - Recognition Of Prior Learning
+  url: https://www.myscheme.gov.in/schemes/pmkvy-rpl
+  publisher: myScheme, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: STATUS: The Skill India Programme, which includes PMKVY 4.0, was approved by Cabinet for 2022-23 to 2025-26 (Rs 8,800 crore). An MSDE office memorandum dated 23 April 2026 records that the Department of Expenditure let MSDE schemes continue on their existing terms up to 30 September 2026, or until the Skill India Programme for the 16th Finance Commission cycle is approved, whichever comes first. As of 3 October 2026 the Skill India Digital Hub still lists PMKVY 4.0 batches and invites training proposals, but I found no official notice saying whether the scheme continues after 30 September 2026 or is being replaced by a new version. AGE BY COMPONENT: the Cabinet release gives 15 to 59 as the overall target group, and the 15 to 45 limit for Short-Term Training comes from myScheme. The official PMKVY 4.0 guidelines PDF (msde.gov.in) blocked automated access, so the RPL age band for 4.0 is not verified. myScheme''s RPL page still shows PMKVY 3.0 rules (age 18 to 45, a Rs 500 reward
+    and Rs 2 lakh accident insurance), and its STT page lists 3.0-era extras (post-placement stipend, placement incentives). These are not confirmed for 4.0 and are left out. Under PMKVY 4.0, placement is no longer linked to the scheme, so there is no placement guarantee. myScheme also says candidates need 70% attendance to sit the assessment.'
+  - Whether the scheme is still open to new applicants was not clear.
+  - 'Checker: STATUS UNCLEAR: The interim extension ran only to 30 Sep 2026. On 3 Oct 2026 the SIDH PMKVY page (last modified 3 Oct 2026) still shows Show Interest / Upcoming Batches and about 145 batches. I found no official notice of a further extension or of approval of the 16th-FC Skill India Programme. My web-search budget ran out, so I could not rule out a later PIB or Cabinet release.'
+  - 'Checker: The RPL age band for PMKVY 4.0 is unverified. The 4.0 guidelines PDF on SIDH is behind a download button, which I did not use. The record''s rules.age_max=59 sits beside an STT limit of 45, and the RPL limit is unknown (the 3.0 rule was 18-45). Chatbot answers about people aged 46-59 could therefore be wrong. Consider recording age limits per component.'
+  - 'Checker: The STT age band (15-45), the Aadhaar-linked bank account requirement and the ''dropouts/unemployed'' targeting all come from a myScheme page that still carries PMKVY 3.0 text. They are plausible but not confirmed for 4.0.'
+  - 'Checker: The Rs 5,000 PwD sentence closely follows the PIB wording (''assistive devices and aids''). It is not a verbatim copy, but it could be reworded more.'
+  - 'Checker: The SIDH page still advertises Recruit-Train-Deploy and support ''to placement''. The status note''s ''no placement guarantee'' is consistent with PIB 2200373 (placements were not tracked under 4.0), but the record could say clearly that placement is not assured.'
+  - 'Checker: Source 7 (the OM) is an amazonaws.com URL, not a gov.in domain. It is linked from the official apprenticeshipindia.gov.in notices list, so it is acceptable, but say so.'

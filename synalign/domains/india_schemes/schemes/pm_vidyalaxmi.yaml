@@ -1,0 +1,146 @@
+id: pm_vidyalaxmi
+name: PM-Vidyalaxmi Scheme (Pradhan Mantri Vidyalaxmi)
+short_name: PM-Vidyalaxmi
+names_hi:
+- पीएम-विद्यालक्ष्मी योजना
+aliases:
+- Pradhan Mantri Vidyalaxmi
+- PM Vidya Lakshmi
+- pm vidyalakshmi yojana
+- Vidyalaxmi education loan
+- vidyalaxmi portal loan
+- bina guarantee education loan yojana
+level: central
+state: ''
+ministry: Ministry of Education (Department of Higher Education), with the Department of Financial Services
+category: education
+summary: Bank education loans with no collateral and no guarantor for students admitted to quality higher education institutions identified by the government. Loans up to Rs 7.5 lakh carry a 75% government credit guarantee, and students from families earning up to Rs 8 lakh a year can get 3% interest subvention. The Union Cabinet approved the scheme on 6 November 2024, and students apply on the PM-Vidyalaxmi portal.
+sections:
+  eligibility:
+  - Has secured admission in a Quality Higher Educational Institution (QHEI) identified by the Ministry of Education.
+  - Admission should be on merit, for example through a recognised entrance exam or the merit quota.
+  - To get the 3% interest subvention, annual family income must be Rs 8 lakh or less, and the subvention applies to loans up to Rs 10 lakh.
+  - 'The 3% interest subvention is limited to 1 lakh students a year, chosen in this order of preference: admission to a government institution, then technical/professional courses, then students who passed Class 12 or Class 10 from a government school, then those who passed Class 12 from a rural school, then girl students.'
+  - Aadhaar is required to get the scheme's benefits, including the loan, interest subvention and credit guarantee.
+  exclusions:
+  - Education loans for admissions under management quota are not eligible.
+  benefits:
+  - Education loans without any collateral and without a guarantor, from scheduled commercial banks, regional rural banks and cooperative banks.
+  - Loans up to Rs 7.5 lakh carry a 75% credit guarantee from the Government of India through NCGTC, which encourages banks to lend.
+  - Interest subvention of 3% during the moratorium period on loans up to Rs 10 lakh for students whose annual family income is up to Rs 8 lakh.
+  - Separately, students with annual family income up to Rs 4.5 lakh in professional or technical courses get full interest subvention during the moratorium on loans up to Rs 10 lakh under the existing PM-USP CSIS scheme, also claimed through this portal.
+  - The interest rate is capped at each bank's External Benchmark Lending Rate (EBLR) plus 0.5%.
+  - One application can be sent to up to 3 banks at the same time.
+  how_to_apply:
+  - Register on pmvidyalaxmi.co.in with your mobile number and email, fill the common two-page education loan form, upload documents and choose up to 3 banks.
+  - Only one active application is allowed at a time; track its status on the portal. The bank checks the documents and pays the loan amount to the institution.
+  - After the loan is sanctioned and disbursed, apply for interest subvention on the same portal; for loans disbursed in 2025-26, the claim through the bank starts after 31 March 2026.
+  - 'Toll-free helpline: 1800 1031.'
+  documents:
+  - PAN card (when applying for the loan).
+  - Aadhaar card (before the loan is disbursed).
+  - Passport-size colour photograph of the student and co-applicant, if needed.
+  - Marksheets and certificates for Class 10, Class 12, graduation or the last qualifying exam.
+  - Admission or offer letter with the schedule of expenses.
+  - Income certificate from a competent government authority (Tehsildar/SDM), needed only if claiming interest subvention.
+rules:
+  gender: any
+facts:
+- key: credit_guarantee_percent
+  statement: Loans up to Rs 7.5 lakh carry a 75% credit guarantee from the Government of India.
+  value: 75%
+  accept:
+  - '75'
+  - 75 percent
+  - 75 per cent
+  question: How much credit guarantee does the government give under PM Vidyalaxmi?
+  question_hi: पीएम विद्यालक्ष्मी योजना में सरकार कितने प्रतिशत क्रेडिट गारंटी देती है?
+  question_hi_latn: PM Vidyalaxmi yojana me sarkar kitne percent credit guarantee deti hai?
+  source: 1
+  status: unverified
+- key: credit_guarantee_loan_cap
+  statement: The 75% credit guarantee covers loans up to Rs 7.5 lakh.
+  value: Rs 7.5 lakh
+  accept:
+  - '750000'
+  - 7.5 lakh
+  - 7.50 lakh
+  - 7,50,000
+  - Rs 7.50 lakh
+  question: Up to what loan amount is the credit guarantee available under PM Vidyalaxmi?
+  question_hi: पीएम विद्यालक्ष्मी योजना में कितने रुपये तक के लोन पर क्रेडिट गारंटी मिलती है?
+  question_hi_latn: PM Vidyalaxmi me kitne rupaye tak ke loan par credit guarantee milti hai?
+  source: 1
+  status: unverified
+- key: interest_subvention_rate
+  statement: Eligible students get 3% interest subvention during the moratorium period.
+  value: 3%
+  accept:
+  - '3'
+  - 3 percent
+  - 3 per cent
+  question: How much interest subvention does PM Vidyalaxmi give?
+  question_hi: पीएम विद्यालक्ष्मी योजना में ब्याज पर कितने प्रतिशत की छूट मिलती है?
+  question_hi_latn: PM Vidyalaxmi me byaj par kitne percent ki chhoot milti hai?
+  source: 1
+  status: unverified
+- key: subvention_income_limit
+  statement: The 3% interest subvention is for students with annual family income up to Rs 8 lakh.
+  value: Rs 8 lakh
+  accept:
+  - '800000'
+  - 8 lakh
+  - 8.00 lakh
+  - 8,00,000
+  - Rs 8.00 lakh
+  question: What is the family income limit for interest subvention under PM Vidyalaxmi?
+  question_hi: पीएम विद्यालक्ष्मी योजना में ब्याज छूट पाने के लिए परिवार की सालाना आय कितनी होनी चाहिए?
+  question_hi_latn: PM Vidyalaxmi me byaj chhoot ke liye family ki saalana income kitni honi chahiye?
+  source: 1
+  status: unverified
+- key: subvention_loan_cap
+  statement: The 3% interest subvention applies to loans up to Rs 10 lakh.
+  value: Rs 10 lakh
+  accept:
+  - '1000000'
+  - 10 lakh
+  - 10,00,000
+  question: Up to what loan amount is interest subvention given under PM Vidyalaxmi?
+  question_hi: पीएम विद्यालक्ष्मी योजना में कितने रुपये तक के लोन पर ब्याज छूट मिलती है?
+  question_hi_latn: PM Vidyalaxmi me kitne rupaye tak ke loan par byaj chhoot milti hai?
+  source: 1
+  status: unverified
+situations:
+- language: en
+  question: I got admission to a good engineering college but my family cannot pay the fees and we have no property to pledge. How can I get an education loan without collateral or a guarantor?
+- language: hi_latn
+  question: Mujhe NIT me admission mila hai, ghar ki saalana kamai 6 lakh hai aur girvi rakhne ko kuch nahi hai. Bina guarantee ke education loan aur byaj me chhoot kaise milegi?
+sources:
+- title: About PM-Vidyalaxmi Scheme
+  url: https://pmvidyalaxmi.co.in/AboutScheme.aspx
+  publisher: PM-Vidyalaxmi Portal, Department of Higher Education, Ministry of Education (maintained by Canara Bank)
+  accessed: '2026-10-03'
+- title: PM-Vidyalaxmi FAQs
+  url: https://pmvidyalaxmi.co.in/PublicFaq.aspx
+  publisher: PM-Vidyalaxmi Portal, Department of Higher Education, Ministry of Education
+  accessed: '2026-10-03'
+- title: PM-Vidyalaxmi Scheme Leaflet (English)
+  url: https://pmvidyalaxmi.co.in/img/Scheme_Leaflet.pdf
+  publisher: Department of Higher Education, Ministry of Education
+  accessed: '2026-10-03'
+- title: PM-Vidyalaxmi Scheme Leaflet (Hindi)
+  url: https://pmvidyalaxmi.co.in/img/Hindi_Leaflet.pdf
+  publisher: Department of Higher Education, Ministry of Education
+  accessed: '2026-10-03'
+- title: PM-Vidyalaxmi User Manual for Student Login
+  url: https://pmvidyalaxmi.co.in/img/UserManual-Student.pdf
+  publisher: PM-Vidyalaxmi Portal, Department of Higher Education, Ministry of Education
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The Union Cabinet approved the scheme on 6 November 2024 as a Central Sector Scheme, and it is active. The portal FAQ says claims for loans disbursed in 2025-26 are processed after 31 March 2026. The list of eligible Quality Higher Educational Institutions is set by the Ministry of Education, but the pages read did not give the selection criteria (such as NIRF ranks) or the number of institutions. The Department of Higher Education page and PIB returned 403. The loan itself has no income limit; only the interest subvention does. The 3% subvention is capped at 1 lakh students a year. Full interest subvention for families earning up to Rs 4.5 lakh comes from the older PM-USP CSIS scheme, which is handled through the same portal. Interest rates differ by bank; the leaflet caps them at EBLR plus 0.5%. The official leaflet also describes a pilot that credits interest subvention to a PM Vidyalaxmi digital rupee (CBDC) wallet. No official page read said whether students already getting
+    other government scholarships are barred from the subvention.'
+  - No independent check was returned for this scheme.

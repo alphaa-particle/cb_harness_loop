@@ -1,0 +1,69 @@
+764 test questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.9583  in-prompt 0.9097  abstain 0.5455  (31.8 ms/q)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_search_after_questions_54/report.md
+764 test questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.9583  in-prompt 0.9056  abstain 0.5455  (32.5 ms/q)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_search_before_questions_54/report.md
+764 test questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.9042  in-prompt 0.8736  abstain 0.2273  (37.2 ms/q)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_search_after_questions_scale/report.md
+764 test questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.9042  in-prompt 0.8736  abstain 0.2273  (37.7 ms/q)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_search_before_questions_scale/report.md
+366 test questions (sha256 7bfbe6d4e6d4), min_score 0.5, top_k 3
+search fusion               hit@1 0.972  in-prompt 0.8224  abstain None  (32.6 ms/q)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_search_after_usecases_54/report.md
+366 test questions (sha256 7bfbe6d4e6d4), min_score 0.5, top_k 3
+search fusion               hit@1 0.972  in-prompt 0.7459  abstain None  (32.9 ms/q)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_search_before_usecases_54/report.md
+366 test questions (sha256 7bfbe6d4e6d4), min_score 0.5, top_k 3
+search fusion               hit@1 0.9224  in-prompt 0.7459  abstain None  (39.4 ms/q)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_search_after_usecases_scale/report.md
+366 test questions (sha256 7bfbe6d4e6d4), min_score 0.5, top_k 3
+search fusion               hit@1 0.9224  in-prompt 0.6749  abstain None  (35.8 ms/q)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_search_before_usecases_scale/report.md
+SEARCH_DONE
+764 test questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.9583  in-prompt 0.9097  abstain 0.5455  (33.9 ms/q)
+  fusion: 50/764
+  fusion: 100/764
+  fusion: 150/764
+  fusion: 200/764
+  fusion: 250/764
+  fusion: 300/764
+  fusion: 350/764
+  fusion: 400/764
+  fusion: 450/764
+  fusion: 500/764
+  fusion: 550/764
+  fusion: 600/764
+  fusion: 650/764
+  fusion: 700/764
+  fusion: 750/764
+answers fusion       correct 0.7657  (1.116 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_after_questions_54/report.md
+764 test questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.9042  in-prompt 0.8736  abstain 0.2273  (44.1 ms/q)
+  fusion: 50/764
+  fusion: 100/764
+  fusion: 150/764
+  fusion: 200/764
+  fusion: 250/764
+  fusion: 300/764
+  fusion: 350/764
+  fusion: 400/764
+  fusion: 450/764
+  fusion: 500/764
+  fusion: 550/764
+  fusion: 600/764
+  fusion: 650/764
+  fusion: 700/764
+  fusion: 750/764
+answers fusion       correct 0.7016  (1.164 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/exam_after_questions_scale/report.md
+366 test questions (sha256 7bfbe6d4e6d4), min_score 0.5, top_k 3
+search fusion               hit@1 0.972  in-prompt 0.8224  abstain None  (45.6 ms/q)
+  closed_book: 50/366
+  closed_book: 100/366
+  closed_book: 150/366
+  closed_book: 200/366

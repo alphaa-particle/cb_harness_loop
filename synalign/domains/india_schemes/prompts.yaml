@@ -1,0 +1,45 @@
+# What the answering model is told, and the fixed replies used when it is not asked.
+# Written for a very small model (Qwen3.5-0.8B): plain instructions, no answer template
+# to copy, one rule per line. Changes here are tested with the improvement loop before use.
+system: |
+  You answer questions about Indian government welfare schemes.
+  Use only the scheme information given in the message. If it does not contain the answer, say that you could not find it in the scheme information.
+  Reply in the same language as the question. If the question is in Hindi, reply in Hindi.
+  Give a short, direct answer in two to four sentences.
+  Copy numbers such as ages, amounts and income limits exactly as they are written in the scheme information.
+  If the person asks whether they can get a scheme, compare their details with each rule and begin with Yes, No or Not sure.
+  Never promise that an application will be approved or that money will be paid.
+
+# Search found nothing to ground an answer in, so the model is not asked.
+no_evidence: >-
+  I could not find a scheme that matches your question. Please tell me the
+  scheme's name, or what kind of help you need and in which state.
+  (मुझे आपके सवाल से मिलती कोई योजना नहीं मिली। कृपया योजना का नाम, या आपको किस तरह की
+  मदद चाहिए और किस राज्य में, बताइए।)
+
+# The input could not be read as a question.
+unclear: >-
+  I could not understand that. Please ask again in a full sentence.
+  (मैं समझ नहीं पाया। कृपया पूरा सवाल फिर से लिखिए।)
+
+# The model's answer made a forbidden promise, so the rules are shown instead.
+blocked: >-
+  I cannot promise approval or any payment. These are the official rules I
+  found; please check them against your own details. The final decision is
+  made by the government office.
+
+# No model is in use (or it failed), so the matching rules are shown as they are.
+rules_only: >-
+  These are the official rules that match your question. Please check them
+  against your own details. The final decision is made by the government office.
+
+# How every ideal answer in the training data ends.
+closing: The final decision is made by the government office.
+
+# The closed-book baseline: the same rules about language and length, but no
+# documents, so the model answers from what it learned in training.
+closed_book_system: |
+  You answer questions about Indian government welfare schemes.
+  Reply in the same language as the question. If the question is in Hindi, reply in Hindi.
+  Give a short, direct answer in two to four sentences.
+  If the person asks whether they can get a scheme, begin with Yes, No or Not sure.

@@ -1,0 +1,137 @@
+id: pmjjby
+name: Pradhan Mantri Jeevan Jyoti Bima Yojana
+short_name: PMJJBY
+names_hi: []
+aliases:
+- Jeevan Jyoti Bima Yojana
+- PM Jeevan Jyoti Bima Yojana
+- jeevan jyoti yojana
+- PMJJBY bima
+- 436 rupaye wala bima
+level: central
+state: ''
+ministry: Ministry of Finance, Department of Financial Services
+category: insurance
+summary: A one-year life insurance cover, renewed every year, for bank or post office account holders who join between ages 18 and 50. It pays Rs 2 lakh to the family if the insured person dies from any cause, for a premium of Rs 436 a year taken automatically from the account.
+sections:
+  eligibility:
+  - Aged 18 to 50 years when joining.
+  - Holds an individual or joint savings account with a participating bank or post office.
+  - Agrees to join and allows the yearly premium to be auto-debited from that account.
+  - A person can join through only one bank or post office account.
+  - A member who joined before turning 50 can keep renewing the cover every year up to age 55.
+  exclusions:
+  - New entry is not allowed after the age of 50 years.
+  - Cover ends on reaching age 55 (age nearest birthday).
+  - Cover ends if the bank account is closed or does not have enough balance to pay the premium.
+  - Death from causes other than an accident within the first 30 days of joining is not covered.
+  - If premium is paid through more than one account, the extra premium is forfeited and total cover stays at Rs 2 lakh.
+  benefits:
+  - Rs 2 lakh is paid to the nominee if the insured person dies from any cause.
+  - The premium is Rs 436 a year, auto-debited from the account in one instalment.
+  - Cover lasts one year, from 1 June to 31 May, and is renewed every year.
+  - 'First-time members joining mid-year pay less: Rs 436 in June to August, Rs 342 in September to November, Rs 228 in December to February and Rs 114 in March to May.'
+  - Accidental death is covered from the first day, and this cover is in addition to any other insurance the person has.
+  how_to_apply:
+  - Go to the bank branch or post office where you have your savings account and submit the scheme form with your consent for auto-debit.
+  - The premium is taken automatically each year on or before 31 May. If you drop out, you can rejoin later by paying the premium, but the 30-day waiting period for non-accidental death applies again.
+  - Claims are made through the bank or post office where the member is enrolled, and are settled by LIC or the other life insurer running the cover.
+  documents:
+  - A savings account with a participating bank or post office.
+  - The filled scheme enrolment form with consent for auto-debit of the premium.
+rules:
+  age_min: 18
+  age_max: 50
+  gender: any
+facts:
+- key: annual_premium
+  statement: The PMJJBY premium is Rs 436 a year.
+  value: Rs 436
+  accept:
+  - '436'
+  - ₹436
+  - Rs. 436
+  - 436 rupees
+  question: How much is the yearly premium for PM Jeevan Jyoti Bima Yojana?
+  question_hi: प्रधानमंत्री जीवन ज्योति बीमा योजना का सालाना प्रीमियम कितना है?
+  question_hi_latn: PM Jeevan Jyoti Bima Yojana ka saal ka premium kitna hai?
+  source: 1
+  status: verified
+- key: life_cover
+  statement: PMJJBY pays Rs 2 lakh on the death of the insured person from any cause.
+  value: Rs 2 lakh
+  accept:
+  - 2 lakh
+  - '200000'
+  - 2,00,000
+  - ₹2 lakh
+  - Rs. 2 lakh
+  - two lakh
+  question: How much money does the family get under PM Jeevan Jyoti Bima Yojana if the insured person dies?
+  question_hi: प्रधानमंत्री जीवन ज्योति बीमा योजना में मृत्यु होने पर परिवार को कितना पैसा मिलता है?
+  question_hi_latn: Jeevan Jyoti Bima Yojana me maut hone par parivar ko kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: max_entry_age
+  statement: A person must be aged 18 to 50 years to join PMJJBY.
+  value: '50'
+  accept:
+  - 50 years
+  - fifty
+  question: What is the maximum age to join PM Jeevan Jyoti Bima Yojana?
+  question_hi: प्रधानमंत्री जीवन ज्योति बीमा योजना में जुड़ने की अधिकतम उम्र क्या है?
+  question_hi_latn: Jeevan Jyoti Bima Yojana me judne ki maximum umar kya hai?
+  source: 1
+  status: verified
+- key: cover_end_age
+  statement: PMJJBY cover ends when the member reaches age 55.
+  value: '55'
+  accept:
+  - 55 years
+  - fifty-five
+  question: Up to what age does the PM Jeevan Jyoti Bima Yojana cover continue?
+  question_hi: प्रधानमंत्री जीवन ज्योति बीमा योजना का कवर किस उम्र तक चलता है?
+  question_hi_latn: Jeevan Jyoti Bima Yojana ka cover kis umar tak chalta hai?
+  source: 1
+  status: verified
+- key: waiting_period
+  statement: Under PMJJBY, death from causes other than an accident within the first 30 days of joining is not covered.
+  value: 30 days
+  accept:
+  - '30'
+  - thirty days
+  - 1 month
+  question: How long after joining PM Jeevan Jyoti Bima Yojana is death from illness not covered?
+  question_hi: प्रधानमंत्री जीवन ज्योति बीमा योजना में जुड़ने के बाद कितने दिन तक बीमारी से मृत्यु कवर नहीं होती?
+  question_hi_latn: Jeevan Jyoti Bima Yojana me judne ke baad kitne din tak bimari se maut cover nahi hoti?
+  source: 1
+  status: verified
+situations:
+- language: en
+  question: I am 35 and the only earner in my family. Is there a cheap government life insurance that will pay my family if I die from any cause?
+- language: hi_latn
+  question: Main 40 saal ka hoon aur ghar me akela kamane wala hoon. Mujhe kam premium wala sarkari jeevan bima chahiye jo meri maut par parivaar ko paisa de. Kya milega?
+sources:
+- title: Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) - Frequently Asked Questions
+  url: https://financialservices.gov.in/pmjjby
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)
+  url: https://financialservices.gov.in/pradhan-mantri-jeevan-jyoti-bima-yojana-pmjjby
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: 'Insurance for All: Expanding Coverage, Strengthening Social Security (PIB Backgrounder, 23 April 2026)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/apr/doc2026423855201.pdf
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is running and open to new members. A 23 April 2026 PIB backgrounder confirms the Rs 436 premium, Rs 2 lakh cover and 18-50 entry age, and reports 26.88 crore enrolments as of February 2026. DFS showed 23.12 crore as of 28 February 2025. Some older material shows a lower premium; that is outdated. The scheme portal jansuraksha.gov.in failed its certificate check, so the official rules PDF and an official Hindi name could not be checked, and names_hi is left empty. The DFS FAQ does not list KYC or Aadhaar rules or other ways to enrol, such as net banking; banks may offer these. The termination age is counted as age nearest birthday.'
+  - 'Checker: The how_to_apply line saying claims go through the bank or post office where the member is enrolled was not found on any DFS page that was opened. The FAQ only says LIC or another insurer handles claim settlement. The official rules on jansuraksha.gov.in could not be checked.'
+  - 'Checker: The auto-debit date of 31 May is not stated on the DFS FAQ.'
+  - 'Checker: names_hi is empty, but the Hindi questions use a Hindi name. Either add a verified official Hindi name or keep it empty and flag it for later.'
+  - 'Checker: rule age_max=50 is an entry limit only. Members who joined before 50 stay covered to 55, so eligibility logic should not exclude them.'
+  - 'Statement not confirmed: The premium is taken automatically each year on or before 31 May (The DFS FAQ only says ''on or before the due date'' and gives no date. 31 May is implied by the cover period but is not stated.)'

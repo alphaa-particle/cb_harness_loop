@@ -1,0 +1,138 @@
+id: pm_vbry
+name: Pradhan Mantri Viksit Bharat Rozgar Yojana
+short_name: PM-VBRY
+names_hi:
+- प्रधानमंत्री विकसित भारत रोजगार योजना
+aliases:
+- PMVBRY
+- Viksit Bharat Rozgar Yojana
+- pm viksit bharat rozgar yojana
+- pehli naukri yojana 15000
+- Employment Linked Incentive scheme
+- ELI scheme
+level: central
+state: ''
+ministry: Ministry of Labour and Employment (implemented through EPFO)
+category: skills_employment
+summary: People who start their first EPF-covered job between 1 August 2025 and 31 July 2027 and earn up to Rs 1,00,000 a month get a one-time incentive. It equals one month's EPF wage, up to Rs 15,000, and is paid in two instalments. Employers separately get incentives for adding new jobs.
+sections:
+  eligibility:
+  - Joined an establishment covered by EPF between 1 August 2025 and 31 July 2027 (both dates included).
+  - Is a first-time EPF member, meaning they never contributed to EPF with EPFO or an exempted PF trust before 1 August 2025.
+  - Has a gross monthly salary of up to Rs 1,00,000 at the time of joining, counting all emoluments.
+  - Has worked at least 6 completed months in the same establishment (needed for the first instalment).
+  - Has worked 12 completed months in the same establishment and finished the free online financial literacy course (needed for the second instalment).
+  - Has a UAN and a bank account seeded with Aadhaar.
+  exclusions:
+  - Anyone who contributed to EPF, with EPFO or an exempted trust, before 1 August 2025 is not a first-timer and cannot get the incentive.
+  - Employees whose gross monthly salary is above Rs 1,00,000 at joining are not covered.
+  - Anyone who leaves the job before 6 completed months gets no first instalment.
+  - Anyone who leaves between 6 and 12 months does not get the second instalment.
+  benefits:
+  - A one-time incentive equal to one month's EPF wage, up to a maximum of Rs 15,000.
+  - Paid in 2 instalments. The first comes after 6 months of service. The second comes after 12 months of service and completion of the financial literacy course.
+  - The second instalment is kept in a savings or deposit account for a period to be set in later guidelines.
+  - Paid by DBT through the Aadhaar Bridge Payment System into the employee's Aadhaar-seeded bank account.
+  - Separately, employers get up to Rs 3,000 per month for each additional employee. This lasts 2 years in all sectors and 4 years in manufacturing.
+  how_to_apply:
+  - Employees do not need to apply or register. The incentive is worked out from the monthly PF return (ECR) that the employer files.
+  - Get a UAN through the employer, or generate it yourself using face authentication on the UMANG app.
+  - Make sure your bank account is seeded with Aadhaar. Payment is held back until it is.
+  - 'Before completing 12 months, finish the free financial literacy course on the EPFO website. Helpline: 14480 or 1800-180-1850 (toll-free).'
+  documents:
+  - Aadhaar number.
+  - Universal Account Number (UAN).
+  - Bank account seeded with Aadhaar.
+rules:
+  monthly_income_max: 100000
+  gender: any
+facts:
+- key: max_incentive
+  statement: A first-time employee gets one month's EPF wage, up to a maximum of Rs 15,000.
+  value: Rs 15,000
+  accept:
+  - '15000'
+  - 15,000
+  - 15 hazar
+  - fifteen thousand
+  question: How much money does a first-time employee get under PM-VBRY?
+  question_hi: प्रधानमंत्री विकसित भारत रोजगार योजना में पहली नौकरी वाले को कितना पैसा मिलता है?
+  question_hi_latn: PM Viksit Bharat Rozgar Yojana me pehli naukri wale ko kitna paisa milta hai?
+  source: 2
+  status: verified
+- key: salary_limit
+  statement: Only first-time employees with a gross monthly salary of up to Rs 1,00,000 qualify.
+  value: Rs 1,00,000
+  accept:
+  - '100000'
+  - 1,00,000
+  - 1 lakh
+  - ek lakh
+  question: What is the maximum monthly salary to be eligible for PM-VBRY?
+  question_hi: प्रधानमंत्री विकसित भारत रोजगार योजना के लिए अधिकतम मासिक वेतन कितना हो सकता है?
+  question_hi_latn: PM-VBRY ke liye maximum mahine ki salary kitni ho sakti hai?
+  source: 1
+  status: verified
+- key: number_of_instalments
+  statement: The employee incentive is paid in 2 instalments.
+  value: '2'
+  accept:
+  - two
+  - do
+  - 2 instalments
+  question: In how many instalments is the PM-VBRY incentive paid?
+  question_hi: प्रधानमंत्री विकसित भारत रोजगार योजना का पैसा कितनी किस्तों में मिलता है?
+  question_hi_latn: PM-VBRY ka paisa kitni kiston me milta hai?
+  source: 2
+  status: verified
+- key: first_instalment_after
+  statement: The first instalment is paid after 6 months of service in the same establishment.
+  value: 6 months
+  accept:
+  - six months
+  - '6'
+  - chhah mahine
+  question: After how many months of work do I get the first PM-VBRY instalment?
+  question_hi: प्रधानमंत्री विकसित भारत रोजगार योजना की पहली किस्त कितने महीने नौकरी करने के बाद मिलती है?
+  question_hi_latn: PM-VBRY ki pehli kist kitne mahine naukri ke baad milti hai?
+  source: 2
+  status: verified
+- key: last_joining_date
+  statement: The job must start between 1 August 2025 and 31 July 2027.
+  value: 31 July 2027
+  accept:
+  - 31.07.2027
+  - 31/07/2027
+  - July 2027
+  question: Until what date must I join a job to be covered by PM-VBRY?
+  question_hi: प्रधानमंत्री विकसित भारत रोजगार योजना का लाभ लेने के लिए किस तारीख तक नौकरी जॉइन करनी होगी?
+  question_hi_latn: PM-VBRY ka fayda lene ke liye kis tarikh tak naukri join karni hogi?
+  source: 1
+  status: verified
+situations:
+- question: I just got my first job where PF is deducted, and my salary is Rs 25,000 a month. Does the government give any money to people starting their first formal job?
+  language: en
+- question: Meri pehli naukri lagi hai aur salary se PF kat raha hai. Kya sarkar pehli baar naukri karne walon ko koi protsahan rashi deti hai?
+  language: hi_latn
+sources:
+- title: Pradhan Mantri Viksit Bharat Rozgar Yojana (PMVBRY) official portal
+  url: https://pmvbry.epfindia.gov.in/
+  publisher: Employees' Provident Fund Organisation (EPFO), Ministry of Labour and Employment
+  accessed: '2026-10-03'
+- title: PMVBRY Frequently Asked Questions
+  url: https://pmvbry.epfindia.gov.in/faq/
+  publisher: Employees' Provident Fund Organisation (EPFO), Ministry of Labour and Employment
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is open for jobs that start between 1 August 2025 and 31 July 2027, so it is still running on 2026-10-03. The official guidelines PDF (PMVBRY-Final.pdf) could not be read because of a font-encoding problem. As a result, the exact split of Rs 15,000 between the two instalments is not stated here. The official FAQ says the lock-in period for the second instalment''s savings or deposit account will be set in future guidelines. The Part B employer incentive is described on the portal as ''up to Rs 3,000'' per month; the slab amounts by wage band were not checked. The aliases ''Employment Linked Incentive (ELI) scheme'' and ''pehli naukri yojana 15000'' are commonly used names and were not confirmed on the pages used. The guidelines PDF only shows that the scheme is part of the PM''s Package for Employment and Skilling.'
+  - 'Checker: How_to_apply presents face authentication as optional (''get a UAN through the employer, or generate it yourself using face authentication on UMANG''). Guidelines 3.1.5(ii) and 3.1.13 say the incentive is paid only if the UAN is authenticated with Face Authentication Technology on the UMANG app, and new UANs from 1 Aug 2025 must be made that way. The FAQ says the employee must generate the UAN this way. This mandatory condition should be stated plainly.'
+  - 'Checker: The incentive is one month''s EPF wage, meaning the wage on which PF is paid, not gross salary. For the Rs 25,000 salary example, answers must not suggest the person gets their full salary. The amount is capped at Rs 15,000 and may be lower than gross pay.'
+  - 'Checker: Missing caveat: guidelines 13.3 say the scheme is fund-limited (total outlay Rs 99,446 crore), and no claims are created after the scheme period ends or funds run out, whichever comes first.'
+  - 'Checker: Missing: guidelines para 14 say the incentives are taxable under the Income Tax Act unless an exemption order is issued.'
+  - 'Checker: The status_note is out of date. The guidelines PDF text can be extracted, and both the guidelines and the SOP give the split: 1st instalment up to Rs 7,500, 2nd is the balance up to Rs 15,000 in total. The ''ELI'' alias is official: the portal home page says ''Employment Linked Incentive (ELI) Scheme'', and the guidelines introduction says the Budget 2024-25 ''Employment Linked Incentives Scheme'' was named PMVBRY.'
+  - 'Checker: The alias ''pehli naukri yojana 15000'' is not an official name. Keep it only as a search alias, never as the scheme''s name.'
+  - 'Checker: Exclusions say leaving between 6 and 12 months loses the second instalment. The SOP adds that a First Timer who leaves and joins another employer is no longer a First Timer, so the incentive does not carry over to the new job.'

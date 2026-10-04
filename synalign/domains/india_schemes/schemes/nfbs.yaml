@@ -1,0 +1,131 @@
+id: nfbs
+name: National Family Benefit Scheme
+short_name: NFBS
+names_hi:
+- राष्ट्रीय परिवार लाभ योजना
+aliases:
+- parivarik labh yojana
+- rashtriya parivarik labh yojana
+- family benefit scheme
+- NSAP family benefit
+- NFBS 20000
+level: central
+state: ''
+ministry: Ministry of Rural Development, Department of Rural Development (National Social Assistance Programme, NSAP)
+category: social_assistance
+summary: A one-time lump sum of Rs 20,000 paid to a below-poverty-line (BPL) household when its main earner dies aged 18 to 59, whatever the cause of death.
+sections:
+  eligibility:
+  - The household must be below the poverty line (BPL).
+  - The person who died must have been the household's main earner (breadwinner).
+  - The breadwinner must have been aged 18 to 59 years at the time of death.
+  - Any death counts, whether natural, accidental or from any other cause.
+  - A woman who was a homemaker also counts as a breadwinner.
+  - The money is paid to the surviving family member who, after a local inquiry, is found to be the new head of the household.
+  - Household means the spouse, minor children, unmarried daughters and dependent parents; if the person who died was an unmarried adult, it means minor brothers and sisters and dependent parents.
+  exclusions:
+  - Households that are not BPL are not covered by the central scheme.
+  - Deaths of a breadwinner aged 60 or above, or below 18, are not covered.
+  - The scheme pays only on the death of the breadwinner, not of other family members.
+  benefits:
+  - A one-time lump sum of Rs 20,000 to the bereaved household.
+  - The help is meant to be given in every case where a family's breadwinner dies.
+  - Payment is preferably made into a bank or post office account.
+  how_to_apply:
+  - Fill the NFBS application form and submit it at your Gram Panchayat (in villages) or Municipality or ward office (in towns).
+  - The application is verified, discussed in the Gram Sabha or Ward Sabha, and then the Block or Municipality level Sanctioning Authority issues a sanction order for the payment.
+  - The whole process from application to sanction or rejection should not take more than 60 days.
+  - If the application is rejected, a first appeal can be made to the Appellate Authority and a second appeal to the Reviewing Authority named by the state.
+  documents:
+  - 'Details of the person who died: name, age at the time of death, address and the household''s BPL family ID.'
+  - 'Details of the applicant (the new head of household): name, address and date of birth with proof.'
+  - Proof of age such as a birth or school certificate; if not available, ration card or voter ID (EPIC).
+  - Bank or post office account details, since payment is preferably made into an account.
+rules:
+  gender: any
+facts:
+- key: benefit_amount
+  statement: The family gets Rs 20,000 when its breadwinner dies.
+  value: Rs 20,000
+  accept:
+  - '20000'
+  - 20,000
+  - ₹20,000
+  - 20 hazar
+  - bees hazar
+  - बीस हजार
+  question: How much money does a family get under the National Family Benefit Scheme?
+  question_hi: राष्ट्रीय पारिवारिक लाभ योजना (NFBS) में परिवार को कितने पैसे मिलते हैं?
+  question_hi_latn: Rashtriya Parivarik Labh Yojana (NFBS) me parivar ko kitne paise milte hain?
+  source: 1
+  status: verified
+- key: deceased_age_range
+  statement: The breadwinner must have died between the ages of 18 to 59.
+  value: 18 to 59
+  accept:
+  - 18-59
+  - 18 se 59
+  - 18 से 59
+  - under 60
+  question: At what age must the earner have died for the family to get the National Family Benefit Scheme?
+  question_hi: राष्ट्रीय पारिवारिक लाभ योजना (NFBS) में कमाने वाले सदस्य की मृत्यु किस उम्र में होने पर मदद मिलती है?
+  question_hi_latn: Rashtriya Parivarik Labh Yojana (NFBS) me kamane wale ki maut kis umar me hone par madad milti hai?
+  source: 1
+  status: verified
+- key: payment_type
+  statement: The benefit is paid once as a lump sum, not every month.
+  value: one-time
+  accept:
+  - one time
+  - once
+  - lump sum
+  - ekmusht
+  - एकमुश्त
+  - ek baar
+  question: Is the National Family Benefit Scheme money paid every month or only once?
+  question_hi: राष्ट्रीय पारिवारिक लाभ योजना (NFBS) का पैसा हर महीने मिलता है या एक बार?
+  question_hi_latn: Rashtriya Parivarik Labh Yojana (NFBS) ka paisa har mahine milta hai ya ek baar?
+  source: 2
+  status: verified
+- key: max_processing_days
+  statement: An NFBS application should be sanctioned or rejected within 60 days.
+  value: 60 days
+  accept:
+  - '60'
+  - sixty days
+  - 60 din
+  question: Within how many days should a National Family Benefit Scheme application be decided?
+  question_hi: राष्ट्रीय पारिवारिक लाभ योजना (NFBS) का आवेदन कितने दिनों में मंजूर या खारिज होना चाहिए?
+  question_hi_latn: Rashtriya Parivarik Labh Yojana (NFBS) ka aavedan kitne dino me manjoor ya khaarij hona chahiye?
+  source: 2
+  status: verified
+situations:
+- question: My husband was the only earner in our family and he died at 42. We are on the BPL list. Is there any one-time help from the government for our family?
+  language: en
+- question: हमारे घर के कमाने वाले सदस्य की 35 साल की उम्र में मौत हो गई और हम BPL परिवार हैं। क्या सरकार से परिवार को कोई एकमुश्त आर्थिक मदद मिलती है?
+  language: hi
+sources:
+- title: National Social Assistance Programme - About Us
+  url: https://nsap.dord.gov.in/circular.do?method=aboutus
+  publisher: Ministry of Rural Development, Government of India (NSAP portal)
+  accessed: '2026-10-03'
+- title: National Social Assistance Programme - Programme Guidelines (October 2014)
+  url: https://nsap.dord.gov.in/Guidelines/nsap_guidelines_oct2014.pdf
+  publisher: Ministry of Rural Development, Government of India
+  accessed: '2026-10-03'
+- title: National Social Assistance Programme portal - Home and FAQ
+  url: https://nsap.dord.gov.in/
+  publisher: Ministry of Rural Development, Government of India (NSAP portal)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Current rules taken from the NSAP About Us page and the October 2014 guidelines: Rs 20,000 lump sum on death of a BPL household''s breadwinner aged 18 to 59 (the guidelines say older than 18 and younger than 60). Conflicting older figures still appear on the same official portal: the home page says breadwinners aged 18-64, and the FAQ says death before age 65 and an older amount of Rs 10,000. Treat these as outdated. The 2014 guidelines do not list a death certificate or a deadline for applying after the death, but states commonly set their own document list and time limits, so check with the local office. Some states add their own money or run a separate family benefit scheme. The scheme is open and run by state governments (often the social welfare or rural development department). No official Hindi name was found on the pages used; the Hindi questions use a descriptive translation plus the abbreviation NFBS.'
+  - 'Checker: The documents list leaves out the death certificate of the deceased breadwinner. myScheme (official) lists the death certificate, proof of identity, proof of address, BPL or ration card, and Family ID/Member ID for the deceased. For the applicant it lists ID, address and age proof, Family/Member ID, an Aadhaar-seeded bank or post office account, and a passport photo. The status note''s point that the 2014 guidelines do not list a death certificate is true, but citizens will almost always need one.'
+  - 'Checker: names_hi is empty, and the Hindi questions and alias use ''राष्ट्रीय पारिवारिक लाभ योजना / parivarik labh yojana''. The official Hindi name is राष्ट्रीय परिवार लाभ योजना (Rashtriya Parivar Labh Yojana), per MoRD Hindi guidelines 2002 and myScheme. Add it, and use it in the Hindi questions.'
+  - 'Checker: Where to apply varies: myScheme''s NFBS page says forms are free from the District or Tehsil Social Welfare Officer (DSWO/TSWO) and are submitted there. The record says Gram Panchayat or Municipality, following the general NSAP guidelines. It should say the office varies by state.'
+  - 'Checker: ''Main earner'' should be defined as in the 2012 office memo: the member, male or female, whose earnings make up a substantial part of household income. myScheme''s FAQ confirms a woman who earned more counts as the primary breadwinner.'
+  - 'Checker: No copied text found. Sources are official.'
+  - Official Hindi name added from https://nsap.dord.gov.in/Guidelines/nsap%20guidelines%20in%20hindi%202002.pdf.

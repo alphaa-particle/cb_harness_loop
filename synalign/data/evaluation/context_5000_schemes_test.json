@@ -1,0 +1,4468 @@
+{
+  "source": "/private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/schemes/corpus.jsonl",
+  "split": "test",
+  "build_seconds": 3.17,
+  "python": "3.12.13",
+  "platform": "arm64",
+  "rules_first": {
+    "corpus_sha256": "4980e9247df8ee781e80d4b0f97f49e2c91784af41003ef6fb8ff5074a0473da",
+    "chunks": 20000,
+    "method": "hybrid",
+    "top_k": 3,
+    "min_score": 0.3,
+    "rules_first": true,
+    "summary": {
+      "questions": 6290,
+      "answerable": 6000,
+      "right_text_in_prompt": 5963,
+      "right_text_in_prompt_rate": 0.9938,
+      "unanswerable": 290,
+      "model_not_called": 20,
+      "model_not_called_rate": 0.069
+    },
+    "by_condition": {
+      "absent": {
+        "questions": 270,
+        "unanswerable": 270,
+        "model_not_called": 0,
+        "model_not_called_rate": 0.0
+      },
+      "described": {
+        "questions": 500,
+        "answerable": 500,
+        "right_text_in_prompt": 463,
+        "right_text_in_prompt_rate": 0.926
+      },
+      "documents": {
+        "questions": 500,
+        "answerable": 500,
+        "right_text_in_prompt": 500,
+        "right_text_in_prompt_rate": 1.0
+      },
+      "named": {
+        "questions": 4500,
+        "answerable": 4500,
+        "right_text_in_prompt": 4500,
+        "right_text_in_prompt_rate": 1.0
+      },
+      "off_topic": {
+        "questions": 20,
+        "unanswerable": 20,
+        "model_not_called": 20,
+        "model_not_called_rate": 1.0
+      },
+      "typo": {
+        "questions": 500,
+        "answerable": 500,
+        "right_text_in_prompt": 500,
+        "right_text_in_prompt_rate": 1.0
+      }
+    },
+    "mean_sections_in_prompt": 3.0,
+    "mean_prompt_characters": 1583,
+    "latency": {
+      "median_ms": 1.496,
+      "p95_ms": 1.66
+    },
+    "includes_model_inference": false,
+    "failures": [
+      {
+        "query_id": "scheme_0055_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Punjab and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_0054_rules",
+          "scheme_0054_application",
+          "scheme_0057_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1831,
+        "latency_ms": 1.0807078797370195,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_0255_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Haryana and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_0254_rules",
+          "scheme_0254_application",
+          "scheme_0257_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1847,
+        "latency_ms": 1.1012910399585962,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_0455_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Delhi and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_0454_rules",
+          "scheme_0454_application",
+          "scheme_0450_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1820,
+        "latency_ms": 1.0317079722881317,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_0555_described",
+        "condition": "described",
+        "question": "I am a porter from Delhi and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_0554_rules",
+          "scheme_0554_application",
+          "scheme_0558_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1701,
+        "latency_ms": 0.9929579682648182,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_0655_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Bihar and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_0654_rules",
+          "scheme_0654_application",
+          "scheme_0650_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1822,
+        "latency_ms": 1.029707957059145,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_0755_described",
+        "condition": "described",
+        "question": "I am a porter from Bihar and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_0754_rules",
+          "scheme_0754_application",
+          "scheme_0758_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1702,
+        "latency_ms": 0.9698329959064722,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_0855_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Maharashtra and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_0854_rules",
+          "scheme_0854_application",
+          "scheme_0857_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1914,
+        "latency_ms": 1.064250012859702,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1055_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Kerala and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1054_rules",
+          "scheme_1054_application",
+          "scheme_1050_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1839,
+        "latency_ms": 1.0578751098364592,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1155_described",
+        "condition": "described",
+        "question": "I am a porter from Kerala and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1154_rules",
+          "scheme_1154_application",
+          "scheme_1150_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1710,
+        "latency_ms": 1.0439578909426928,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1255_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Gujarat and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1254_rules",
+          "scheme_1254_application",
+          "scheme_1250_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1856,
+        "latency_ms": 1.0485420934855938,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1355_described",
+        "condition": "described",
+        "question": "I am a porter from Gujarat and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1354_rules",
+          "scheme_1354_application",
+          "scheme_1350_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1730,
+        "latency_ms": 1.0129581205546856,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1455_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Odisha and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1454_rules",
+          "scheme_1454_application",
+          "scheme_1457_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1831,
+        "latency_ms": 1.0623750276863575,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1555_described",
+        "condition": "described",
+        "question": "I am a porter from Odisha and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1554_rules",
+          "scheme_1554_application",
+          "scheme_1558_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1717,
+        "latency_ms": 1.0737499687820673,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1655_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Assam and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1654_rules",
+          "scheme_1654_application",
+          "scheme_1658_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1827,
+        "latency_ms": 1.0572499595582485,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1755_described",
+        "condition": "described",
+        "question": "I am a porter from Assam and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1754_rules",
+          "scheme_1754_application",
+          "scheme_1758_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1702,
+        "latency_ms": 0.9928750805556774,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1855_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Goa and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1854_rules",
+          "scheme_1854_application",
+          "scheme_1850_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1785,
+        "latency_ms": 1.0410828981548548,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_1955_described",
+        "condition": "described",
+        "question": "I am a porter from Goa and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_1954_rules",
+          "scheme_1954_application",
+          "scheme_1958_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1668,
+        "latency_ms": 1.072417013347149,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_2055_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Sikkim and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_2054_rules",
+          "scheme_2054_application",
+          "scheme_2050_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1839,
+        "latency_ms": 1.0342919267714024,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_2155_described",
+        "condition": "described",
+        "question": "I am a porter from Sikkim and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_2154_rules",
+          "scheme_2154_application",
+          "scheme_2158_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1719,
+        "latency_ms": 0.9785420261323452,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_2255_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Rajasthan and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_2254_rules",
+          "scheme_2254_application",
+          "scheme_2250_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1890,
+        "latency_ms": 1.052208011969924,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_2455_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Karnataka and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_2454_rules",
+          "scheme_2454_application",
+          "scheme_2450_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1890,
+        "latency_ms": 1.0457078460603952,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_2655_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Telangana and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_2654_rules",
+          "scheme_2654_application",
+          "scheme_2650_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1890,
+        "latency_ms": 1.0510419961065054,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_2855_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Jharkhand and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_2854_rules",
+          "scheme_2854_application",
+          "scheme_2857_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1881,
+        "latency_ms": 1.0603750124573708,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_3055_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Tripura and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_3054_rules",
+          "scheme_3054_application",
+          "scheme_3057_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1847,
+        "latency_ms": 1.0978749487549067,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_3255_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Manipur and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_3254_rules",
+          "scheme_3254_application",
+          "scheme_3250_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1855,
+        "latency_ms": 1.0429590474814177,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_3455_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Mizoram and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_3454_rules",
+          "scheme_3454_application",
+          "scheme_3450_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1856,
+        "latency_ms": 1.0173339396715164,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_3555_described",
+        "condition": "described",
+        "question": "I am a porter from Mizoram and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_3554_rules",
+          "scheme_3554_application",
+          "scheme_3558_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1734,
+        "latency_ms": 0.9862920269370079,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_3655_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Nagaland and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_3654_rules",
+          "scheme_3654_application",
+          "scheme_3650_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1873,
+        "latency_ms": 1.0299170389771461,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_3855_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Meghalaya and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_3854_rules",
+          "scheme_3854_application",
+          "scheme_3850_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1888,
+        "latency_ms": 1.0599999222904444,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_4055_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Uttarakhand and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_4054_rules",
+          "scheme_4054_application",
+          "scheme_4051_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1914,
+        "latency_ms": 1.0491658467799425,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_4255_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Chhattisgarh and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_4254_rules",
+          "scheme_4254_application",
+          "scheme_4257_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1932,
+        "latency_ms": 1.0681671556085348,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_4455_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Tamil Nadu and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_4454_rules",
+          "scheme_4454_application",
+          "scheme_4457_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1898,
+        "latency_ms": 1.0764999315142632,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_4555_described",
+        "condition": "described",
+        "question": "I am a porter from Tamil Nadu and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_4554_rules",
+          "scheme_4554_application",
+          "scheme_4551_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1769,
+        "latency_ms": 1.024666940793395,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_4655_described",
+        "condition": "described",
+        "question": "I am a domestic worker from West Bengal and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_4654_rules",
+          "scheme_4654_application",
+          "scheme_4651_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1913,
+        "latency_ms": 1.1275410652160645,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_4755_described",
+        "condition": "described",
+        "question": "I am a porter from West Bengal and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_4754_rules",
+          "scheme_4754_application",
+          "scheme_4751_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1788,
+        "latency_ms": 1.039625145494938,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_4855_described",
+        "condition": "described",
+        "question": "I am a domestic worker from Madhya Pradesh and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_4854_rules",
+          "scheme_4854_application",
+          "scheme_4851_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1963,
+        "latency_ms": 1.080209156498313,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "scheme_4955_described",
+        "condition": "described",
+        "question": "I am a porter from Madhya Pradesh and I need help with getting hurt at work. Can I get anything?",
+        "context_chunk_ids": [
+          "scheme_4954_rules",
+          "scheme_4954_application",
+          "scheme_4957_rules"
+        ],
+        "model_called": true,
+        "prompt_characters": 1841,
+        "latency_ms": 1.0228750761598349,
+        "expect_abstain": false,
+        "right_text_in_prompt": false
+      },
+      {
+        "query_id": "absent_0_0",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Weavers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4800_rules",
+          "scheme_4800_appeals",
+          "scheme_4800_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1555,
+        "latency_ms": 1.4490419998764992,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_1",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Fishers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4811_rules",
+          "scheme_4811_appeals",
+          "scheme_4811_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1536,
+        "latency_ms": 1.4342498034238815,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_2",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Street Vendors Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4822_rules",
+          "scheme_4822_appeals",
+          "scheme_4822_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1719,
+        "latency_ms": 1.5920421574264765,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_4",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Farm Labourers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4844_rules",
+          "scheme_4844_appeals",
+          "scheme_4844_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1543,
+        "latency_ms": 1.5302919782698154,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_5",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Domestic Workers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4855_rules",
+          "scheme_4855_appeals",
+          "scheme_4855_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.602417090907693,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_6",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Potters Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4866_rules",
+          "scheme_4866_appeals",
+          "scheme_4866_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1562,
+        "latency_ms": 1.425083028152585,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_7",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Carpenters Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4877_rules",
+          "scheme_4877_appeals",
+          "scheme_4877_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1577,
+        "latency_ms": 1.5177498571574688,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_8",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Tailors Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4888_rules",
+          "scheme_4888_appeals",
+          "scheme_4888_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1605,
+        "latency_ms": 1.5450830105692148,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_9",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Rickshaw Pullers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4899_rules",
+          "scheme_4899_appeals",
+          "scheme_4899_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1695,
+        "latency_ms": 1.56391691416502,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_10",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Brick Kiln Workers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4900_rules",
+          "scheme_4900_appeals",
+          "scheme_4900_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1698,
+        "latency_ms": 1.6032909043133259,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_11",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Salt Pan Workers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4911_rules",
+          "scheme_4911_appeals",
+          "scheme_4911_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1653,
+        "latency_ms": 1.5000831335783005,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_13",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Tea Garden Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4933_rules",
+          "scheme_4933_appeals",
+          "scheme_4933_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1700,
+        "latency_ms": 1.5893750824034214,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_14",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Sanitation Workers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4944_rules",
+          "scheme_4944_appeals",
+          "scheme_4944_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1595,
+        "latency_ms": 1.5231659635901451,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_15",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Porters Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4955_rules",
+          "scheme_4955_appeals",
+          "scheme_4955_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1588,
+        "latency_ms": 1.589583931490779,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_16",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Cobblers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4966_rules",
+          "scheme_4966_appeals",
+          "scheme_4966_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1575,
+        "latency_ms": 1.449416857212782,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_17",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Blacksmiths Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4977_rules",
+          "scheme_4977_appeals",
+          "scheme_4977_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1591,
+        "latency_ms": 1.4239589218050241,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_18",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Dairy Farmers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4988_rules",
+          "scheme_4988_appeals",
+          "scheme_4988_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1684,
+        "latency_ms": 1.5728750731796026,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_19",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Barbers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4999_rules",
+          "scheme_4999_appeals",
+          "scheme_4999_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1577,
+        "latency_ms": 1.4997920952737331,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_20",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Weavers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4800_rules",
+          "scheme_4800_appeals",
+          "scheme_4800_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1555,
+        "latency_ms": 1.4499160461127758,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_22",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Street Vendors Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4822_rules",
+          "scheme_4822_appeals",
+          "scheme_4822_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1719,
+        "latency_ms": 1.5688748098909855,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_23",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Construction Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4833_rules",
+          "scheme_4833_appeals",
+          "scheme_4833_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1726,
+        "latency_ms": 1.697625033557415,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_24",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Farm Labourers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4844_rules",
+          "scheme_4844_appeals",
+          "scheme_4844_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1543,
+        "latency_ms": 1.5356249641627073,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_25",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Domestic Workers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4855_rules",
+          "scheme_4855_appeals",
+          "scheme_4855_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.5843750443309546,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_26",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Potters Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4866_rules",
+          "scheme_4866_appeals",
+          "scheme_4866_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1562,
+        "latency_ms": 1.4467078726738691,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_27",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Carpenters Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4877_rules",
+          "scheme_4877_appeals",
+          "scheme_4877_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1577,
+        "latency_ms": 1.590958097949624,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_28",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Tailors Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4888_rules",
+          "scheme_4888_appeals",
+          "scheme_4888_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1605,
+        "latency_ms": 1.5502080786973238,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_29",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Rickshaw Pullers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4899_rules",
+          "scheme_4899_appeals",
+          "scheme_4899_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1695,
+        "latency_ms": 1.6089160926640034,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_31",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Salt Pan Workers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4911_rules",
+          "scheme_4911_appeals",
+          "scheme_4911_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1653,
+        "latency_ms": 1.4890420716255903,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_32",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Beedi Rollers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4922_rules",
+          "scheme_4922_appeals",
+          "scheme_4922_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.5284582041203976,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_33",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Tea Garden Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4933_rules",
+          "scheme_4933_appeals",
+          "scheme_4933_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1700,
+        "latency_ms": 1.6106669791042805,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_34",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Sanitation Workers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4944_rules",
+          "scheme_4944_appeals",
+          "scheme_4944_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1595,
+        "latency_ms": 1.5479580033570528,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_35",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Porters Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4955_rules",
+          "scheme_4955_appeals",
+          "scheme_4955_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1588,
+        "latency_ms": 1.4897910878062248,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_36",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Cobblers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4966_rules",
+          "scheme_4966_appeals",
+          "scheme_4966_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1575,
+        "latency_ms": 1.4133329968899488,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_37",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Blacksmiths Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4977_rules",
+          "scheme_4977_appeals",
+          "scheme_4977_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1591,
+        "latency_ms": 1.4159581623971462,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_38",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Dairy Farmers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4988_rules",
+          "scheme_4988_appeals",
+          "scheme_4988_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1684,
+        "latency_ms": 1.5664161182940006,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_39",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Barbers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4999_rules",
+          "scheme_4999_appeals",
+          "scheme_4999_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1577,
+        "latency_ms": 1.5804579015821218,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_40",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Weavers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4800_rules",
+          "scheme_4800_appeals",
+          "scheme_4800_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1555,
+        "latency_ms": 1.4448747970163822,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_41",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Fishers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4811_rules",
+          "scheme_4811_appeals",
+          "scheme_4811_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1536,
+        "latency_ms": 1.4455420896410942,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_42",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Street Vendors Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4822_rules",
+          "scheme_4822_appeals",
+          "scheme_4822_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1719,
+        "latency_ms": 1.5480408910661936,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_43",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Construction Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4833_rules",
+          "scheme_4833_appeals",
+          "scheme_4833_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1726,
+        "latency_ms": 1.6376669518649578,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_44",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Farm Labourers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4844_rules",
+          "scheme_4844_appeals",
+          "scheme_4844_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1543,
+        "latency_ms": 1.5262500382959843,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_45",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Domestic Workers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4855_rules",
+          "scheme_4855_appeals",
+          "scheme_4855_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.6353749670088291,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_46",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Potters Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4866_rules",
+          "scheme_4866_appeals",
+          "scheme_4866_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1562,
+        "latency_ms": 1.425999915227294,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_47",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Carpenters Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4877_rules",
+          "scheme_4877_appeals",
+          "scheme_4877_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1577,
+        "latency_ms": 1.4860418159514666,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_48",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Tailors Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4888_rules",
+          "scheme_4888_appeals",
+          "scheme_4888_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1605,
+        "latency_ms": 1.5259170904755592,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_50",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Brick Kiln Workers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4900_rules",
+          "scheme_4900_appeals",
+          "scheme_4900_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1698,
+        "latency_ms": 1.5900409780442715,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_51",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Salt Pan Workers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4911_rules",
+          "scheme_4911_appeals",
+          "scheme_4911_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1653,
+        "latency_ms": 1.5594579745084047,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_52",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Beedi Rollers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4922_rules",
+          "scheme_4922_appeals",
+          "scheme_4922_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.507124863564968,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_53",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Tea Garden Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4933_rules",
+          "scheme_4933_appeals",
+          "scheme_4933_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1700,
+        "latency_ms": 1.6417501028627157,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_54",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Sanitation Workers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4944_rules",
+          "scheme_4944_appeals",
+          "scheme_4944_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1595,
+        "latency_ms": 1.5419998671859503,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_55",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Porters Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4955_rules",
+          "scheme_4955_appeals",
+          "scheme_4955_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1588,
+        "latency_ms": 1.4712500851601362,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_56",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Cobblers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4966_rules",
+          "scheme_4966_appeals",
+          "scheme_4966_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1575,
+        "latency_ms": 1.4151670038700104,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_57",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Blacksmiths Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4977_rules",
+          "scheme_4977_appeals",
+          "scheme_4977_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1591,
+        "latency_ms": 1.4251249376684427,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_0_59",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Uttar Pradesh Barbers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4999_rules",
+          "scheme_4999_appeals",
+          "scheme_4999_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1577,
+        "latency_ms": 1.5242090448737144,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_0",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Carpenters Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4870_rules",
+          "scheme_4870_appeals",
+          "scheme_4870_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1596,
+        "latency_ms": 1.5220420900732279,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_1",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Tailors Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4881_rules",
+          "scheme_4881_appeals",
+          "scheme_4881_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1537,
+        "latency_ms": 1.3661659322679043,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_2",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Rickshaw Pullers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4892_rules",
+          "scheme_4892_appeals",
+          "scheme_4892_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1745,
+        "latency_ms": 1.5258339699357748,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_4",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Salt Pan Workers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4914_rules",
+          "scheme_4914_appeals",
+          "scheme_4914_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1571,
+        "latency_ms": 1.503499923273921,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_5",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Beedi Rollers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4925_rules",
+          "scheme_4925_appeals",
+          "scheme_4925_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1667,
+        "latency_ms": 1.5346670988947153,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_6",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Tea Garden Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4936_rules",
+          "scheme_4936_appeals",
+          "scheme_4936_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.512541901320219,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_7",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Sanitation Workers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4947_rules",
+          "scheme_4947_appeals",
+          "scheme_4947_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1682,
+        "latency_ms": 1.5450830105692148,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_8",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Porters Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4958_rules",
+          "scheme_4958_appeals",
+          "scheme_4958_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1606,
+        "latency_ms": 1.5068750362843275,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_9",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Cobblers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4969_rules",
+          "scheme_4969_appeals",
+          "scheme_4969_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1593,
+        "latency_ms": 1.4637920539826155,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_10",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Blacksmiths Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4970_rules",
+          "scheme_4970_appeals",
+          "scheme_4970_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1609,
+        "latency_ms": 1.5103749465197325,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_11",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Dairy Farmers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4981_rules",
+          "scheme_4981_appeals",
+          "scheme_4981_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1616,
+        "latency_ms": 1.4529170002788305,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_13",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Weavers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4803_rules",
+          "scheme_4803_appeals",
+          "scheme_4803_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1558,
+        "latency_ms": 1.4601671136915684,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_14",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Fishers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4814_rules",
+          "scheme_4814_appeals",
+          "scheme_4814_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1453,
+        "latency_ms": 1.3396660797297955,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_15",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Street Vendors Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4825_rules",
+          "scheme_4825_appeals",
+          "scheme_4825_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1680,
+        "latency_ms": 1.519917044788599,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_16",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Construction Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4836_rules",
+          "scheme_4836_appeals",
+          "scheme_4836_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1731,
+        "latency_ms": 1.6727910842746496,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_17",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Farm Labourers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4847_rules",
+          "scheme_4847_appeals",
+          "scheme_4847_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1629,
+        "latency_ms": 1.5276249032467604,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_18",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Domestic Workers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4858_rules",
+          "scheme_4858_appeals",
+          "scheme_4858_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1724,
+        "latency_ms": 1.550417160615325,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_19",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Potters Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4869_rules",
+          "scheme_4869_appeals",
+          "scheme_4869_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1580,
+        "latency_ms": 1.4331249985843897,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_20",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Carpenters Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4870_rules",
+          "scheme_4870_appeals",
+          "scheme_4870_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1596,
+        "latency_ms": 1.5162078198045492,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_22",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Rickshaw Pullers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4892_rules",
+          "scheme_4892_appeals",
+          "scheme_4892_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1745,
+        "latency_ms": 1.5326249413192272,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_23",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Brick Kiln Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4903_rules",
+          "scheme_4903_appeals",
+          "scheme_4903_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1701,
+        "latency_ms": 1.5873750671744347,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_24",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Salt Pan Workers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4914_rules",
+          "scheme_4914_appeals",
+          "scheme_4914_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1571,
+        "latency_ms": 1.41054205596447,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_25",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Beedi Rollers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4925_rules",
+          "scheme_4925_appeals",
+          "scheme_4925_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1667,
+        "latency_ms": 1.5592908021062613,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_26",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Tea Garden Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4936_rules",
+          "scheme_4936_appeals",
+          "scheme_4936_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.5363330021500587,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_27",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Sanitation Workers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4947_rules",
+          "scheme_4947_appeals",
+          "scheme_4947_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1682,
+        "latency_ms": 1.554250018671155,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_28",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Porters Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4958_rules",
+          "scheme_4958_appeals",
+          "scheme_4958_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1606,
+        "latency_ms": 1.5951250679790974,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_29",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Cobblers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4969_rules",
+          "scheme_4969_appeals",
+          "scheme_4969_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1593,
+        "latency_ms": 1.466916874051094,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_31",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Dairy Farmers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4981_rules",
+          "scheme_4981_appeals",
+          "scheme_4981_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1616,
+        "latency_ms": 1.4236671850085258,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_32",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Barbers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4992_rules",
+          "scheme_4992_appeals",
+          "scheme_4992_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1628,
+        "latency_ms": 1.4355001039803028,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_33",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Weavers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4803_rules",
+          "scheme_4803_appeals",
+          "scheme_4803_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1558,
+        "latency_ms": 1.4780829660594463,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_34",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Fishers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4814_rules",
+          "scheme_4814_appeals",
+          "scheme_4814_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1453,
+        "latency_ms": 1.3684588484466076,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_35",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Street Vendors Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4825_rules",
+          "scheme_4825_appeals",
+          "scheme_4825_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1680,
+        "latency_ms": 1.5254158060997725,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_36",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Construction Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4836_rules",
+          "scheme_4836_appeals",
+          "scheme_4836_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1731,
+        "latency_ms": 1.5957090072333813,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_37",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Farm Labourers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4847_rules",
+          "scheme_4847_appeals",
+          "scheme_4847_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1629,
+        "latency_ms": 1.5209591947495937,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_38",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Domestic Workers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4858_rules",
+          "scheme_4858_appeals",
+          "scheme_4858_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1724,
+        "latency_ms": 1.5353329945355654,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_39",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Potters Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4869_rules",
+          "scheme_4869_appeals",
+          "scheme_4869_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1580,
+        "latency_ms": 1.4211658854037523,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_40",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Carpenters Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4870_rules",
+          "scheme_4870_appeals",
+          "scheme_4870_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1596,
+        "latency_ms": 1.6081249341368675,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_41",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Tailors Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4881_rules",
+          "scheme_4881_appeals",
+          "scheme_4881_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1537,
+        "latency_ms": 1.372666098177433,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_42",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Rickshaw Pullers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4892_rules",
+          "scheme_4892_appeals",
+          "scheme_4892_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1745,
+        "latency_ms": 1.5315830241888762,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_43",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Brick Kiln Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4903_rules",
+          "scheme_4903_appeals",
+          "scheme_4903_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1701,
+        "latency_ms": 1.5786250587552786,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_44",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Salt Pan Workers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4914_rules",
+          "scheme_4914_appeals",
+          "scheme_4914_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1571,
+        "latency_ms": 1.4152498915791512,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_45",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Beedi Rollers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4925_rules",
+          "scheme_4925_appeals",
+          "scheme_4925_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1667,
+        "latency_ms": 1.5409579500555992,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_46",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Tea Garden Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4936_rules",
+          "scheme_4936_appeals",
+          "scheme_4936_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.5377909876406193,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_47",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Sanitation Workers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4947_rules",
+          "scheme_4947_appeals",
+          "scheme_4947_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1682,
+        "latency_ms": 1.603499986231327,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_48",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Porters Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4958_rules",
+          "scheme_4958_appeals",
+          "scheme_4958_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1606,
+        "latency_ms": 1.4877920038998127,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_50",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Blacksmiths Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4970_rules",
+          "scheme_4970_appeals",
+          "scheme_4970_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1609,
+        "latency_ms": 1.4815418981015682,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_51",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Dairy Farmers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4981_rules",
+          "scheme_4981_appeals",
+          "scheme_4981_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1616,
+        "latency_ms": 1.4152501244097948,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_52",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Barbers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4992_rules",
+          "scheme_4992_appeals",
+          "scheme_4992_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1628,
+        "latency_ms": 1.5082501340657473,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_53",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Weavers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4803_rules",
+          "scheme_4803_appeals",
+          "scheme_4803_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1558,
+        "latency_ms": 1.4546660240739584,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_54",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Fishers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4814_rules",
+          "scheme_4814_appeals",
+          "scheme_4814_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1453,
+        "latency_ms": 1.3367091305553913,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_55",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Street Vendors Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4825_rules",
+          "scheme_4825_appeals",
+          "scheme_4825_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1680,
+        "latency_ms": 1.5085830818861723,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_56",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Construction Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4836_rules",
+          "scheme_4836_appeals",
+          "scheme_4836_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1731,
+        "latency_ms": 1.565749989822507,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_57",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Farm Labourers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4847_rules",
+          "scheme_4847_appeals",
+          "scheme_4847_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1629,
+        "latency_ms": 1.5321671962738037,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_1_59",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Andhra Pradesh Potters Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4869_rules",
+          "scheme_4869_appeals",
+          "scheme_4869_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1580,
+        "latency_ms": 1.4143330045044422,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_0",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Sanitation Workers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4940_rules",
+          "scheme_4940_appeals",
+          "scheme_4940_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1701,
+        "latency_ms": 1.6214170027524233,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_1",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Porters Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4951_rules",
+          "scheme_4951_appeals",
+          "scheme_4951_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1539,
+        "latency_ms": 1.4218329451978207,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_2",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Cobblers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4962_rules",
+          "scheme_4962_appeals",
+          "scheme_4962_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1642,
+        "latency_ms": 1.5525829512625933,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_4",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Dairy Farmers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4984_rules",
+          "scheme_4984_appeals",
+          "scheme_4984_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1533,
+        "latency_ms": 1.3714591041207314,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_5",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Barbers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4995_rules",
+          "scheme_4995_appeals",
+          "scheme_4995_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1590,
+        "latency_ms": 1.528457971289754,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_6",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Weavers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4806_rules",
+          "scheme_4806_appeals",
+          "scheme_4806_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1565,
+        "latency_ms": 1.433291006833315,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_7",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Fishers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4817_rules",
+          "scheme_4817_appeals",
+          "scheme_4817_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1541,
+        "latency_ms": 1.4347911346703768,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_8",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Street Vendors Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4828_rules",
+          "scheme_4828_appeals",
+          "scheme_4828_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1700,
+        "latency_ms": 1.5621248167008162,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_9",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Construction Workers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4839_rules",
+          "scheme_4839_appeals",
+          "scheme_4839_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1750,
+        "latency_ms": 1.651667058467865,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_10",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Farm Labourers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4840_rules",
+          "scheme_4840_appeals",
+          "scheme_4840_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1649,
+        "latency_ms": 1.6480418853461742,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_11",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Domestic Workers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4851_rules",
+          "scheme_4851_appeals",
+          "scheme_4851_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1655,
+        "latency_ms": 1.560624921694398,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_13",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Carpenters Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4873_rules",
+          "scheme_4873_appeals",
+          "scheme_4873_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1600,
+        "latency_ms": 1.6064171213656664,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_14",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Tailors Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4884_rules",
+          "scheme_4884_appeals",
+          "scheme_4884_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1454,
+        "latency_ms": 1.3548750430345535,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_15",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Rickshaw Pullers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4895_rules",
+          "scheme_4895_appeals",
+          "scheme_4895_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1708,
+        "latency_ms": 1.51479197666049,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_16",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Brick Kiln Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4906_rules",
+          "scheme_4906_appeals",
+          "scheme_4906_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1707,
+        "latency_ms": 1.5671669971197844,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_17",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Salt Pan Workers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4917_rules",
+          "scheme_4917_appeals",
+          "scheme_4917_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1659,
+        "latency_ms": 1.5727919526398182,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_18",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Beedi Rollers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4928_rules",
+          "scheme_4928_appeals",
+          "scheme_4928_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1687,
+        "latency_ms": 1.5187500976026058,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_19",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Tea Garden Workers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4939_rules",
+          "scheme_4939_appeals",
+          "scheme_4939_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1724,
+        "latency_ms": 1.6409170348197222,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_20",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Sanitation Workers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4940_rules",
+          "scheme_4940_appeals",
+          "scheme_4940_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1701,
+        "latency_ms": 1.5921248123049736,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_22",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Cobblers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4962_rules",
+          "scheme_4962_appeals",
+          "scheme_4962_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1642,
+        "latency_ms": 1.508000073954463,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_23",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Blacksmiths Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4973_rules",
+          "scheme_4973_appeals",
+          "scheme_4973_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1613,
+        "latency_ms": 1.5289171133190393,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_24",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Dairy Farmers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4984_rules",
+          "scheme_4984_appeals",
+          "scheme_4984_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1533,
+        "latency_ms": 1.3644169084727764,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_25",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Barbers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4995_rules",
+          "scheme_4995_appeals",
+          "scheme_4995_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1590,
+        "latency_ms": 1.5475419349968433,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_26",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Weavers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4806_rules",
+          "scheme_4806_appeals",
+          "scheme_4806_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1565,
+        "latency_ms": 1.4303331263363361,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_27",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Fishers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4817_rules",
+          "scheme_4817_appeals",
+          "scheme_4817_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1541,
+        "latency_ms": 1.427292125299573,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_28",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Street Vendors Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4828_rules",
+          "scheme_4828_appeals",
+          "scheme_4828_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1700,
+        "latency_ms": 1.5556670259684324,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_29",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Construction Workers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4839_rules",
+          "scheme_4839_appeals",
+          "scheme_4839_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1750,
+        "latency_ms": 1.7480419483035803,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_31",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Domestic Workers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4851_rules",
+          "scheme_4851_appeals",
+          "scheme_4851_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1655,
+        "latency_ms": 1.5506248455494642,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_32",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Potters Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4862_rules",
+          "scheme_4862_appeals",
+          "scheme_4862_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1631,
+        "latency_ms": 1.534332986921072,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_33",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Carpenters Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4873_rules",
+          "scheme_4873_appeals",
+          "scheme_4873_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1600,
+        "latency_ms": 1.5685830730944872,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_34",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Tailors Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4884_rules",
+          "scheme_4884_appeals",
+          "scheme_4884_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1454,
+        "latency_ms": 1.3365421909838915,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_35",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Rickshaw Pullers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4895_rules",
+          "scheme_4895_appeals",
+          "scheme_4895_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1708,
+        "latency_ms": 1.5080419834703207,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_36",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Brick Kiln Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4906_rules",
+          "scheme_4906_appeals",
+          "scheme_4906_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1707,
+        "latency_ms": 1.5524160116910934,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_37",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Salt Pan Workers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4917_rules",
+          "scheme_4917_appeals",
+          "scheme_4917_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1659,
+        "latency_ms": 1.489749876782298,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_38",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Beedi Rollers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4928_rules",
+          "scheme_4928_appeals",
+          "scheme_4928_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1687,
+        "latency_ms": 1.4742091298103333,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_39",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Tea Garden Workers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4939_rules",
+          "scheme_4939_appeals",
+          "scheme_4939_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1724,
+        "latency_ms": 1.6630829777568579,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_40",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Sanitation Workers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4940_rules",
+          "scheme_4940_appeals",
+          "scheme_4940_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1701,
+        "latency_ms": 1.588874962180853,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_41",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Porters Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4951_rules",
+          "scheme_4951_appeals",
+          "scheme_4951_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1539,
+        "latency_ms": 1.5283750835806131,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_42",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Cobblers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4962_rules",
+          "scheme_4962_appeals",
+          "scheme_4962_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1642,
+        "latency_ms": 1.5157908201217651,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_43",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Blacksmiths Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4973_rules",
+          "scheme_4973_appeals",
+          "scheme_4973_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1613,
+        "latency_ms": 1.5109579544514418,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_44",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Dairy Farmers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4984_rules",
+          "scheme_4984_appeals",
+          "scheme_4984_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1533,
+        "latency_ms": 1.3625831343233585,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_45",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Barbers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4995_rules",
+          "scheme_4995_appeals",
+          "scheme_4995_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1590,
+        "latency_ms": 1.5100829768925905,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_46",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Weavers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4806_rules",
+          "scheme_4806_appeals",
+          "scheme_4806_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1565,
+        "latency_ms": 1.4551670756191015,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_47",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Fishers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4817_rules",
+          "scheme_4817_appeals",
+          "scheme_4817_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1541,
+        "latency_ms": 1.4167919289320707,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_48",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Street Vendors Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4828_rules",
+          "scheme_4828_appeals",
+          "scheme_4828_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1700,
+        "latency_ms": 1.608917023986578,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_50",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Farm Labourers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4840_rules",
+          "scheme_4840_appeals",
+          "scheme_4840_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1649,
+        "latency_ms": 1.5930000226944685,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_51",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Domestic Workers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4851_rules",
+          "scheme_4851_appeals",
+          "scheme_4851_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1655,
+        "latency_ms": 1.5412080101668835,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_52",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Potters Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4862_rules",
+          "scheme_4862_appeals",
+          "scheme_4862_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1631,
+        "latency_ms": 1.524625113233924,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_53",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Carpenters Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4873_rules",
+          "scheme_4873_appeals",
+          "scheme_4873_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1600,
+        "latency_ms": 1.6676669474691153,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_54",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Tailors Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4884_rules",
+          "scheme_4884_appeals",
+          "scheme_4884_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1454,
+        "latency_ms": 1.3534999452531338,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_55",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Rickshaw Pullers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4895_rules",
+          "scheme_4895_appeals",
+          "scheme_4895_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1708,
+        "latency_ms": 1.5087919309735298,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_56",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Brick Kiln Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4906_rules",
+          "scheme_4906_appeals",
+          "scheme_4906_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1707,
+        "latency_ms": 1.5619590412825346,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_57",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Salt Pan Workers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4917_rules",
+          "scheme_4917_appeals",
+          "scheme_4917_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1659,
+        "latency_ms": 1.45829189568758,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_2_59",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Himachal Pradesh Tea Garden Workers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4939_rules",
+          "scheme_4939_appeals",
+          "scheme_4939_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1724,
+        "latency_ms": 1.6513329464942217,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_0",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Fishers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4810_rules",
+          "scheme_4810_appeals",
+          "scheme_4810_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1559,
+        "latency_ms": 1.4762920327484608,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_1",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Street Vendors Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4821_rules",
+          "scheme_4821_appeals",
+          "scheme_4821_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1632,
+        "latency_ms": 1.4686249196529388,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_2",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Construction Workers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4832_rules",
+          "scheme_4832_appeals",
+          "scheme_4832_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1800,
+        "latency_ms": 1.6250410117208958,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_4",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Domestic Workers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4854_rules",
+          "scheme_4854_appeals",
+          "scheme_4854_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1572,
+        "latency_ms": 1.4845409896224737,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_5",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Potters Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4865_rules",
+          "scheme_4865_appeals",
+          "scheme_4865_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1593,
+        "latency_ms": 1.459375023841858,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_6",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Carpenters Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4876_rules",
+          "scheme_4876_appeals",
+          "scheme_4876_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1604,
+        "latency_ms": 1.6200831159949303,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_7",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Tailors Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4887_rules",
+          "scheme_4887_appeals",
+          "scheme_4887_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1541,
+        "latency_ms": 1.38562498614192,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_8",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Rickshaw Pullers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4898_rules",
+          "scheme_4898_appeals",
+          "scheme_4898_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1727,
+        "latency_ms": 1.5931250527501106,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_9",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Brick Kiln Workers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4909_rules",
+          "scheme_4909_appeals",
+          "scheme_4909_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1725,
+        "latency_ms": 1.6390830278396606,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_10",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Salt Pan Workers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4910_rules",
+          "scheme_4910_appeals",
+          "scheme_4910_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1676,
+        "latency_ms": 1.5042501036077738,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_11",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Beedi Rollers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4921_rules",
+          "scheme_4921_appeals",
+          "scheme_4921_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1618,
+        "latency_ms": 1.4144591987133026,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_13",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Sanitation Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4943_rules",
+          "scheme_4943_appeals",
+          "scheme_4943_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1704,
+        "latency_ms": 1.7418749630451202,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_14",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Porters Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4954_rules",
+          "scheme_4954_appeals",
+          "scheme_4954_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1456,
+        "latency_ms": 1.3750828802585602,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_15",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Cobblers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4965_rules",
+          "scheme_4965_appeals",
+          "scheme_4965_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1605,
+        "latency_ms": 1.448625000193715,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_16",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Blacksmiths Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4976_rules",
+          "scheme_4976_appeals",
+          "scheme_4976_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1618,
+        "latency_ms": 1.445583999156952,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_17",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Dairy Farmers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4987_rules",
+          "scheme_4987_appeals",
+          "scheme_4987_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1620,
+        "latency_ms": 1.4167078770697117,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_18",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Barbers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4998_rules",
+          "scheme_4998_appeals",
+          "scheme_4998_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1609,
+        "latency_ms": 1.6167080029845238,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_19",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Weavers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4809_rules",
+          "scheme_4809_appeals",
+          "scheme_4809_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1583,
+        "latency_ms": 1.5184578951448202,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_20",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Fishers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4810_rules",
+          "scheme_4810_appeals",
+          "scheme_4810_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1559,
+        "latency_ms": 1.512208953499794,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_22",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Construction Workers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4832_rules",
+          "scheme_4832_appeals",
+          "scheme_4832_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1800,
+        "latency_ms": 1.635666936635971,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_23",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Farm Labourers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4843_rules",
+          "scheme_4843_appeals",
+          "scheme_4843_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1652,
+        "latency_ms": 1.668458105996251,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_24",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Domestic Workers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4854_rules",
+          "scheme_4854_appeals",
+          "scheme_4854_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1572,
+        "latency_ms": 1.5052501112222672,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_25",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Potters Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4865_rules",
+          "scheme_4865_appeals",
+          "scheme_4865_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1593,
+        "latency_ms": 1.469041919335723,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_26",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Carpenters Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4876_rules",
+          "scheme_4876_appeals",
+          "scheme_4876_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1604,
+        "latency_ms": 1.5246670227497816,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_27",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Tailors Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4887_rules",
+          "scheme_4887_appeals",
+          "scheme_4887_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1541,
+        "latency_ms": 1.4039999805390835,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_28",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Rickshaw Pullers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4898_rules",
+          "scheme_4898_appeals",
+          "scheme_4898_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1727,
+        "latency_ms": 1.5847920440137386,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_29",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Brick Kiln Workers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4909_rules",
+          "scheme_4909_appeals",
+          "scheme_4909_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1725,
+        "latency_ms": 1.6388329677283764,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_31",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Beedi Rollers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4921_rules",
+          "scheme_4921_appeals",
+          "scheme_4921_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1618,
+        "latency_ms": 1.4894171617925167,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_32",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Tea Garden Workers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4932_rules",
+          "scheme_4932_appeals",
+          "scheme_4932_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1774,
+        "latency_ms": 1.6614170745015144,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_33",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Sanitation Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4943_rules",
+          "scheme_4943_appeals",
+          "scheme_4943_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1704,
+        "latency_ms": 1.6580841038376093,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_34",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Porters Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4954_rules",
+          "scheme_4954_appeals",
+          "scheme_4954_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1456,
+        "latency_ms": 1.3603339903056622,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_35",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Cobblers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4965_rules",
+          "scheme_4965_appeals",
+          "scheme_4965_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1605,
+        "latency_ms": 1.5070000663399696,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_36",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Blacksmiths Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4976_rules",
+          "scheme_4976_appeals",
+          "scheme_4976_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1618,
+        "latency_ms": 1.4403329696506262,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_37",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Dairy Farmers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4987_rules",
+          "scheme_4987_appeals",
+          "scheme_4987_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1620,
+        "latency_ms": 1.4239170122891665,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_38",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Barbers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4998_rules",
+          "scheme_4998_appeals",
+          "scheme_4998_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1609,
+        "latency_ms": 1.5387919265776873,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_39",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Weavers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4809_rules",
+          "scheme_4809_appeals",
+          "scheme_4809_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1583,
+        "latency_ms": 1.503082923591137,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_40",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Fishers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4810_rules",
+          "scheme_4810_appeals",
+          "scheme_4810_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1559,
+        "latency_ms": 1.4457500074058771,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_41",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Street Vendors Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4821_rules",
+          "scheme_4821_appeals",
+          "scheme_4821_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1632,
+        "latency_ms": 1.4479998499155045,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_42",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Construction Workers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4832_rules",
+          "scheme_4832_appeals",
+          "scheme_4832_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1800,
+        "latency_ms": 1.7088749445974827,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_43",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Farm Labourers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4843_rules",
+          "scheme_4843_appeals",
+          "scheme_4843_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1652,
+        "latency_ms": 1.633583102375269,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_44",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Domestic Workers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4854_rules",
+          "scheme_4854_appeals",
+          "scheme_4854_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1572,
+        "latency_ms": 1.4734170399606228,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_45",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Potters Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4865_rules",
+          "scheme_4865_appeals",
+          "scheme_4865_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1593,
+        "latency_ms": 1.4589999336749315,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_46",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Carpenters Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4876_rules",
+          "scheme_4876_appeals",
+          "scheme_4876_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1604,
+        "latency_ms": 1.5315830241888762,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_47",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Tailors Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4887_rules",
+          "scheme_4887_appeals",
+          "scheme_4887_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1541,
+        "latency_ms": 1.3799581211060286,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_48",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Rickshaw Pullers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_4898_rules",
+          "scheme_4898_appeals",
+          "scheme_4898_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1727,
+        "latency_ms": 1.6579169314354658,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_50",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Salt Pan Workers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_4910_rules",
+          "scheme_4910_appeals",
+          "scheme_4910_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1676,
+        "latency_ms": 1.5255410689860582,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_51",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Beedi Rollers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_4921_rules",
+          "scheme_4921_appeals",
+          "scheme_4921_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1618,
+        "latency_ms": 1.4107080642133951,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_52",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Tea Garden Workers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_4932_rules",
+          "scheme_4932_appeals",
+          "scheme_4932_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1774,
+        "latency_ms": 1.6445829533040524,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_53",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Sanitation Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_4943_rules",
+          "scheme_4943_appeals",
+          "scheme_4943_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1704,
+        "latency_ms": 1.692707883194089,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_54",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Porters Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_4954_rules",
+          "scheme_4954_appeals",
+          "scheme_4954_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1456,
+        "latency_ms": 1.3959999196231365,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_55",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Cobblers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4965_rules",
+          "scheme_4965_appeals",
+          "scheme_4965_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1605,
+        "latency_ms": 1.4436249621212482,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_56",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Blacksmiths Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_4976_rules",
+          "scheme_4976_appeals",
+          "scheme_4976_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1618,
+        "latency_ms": 1.4462501276284456,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_57",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Dairy Farmers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_4987_rules",
+          "scheme_4987_appeals",
+          "scheme_4987_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1620,
+        "latency_ms": 1.4207079075276852,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_3_59",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Arunachal Pradesh Weavers Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_4809_rules",
+          "scheme_4809_appeals",
+          "scheme_4809_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1583,
+        "latency_ms": 1.5062498860061169,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_0",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Tailors Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_1880_rules",
+          "scheme_1880_appeals",
+          "scheme_1880_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1383,
+        "latency_ms": 1.4017499051988125,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_1",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Rickshaw Pullers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_1891_rules",
+          "scheme_1891_appeals",
+          "scheme_1891_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1481,
+        "latency_ms": 1.4734999276697636,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_2",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Brick Kiln Workers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_1902_rules",
+          "scheme_1902_appeals",
+          "scheme_1902_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1599,
+        "latency_ms": 1.6666250303387642,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_4",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Beedi Rollers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_1924_rules",
+          "scheme_1924_appeals",
+          "scheme_1924_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1357,
+        "latency_ms": 1.3355840928852558,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_5",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Tea Garden Workers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1935_rules",
+          "scheme_1935_appeals",
+          "scheme_1935_application"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.6138751525431871,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_6",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Sanitation Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_1946_rules",
+          "scheme_1946_appeals",
+          "scheme_1946_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1533,
+        "latency_ms": 1.5810830518603325,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_7",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Porters Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_1957_rules",
+          "scheme_1957_appeals",
+          "scheme_1957_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1367,
+        "latency_ms": 1.4988339971750975,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_8",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Cobblers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_1968_rules",
+          "scheme_1968_appeals",
+          "scheme_1968_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1446,
+        "latency_ms": 1.5567501541227102,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_9",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Blacksmiths Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1979_rules",
+          "scheme_1979_appeals",
+          "scheme_1979_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1458,
+        "latency_ms": 1.5106659848242998,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_10",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Dairy Farmers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_1980_rules",
+          "scheme_1980_appeals",
+          "scheme_1980_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1461,
+        "latency_ms": 1.4451669994741678,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_11",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Barbers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_1991_rules",
+          "scheme_1991_appeals",
+          "scheme_1991_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1364,
+        "latency_ms": 1.4065839350223541,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_13",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Fishers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_1813_rules",
+          "scheme_1813_appeals",
+          "scheme_1813_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1384,
+        "latency_ms": 1.5232078731060028,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_14",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Street Vendors Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_1824_rules",
+          "scheme_1824_appeals",
+          "scheme_1824_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1371,
+        "latency_ms": 1.3784170150756836,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_15",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Construction Workers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1835_rules",
+          "scheme_1835_appeals",
+          "scheme_1835_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1585,
+        "latency_ms": 1.6282498836517334,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_16",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Farm Labourers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_1846_rules",
+          "scheme_1846_appeals",
+          "scheme_1846_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1481,
+        "latency_ms": 1.5501249581575394,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_17",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Domestic Workers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_1857_rules",
+          "scheme_1857_appeals",
+          "scheme_1857_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1482,
+        "latency_ms": 1.5101670287549496,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_18",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Potters Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_1868_rules",
+          "scheme_1868_appeals",
+          "scheme_1868_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1434,
+        "latency_ms": 1.5684159006923437,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_19",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Carpenters Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1879_rules",
+          "scheme_1879_appeals",
+          "scheme_1879_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1445,
+        "latency_ms": 1.6605420969426632,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_20",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Tailors Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_1880_rules",
+          "scheme_1880_appeals",
+          "scheme_1880_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1383,
+        "latency_ms": 1.4119590632617474,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_22",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Brick Kiln Workers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_1902_rules",
+          "scheme_1902_appeals",
+          "scheme_1902_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1599,
+        "latency_ms": 1.6690411139279604,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_23",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Salt Pan Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_1913_rules",
+          "scheme_1913_appeals",
+          "scheme_1913_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1502,
+        "latency_ms": 1.580874901264906,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_24",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Beedi Rollers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_1924_rules",
+          "scheme_1924_appeals",
+          "scheme_1924_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1357,
+        "latency_ms": 1.3343330938369036,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_25",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Tea Garden Workers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1935_rules",
+          "scheme_1935_appeals",
+          "scheme_1935_application"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.5875420067459345,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_26",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Sanitation Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_1946_rules",
+          "scheme_1946_appeals",
+          "scheme_1946_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1533,
+        "latency_ms": 1.5967919025570154,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_27",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Porters Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_1957_rules",
+          "scheme_1957_appeals",
+          "scheme_1957_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1367,
+        "latency_ms": 1.4201670419424772,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_28",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Cobblers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_1968_rules",
+          "scheme_1968_appeals",
+          "scheme_1968_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1446,
+        "latency_ms": 1.5491668600589037,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_29",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Blacksmiths Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1979_rules",
+          "scheme_1979_appeals",
+          "scheme_1979_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1458,
+        "latency_ms": 1.5069169458001852,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_31",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Barbers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_1991_rules",
+          "scheme_1991_appeals",
+          "scheme_1991_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1364,
+        "latency_ms": 1.372333150357008,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_32",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Weavers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_1802_rules",
+          "scheme_1802_appeals",
+          "scheme_1802_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1455,
+        "latency_ms": 1.6003751661628485,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_33",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Fishers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_1813_rules",
+          "scheme_1813_appeals",
+          "scheme_1813_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1384,
+        "latency_ms": 1.496375072747469,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_34",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Street Vendors Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_1824_rules",
+          "scheme_1824_appeals",
+          "scheme_1824_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1371,
+        "latency_ms": 1.443999819457531,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_35",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Construction Workers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1835_rules",
+          "scheme_1835_appeals",
+          "scheme_1835_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1585,
+        "latency_ms": 1.629540929570794,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_36",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Farm Labourers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_1846_rules",
+          "scheme_1846_appeals",
+          "scheme_1846_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1481,
+        "latency_ms": 1.556292176246643,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_37",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Domestic Workers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_1857_rules",
+          "scheme_1857_appeals",
+          "scheme_1857_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1482,
+        "latency_ms": 1.515667187049985,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_38",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Potters Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_1868_rules",
+          "scheme_1868_appeals",
+          "scheme_1868_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1434,
+        "latency_ms": 1.621832838281989,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_39",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Carpenters Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1879_rules",
+          "scheme_1879_appeals",
+          "scheme_1879_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1445,
+        "latency_ms": 1.5990829560905695,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_40",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Tailors Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_1880_rules",
+          "scheme_1880_appeals",
+          "scheme_1880_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1383,
+        "latency_ms": 1.410583034157753,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_41",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Rickshaw Pullers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_1891_rules",
+          "scheme_1891_appeals",
+          "scheme_1891_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1481,
+        "latency_ms": 1.471125055104494,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_42",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Brick Kiln Workers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_1902_rules",
+          "scheme_1902_appeals",
+          "scheme_1902_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1599,
+        "latency_ms": 1.6952499281615019,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_43",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Salt Pan Workers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_1913_rules",
+          "scheme_1913_appeals",
+          "scheme_1913_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1502,
+        "latency_ms": 1.617542002350092,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_44",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Beedi Rollers Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_1924_rules",
+          "scheme_1924_appeals",
+          "scheme_1924_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1357,
+        "latency_ms": 1.3301670551300049,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_45",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Tea Garden Workers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1935_rules",
+          "scheme_1935_appeals",
+          "scheme_1935_application"
+        ],
+        "model_called": true,
+        "prompt_characters": 1705,
+        "latency_ms": 1.5836670063436031,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_46",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Sanitation Workers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_1946_rules",
+          "scheme_1946_appeals",
+          "scheme_1946_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1533,
+        "latency_ms": 1.5799999237060547,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_47",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Porters Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_1957_rules",
+          "scheme_1957_appeals",
+          "scheme_1957_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1367,
+        "latency_ms": 1.4090000186115503,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_48",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Cobblers Working Capital Loan Scheme?",
+        "context_chunk_ids": [
+          "scheme_1968_rules",
+          "scheme_1968_appeals",
+          "scheme_1968_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1446,
+        "latency_ms": 1.5212500002235174,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_50",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Dairy Farmers Old Age Pension Scheme?",
+        "context_chunk_ids": [
+          "scheme_1980_rules",
+          "scheme_1980_appeals",
+          "scheme_1980_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1461,
+        "latency_ms": 1.476458040997386,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_51",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Barbers Housing Repair Scheme?",
+        "context_chunk_ids": [
+          "scheme_1991_rules",
+          "scheme_1991_appeals",
+          "scheme_1991_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1364,
+        "latency_ms": 1.3466659002006054,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_52",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Weavers Education Scholarship Scheme?",
+        "context_chunk_ids": [
+          "scheme_1802_rules",
+          "scheme_1802_appeals",
+          "scheme_1802_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1455,
+        "latency_ms": 1.5344999264925718,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_53",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Fishers Medical Treatment Scheme?",
+        "context_chunk_ids": [
+          "scheme_1813_rules",
+          "scheme_1813_appeals",
+          "scheme_1813_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1384,
+        "latency_ms": 1.4881249517202377,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_54",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Street Vendors Tool Kit Scheme?",
+        "context_chunk_ids": [
+          "scheme_1824_rules",
+          "scheme_1824_appeals",
+          "scheme_1824_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1371,
+        "latency_ms": 1.3663750141859055,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_55",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Construction Workers Accident Insurance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1835_rules",
+          "scheme_1835_appeals",
+          "scheme_1835_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1585,
+        "latency_ms": 1.6687088645994663,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_56",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Farm Labourers Maternity Support Scheme?",
+        "context_chunk_ids": [
+          "scheme_1846_rules",
+          "scheme_1846_appeals",
+          "scheme_1846_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1481,
+        "latency_ms": 1.5507498756051064,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_57",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Domestic Workers Skill Training Scheme?",
+        "context_chunk_ids": [
+          "scheme_1857_rules",
+          "scheme_1857_appeals",
+          "scheme_1857_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1482,
+        "latency_ms": 1.5211659483611584,
+        "expect_abstain": true
+      },
+      {
+        "query_id": "absent_4_59",
+        "condition": "absent",
+        "question": "What are the eligibility rules for the Ladakh Carpenters Funeral Assistance Scheme?",
+        "context_chunk_ids": [
+          "scheme_1879_rules",
+          "scheme_1879_appeals",
+          "scheme_1879_payment"
+        ],
+        "model_called": true,
+        "prompt_characters": 1445,
+        "latency_ms": 1.569791929796338,
+        "expect_abstain": true
+      }
+    ]
+  },
+  "plain_top_k": {
+    "corpus_sha256": "4980e9247df8ee781e80d4b0f97f49e2c91784af41003ef6fb8ff5074a0473da",
+    "chunks": 20000,
+    "method": "hybrid",
+    "top_k": 3,
+    "min_score": 0.3,
+    "rules_first": false,
+    "summary": {
+      "questions": 6290,
+      "answerable": 6000,
+      "right_text_in_prompt": 344,
+      "right_text_in_prompt_rate": 0.0573,
+      "unanswerable": 290,
+      "model_not_called": 20,
+      "model_not_called_rate": 0.069
+    },
+    "by_condition": {
+      "absent": {
+        "questions": 270,
+        "unanswerable": 270,
+        "model_not_called": 0,
+        "model_not_called_rate": 0.0
+      },
+      "described": {
+        "questions": 500,
+        "answerable": 500,
+        "right_text_in_prompt": 328,
+        "right_text_in_prompt_rate": 0.656
+      },
+      "documents": {
+        "questions": 500,
+        "answerable": 500,
+        "right_text_in_prompt": 0,
+        "right_text_in_prompt_rate": 0.0
+      },
+      "named": {
+        "questions": 4500,
+        "answerable": 4500,
+        "right_text_in_prompt": 0,
+        "right_text_in_prompt_rate": 0.0
+      },
+      "off_topic": {
+        "questions": 20,
+        "unanswerable": 20,
+        "model_not_called": 20,
+        "model_not_called_rate": 1.0
+      },
+      "typo": {
+        "questions": 500,
+        "answerable": 500,
+        "right_text_in_prompt": 16,
+        "right_text_in_prompt_rate": 0.032
+      }
+    },
+    "mean_sections_in_prompt": 3.0,
+    "mean_prompt_characters": 1524,
+    "latency": {
+      "median_ms": 1.493,
+      "p95_ms": 1.654
+    },
+    "includes_model_inference": false
+  }
+}

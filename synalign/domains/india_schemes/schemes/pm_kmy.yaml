@@ -1,0 +1,147 @@
+id: pm_kmy
+name: Pradhan Mantri Kisan Maan-Dhan Yojana
+short_name: PM-KMY
+names_hi:
+- प्रधानमंत्री किसान मानधन योजना
+- प्रधानमंत्री किसान मान-धन योजना
+aliases:
+- PM Kisan Maandhan Yojana
+- kisan maan dhan yojana
+- kisan mandhan yojana
+- PMKMY
+- kisan pension yojana
+- pm kisan pension yojana
+level: central
+state: ''
+ministry: Ministry of Agriculture & Farmers Welfare (Department of Agriculture & Farmers Welfare); pension fund managed by LIC
+category: pension
+summary: A voluntary pension plan for small and marginal farmers (land up to 2 hectares) who join between ages 18 and 40. The farmer pays Rs 55 to Rs 200 a month, the Central Government adds the same amount, and from age 60 the farmer gets a guaranteed pension of at least Rs 3,000 a month.
+sections:
+  eligibility:
+  - Small or marginal farmer who owns cultivable land of up to 2 hectares as per state or UT land records.
+  - Aged 18 to 40 years at the time of joining.
+  - Name must appear in the state or UT land records as on 01.08.2019.
+  - Both men and women farmers can join, in any state or union territory.
+  - Must agree to pay a monthly contribution of Rs 55 to Rs 200, depending on age at joining, until age 60.
+  exclusions:
+  - Farmers already covered by another statutory social security scheme such as NPS, ESIC or an EPFO scheme.
+  - Farmers who have joined PM Shram Yogi Maan-Dhan (PM-SYM) or PM Laghu Vyapari Maan-Dhan (PM-LVM).
+  - Institutional landholders, and present or former holders of constitutional posts, Union or State ministers, MPs, MLAs, MLCs, mayors of municipal corporations and district panchayat chairpersons.
+  - Serving or retired officers and employees of Central or State Government, PSUs and government autonomous bodies, and regular local body employees (Multi Tasking Staff, Class IV and Group D are not excluded).
+  - Anyone who paid income tax in the last assessment year.
+  - 'Practising professionals registered with a professional body: doctors, engineers, lawyers, chartered accountants and architects.'
+  benefits:
+  - From age 60, a guaranteed minimum pension of Rs 3,000 a month.
+  - The Central Government puts in a matching amount equal to the farmer's own contribution.
+  - Monthly contribution ranges from Rs 55 (joining at 18) to Rs 200 (joining at 40); for example Rs 100 if joining at 29.
+  - If the pensioner dies, the spouse gets a family pension of half the pension, i.e. Rs 1,500 a month, provided the spouse is not already a member.
+  - If the member dies before 60, the spouse can keep paying and continue the account, or take back the member's contributions with interest.
+  - Leaving within 10 years returns your own contributions with savings bank interest; leaving after 10 years but before 60 returns them with fund interest or savings bank interest, whichever is higher.
+  how_to_apply:
+  - Visit the nearest Common Service Centre (CSC); the village level entrepreneur registers you online and you pay the first contribution there. Registration is free.
+  - You can also enrol through the State or UT nodal officer for PM-KISAN, or online on the scheme portal (pmkmy.gov.in).
+  - Monthly contributions are auto-debited from your bank account; you may sign a mandate to pay them out of your PM-KISAN instalments instead.
+  - After enrolment you receive a PM-KMY pension card with a unique Pension Account Number.
+  documents:
+  - Aadhaar card.
+  - Bank passbook or bank account details (account number and IFSC).
+  - Mobile number for OTP verification (optional but advised).
+  - Date of birth and spouse and nominee details.
+rules:
+  age_min: 18
+  age_max: 40
+  gender: any
+facts:
+- key: monthly_pension
+  statement: PM-KMY pays a guaranteed minimum pension of Rs 3,000 a month after the farmer turns 60.
+  value: Rs 3,000
+  accept:
+  - '3000'
+  - 3,000
+  - Rs 3000
+  - ₹3,000
+  - teen hazar
+  question: How much monthly pension does PM Kisan Maandhan Yojana give?
+  question_hi: प्रधानमंत्री किसान मानधन योजना में हर महीने कितनी पेंशन मिलती है?
+  question_hi_latn: PM Kisan Maandhan Yojana me har mahine kitni pension milti hai?
+  source: 1
+  status: verified
+- key: max_entry_age
+  statement: The oldest age at which a farmer can join PM-KMY is 40 years.
+  value: '40'
+  accept:
+  - 40 years
+  - forty
+  - chalis
+  question: What is the maximum age to join PM Kisan Maandhan Yojana?
+  question_hi: किसान मानधन योजना में अधिकतम कितनी उम्र तक जुड़ सकते हैं?
+  question_hi_latn: Kisan Maandhan Yojana me kitni umar tak jud sakte hain?
+  source: 1
+  status: verified
+- key: pension_start_age
+  statement: The PM-KMY pension starts when the member reaches age 60.
+  value: '60'
+  accept:
+  - 60 years
+  - sixty
+  - saath
+  question: At what age does the PM Kisan Maandhan pension start?
+  question_hi: किसान मानधन योजना की पेंशन किस उम्र से मिलती है?
+  question_hi_latn: Kisan Maandhan Yojana ki pension kis umar se milti hai?
+  source: 1
+  status: verified
+- key: min_monthly_contribution
+  statement: The lowest monthly contribution in PM-KMY is Rs 55, for a farmer who joins at age 18.
+  value: Rs 55
+  accept:
+  - '55'
+  - ₹55
+  - Rs. 55
+  - pachpan rupaye
+  question: What is the lowest monthly contribution in PM Kisan Maandhan Yojana?
+  question_hi: किसान मानधन योजना में कम से कम कितना मासिक अंशदान देना होता है?
+  question_hi_latn: Kisan Maandhan Yojana me kam se kam har mahine kitna jama karna hota hai?
+  source: 1
+  status: verified
+- key: land_limit
+  statement: Only small and marginal farmers owning up to 2 hectares of cultivable land can join PM-KMY.
+  value: 2 hectares
+  accept:
+  - 2 hectare
+  - 2 ha
+  - two hectares
+  - do hectare
+  question: How much land can a farmer own and still join PM Kisan Maandhan Yojana?
+  question_hi: किसान मानधन योजना में शामिल होने के लिए किसान के पास अधिकतम कितनी ज़मीन होनी चाहिए?
+  question_hi_latn: Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chahiye?
+  source: 1
+  status: verified
+situations:
+- question: I am a 30-year-old farmer with about 3 acres of land. I want a fixed monthly pension when I am old. Is there a government plan for farmers like me?
+  language: en
+- question: मैं 25 साल का छोटा किसान हूँ। बुढ़ापे में हर महीने पेंशन पाने के लिए अभी से थोड़ा-थोड़ा पैसा जमा करने की कोई सरकारी योजना है क्या?
+  language: hi
+sources:
+- title: Pradhan Mantri Kisan Maan Dhan Yojana (PM-KMY) Operational Guidelines
+  url: https://fw.pmkisan.gov.in/Documents/PM-KMY%20-%20Operational%20Guidelines.pdf
+  publisher: Department of Agriculture & Farmers Welfare, Ministry of Agriculture & Farmers Welfare
+  accessed: '2026-10-03'
+- title: Five Successful Years of Pradhan Mantri Kisan Maandhan Yojana (PM-KMY), 9 September 2024
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/sep/doc202499390501.pdf
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: Department of Agriculture & Farmers Welfare Annual Report 2024-25 (English)
+  url: https://agriwelfare.gov.in/Documents/AR_Eng_2024_25.pdf
+  publisher: Department of Agriculture & Farmers Welfare, Ministry of Agriculture & Farmers Welfare
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is still open for enrolment. The 2024-25 Annual Report and the 2024 PIB backgrounder describe enrolment at CSCs, and the PIB note says 23.38 lakh farmers had joined by 6 August 2024. The land-record date of 01.08.2019 comes from the PIB backgrounder and the Annual Report, not from the operational guidelines. Farmers who got land after that date should check whether they qualify. The guidelines say the CSC charges Rs 30 for each enrolment and the Department pays it back, so the farmer pays only the first contribution. The exit rules (before and after 10 years) are taken from the PIB backgrounder. If a member later becomes ineligible, the government''s matching share stops, but the member may keep paying. pmkmy.gov.in failed a certificate check, so the guidelines were read from fw.pmkisan.gov.in.'
+  - 'Checker: Still open: the newest official page I could read is the DA&FW Annual Report 2024-25, published May 2025, which describes ongoing CSC enrolment. The PIB backgrounder is from Sept 2024. I found no closure notice. The English 2025-26 Annual Report exists but is over 10 MB and could not be fetched. Treat ''open'' as very likely but not confirmed on a 2026 page.'
+  - 'Checker: pmkmy.gov.in currently fails the certificate check: it presents a csccloud.in certificate. The chatbot should not send users to that URL as their main route. The CSC visit is the route confirmed officially.'
+  - 'Checker: The guidelines also say the CSC fee of Rs 30 is paid back to the CSC by DA&FW. The Annual Report 2024-25 says registration is completely free apart from the first contribution. The record agrees with this.'
+  - 'Checker: Minor: the record says contributions are monthly. The guidelines (para 6(ix)) also allow quarterly, 4-monthly or half-yearly payment.'
+  - 'Checker: Minor: the documents list says the mobile number is optional, while the Annual Report 2024-25 asks farmers to bring one for OTP. The guidelines list it as optional, so the record is acceptable.'

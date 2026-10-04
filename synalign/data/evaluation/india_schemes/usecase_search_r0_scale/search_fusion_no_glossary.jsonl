@@ -1,0 +1,178 @@
+{"query_id": "day_nrlm__apply_1", "group_id": "day_nrlm", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "day_nrlm__apply_2", "group_id": "day_nrlm", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "day_nrlm__documents_1", "group_id": "day_nrlm", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "day_nrlm__documents_2", "group_id": "day_nrlm", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "day_nrlm__benefits_1", "group_id": "day_nrlm", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "day_nrlm__benefits_2", "group_id": "day_nrlm", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "day_nrlm__exclusions_1", "group_id": "day_nrlm", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "day_nrlm__exclusions_2", "group_id": "day_nrlm", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "day_nrlm__apply_eligibility", "group_id": "day_nrlm", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "e_shram__apply_1", "group_id": "e_shram", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "e_shram__apply_2", "group_id": "e_shram", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "e_shram__documents_1", "group_id": "e_shram", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "e_shram__documents_2", "group_id": "e_shram", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "e_shram__benefits_1", "group_id": "e_shram", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "e_shram__benefits_2", "group_id": "e_shram", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "e_shram__exclusions_1", "group_id": "e_shram", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "e_shram__exclusions_2", "group_id": "e_shram", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "e_shram__apply_eligibility", "group_id": "e_shram", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "igndps__apply_1", "group_id": "igndps", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "igndps__apply_2", "group_id": "igndps", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "igndps__documents_1", "group_id": "igndps", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "igndps__documents_2", "group_id": "igndps", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "igndps__benefits_1", "group_id": "igndps", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "igndps__benefits_2", "group_id": "igndps", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "igndps__exclusions_1", "group_id": "igndps", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "igndps__exclusions_2", "group_id": "igndps", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "igndps__apply_eligibility", "group_id": "igndps", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "ignwps__apply_1", "group_id": "ignwps", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "ignwps__apply_2", "group_id": "ignwps", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "ignwps__documents_1", "group_id": "ignwps", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "ignwps__documents_2", "group_id": "ignwps", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "ignwps__benefits_1", "group_id": "ignwps", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "ignwps__benefits_2", "group_id": "ignwps", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "ignwps__exclusions_1", "group_id": "ignwps", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "ignwps__exclusions_2", "group_id": "ignwps", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "ignwps__apply_eligibility", "group_id": "ignwps", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "jssk__apply_1", "group_id": "jssk", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "jssk__apply_2", "group_id": "jssk", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "jssk__benefits_1", "group_id": "jssk", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "jssk__benefits_2", "group_id": "jssk", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "jssk__exclusions_1", "group_id": "jssk", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "jssk__exclusions_2", "group_id": "jssk", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "jssk__apply_eligibility", "group_id": "jssk", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nfsa_pmgkay__apply_1", "group_id": "nfsa_pmgkay", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nfsa_pmgkay__apply_2", "group_id": "nfsa_pmgkay", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nfsa_pmgkay__documents_1", "group_id": "nfsa_pmgkay", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nfsa_pmgkay__documents_2", "group_id": "nfsa_pmgkay", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nfsa_pmgkay__benefits_1", "group_id": "nfsa_pmgkay", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nfsa_pmgkay__benefits_2", "group_id": "nfsa_pmgkay", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "nfsa_pmgkay__exclusions_1", "group_id": "nfsa_pmgkay", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nfsa_pmgkay__exclusions_2", "group_id": "nfsa_pmgkay", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nfsa_pmgkay__apply_eligibility", "group_id": "nfsa_pmgkay", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nikshay_poshan__apply_1", "group_id": "nikshay_poshan", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nikshay_poshan__apply_2", "group_id": "nikshay_poshan", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nikshay_poshan__documents_1", "group_id": "nikshay_poshan", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nikshay_poshan__documents_2", "group_id": "nikshay_poshan", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "nikshay_poshan__benefits_1", "group_id": "nikshay_poshan", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "nikshay_poshan__benefits_2", "group_id": "nikshay_poshan", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nikshay_poshan__exclusions_1", "group_id": "nikshay_poshan", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nikshay_poshan__exclusions_2", "group_id": "nikshay_poshan", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nikshay_poshan__apply_eligibility", "group_id": "nikshay_poshan", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nmmss__apply_1", "group_id": "nmmss", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nmmss__apply_2", "group_id": "nmmss", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nmmss__documents_1", "group_id": "nmmss", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nmmss__documents_2", "group_id": "nmmss", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "nmmss__benefits_1", "group_id": "nmmss", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "nmmss__benefits_2", "group_id": "nmmss", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nmmss__exclusions_1", "group_id": "nmmss", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nmmss__exclusions_2", "group_id": "nmmss", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nmmss__apply_eligibility", "group_id": "nmmss", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nps_vatsalya__apply_1", "group_id": "nps_vatsalya", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nps_vatsalya__apply_2", "group_id": "nps_vatsalya", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nps_vatsalya__documents_1", "group_id": "nps_vatsalya", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nps_vatsalya__documents_2", "group_id": "nps_vatsalya", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nps_vatsalya__benefits_1", "group_id": "nps_vatsalya", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "nps_vatsalya__benefits_2", "group_id": "nps_vatsalya", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nps_vatsalya__exclusions_1", "group_id": "nps_vatsalya", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nps_vatsalya__exclusions_2", "group_id": "nps_vatsalya", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "nps_vatsalya__apply_eligibility", "group_id": "nps_vatsalya", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kisan__apply_1", "group_id": "pm_kisan", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kisan__apply_2", "group_id": "pm_kisan", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kisan__documents_1", "group_id": "pm_kisan", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kisan__documents_2", "group_id": "pm_kisan", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pm_kisan__benefits_1", "group_id": "pm_kisan", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pm_kisan__benefits_2", "group_id": "pm_kisan", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pm_kisan__exclusions_1", "group_id": "pm_kisan", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kisan__exclusions_2", "group_id": "pm_kisan", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kisan__apply_eligibility", "group_id": "pm_kisan", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kmy__apply_1", "group_id": "pm_kmy", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kmy__apply_2", "group_id": "pm_kmy", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kmy__documents_1", "group_id": "pm_kmy", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kmy__documents_2", "group_id": "pm_kmy", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kmy__benefits_1", "group_id": "pm_kmy", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pm_kmy__benefits_2", "group_id": "pm_kmy", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pm_kmy__exclusions_1", "group_id": "pm_kmy", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kmy__exclusions_2", "group_id": "pm_kmy", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_kmy__apply_eligibility", "group_id": "pm_kmy", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_svanidhi__apply_1", "group_id": "pm_svanidhi", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_svanidhi__apply_2", "group_id": "pm_svanidhi", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_svanidhi__documents_1", "group_id": "pm_svanidhi", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_svanidhi__documents_2", "group_id": "pm_svanidhi", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_svanidhi__benefits_1", "group_id": "pm_svanidhi", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_svanidhi__benefits_2", "group_id": "pm_svanidhi", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_svanidhi__exclusions_1", "group_id": "pm_svanidhi", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_svanidhi__exclusions_2", "group_id": "pm_svanidhi", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_svanidhi__apply_eligibility", "group_id": "pm_svanidhi", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_vidyalaxmi__apply_1", "group_id": "pm_vidyalaxmi", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_vidyalaxmi__apply_2", "group_id": "pm_vidyalaxmi", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_vidyalaxmi__documents_1", "group_id": "pm_vidyalaxmi", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_vidyalaxmi__documents_2", "group_id": "pm_vidyalaxmi", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_vidyalaxmi__benefits_1", "group_id": "pm_vidyalaxmi", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_vidyalaxmi__benefits_2", "group_id": "pm_vidyalaxmi", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_vidyalaxmi__exclusions_1", "group_id": "pm_vidyalaxmi", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_vidyalaxmi__exclusions_2", "group_id": "pm_vidyalaxmi", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_vidyalaxmi__apply_eligibility", "group_id": "pm_vidyalaxmi", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_yasasvi__apply_1", "group_id": "pm_yasasvi", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pm_yasasvi__apply_2", "group_id": "pm_yasasvi", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pm_yasasvi__documents_1", "group_id": "pm_yasasvi", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_yasasvi__documents_2", "group_id": "pm_yasasvi", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_yasasvi__benefits_1", "group_id": "pm_yasasvi", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pm_yasasvi__benefits_2", "group_id": "pm_yasasvi", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pm_yasasvi__exclusions_1", "group_id": "pm_yasasvi", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_yasasvi__exclusions_2", "group_id": "pm_yasasvi", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pm_yasasvi__apply_eligibility", "group_id": "pm_yasasvi", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pmay_g__apply_1", "group_id": "pmay_g", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmay_g__apply_2", "group_id": "pmay_g", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmay_g__documents_1", "group_id": "pmay_g", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmay_g__documents_2", "group_id": "pmay_g", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmay_g__benefits_1", "group_id": "pmay_g", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmay_g__benefits_2", "group_id": "pmay_g", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmay_g__exclusions_1", "group_id": "pmay_g", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmay_g__exclusions_2", "group_id": "pmay_g", "type": "exclusions", "language": "en", "scheme_hit1": 0.0, "scheme_hit3": 1.0, "scheme_mrr": 0.5, "answer_in_prompt": 1.0}
+{"query_id": "pmay_g__apply_eligibility", "group_id": "pmay_g", "type": "apply_eligibility", "language": "en", "scheme_hit1": 0.0, "scheme_hit3": 1.0, "scheme_mrr": 0.5, "answer_in_prompt": 0.0}
+{"query_id": "pmjdy__apply_1", "group_id": "pmjdy", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmjdy__apply_2", "group_id": "pmjdy", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmjdy__documents_1", "group_id": "pmjdy", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmjdy__documents_2", "group_id": "pmjdy", "type": "documents", "language": "en", "scheme_hit1": 0.0, "scheme_hit3": 1.0, "scheme_mrr": 0.3333333333333333, "answer_in_prompt": 0.0}
+{"query_id": "pmjdy__benefits_1", "group_id": "pmjdy", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmjdy__benefits_2", "group_id": "pmjdy", "type": "benefits", "language": "en", "scheme_hit1": 0.0, "scheme_hit3": 0.0, "scheme_mrr": 0.125, "answer_in_prompt": 0.0}
+{"query_id": "pmjdy__exclusions_1", "group_id": "pmjdy", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmjdy__exclusions_2", "group_id": "pmjdy", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmjdy__apply_eligibility", "group_id": "pmjdy", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmmvy__apply_1", "group_id": "pmmvy", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmmvy__apply_2", "group_id": "pmmvy", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmmvy__documents_1", "group_id": "pmmvy", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmmvy__documents_2", "group_id": "pmmvy", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmmvy__benefits_1", "group_id": "pmmvy", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmmvy__benefits_2", "group_id": "pmmvy", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmmvy__exclusions_1", "group_id": "pmmvy", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmmvy__exclusions_2", "group_id": "pmmvy", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmmvy__apply_eligibility", "group_id": "pmmvy", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmsby__apply_1", "group_id": "pmsby", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmsby__apply_2", "group_id": "pmsby", "type": "apply", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmsby__documents_1", "group_id": "pmsby", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmsby__documents_2", "group_id": "pmsby", "type": "documents", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmsby__benefits_1", "group_id": "pmsby", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 0.0}
+{"query_id": "pmsby__benefits_2", "group_id": "pmsby", "type": "benefits", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmsby__exclusions_1", "group_id": "pmsby", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmsby__exclusions_2", "group_id": "pmsby", "type": "exclusions", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "pmsby__apply_eligibility", "group_id": "pmsby", "type": "apply_eligibility", "language": "en", "scheme_hit1": 1.0, "scheme_hit3": 1.0, "scheme_mrr": 1.0, "answer_in_prompt": 1.0}
+{"query_id": "compare__day_nrlm__pm_svanidhi_1", "group_id": "compare__day_nrlm__pm_svanidhi", "type": "compare", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "compare__day_nrlm__pm_svanidhi_2", "group_id": "compare__day_nrlm__pm_svanidhi", "type": "compare", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "compare__nmmss__pm_vidyalaxmi_1", "group_id": "compare__nmmss__pm_vidyalaxmi", "type": "compare", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "compare__nmmss__pm_vidyalaxmi_2", "group_id": "compare__nmmss__pm_vidyalaxmi", "type": "compare", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "compare__jssk__nikshay_poshan_1", "group_id": "compare__jssk__nikshay_poshan", "type": "compare", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "compare__jssk__nikshay_poshan_2", "group_id": "compare__jssk__nikshay_poshan", "type": "compare", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "compare__igndps__ignwps_1", "group_id": "compare__igndps__ignwps", "type": "compare", "language": "en", "answer_in_prompt": 1.0}
+{"query_id": "compare__igndps__ignwps_2", "group_id": "compare__igndps__ignwps", "type": "compare", "language": "en", "answer_in_prompt": 1.0}
+{"query_id": "compare__nps_vatsalya__pm_kmy_1", "group_id": "compare__nps_vatsalya__pm_kmy", "type": "compare", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "compare__nps_vatsalya__pm_kmy_2", "group_id": "compare__nps_vatsalya__pm_kmy", "type": "compare", "language": "en", "answer_in_prompt": 1.0}
+{"query_id": "category__agriculture_1", "group_id": "category__agriculture", "type": "category", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "category__agriculture_2", "group_id": "category__agriculture", "type": "category", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "category__energy_1", "group_id": "category__energy", "type": "category", "language": "en", "answer_in_prompt": 1.0}
+{"query_id": "category__energy_2", "group_id": "category__energy", "type": "category", "language": "en", "answer_in_prompt": 1.0}
+{"query_id": "category__health_1", "group_id": "category__health", "type": "category", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "category__health_2", "group_id": "category__health", "type": "category", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "category__pension_1", "group_id": "category__pension", "type": "category", "language": "en", "answer_in_prompt": 0.0}
+{"query_id": "category__pension_2", "group_id": "category__pension", "type": "category", "language": "en", "answer_in_prompt": 0.0}

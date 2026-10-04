@@ -1,0 +1,675 @@
+{
+ "A gate>romanise>scheme": {
+  "final_state": [
+   "romanise"
+  ],
+  "rounds": [
+   {
+    "round": "gate",
+    "against": [],
+    "decision": "UNDO",
+    "fails": [
+     "scale: slice down ['type=situation']",
+     "scale: top_k [2] down",
+     "scale: CI lower bound -0.74 < 0",
+     "scale: SFT sanity set broken 1"
+    ],
+    "54": {
+     "net": 6,
+     "fixed": 6,
+     "broken": 0,
+     "in_prompt": "288/304",
+     "abstain": "9/12",
+     "ci95": [
+      0.33,
+      4.32
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 4,
+     "budget_k2_k5": {
+      "2": "251/304",
+      "5": "295/304"
+     },
+     "budget_down": [],
+     "sft_fixed": 0,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "jssk__free_diet_normal_delivery__hi",
+      "jssk__free_diet_caesarean__hi",
+      "nikshay_poshan__monthly_amount__hi",
+      "nikshay_poshan__payment_mode__hi",
+      "pm_kisan__situation_2",
+      "pmay_g__situation_2"
+     ],
+     "broken_ids": []
+    },
+    "scale": {
+     "net": 3,
+     "fixed": 4,
+     "broken": 1,
+     "in_prompt": "264/304",
+     "abstain": "5/12",
+     "ci95": [
+      -0.74,
+      3.5
+     ],
+     "slices_down": [
+      "type=situation"
+     ],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 3,
+     "budget_k2_k5": {
+      "2": "234/304",
+      "5": "277/304"
+     },
+     "budget_down": [
+      2
+     ],
+     "sft_fixed": 0,
+     "sft_broken": [
+      "प्रधानमंत्री गरीब कल्याण अन्न योजना के लिए कौन पात्र है?"
+     ],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+      "pm_kisan__annual_amount__hi",
+      "pm_kisan__instalment_amount__hi",
+      "pm_kisan__instalments_per_year__hi"
+     ],
+     "broken_ids": [
+      "ignwps__situation_2"
+     ]
+    }
+   },
+   {
+    "round": "romanise",
+    "against": [],
+    "decision": "KEEP",
+    "fails": [],
+    "54": {
+     "net": 5,
+     "fixed": 5,
+     "broken": 0,
+     "in_prompt": "287/304",
+     "abstain": "9/12",
+     "ci95": [
+      0.0,
+      3.85
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 3,
+     "budget_k2_k5": {
+      "2": "250/304",
+      "5": "295/304"
+     },
+     "budget_down": [],
+     "sft_fixed": 0,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "jssk__free_diet_normal_delivery__hi",
+      "jssk__free_diet_caesarean__hi",
+      "nikshay_poshan__monthly_amount__hi",
+      "nikshay_poshan__payment_mode__hi",
+      "pm_kisan__situation_2"
+     ],
+     "broken_ids": []
+    },
+    "scale": {
+     "net": 2,
+     "fixed": 2,
+     "broken": 0,
+     "in_prompt": "263/304",
+     "abstain": "5/12",
+     "ci95": [
+      0.0,
+      2.29
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 2,
+     "budget_k2_k5": {
+      "2": "235/304",
+      "5": "278/304"
+     },
+     "budget_down": [],
+     "sft_fixed": 0,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pm_kisan__instalment_amount__hi",
+      "pm_kisan__instalments_per_year__hi"
+     ],
+     "broken_ids": []
+    }
+   },
+   {
+    "round": "scheme_first",
+    "against": [
+     "romanise"
+    ],
+    "decision": "UNDO",
+    "fails": [
+     "54: top_k [5] down",
+     "54: SFT sanity set broken 2",
+     "scale: top_k [5] down"
+    ],
+    "54": {
+     "net": 1,
+     "fixed": 1,
+     "broken": 0,
+     "in_prompt": "288/304",
+     "abstain": "9/12",
+     "ci95": [
+      0.0,
+      1.24
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 0,
+     "budget_k2_k5": {
+      "2": "252/304",
+      "5": "294/304"
+     },
+     "budget_down": [
+      5
+     ],
+     "sft_fixed": 0,
+     "sft_broken": [
+      "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितना पैसा मिलता है?",
+      "मैं 4 साल का हूँ। क्या मुझे PMMVY मिल सकती है?"
+     ],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pmay_g__situation_2"
+     ],
+     "broken_ids": []
+    },
+    "scale": {
+     "net": 2,
+     "fixed": 2,
+     "broken": 0,
+     "in_prompt": "265/304",
+     "abstain": "5/12",
+     "ci95": [
+      0.0,
+      1.89
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 2,
+     "budget_k2_k5": {
+      "2": "236/304",
+      "5": "277/304"
+     },
+     "budget_down": [
+      5
+     ],
+     "sft_fixed": 1,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pm_kisan__situation_1",
+      "pmay_g__situation_1"
+     ],
+     "broken_ids": []
+    }
+   }
+  ]
+ },
+ "B romanise>gate>scheme": {
+  "final_state": [
+   "romanise"
+  ],
+  "rounds": [
+   {
+    "round": "romanise",
+    "against": [],
+    "decision": "KEEP",
+    "fails": [],
+    "54": {
+     "net": 5,
+     "fixed": 5,
+     "broken": 0,
+     "in_prompt": "287/304",
+     "abstain": "9/12",
+     "ci95": [
+      0.0,
+      3.85
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 3,
+     "budget_k2_k5": {
+      "2": "250/304",
+      "5": "295/304"
+     },
+     "budget_down": [],
+     "sft_fixed": 0,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "jssk__free_diet_normal_delivery__hi",
+      "jssk__free_diet_caesarean__hi",
+      "nikshay_poshan__monthly_amount__hi",
+      "nikshay_poshan__payment_mode__hi",
+      "pm_kisan__situation_2"
+     ],
+     "broken_ids": []
+    },
+    "scale": {
+     "net": 2,
+     "fixed": 2,
+     "broken": 0,
+     "in_prompt": "263/304",
+     "abstain": "5/12",
+     "ci95": [
+      0.0,
+      2.29
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 2,
+     "budget_k2_k5": {
+      "2": "235/304",
+      "5": "278/304"
+     },
+     "budget_down": [],
+     "sft_fixed": 0,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pm_kisan__instalment_amount__hi",
+      "pm_kisan__instalments_per_year__hi"
+     ],
+     "broken_ids": []
+    }
+   },
+   {
+    "round": "gate",
+    "against": [
+     "romanise"
+    ],
+    "decision": "UNDO",
+    "fails": [
+     "scale: slice down ['type=situation']",
+     "scale: top_k [2, 5] down",
+     "scale: CI lower bound -0.76 < 0",
+     "scale: SFT sanity set broken 1"
+    ],
+    "54": {
+     "net": 1,
+     "fixed": 1,
+     "broken": 0,
+     "in_prompt": "288/304",
+     "abstain": "9/12",
+     "ci95": [
+      0.0,
+      1.24
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 1,
+     "budget_k2_k5": {
+      "2": "251/304",
+      "5": "295/304"
+     },
+     "budget_down": [],
+     "sft_fixed": 0,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pmay_g__situation_2"
+     ],
+     "broken_ids": []
+    },
+    "scale": {
+     "net": 1,
+     "fixed": 2,
+     "broken": 1,
+     "in_prompt": "264/304",
+     "abstain": "5/12",
+     "ci95": [
+      -0.76,
+      1.46
+     ],
+     "slices_down": [
+      "type=situation"
+     ],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 1,
+     "budget_k2_k5": {
+      "2": "234/304",
+      "5": "277/304"
+     },
+     "budget_down": [
+      2,
+      5
+     ],
+     "sft_fixed": 0,
+     "sft_broken": [
+      "प्रधानमंत्री गरीब कल्याण अन्न योजना के लिए कौन पात्र है?"
+     ],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+      "pm_kisan__annual_amount__hi"
+     ],
+     "broken_ids": [
+      "ignwps__situation_2"
+     ]
+    }
+   },
+   {
+    "round": "scheme_first",
+    "against": [
+     "romanise"
+    ],
+    "decision": "UNDO",
+    "fails": [
+     "54: top_k [5] down",
+     "54: SFT sanity set broken 2",
+     "scale: top_k [5] down"
+    ],
+    "54": {
+     "net": 1,
+     "fixed": 1,
+     "broken": 0,
+     "in_prompt": "288/304",
+     "abstain": "9/12",
+     "ci95": [
+      0.0,
+      1.24
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 0,
+     "budget_k2_k5": {
+      "2": "252/304",
+      "5": "294/304"
+     },
+     "budget_down": [
+      5
+     ],
+     "sft_fixed": 0,
+     "sft_broken": [
+      "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितना पैसा मिलता है?",
+      "मैं 4 साल का हूँ। क्या मुझे PMMVY मिल सकती है?"
+     ],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pmay_g__situation_2"
+     ],
+     "broken_ids": []
+    },
+    "scale": {
+     "net": 2,
+     "fixed": 2,
+     "broken": 0,
+     "in_prompt": "265/304",
+     "abstain": "5/12",
+     "ci95": [
+      0.0,
+      1.89
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 2,
+     "budget_k2_k5": {
+      "2": "236/304",
+      "5": "277/304"
+     },
+     "budget_down": [
+      5
+     ],
+     "sft_fixed": 1,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pm_kisan__situation_1",
+      "pmay_g__situation_1"
+     ],
+     "broken_ids": []
+    }
+   }
+  ]
+ },
+ "C romanise>scheme>gate": {
+  "final_state": [
+   "romanise"
+  ],
+  "rounds": [
+   {
+    "round": "romanise",
+    "against": [],
+    "decision": "KEEP",
+    "fails": [],
+    "54": {
+     "net": 5,
+     "fixed": 5,
+     "broken": 0,
+     "in_prompt": "287/304",
+     "abstain": "9/12",
+     "ci95": [
+      0.0,
+      3.85
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 3,
+     "budget_k2_k5": {
+      "2": "250/304",
+      "5": "295/304"
+     },
+     "budget_down": [],
+     "sft_fixed": 0,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "jssk__free_diet_normal_delivery__hi",
+      "jssk__free_diet_caesarean__hi",
+      "nikshay_poshan__monthly_amount__hi",
+      "nikshay_poshan__payment_mode__hi",
+      "pm_kisan__situation_2"
+     ],
+     "broken_ids": []
+    },
+    "scale": {
+     "net": 2,
+     "fixed": 2,
+     "broken": 0,
+     "in_prompt": "263/304",
+     "abstain": "5/12",
+     "ci95": [
+      0.0,
+      2.29
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 2,
+     "budget_k2_k5": {
+      "2": "235/304",
+      "5": "278/304"
+     },
+     "budget_down": [],
+     "sft_fixed": 0,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pm_kisan__instalment_amount__hi",
+      "pm_kisan__instalments_per_year__hi"
+     ],
+     "broken_ids": []
+    }
+   },
+   {
+    "round": "scheme_first",
+    "against": [
+     "romanise"
+    ],
+    "decision": "UNDO",
+    "fails": [
+     "54: top_k [5] down",
+     "54: SFT sanity set broken 2",
+     "scale: top_k [5] down"
+    ],
+    "54": {
+     "net": 1,
+     "fixed": 1,
+     "broken": 0,
+     "in_prompt": "288/304",
+     "abstain": "9/12",
+     "ci95": [
+      0.0,
+      1.24
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 0,
+     "budget_k2_k5": {
+      "2": "252/304",
+      "5": "294/304"
+     },
+     "budget_down": [
+      5
+     ],
+     "sft_fixed": 0,
+     "sft_broken": [
+      "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितना पैसा मिलता है?",
+      "मैं 4 साल का हूँ। क्या मुझे PMMVY मिल सकती है?"
+     ],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pmay_g__situation_2"
+     ],
+     "broken_ids": []
+    },
+    "scale": {
+     "net": 2,
+     "fixed": 2,
+     "broken": 0,
+     "in_prompt": "265/304",
+     "abstain": "5/12",
+     "ci95": [
+      0.0,
+      1.89
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 2,
+     "budget_k2_k5": {
+      "2": "236/304",
+      "5": "277/304"
+     },
+     "budget_down": [
+      5
+     ],
+     "sft_fixed": 1,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pm_kisan__situation_1",
+      "pmay_g__situation_1"
+     ],
+     "broken_ids": []
+    }
+   },
+   {
+    "round": "gate",
+    "against": [
+     "romanise"
+    ],
+    "decision": "UNDO",
+    "fails": [
+     "scale: slice down ['type=situation']",
+     "scale: top_k [2, 5] down",
+     "scale: CI lower bound -0.76 < 0",
+     "scale: SFT sanity set broken 1"
+    ],
+    "54": {
+     "net": 1,
+     "fixed": 1,
+     "broken": 0,
+     "in_prompt": "288/304",
+     "abstain": "9/12",
+     "ci95": [
+      0.0,
+      1.24
+     ],
+     "slices_down": [],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 1,
+     "budget_k2_k5": {
+      "2": "251/304",
+      "5": "295/304"
+     },
+     "budget_down": [],
+     "sft_fixed": 0,
+     "sft_broken": [],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "pmay_g__situation_2"
+     ],
+     "broken_ids": []
+    },
+    "scale": {
+     "net": 1,
+     "fixed": 2,
+     "broken": 1,
+     "in_prompt": "264/304",
+     "abstain": "5/12",
+     "ci95": [
+      -0.76,
+      1.46
+     ],
+     "slices_down": [
+      "type=situation"
+     ],
+     "abstain_change": 0,
+     "answerable_refused_change": 0,
+     "gold_scheme_change": 1,
+     "budget_k2_k5": {
+      "2": "234/304",
+      "5": "277/304"
+     },
+     "budget_down": [
+      2,
+      5
+     ],
+     "sft_fixed": 0,
+     "sft_broken": [
+      "प्रधानमंत्री गरीब कल्याण अन्न योजना के लिए कौन पात्र है?"
+     ],
+     "sft_new_refused": 0,
+     "fixed_ids": [
+      "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+      "pm_kisan__annual_amount__hi"
+     ],
+     "broken_ids": [
+      "ignwps__situation_2"
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+# Scheme names are written by scripts/build_corpus.py into documents/entities.json
+# and merged in automatically; only what is not scheme-specific lives here.
+entities: {}
+
+fields:
+  age: ["age", "how old", "years old", "उम्र", "आयु"]
+  income: ["income", "earn", "salary", "wages", "आय", "कमाई"]
+
+# Promises no answer may make. Matched as whole phrases; an English negation just
+# before a phrase ("not guaranteed") cancels it. Hindi phrases are affirmative-only,
+# because Hindi puts the negation after the phrase.
+forbidden_claims:
+  guaranteed_approval:
+    patterns:
+      - "guaranteed approval"
+      - "approval is guaranteed"
+      - "approval is certain"
+      - "definitely be approved"
+      - "will definitely get"
+      - "will surely get"
+      - "100% approved"
+      - "पक्का मिलेगा"
+      - "ज़रूर मिलेगा"
+      - "निश्चित रूप से मिलेगा"
+  automatic_cash_benefit:
+    patterns:
+      - "automatically receive money"
+      - "you will receive money automatically"
+      - "instant cash"

@@ -1,0 +1,514 @@
+{
+  "questions_file": "/Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/domains/india_schemes/evaluation/questions.jsonl",
+  "questions_sha256": "b77812e2d673715e0ab8bd6a8b07ec070e207a45ef4ef1ab95324fcd5b37d943",
+  "split": "dev",
+  "min_score": 0.5,
+  "corpus": "/Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/domains/india_schemes/documents",
+  "top_k": 3,
+  "retrieval": {
+    "method": "fusion",
+    "top_k": 3,
+    "min_score": 0.5,
+    "fusion_weights": {
+      "bm25": 0.25,
+      "char": 0.25,
+      "dense": 1.0
+    },
+    "rrf_k": 20,
+    "fusion_depth": 50,
+    "rules_count_once": true
+  },
+  "search": {
+    "fusion": {
+      "build_seconds": 0.15,
+      "ms_per_question": 58.49,
+      "scheme_hit1": {
+        "all": {
+          "n": 304,
+          "rate": 0.9145,
+          "ci95": [
+            0.865,
+            0.9558
+          ]
+        },
+        "type=eligibility": {
+          "n": 52,
+          "rate": 0.9231,
+          "ci95": [
+            0.8124,
+            1.0
+          ]
+        },
+        "type=fact": {
+          "n": 162,
+          "rate": 0.9259,
+          "ci95": [
+            0.8666,
+            0.9758
+          ]
+        },
+        "type=situation": {
+          "n": 36,
+          "rate": 0.75,
+          "ci95": [
+            0.6111,
+            0.8889
+          ]
+        },
+        "type=typo": {
+          "n": 54,
+          "rate": 0.9815,
+          "ci95": [
+            0.9434,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 152,
+          "rate": 0.9671,
+          "ci95": [
+            0.9383,
+            0.9931
+          ]
+        },
+        "language=hi": {
+          "n": 92,
+          "rate": 0.8261,
+          "ci95": [
+            0.681,
+            0.9348
+          ]
+        },
+        "language=hi_latn": {
+          "n": 60,
+          "rate": 0.9167,
+          "ci95": [
+            0.8615,
+            0.9678
+          ]
+        }
+      },
+      "scheme_hit3": {
+        "all": {
+          "n": 304,
+          "rate": 0.9934,
+          "ci95": [
+            0.9841,
+            1.0
+          ]
+        },
+        "type=eligibility": {
+          "n": 52,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=fact": {
+          "n": 162,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=situation": {
+          "n": 36,
+          "rate": 0.9444,
+          "ci95": [
+            0.8611,
+            1.0
+          ]
+        },
+        "type=typo": {
+          "n": 54,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 152,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=hi": {
+          "n": 92,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=hi_latn": {
+          "n": 60,
+          "rate": 0.9667,
+          "ci95": [
+            0.9219,
+            1.0
+          ]
+        }
+      },
+      "scheme_mrr": {
+        "all": {
+          "n": 304,
+          "rate": 0.9523,
+          "ci95": [
+            0.9278,
+            0.9741
+          ]
+        },
+        "type=eligibility": {
+          "n": 52,
+          "rate": 0.9615,
+          "ci95": [
+            0.9062,
+            1.0
+          ]
+        },
+        "type=fact": {
+          "n": 162,
+          "rate": 0.963,
+          "ci95": [
+            0.9333,
+            0.9879
+          ]
+        },
+        "type=situation": {
+          "n": 36,
+          "rate": 0.8333,
+          "ci95": [
+            0.7406,
+            0.9213
+          ]
+        },
+        "type=typo": {
+          "n": 54,
+          "rate": 0.9907,
+          "ci95": [
+            0.9717,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 152,
+          "rate": 0.9836,
+          "ci95": [
+            0.9691,
+            0.9966
+          ]
+        },
+        "language=hi": {
+          "n": 92,
+          "rate": 0.9094,
+          "ci95": [
+            0.8333,
+            0.9655
+          ]
+        },
+        "language=hi_latn": {
+          "n": 60,
+          "rate": 0.9389,
+          "ci95": [
+            0.8942,
+            0.9784
+          ]
+        }
+      },
+      "answer_in_prompt": {
+        "all": {
+          "n": 304,
+          "rate": 0.9309,
+          "ci95": [
+            0.8929,
+            0.9645
+          ]
+        },
+        "type=eligibility": {
+          "n": 52,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=fact": {
+          "n": 162,
+          "rate": 0.9259,
+          "ci95": [
+            0.8654,
+            0.9763
+          ]
+        },
+        "type=situation": {
+          "n": 36,
+          "rate": 0.8056,
+          "ci95": [
+            0.6667,
+            0.9444
+          ]
+        },
+        "type=typo": {
+          "n": 54,
+          "rate": 0.963,
+          "ci95": [
+            0.9074,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 152,
+          "rate": 0.9737,
+          "ci95": [
+            0.9444,
+            1.0
+          ]
+        },
+        "language=hi": {
+          "n": 92,
+          "rate": 0.8804,
+          "ci95": [
+            0.7934,
+            0.9459
+          ]
+        },
+        "language=hi_latn": {
+          "n": 60,
+          "rate": 0.9,
+          "ci95": [
+            0.8304,
+            0.9655
+          ]
+        }
+      },
+      "abstained": {
+        "all": {
+          "n": 12,
+          "rate": 0.75,
+          "ci95": [
+            0.6,
+            1.0
+          ]
+        },
+        "type=absent": {
+          "n": 6,
+          "rate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "type=off_topic": {
+          "n": 6,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 8,
+          "rate": 0.625,
+          "ci95": [
+            0.25,
+            0.8781
+          ]
+        },
+        "language=hi": {
+          "n": 4,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "answers": {
+    "fusion": {
+      "correct": {
+        "all": {
+          "n": 316,
+          "rate": 0.8165,
+          "ci95": [
+            0.7725,
+            0.8536
+          ]
+        },
+        "type=absent": {
+          "n": 6,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=eligibility": {
+          "n": 52,
+          "rate": 0.7692,
+          "ci95": [
+            0.6346,
+            0.8966
+          ]
+        },
+        "type=fact": {
+          "n": 162,
+          "rate": 0.8333,
+          "ci95": [
+            0.7778,
+            0.8868
+          ]
+        },
+        "type=off_topic": {
+          "n": 6,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=situation": {
+          "n": 36,
+          "rate": 0.5556,
+          "ci95": [
+            0.3889,
+            0.75
+          ]
+        },
+        "type=typo": {
+          "n": 54,
+          "rate": 0.9444,
+          "ci95": [
+            0.8888,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 160,
+          "rate": 0.9,
+          "ci95": [
+            0.858,
+            0.9385
+          ]
+        },
+        "language=hi": {
+          "n": 96,
+          "rate": 0.7083,
+          "ci95": [
+            0.6296,
+            0.7903
+          ]
+        },
+        "language=hi_latn": {
+          "n": 60,
+          "rate": 0.7667,
+          "ci95": [
+            0.6612,
+            0.8657
+          ]
+        }
+      },
+      "unsafe_yes": {
+        "all": {
+          "n": 52,
+          "rate": 0.0769,
+          "ci95": [
+            0.02,
+            0.14
+          ]
+        },
+        "type=eligibility": {
+          "n": 52,
+          "rate": 0.0769,
+          "ci95": [
+            0.02,
+            0.14
+          ]
+        },
+        "language=en": {
+          "n": 26,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "language=hi": {
+          "n": 26,
+          "rate": 0.1538,
+          "ci95": [
+            0.04,
+            0.28
+          ]
+        }
+      },
+      "same_language": {
+        "all": {
+          "n": 243,
+          "rate": 0.9959,
+          "ci95": [
+            0.9879,
+            1.0
+          ]
+        },
+        "type=eligibility": {
+          "n": 51,
+          "rate": 0.9804,
+          "ci95": [
+            0.9423,
+            1.0
+          ]
+        },
+        "type=fact": {
+          "n": 108,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=situation": {
+          "n": 30,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=typo": {
+          "n": 54,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 152,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=hi": {
+          "n": 91,
+          "rate": 0.989,
+          "ci95": [
+            0.9674,
+            1.0
+          ]
+        }
+      },
+      "seconds_per_answer": 1.224
+    }
+  },
+  "paired": {},
+  "regraded": true
+}

@@ -1,0 +1,141 @@
+id: vb_g_ram_g
+name: Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin)
+short_name: VB-G RAM G
+names_hi:
+- विकसित भारत–जी राम जी
+aliases:
+- G RAM G
+- VB-GRAMG
+- MGNREGA
+- NREGA
+- manrega yojana
+- 125 din rozgar guarantee
+level: central
+state: ''
+ministry: Ministry of Rural Development
+category: skills_employment
+summary: Every rural household whose adult members ask for unskilled manual work has a legal guarantee of at least 125 days of paid work in each financial year. The guarantee came into force on 1 July 2026 and replaced MGNREGA, which was repealed the same day.
+sections:
+  eligibility:
+  - The household lives in a rural area. The guarantee applies in all rural areas of India from 1 July 2026.
+  - Work is given to adult members, meaning people who have completed 18 years of age.
+  - Adult members must be willing to do unskilled manual work.
+  - The household needs a Gramin Rozgar Guarantee Card. Existing MGNREGA job cards with completed e-KYC stay valid until the new cards are issued.
+  exclusions:
+  - Households in urban areas are not covered; the Act applies only to rural areas.
+  - Persons below 18 years of age cannot be given work under the scheme.
+  benefits:
+  - At least 125 days of wage employment per household in every financial year, up from 100 days under MGNREGA.
+  - 'Work must be given within 15 days of applying. If it is not, the State must pay an unemployment allowance: at least one-fourth of the notified wage rate for the first 30 days in the year, and at least one-half for the rest of the year.'
+  - Wages are paid weekly, and in any case within 15 days of the muster roll closing. They go straight into the worker's bank or post office account by DBT. If wages are late, the worker gets delay compensation of 0.05% of the unpaid wages for each day of delay.
+  - Work is given within 5 km of the applicant's village where possible. If it is farther away (but within the Block), an extra 10% of the wage rate is paid for travel and living costs.
+  - Worksites must have drinking water, shade and a first-aid kit. Injured workers get free treatment, and if hospitalised, a daily allowance of half the wage rate. If five or more children under five are present, a woman worker is paid to look after them.
+  - States may stop works for up to 60 days a year in peak sowing and harvesting seasons, but the full 125 days must still be given during the rest of the year.
+  how_to_apply:
+  - To get a Gramin Rozgar Guarantee Card, register the household at the Gram Panchayat. Any adult member gives the names, ages and address of the household members.
+  - Ask for work at the Gram Panchayat, with the Programme Officer or with any authorised person. You can ask orally, in writing on Form 6, or through digital platforms.
+  - You cannot be refused work only because your e-KYC is pending. e-KYC can be completed later, including at the worksite.
+  documents:
+  - Gramin Rozgar Guarantee Card (or an e-KYC-verified MGNREGA job card during the transition).
+  - Aadhaar, for e-KYC and face-authentication attendance at the worksite.
+  - Bank or post office account for wage payment.
+rules:
+  age_min: 18
+  gender: any
+facts:
+- key: days_guaranteed
+  statement: Each rural household is guaranteed at least 125 days of paid work in every financial year.
+  value: '125'
+  accept:
+  - 125 days
+  - one hundred twenty-five
+  - sava sau din
+  question: How many days of work are guaranteed in a year under VB-G RAM G?
+  question_hi: वीबी-जी राम जी योजना में साल में कितने दिन के काम की गारंटी है?
+  question_hi_latn: VB-G RAM G me saal me kitne din ke kaam ki guarantee hai?
+  source: 1
+  status: verified
+- key: work_within_days
+  statement: Work must be given within 15 days of applying, or an unemployment allowance becomes payable.
+  value: 15 days
+  accept:
+  - '15'
+  - fifteen days
+  - pandrah din
+  question: Within how many days must work be given after applying under VB-G RAM G?
+  question_hi: वीबी-जी राम जी में काम माँगने के कितने दिन के अंदर काम मिलना चाहिए?
+  question_hi_latn: VB-G RAM G me kaam maangne ke kitne din ke andar kaam milna chahiye?
+  source: 2
+  status: verified
+- key: delay_compensation
+  statement: If wages are late beyond 15 days, workers get 0.05% of the unpaid wages for each day of delay.
+  value: 0.05%
+  accept:
+  - 0.05 percent
+  - '0.05'
+  question: How much compensation do VB-G RAM G workers get if wages are paid late?
+  question_hi: वीबी-जी राम जी में मजदूरी देर से मिलने पर कितना मुआवज़ा मिलता है?
+  question_hi_latn: VB-G RAM G me mazdoori der se milne par kitna muavza milta hai?
+  source: 2
+  status: verified
+- key: work_distance
+  statement: Work is given within 5 km of the village where possible; beyond that, an extra 10% of the wage rate is paid.
+  value: 5 km
+  accept:
+  - 5 kilometres
+  - five km
+  - 5 kilometer
+  - '5'
+  question: How far from my village can VB-G RAM G work be given without extra allowance?
+  question_hi: वीबी-जी राम जी में गाँव से कितनी दूरी के अंदर काम दिया जाता है?
+  question_hi_latn: VB-G RAM G me gaon se kitni doori ke andar kaam diya jata hai?
+  source: 2
+  status: verified
+- key: start_date
+  statement: The VB-G RAM G Act came into force in all rural areas on 1 July 2026, the same day MGNREGA was repealed.
+  value: 1 July 2026
+  accept:
+  - 01/07/2026
+  - 1.7.2026
+  - July 2026
+  question: From when did VB-G RAM G replace MGNREGA?
+  question_hi: वीबी-जी राम जी ने मनरेगा की जगह कब से ली?
+  question_hi_latn: VB-G RAM G ne MGNREGA ki jagah kab se li?
+  source: 1
+  status: verified
+situations:
+- question: I live in a village and cannot find any work these days. Can the government give me guaranteed paid labour work near my village, and how many days a year?
+  language: en
+- question: मैं गाँव में रहता हूँ और मुझे मजदूरी का काम चाहिए। पहले मेरे पास मनरेगा जॉब कार्ड था, अब सरकार से पक्का काम कैसे मिलेगा?
+  language: hi
+sources:
+- title: 'Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin), 2025: VB-G RAM G Act, 2025 (PIB Backgrounder, 11 May 2026)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/may/doc2026511867601.pdf
+  publisher: Press Information Bureau, Government of India (Ministry of Rural Development)
+  accessed: '2026-10-03'
+- title: 'Viksit Bharat-G RAM G Act, 2025: Frequently Asked Questions (PIB Backgrounder, 11 May 2026)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/may/doc2026511867701.pdf
+  publisher: Press Information Bureau, Government of India (Ministry of Rural Development)
+  accessed: '2026-10-03'
+- title: 'Backgrounder: Viksit Bharat – Guarantee for Rozgar and Ajeevika Mission (Gramin): VB-G RAM G Bill, 2025'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc20251216733301.pdf
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: Jammu and Kashmir Viksit Bharat—Guarantee for Rozgar and Ajeevika Mission (Gramin) [VB-G RAM G] Scheme, 2026 (Notification, 24 June 2026)
+  url: https://law.jk.gov.in/download.php?id=6131
+  publisher: Department of Rural Development and Panchayati Raj, Government of Jammu and Kashmir
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The Act came into force in all rural areas on 1 July 2026, and MGNREGA was repealed from the same date. Ongoing MGNREGA works continue under the new Act. Each State must notify its own scheme within six months of commencement, so local procedures may differ by State. The definition of ''adult'' (completed 18 years) was taken from Section 2 as quoted in the Jammu and Kashmir scheme notification; the central Act text on indiacode.nic.in returned 403. Wage rates differ by State and are notified by the Central Government. Until new rates were notified, MGNREGA rates applied. A 30 June 2026 notification of new State-wise rates (reported elsewhere with a Rs 300 per day floor) could not be opened on an official page (egazette.gov.in failed its certificate check), so no wage amount is stated here. Funding is shared 60:40 between Centre and States (90:10 for North Eastern and Himalayan States; 100% central for UTs without a legislature). The 15-day wage-payment and delay-compensation
+    rules are as stated in the PIB backgrounder and FAQ; the exact day from which compensation starts is described there as beyond the sixteenth day after the muster roll closes.'
+  - 'Checker: The status_note mentions a Rs 300 per day wage floor ''reported elsewhere'', which is non-official reporting. It is rightly kept out of the facts, but it should be removed from the corpus so it cannot be retrieved. FAQ Q-19 says MGNREGA wage rates apply until new rates are notified under Section 10.'
+  - 'Checker: The aliases MGNREGA, NREGA and ''manrega yojana'' point to this scheme. That is fine for search, but every answer must say MGNREGA was repealed on 1 July 2026 and replaced by this Act. It should not be described as still running.'
+  - 'Checker: The age-18 definition comes from the J&K UT scheme notification, which says terms follow Section 2 of the Act. The central Act text was not opened.'
+  - 'Checker: The fact statement ''beyond 15 days'' simplifies the official wording, under which compensation runs for each day of delay beyond the 16th day after the muster roll closes.'
+  - 'Checker: Missing worker-facing point: during the State-notified peak-season pause of up to 60 days in total, no work is offered, so someone asking for work then may be told to wait.'
+  - 'Checker: Missing: ex-gratia for death or permanent disability at a worksite follows PMSBY provisions (PIB backgrounder, May 2026).'
+  - 'Checker: Local procedures and wage rates vary by State, because each State notifies its own scheme. The record says this only in status_note.'

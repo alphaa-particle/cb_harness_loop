@@ -1,0 +1,450 @@
+{
+  "questions_file": "/Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/domains/india_schemes/evaluation/usecase_questions.jsonl",
+  "questions_sha256": "7bfbe6d4e6d45c0d56e1f71ef1fe9c77e8f7bb1de4c4ff56bb368b360dc86846",
+  "split": "dev",
+  "min_score": 0.5,
+  "corpus": "/Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/domains/india_schemes/documents",
+  "top_k": 3,
+  "retrieval": {
+    "method": "fusion",
+    "top_k": 3,
+    "min_score": 0.5,
+    "fusion_weights": {
+      "bm25": 0.25,
+      "char": 0.25,
+      "dense": 1.0
+    },
+    "rrf_k": 20,
+    "fusion_depth": 50,
+    "add_named_schemes": true
+  },
+  "search": {
+    "fusion": {
+      "build_seconds": 0.18,
+      "ms_per_question": 45.44,
+      "scheme_hit1": {
+        "all": {
+          "n": 160,
+          "rate": 0.9938,
+          "ci95": [
+            0.981,
+            1.0
+          ]
+        },
+        "type=apply": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=apply_eligibility": {
+          "n": 18,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=benefits": {
+          "n": 36,
+          "rate": 0.9722,
+          "ci95": [
+            0.9167,
+            1.0
+          ]
+        },
+        "type=documents": {
+          "n": 34,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=exclusions": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 160,
+          "rate": 0.9938,
+          "ci95": [
+            0.981,
+            1.0
+          ]
+        }
+      },
+      "scheme_hit3": {
+        "all": {
+          "n": 160,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=apply": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=apply_eligibility": {
+          "n": 18,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=benefits": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=documents": {
+          "n": 34,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=exclusions": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 160,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "scheme_mrr": {
+        "all": {
+          "n": 160,
+          "rate": 0.9969,
+          "ci95": [
+            0.9905,
+            1.0
+          ]
+        },
+        "type=apply": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=apply_eligibility": {
+          "n": 18,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=benefits": {
+          "n": 36,
+          "rate": 0.9861,
+          "ci95": [
+            0.9583,
+            1.0
+          ]
+        },
+        "type=documents": {
+          "n": 34,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=exclusions": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 160,
+          "rate": 0.9969,
+          "ci95": [
+            0.9905,
+            1.0
+          ]
+        }
+      },
+      "answer_in_prompt": {
+        "all": {
+          "n": 178,
+          "rate": 0.8596,
+          "ci95": [
+            0.7933,
+            0.9236
+          ]
+        },
+        "type=apply": {
+          "n": 36,
+          "rate": 0.9167,
+          "ci95": [
+            0.7778,
+            1.0
+          ]
+        },
+        "type=apply_eligibility": {
+          "n": 18,
+          "rate": 0.8889,
+          "ci95": [
+            0.7222,
+            1.0
+          ]
+        },
+        "type=benefits": {
+          "n": 36,
+          "rate": 0.6389,
+          "ci95": [
+            0.4444,
+            0.8056
+          ]
+        },
+        "type=category": {
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=compare": {
+          "n": 10,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=documents": {
+          "n": 34,
+          "rate": 0.7941,
+          "ci95": [
+            0.6765,
+            0.9118
+          ]
+        },
+        "type=exclusions": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 178,
+          "rate": 0.8596,
+          "ci95": [
+            0.7933,
+            0.9236
+          ]
+        }
+      },
+      "abstained": {
+        "all": {
+          "n": 0,
+          "rate": null,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "answers": {
+    "fusion": {
+      "correct": {
+        "all": {
+          "n": 178,
+          "rate": 0.8596,
+          "ci95": [
+            0.8142,
+            0.9036
+          ]
+        },
+        "type=apply": {
+          "n": 36,
+          "rate": 0.9722,
+          "ci95": [
+            0.9167,
+            1.0
+          ]
+        },
+        "type=apply_eligibility": {
+          "n": 18,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=benefits": {
+          "n": 36,
+          "rate": 0.4722,
+          "ci95": [
+            0.3056,
+            0.6389
+          ]
+        },
+        "type=category": {
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=compare": {
+          "n": 10,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=documents": {
+          "n": 34,
+          "rate": 0.8529,
+          "ci95": [
+            0.7353,
+            0.9412
+          ]
+        },
+        "type=exclusions": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 178,
+          "rate": 0.8596,
+          "ci95": [
+            0.8142,
+            0.9036
+          ]
+        }
+      },
+      "unsafe_yes": {
+        "all": {
+          "n": 0,
+          "rate": null,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "same_language": {
+        "all": {
+          "n": 178,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=apply": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=apply_eligibility": {
+          "n": 18,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=benefits": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=category": {
+          "n": 8,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=compare": {
+          "n": 10,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=documents": {
+          "n": 34,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "type=exclusions": {
+          "n": 36,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "language=en": {
+          "n": 178,
+          "rate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "seconds_per_answer": 2.068
+    }
+  },
+  "paired": {},
+  "regraded": true
+}

@@ -1,0 +1,158 @@
+id: ddu_gky
+name: Deen Dayal Upadhyaya Grameen Kaushalya Yojana
+short_name: DDU-GKY
+names_hi: []
+aliases:
+- DDUGKY
+- DDU-GKY 2.0
+- deen dayal grameen kaushal yojana
+- gramin kaushalya yojana
+- Aajeevika Skills
+- दीन दयाल उपाध्याय ग्रामीण कौशल्य योजना
+level: central
+state: ''
+ministry: Ministry of Rural Development
+category: skills_employment
+summary: Free job-skill training linked to a job placement, for young people from poor rural families aged 15 to 35 (up to 45 for women and some special groups). Since 2025-26 the scheme runs under revised 'DDU-GKY 2.0' rules, so some amounts may have changed.
+sections:
+  eligibility:
+  - Must be a young person from a poor family living in a rural area.
+  - Aged 15 to 35 years.
+  - The upper age limit is 45 years for women, Particularly Vulnerable Tribal Groups (PVTGs), persons with disabilities, transgender persons and other special groups such as rescued bonded labourers, trafficking victims, manual scavengers and people living with HIV.
+  - 'The household''s poverty can be shown by any one of these: a BPL card, a BPL PDS or Antyodaya Anna Yojana (AAY) card, or an RSBY card.'
+  - Family members of a member of a registered Self Help Group (SHG) in the village are eligible.
+  - Families of MGNREGA workers who did at least 15 days of work in the last 12 months are eligible.
+  exclusions:
+  - Youth younger than 15, or older than 35 (older than 45 for women and special groups), cannot join.
+  - Youth whose household has none of the listed poverty proofs and has not been identified as poor through the village poverty identification process are not eligible.
+  benefits:
+  - 'Training is completely free: there are no fees for registration, training, exams, certification or placement.'
+  - Courses last 3 to 12 months (576 to 2,304 hours), including on-the-job training at a workplace.
+  - Free uniform, books and study material; free food and stay in residential courses.
+  - A government-recognised certificate after passing the final assessment (at least 70% marks needed).
+  - Help to get a job with regular monthly wages at or above minimum wages, and help to move to a new city if the job needs it.
+  - 'After placement, a monthly post-placement support amount is paid into the candidate''s bank account for some months (older rule: Rs 1,000 a month for 2 to 6 months; DDU-GKY 2.0 draft procedures: Rs 1,270 a month for 6 months).'
+  how_to_apply:
+  - Register as a candidate on the Ministry of Rural Development's Kaushal Panjee mobile app or website.
+  - Or contact your Gram Panchayat or Gram Rozgar Sevak, who can refer you to a nearby DDU-GKY training centre; you can also approach a training centre directly.
+  - The training centre counsels you and tests your aptitude before you are placed in a training batch.
+  documents:
+  - Proof of age and identity, such as a birth certificate.
+  - 'Any one household poverty proof: BPL card, BPL PDS or AAY card, RSBY card, MGNREGA job card showing at least 15 days of work in the last 12 months, or an NRLM Self Help Group certificate.'
+  - SC/ST certificate or disability certificate if joining under a reserved category; minority status by self-declaration.
+  - Training centres help candidates who do not have Aadhaar or a bank account in their own name to get them.
+rules:
+  age_min: 15
+  gender: any
+facts:
+- key: age_range_general
+  statement: DDU-GKY is for rural poor youth aged 15 to 35 years.
+  value: 15 to 35
+  accept:
+  - 15-35
+  - 15 to 35 years
+  - 15 se 35
+  question: What is the age limit to join DDU-GKY?
+  question_hi: दीन दयाल उपाध्याय ग्रामीण कौशल्य योजना (DDU-GKY) में किस उम्र के युवा शामिल हो सकते हैं?
+  question_hi_latn: DDU-GKY me kis umar ke yuva shamil ho sakte hain?
+  source: 1
+  status: verified
+- key: upper_age_women_special_groups
+  statement: Women and special groups such as PVTGs, persons with disabilities and transgender persons can join DDU-GKY up to age 45.
+  value: '45'
+  accept:
+  - 45 years
+  - 45 saal
+  - forty five
+  question: Up to what age can women join DDU-GKY training?
+  question_hi: DDU-GKY में महिलाएं कितनी उम्र तक ट्रेनिंग ले सकती हैं?
+  question_hi_latn: DDU-GKY me mahilayen kitni umar tak training le sakti hain?
+  source: 1
+  status: verified
+- key: training_fee
+  statement: Training under DDU-GKY is free; there are no fees for registration, exams, certification or placement.
+  value: free
+  accept:
+  - no fee
+  - no fees
+  - nil
+  - '0'
+  - zero
+  - muft
+  question: Do I have to pay any fee for training under DDU-GKY?
+  question_hi: क्या DDU-GKY की ट्रेनिंग के लिए कोई फीस देनी पड़ती है?
+  question_hi_latn: Kya DDU-GKY ki training ke liye koi fees deni padti hai?
+  source: 1
+  status: verified
+- key: course_duration
+  statement: DDU-GKY courses last 3 to 12 months.
+  value: 3 to 12 months
+  accept:
+  - 3-12 months
+  - three to twelve months
+  - 3, 6, 9 or 12 months
+  question: How long is the training course under DDU-GKY?
+  question_hi: DDU-GKY में ट्रेनिंग कितने महीने की होती है?
+  question_hi_latn: DDU-GKY me training kitne mahine ki hoti hai?
+  source: 1
+  status: verified
+- key: mgnrega_days
+  statement: A family member of an MGNREGA worker is eligible if the worker did at least 15 days of work in the last 12 months.
+  value: 15 days
+  accept:
+  - '15'
+  - fifteen days
+  - 15 din
+  question: How many days of MGNREGA work must my family have done for me to qualify for DDU-GKY?
+  question_hi: DDU-GKY के लिए परिवार में मनरेगा का कम से कम कितने दिन का काम होना चाहिए?
+  question_hi_latn: DDU-GKY ke liye parivar me MGNREGA ka kam se kam kitne din ka kaam hona chahiye?
+  source: 1
+  status: verified
+situations:
+- question: I am 22 and from a poor family in a village. I want free job training that leads to a proper salaried job. What government programme can I join?
+  language: en
+- question: मैं गांव की 38 साल की महिला हूं, घर में बीपीएल कार्ड है। क्या कोई सरकारी योजना है जिसमें मुफ्त ट्रेनिंग देकर नौकरी लगवाई जाती है?
+  language: hi
+sources:
+- title: 'Frequently Asked Questions (FAQs): Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY), 6 January 2022'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2022/jan/doc2022163601.pdf
+  publisher: Press Information Bureau (Research Unit), Government of India
+  accessed: '2026-10-03'
+- title: Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)
+  url: https://ukrd.uk.gov.in/?p=1017
+  publisher: Rural Development Department, Government of Uttarakhand
+  accessed: '2026-10-03'
+- title: Deen Dayal Upadhyay Grameen Kaushalya Yojana (DDUGKY)
+  url: https://nagarzp.gov.in/en/scheme/deen-dayal-upadhyay-grameen-kaushalya-yojana-ddugky/
+  publisher: Zilla Parishad Ahilyanagar, Government of Maharashtra
+  accessed: '2026-10-03'
+- title: Employment Schemes
+  url: https://eshram.gov.in/employment-schemes
+  publisher: e-Shram, Ministry of Labour and Employment
+  accessed: '2026-10-03'
+- title: Draft Standard Operating Procedures (SOP) for DDU-GKY 2.0 (June 2025)
+  url: https://cdnbbsr.s3waas.gov.in/s3e9412ee564384b987d086df32d4ce6b7/uploads/2025/06/20250625108042813.pdf
+  publisher: Ministry of Rural Development (hosted by Rural Development Department, Uttarakhand)
+  accessed: '2026-10-03'
+- title: EOI for Roshni projects under DDUGKY 2.0 (April 2026)
+  url: https://bihan.gov.in/pdf/Tender/EOI_Roshni_DDUGKY2.0.pdf
+  publisher: Chhattisgarh State Rural Livelihood Mission (Bihan)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is open. Eligibility and most benefit details come from PIB''s January 2022 FAQ, which follows the original guidelines. The Ministry has since brought in revised ''DDU-GKY 2.0'' guidelines (a draft SOP dated June 2025 is online), and states were inviting DDU-GKY 2.0 project proposals in 2026. The final 2.0 guidelines could not be opened, and ddugky.gov.in and kaushalpanjee.nic.in did not load. Under the 2.0 draft procedures, post-placement support is Rs 1,270 a month for 6 months. The older rule was Rs 1,000 a month for 2, 3 or 6 months, depending on whether the job is in the home district, the home state or outside it. A placement must also last at least 6 months, and minimum salaries are tied to state minimum wages. The older Rs 6,000 a month salary floor and the Rs 100 per training day meal and travel allowance for non-residential courses may no longer apply. Check the current amounts with your State Rural Livelihood Mission. Reserved shares (SC/ST, minorities,
+    women 33%, persons with disabilities) differ between documents and states. rules.age_max is set to 45, but that limit applies only to women and the listed special groups; for everyone else the upper limit is 35.'
+  - 'Checker: The core facts come from a January 2022 PIB FAQ based on the original guidelines. The final DDU-GKY 2.0 guidelines and SOP (which CGSRLM''s 2026 EOI says are on kaushal.rural.gov.in) could not be read. The opened 2.0 SOP is only a draft (June 2025), so the age range, allowances and PPS under 2.0 are not finally confirmed.'
+  - 'Checker: rules.age_max = 45 is unsafe as a flat rule. The general upper limit is 35, and 45 applies only to women and listed special groups.'
+  - 'Checker: The ''Kaushal Panjee'' application route may be out of date. DDU-GKY 2.0 runs on a new MoRD ''Unified IT Platform for DDUGKY and RSETI'' (kaushal.rural.gov.in). I could not confirm how candidates now register.'
+  - 'Checker: The summary claims the scheme has run under 2.0 rules ''since 2025-26'', but no official page confirms that date. Official evidence only shows a draft SOP (June 2025) and 2.0 project calls for FY 2026-28 (Chhattisgarh EOI, PAC meeting on 02.07.2026).'
+  - 'Checker: Reservation shares conflict between official pages. PIB FAQ: SC/ST 50%, minority 15%, women 33%, PwD 3%. Uttarakhand RD: SC 19%, ST 3%, minorities 10%, women 33%, PwD 5%. Do not state them as facts.'
+  - 'Checker: The Hindi name spelling is not verified against a central source, and a state SRLM uses ''दीनदयाल उपाध्याय-ग्रामीण कौशल योजना''.'
+  - 'Checker: Old minimum-salary figures (Rs 6,000/month; Rs 10,000/12,000 or minimum wage in 2.0 draft for captive employers) differ by version. The record rightly avoids giving one figure.'
+  - 'Checker: Still open: the Chhattisgarh SRLM held a DDU-GKY PAC meeting on 02.07.2026 and its 2.0 EOI requires training to start by 31.10.2026.'
+  - 'Rule age_max=45 removed: the checker read ''35 for general candidates; 45 only for women, PVTGs, PwDs, transgender persons and the listed special groups'' on https://static.pib.gov.in/WriteReadData/specificdocs/documents/2022/jan/doc2022163601.pdf.'
+  - Hindi name not confirmed on an official page; kept only as a search alias.
+  - '2026-10-03: the checker''s corrections above were applied to the statements; re-read the official page before relying on them.'

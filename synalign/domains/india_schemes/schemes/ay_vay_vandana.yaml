@@ -1,0 +1,143 @@
+id: ay_vay_vandana
+name: Ayushman Vay Vandana – AB PM-JAY for Senior Citizens aged 70 years and above
+short_name: Ayushman Vay Vandana
+names_hi:
+- आयुष्मान वय वंदना
+aliases:
+- Vay Vandana card
+- Ayushman card for 70 plus
+- PM-JAY 70+
+- vay vandana yojana
+- ayushman bharat senior citizen card
+level: central
+state: ''
+ministry: Ministry of Health and Family Welfare (implemented by the National Health Authority)
+category: health
+summary: Free hospital treatment cover of up to Rs 5 lakh a year for every person aged 70 or above, whatever their income. It is given through a separate Ayushman Vay Vandana card under AB PM-JAY. Families already in PM-JAY get it as an extra top-up for their members aged 70 or above.
+sections:
+  eligibility:
+  - Aged 70 years or above.
+  - 'There is no income limit: anyone aged 70 or above can join, whatever the family''s income or economic status.'
+  - Age is checked only from Aadhaar, and Aadhaar e-KYC is compulsory.
+  - If Aadhaar shows only the year of birth, the date of birth is taken as 1 January of the next year (for example, birth year 1954 is treated as 1 January 1955).
+  - Having a private health insurance policy does not stop you from joining.
+  - Members of the Employees' State Insurance (ESI) scheme can also join.
+  exclusions:
+  - People below 70 years cannot get this card, though they may qualify for regular PM-JAY.
+  - If you already get free treatment under CGHS, ECHS, CAPF or another central or state government health scheme, you must choose either that scheme or PM-JAY; the choice is one-time and final.
+  benefits:
+  - Free hospital treatment cover of up to Rs 5 lakh per year, shared by all members of the family aged 70 or above.
+  - If the family is already in PM-JAY, its members aged 70 or above get an extra top-up of up to Rs 5 lakh a year on top of the family's existing cover.
+  - In a family that is new to PM-JAY, the cover is only for members aged 70 or above, not for younger members.
+  - Each eligible senior gets a separate Ayushman card, even if the family already has PM-JAY cards.
+  - Treatment is cashless at PM-JAY empanelled hospitals across India, with the same benefits as regular PM-JAY.
+  how_to_apply:
+  - Apply yourself on the Ayushman app or at beneficiary.nha.gov.in, using Aadhaar e-KYC by OTP, fingerprint or iris scan.
+  - A registration operator (such as an ASHA worker or another authorised operator) can also do the enrolment for you.
+  - Enrolment is open throughout the year.
+  - Use the 'add member' option to enrol your spouse or another family member who is also 70 or above.
+  documents:
+  - Aadhaar card is the only document needed; Aadhaar e-KYC is compulsory.
+  - A live photo is taken during enrolment and printed on the card.
+rules:
+  age_min: 70
+  gender: any
+facts:
+- key: minimum_age
+  statement: You must be 70 years or older to get the Ayushman Vay Vandana card.
+  value: '70'
+  accept:
+  - 70 years
+  - 70 saal
+  - seventy
+  - 70+
+  question: From what age can I get the Ayushman Vay Vandana card?
+  question_hi: आयुष्मान वय वंदना कार्ड किस उम्र से बनता है?
+  question_hi_latn: Ayushman Vay Vandana card kis umar se banta hai?
+  source: 1
+  status: verified
+- key: cover_amount
+  statement: The Ayushman Vay Vandana cover is up to Rs 5 lakh per year, shared by the family's members aged 70 or above.
+  value: Rs 5 lakh
+  accept:
+  - 5 lakh
+  - '500000'
+  - 5,00,000
+  - ₹5 lakh
+  - paanch lakh
+  question: How much health cover does the Ayushman Vay Vandana card give?
+  question_hi: आयुष्मान वय वंदना कार्ड पर कितने रुपये तक का इलाज मुफ्त मिलता है?
+  question_hi_latn: Ayushman Vay Vandana card par kitne rupaye tak ka ilaj muft milta hai?
+  source: 1
+  status: verified
+- key: income_limit
+  statement: There is no income limit for the Ayushman Vay Vandana card.
+  value: no income limit
+  accept:
+  - none
+  - no limit
+  - koi aay seema nahi
+  - irrespective of income
+  question: Is there an income limit for the Ayushman Vay Vandana card for people above 70?
+  question_hi: क्या आयुष्मान वय वंदना कार्ड के लिए कोई आय सीमा है?
+  question_hi_latn: Kya Ayushman Vay Vandana card ke liye koi income limit hai?
+  source: 1
+  status: verified
+- key: document_needed
+  statement: Aadhaar is the only document needed for the Ayushman Vay Vandana card.
+  value: Aadhaar
+  accept:
+  - Aadhaar card
+  - aadhar
+  - आधार
+  question: Which document do I need to apply for the Ayushman Vay Vandana card?
+  question_hi: आयुष्मान वय वंदना कार्ड बनवाने के लिए कौन सा दस्तावेज़ चाहिए?
+  question_hi_latn: Ayushman Vay Vandana card banwane ke liye kaun sa document chahiye?
+  source: 1
+  status: verified
+- key: cghs_choice
+  statement: A senior covered by CGHS, ECHS, CAPF or a state government scheme must pick one scheme, and the choice is one-time and final.
+  value: one-time and final
+  accept:
+  - one time
+  - final
+  - cannot change
+  - sirf ek baar
+  question: I am a CGHS pensioner aged 72. If I choose Ayushman Vay Vandana instead of CGHS, can I change my choice later?
+  question_hi: मैं 72 साल का CGHS पेंशनभोगी हूं, अगर मैं CGHS की जगह आयुष्मान वय वंदना चुनूं तो क्या बाद में बदल सकता हूं?
+  question_hi_latn: Main 72 saal ka CGHS pensioner hoon, agar main CGHS ki jagah Ayushman Vay Vandana chunun to kya baad me badal sakta hoon?
+  source: 1
+  status: verified
+situations:
+- question: My mother is 74. We are not a BPL family, but her hospital bills keep rising. Is there any free government health cover she can get just because of her age?
+  language: en
+- question: मेरे पिताजी 71 साल के हैं और हमारी आमदनी ठीक-ठाक है, क्या उनके लिए सरकार की कोई मुफ्त इलाज वाली योजना है?
+  language: hi
+sources:
+- title: Guidelines on expansion of AB PM-JAY to Senior Citizens of 70 years and above
+  url: https://ayushmanbharat.mp.gov.in/uploads/media/Guidelines_on_expansion_of_AB_PMJAY_to_Senior_Citizens_of_70_years_and_above.pdf
+  publisher: National Health Authority (hosted by State Health Agency, Madhya Pradesh)
+  accessed: '2026-10-03'
+- title: Health coverage for senior citizens aged 70 years and above (Ayushman Vay Vandana)
+  url: https://ayushmanbharat.mp.gov.in/senior-citizen-70-scheme
+  publisher: State Health Agency (Ayushman Bharat Niramayam), Government of Madhya Pradesh
+  accessed: '2026-10-03'
+- title: FAQ on AB PM-JAY health coverage for senior citizens aged 70 years and above (Hindi)
+  url: https://ayushmanbharat.mp.gov.in/uploads/media/FAQ-1.pdf
+  publisher: State Health Agency (Ayushman Bharat Niramayam), Government of Madhya Pradesh
+  accessed: '2026-10-03'
+- title: AB PM-JAY Beneficiary Empowerment Guidebook (March 2019)
+  url: https://sha.uk.gov.in/ScannedDocs/WebSite/Uploads/BIS/beneficiary-empowerment-guidebook-2-8-2019.pdf
+  publisher: National Health Authority (hosted by State Health Authority, Uttarakhand)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is open. The Government approved this expansion of AB PM-JAY on 11 September 2024, and card enrolment began in late October 2024 (the official SOPs are dated 30 October 2024). Enrolment stays open all year. ''Ayushman Vay Vandana'' is the name of the card for this group; it is part of AB PM-JAY, not a separate insurance policy. The Rs 5 lakh is one amount per family, shared by everyone in the family aged 70 or above; it is not Rs 5 lakh per person. The November 2024 guidelines listed 3 States that were not running PM-JAY. Which states take part may have changed since then and was not checked, so seniors in those states should ask their state health agency. The NHA guidelines and FAQ were read from the Madhya Pradesh State Health Agency website, because the central NHA, PM-JAY and PIB pages could not be loaded.'
+  - 'Checker: State participation is a key condition, but it appears only in status_note and not in eligibility. Seniors in states or UTs that do not implement AB PM-JAY cannot get the card. The Nov 2024 guidelines show 3 such states, and the current list was not verified.'
+  - 'Checker: The benefits section leaves out the two-way top-up. In an existing family, if the seniors use the original Rs 5 lakh wallet, the other members get a top-up of up to Rs 5 lakh (guidelines sec. 5.1).'
+  - 'Checker: Self-registration in practice also needs a mobile number linked to Aadhaar for the OTP (MP SOP), or else fingerprint or iris authentication through an operator. The record''s ''Aadhaar is the only document'' is correct, but a user without an Aadhaar-linked mobile should be pointed to an operator or ASHA.'
+  - 'Checker: All the central NHA material I could read was hosted on the MP State Health Agency site, because pmjay.gov.in refused the connection. It is official, but no central NHA or PIB page was opened.'
+  - 'Checker: Still open: the guidelines say enrolment is continuous, and the MP SHA home page still lists 70+ coverage with card statistics dated July 2026.'

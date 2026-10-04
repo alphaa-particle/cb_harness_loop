@@ -1,0 +1,151 @@
+id: nfsa_pmgkay
+name: National Food Security Act, 2013 - Priority Households, with Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)
+short_name: NFSA / PMGKAY
+names_hi:
+- प्रधानमंत्री गरीब कल्याण अन्न योजना
+- राष्ट्रीय खाद्य सुरक्षा अधिनियम
+aliases:
+- PMGKAY
+- PM Garib Kalyan Anna Yojana
+- NFSA ration card
+- PHH ration card
+- muft ration yojana
+- khadya suraksha kanoon
+level: central
+state: ''
+ministry: Department of Food and Public Distribution, Ministry of Consumer Affairs, Food and Public Distribution
+category: food
+summary: Under the National Food Security Act, 2013, every member of a household that the state identifies as a Priority Household gets 5 kg of foodgrains a month from the ration shop. Under PMGKAY this grain is free of cost, and the Centre has continued it for five years from 1 January 2024. States decide which households qualify, within coverage limits of up to 75% of rural and 50% of urban people nationally.
+sections:
+  eligibility:
+  - The household must be identified by its State/UT government as a Priority Household (PHH) and hold an NFSA ration card.
+  - Each state sets its own criteria for priority households, so the rules differ from state to state.
+  - Nationally, up to 75% of the rural population and up to 50% of the urban population can be covered; each state has its own coverage percentage.
+  - The eldest woman of the household aged 18 years or more is named head of the household on the ration card; if there is no such woman, the eldest man is head until a female member turns 18.
+  - The Centre has told states to include eligible persons with disabilities, persons affected by leprosy and children born after 2011.
+  exclusions:
+  - Households not identified by the state as priority households or Antyodaya households are not covered.
+  - Total coverage in each state is fixed using Census 2011 figures; the ceiling can be raised only after data from the next census is published.
+  - Ineligible, fake or duplicate ration cards, and members who have died or migrated, are removed when states verify their lists.
+  benefits:
+  - Every member of a priority household is entitled to 5 kg of foodgrains (rice, wheat or coarse grains) per person per month.
+  - Under PMGKAY the grain is given free of cost, so there is nothing to pay at the ration shop.
+  - Free grain started on 1 January 2023, and the Centre decided to continue it for five years starting 1 January 2024.
+  - The prices fixed in the Act before free distribution were Rs 3 per kg for rice, Rs 2 per kg for wheat and Rs 1 per kg for coarse grains.
+  - Under One Nation One Ration Card, the grain can be taken from any ePoS-enabled ration shop in India.
+  - If the state does not supply the entitled grain, the person can claim a food security allowance from the state government.
+  how_to_apply:
+  - Apply for a ration card at the Food and Civil Supplies office of your State/UT; the central department does not issue ration cards.
+  - The state checks your household against its priority-household criteria and, if you qualify within its coverage limit, issues a PHH ration card.
+  - Collect grain at your fair price (ration) shop with your existing NFSA ration card; no separate card is needed for PMGKAY, and any household member can collect it.
+  - For complaints, use your state helpline or the District Grievance Redressal Officer, and appeal to the State Food Commission if needed. The department lists toll-free number 1967 and Anna Sahayata IVRS 14457.
+  documents:
+  - NFSA priority household (PHH) ration card to collect grain.
+  - Identity is checked at the ration shop by Aadhaar-based fingerprint or iris scan, or by Aadhaar OTP or PDS OTP.
+  - If Aadhaar authentication fails, or Aadhaar is missing or not linked, one of 8 alternative identity documents notified on 08.02.2017 can be used; genuine beneficiaries should not be refused grain.
+  - The documents needed for a new ration card are decided by your state government.
+rules:
+  gender: any
+facts:
+- key: grain_per_person
+  statement: Each member of a priority household gets 5 kg of foodgrains per month.
+  value: 5 kg
+  accept:
+  - '5'
+  - 5kg
+  - five kg
+  - 5 kilo
+  - 5 किलो
+  question: How much grain does each person get per month on an NFSA priority household ration card?
+  question_hi: राष्ट्रीय खाद्य सुरक्षा अधिनियम में प्राथमिकता वाले परिवार के हर सदस्य को महीने में कितना अनाज मिलता है?
+  question_hi_latn: NFSA ration card par har vyakti ko mahine me kitna anaj milta hai?
+  source: 1
+  status: unverified
+- key: cost_of_grain
+  statement: Under PMGKAY, NFSA grain is given free of cost.
+  value: free of cost
+  accept:
+  - free
+  - '0'
+  - Rs 0
+  - muft
+  - निःशुल्क
+  - मुफ्त
+  question: Do I have to pay for my ration under PM Garib Kalyan Anna Yojana?
+  question_hi: प्रधानमंत्री गरीब कल्याण अन्न योजना में राशन के लिए कितना पैसा देना पड़ता है?
+  question_hi_latn: PM Garib Kalyan Anna Yojana me ration ke liye kitne paise dene padte hain?
+  source: 2
+  status: unverified
+- key: pmgkay_duration
+  statement: Free grain under PMGKAY continues for five years starting 1 January 2024.
+  value: five years
+  accept:
+  - 5 years
+  - '5'
+  - paanch saal
+  - पांच साल
+  question: For how long will free ration continue under PMGKAY from January 2024?
+  question_hi: प्रधानमंत्री गरीब कल्याण अन्न योजना में 1 जनवरी 2024 से मुफ्त राशन कितने साल तक मिलेगा?
+  question_hi_latn: PMGKAY me January 2024 se muft ration kitne saal tak milega?
+  source: 2
+  status: unverified
+- key: ration_card_head_woman_age
+  statement: The eldest woman aged 18 years or more is the head of the household on the NFSA ration card.
+  value: '18'
+  accept:
+  - 18 years
+  - eighteen
+  - 18 saal
+  - 18 वर्ष
+  question: Under NFSA, what is the minimum age for a woman to be named head of the family on the ration card?
+  question_hi: राष्ट्रीय खाद्य सुरक्षा अधिनियम में राशन कार्ड पर परिवार की मुखिया बनने के लिए महिला की कम से कम उम्र कितनी होनी चाहिए?
+  question_hi_latn: NFSA me ration card par parivar ki mukhiya banne ke liye mahila ki umar kam se kam kitni honi chahiye?
+  source: 4
+  status: unverified
+- key: rural_coverage
+  statement: NFSA can cover up to 75% of the rural population (and up to 50% of the urban population).
+  value: 75%
+  accept:
+  - '75'
+  - 75 percent
+  - 75 pratishat
+  - 75 प्रतिशत
+  question: What share of the rural population can be covered under the National Food Security Act?
+  question_hi: राष्ट्रीय खाद्य सुरक्षा अधिनियम में गाँव की कितनी आबादी को राशन का लाभ मिल सकता है?
+  question_hi_latn: National Food Security Act me gaon ki kitni aabadi ko ration ka labh mil sakta hai?
+  source: 1
+  status: unverified
+situations:
+- language: en
+  question: We are a family of five living on daily wages and we have no ration card. How can each of us get free wheat or rice every month from the ration shop?
+- language: hi_latn
+  question: Hamare parivar me 6 log hain aur kamai bahut kam hai, kya har sadasya ke hisaab se ration dukaan se har mahine muft anaj mil sakta hai?
+sources:
+- title: Implementation of National Food Security Act (NFSA)
+  url: https://dfpd.gov.in/implementation-of-nfsa/en
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)
+  url: https://dfpd.gov.in/pradhan-mantri-garib-kalyan-anna-yojana/en
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+- title: FAQs (PMGKAY, NFSA, TPDS, One Nation One Ration Card)
+  url: https://dfpd.gov.in/faqs/en
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+- title: The National Food Security Act, 2013 (Gazette of India text)
+  url: https://dfpd.gov.in/WriteReadData/Other/nfsa_1.pdf
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+- title: प्रधानमंत्री गरीब कल्याण अन्न योजना (पीएमजीकेएवाई) - Hindi page
+  url: https://dfpd.gov.in/pradhan-mantri-garib-kalyan-anna-yojana/hi
+  publisher: Department of Food and Public Distribution, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Active. The PMGKAY page says free grain continues for five years from 1 January 2024. By calculation that runs to the end of December 2028, but the page does not state an end date. One section of the NFSA implementation page still describes free grain only for one year from 1 January 2023; the newer PMGKAY page replaces that. The PMGKAY that ran during COVID (April 2020 to December 2022) gave an extra 5 kg per person on top of the normal ration. That extra grain has ended; today''s PMGKAY makes the normal NFSA ration free. Coverage figures differ by date: about 81.35 crore is the maximum (Census 2011), 80.67 crore were covered as on 31.10.2024 (implementation page) and the FAQ gives 80.48 crore. Priority-household criteria, documents, how to apply and any extra items or top-ups are decided by each state, so answers on these must point to the state''s food department. Chandigarh, Puducherry and part of Dadra & Nagar Haveli pay the food subsidy as cash into bank accounts (DBT)
+    instead of giving grain. The Act also gives pregnant women and lactating mothers a maternity benefit of not less than Rs 6,000. It is delivered through a separate central scheme, not through the ration card, so it is not listed as a benefit here.'
+  - No independent check was returned for this scheme.

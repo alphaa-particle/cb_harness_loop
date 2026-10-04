@@ -1,0 +1,146 @@
+id: scss
+name: Senior Citizens' Savings Scheme
+short_name: SCSS
+names_hi:
+- वरिष्ठ नागरिक बचत योजना
+aliases:
+- Senior Citizen Savings Scheme
+- SCSS 2019
+- post office senior citizen scheme
+- varishth nagrik bachat yojana
+- senior citizen saving scheme post office
+level: central
+state: ''
+ministry: Ministry of Finance, Department of Economic Affairs (National Savings Institute); run through post offices and authorised banks
+category: financial_inclusion
+summary: A government-backed 5-year savings deposit that pays interest every quarter. It is for people aged 60 or above, some retirees from age 55, and retired defence personnel from age 50. You can deposit from Rs 1,000 up to Rs 30 lakh at a post office or an authorised bank branch.
+sections:
+  eligibility:
+  - Aged 60 years or above on the day the account is opened.
+  - 'Aged 55 or more but below 60 and retired (on superannuation or otherwise): you can open the account only within 3 months of receiving your retirement benefits, and you cannot deposit more than the retirement benefits you received.'
+  - Retired defence services personnel (not civilian defence employees) can open an account from age 50, if they meet the other conditions.
+  - The account can be in your name alone or joint with your spouse only. In a joint account only the first holder's age counts, and the whole deposit belongs to the first holder.
+  - You may hold more than one SCSS account, but the total deposit across all of them must not exceed Rs 30 lakh. A husband and wife who are each eligible can each deposit up to Rs 30 lakh.
+  exclusions:
+  - NRIs are not allowed to invest in national small savings schemes such as SCSS.
+  - People below 55 cannot open an account, except retired defence personnel aged 50 or more, and the spouse of a government employee who died in service after reaching 50.
+  - People aged 55 to 59 who have not retired cannot open an account.
+  - The legal heir of an employee who died while still in service cannot deposit that employee's terminal benefits in SCSS.
+  benefits:
+  - Make one lump-sum deposit of at least Rs 1,000, in multiples of Rs 1,000, up to Rs 30 lakh.
+  - Interest is paid every quarter, on the first working day of April, July, October and January. It can be credited straight to your savings account.
+  - The deposit matures after 5 years. You can extend it for another 3 years by applying within 1 year of maturity.
+  - The deposit qualifies for an income tax deduction under Section 80C.
+  - You can close the account early. Before 1 year, any interest already paid is taken back. Between 1 and 2 years, 1.5% of the deposit is deducted. After 2 years, 1% is deducted. An extended account can be closed without deduction after 1 year of extension.
+  - If the account holder dies, the deposit with interest goes to the nominee or legal heirs. A spouse who is the joint holder or sole nominee, and who is eligible, can continue the account.
+  how_to_apply:
+  - Open the account at any post office or at a bank branch designated for SCSS.
+  - Fill in the account opening form (Form-1) and make the deposit in one go.
+  - Interest rates are set by the Ministry of Finance every quarter, so ask the post office or bank for the rate in force on the day you deposit.
+  documents:
+  - 'Retirees aged 55 to 60, and defence retirees from 50: proof of the date the retirement benefits were paid, and a certificate from the employer giving details of the retirement, the benefits, and the post and period of employment.'
+rules:
+  age_min: 50
+  gender: any
+facts:
+- key: maximum_deposit
+  statement: The total deposit in SCSS cannot exceed Rs 30 lakh.
+  value: Rs 30 lakh
+  accept:
+  - 30 lakh
+  - '3000000'
+  - 30,00,000
+  - 30 lakh rupees
+  - ₹30 lakh
+  question: What is the maximum amount I can deposit in the Senior Citizens Savings Scheme?
+  question_hi: सीनियर सिटीजन सेविंग्स स्कीम में ज़्यादा से ज़्यादा कितना पैसा जमा कर सकते हैं?
+  question_hi_latn: Senior Citizen Savings Scheme me zyada se zyada kitna paisa jama kar sakte hain?
+  source: 1
+  status: verified
+- key: general_minimum_age
+  statement: Anyone aged 60 or above can open an SCSS account; early retirees can join from 55, and retired defence personnel from 50.
+  value: '60'
+  accept:
+  - 60 years
+  - sixty
+  - 60 saal
+  question: What is the minimum age to open a Senior Citizens Savings Scheme account?
+  question_hi: सीनियर सिटीजन सेविंग्स स्कीम का खाता खोलने के लिए कम से कम उम्र कितनी होनी चाहिए?
+  question_hi_latn: Senior Citizen Savings Scheme ka khata kholne ke liye kam se kam umar kitni honi chahiye?
+  source: 2
+  status: verified
+- key: minimum_deposit
+  statement: The minimum deposit in SCSS is Rs 1,000, in multiples of Rs 1,000.
+  value: Rs 1,000
+  accept:
+  - '1000'
+  - 1,000
+  - ₹1,000
+  - Rs 1000
+  question: What is the minimum amount needed to open a Senior Citizens Savings Scheme account?
+  question_hi: सीनियर सिटीजन सेविंग्स स्कीम में कम से कम कितना पैसा जमा करना होता है?
+  question_hi_latn: Senior Citizen Savings Scheme me kam se kam kitna paisa jama karna hota hai?
+  source: 1
+  status: verified
+- key: tenure
+  statement: An SCSS deposit matures after 5 years and can be extended for another 3 years.
+  value: 5 years
+  accept:
+  - five years
+  - 5 saal
+  - '5'
+  question: For how many years is money kept in the Senior Citizens Savings Scheme?
+  question_hi: सीनियर सिटीजन सेविंग्स स्कीम कितने साल की होती है?
+  question_hi_latn: Senior Citizen Savings Scheme kitne saal ki hoti hai?
+  source: 1
+  status: verified
+- key: interest_payment_frequency
+  statement: SCSS interest is paid every quarter, on the first working day of April, July, October and January.
+  value: every quarter
+  accept:
+  - quarterly
+  - every 3 months
+  - har teen mahine
+  - har timahi
+  question: How often is interest paid in the Senior Citizens Savings Scheme?
+  question_hi: सीनियर सिटीजन सेविंग्स स्कीम में ब्याज कितने समय में मिलता है?
+  question_hi_latn: Senior Citizen Savings Scheme me byaj kitne samay me milta hai?
+  source: 1
+  status: verified
+situations:
+- question: I'm 63 and have about Rs 15 lakh of retirement savings. Where can I deposit it safely in a government scheme at the post office and get interest every three months?
+  language: en
+- question: मैं 58 साल का हूँ, पिछले हफ्ते रिटायर हुआ हूँ और मुझे PF व ग्रेच्युटी का पैसा मिला है। इसे किस सरकारी योजना में जमा करूँ जिससे हर तिमाही ब्याज मिले?
+  language: hi
+sources:
+- title: National Savings Schemes at a glance
+  url: https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=27
+  publisher: National Savings Institute, Ministry of Finance (DEA)
+  accessed: '2026-10-03'
+- title: Senior Citizens' Savings Scheme, 2019 (scheme rules)
+  url: https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=168
+  publisher: National Savings Institute, Ministry of Finance (DEA)
+  accessed: '2026-10-03'
+- title: FAQ - National Savings Schemes
+  url: https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=47
+  publisher: National Savings Institute, Ministry of Finance (DEA)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is open for new deposits. No interest rate is given in this record. The Ministry of Finance resets the rate every quarter, and the rate for October-December 2026 could not be confirmed on any official page that loaded: the India Post site was unavailable, and the latest DEA rate order found (30 September 2025) is a scanned PDF. Check the current rate at the post office or bank. The NSI copy of the 2019 rules says two things that may be out of date. It says retirees aged 55 to 60 must open the account within one month of getting their retirement benefits, and it says an account can be extended only once. NSI''s scheme summary, however, says an account can be extended any number of times in blocks of 3 years. Later amendments may have changed both points, so confirm them locally. Because of this conflict, the age_min rule is set to 50, the lowest joining age (for retired defence personnel); the general age is 60. The Section 80C deduction is as stated by NSI. The tax
+    position may differ under the new tax regime and the Income-tax Act, 2025. No official Hindi name was found on a page that loaded.'
+  - 'Checker: Outdated rule: the retiree window for ages 55 to 60 is now 3 months, not one month. India Post cites the SCSS Amendment Scheme 2023 (SB Order 06/2023) and the Fourth Amendment 2023 (SB Order 22/2023). Both points the status note flagged as possibly outdated were in fact changed.'
+  - 'Checker: Outdated exclusion: the record says the legal heir of an employee who died in service cannot deposit terminal benefits. India Post now lets the spouse of a government employee who died in service at 50 or older open an account, and retirement benefits now cover benefits of an employee who died in service.'
+  - 'Checker: Documents list is incomplete. India Post requires the account opening form, a KYC form, PAN and Aadhaar (or the listed alternatives: passport, driving licence, voter ID, NREGA job card, NPR letter), and proof of the source of funds for investments over Rs 10 lakh. A nomination is mandatory when opening.'
+  - 'Checker: Missing detail: after the account holder dies, the account earns only Post Office savings-account interest from the next day until it is closed. The record says only that the deposit with interest goes to the nominee or legal heirs.'
+  - 'Checker: Missing detail: TDS applies above the prescribed interest limit unless Form 15G or 15H is submitted, and quarterly interest that is not claimed earns no further interest.'
+  - 'Checker: All three cited sources are NSI pages (nsiindia.gov.in), which fail certificate checks and could not be opened, and the record relies on the unamended 2019 rules text. Use the India Post SCSS page and the 2023 amendment SB Orders as sources instead.'
+  - 'Checker: Not verified on any opened page: ''only the first holder''s age counts in a joint account'', ''a spouse who is joint holder or sole nominee can continue the account'', ''cannot deposit more than the retirement benefits'', and ''Form-1''. India Post confirms only that the whole deposit in a joint account belongs to the first holder.'
+  - Official Hindi name added from https://www.indiapost.gov.in/banking-services/savings.
+  - 'Statement to correct: ''Aged 55 or more but below 60 and retired ... only within one month of receiving your retirement benefits''. The checker read ''Within 3 months of receiving the retirement benefits. Proof of the payout date and an employer certificate must be attached.'' on https://www.indiapost.gov.in/banking-services/savings.'
+  - 'Statement to correct: ''People below 55 cannot open an account, except retired defence personnel aged 50 or more''. The checker read ''There is a second exception. The spouse of a government employee (Central or State) who died in service after reaching 50 may also open an account, subject to the other conditions (SB Order 22/2023).'' on https://www.indiapost.gov.in/banking-services/savings.'
+  - 'Checker on the status note: 8.2% a year for 01.10.2026 to 31.12.2026. India Post shows quarterly interest of Rs 205 per Rs 10,000.'
+  - '2026-10-03: the checker''s corrections above were applied to the statements; re-read the official page before relying on them.'

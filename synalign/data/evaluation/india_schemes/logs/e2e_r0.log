@@ -1,0 +1,35 @@
+316 dev questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.9145  in-prompt 0.9276  abstain 0.75  (32.9 ms/q)
+  fusion: 50/316
+  fusion: 100/316
+  fusion: 150/316
+  fusion: 200/316
+  fusion: 250/316
+  fusion: 300/316
+answers fusion       correct 0.8228  (1.47 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/e2e_r0_q_54/report.md
+316 dev questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search fusion               hit@1 0.875  in-prompt 0.8586  abstain 0.4167  (46.0 ms/q)
+  fusion: 50/316
+  fusion: 100/316
+  fusion: 150/316
+  fusion: 200/316
+  fusion: 250/316
+  fusion: 300/316
+answers fusion       correct 0.75  (1.506 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/e2e_r0_q_scale/report.md
+178 dev questions (sha256 7bfbe6d4e6d4), min_score 0.5, top_k 3
+search fusion               hit@1 0.9938  in-prompt 0.8202  abstain None  (60.1 ms/q)
+  fusion: 50/178
+  fusion: 100/178
+  fusion: 150/178
+answers fusion       correct 0.9494  (2.498 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/e2e_r0_u_54/report.md
+178 dev questions (sha256 7bfbe6d4e6d4), min_score 0.5, top_k 3
+search fusion               hit@1 0.975  in-prompt 0.7697  abstain None  (66.8 ms/q)
+  fusion: 50/178
+  fusion: 100/178
+  fusion: 150/178
+answers fusion       correct 0.927  (1.969 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/e2e_r0_u_scale/report.md
+BASELINE_DONE

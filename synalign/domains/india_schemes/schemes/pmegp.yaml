@@ -1,0 +1,145 @@
+id: pmegp
+name: Prime Minister's Employment Generation Programme
+short_name: PMEGP
+names_hi:
+- प्रधानमंत्री रोजगार सृजन कार्यक्रम
+- पीएमईजीपी)
+aliases:
+- PMEGP loan
+- PMEGP subsidy
+- pradhan mantri rojgar srijan karyakram
+- pm rozgar srijan yojana
+- KVIC loan subsidy scheme
+level: central
+state: ''
+ministry: Ministry of Micro, Small and Medium Enterprises (implemented by Khadi and Village Industries Commission)
+category: credit_enterprise
+summary: A bank loan with a government subsidy to set up a new micro enterprise in manufacturing, service or business. The subsidy is 15% to 35% of the project cost depending on category and area, and there is a second loan with subsidy to upgrade existing units. It was approved up to 2025-26; whether it continues from April 2026 could not be confirmed.
+sections:
+  eligibility:
+  - Any individual above 18 years of age can apply.
+  - There is no income limit.
+  - For projects costing above Rs 10 lakh in manufacturing, or above Rs 5 lakh in business/service, you must have passed at least Class VIII (8th standard).
+  - Help is only for new projects sanctioned specifically under PMEGP.
+  - Only one person per family can get help to set up a project; family means self and spouse.
+  - 'For an upgradation (second) loan: the first PMEGP, REGP or MUDRA loan must have been repaid on time, the earlier subsidy adjusted after the 3-year lock-in, and the unit must be making a profit.'
+  exclusions:
+  - Existing units set up under PMRY, REGP or any other central or state government scheme cannot apply for a new-unit subsidy.
+  - Units that have already received a government subsidy under any other central or state scheme are not eligible.
+  - Projects with no capital expenditure are not financed.
+  - Activities on the scheme's negative list, or banned by local authorities, are not allowed.
+  - The cost of land cannot be counted in the project cost.
+  benefits:
+  - 'Margin money subsidy for General category: 15% of project cost in urban areas and 25% in rural areas.'
+  - 'Special category (SC, ST, OBC, minorities, women, ex-servicemen, transgender persons, persons with disabilities, North-East region, Aspirational Districts, hill and border areas): 25% in urban areas and 35% in rural areas.'
+  - Your own contribution is 10% of the project cost for General category and 5% for Special category; the bank lends the rest.
+  - Subsidy applies to project cost up to Rs 50 lakh for manufacturing and Rs 20 lakh for business/service units; banks may lend above this without subsidy.
+  - A second loan to upgrade an existing PMEGP, REGP or MUDRA unit gets 15% subsidy (20% in North-East and hill states), up to Rs 15 lakh for manufacturing (project up to Rs 1 crore) and Rs 3.75 lakh for service (project up to Rs 25 lakh), or Rs 20 lakh and Rs 5 lakh in North-East and hill states.
+  - Banks do not ask for collateral on loans up to Rs 20 lakh; the bank charges its normal interest rate, and the subsidy is kept in the beneficiary's name for 3 years before being adjusted.
+  how_to_apply:
+  - Apply online only, on the PMEGP portal run by KVIC; paper applications are not accepted.
+  - Aadhaar is mandatory and is checked with UIDAI when you file the application.
+  - The implementing agency (KVIC, State Khadi and Village Industries Board or District Industries Centre) checks the application and sends it to the bank you choose.
+  - You must complete Entrepreneurship Development Programme (EDP) training before the bank releases the loan, unless you already did at least 10 days (offline) or 60 hours (online) of EDP or skill training.
+  documents:
+  - Aadhaar number.
+  - Photograph.
+  - Project report.
+  - Caste certificate or special category certificate, where needed.
+  - Rural area certificate, for a unit in a rural area.
+  - Education, EDP or skill training certificate.
+rules:
+  age_min: 18
+  gender: any
+facts:
+- key: min_age
+  statement: Any individual above 18 years of age can apply for PMEGP.
+  value: '18'
+  accept:
+  - 18 years
+  - 18 saal
+  - eighteen
+  question: What is the minimum age to apply for PMEGP?
+  question_hi: पीएमईजीपी में आवेदन करने के लिए कम से कम उम्र क्या है?
+  question_hi_latn: PMEGP loan ke liye kam se kam umar kitni chahiye?
+  source: 1
+  status: verified
+- key: max_project_cost_manufacturing
+  statement: The PMEGP subsidy applies to manufacturing projects costing up to Rs 50 lakh.
+  value: Rs 50 lakh
+  accept:
+  - 50 lakh
+  - '5000000'
+  - 50,00,000
+  - pachas lakh
+  question: What is the maximum project cost for a manufacturing unit under PMEGP?
+  question_hi: पीएमईजीपी में मैन्युफैक्चरिंग यूनिट के लिए अधिकतम परियोजना लागत कितनी हो सकती है?
+  question_hi_latn: PMEGP me manufacturing unit ka maximum project cost kitna ho sakta hai?
+  source: 1
+  status: verified
+- key: max_project_cost_service
+  statement: The PMEGP subsidy applies to business/service projects costing up to Rs 20 lakh.
+  value: Rs 20 lakh
+  accept:
+  - 20 lakh
+  - '2000000'
+  - 20,00,000
+  - bees lakh
+  question: What is the maximum project cost for a service or business unit under PMEGP?
+  question_hi: पीएमईजीपी में सर्विस या बिज़नेस यूनिट के लिए अधिकतम परियोजना लागत कितनी है?
+  question_hi_latn: PMEGP me service business ka maximum project cost kitna hai?
+  source: 1
+  status: verified
+- key: subsidy_special_rural
+  statement: Special category applicants (such as SC, ST, OBC, women and minorities) get a subsidy of 35% of project cost in rural areas.
+  value: 35%
+  accept:
+  - 35 percent
+  - 35 per cent
+  - '35'
+  question: How much PMEGP subsidy does a woman or SC/ST applicant get for a unit in a village?
+  question_hi: पीएमईजीपी में गाँव में यूनिट लगाने पर महिला या SC/ST आवेदक को कितनी सब्सिडी मिलती है?
+  question_hi_latn: PMEGP me gaon me unit lagane par mahila ya SC/ST ko kitni subsidy milti hai?
+  source: 1
+  status: verified
+- key: own_contribution_general
+  statement: A General category applicant must put in 10% of the project cost as own contribution.
+  value: 10%
+  accept:
+  - 10 percent
+  - 10 per cent
+  - '10'
+  question: How much of my own money must I put in under PMEGP as a General category applicant?
+  question_hi: पीएमईजीपी में सामान्य वर्ग के आवेदक को अपनी तरफ़ से कितना पैसा लगाना होता है?
+  question_hi_latn: PMEGP me general category ko apna kitna paisa lagana padta hai?
+  source: 1
+  status: verified
+situations:
+- question: I am 30 and want to set up a new small food processing unit in my village. Is there a government scheme that gives a subsidy on the bank loan for a new unit?
+  language: en
+- question: Mujhe shahar me naya service business shuru karna hai. Bank loan par sarkar se subsidy dene wali yojana kaun si hai?
+  language: hi_latn
+sources:
+- title: PMEGP revised scheme and operational guidelines with KVIC circular No. PMEGP/Policy/2022-23 dated 01.06.2022
+  url: https://www.kvic.gov.in/kvicres/update/pmegp/PMEGP_Guidelines_Certified_2022.pdf
+  publisher: Khadi and Village Industries Commission, Ministry of Micro, Small and Medium Enterprises
+  accessed: '2026-10-03'
+- title: Khadi and Village Industries Commission - home page (PMEGP section)
+  url: https://www.kvic.gov.in/
+  publisher: Khadi and Village Industries Commission, Ministry of Micro, Small and Medium Enterprises
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The 2022 guidelines say PMEGP was approved for five years, 2021-22 to 2025-26 (the 15th Finance Commission cycle). That period ended on 31 March 2026. I could not confirm whether the scheme has been extended or changed from 2026-27: the PMEGP e-portal (kviconline.gov.in) did not resolve, PIB was blocked, and the KVIC home page showed no newer circular. Before advising anyone, check with KVIC, the State KVIB or the District Industries Centre that applications are open. All amounts and rates are from the 2022 guidelines and may have been revised since. The guidelines say ''above 18 years''; this record uses 18 as the minimum age. No official Hindi name was found on the pages opened.'
+  - Whether the scheme is still open to new applicants was not clear.
+  - 'Checker: ''Apply online only; paper applications are not accepted'' conflicts with the current Ministry of MSME PMEGP page. That page says people may also apply offline by giving physical forms to implementing agencies, and that forms are available in regional languages.'
+  - 'Checker: The collateral-free limit is out of date: it is now Rs 20 lakh, not Rs 10 lakh (see item).'
+  - 'Checker: Status: I found no official document extending PMEGP beyond 31 Mar 2026. Official sources still describe it as operating, though. A Lok Sabha reply (PIB, 30 Jul 2026) lists current PMEGP measures, a PIB release of 7 Sep 2026 describes it in the present tense, the Ministry of MSME site still lists it, and KVIC reported 66,494 units for FY 2025-26. The PMEGP e-portal (kviconline.gov.in) would not resolve, so I could not confirm that applications are open. Check with KVIC, KVIB or DIC.'
+  - 'Checker: Interest is the bank''s normal rate. PIB (2 Feb 2026) confirms banks set it under RBI rules, which matches the record.'
+  - 'Checker: An official Hindi name exists (see names_hi) but the record has none.'
+  - Official Hindi name added from https://master-msme.digifootprint.gov.in/static/uploads/2025/06/3cbeb4bf6e6dbb3ce07e7473a85d480a.pdf.
+  - 'Statement to correct: ''Banks do not ask for collateral on loans up to Rs 10 lakh''. The checker read ''Rs 20 lakh'' on https://www.pib.gov.in/PressReleasePage.aspx?PRID=2291936&reg=3&lang=1.'
+  - '2026-10-03: the checker''s corrections above were applied to the statements; re-read the official page before relying on them.'

@@ -1,0 +1,153 @@
+id: pmjdy
+name: Pradhan Mantri Jan-Dhan Yojana
+short_name: PMJDY
+names_hi:
+- प्रधानमंत्री जन-धन योजना
+- प्रधानमंत्री जन धन योजना
+aliases:
+- Jan Dhan Yojana
+- PM Jan Dhan Yojana
+- jan dhan khata
+- jan dhan account
+- National Mission for Financial Inclusion
+- zero balance khata yojana
+level: central
+state: ''
+ministry: Ministry of Finance, Department of Financial Services
+category: financial_inclusion
+summary: A national mission that helps people with no bank account open a basic savings account with no minimum balance. Account holders get a free RuPay debit card with accident insurance, and eligible holders can get an overdraft of up to Rs 10,000. The scheme started on 28 August 2014 and is still open.
+sections:
+  eligibility:
+  - Any Indian citizen who is eligible to open an ordinary bank account can open a basic savings account under the scheme.
+  - The account is meant for people who do not already have a bank account.
+  - Since 2018 the scheme aims to reach every adult without a bank account, not just one account per household.
+  - The overdraft facility is only for account holders aged 18 to 65 years.
+  - An overdraft of up to Rs 2,000 has no conditions attached; for larger amounts the bank looks at how the account has been run, usually over 6 months.
+  exclusions:
+  - Account holders younger than 18 or older than 65 cannot get the overdraft.
+  benefits:
+  - A basic savings bank account with no minimum balance requirement, and interest on the money deposited.
+  - A free RuPay debit card.
+  - Accident insurance cover of Rs 2 lakh through the RuPay card for accounts opened after 28 August 2018 (Rs 1 lakh for accounts opened before that date).
+  - An overdraft of up to Rs 10,000 for eligible account holders.
+  - The account can receive Direct Benefit Transfers and can be used to join PMJJBY, PMSBY, Atal Pension Yojana and MUDRA loans.
+  - To claim the RuPay accident cover, the card should have been used for at least one transaction in the 90 days before the accident, and the claim should be reported to the bank within 90 days of the accident.
+  how_to_apply:
+  - Go to any bank branch or Business Correspondent (Bank Mitra) outlet and ask to open a Jan Dhan account.
+  - Fill in the PMJDY account opening form, available in English and Hindi on pmjdy.gov.in.
+  - For help, call the national toll-free numbers 1800 11 0001 or 1800 180 1111.
+  documents:
+  - If you have an Aadhaar card or Aadhaar number, no other document is needed.
+  - Without Aadhaar, any one officially valid document such as a voter ID card, driving licence, PAN card, passport or NREGA job card.
+  - With no documents at all, a small account (chhota khata) can be opened. It is valid for 12 months and can be extended by another 12 months if you show you have applied for an officially valid document.
+rules:
+  gender: any
+facts:
+- key: overdraft_limit
+  statement: Eligible Jan Dhan account holders can get an overdraft of up to Rs 10,000.
+  value: Rs 10,000
+  accept:
+  - '10000'
+  - 10,000
+  - ₹10,000
+  - Rs. 10,000
+  - ten thousand
+  question: How much overdraft can I get in a PM Jan Dhan Yojana account?
+  question_hi: प्रधानमंत्री जन-धन योजना के खाते में कितना ओवरड्राफ्ट मिलता है?
+  question_hi_latn: PM Jan Dhan Yojana ke khate me kitna overdraft milta hai?
+  source: 1
+  status: verified
+- key: accident_insurance_cover
+  statement: The RuPay card of a Jan Dhan account opened after 28 August 2018 carries accident insurance of Rs 2 lakh.
+  value: Rs 2 lakh
+  accept:
+  - 2 lakh
+  - '200000'
+  - 2,00,000
+  - ₹2 lakh
+  - Rs. 2 lakh
+  - two lakh
+  question: How much accident insurance comes with the RuPay card of a PM Jan Dhan Yojana account?
+  question_hi: प्रधानमंत्री जन-धन योजना के रुपे कार्ड पर कितने का दुर्घटना बीमा मिलता है?
+  question_hi_latn: Jan Dhan Yojana ke RuPay card par kitne ka accident bima milta hai?
+  source: 1
+  status: verified
+- key: overdraft_age_range
+  statement: Only account holders aged 18 to 65 years can get the Jan Dhan overdraft.
+  value: 18 to 65
+  accept:
+  - 18-65
+  - 18 to 65 years
+  - between 18 and 65
+  question: What age do I need to be to get the overdraft in a PM Jan Dhan Yojana account?
+  question_hi: प्रधानमंत्री जन-धन योजना में ओवरड्राफ्ट के लिए उम्र सीमा क्या है?
+  question_hi_latn: Jan Dhan Yojana me overdraft ke liye umar seema kya hai?
+  source: 3
+  status: verified
+- key: minimum_balance
+  statement: A Jan Dhan account has no minimum balance requirement.
+  value: no minimum balance
+  accept:
+  - zero balance
+  - 'no'
+  - not required
+  - '0'
+  question: Do I need to keep a minimum balance in a PM Jan Dhan Yojana account?
+  question_hi: क्या प्रधानमंत्री जन-धन योजना के खाते में न्यूनतम बैलेंस रखना ज़रूरी है?
+  question_hi_latn: Kya PM Jan Dhan Yojana ke khate me minimum balance rakhna zaroori hai?
+  source: 1
+  status: verified
+situations:
+- language: en
+  question: I have never had a bank account and cannot keep money aside for a minimum balance. How can I open a free account where government benefits can be sent?
+- language: hi
+  question: मेरा कोई बैंक खाता नहीं है और मेरे पास खाते में रखने के लिए पैसे नहीं हैं, क्या बिना बैलेंस के सरकारी योजना वाला खाता खुल सकता है?
+sources:
+- title: PMJDY - Scheme Details
+  url: https://pmjdy.gov.in/scheme
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: 'Pradhan Mantri Jan Dhan Yojana: A Decade of Transformative Financial Inclusion (RU-472, 28 August 2024)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/aug/doc2024828381301.pdf
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: Continuation of Pradhan Mantri Jan Dhan Yojana (PMJDY)
+  url: https://pmjdy.gov.in/files/E-Documents/Continuation_of_PMJDY.pdf
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: PMJDY - Scheme Details (Hindi)
+  url: https://pmjdy.gov.in/hi-scheme
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Jan Dhan Yojana (PMJDY)
+  url: https://financialservices.gov.in/pradhan-mantri-jan-dhan-yojana-pmjdy
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: RuPay Insurance Program 2016-17 - Frequently Asked Questions
+  url: https://pmjdy.gov.in/files/QuickLinks/FAQ-RuPay%20Insurance%20Program%20FY%202016-17.pdf
+  publisher: National Payments Corporation of India (hosted on pmjdy.gov.in)
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Jan-Dhan Yojana - Home
+  url: https://pmjdy.gov.in/
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+- title: PMJDY Mission Document / Brochure
+  url: https://pmjdy.gov.in/files/E-Documents/PMJDY_BROCHURE_ENG.pdf
+  publisher: Department of Financial Services, Ministry of Finance
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is running and open for new accounts. pmjdy.gov.in shows 59.37 crore beneficiaries. The Hindi scheme page on pmjdy.gov.in (and the 2014 brochure) still lists older terms: Rs 5,000 overdraft, Rs 1 lakh accident cover and a Rs 30,000 life cover. The 2018 continuation decision replaced these with a Rs 10,000 overdraft, Rs 2 lakh accident cover for accounts opened after 28 August 2018, and an overdraft age limit of 18-65 (earlier 18-60). The Rs 30,000 life cover is not among the current benefits on the English scheme page or in the 2024 PIB note, so it is left out. The 90-day card-use rule and the 90-day claim reporting rule come from the 2016-17 RuPay insurance FAQ hosted on pmjdy.gov.in, and current-year policy terms may differ. The 6-month satisfactory-operation rule for the overdraft comes from older official material. The 2018 decision says up to Rs 2,000 has no conditions, and banks decide eligibility for larger amounts. The official pages opened do not set a minimum
+    age for opening the account itself; banks follow RBI rules for minors. pib.gov.in press-release pages returned 403, so PIB PDF backgrounders were used instead.'
+  - 'Checker: The overdraft line uses an old rule. The 6-month satisfactory-operation condition comes from 2014 material for the old Rs 5,000 overdraft. The 2018 decision only says there are no conditions up to Rs 2,000. Reword it to say banks decide eligibility for amounts above Rs 2,000, or drop the 6-month claim.'
+  - 'Checker: The RuPay claim rules are taken from a 2016-17 FAQ for the RuPay insurance programme in general, not a current PMJDY document. The record says the card itself must have been used, but under the FAQ any qualifying transaction through any channel or instrument counts. The record also leaves out the 60-day deadline for claim documents and the exception for accidents within 90 days of card issue. Label these as past terms that may have changed.'
+  - 'Checker: Missing condition: the PIB 2024 note says cash withdrawals from a basic savings account are limited to four a month.'
+  - 'Checker: The documents section leaves out a point from the official Hindi page: with Aadhaar, if the address has changed, a self-certified current address is enough.'
+  - 'Checker: Source 6 lists NPCI as publisher, but the FAQ document does not name NPCI. It refers to The New India Assurance Co. as the insurer. Attribution should be corrected or marked as uncertain.'
+  - 'Checker: Source 4 (the Hindi scheme page) and source 8 (the 2014 brochure) contain outdated benefit amounts: Rs 5,000 overdraft, Rs 1 lakh cover and Rs 30,000 life cover. Use them only for the Hindi name and history, never for current amounts.'
+  - 'Checker: Eligibility line 1 follows the PIB 2024 sentence very closely (''Any Indian citizen eligible to open a regular bank account can open...''). Consider rewording it more freely.'
+  - 'Checker: The 18-65 overdraft age range rests on one official document, the 2018 continuation note. No second official page confirms it.'
+  - 'Statement not confirmed: for larger amounts the bank looks at how the account has been run, usually over 6 months (The 6-month rule appears only in the 2014 mission document and the outdated Hindi scheme page, where it applied to the original Rs 5,000 overdraft. No current official page links the 6-month rule to the Rs 10,000 overdraft, or to amounts above Rs 2,000.)'

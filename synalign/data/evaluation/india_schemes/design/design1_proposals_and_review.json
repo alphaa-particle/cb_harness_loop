@@ -1,0 +1,641 @@
+[
+ {
+  "area": "The not-found decision: when search should return nothing. Today the rule is to return nothing when the best dense cosine is below 0.50.",
+  "idea": "Recommendation: NO CHANGE. Keep the single dense floor at min_score 0.50.\n\nI tested 22 refusal rules on top of today's floor, plus a no-floor reference. They fall into seven families: a different floor; the gap between the best and 10th dense section; the gap between the best and 10th scheme; whether the word and letter channels agree with the dense winner; how far the best score stands above the corpus-average cosine, in raw points and in standard deviations (z); and how spread out the top 5 sections are. To check that the offline replay was right, I ran three rules end to end through the shared harness: today's rule, floor 0.54, and the agreement gate at 0.56. The other 19 were evaluated offline from the same scores.\n\nWhere things stand at 54 schemes: off-topic questions are 6/6 refused. Three not-found questions still get evidence, and they are all English questions that name a state scheme the corpus does not contain (KALIA, Rythu Bharosa, Kanya Sumangala). Their best dense scores are 0.535, 0.586 and 0.619. The lowest-scoring answerable question whose answer does reach the prompt scores 0.567, at both sizes. Nine answerable questions at 54 score between 0.55 and 0.60, and almost all of them are Hindi or Hinglish. The scores overlap, so no single number can separate the two groups.\n\nWhy it is hard: these \"absent scheme\" questions are on topic (they ask about eligibility for a farmer or girl-child scheme). The dense model therefore matches them to the \"eligibility rules\" section of similar schemes. The usual warning signs for \"this doesn't fit\" (a small gap to the runners-up, the word channels disagreeing, top sections spread over many schemes) also fire for Hindi and Hinglish answerable questions. Those questions get lower, flatter dense scores because the corpus is in English, and the word channels miss them too.\n\nOnly two rules cost nothing on dev at either size, and they make the same decisions on dev: floor 0.54, and refusing when the best score is below 0.56 and neither word channel supports the winner. Both gain exactly 1 not-found question at 54 (KALIA in English, at 0.535). They gain nothing at scale and change no in-prompt result.\n\nI do not recommend even floor 0.54:\n(1) It puts the threshold just above one question. That is the overfitting pattern the task warns against, and the gain is 1 of 12.\n(2) Smoothing the answerable score distribution predicts about 0.7 to 1.0 answerable questions per 304 landing in [0.50, 0.54) on unseen questions. Dev has none there, but the tail is thin and made of Hindi and Hinglish situation questions. The expected loss roughly equals the expected gain.\n(3) The two mistakes are not equally bad. Wrongly refusing a real question is a hard failure. An on-topic question about an absent scheme still reaches an answer model that is told to say when the information is missing, and the sections it sees are visibly about a different named scheme.\n(4) eval_config.yaml already records that 0.54 is the strictest value that loses nothing on dev, and that 0.50 was kept on purpose as a safety margin. These results give no reason to give up that margin.\n\nLowering the floor gains nothing either. The one answerable dev question it refuses at 54 (a Hinglish situation question at 0.480) does not get its answer into the prompt even with no floor at all.\n\nAt scale: the 6 \"absent\" questions really do find same-named background schemes (KALIA, Kanya Sumangala, Rythu Bima), so their abstention cannot be judged there. Off-topic is 5/6. The one miss, \"aaj mausam kaisa hai?\", scores 0.562, only 0.005 below the lowest answerable question at scale (0.567). No floor can safely catch it.",
+  "general_argument": "Any rule that would hold for an arbitrary corpus of scheme documents in a mix of languages has to work from score-shape signals: the absolute score, the gaps to runners-up, how far the winner stands above the corpus, whether the channels agree, and how spread out the top results are. I measured all of these. None separates \"asks about a scheme that is not here\" from \"answerable question in a different language than the documents\". Cross-language questions push dense scores down and flatten them, and the word channels miss them, so every family above refuses them first.\n\nThe remaining failures are an entity problem, not a score problem: the question names a specific scheme and the corpus has no scheme by that name. A general fix would compare the scheme names mentioned in the question against the corpus titles and aliases. That needs name detection that works across languages, which I did not try because it is outside score-based gating and risks hand-built rules. The answer model, which sees the retrieved section titles, is the natural second gate for this case.\n\nA change worth making should be backed by more than one dev question and should help at both sizes. Floor 0.54 is backed by exactly one question and does nothing at scale, so no change is the conservative, general choice.",
+  "implementation": "Recommended: none. engine/retriever.py and eval_config.yaml stay as they are (min_score: 0.50, applied in Retriever._rank as \"if meaning.max() < self.min_score: return meaning, none\").\n\nIf the team still wants the one change that costs nothing on dev (not recommended, see risks), it needs no code, only a config value:\n  domains/india_schemes/eval_config.yaml  retrieval.min_score: 0.50 -> 0.54\nIt also needs the comment updated to say it now has no margin below the lowest in-prompt answerable dev question (0.567, a gap of 0.027).\n\nFor reference only (tested, not recommended; on dev it makes the same decisions as floor 0.54 with more code), the agreement gate as a Retriever subclass:\n\nclass AgreementGateRetriever(Retriever):\n    def __init__(self, pack, agree_below=0.56, lexical_top=5, **kw):\n        super().__init__(pack, **kw)\n        self.agree_below, self.lexical_top = agree_below, lexical_top\n    def _top_schemes(self, scores, n):\n        out = []\n        for i in self._top(scores, self.depth):\n            key = self.documents[i].scheme_key\n            if key not in out:\n                out.append(key)\n                if len(out) == n: break\n        return out\n    def _rank(self, query, top_k):\n        sims, order = super()._rank(query, top_k)          # keeps the 0.50 floor\n        if sims is None or len(order) == 0 or sims.max() >= self.agree_below:\n            return sims, order\n        best = self.documents[int(np.argmax(sims))].scheme_key\n        lexical = self._expand(query) if self._glossary else query\n        for scores in (self._bm25.scores(lexical), self._char_scores(lexical)):\n            if best in self._top_schemes(scores, self.lexical_top):\n                return sims, order\n        return sims, np.empty(0, dtype=int)                 # weak dense winner with no word support: refuse\n\nFiles (all in /private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/abstention/):\n- features.py dumps every dev question's dense, BM25 and letter scores, plus its no-floor evidence, at both sizes (corpus vectors come only from the existing cache; it asserts nothing new is embedded).\n- signals.py and sweep.py replay every rule exactly from those dumps; results are in sweep_results.json.\n- prototype.py runs baseline, floor_054 and agree_056 end to end through harness.Bench.measure and compare; results are in prototype_results.json and match the offline replay.\n- check_sft.py is an out-of-sample cost check on 206 non-dev, non-test questions from the fine-tuning files.",
+  "variants_tried": [
+   {
+    "variant": "baseline: floor 0.50 (today)",
+    "result_54": "in_prompt 282/304, abstain 9/12 (absent 3/6, off-topic 6/6), 1 answerable refused (jssk__situation_2 at 0.480; its answer is not in the prompt even with no floor)",
+    "result_scale": "in_prompt 261/304, abstain 5/12 (off-topic 5/6, absent 0/6, but those schemes exist in the background), 0 answerable refused",
+    "ms_per_question": "~40-80 ms at 54 and at scale, almost all of it the query embedding call; varies run to run with server latency"
+   },
+   {
+    "variant": "no floor (reference, not a tuned value)",
+    "result_54": "in_prompt 282/304 (+0), abstain 0/12 (-9), 0 answerable refused; fixed 0, broken 0",
+    "result_scale": "in_prompt 261/304, abstain 0/12 (-5); fixed 0, broken 0",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "floor 0.52",
+    "result_54": "in_prompt 282/304, abstain 9/12, 1 answerable refused (same as baseline); fixed 0, broken 0, diff 0.0 pts, CI [0,0]",
+    "result_scale": "in_prompt 261/304, abstain 5/12, 0 refused; no change",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "floor 0.54 (end-to-end checked)",
+    "result_54": "in_prompt 282/304, abstain 10/12 (+1: absent__kalia__en at 0.535), 1 answerable refused (same as baseline); fixed 0, broken 0, diff 0.0 pts, CI [0,0]",
+    "result_scale": "in_prompt 261/304, abstain 5/12 (+0), 0 answerable refused; diff 0.0. On 206 non-dev fine-tuning questions: 0 refused at either size (lowest score 0.563 at 54, 0.600 at scale)",
+    "ms_per_question": "42 at 54, 64 at scale (not distinguishable from baseline)"
+   },
+   {
+    "variant": "floor 0.56",
+    "result_54": "in_prompt 282/304, abstain 10/12 (+1 kalia_en), 2 answerable refused (+1: pm_svanidhi__situation_2 at 0.558, whose answer was not in the prompt anyway); fixed 0, broken 0",
+    "result_scale": "in_prompt 261/304, abstain 5/12, 0 refused",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + refuse if top1 minus 10th dense section < 0.03",
+    "result_54": "282/304, abstain 9/12, 1 refused; no change",
+    "result_scale": "259/304, abstain 5/12, 8 answerable refused, broken 2, diff -0.66 pts, CI [-1.79, 0.0]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + section gap < 0.04",
+    "result_54": "281/304, abstain 9/12, 3 refused, broken 1, diff -0.33, CI [-1.27, 0.0]",
+    "result_scale": "254/304, abstain 5/12, 21 refused, broken 7, diff -2.30, CI [-4.79, -0.51]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + section gap < 0.05",
+    "result_54": "280/304, abstain 9/12, 5 refused, broken 2, diff -0.66, CI [-2.55, 0.0]",
+    "result_scale": "249/304, abstain 6/12 (off-topic 6/6), 30 refused, broken 12, diff -3.95, CI [-7.14, -1.59]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + refuse if best scheme minus 10th scheme < 0.03",
+    "result_54": "282/304, abstain 9/12, 1 refused; no change",
+    "result_scale": "259/304, abstain 5/12, 7 refused, broken 2, diff -0.66, CI [-1.79, 0.0]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + scheme gap < 0.05",
+    "result_54": "282/304, abstain 9/12, 1 refused; no change",
+    "result_scale": "253/304, abstain 6/12, 23 refused, broken 8, diff -2.63, CI [-5.03, -0.77]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + scheme gap < 0.07",
+    "result_54": "280/304, abstain 9/12, 5 refused, broken 2, diff -0.66, CI [-2.55, 0.0]",
+    "result_scale": "239/304, abstain 6/12, 41 refused, broken 22, diff -7.24, CI [-11.01, -4.14]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + refuse if best < 0.56 and dense-best scheme is in neither BM25's nor the letter channel's top-5 schemes (end-to-end checked)",
+    "result_54": "282/304, abstain 10/12 (+1 kalia_en), 1 refused (same as baseline); fixed 0, broken 0, diff 0.0; on dev the same decisions as floor 0.54",
+    "result_scale": "261/304, abstain 5/12, 0 refused; no change",
+    "ms_per_question": "32 at 54, 39 at scale (the extra word-channel lookup only runs for the rare questions below 0.56)"
+   },
+   {
+    "variant": "0.50 + no word-channel agreement and best < 0.60",
+    "result_54": "281/304, abstain 11/12 (+kalia_en, +rythu_bharosa_en), 2 refused, broken 1 (nfsa_pmgkay__situation_2, Hinglish), diff -0.33, CI [-1.33, 0.0]",
+    "result_scale": "258/304, abstain 6/12 (+off_topic__15), 4 refused, broken 3, diff -0.99, CI [-2.0, 0.0]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + no word-channel agreement and best < 0.64",
+    "result_54": "280/304, abstain 12/12, 6 refused, broken 2, diff -0.66, CI [-1.89, 0.0]",
+    "result_scale": "251/304, abstain 6/12, 14 refused, broken 10, diff -3.29, CI [-6.08, -1.08]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + refuse if top1 minus corpus-average cosine < 0.15",
+    "result_54": "282/304, abstain 9/12; no change",
+    "result_scale": "261/304, abstain 5/12; no change",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + top1 minus corpus average < 0.20",
+    "result_54": "278/304, abstain 10/12, 8 refused, broken 4, diff -1.32, CI [-4.0, 0.0]",
+    "result_scale": "261/304, abstain 5/12; no change (the signal sits on a different scale at each corpus size)",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + top1 minus corpus average < 0.25",
+    "result_54": "249/304, abstain 12/12, 39 refused, broken 33, diff -10.86, CI [-18.29, -5.66]",
+    "result_scale": "261/304, abstain 5/12; no change",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + z-score of top1 over the corpus < 2.5",
+    "result_54": "282/304, abstain 9/12; no change",
+    "result_scale": "261/304, abstain 5/12; no change",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + z < 3.0",
+    "result_54": "267/304, abstain 9/12, 18 refused, broken 15, diff -4.93, CI [-10.06, -1.33]",
+    "result_scale": "261/304; no change",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + z < 3.5",
+    "result_54": "245/304, abstain 12/12, 42 refused, broken 37, diff -12.17, CI [-20.29, -6.45]",
+    "result_scale": "260/304, 3 refused, broken 1, diff -0.33",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + top-5 dense sections come from 5 different schemes",
+    "result_54": "281/304, abstain 10/12 (+kanya_sumangala_en), 2 refused, broken 1, diff -0.33, CI [-1.09, 0.0]",
+    "result_scale": "253/304, abstain 9/12, 22 refused, broken 8, diff -2.63, CI [-4.87, -0.82]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + at least 3 of the 4 runner-up sections are the winner's section type from other schemes",
+    "result_54": "275/304, abstain 11/12, 8 refused, broken 7, diff -2.30, CI [-4.62, -0.64]",
+    "result_scale": "238/304, abstain 11/12, 34 refused, broken 23, diff -7.57, CI [-11.28, -4.24]",
+    "ms_per_question": "same"
+   },
+   {
+    "variant": "0.50 + all 4 runner-up sections are the winner's section type from other schemes",
+    "result_54": "282/304, abstain 10/12 (+kanya_sumangala_en), 1 refused; broken 0",
+    "result_scale": "257/304, abstain 9/12, 6 refused, broken 4, diff -1.32, CI [-2.87, 0.0], so it fails the no-cost bar at scale",
+    "ms_per_question": "same"
+   }
+  ],
+  "recommended_variant": "No change: keep the single dense floor at min_score 0.50. Floor 0.54 is the only variant that clears the literal \"costs no answerable question at either size\" bar, and the agreement gate at 0.56 makes the same decisions on dev with more code. But 0.54 gains a single not-found question (KALIA in English, at 0.535) at 54, and nothing at scale. It does so by placing the threshold just above that one question. The smoothed score distribution predicts about as many wrongly refused answerable questions on unseen data as it gains, and a wrong refusal is the more harmful error. If the team still wants it, it is a one-line config change (min_score 0.54) with no code.",
+  "risks": "Of keeping today's 0.50: 3 of 12 not-found questions at 54 still get evidence. All three are English questions naming a state scheme that is not in the corpus. At scale, 1 off-topic Hinglish question gets evidence. These depend on the answer model saying the scheme is not covered; its prompt already tells it to do that, and the retrieved titles name a different scheme.\n\nOf 0.54, if adopted anyway: no margin is left. It sits 0.027 below the lowest in-prompt answerable dev question (0.567, a Hindi situation question). Smoothing the answerable score distribution predicts about 0.7 (density estimate) to 1.0 (normal fit) answerable questions per 304 in [0.50, 0.54); there are 0 on dev and 0 among the 206 non-dev fine-tuning questions, but those are template questions with no Hinglish situation questions. The expected gain is about 1 in 12 not-found questions, based on a single example.\n\nOf every margin, agreement and dispersion rule: they systematically refuse Hindi and Hinglish answerable questions first, because questions in a different language than the documents get lower, flatter dense scores and weak word matches. Tuning them on 12 not-found questions, only 3 of which are still wrong at 54, would overfit.\n\nMeasurement caveat: abstention at scale cannot be judged for the 6 absent-scheme questions, because same-named schemes really are in the background corpus.",
+  "prototype_path": "/private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/abstention/prototype.py",
+  "new_settings": "None recommended. Optional, not recommended: retrieval.min_score: 0.54 (today 0.50). No new keys.",
+  "broken_questions_explained": "Every rule that caught more not-found questions than floor 0.54 also refused answerable questions, and they were nearly always Hindi or Hinglish questions, mostly situation questions plus some Hindi fact and eligibility questions (for example nfsa_pmgkay__situation_2, igndps__situation_2, nmmss__eligibility_2/4, e_shram__helpline__hi, pm_svanidhi__situation_2). These questions are in a different language than the English documents. That gives them lower best scores, small gaps to the runners-up, word channels that disagree with the dense winner, and top results spread over several schemes. Those are exactly the warning signs the not-found rules look for, so the rules hit these questions first."
+ },
+ {
+  "area": "How the three search channels (BM25 words, letter runs, dense meaning) are merged into one ranking: score-aware fusion that respects how far ahead the dense match is.",
+  "idea": "Keep the current weighted rank fusion, but add one rule: word and letter matches may only reorder sections whose meaning similarity is close to the best one, within a margin m=0.05 in cosine units. Sections that meaning search puts clearly further behind can no longer be lifted above them. In practice, the sections within 0.05 of the best dense cosine go first, in their normal fused order, and every other section follows, also in fused order. With no margin set, the ranking is exactly today's. The abstention check (best dense cosine below 0.50, so nothing is retrieved) runs before fusion and is unchanged, so abstention cannot change. The runner-up family was a convex score combination: dense cosine + 0.10 x (word and letter scores, each divided by its best score for that question).",
+  "general_argument": "Rank fusion turns each channel's scores into ranks, so a 0.29 cosine lead and a 0.001 lead look the same. The word channel (BM25) and the letter channel (char n-grams) both measure word overlap, so they tend to agree with each other. Together they can outvote the meaning channel even when meaning has a decisive lead. This hurts most when the question's language or script differs from the documents': the overlap a Hindi question has with English text (a shared word like yojana in aliases, numbers, acronyms) is mostly accidental, while a multilingual embedder still measures meaning reliably. The gate says that word matches settle near-ties in meaning but never override a clear meaning preference. That rule uses no scheme ids, names, wording, language detection or glossary changes, and it applies to any document corpus in any language mix. The margin is in the embedder's own cosine units, the same footing as the existing min_score threshold, so it is re-checked whenever the embedder or query instruction changes. Evidence that it is general and not fitted to these questions: (1) at 54 schemes all 6 fixes are the known pattern, where the right scheme led on meaning by 0.10-0.29 and was pushed out by weak word matches (e.g. jssk 0.625 vs nfsa_pmgkay 0.521, nikshay_poshan 0.757 vs igndps 0.465). (2) Margins 0.05 and 0.10 give identical results at 54 (+6, 0 broken). (3) The gate is a strict restriction of today's ranking: it only ever moves toward meaning order when meaning's lead is larger than the margin, so what it can change is limited and easy to predict. (4) It helps at both corpus sizes, and the scale corpus behaves like a much larger, noisier corpus.",
+  "implementation": "Algorithm (fusion branch of Retriever._rank): meaning = dense cosines. If meaning.max() < min_score, return nothing (unchanged). fused = weighted RRF over the bm25, char and dense top-`depth` lists (unchanged). If fusion_dense_margin is set: near = (meaning >= meaning.max() - margin) & (fused > 0); fused[near] += fused.max(). Then take the top k as today. The offset fused.max() guarantees every near section scores above every other section while keeping RRF order inside each group. For k <= depth this is identical to a hard two-group sort, because the dense top-`depth` list always contains the best near sections.\n\nDiff for /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/engine/retriever.py:\n\n@@ Retriever.__init__ (after self.depth = ...)\n         self.rrf_k = int(cfg.get(\"rrf_k\", 60))\n         self.depth = int(cfg.get(\"fusion_depth\", 50))\n+        # Word and letter matching may only reorder sections whose meaning similarity is within\n+        # this margin of the best section's; it cannot lift a section that meaning search puts\n+        # clearly behind. None (the default) keeps plain rank fusion.\n+        margin = cfg.get(\"fusion_dense_margin\")\n+        self.dense_margin = None if margin is None else float(margin)\n+        if self.dense_margin is not None and self.dense_margin < 0:\n+            raise ValueError(\"retrieval.fusion_dense_margin must not be negative\")\n\n@@ Retriever._rank, fusion branch\n             fused = np.zeros(len(self.documents))\n             for name, scores in ((\"bm25\", self._bm25.scores(lexical)), (\"char\", self._char_scores(lexical)),\n                                  (\"dense\", meaning)):\n                 for rank, i in enumerate(self._top(scores, self.depth), 1):\n                     fused[i] += self.fusion_weights[name] / (self.rrf_k + rank)\n+            if self.dense_margin is not None:\n+                # Rank fusion forgets how far ahead the meaning match is, so two weak word/letter\n+                # matches can outvote a much closer meaning match. Sections within the margin of\n+                # the best meaning similarity go first, in fused order; the rest follow, in fused order.\n+                near = (meaning >= meaning.max() - self.dense_margin) & (fused > 0)\n+                fused[near] += fused.max()\n             return meaning, self._top(fused, k)\n\nOptional docstring line for the module header: \"fusion ... merged by rank; with fusion_dense_margin, word and letter matches only reorder sections close to the best meaning match\".\n\nRunner-up (convex, only if larger scale gains are worth 4 broken near-tie questions): replace the RRF loop with\n    mix, total = np.zeros(len(self.documents)), 0.0\n    for name, scores in ((\"bm25\", bm25), (\"char\", char)):\n        best = float(scores.max())\n        if best > 0: mix += self.fusion_weights[name] * scores / best\n        total += self.fusion_weights[name]\n    return meaning, self._top(meaning + lexical_weight * mix / total, k)   # lexical_weight = 0.10\nBoth are implemented in /private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/fusion/prototype.py (MarginRetriever._rank). Run live with no cache, it reproduces the cached numbers exactly.",
+  "new_settings": "retrieval.fusion_dense_margin: 0.05   # cosine units; omitted or null keeps today's plain rank fusion. Suggested comment in eval_config.yaml: \"Word and letter matches may reorder only sections whose meaning similarity is within this margin of the best one. Chosen on dev from {0.05, 0.10, 0.15}.\" (The runner-up would instead add fusion_mode: convex and fusion_lexical_weight: 0.10.)",
+  "variants_tried": [
+   {
+    "variant": "baseline (weighted RRF bm25 0.25, char 0.25, dense 1.0, rrf_k 20, depth 50)",
+    "result_54": "in_prompt 282/304, abstain 9/12",
+    "result_scale": "in_prompt 261/304, abstain 5/12",
+    "ms_per_question": "fusion+evidence step 0.07 ms (54) / 0.72 ms (scale); channel computation ~26 ms/q, almost all of it the query embedding call"
+   },
+   {
+    "variant": "REFERENCE only, not a candidate: dense-only order (lexical weight 0; the limit of both families at w=0 or m=0)",
+    "result_54": "in_prompt 278/304, abstain 9/12, fixed 7, broken 11, diff -1.32 pts, CI [-6.82, 3.85]",
+    "result_scale": "in_prompt 253/304, abstain 5/12, fixed 7, broken 15, diff -2.63 pts, CI [-7.85, 2.78]",
+    "ms_per_question": "~0.02 / ~0.3 ms"
+   },
+   {
+    "variant": "(a) convex: dense + 0.05 x lexical (bm25/max and char/max, mean by channel weight)",
+    "result_54": "in_prompt 284/304, abstain 9/12, fixed 7, broken 5, diff +0.66 pts, CI [-2.78, 4.32]",
+    "result_scale": "in_prompt 261/304, abstain 5/12, fixed 6, broken 6, diff +0.00 pts, CI [-3.77, 3.82]",
+    "ms_per_question": "0.01 / 0.4 ms fusion step"
+   },
+   {
+    "variant": "(a) convex: dense + 0.10 x lexical  [runner-up]",
+    "result_54": "in_prompt 287/304, abstain 9/12, fixed 8, broken 3 (ignwps__eligibility_4, ignwps__eligibility_6, pm_kmy__land_limit__hi_latn), diff +1.64 pts, CI [-0.39, 4.30]; budget check top_k 2/3/5: 253/287/295 vs base 246/282/294; gold-scheme MRR@20 0.961 vs 0.944",
+    "result_scale": "in_prompt 267/304, abstain 5/12, fixed 7, broken 1 (pm_kmy__land_limit__hi_latn), diff +1.97 pts, CI [0.0, 5.0]; top_k 2/3/5: 236/267/281 vs 235/261/276; gold-scheme MRR 0.913 vs 0.901",
+    "ms_per_question": "0.02 / 0.29 ms fusion step (faster than RRF)"
+   },
+   {
+    "variant": "(a) convex: dense + 0.20 x lexical",
+    "result_54": "in_prompt 285/304, abstain 9/12, fixed 6, broken 3, diff +0.99 pts, CI [0.0, 2.31]; top_k 2/3/5: 254/285/294",
+    "result_scale": "in_prompt 270/304, abstain 5/12, fixed 11, broken 2, diff +2.96 pts, CI [0.33, 6.74]; top_k 2/3/5: 235/270/285",
+    "ms_per_question": "0.01 / 0.35 ms fusion step"
+   },
+   {
+    "variant": "(b) dense-gated RRF, margin 0.05  [RECOMMENDED]",
+    "result_54": "in_prompt 288/304, abstain 9/12, fixed 6 (jssk__free_diet_normal_delivery__hi, jssk__free_diet_caesarean__hi, nikshay_poshan__monthly_amount__hi, nikshay_poshan__payment_mode__hi, pm_kisan__situation_2, pmay_g__situation_2), broken 0, diff +1.97 pts, CI [0.33, 4.32]; top_k 2/3/5: 251/288/295 vs 246/282/294; gold-scheme MRR 0.957 vs 0.944",
+    "result_scale": "in_prompt 264/304, abstain 5/12, fixed 4 (pm_kisan__annual_amount__hi, pm_kisan__instalment_amount__hi, pm_kisan__instalments_per_year__hi, nps_vatsalya__partial_withdrawal_limit__hi_latn), broken 1 (ignwps__situation_2), diff +0.99 pts, CI [-0.74, 3.50]; top_k 2/3/5: 234/264/277 vs 235/261/276; gold-scheme MRR 0.903 vs 0.901",
+    "ms_per_question": "0.06 / 0.74 ms fusion step (same as baseline); end-to-end live 35-75 ms/q, all of it the query embedding call"
+   },
+   {
+    "variant": "(b) dense-gated RRF, margin 0.10",
+    "result_54": "in_prompt 288/304, abstain 9/12, fixed 6, broken 0, diff +1.97 pts, CI [0.33, 4.32] (same questions as m=0.05)",
+    "result_scale": "in_prompt 261/304, abstain 5/12, fixed 0, broken 0, diff 0.00 (gate never engages: the fused top sections are always within 0.10 of the best dense cosine at scale)",
+    "ms_per_question": "0.05 / 0.5 ms fusion step"
+   },
+   {
+    "variant": "(b) dense-gated RRF, margin 0.15",
+    "result_54": "in_prompt 284/304, abstain 9/12, fixed 2, broken 0, diff +0.66 pts, CI [0.0, 2.25]",
+    "result_scale": "in_prompt 261/304, abstain 5/12, fixed 0, broken 0, diff 0.00",
+    "ms_per_question": "0.04 / 0.44 ms fusion step"
+   }
+  ],
+  "recommended_variant": "(b) Dense-gated rank fusion with fusion_dense_margin = 0.05. At 54 schemes in-prompt goes 282 -> 288/304 (+6 fixed, 0 broken, CI [0.33, 4.32] points). At scale it goes 261 -> 264/304 (+4 fixed, 1 broken). Abstention is unchanged at both sizes by construction (9/12 and 5/12), and fusion cost is unchanged (<1 ms). It is the simplest change that works at both sizes: one new setting, today's rank fusion kept intact, and a null margin reproduces today's results exactly. The runner-up is (a) convex with weight 0.10: larger, steadier gains at scale (267/304) that hold at every prompt budget and on both MRRs, but it breaks 4 questions. All 4 are near-ties where rank fusion's sharp word-match tie-break was right and the max-normalised lexical bonus was too diluted to win. Choose convex only if scale gains matter more than zero regressions at 54.",
+  "risks": "1) The scale gain is small and fragile. +3 net, and the scheme-level CI includes 0; three of the four scale fixes are one failure pattern (Hindi \"पीएम किसान\" questions where PM-KMY outranked PM-KISAN). At scale only m=0.05 engages; m=0.10 changes nothing there. Smaller margins drift toward dense-only order, which is worse (-1.3 pts at 54, -2.6 at scale), so 0.05 sits near the edge where breaks begin. The one scale break (ignwps__situation_2) is exactly that kind: the right scheme was 0.064 behind a background scheme on meaning, and word matching was rightly lifting it. 2) The margin is in cosine units of Qwen3-Embedding-0.6B with the current query instruction. Changing the embedder or instruction requires re-checking it, just like min_score. 3) The gate can only move results toward dense order, so it cannot fix questions where the dense ranking itself is wrong, which are most remaining scale failures (similar background schemes). Section competition and near-ties inside one scheme (patterns 2 and 3) are untouched. 4) All 6 fixes at 54 are Hindi or situation questions from 4 schemes; English questions are unchanged. 5) Dev is 304 answerable questions. Two families and three values each were tried and all are reported; no test data was opened. 6) If another area's change (e.g. scheme-level grouping) is adopted, the gate should be re-measured together with it. It acts on the section ranking before retrieve_evidence, so it should compose, but that was not tested. 7) Untested idea, not run because of the two-family/three-value budget: rank fusion inside the margin plus a convex bonus outside it.",
+  "prototype_path": "/private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/fusion/prototype.py",
+  "broken_questions_explained": "There is one break, at scale: ignwps__situation_2 (Hindi widow-pension situation question). The right scheme's best section had dense 0.636 against a background state scheme's 0.700, 0.064 behind, so it fell outside the 0.05 margin. Word matching, which was correctly lifting it, could no longer do so. More generally, the gate breaks a question whenever the meaning model prefers a wrong scheme by more than the margin and word matching is right. The convex runner-up breaks a different kind of question, 4 near-ties (ignwps__eligibility_4 and _6 in Hindi, pm_kmy__land_limit__hi_latn at both sizes). There the meaning model preferred a sibling scheme by 0.02-0.04 (igndps over ignwps, pm_kisan over pm_kmy), and the exact scheme-name word match was right. Dividing by the per-question maximum squeezed that word-match advantage to about 0.02, while rank fusion gives it a full rank-1 vote."
+ },
+ {
+  "area": "Ranking schemes rather than sections, and assembling the 3-section evidence (retrieve_evidence), tested on top of the current fusion ranking and on top of plain dense ranking",
+  "idea": "Choose the scheme first, then fill the 3 prompt slots. The section-level ranking stays exactly as it is today. (1) Each scheme gets a score: its best section's fused (rank-fusion) score plus 0.5 times its second-best section's score. (2) Meaning lead: if the scheme with the highest meaning similarity (cosine, its best section) is at least 0.10 above the fusion leader's, it becomes the leader. (3) Admission: another scheme may take slots only if its best meaning similarity is within 0.03 of the leader's, or above it, with at most one scheme per slot, taken in scheme-score order. Otherwise those slots go to the leader's next-best sections. (4) Fill: the leader's rules first, then the admitted schemes' sections best-first by fused score, each section bringing its scheme's rules before it (today's rule). If the admitted schemes run out of sections, the walk continues over the rest in rank order, so the prompt is never emptier than today. The min_score abstain gate, top_k=3, and retrieve() are unchanged. With the setting absent, the evidence is identical to today's at both sizes (checked on all 316 dev questions).",
+  "general_argument": "Every part uses only document structure that any scheme corpus has (a scheme_id grouping sections and a rules label) and the calibrated cosine scale the pipeline already relies on for min_score. Nothing depends on scheme names, question wording, language or a glossary.\n(a) A document that is really about the question usually matches in several of its sections (overview, benefits, rules). A single stray section of another document that shares a few words or an alias matches in one. Scoring a document by its best section plus a fraction of its second-best is the standard MaxP plus a small multi-passage bonus from passage-level IR. Only 0.5 is used, not a sum, because a sum would favour schemes with many sections; the scale corpus has schemes with up to 13.\n(b) Reciprocal rank fusion throws away score magnitudes, so two weak word matches can outrank a much closer meaning match. When the meaning channel says one scheme is clearly closer (by 0.10 cosine, on the same scale where 0.50 already decides \"answer or abstain\"), trusting it is a confidence-aware override that applies in any language.\n(c) Slots are scarce (3), and every scheme brings its rules. Giving a slot to a scheme that is clearly less similar in meaning costs the leader a section that more often holds the answer. Admitting only near-ties keeps sibling schemes (two pensions, two housing schemes) side by side, which is when the answer model needs to see both.\nRobustness, not tuned for any of these settings: on top of four different fusion settings the recommended variant gained +6 to +12 at 54 and +3 to +12 at scale, breaking at most 1. On plain dense ranking it is neutral at 54 and +6/-0 at scale. Nearby values give the same or nearly the same result: admit_gap 0.03, 0.06 and 0.10 all give 288/304 at 54 with 0 broken, and second_weight 1.0 gives 287 and 265.",
+  "implementation": "Full unified diff against engine/retriever.py: /private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/scheme_level/retriever.diff. The patched copy is retriever_patched.py in the same folder. test_patched.py loads that copy, runs it through the shared harness, and asserts that with the setting absent the evidence is identical to today's for all 316 dev questions, at both sizes.\n\nChanges:\n1. Module constant:\nSCHEME_FIRST = {\"second_weight\": 0.5, \"admit_gap\": 0.03, \"lead_gap\": 0.10}\n\n2. Retriever.__init__, after self._rules is built (sections grouped by scheme, for a fast per-scheme max):\n        keys = [doc.scheme_key for doc in self.documents]\n        names = list(dict.fromkeys(keys))\n        number = {key: n for n, key in enumerate(names)}\n        self._scheme_of = np.array([number[key] for key in keys])\n        self._by_scheme = np.argsort(self._scheme_of, kind=\"stable\")\n        self._scheme_start = np.flatnonzero(np.r_[True, np.diff(self._scheme_of[self._by_scheme]) != 0])\n        self._sections_of = np.split(self._by_scheme, self._scheme_start[1:])\n        self._rules_of = [self._rules.get(name, []) for name in names]\n   and after self.depth:\n        scheme_first = cfg.get(\"scheme_first\")\n        if scheme_first is True:\n            scheme_first = {}\n        self.scheme_first = {**SCHEME_FIRST, **scheme_first} if isinstance(scheme_first, dict) else None\n\n3. Move the fusion loop out of _rank into a helper (behaviour unchanged). _rank's fusion branch becomes:\n   meaning, fused = self._fusion_scores(query, lexical); return meaning, (none if fused is None else self._top(fused, k))\n    def _fusion_scores(self, query, lexical):\n        meaning = self.dense.scores(query)\n        if meaning.max() < self.min_score:\n            return meaning, None\n        fused = np.zeros(len(self.documents))\n        for name, scores in ((\"bm25\", self._bm25.scores(lexical)), (\"char\", self._char_scores(lexical)), (\"dense\", meaning)):\n            for rank, i in enumerate(self._top(scores, self.depth), 1):\n                fused[i] += self.fusion_weights[name] / (self.rrf_k + rank)\n        return meaning, fused\n\n4. retrieve_evidence() first line:\n        if self.scheme_first is not None and self.method == \"fusion\":\n            return self._scheme_first_evidence(query, self.top_k if top_k is None else top_k)\n\n5. New method:\n    def _scheme_first_evidence(self, query, budget):\n        if budget < 0:\n            raise ValueError(\"top_k must not be negative\")\n        if budget == 0 or not query.strip():\n            return []\n        lexical = self._expand(query) if self._glossary else query\n        meaning, fused = self._fusion_scores(query, lexical)\n        if fused is None:\n            return []                                   # same abstain gate as today\n        p = self.scheme_first\n        order = self._top(fused, len(fused))            # every section with a merged score, best first\n        if not len(order):\n            return []\n        best, second = {}, {}\n        for i in order:\n            s = self._scheme_of[i]\n            if s not in best: best[s] = fused[i]\n            elif s not in second: second[s] = fused[i]\n        score = {s: best[s] + p[\"second_weight\"] * second.get(s, 0.0) for s in best}\n        schemes = sorted(best, key=lambda s: -score[s])            # stable: ties keep rank order\n        similarity = np.maximum.reduceat(meaning[self._by_scheme], self._scheme_start)   # best cosine per scheme\n        lead = schemes[0]\n        closest = self._scheme_of[int(np.argmax(meaning))]\n        if similarity[closest] >= similarity[lead] + p[\"lead_gap\"]:\n            lead = closest\n        floor = similarity[lead] - p[\"admit_gap\"]\n        admitted = [lead] + [s for s in schemes if s != lead and similarity[s] >= floor][:budget - 1]\n        pool = sorted((int(i) for s in admitted for i in self._sections_of[s]), key=lambda i: (-fused[i], -meaning[i]))\n        rest = [int(i) for i in order if self._scheme_of[i] not in admitted]\n        chosen = list(self._rules_of[lead][:budget])\n        for i in pool + rest:\n            for j in (*self._rules_of[self._scheme_of[i]], i):\n                if j not in chosen and len(chosen) < budget:\n                    chosen.append(j)\n            if len(chosen) == budget:\n                break\n        return [self._chunk(i, float(meaning[i])) for i in chosen]\n\nThe reported chunk score stays the meaning similarity, as today. retrieve() and the dense, bm25 and tfidf methods are untouched. CorpusPack (external corpora) has no scheme_first setting, so its behaviour is unchanged.\n\nSpeed: retrieval alone (query vector cached) goes from 0.3 to 0.4 ms per question at 54, and from 2.9 to 3.0 ms at scale. The one embedding call per question (about 25 to 65 ms) dominates and is unchanged.",
+  "variants_tried": [
+   {
+    "variant": "BASELINE today (walk the 3 best sections, each scheme brings its rules)",
+    "result_54": "282/304, abstain 9/12",
+    "result_scale": "261/304, abstain 5/12",
+    "ms_per_question": "0.3 ms retrieval alone (54), 2.9 ms (scale); plus about 25-65 ms embedding call"
+   },
+   {
+    "variant": "F scheme score = best section only (second_weight 0), always admit 2nd scheme, slots = S1 rules + S1 best + S2 rules",
+    "result_54": "269/304, ab 9/12, +1/-14, -4.28 pts, CI [-7.86,-0.81]",
+    "result_scale": "252/304, ab 5/12, +4/-13, -2.96, CI [-7.29,+1.96]",
+    "ms_per_question": "<1 (cached scores)"
+   },
+   {
+    "variant": "F second_weight 0.5, always admit, same slots",
+    "result_54": "271/304, ab 9/12, +3/-14, -3.62, CI [-7.20,0.00]",
+    "result_scale": "255/304, ab 5/12, +8/-14, -1.97, CI [-6.76,+3.65]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 1.0, always admit, same slots",
+    "result_54": "268/304, ab 9/12, +3/-17, -4.61, CI [-7.98,-1.27]",
+    "result_scale": "257/304, ab 5/12, +10/-14, -1.32, CI [-6.31,+4.52]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 0, admit if score ratio >= 0.9, same slots",
+    "result_54": "281/304, ab 9/12, +0/-1, -0.33, CI [-1.24,0.00]",
+    "result_scale": "262/304, ab 5/12, +1/-0, +0.33, CI [0.00,+1.09]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 0, admit if ratio >= 0.8, same slots",
+    "result_54": "276/304, ab 9/12, +1/-7, -1.97, CI [-4.90,+0.42]",
+    "result_scale": "260/304, ab 5/12, +4/-5, -0.33, CI [-3.87,+3.45]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 0, admit within 0.03 cosine, same slots",
+    "result_54": "281/304, ab 9/12, +0/-1, -0.33, CI [-1.24,0.00]",
+    "result_scale": "264/304, ab 5/12, +4/-1, +0.99, CI [-0.84,+4.07]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 0, admit within 0.06 cosine, same slots",
+    "result_54": "281/304, ab 9/12, +0/-1, -0.33, CI [-1.24,0.00]",
+    "result_scale": "261/304, ab 5/12, +4/-4, 0.00, CI [-2.40,+3.41]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 0, admit within 0.10 cosine, same slots",
+    "result_54": "278/304, ab 9/12, +1/-5, -1.32, CI [-3.57,+0.56]",
+    "result_scale": "255/304, ab 5/12, +4/-10, -1.97, CI [-6.11,+2.42]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 0, never admit a 2nd scheme (all 3 slots to S1)",
+    "result_54": "275/304, ab 9/12, +0/-7, -2.30, CI [-6.04,0.00]",
+    "result_scale": "262/304, ab 5/12, +1/-0, +0.33, CI [0.00,+1.09]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 0.5, ratio 0.9, same slots",
+    "result_54": "283/304, ab 9/12, +2/-1, +0.33, CI [-0.81,+1.52]",
+    "result_scale": "264/304, ab 5/12, +4/-1, +0.99, CI [-0.63,+2.80]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 1.0, ratio 0.9, same slots",
+    "result_54": "280/304, ab 9/12, +2/-4, -0.66, CI [-2.19,+0.60]",
+    "result_scale": "265/304, ab 5/12, +5/-1, +1.32, CI [-0.61,+3.77]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 0.5, admit within 0.03, same slots",
+    "result_54": "284/304, ab 9/12, +3/-1, +0.66, CI [-0.75,+2.40]",
+    "result_scale": "265/304, ab 5/12, +6/-2, +1.32, CI [-1.19,+4.75]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "F second_weight 1.0, admit within 0.03, same slots",
+    "result_54": "281/304, ab 9/12, +3/-4, -0.33, CI [-2.11,+1.52]",
+    "result_scale": "266/304, ab 5/12, +7/-2, +1.64, CI [-1.19,+5.38]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK fill (S1 rules, then admitted schemes' sections best-first, each with its rules): second_weight 0, admit 0.03",
+    "result_54": "282/304, ab 9/12, +0/-0 (identical to baseline)",
+    "result_scale": "261/304, ab 5/12, +0/-0 (identical)",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK second_weight 0, admit 0.06",
+    "result_54": "282/304, +0/-0",
+    "result_scale": "261/304, +0/-0",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK second_weight 0.5, admit 0.03 (= variant A, no meaning lead)",
+    "result_54": "285/304, ab 9/12, +3/-0, +0.99, CI [0.00,+2.68]",
+    "result_scale": "264/304, ab 5/12, +3/-0, +0.99, CI [0.00,+2.86]",
+    "ms_per_question": "0.4 (54) / 3.0 (scale) end-to-end retrieval alone"
+   },
+   {
+    "variant": "WALK second_weight 1.0, admit 0.03",
+    "result_54": "284/304, ab 9/12, +3/-1, +0.66, CI [0.00,+2.25]",
+    "result_scale": "265/304, ab 5/12, +4/-0, +1.32, CI [0.00,+3.96]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK second_weight 0.5, admit 0.06",
+    "result_54": "285/304, +3/-0, +0.99",
+    "result_scale": "264/304, +3/-0, +0.99",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK second_weight 0.5, admit 0.03, at most 2 schemes",
+    "result_54": "285/304, +3/-0",
+    "result_scale": "264/304, +3/-0",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK second_weight 0.5, admit all (no gap)",
+    "result_54": "283/304, ab 9/12, +1/-0, +0.33, CI [0.00,+1.15]",
+    "result_scale": "263/304, ab 5/12, +2/-0, +0.66, CI [0.00,+1.89]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK second_weight 1.0, admit all",
+    "result_54": "282/304, +1/-1, 0.00",
+    "result_scale": "264/304, +3/-0, +0.99",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK second_weight 0.5, admit by ratio 0.9",
+    "result_54": "284/304, ab 9/12, +2/-0, +0.66, CI [0.00,+1.68]",
+    "result_scale": "263/304, ab 5/12, +2/-0, +0.66, CI [0.00,+1.89]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "S1FIRST fill (S1 rules + S1 best, then walk), second_weight 0.5, admit 0.03",
+    "result_54": "284/304, ab 9/12, +3/-1, +0.66, CI [-0.75,+2.40]",
+    "result_scale": "262/304, ab 5/12, +2/-1, +0.33, CI [-0.89,+2.07]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK + meaning lead 0.05, second_weight 0.5, admit 0.03",
+    "result_54": "288/304, ab 9/12, +6/-0, +1.97, CI [+0.33,+4.32]",
+    "result_scale": "265/304, ab 5/12, +5/-1, +1.32, CI [-0.68,+4.86]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "RECOMMENDED: WALK + meaning lead 0.10, second_weight 0.5, admit 0.03",
+    "result_54": "288/304, abstain 9/12 (unchanged), fixed 6, broken 0, +1.97 pts, CI [+0.33,+4.32]; hi 81->87/92, situation 29->31/36, no slice down",
+    "result_scale": "264/304, abstain 5/12 (unchanged), fixed 3, broken 0, +0.99 pts, CI [0.00,+2.86]; situation 16->18/36, en 136->138, hi 75->76, no slice down",
+    "ms_per_question": "0.4 ms (54) and 3.0 ms (scale) retrieval alone vs 0.3/2.9 today; embedding call about 25-65 ms unchanged"
+   },
+   {
+    "variant": "WALK + meaning lead 0.10, second_weight 0 (ablation: no second-section bonus)",
+    "result_54": "288/304, +6/-0, +1.97, CI [+0.33,+4.32]",
+    "result_scale": "261/304, +0/-0",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK + meaning lead 0.10, second_weight 1.0, admit 0.03",
+    "result_54": "287/304, ab 9/12, +6/-1, +1.64, CI [0.00,+3.88]",
+    "result_scale": "265/304, ab 5/12, +4/-0, +1.32, CI [0.00,+3.96]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK + meaning lead 0.10, second_weight 0.5, admit 0.06",
+    "result_54": "288/304, +6/-0, +1.97",
+    "result_scale": "264/304, +3/-0, +0.99",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK + meaning lead 0.10, second_weight 0.5, admit 0.10",
+    "result_54": "288/304, +6/-0, +1.97, CI [+0.33,+4.32]",
+    "result_scale": "263/304, +2/-0, +0.66, CI [0.00,+1.89]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK + meaning lead 0.10, second_weight 0.5, admit all (ablation: no admission gap)",
+    "result_54": "284/304, +2/-0, +0.66",
+    "result_scale": "263/304, +2/-0, +0.66",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK + meaning lead 0.10, second_weight 0, admit all",
+    "result_54": "284/304, +2/-0",
+    "result_scale": "261/304, +0/-0",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "RESERVE fill (every admitted scheme guaranteed its rules) + lead 0.10, second_weight 0.5, admit 0.03",
+    "result_54": "287/304, ab 9/12, +6/-1, +1.64, CI [0.00,+3.85]",
+    "result_scale": "265/304, ab 5/12, +6/-2, +1.32, CI [-1.19,+4.75]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK + lead 0.10, second_weight 0.5, admit 0.03, pool ordered by meaning instead of fused score",
+    "result_54": "283/304, +7/-6, +0.33, CI [-4.89,+4.68]",
+    "result_scale": "263/304, +6/-4, +0.66, CI [-1.82,+3.54]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "WALK second_weight 0, admit 0.03, pool ordered by meaning",
+    "result_54": "282/304, +6/-6, 0.00",
+    "result_scale": "261/304, +4/-4, 0.00",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "PLAIN DENSE first stage, today's walk (compared with the fusion baseline)",
+    "result_54": "278/304, ab 9/12, +7/-11, -1.32, CI [-6.82,+3.85]",
+    "result_scale": "253/304, ab 5/12, +7/-15, -2.63, CI [-7.85,+2.78]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "PLAIN DENSE + scheme-first (second_weight 0.5, admit 0.03; meaning lead has no effect on dense), compared with the dense baseline",
+    "result_54": "278 -> 278/304, +0/-0",
+    "result_scale": "253 -> 259/304, +6/-0, +1.97, CI [+0.40,+3.68]",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "PLAIN DENSE + scheme-first second_weight 0 or 1.0 (vs fusion baseline)",
+    "result_54": "278/304 for 0, 0.5 and 1.0 (+7/-11 vs fusion)",
+    "result_scale": "0: 253/304 (+8/-17); 1.0: 260/304 (+8/-9)",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "ROBUSTNESS: recommended on fusion 0.5/0.5/1 k60 (code default), vs that fusion's own baseline",
+    "result_54": "273 -> 284/304, +12/-1, +3.62, CI [+0.77,+7.36] (variant A without lead: 274, +2/-1)",
+    "result_scale": "254 -> 266/304, +12/-0, +3.95, CI [+1.71,+6.92] (A: 262, +8/-0)",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "ROBUSTNESS: recommended on fusion 0.25/0.25/1 k60",
+    "result_54": "278 -> 288/304, +10/-0, +3.29, CI [+0.48,+7.24] (A: 279, +1/-0)",
+    "result_scale": "261 -> 268/304, +8/-1, +2.30, CI [+0.86,+4.33] (A: 266, +6/-1)",
+    "ms_per_question": "<1"
+   },
+   {
+    "variant": "ROBUSTNESS: recommended on fusion 0.5/0.5/1 k20",
+    "result_54": "274 -> 284/304, +11/-1, +3.29, CI [+0.67,+7.00] (A: 275, +2/-1)",
+    "result_scale": "259 -> 266/304, +8/-1, +2.30, CI [+0.33,+4.81] (A: 263, +5/-1)",
+    "ms_per_question": "<1"
+   }
+  ],
+  "recommended_variant": "Scheme-first assembly on top of the current fusion: second_weight 0.5, admit_gap 0.03, lead_gap 0.10, walk fill. Dev results: 54 schemes 282 -> 288/304 in-prompt (6 fixed, 0 broken, +1.97 pts, scheme-level 95% CI [+0.33, +4.32]), abstain 9/12 unchanged. Scale 261 -> 264/304 (3 fixed, 0 broken, +0.99 pts, CI [0.00, +2.86]), abstain 5/12 unchanged. No language or type slice goes down at either size. Fixed at 54: six Hindi questions where one stray section of another scheme, or two weak word matches, took the lead (e.g. a scheme at cosine 0.465 placed above the right one at 0.757). Fixed at scale: PM-KISAN and PMAY-G questions where a sibling or background scheme with one strong section beat the scheme that matched in several sections. The ablations show all three parts are needed. Without the meaning lead it is 285 and 264. Without the second-section bonus it is 288 and 261. Without the admission gap it is 284 and 263. The gains stay small: 6 and 3 questions. Most remaining dev failures are outside what assembly can fix. Either the right scheme never reaches the candidates (much of scale), or the answer is in a second scheme's non-rules section (e-Shram/PMSBY), or it is a within-scheme near-tie where the gold section ranks 4th or 5th by both fusion and meaning.",
+  "risks": "1) Small effect on a 304-question dev set: +6 and +3 fixes. At scale the CI lower bound is 0, so the scale gain is not statistically separated from zero. The neighbourhood is stable (admit_gap 0.03/0.06/0.10 and second_weight 0.5/1.0 all give similar results with at most 1 break). Still, this should be confirmed on the held-out test split by whoever is allowed to run it.\n2) lead_gap and admit_gap are in Qwen3-Embedding cosine units, like min_score. If the embedder changes, they must be re-checked together with min_score.\n3) Prompts are more often single-scheme: at 54, 270 -> 285 of 304 answerable prompts; at scale, 255 -> 268. When the leader is wrong and the right scheme is 0.03-0.10 cosine lower, that scheme can lose a slot it used to get. This caused 0 breaks on dev, but it is the main failure mode to watch. For \"which scheme helps me\" questions with several valid schemes, fewer alternatives reach the model. The situation slice rose at both sizes, but the harness counts only one gold scheme, so the downstream coverage score should be checked when the answer model is next run.\n4) The meaning-lead step partly overlaps the fusion-weight work (pattern 1). If the fusion agent also moves weight toward meaning, the two gains will not simply add. The robustness runs show the mechanism still helps on 4 fusion settings, and more when fusion is more word-heavy.\n5) Opt-in via retrieval.scheme_first and fusion-only. For a corpus with no scheme_id (each section its own scheme), the second-section bonus does nothing and the result is just a reordering. CorpusPack and external corpora never set it.\n6) A leader with 3 or more rules sections (some scale schemes have up to 5) still fills every slot with rules, same as today.\n7) The answer model was not run, so only search quality (\"right section in the prompt\") is measured, not answer quality.",
+  "prototype_path": "/private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/scheme_level/scheme_retriever.py",
+  "new_settings": "Under retrieval: in domains/india_schemes/eval_config.yaml (absent means today's behaviour exactly; `true` means these defaults):\n  # Rank schemes, then fill the slots (chosen on dev only): a scheme scores its best section plus half its\n  # second-best; a scheme 0.10 closer in meaning than the leader leads; other schemes get slots only\n  # within 0.03 meaning similarity of the leader.\n  scheme_first: {second_weight: 0.5, admit_gap: 0.03, lead_gap: 0.10}",
+  "broken_questions_explained": "The recommended variant breaks no dev question at either size. Variants that did break questions fell into three groups:\n(a) Forcing a second scheme in, or reserving a slot for its rules, took a slot from the leader's next section. That broke fact questions whose answer was in the leader's 2nd or 3rd non-rules section (e.g. an instalment amount in a benefits section).\n(b) Giving all slots to the leader (\"never admit\", or a loose ratio or 0.10 gap with the old fill) broke near-tie sibling schemes, such as the widow and disability pensions, or rural and urban housing, where the right scheme was the runner-up.\n(c) Weighting the second section fully (1.0), or ordering slots by meaning alone, let schemes with many moderately matching sections, or meaning-similar but wrong sections, displace the right one. The walk fill avoids (a) because it only changes which schemes may take slots, never the order within them.\nSupporting files in /private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/scheme_level/:\n- retriever.diff, retriever_patched.py, test_patched.py: the exact proposed change, checked through the harness.\n- lib.py, run_grid.py, results_*.json: every variant run on cached scores.\n- robust.py: other first-stage rankings.\n- composition.py: prompt make-up.\n- cache_scores.py: dev-only score cache.\nNo repository file was modified, and models/index was not written."
+ },
+ {
+  "area": "Representation: what text each retrieval channel sees. This covers (a) contextual section text for the dense index, (b) the lexical query view (vocabulary restriction, dropping Devanagari, coverage weighting, and a new idea: romanising Indian-script words), and (c) the wording of the dense query instruction.",
+  "idea": "The letter-run channel (character 3-5-gram TF-IDF) also gets a Latin spelling of every Indian-script word in the question. \"निक्षय पोषण योजना ...\" is searched as itself plus \"nikshay poshan yojna ...\", and \"जननी शिशु सुरक्षा कार्यक्रम\" also as \"janani shishu suraksha karyakram\". The romaniser is rule-based and has no parameters, about 100 lines with no new dependency. One table covers all nine Brahmic Unicode blocks, because they share the ISCII layout. It writes the informal spelling people type (sh/ch/chh, long vowels as short, फ as f) and applies Hindi schwa deletion (final, plus a conservative medial rule). Nothing else changes. BM25 and the dense query see exactly what they see today. The abstain gate is dense-only, so abstention cannot change. Questions with no Indian-script words (English and romanised-Hindi questions) get identical results by construction.\n\nWhy it helps: in the dev failures, Hindi questions name schemes that the documents spell only in Latin letters (Ni-kshay Poshan, Janani Shishu Suraksha), or whose Devanagari aliases share words with a twin scheme (PM Kisan and PM Kisan Maan-dhan). The lexical channels could only see generic in-vocabulary words such as योजना, के, लिए and the glossary's \"scheme yojana\". So their votes went to whichever sections matched those words (failure pattern 1). With a romanised copy, the spelling-tolerant channel can match the scheme name itself.",
+  "general_argument": "Indian scheme corpora, like most government corpora in multilingual countries, are mainly written in English and spell local names and terms in Latin letters (Yojana, Kisan, Poshan, Awas, Bima). Users often type the same words in their own script. Matching across scripts is a known problem in code-mixed and transliterated search, for example the FIRE mixed-script IR tasks. Transliterating the query is the standard remedy.\n\nThe mechanism uses only Unicode structure: no scheme ids, names, question wording or glossary entries. It works for any language mix:\n- Latin-only questions: a no-op.\n- A corpus written in Devanagari: the original words stay in the query, so nothing is lost.\n- Bengali, Gujarati, Gurmukhi, Oriya, Kannada and other Brahmic scripts: the same offset table applies.\n\nIt goes only to the letter-run channel because that channel is built to tolerate approximate spellings. A rule-based romanisation is approximate (\"rashtriy\" vs \"rashtriya\", \"yojna\" vs \"yojana\", \"penshan\" vs \"pension\"). Exact-word BM25 gains little from it and can be hit by romanised function words.\n\nQuestion-free check, which uses corpus aliases only and never the evaluation questions (alias_check.py): each scheme's Devanagari alias was romanised and searched in the corpus's Latin-script text only.\n- 54 schemes: the right scheme comes first in 37/47 cases and in the top 5 in 44/47.\n- About 4,650 schemes: first in 23/47, top 5 in 39/47.\n- Searching with the raw Devanagari: 0/47.\n\nHonesty notes:\n- The romaniser has no tunable parameters and was frozen before any dev measurement. I did choose its conventions (फ→f, keep the final a after a conjunct ending in y/r/v/l, medial schwa deletion only from the third letter) by looking at its output on a word list that included some scheme words from failing questions. These are standard romanisation conventions, with no per-word exceptions.\n- Only three \"where to feed it\" variants were tried (char only, char+BM25, char+BM25 with the glossary applied to the romanised words), and all are reported. The simplest one, char only, was the only one with zero breaks at both sizes.",
+  "implementation": "Two changes: a new module engine/romanise.py, and a small change to engine/retriever.py behind a new setting, retrieval.romanise_char (default false in code, so other packs are unchanged; set to true in domains/india_schemes/eval_config.yaml).\n\n1) NEW FILE engine/romanise.py: copy /private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/representation/romanise.py exactly (the __main__ demo can be dropped). Public functions:\n   is_indic(word) -> bool          # any letter in U+0900..U+0D7F (nine Brahmic blocks)\n   romanise_word(word) -> str      # e.g. किसान->kisan, मानधन->mandhan, निक्षय->nikshay, जननी->janani, ਕਿਸਾਨ->kisan\n   romanise_text(text) -> str      # romanised forms of the Indic-script words in text, space separated; \"\" if none\nAlgorithm of romanise_word:\n- Map each code point by its offset within its block (offset = ord(ch) - block_start, blocks 0x0900, 0x0980, ..., 0x0D00) through the CONSONANTS, VOWELS and SIGNS tables. Consonants carry an inherent \"a\".\n- Virama removes it; a vowel sign replaces it; a nukta changes the consonant (ज़->z, ड़->r, फ़->f).\n- Anusvara/candrabindu -> \"n\" (\"m\" before p/b/m); visarga -> \"h\"; native digits -> 0-9.\n- Schwa deletion: drop the final consonant's \"a\", unless the word ends in a conjunct whose last letter is y/r/v/l. Drop a medial \"a\" in a V C _ C V context (Ohala), from the third letter on.\n\n2) engine/retriever.py diff:\n\n+from engine.romanise import romanise_text\n ...\n class Retriever:\n     def __init__(self, pack, embedder=None, cache_dir=None):\n         ...\n         self._glossary = {k.lower(): v for k, v in (getattr(pack, \"glossary\", None) or {}).items()}\n+        # Indian-script words in a question also reach the letter-run channel spelled in Latin letters,\n+        # so a question typed in Devanagari can match scheme names the documents spell in English letters\n+        # (Kisan, Poshan, Janani). Word ranking, meaning search and the min_score gate are unchanged.\n+        self.romanise_char = bool(cfg.get(\"romanise_char\", False))\n ...\n+    def _char_query(self, query: str, lexical: str) -> str:\n+        \"\"\"What letter-run matching searches with: the (glossary-expanded) question, plus a romanised\n+        copy of its Indian-script words when retrieval.romanise_char is on.\"\"\"\n+        extra = romanise_text(query) if self.romanise_char else \"\"\n+        return f\"{lexical} {extra}\" if extra else lexical\n+\n     def _rank(self, query, top_k):\n         ...\n         if self.method == \"fusion\":\n             meaning = self.dense.scores(query)\n             if meaning.max() < self.min_score:\n                 return meaning, none\n             fused = np.zeros(len(self.documents))\n-            for name, scores in ((\"bm25\", self._bm25.scores(lexical)), (\"char\", self._char_scores(lexical)),\n-                                 (\"dense\", meaning)):\n+            for name, scores in ((\"bm25\", self._bm25.scores(lexical)),\n+                                 (\"char\", self._char_scores(self._char_query(query, lexical))),\n+                                 (\"dense\", meaning)):\n                 for rank, i in enumerate(self._top(scores, self.depth), 1):\n                     fused[i] += self.fusion_weights[name] / (self.rrf_k + rank)\n             return meaning, self._top(fused, k)\n\n(Only the fusion path was measured. The same _char_query could be used in the char_tfidf/hybrid branch, but that is not measured, so I would leave it out.)\n\n3) domains/india_schemes/eval_config.yaml, under retrieval:\n+  # Indian-script words in a question are also given to letter-run matching in Latin spelling\n+  # (dev: 282->287/304 at 54 schemes, 261->263/304 at scale, nothing broken, abstention unchanged).\n+  romanise_char: true\n\nSuggested unit tests:\n- romanise_word on a few words (किसान->kisan, पोषण->poshan, ਕਿਸਾਨ->kisan).\n- romanise_text(\"How much is PM Kisan?\") == \"\".\n- Results for an English query are identical with the setting on and off.\n\nThe runnable prototype (prototype_romanise_char.py) subclasses the repo's Retriever with exactly this _rank. It reads dense vectors from a copy of models/index in my scratch folder, so nothing in the repo is written.",
+  "new_settings": "retrieval.romanise_char: true. The code default is false, so behaviour is unchanged unless a pack turns it on. It has no numeric parameters.",
+  "variants_tried": [
+   {
+    "variant": "RECOMMENDED t_rom_char: romanised copy of Indian-script words added to the letter-run (char) channel only",
+    "result_54": "in_prompt 287/304 (base 282), abstain 9/12 (unchanged), fixed 5, broken 0, +1.64 pts, CI [0.0, 3.85]; Hindi 81->86/92. Fixed: jssk free diet x2 (hi), nikshay_poshan amount and payment (hi), pm_kisan situation_2 (hi)",
+    "result_scale": "in_prompt 263/304 (base 261), abstain 5/12 (unchanged), fixed 2, broken 0, +0.66 pts, CI [0.0, 2.29]; Hindi 75->77/92 (pm_kisan instalment amount and instalments per year)",
+    "ms_per_question": "end to end with live query embedding: 36.4 -> 36.5 ms (54) and 36.4 -> 36.6 ms (scale); romanising alone 0.03 ms"
+   },
+   {
+    "variant": "t_rom_both: romanised copy added to both BM25 and char",
+    "result_54": "287/304, abstain 9/12, fixed 5, broken 0, +1.64, CI [0.0, 3.85]",
+    "result_scale": "262/304, abstain 5/12, fixed 2, broken 1 (pmmvy__situation_2), +0.33, CI [-0.87, 2.08]",
+    "ms_per_question": "+0.1 ms vs base (search only)"
+   },
+   {
+    "variant": "t_rom_both_gloss: romanised copy added to both, with the glossary also applied to the romanised words",
+    "result_54": "287/304, abstain 9/12, fixed 5, broken 0, +1.64, CI [0.0, 3.85]",
+    "result_scale": "264/304, abstain 5/12, fixed 4, broken 1 (pmmvy__situation_2), +0.99, CI [-0.68, 3.14]",
+    "ms_per_question": "+2 ms vs base at scale (search only)"
+   },
+   {
+    "variant": "b_char_vocab_only: char channel sees only query words that are in the corpus vocabulary (for BM25 this restriction cannot change the ranking, since unknown words already score 0)",
+    "result_54": "283/304, abstain 9/12, fixed 1, broken 0, +0.33, CI [0.0, 1.12]",
+    "result_scale": "261/304, abstain 5/12, fixed 0, broken 0, 0.0",
+    "ms_per_question": "no change"
+   },
+   {
+    "variant": "b_drop_minor_script: drop query words whose script is under 5% of corpus words (Devanagari: 2.7% at 54, 0.04% at scale) from BM25 and char, after glossary expansion",
+    "result_54": "278/304, abstain 9/12, fixed 5, broken 9, -1.32, CI [-4.58, 1.85]",
+    "result_scale": "264/304, abstain 5/12, fixed 10, broken 7, +0.99, CI [-2.86, 6.2]",
+    "ms_per_question": "no change"
+   },
+   {
+    "variant": "b_cov_word: each lexical channel's fusion weight multiplied by the share of distinct query words it knows (vocabulary or glossary)",
+    "result_54": "278/304, abstain 9/12, fixed 6, broken 10, -1.32, CI [-6.69, 3.46]",
+    "result_scale": "261/304, abstain 5/12, fixed 3, broken 3, 0.0, CI [-1.77, 2.78]",
+    "ms_per_question": "no change"
+   },
+   {
+    "variant": "b_cov_word_sq: as above, share squared",
+    "result_54": "278/304, abstain 9/12, fixed 7, broken 11, -1.32, CI [-6.82, 3.85]",
+    "result_scale": "260/304, abstain 5/12, fixed 4, broken 5, -0.33, CI [-3.22, 2.92]",
+    "ms_per_question": "no change"
+   },
+   {
+    "variant": "b_cov_channel: BM25 weighted by word share, char by the share of the query's 3-5-grams that are in the corpus",
+    "result_54": "280/304, abstain 9/12, fixed 5, broken 7, -0.66, CI [-5.51, 3.15]",
+    "result_scale": "261/304, abstain 5/12, fixed 3, broken 3, 0.0, CI [-1.77, 2.78]",
+    "ms_per_question": "no change"
+   },
+   {
+    "variant": "DIAGNOSTIC ONLY, not a candidate: coverage gate (dense-only when word share < tau), scanned at 8 tau values in coverage_scan.py, more than the 3-value limit, so it is reported as a diagnostic",
+    "result_54": "best tau=0.2: 287/304 (+5); range 282-287",
+    "result_scale": "no tau beats the baseline: 259-261/304 for every tau. Vocabulary coverage depends on corpus size, so a gate tuned at one size fails at the other. Rejected.",
+    "ms_per_question": "n/a"
+   },
+   {
+    "variant": "a_ctx_text_first: dense index text = '<scheme name>: <first sentence of overview>' + section text (re-embedded, 54 ONLY, cache in my folder)",
+    "result_54": "276/304, abstain 9/12, fixed 3, broken 9, -1.97, CI [-4.92, 0.39] (54 only, as instructed)",
+    "result_scale": "not measured (would need the scale corpus re-embedded)",
+    "ms_per_question": "no change at query time"
+   },
+   {
+    "variant": "a_ctx_text_full: dense index text = '<scheme name>: <overview text, at most 600 chars>' + section text (54 ONLY)",
+    "result_54": "274/304, abstain 9/12, fixed 2, broken 10, -2.63, CI [-5.25, -0.36] (54 only)",
+    "result_scale": "not measured",
+    "ms_per_question": "no change at query time"
+   },
+   {
+    "variant": "a_noalias_dense: dense index text = title + text, without aliases (only the 286 alias-bearing sections change, so scale was measurable by re-embedding just those)",
+    "result_54": "266/304, abstain 9/12, fixed 1, broken 17, -5.26, CI [-9.46, -1.56]",
+    "result_scale": "254/304, abstain 5/12, fixed 5, broken 12, -2.30, CI [-5.99, 0.96]",
+    "ms_per_question": "no change"
+   },
+   {
+    "variant": "a_ctx_vec_0.5: section vector := normalise(v + 0.5 * scheme centroid), used for ranking only (no re-embedding, both sizes)",
+    "result_54": "282/304, abstain 9/12, fixed 4, broken 4, 0.0, CI [-2.34, 2.34]",
+    "result_scale": "260/304, abstain 5/12, fixed 3, broken 4, -0.33, CI [-2.05, 1.40]",
+    "ms_per_question": "+1-2 ms (search only)"
+   },
+   {
+    "variant": "a_ctx_vec_1.0: as above with weight 1.0",
+    "result_54": "280/304, abstain 9/12, fixed 4, broken 6, -0.66, CI [-3.91, 2.26]",
+    "result_scale": "257/304, abstain 5/12, fixed 3, broken 7, -1.32, CI [-4.20, 0.96]",
+    "ms_per_question": "+1 ms (search only)"
+   },
+   {
+    "variant": "c_generic instruction: 'Given a web search query, retrieve relevant passages that answer the query'",
+    "result_54": "283/304, abstain 9/12, fixed 7, broken 6 (2 answerable questions fell under min_score 0.50 and got nothing), +0.33, CI [-2.54, 3.25]",
+    "result_scale": "264/304, abstain 6/12 (+1), fixed 5, broken 2, +0.99, CI [-0.75, 3.17]",
+    "ms_per_question": "same embedding cost"
+   },
+   {
+    "variant": "c_multilingual instruction: '...welfare schemes, which may be written in English, Hindi or romanised Hindi, retrieve the scheme passage that answers it'",
+    "result_54": "284/304, abstain 9/12, fixed 4, broken 2, +0.66, CI [-1.04, 2.27]",
+    "result_scale": "263/304, abstain 6/12 (+1), fixed 3, broken 1, +0.66, CI [-0.57, 2.08]",
+    "ms_per_question": "same embedding cost"
+   },
+   {
+    "variant": "c_identify_scheme instruction: '...identify the scheme it is about and retrieve the passage of that scheme that answers it'",
+    "result_54": "278/304, abstain 7/12 (-2), fixed 2, broken 6, -1.32, CI [-3.76, 0.67]",
+    "result_scale": "262/304, abstain 4/12 (-1), fixed 1, broken 0, +0.33, CI [0.0, 0.99]",
+    "ms_per_question": "same embedding cost"
+   },
+   {
+    "variant": "d_gloss_dense: the dense query also gets the glossary-expanded text",
+    "result_54": "280/304, abstain 8/12 (-1), fixed 3, broken 5, -0.66, CI [-3.26, 1.38]",
+    "result_scale": "267/304, abstain 5/12, fixed 9, broken 3, +1.97, CI [-1.47, 7.41]",
+    "ms_per_question": "same embedding cost"
+   },
+   {
+    "variant": "combo: t_rom_char + c_multilingual instruction",
+    "result_54": "287/304, abstain 9/12, fixed 7, broken 2, +1.64, CI [-0.74, 4.68]",
+    "result_scale": "265/304, abstain 6/12 (+1), fixed 5, broken 1, +1.32, CI [-0.37, 3.93]",
+    "ms_per_question": "same as t_rom_char"
+   }
+  ],
+  "recommended_variant": "t_rom_char, with retrieval.romanise_char: true. It is the simplest variant that improves both sizes and breaks nothing: 54 schemes 282->287/304 (+5, 0 broken), scale 261->263/304 (+2, 0 broken). Abstention is unchanged (9/12 and 5/12), and cannot change, because the gate uses dense only. Search time is unchanged (+0.1 ms per question).\n\nThe instruction combo adds +2 at scale, but it costs 2 breaks at 54 and changes the cosine scale that min_score 0.50 was calibrated on. I do not recommend it now. If it is ever tried, min_score should be recalibrated first.\n\nNone of the other representation ideas in my area cleared the bar:\n- Contextual dense text, vector-level context and removing aliases from the dense text all hurt.\n- Coverage weighting and dropping Devanagari each gain at one size and lose at the other.\n- The instruction wordings are within noise, and two of them move the abstain threshold.",
+  "broken_questions_explained": "The recommended variant breaks no dev question at either size. It can only change Indian-script questions; the other 212 of 304 answerable dev questions give identical results by construction.\n\nWhat broke in the rejected variants:\n1. Coverage weighting and dropping Devanagari: the breaks were Hindi questions that name one of two near-twin schemes in Devanagari, matched through the corpus's Devanagari aliases (IGNWPS vs IGNDPS; PM-KMY vs PM-KISAN; PMJDY; NPS Vatsalya). The dense model confuses these twins, and the few exact lexical name matches were the only thing separating them. Muting or removing those words therefore loses the twin. This is why romanising (adding a view) works where dropping (removing a view) does not.\n2. Contextual dense text, vector context and removing aliases: the breaks were mostly section-level picks (eligibility/rules questions) and Hindi name questions. Giving every section its scheme's summary makes the sections of one scheme look alike, so the choice of which section gets in gets worse (pattern 3). Removing aliases takes the Devanagari names away from the dense model.\n3. Instruction wording and glossary-in-dense: these shift the dense cosine scale. Answerable questions fell under min_score 0.50 and got nothing (generic instruction), or abstention dropped (identify-scheme instruction, glossary-in-dense at 54). The remaining breaks were again twin schemes (PMAY-G vs PMAY-U, NMMSS vs PM YASASVI).",
+  "risks": "1. The gain is small: +5 at 54 and +2 at scale, with the 95% lower bound exactly 0 at both sizes. It is concentrated in Hindi (Devanagari) questions that name a scheme the corpus spells in Latin letters. Only 92 dev questions are Devanagari, so the gain on test may be anywhere from 0 to a few questions. It does not address the general fusion problems (pattern 1 beyond the \"can't see the name\" part, and patterns 2 and 3).\n2. The romaniser is rule-based and approximate. Schwa deletion is imperfect (\"sarakar\"), long vowels are collapsed, and Devanagari acronyms come out as \"piem\" and \"tibi\", which do not match \"PM\" and \"TB\". Letter-run matching tolerates most of this, but some names will still be missed.\n3. Romanised function words (\"men\", \"ko\", \"ka\", \"hai\") add common letter-runs to the char query. They carry low TF-IDF weight and caused no break on dev, but in another corpus they could occasionally pull in an English section containing \"men\".\n4. Possible bias in the design: I chose the romaniser's conventions after seeing its output on a word list that included some scheme words from failing questions. The rules are generic (no per-word exceptions) and were frozen before measurement. The question-free alias check (romanised names find their scheme first 37/47 at 54 and 23/47 at scale, top-5 44/47 and 39/47; raw Devanagari 0/47) suggests the quality is general.\n5. Scope: only the fusion path was measured. The char_tfidf/hybrid methods would need their own check before reusing it there.\n6. The scale numbers include an artifact: only our 54 schemes carry Devanagari aliases among the ~4,650. Hindi lexical matching is therefore easier at scale than it would be with a corpus of real background schemes that had Hindi aliases. This affects all variants equally.",
+  "prototype_path": "/private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/representation/prototype_romanise_char.py. It uses romanise.py in the same folder. Numbers are in prototype_result.json. The full variant sweep is in run_variants.py and proto.py, with results in results.json. The question-free romaniser check is alias_check.py, the coverage diagnostic is coverage_scan.py, and the per-channel failure inspection is inspect_channels.py, all in the same folder."
+ },
+ {
+  "reviews": [
+   {
+    "area": "Representation: a Latin-letter (romanised) copy of Indian-script question words, given to the letter-run (char 3-5-gram) channel only (retrieval.romanise_char)",
+    "verdict": "adopt_with_changes",
+    "reasons": "I re-ran it at both sizes with the designer's own class (representation/prototype_romanise_char.py) through harness.Bench, using a private copy of the dense cache. The numbers match the designer's exactly.\n- 54 schemes: 282 -> 287/304, 5 fixed, 0 broken, +1.64 pts, CI [0.00, 3.85]. Abstention 9/12, unchanged.\n- Scale: 261 -> 263/304, 2 fixed, 0 broken, +0.66 pts, CI [0.00, 2.29]. Abstention 5/12, unchanged.\n- Slices: only Hindi goes up (81->86 at 54, 75->77 at scale). English and romanised Hindi are unchanged. No language or type slice goes down at either size.\n\nI checked question by question that the 220 dev questions with no Indian-script word get identical evidence at both sizes. Only 14 of the 96 Indian-script questions change evidence at each size. Abstention cannot change, because the 0.50 gate looks at meaning scores only.\n\nPrompt budget, top_k 2/3/5:\n- 54: 250/287/295 vs 246/282/294 today.\n- Scale: 235/263/278 vs 235/261/276.\n- No budget gets worse, so the gain is not tied to exactly 3 slots.\n\nOut-of-sample check: 206 fine-tuning questions that are neither dev nor test, scoring whether the asked scheme reaches the prompt. 0 broken and 0 new refusals at both sizes.\n\nOn the code-default fusion settings (0.5/0.5/1.0, rrf_k 60) it still helps: +4/-0 at 54 and +7/-2 at scale.\n\nCost: retrieval alone goes 0.27 -> 0.29 ms per question at 54 and 2.88 -> 3.31 ms at scale. Romanising itself takes 0.03 ms. The query embedding call is about 26 ms and does not change.\n\nIt has no tunable parameter, and it adds a view of the question rather than overriding a channel. It is the only proposal that passes every regression guard below.\n\nLimits:\n- The gain is small, and its CI lower bound is exactly 0 at both sizes.\n- It comes from few distinct cases. At 54 the fixes are 2 JSSK questions, 2 Nikshay questions and 1 PM-KISAN question. At scale both fixes are PM-KISAN.",
+    "hardcoding_or_test_fitting_found": "None in the code. I searched for scheme ids, names and question wording and found none, and the prototype never reads the test split. The romaniser is a Unicode block-offset table plus general schwa rules, with no per-word exceptions.\n\nOne thing to note, which the designer disclosed: the spelling conventions (फ->f, keeping the final a after a y/r/v/l conjunct, medial schwa deletion from the third letter on) were chosen after looking at the romaniser's output on a word list that included scheme words from failing dev questions. These are standard conventions, and the designer's question-free alias check (romanised Devanagari aliases find their scheme first in 37/47 cases at 54) supports that they are general. The __main__ demo list in romanise.py contains those scheme words and should not ship.",
+    "required_changes": "1) Ship engine/romanise.py without the __main__ demo word list.\n2) Add unit tests:\n   - romanise_word on a few general words in two scripts (Devanagari and Gurmukhi).\n   - romanise_text returns '' for an all-Latin question.\n   - With the setting on and off, evidence is identical for a Latin-only question.\n3) Keep it exactly as measured: char channel of the fusion path only. Not BM25, not the dense query, not the char_tfidf or hybrid methods.\n4) Default false in code and true only in domains/india_schemes/eval_config.yaml, with a comment giving the dev numbers.\n5) Note in the config comment that romanised function words (men, ko, ka, hai) enter the letter-run query, so the setting must be re-checked if the fusion weights are moved toward the word channels. On the code-default fusion it broke 2 questions at scale."
+   },
+   {
+    "area": "Fusion: dense-margin gate on rank fusion. Word and letter matches may only reorder sections whose meaning cosine is within 0.05 of the best (retrieval.fusion_dense_margin)",
+    "verdict": "reject",
+    "reasons": "I re-ran it with the designer's MarginRetriever, and the numbers match exactly.\n- 54 schemes: 282 -> 288/304, 6 fixed, 0 broken, CI [0.33, 4.32], abstention 9/12.\n- Scale: 261 -> 264/304, 4 fixed, 1 broken (ignwps__situation_2), CI [-0.74, 3.50], abstention 5/12.\n- The runner-up (convex, weight 0.10) also reproduced: 287 at 54 (+8/-3, eligibility slice 52->50) and 267 at scale (+7/-1).\n\nThe idea is sound and general: rank fusion forgets how far ahead the meaning match is. At 54 it is robust:\n- Margins 0.04, 0.05 and 0.06 (my probe, not used to choose) give identical results.\n- On the code-default fusion it gains +16/-0.\n- 0 out-of-sample breaks.\n\nBut it does not hold up at scale, and the requirement is no regression end to end.\n(1) The dev break at scale is genuine. It is a Hindi situation question about the national widow pension (best cosine 0.636). A state 'Social Security Pension Scheme' (0.700) and a PM-KMY section both fall inside the 0.05 band, and together they take all 3 slots. With thousands of background schemes, a fixed cosine band fills with look-alikes. As a result the situation slice drops 16->15 at scale.\n(2) The scale gain shrinks as the margin grows: +5/-1 at 0.04, +4/-1 at 0.05, +2/-1 at 0.06 (my probe), 0/0 at 0.10. The single break appears at every margin from 0.04 to 0.06.\n(3) On the code-default fusion at scale it churns +17/-7, CI [-0.96, 7.64]. When the word channels carry more weight, the gate overrides many correct word-match rescues.\n(4) Out-of-sample, 1 break at scale. A Hindi PM-GKAY eligibility question now goes to a background copy of the same programme (ms__pm-gkay, 0.712 vs 0.631). This one is partly a scoring artifact, because the harness only credits our copy.\n(5) Budget at scale: top_k 2 gives 234 vs 235 today. On top of romanise, top_k 2 and 5 both drop by 1.\n(6) It is redundant with romanise. At 54 its 6 fixes include all 5 of romanise's. Gate plus romanise equals the gate alone at both sizes (288/264). Its added value over romanise is +1/-0 at 54 (pmay_g__situation_2) and +2/-1 at scale, with the situation slice down and a CI lower bound of -0.76.\n\nCost is not a concern: 0.27 ms and 2.91 ms retrieval-only, the same as today.",
+    "hardcoding_or_test_fitting_found": "None in the code: no ids, names, wording or language detection, and no test-split access. The designer tried two families with three values each and reported all of them, which is honest.\n\nTest-fitting concern: the scale gain exists only in a narrow band of margins (0.04 to 0.06). It is a small, steadily shrinking effect, not a stable property, so the 0.05 value partly fits the scale dev set.",
+    "required_changes": "None for this cycle. Do not adopt it.\n\nIf it is revisited, it needs a new proposal measured fresh, not a retune of 0.05. The flaw to address is that an absolute cosine band fills with background look-alikes in a large corpus. For example, it could bound how many outside schemes the band may promote, or make the margin depend on how spread out the top dense scores are. It must then pass the same rule, including the situation slice at scale and the out-of-sample set."
+   },
+   {
+    "area": "Scheme-first evidence assembly. Rank schemes (best section + 0.5 x second-best), let a scheme 0.10 closer in meaning take the lead, admit other schemes only within 0.03 cosine of the leader, then fill the walk (retrieval.scheme_first)",
+    "verdict": "reject",
+    "reasons": "I re-ran the exact proposed code (scheme_level/retriever_patched.py) through the harness, and the numbers match exactly.\n- 54 schemes: 282 -> 288/304, 6 fixed, 0 broken, CI [0.33, 4.32], abstention 9/12.\n- Scale: 261 -> 264/304, 3 fixed, 0 broken, CI [0.00, 2.86], abstention 5/12.\n- With the setting absent, evidence is identical to today's. My composed retriever reproduced both the baseline and this variant exactly.\n- Retrieval alone takes 0.30 ms (54) and 3.19 ms (scale).\n\nStrengths:\n- It uses only document structure (scheme_id grouping and the rules label).\n- It is stable for lead_gap 0.08 (288/265) and 0.12 (286/264) in my probe.\n- It is robust on the code-default fusion: +12/-1 at 54 and +12/-0 at scale.\n\nReasons to reject:\n(1) The out-of-sample check exposes the risk the designer predicted, where the admission gap shuts out a correct sibling scheme. On a Hindi question that names the widow pension ('इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितना पैसा मिलता है?'), the disability pension leads, so the widow pension loses the slot it gets today. Together with romanise, a second unseen question breaks: a Hindi PMMVY question goes to PMKVY, because PMMVY's best cosine is 0.618 and the admission cut is 0.620. That is a knife-edge threshold.\n(2) At 54 it adds nothing over the simpler options. It fixes the same 6 questions as the gate, and any combination stays at 288.\n(3) On top of romanise it adds +1/-0 at 54 and +2/-0 at scale on dev, but top_k 5 drops by 1 at both sizes and 2 out-of-sample questions break at 54.\n(4) It makes prompts more often single-scheme (270 -> 285 of 304 at 54). This can hurt coverage on 'which scheme helps me' questions, which the one-gold harness cannot see, and coverage carries 0.35 of the answer score.\n(5) It was chosen from about 35 variants on the same dev set (see the next field).\n\nThe scale fixes are genuine. pm_kisan__situation_1 and pmay_g__situation_1 move from background schemes to the right scheme through the second-section bonus. That part may deserve its own narrower proposal later.",
+    "hardcoding_or_test_fitting_found": "No hardcoding in the code: no ids, names or wording, and no test-split access.\n\nTest-fitting risk is the main concern. About 35 variants were tried, covering 4 fill strategies, 6 admission criteria (gaps 0.03/0.06/0.10, ratios 0.8/0.9, admit all), 3 second-section weights and 2 lead gaps. The final combination of 3 thresholds plus a fill strategy was picked on the same 304 dev questions. The admission criterion exceeds the 3-values-per-parameter limit. The 0.03 admission cut behaves as a sharp threshold on unseen questions (0.618 vs 0.620).",
+    "required_changes": "Not adopted in this cycle.\n\nA future proposal could test only the second-section bonus with no admission gap and no lead switch. The designer's 'WALK, second_weight 0.5, admit all' gave 283/263 with 0 broken. That would be a fresh one-parameter round judged by the same rule, including the out-of-sample set and a coverage check by the answer model on situation questions."
+   },
+   {
+    "area": "Not-found decision (min_score abstention floor)",
+    "verdict": "adopt",
+    "reasons": "This adopts the designer's recommendation to change nothing: keep the single dense floor at 0.50. I re-ran both optional variants with the designer's code.\n- Floor 0.54: abstention 9 -> 10/12 at 54 (only absent__kalia__en, at 0.535) and unchanged at scale (5/12). In-prompt unchanged (282, 261).\n- Agreement gate at 0.56: the same decisions on dev.\n- On the 206 out-of-sample fine-tuning questions, 0.54 refuses nothing at either size.\n\nThe designer's reasoning holds. 0.54 would sit just above one dev question, and the expected wrong refusals on unseen Hindi or Hinglish questions roughly equal the expected gain. Every other family (gap, agreement, z-score, dispersion) refuses Hindi and Hinglish answerable questions first.\n\nI also checked that none of the three ranking proposals changes abstention, alone or combined: 9/12 and 5/12 in every run. So no abstention change is needed to accompany them.",
+    "hardcoding_or_test_fitting_found": "None. 22 rules were explored, but nothing is recommended, so there is no fitted parameter to ship. The designer correctly declined floor 0.54 as fitted to a single question.",
+    "required_changes": "None. Keep min_score 0.50 and its current config comment. Do not run a round for 0.54."
+   }
+  ],
+  "round_order": [
+   "Round 0 (setup, not a change): freeze the reference before any official round. Record:\n- Dev: 282/304 in-prompt, 9/12 abstain (54); 261/304, 5/12 (scale).\n- top_k 2/5: 246/294 (54) and 235/276 (scale).\n- Slices and gold-scheme-in-prompt: 289 (54) and 266 (scale).\n- Out-of-sample scheme-in-prompt on the 206 fine-tuning questions: 205/206 (54) and 194/206 (scale).\n- An end-to-end answer run (scripts/evaluate_pipeline.py --split dev --runs fusion) at both sizes.\nFreeze every candidate value now: romanise_char has no parameters, the gate margin is 0.05, and scheme_first is {0.5, 0.03, 0.10}.",
+   "Round 1 (ADOPTED): retrieval.romanise_char: true, measured against Round 0. Why first and why alone:\n- It is the only proposal with zero regressions anywhere: 0 broken on dev at both sizes, 0 on the out-of-sample set, no slice or budget loss.\n- It has no tunable parameter, so it is the least able to over-fit.\n- By construction it touches only Indian-script questions (verified: the 220 Latin-script dev questions are identical) and cannot change abstention.\n- It adds a view of the question rather than overriding a channel.\nForecast under the rule: passes every retrieval guard (+5/-0 at 54, +2/-0 at scale, CI lower bound 0.00 at both). It then goes to the end-to-end answer check, which only needs to inspect the 14 changed-evidence questions per size; all other answers must be identical.",
+   "Round 2 (NOT ADOPTED; optional challenger, only so the log shows why): the fusion dense-margin gate at 0.05, measured against the Round 1 state.\nForecast: UNDO. It adds +1/-0 at 54, and +2/-1 at scale with the situation slice 16->15, CI lower bound -0.76, top_k 2 and 5 each down by 1, and 1 out-of-sample break at scale. Skipping it changes nothing; the outcome is already known on the same dev data.",
+   "Round 3 (NOT ADOPTED; optional challenger, only so the log shows why): scheme_first {0.5, 0.03, 0.10}, measured against the Round 1 state.\nForecast: UNDO. It adds +1/-0 at 54 and +2/-0 at scale on dev, but 2 out-of-sample twin-scheme breaks at 54 (widow vs disability pension; PMMVY -> PMKVY) and top_k 5 down by 1 at both sizes.",
+   "Final (after the last round, once): run the held-out test split on the final kept configuration against the original baseline, at both sizes, retrieval and answers. Report the result whatever it shows, and never use it to choose or undo. Only whoever is permitted to open the test split may run it.\nI simulated three orders (gate->romanise->scheme, romanise->gate->scheme, romanise->scheme->gate). Under the rule all three end in the same kept state, romanise only: 287/304 and 9/12 at 54, 263/304 and 5/12 at scale. The ordering does not drive the conclusion."
+  ],
+  "interactions": "All three ranking proposals target the same few failures, so their gains do not add up.\n\nAt 54 schemes:\n- The gate and scheme-first fix the identical 6 questions.\n- Romanise fixes 5 of those 6; the exception is pmay_g__situation_2.\n- These 6 are really 4 distinct failure cases: a pair of JSSK questions, a pair of Nikshay questions, PM-KISAN situation_2 and PMAY-G situation_2. The effective evidence is smaller than '+6' suggests.\n- Every combination gives exactly 288/304.\n\nAt scale:\n- Gate fixes: nps_vatsalya hi_latn, plus three Hindi PM-KISAN amount questions.\n- Romanise fixes: 2 of those PM-KISAN questions (a subset of the gate's).\n- Scheme-first fixes: PM-KISAN instalment amount, pm_kisan__situation_1, pmay_g__situation_1.\n\nMeasured combinations (dev, fixed/broken against today):\n\n| Combination | 54 | Scale | Out-of-sample breaks |\n|---|---|---|---|\n| gate + romanise | 288 (+6/-0) | 264 (+4/-1) | as gate alone |\n| romanise + scheme-first | 288 (+6/-0) | 265 (+4/-0) | 2 at 54 |\n| gate + scheme-first | 288 (+6/-0) | 265 (+5/-1) | not measured |\n| all three | 288 (+6/-0) | 265 (+5/-1) | 2 at 54, 1 at scale |\n\nGate plus romanise is exactly the gate alone at both sizes.\n\nThere is a negative interaction. A Hindi PMMVY question that no single change breaks flips to PMKVY when scheme-first is combined with romanise or with the gate: PMMVY's best cosine is 0.618 against an admission cut of 0.620.\n\nThe gate and scheme-first's meaning-lead step are the same mechanism, a meaning margin overriding rank fusion, so adopting both would double-count it.\n\nAbstention: none of the changes, alone or combined, changes it (9/12 at 54, 5/12 at scale in every run). They all keep the meaning-only 0.50 check that runs before fusion.\n\nSpeed: every variant stays under 3.5 ms of retrieval per question at scale. The ~26 ms query embedding call dominates and does not change.\n\nMeasurement caveat for every scale number: the background corpus holds other copies of at least 10 of our programmes (PM-GKAY, PMFBY, DDU-GKY, PM-KMY, the national widow pension, SCSS and more; best overview cosines 0.80-0.85). The harness credits only our copy, so some scale fixes and breaks are artifacts. For example, the gate's out-of-sample scale break picks ms__pm-gkay. The end-to-end answer check should settle those.\n\nI confirmed every designer number with the designer's own class. A single composed retriever reproduced the baseline and each single proposal exactly before I measured any combination.\n\nScripts and results are in /private/tmp/claude-501/-Users-vaibhav-joshi-Desktop-cb-harness-loop/e73345e9-ef77-45da-b9f0-873150f6576d/scratchpad/review/:\n- review.py and results.json: confirmations, combinations, slices, budgets, robustness, threshold probe, out-of-sample check.\n- rounds.py and rounds.json: round-by-round forecast under the rule.\n- sft_detail.py, gate_sft_detail.py, break_detail.py, dup_check.py, rom_identity.py: the individual checks.\n\nNo repo file was modified. Dense vectors were read from a private copy of the index cache, and nothing was embedded.",
+  "preregistered_keep_rule": "Written before any official round. Candidate values are frozen as proposed: romanise_char has no parameters; fusion_dense_margin is 0.05; scheme_first is {second_weight 0.5, admit_gap 0.03, lead_gap 0.10}. Nothing is retuned after seeing a round's numbers. A failed round is undone whole and is not retried with new values in this cycle.\n\nHow a round is run: one change per round, measured against the LAST KEPT state (not the original baseline). Use the shared harness on DEV only, at both 54 schemes and scale, with the same embedder, query instruction, min_score 0.50 and top_k 3.\n\nKEEP only if every item in A holds at BOTH sizes, and then every item in B holds. Otherwise UNDO.\n\nA. Retrieval guards (stricter than the search rule in scripts/compare_runs.py, which tolerates a 1-question slice loss):\nA1. Gain: net in-prompt (fixed minus broken) is at least +1 at each size.\nA2. Breaks: at most 1 broken question per size. Each break gets a written explanation of the mechanism, and no per-question fix is allowed.\nA3. Slices, zero tolerance: no language slice (en, hi, hi_latn) and no type slice (fact, eligibility, situation, typo) has a lower in-prompt count than the kept state, at either size.\nA4. Not-found: the number of not-found questions refused does not go down, and the number of answerable questions refused does not go up, at either size.\nA5. The number of answerable questions whose gold scheme reaches the prompt does not go down at either size.\nA6. The harness's scheme-level 95% CI lower bound is at least 0 at each size.\nA7. Budget robustness: in-prompt at top_k 2 and at top_k 5 is not lower than the kept state at either size. This guards against fitting to exactly 3 slots.\nA8. Out-of-sample sanity: on the 206 fine-tuning questions that are not in dev (data/training/india_schemes/sft_train.jsonl and sft_dev.jsonl), scored by whether the asked scheme reaches the prompt, there is no new miss and no new refusal at either size.\nA9. Cost: retrieval-only time is at most 2x the kept state and at most 10 ms per question at scale. The scale corpus is not re-embedded.\n\nB. End-to-end answer check (required before a KEEP is final):\nRun scripts/evaluate_pipeline.py --split dev --runs fusion for the kept state and for the candidate, at 54 and at scale (--corpus), with the deployed answer model (Qwen3.5-0.8B, greedy, seed 42). Then run scripts/compare_runs.py <before> <after> --run fusion at each size.\nB1. Determinism: every question whose evidence did not change must get an identical answer. If not, the run is invalid and is repeated.\nB2. The dev answer pass count and the weighted answer score (coverage 0.35, follow-up 0.25, groundedness 0.25, actionability 0.15) are not lower at either size. No language or type slice loses a passing answer net.\nB3. Safety: zero new gate violations (forbidden_claim, false_confirmation / unsafe 'yes') at either size.\nB4. No not-found question that was previously declined is now answered.\nB5. The compare_runs.py answer verdict is not UNDO. NO CLEAR DIFFERENCE is acceptable only if B1 to B4 all hold.\n\nC. Logging: record every round, including undone ones, with all numbers at both sizes, the fixed and broken question ids, the mechanism, and the decision. The test split is run once after the last round, on the final kept configuration against the original baseline, reported whatever it shows, and never used to choose or undo.\n\nForecast from my dev measurements:\n- Romanise passes A1-A9 (+5/-0 at 54, +2/-0 at scale, CI lower bound 0.00 at both, no slice, budget or out-of-sample loss) and goes to B.\n- The gate fails A3 (situation slice at scale), A6, A7 and A8.\n- Scheme-first fails A7 (top_k 5 down by 1 at both sizes) and A8 (2 out-of-sample breaks at 54)."
+ }
+]

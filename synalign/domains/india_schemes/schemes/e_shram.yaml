@@ -1,0 +1,156 @@
+id: e_shram
+name: e-Shram (National Database of Unorganised Workers)
+short_name: e-Shram
+names_hi:
+- ई-श्रम पोर्टल
+aliases:
+- e-Shram card
+- eshram card
+- NDUW
+- National Database of Unorganised Workers
+- e shram yojana
+- e-Shram portal registration
+level: central
+state: ''
+ministry: Ministry of Labour and Employment
+category: social_assistance
+summary: A free, one-time registration for unorganised workers aged 16 and above. It gives a 12-digit UAN e-Shram card and a single window for linked welfare schemes such as PMSBY accident insurance and the PM-SYM pension. Registering does not by itself pay any cash.
+sections:
+  eligibility:
+  - Works in the unorganised sector as a home-based worker, self-employed worker or wage worker. This also covers someone in an organised-sector job who is not covered by EPFO or ESIC and is not a government employee.
+  - Aged 16 years or older at the time of registration.
+  - Not a member of EPFO or ESIC.
+  - Not a member of the government-funded National Pension System (NPS).
+  - Not an income tax payer.
+  - Has an Aadhaar number and a mobile number, preferably linked with Aadhaar.
+  exclusions:
+  - Members of EPFO or ESIC cannot register.
+  - Members of the government-funded NPS cannot register.
+  - Income tax payers cannot register.
+  - Government employees are not counted as unorganised workers.
+  - Persons below 16 years of age cannot register.
+  benefits:
+  - Free registration and a 12-digit Universal Account Number (UAN) e-Shram card that never expires and needs no renewal.
+  - One-stop access to 15 social security and welfare schemes, such as PM-SYM, PMSBY, PMJJBY, NSAP, One Nation One Ration Card and PMAY-G.
+  - Can enrol in PMSBY through the portal. It pays Rs 2 lakh for accidental death or permanent disability and Rs 1 lakh for partial disability, for a premium of Rs 20 a year.
+  - Can enrol in PMJJBY through the portal. It gives Rs 2 lakh life cover for death from any cause, for a premium of Rs 436 a year.
+  - Eligible workers can join PM-SYM, which gives a minimum assured pension of Rs 3,000 a month after age 60.
+  - Links to jobs on the National Career Service portal, and to skilling and apprenticeships on the Skill India Digital Hub.
+  how_to_apply:
+  - Self-register online on the e-Shram portal (register.eshram.gov.in) using Aadhaar e-KYC, or through the UMANG mobile app.
+  - Or register at the nearest Common Service Centre (CSC) or State Seva Kendra. State Government field officers also help at district and sub-district level.
+  - Registration is free of cost, and no agency or centre may charge a fee.
+  - 'Helpline: 14434 or 1800-889-6811 (9 am to 6 pm every day, including Sundays). Grievances can be filed at gms.eshram.gov.in.'
+  documents:
+  - Aadhaar number (for Aadhaar e-KYC).
+  - Mobile number, preferably linked with Aadhaar.
+  - Savings bank account number with IFSC code.
+rules:
+  age_min: 16
+  gender: any
+facts:
+- key: minimum_age
+  statement: A worker must be at least 16 years old to register on e-Shram.
+  value: '16'
+  accept:
+  - 16 years
+  - sixteen
+  - solah
+  question: What is the minimum age to register on e-Shram?
+  question_hi: ई-श्रम पर पंजीकरण के लिए कम से कम कितनी उम्र होनी चाहिए?
+  question_hi_latn: e-Shram par registration ke liye kam se kam kitni umar honi chahiye?
+  source: 1
+  status: verified
+- key: registration_fee
+  statement: Registering on e-Shram is free of cost.
+  value: free
+  accept:
+  - free of cost
+  - no fee
+  - nishulk
+  - '0'
+  - muft
+  question: Is there any fee to register on the e-Shram portal?
+  question_hi: क्या ई-श्रम पोर्टल पर पंजीकरण की कोई फीस लगती है?
+  question_hi_latn: Kya e-Shram portal par registration ki koi fees lagti hai?
+  source: 1
+  status: verified
+- key: uan_digits
+  statement: Each registered worker gets a 12-digit Universal Account Number (UAN).
+  value: '12'
+  accept:
+  - 12-digit
+  - twelve
+  - barah
+  question: How many digits does the e-Shram UAN number have?
+  question_hi: ई-श्रम कार्ड का UAN नंबर कितने अंकों का होता है?
+  question_hi_latn: e-Shram card ka UAN number kitne digit ka hota hai?
+  source: 1
+  status: verified
+- key: pmsby_accident_cover
+  statement: e-Shram registrants can enrol in PMSBY, which pays Rs 2 lakh for accidental death or permanent disability.
+  value: Rs 2 lakh
+  accept:
+  - 2 lakh
+  - '200000'
+  - 2,00,000
+  - do lakh
+  question: How much accident insurance can an e-Shram card holder get through PMSBY?
+  question_hi: ई-श्रम कार्ड वाले को PMSBY के तहत कितना दुर्घटना बीमा मिल सकता है?
+  question_hi_latn: e-Shram card wale ko PMSBY me kitna accident bima mil sakta hai?
+  source: 1
+  status: verified
+- key: helpline
+  statement: The e-Shram helpline number is 14434.
+  value: '14434'
+  accept:
+  - 1800-889-6811
+  - '18008896811'
+  question: What is the e-Shram helpline number?
+  question_hi: ई-श्रम का हेल्पलाइन नंबर क्या है?
+  question_hi_latn: e-Shram ka helpline number kya hai?
+  source: 3
+  status: verified
+situations:
+- question: I work as a domestic worker and have no PF or ESI. Where can I register as a worker so I can get government social security and insurance schemes?
+  language: en
+- question: मैं दिहाड़ी मज़दूर हूँ और मेरा PF या ESI नहीं कटता। सरकारी योजनाओं का फायदा लेने के लिए मज़दूर के रूप में अपना पंजीकरण कहाँ और कैसे कराऊँ?
+  language: hi
+sources:
+- title: '5 Years of e-Shram Portal: Building an Inclusive Social Security Ecosystem (PIB Backgrounder, 25 August 2026)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/aug/doc_9692_20260825_14270901.pdf
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: e-Shram Objectives
+  url: https://eshram.gov.in/e-shram-objectives
+  publisher: Ministry of Labour and Employment, Government of India
+  accessed: '2026-10-03'
+- title: eShram FAQs
+  url: https://eshram.gov.in/faqs
+  publisher: Ministry of Labour and Employment, Government of India
+  accessed: '2026-10-03'
+- title: 'E-Shram Portal: World''s Largest Database of Unorganised Workers (PIB Research Unit, 19 December 2024)'
+  url: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/dec/doc20241219474601.pdf
+  publisher: Press Information Bureau, Government of India
+  accessed: '2026-10-03'
+- title: Social Security Welfare Schemes (e-Shram)
+  url: https://beta.eshram.gov.in/social-security-welfare-schemes
+  publisher: Ministry of Labour and Employment, Government of India
+  accessed: '2026-10-03'
+- title: e-Shram portal home page
+  url: https://eshram.gov.in/indexmain
+  publisher: Ministry of Labour and Employment, Government of India
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Official pages disagree on the upper age limit. The e-Shram objectives page and the August 2026 PIB backgrounder say ''16 years and above'' with no upper limit. The e-Shram FAQ and the December 2024 PIB note say 16 to 59 years. Because of this, age_max is left out. The income-tax-payer exclusion comes from the August 2026 PIB backgrounder; the e-Shram FAQ says only that there is no income criterion. The August 2026 PIB lists only Aadhaar and a mobile number as required, while older official pages also ask for a bank account with IFSC. e-Shram is a registration, not a cash scheme. Registering alone does not pay money or give automatic insurance: PMSBY and PMJJBY need enrolment and yearly premiums (Rs 20 and Rs 436, as shown on the e-Shram schemes page). Do not promise free insurance, even though some older material describes free cover for new registrants. Registration was open as of August 2026, with 31.89 crore workers registered. The Hindi name ''ई-श्रम पोर्टल'' was seen in
+    official PIB Hindi press-release titles, but those pages were not opened.'
+  - 'Checker: Benefits section suggests every registrant can join PMSBY, PMJJBY and PM-SYM, but leaves out their own limits: PMSBY ages 18-70, PMJJBY 18-50, both needing an Aadhaar-linked savings or Jan Dhan account with auto-debit; PM-SYM entry age 18-40 and monthly income below Rs 15,000. A 16- or 17-year-old registrant could be misled (beta.eshram.gov.in/social-security-welfare-schemes).'
+  - 'Checker: Official pages disagree on the upper age limit. FAQ Q-30 and the PIB note of Dec 2024 say 16-59; the objectives page and the PIB backgrounder of Aug 2026 say 16 and above. The record notes this only in status_note, so answers for workers aged 60+ should carry a visible caution.'
+  - 'Checker: The documents list shows a bank account with IFSC as required. FAQ Q-31 and the PIB backgrounder of Aug 2026 list only Aadhaar and mobile number; the 2021 leaflet and the PIB note of Dec 2024 also ask for a bank account. Better to say the bank account may be asked for.'
+  - 'Checker: The FAQ asks for a mobile number linked with Aadhaar. The official leaflet says a worker without one can register at a CSC using biometric authentication. That tip is missing from how_to_apply.'
+  - 'Checker: The official 2021 leaflet still says registering gives Rs 2 lakh PMSBY accident cover. The record is right to avoid promising free cover, but the corpus should keep this warning.'
+  - 'Checker: The Hindi name was not confirmed on any official page.'

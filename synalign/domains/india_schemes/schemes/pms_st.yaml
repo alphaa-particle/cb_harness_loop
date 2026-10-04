@@ -1,0 +1,145 @@
+id: pms_st
+name: Post Matric Scholarship for Students Belonging to Scheduled Tribes for Studies in India
+short_name: PMS-ST
+names_hi: []
+aliases:
+- Post Matric Scholarship for ST Students
+- PMS ST
+- ST post matric scholarship
+- anusuchit janjati post matric chhatravriti
+- adivasi chhatra scholarship
+- tribal post matric scholarship
+level: central
+state: ''
+ministry: Ministry of Tribal Affairs
+category: education
+summary: Scholarship for Scheduled Tribe students studying from Class 11 up to post-graduation in India whose family income is Rs 2.5 lakh a year or less. It pays compulsory course fees plus a monthly stipend, and is run by state and UT governments with central funding.
+sections:
+  eligibility:
+  - Belongs to a Scheduled Tribe notified for the student's own (domicile) state or union territory.
+  - Has passed Class 10 (matriculation) or a higher exam and is studying a recognised post-matric course, from Class 11 up to post-graduation, in India.
+  - Family income from all sources must be Rs 2,50,000 a year or less (income of the father and mother is counted; earnings of siblings or other relatives are not).
+  - An orphan supported by a guardian does not have to meet the income limit.
+  - Has a bank account in the student's own name, linked to Aadhaar and a mobile number.
+  - Does not hold any other scholarship at the same time; if offered another one, the student must choose one of them.
+  - The course must be at a recognised institution, such as a government college or university, a recognised private university or professional college, a Class 11-12 school, a polytechnic or an ITI.
+  exclusions:
+  - Students admitted to one of the Ministry's listed top class institutes (252 at the time of the guidelines) are covered by the National Fellowship and Scholarship for Higher Education of ST Students instead of this scheme.
+  - A student who has finished a course in one stream cannot get the scholarship for a course at the same level in another stream (for example B.Com after B.A.).
+  - A student who fails a year gets no scholarship until they pass that class and are promoted.
+  - Self-declared income or affidavits are not accepted as proof of income.
+  - Scholarship can be cancelled if it was obtained through false information, or if the student changes course or institution without state approval.
+  benefits:
+  - Compulsory non-refundable course fees are paid as fixed by the state's fee fixation committee; for private institutes the central support is capped at Rs 2.50 lakh a year for engineering, Rs 6.00 lakh a year for MBBS/MS/MD and Rs 1.00 lakh a year for other courses.
+  - 'Monthly stipend for students living in a hostel: Rs 1,200 for Group I (professional degree, PG diploma, MPhil/PhD), Rs 820 for Group II (general degrees such as BA, BSc, BCom, MA), Rs 570 for Group III (ITI, polytechnic diploma, vocational) and Rs 380 for Group IV (Class 11 and 12).'
+  - 'Monthly stipend for day scholars: Rs 550 for Group I, Rs 530 for Group II, Rs 300 for Group III and Rs 230 for Group IV.'
+  - The stipend is paid for up to 10 months in a year.
+  - Students with disabilities get an extra Rs 800 a month if they live in a hostel, or Rs 600 a month as day scholars.
+  - Money is sent directly to the student's bank account (DBT); states may pay more than these rates from their own funds.
+  how_to_apply:
+  - Apply online on the scholarship portal of your home (domicile) state or UT; some states use the National Scholarship Portal (scholarships.gov.in) instead.
+  - If you study in another state, still apply to your home state; you can join any government institute, but a private institute must be on your state's approved (empanelled) list.
+  - The suggested registration window is 1 April to 30 September; your institute checks the application first, then district or state officials. Actual dates differ by state.
+  - Renew every year after passing and moving to the next class.
+  documents:
+  - Aadhaar number and an Aadhaar-linked bank account in the student's name.
+  - ST certificate from the competent state/UT authority and a domicile certificate.
+  - Family income certificate from the notified authority.
+  - Certificates and marksheets of exams passed, including last qualifying marks.
+  - Passport-size photograph.
+  - Disability certificate, if claiming the disability allowance.
+rules:
+  annual_income_max: 250000
+  gender: any
+facts:
+- key: income_limit
+  statement: Family income from all sources must be Rs 2,50,000 a year or less.
+  value: Rs 2,50,000
+  accept:
+  - '250000'
+  - 2,50,000
+  - 2.5 lakh
+  - 2.50 lakh
+  - Rs 2.5 lakh
+  - Rs 250000
+  question: What is the family income limit for the Post Matric Scholarship for ST students?
+  question_hi: एसटी छात्रों की पोस्ट मैट्रिक छात्रवृत्ति के लिए परिवार की सालाना आय कितनी होनी चाहिए?
+  question_hi_latn: ST post matric scholarship ke liye family ki saalana income kitni honi chahiye?
+  source: 1
+  status: unverified
+- key: hostel_stipend_group1
+  statement: Hostel students in Group I professional courses get a stipend of Rs 1,200 a month.
+  value: Rs 1,200
+  accept:
+  - '1200'
+  - 1,200
+  - Rs 1200
+  question: How much monthly stipend does a hostel student in a professional course get under the ST post matric scholarship?
+  question_hi: एसटी पोस्ट मैट्रिक छात्रवृत्ति में प्रोफेशनल कोर्स के हॉस्टल वाले छात्र को हर महीने कितना वजीफा मिलता है?
+  question_hi_latn: ST post matric scholarship me professional course wale hostel student ko mahine ka kitna stipend milta hai?
+  source: 1
+  status: unverified
+- key: day_scholar_stipend_class_11_12
+  statement: Day scholars in Group IV (Class 11 and 12) get Rs 230 a month.
+  value: Rs 230
+  accept:
+  - '230'
+  - Rs 230 per month
+  question: How much does a Class 11 or 12 day scholar get each month under the ST post matric scholarship?
+  question_hi: एसटी पोस्ट मैट्रिक छात्रवृत्ति में 11वीं या 12वीं के घर से आने वाले छात्र को महीने में कितना मिलता है?
+  question_hi_latn: ST post matric scholarship me 11th-12th ke day scholar ko mahine ka kitna milta hai?
+  source: 1
+  status: unverified
+- key: stipend_months
+  statement: The stipend is paid for up to 10 months in a year.
+  value: '10'
+  accept:
+  - 10 months
+  - ten
+  - ten months
+  question: For how many months a year is the stipend paid under the ST post matric scholarship?
+  question_hi: एसटी पोस्ट मैट्रिक छात्रवृत्ति में साल में कितने महीने वजीफा मिलता है?
+  question_hi_latn: ST post matric scholarship me saal me kitne mahine stipend milta hai?
+  source: 1
+  status: unverified
+- key: disability_allowance_hostel
+  statement: A student with a disability living in a hostel gets an extra Rs 800 a month.
+  value: Rs 800
+  accept:
+  - '800'
+  - Rs 800 per month
+  question: How much extra allowance does a disabled hostel student get under the ST post matric scholarship?
+  question_hi: एसटी पोस्ट मैट्रिक छात्रवृत्ति में दिव्यांग हॉस्टल छात्र को हर महीने कितना अतिरिक्त भत्ता मिलता है?
+  question_hi_latn: ST post matric scholarship me divyang hostel student ko mahine ka kitna extra milta hai?
+  source: 1
+  status: unverified
+situations:
+- language: en
+  question: I am from a Scheduled Tribe family earning about Rs 1.5 lakh a year and I just joined a BSc course. Is there a government scholarship that pays my fees and gives a monthly allowance?
+- language: hi
+  question: मैं अनुसूचित जनजाति से हूँ, 11वीं कक्षा में दाखिला लिया है और घर की आमदनी बहुत कम है। क्या सरकार से फीस और हर महीने वजीफा मिल सकता है?
+sources:
+- title: Post Matric Scholarship (Centrally Sponsored Scheme) for Students Belonging to Scheduled Tribe - Regulations applicable from 01-04-2022
+  url: https://tribal.gujarat.gov.in/assets/downloads/GoI_guideline01042022.pdf
+  publisher: Ministry of Tribal Affairs, Government of India (copy hosted by Tribal Development Department, Government of Gujarat)
+  accessed: '2026-10-03'
+- title: Post Matric Scholarship - Tribal Development Department
+  url: https://tribal.gujarat.gov.in/showpage.aspx?contentid=675
+  publisher: Tribal Development Department, Government of Gujarat
+  accessed: '2026-10-03'
+- title: Rate of Grants under Educational Schemes (S.T.) with effect from 01.04.2025
+  url: https://oasis.wb.gov.in/web/pdf/RateChartforCSScholarshipSchemes.pdf
+  publisher: Backward Classes Welfare & Tribal Development Department, Government of West Bengal
+  accessed: '2026-10-03'
+- title: OASIS Scholarship Portal
+  url: https://oasis.wb.gov.in/
+  publisher: Backward Classes Welfare & Tribal Development Department, Government of West Bengal
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Rules follow the Ministry of Tribal Affairs guidelines applicable from 1 April 2022 (final version dated March 2023). The Ministry site tribal.nic.in refused connections, so the guideline was read from the copy on the Gujarat Tribal Development Department site. A West Bengal rate chart dated 01.04.2025 lists the same Government of India stipend rates and the same Rs 2,50,000 income ceiling, so the rates do not appear to have changed. States and UTs run the scheme on their own portals or the National Scholarship Portal. Funding is 75:25 Centre:State (90:10 for North-East and hilly states, 100% central for UTs without a legislature). Application dates, fee caps and extra state top-ups differ by state; West Bengal, for example, adds its own top-up to hostel stipends. The West Bengal portal shows applications open for the 2026-27 session, so the scheme is running. No central page was found confirming a formal extension or rate revision after the 2021-26 cycle. Students at the Ministry''s
+    listed top class institutes are covered by the separate National Fellowship and Scholarship for Higher Education of ST Students instead.'
+  - No independent check was returned for this scheme.

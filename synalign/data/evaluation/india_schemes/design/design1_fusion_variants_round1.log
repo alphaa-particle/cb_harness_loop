@@ -1,0 +1,97 @@
+[54] built retriever over 286 sections in 0.1s
+== 54 baseline {"in_prompt": "282/304", "abstain": "9/12", "type=eligibility": "52/52", "type=fact": "149/162", "type=situation": "29/36", "type=typo": "52/54", "language=en": "148/152", "language=hi": "81/92", "language=hi_latn": "53/60"} 0.05 ms fusion step
+54    convex_w0.05   in_prompt 284/304 abstain 9/12 fixed 7 broken 5 diff +0.66 CI [-2.78, 4.32] hi 84/92 hi_latn 51/60 en 149/152 situation 31/36 ms 0.01
+      broken: ignwps__eligibility_2 | मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना
+      broken: ignwps__eligibility_4 | मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना
+      broken: ignwps__eligibility_6 | मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लि
+      broken: pm_kmy__min_monthly_contribution__hi_latn | Kisan Maandhan Yojana me kam se kam har mahine kitna jama karna hota h
+      broken: pm_kmy__land_limit__hi_latn | Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada ki
+      fixed:  jssk__free_diet_normal_delivery__hi | जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खान
+      fixed:  jssk__free_diet_caesarean__hi | जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक
+      fixed:  nikshay_poshan__monthly_amount__hi | निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?
+      fixed:  nikshay_poshan__payment_mode__typo | How is Ni-kshay Poshan Yojana joney pai to TB patients
+      fixed:  nikshay_poshan__payment_mode__hi | निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?
+      fixed:  pm_kisan__situation_2 | मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर स
+      fixed:  pmay_g__situation_2 | गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या 
+54    convex_w0.10   in_prompt 287/304 abstain 9/12 fixed 8 broken 3 diff +1.64 CI [-0.39, 4.3] hi 86/92 hi_latn 53/60 en 148/152 situation 32/36 ms 0.01
+      broken: ignwps__eligibility_4 | मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना
+      broken: ignwps__eligibility_6 | मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लि
+      broken: pm_kmy__land_limit__hi_latn | Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada ki
+      fixed:  igndps__situation_2 | Mera bhai 30 saal ka hai, uski viklangta 80 pratishat hai aur hum BPL 
+      fixed:  ignwps__monthly_pension_80_plus__hi | इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में 80 साल की उम्र के बाद कित
+      fixed:  jssk__free_diet_normal_delivery__hi | जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खान
+      fixed:  jssk__free_diet_caesarean__hi | जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक
+      fixed:  nikshay_poshan__monthly_amount__hi | निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?
+      fixed:  nikshay_poshan__payment_mode__hi | निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?
+      fixed:  pm_kisan__situation_2 | मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर स
+      fixed:  pmay_g__situation_2 | गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या 
+54    convex_w0.20   in_prompt 285/304 abstain 9/12 fixed 6 broken 3 diff +0.99 CI [0.0, 2.31] hi 85/92 hi_latn 53/60 en 147/152 situation 31/36 ms 0.01
+      broken: ignwps__situation_1 | My husband died last year. I am 45 and our family is on the BPL list. 
+      broken: nikshay_poshan__payment_mode__hi_latn | Nikshay Poshan Yojana ka paisa TB mareez ko kaise milta hai?
+      broken: pm_kisan__annual_amount__hi | पीएम किसान योजना में एक साल में कितना पैसा मिलता है?
+      fixed:  igndps__situation_2 | Mera bhai 30 saal ka hai, uski viklangta 80 pratishat hai aur hum BPL 
+      fixed:  ignwps__monthly_pension_80_plus__hi | इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में 80 साल की उम्र के बाद कित
+      fixed:  nikshay_poshan__monthly_amount__hi | निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?
+      fixed:  nikshay_poshan__payment_mode__hi | निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?
+      fixed:  pm_kisan__situation_2 | मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर स
+      fixed:  pmay_g__situation_2 | गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या 
+54    gated_m0.05    in_prompt 288/304 abstain 9/12 fixed 6 broken 0 diff +1.97 CI [0.33, 4.32] hi 87/92 hi_latn 53/60 en 148/152 situation 31/36 ms 0.05
+      fixed:  jssk__free_diet_normal_delivery__hi | जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खान
+      fixed:  jssk__free_diet_caesarean__hi | जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक
+      fixed:  nikshay_poshan__monthly_amount__hi | निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?
+      fixed:  nikshay_poshan__payment_mode__hi | निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?
+      fixed:  pm_kisan__situation_2 | मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर स
+      fixed:  pmay_g__situation_2 | गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या 
+54    gated_m0.10    in_prompt 288/304 abstain 9/12 fixed 6 broken 0 diff +1.97 CI [0.33, 4.32] hi 87/92 hi_latn 53/60 en 148/152 situation 31/36 ms 0.05
+      fixed:  jssk__free_diet_normal_delivery__hi | जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खान
+      fixed:  jssk__free_diet_caesarean__hi | जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक
+      fixed:  nikshay_poshan__monthly_amount__hi | निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?
+      fixed:  nikshay_poshan__payment_mode__hi | निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?
+      fixed:  pm_kisan__situation_2 | मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर स
+      fixed:  pmay_g__situation_2 | गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या 
+54    gated_m0.15    in_prompt 284/304 abstain 9/12 fixed 2 broken 0 diff +0.66 CI [0.0, 2.25] hi 83/92 hi_latn 53/60 en 148/152 situation 29/36 ms 0.04
+      fixed:  nikshay_poshan__monthly_amount__hi | निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?
+      fixed:  nikshay_poshan__payment_mode__hi | निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?
+[scale] built retriever over 27593 sections in 6.8s
+== scale baseline {"in_prompt": "261/304", "abstain": "5/12", "type=eligibility": "47/52", "type=fact": "147/162", "type=situation": "16/36", "type=typo": "51/54", "language=en": "136/152", "language=hi": "75/92", "language=hi_latn": "50/60"} 6.00 ms fusion step
+scale convex_w0.05   in_prompt 261/304 abstain 5/12 fixed 6 broken 6 diff +0.00 CI [-3.77, 3.82] hi 77/92 hi_latn 46/60 en 138/152 situation 17/36 ms 0.40
+      broken: ignwps__min_age__hi_latn | Indira Gandhi vidhwa pension yojana me kitni umar se pension milti hai
+      broken: ignwps__monthly_pension_40_to_79__hi_latn | Indira Gandhi vidhwa pension yojana me kendra sarkar har mahine kitni 
+      broken: ignwps__monthly_pension_80_plus__hi_latn | Indira Gandhi vidhwa pension yojana me 80 saal ke baad kitni pension m
+      broken: ignwps__situation_2 | मेरे पति की मृत्यु हो चुकी है, मेरी उम्र 52 साल है और हमारा परिवार गरी
+      broken: pm_kmy__min_monthly_contribution__hi_latn | Kisan Maandhan Yojana me kam se kam har mahine kitna jama karna hota h
+      broken: pm_kmy__land_limit__hi_latn | Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada ki
+      fixed:  nfsa_pmgkay__situation_1 | We are a family of five living on daily wages and we have no ration ca
+      fixed:  nps_vatsalya__partial_withdrawal_limit__hi_latn | Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sa
+      fixed:  pm_kisan__annual_amount__hi | पीएम किसान योजना में एक साल में कितना पैसा मिलता है?
+      fixed:  pm_kisan__instalment_amount__hi | पीएम किसान की एक किस्त कितने रुपये की होती है?
+      fixed:  pm_kisan__instalments_per_year__hi | पीएम किसान की साल में कितनी किस्तें आती हैं?
+      fixed:  pmay_g__situation_1 | My family lives in a village in a kutcha mud house and we cannot affor
+scale convex_w0.10   in_prompt 267/304 abstain 5/12 fixed 7 broken 1 diff +1.97 CI [0.0, 5.0] hi 79/92 hi_latn 50/60 en 138/152 situation 19/36 ms 0.36
+      broken: pm_kmy__land_limit__hi_latn | Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada ki
+      fixed:  nfsa_pmgkay__situation_1 | We are a family of five living on daily wages and we have no ration ca
+      fixed:  nmmss__situation_2 | मेरी बेटी सरकारी स्कूल में आठवीं कक्षा में पढ़ती है और हमारी सालाना आय
+      fixed:  nps_vatsalya__partial_withdrawal_limit__hi_latn | Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sa
+      fixed:  pm_kisan__annual_amount__hi | पीएम किसान योजना में एक साल में कितना पैसा मिलता है?
+      fixed:  pm_kisan__instalment_amount__hi | पीएम किसान की एक किस्त कितने रुपये की होती है?
+      fixed:  pm_kisan__instalments_per_year__hi | पीएम किसान की साल में कितनी किस्तें आती हैं?
+      fixed:  pmay_g__situation_1 | My family lives in a village in a kutcha mud house and we cannot affor
+scale convex_w0.20   in_prompt 270/304 abstain 5/12 fixed 11 broken 2 diff +2.96 CI [0.33, 6.74] hi 78/92 hi_latn 52/60 en 140/152 situation 21/36 ms 0.35
+      broken: e_shram__situation_2 | मैं दिहाड़ी मज़दूर हूँ और मेरा PF या ESI नहीं कटता। सरकारी योजनाओं का 
+      broken: jssk__free_diet_normal_delivery__hi | जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खान
+      fixed:  igndps__situation_2 | Mera bhai 30 saal ka hai, uski viklangta 80 pratishat hai aur hum BPL 
+      fixed:  nfsa_pmgkay__situation_1 | We are a family of five living on daily wages and we have no ration ca
+      fixed:  nmmss__situation_2 | मेरी बेटी सरकारी स्कूल में आठवीं कक्षा में पढ़ती है और हमारी सालाना आय
+      fixed:  nmmss__eligibility_2 | मेरे परिवार की सालाना आय 525000 रुपये है। क्या मैं राष्ट्रीय साधन-सह-य
+      fixed:  nmmss__eligibility_4 | मेरे परिवार की सालाना आय 175000 रुपये है। क्या मैं राष्ट्रीय साधन-सह-य
+      fixed:  nps_vatsalya__partial_withdrawal_limit__hi_latn | Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sa
+      fixed:  pm_kisan__instalment_amount__hi | पीएम किसान की एक किस्त कितने रुपये की होती है?
+      fixed:  pm_kisan__instalments_per_year__hi | पीएम किसान की साल में कितनी किस्तें आती हैं?
+scale gated_m0.05    in_prompt 264/304 abstain 5/12 fixed 4 broken 1 diff +0.99 CI [-0.74, 3.5] hi 77/92 hi_latn 51/60 en 136/152 situation 15/36 ms 0.59
+      broken: ignwps__situation_2 | मेरे पति की मृत्यु हो चुकी है, मेरी उम्र 52 साल है और हमारा परिवार गरी
+      fixed:  nps_vatsalya__partial_withdrawal_limit__hi_latn | Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sa
+      fixed:  pm_kisan__annual_amount__hi | पीएम किसान योजना में एक साल में कितना पैसा मिलता है?
+      fixed:  pm_kisan__instalment_amount__hi | पीएम किसान की एक किस्त कितने रुपये की होती है?
+      fixed:  pm_kisan__instalments_per_year__hi | पीएम किसान की साल में कितनी किस्तें आती हैं?
+scale gated_m0.10    in_prompt 261/304 abstain 5/12 fixed 0 broken 0 diff +0.00 CI [0.0, 0.0] hi 75/92 hi_latn 50/60 en 136/152 situation 16/36 ms 0.50
+scale gated_m0.15    in_prompt 261/304 abstain 5/12 fixed 0 broken 0 diff +0.00 CI [0.0, 0.0] hi 75/92 hi_latn 50/60 en 136/152 situation 16/36 ms 0.44

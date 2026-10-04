@@ -1,12 +1,12 @@
 import json
 from collections import Counter
+from dataclasses import fields
 
 import pandas as pd
 
 from engine.config import OUTPUT_DIR
-from engine.domain_pack import DomainPack
-from engine.schemas import TestCase, AssistantAnswer, RetrievedChunk
-from engine.retrieval_metrics import recall_at_k, mrr
+from engine.schemas import TestCase, AssistantAnswer
+from engine.retrieval_evaluation import recall_at_k, mrr
 
 
 def load_records(label: str = "baseline") -> list[dict]:
@@ -28,8 +28,7 @@ def failure_type_summary(records: list[dict]) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def attribute_failures(records: list[dict], pack: DomainPack, retriever,
-                       assistant, evaluator) -> pd.DataFrame:
+def attribute_failures(records: list[dict], retriever, assistant, evaluator) -> pd.DataFrame:
     """Oracle-retrieval re-run: was the failure retrieval's fault or the generator's?
 
     For every failed case, answer again with the GOLD chunks forced into
@@ -41,24 +40,16 @@ def attribute_failures(records: list[dict], pack: DomainPack, retriever,
         if r["evaluation"]["passed"]:
             continue
 
-        case = TestCase(
-            case_id=r["case_id"], user_id=r["user_id"], split=r["split"],
-            condition=r["condition"], question=r["question"],
-            profile=r["profile"], visible=r["visible"],
-            ground_truth=r["ground_truth"],
-        )
+        case = TestCase(**{f.name: r[f.name] for f in fields(TestCase)})
         gold = retriever.get_chunks_by_ids(case.ground_truth["gold_chunk_ids"])
 
-        # Re-answer with oracle context. We monkey-patch retrieval for this
-        # one call by answering on a question that the assistant retrieves
-        # for normally, then swapping in the gold chunks for evaluation,
-        # and ALSO let assistants that accept forced context use it.
+        # Model assistants answer again from the gold evidence. The naive
+        # baseline cannot take forced evidence, so its answer is kept and only
+        # graded against the gold evidence.
         if hasattr(assistant, "answer_with_context"):
             oracle_answer = assistant.answer_with_context(case.question, gold)
         else:
-            raw = assistant.answer(case.question)
-            oracle_answer = AssistantAnswer(answer_text=raw.answer_text,
-                                            retrieved_chunks=gold)
+            oracle_answer = AssistantAnswer(assistant.answer(case.question).answer_text, gold)
 
         rec = recall_at_k(gold, case.ground_truth["gold_chunk_ids"])
         rr = mrr(gold, case.ground_truth["gold_chunk_ids"])

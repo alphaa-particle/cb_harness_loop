@@ -1,0 +1,128 @@
+id: pmuy
+name: Pradhan Mantri Ujjwala Yojana
+short_name: PMUY
+names_hi: []
+aliases:
+- Ujjwala Yojana
+- Ujjwala 2.0
+- PM Ujjwala Yojana
+- ujjwala gas connection yojana
+- pradhan mantri ujjwala yojna
+- free gas connection yojana
+level: central
+state: ''
+ministry: Ministry of Petroleum and Natural Gas
+category: energy
+summary: Gives adult women from poor households that have no LPG connection a deposit-free cooking gas connection. The government pays Rs 2,050 towards a 14.2 kg cylinder connection, and the first refill and the stove are also free.
+sections:
+  eligibility:
+  - The applicant must be a woman who is at least 18 years old.
+  - No one in the household should already have an LPG connection from any oil marketing company.
+  - 'The household must fall in one of the listed groups: SC or ST households, PMAY-Gramin beneficiaries, Most Backward Classes, Antyodaya Anna Yojana (AAY) card holders, tea and ex-tea garden tribes, forest dwellers, people living on islands or river islands, or SECC (AHL TIN) households.'
+  - A poor household outside these groups can still qualify by giving a 14-point deprivation declaration in the set format.
+  - Migrant families can apply by giving a self-declaration in place of address proof and a ration card.
+  exclusions:
+  - Households where any family member already has an LPG connection.
+  - Women under 18 years of age.
+  - Men cannot get the connection in their own name; it is issued to an adult woman of the household.
+  benefits:
+  - 'A deposit-free LPG connection: the Government of India pays Rs 2,050 for a 14.2 kg cylinder connection or Rs 1,300 for a 5 kg cylinder connection.'
+  - This amount covers the cylinder security deposit (Rs 1,700 for 14.2 kg or Rs 950 for 5 kg), the pressure regulator (Rs 150), the LPG hose (Rs 100), the consumer card (Rs 25) and inspection or installation charges (Rs 75).
+  - The first LPG refill and the stove (hotplate) are given free by the oil company along with the connection.
+  - The family can choose a 14.2 kg single cylinder, a 5 kg single cylinder or a 5 kg double cylinder connection.
+  how_to_apply:
+  - Apply online through the PMUY portal (pmuy.gov.in), which links to the IndianOil, Bharat Gas and HP Gas application pages.
+  - Or take the filled form and documents to any nearby LPG distributor of your choice.
+  - Applying yourself costs nothing; a Common Service Centre (CSC) may charge Rs 20.
+  documents:
+  - KYC application form with photo.
+  - Aadhaar of the applicant and of all adult family members.
+  - Ration card or another state government document showing the family members (migrants can give a self-declaration instead).
+  - Proof of address, if the address is different from the one on Aadhaar.
+  - Bank account number and IFSC, with passbook or cancelled cheque.
+  - Deprivation declaration in the prescribed format, when applying as a poor household.
+rules:
+  age_min: 18
+  gender: female
+facts:
+- key: min_age
+  statement: The applicant must be a woman who is at least 18 years old.
+  value: '18'
+  accept:
+  - 18 years
+  - eighteen
+  - 18 saal
+  question: What is the minimum age to get a gas connection under Ujjwala Yojana?
+  question_hi: उज्ज्वला योजना में गैस कनेक्शन लेने के लिए कम से कम कितनी उम्र होनी चाहिए?
+  question_hi_latn: Ujjwala Yojana me gas connection lene ke liye kam se kam kitni umar honi chahiye?
+  source: 1
+  status: unverified
+- key: assistance_14kg_connection
+  statement: The Government of India pays Rs 2,050 for a 14.2 kg cylinder connection under PMUY.
+  value: Rs 2,050
+  accept:
+  - '2050'
+  - 2,050
+  - ₹2050
+  - ₹2,050
+  question: How much does the government pay for a 14.2 kg cylinder connection under Ujjwala Yojana?
+  question_hi: उज्ज्वला योजना में 14.2 किलो सिलेंडर वाले कनेक्शन के लिए सरकार कितने रुपये देती है?
+  question_hi_latn: Ujjwala Yojana me 14.2 kilo cylinder wale connection ke liye sarkar kitne rupaye deti hai?
+  source: 1
+  status: unverified
+- key: assistance_5kg_connection
+  statement: The Government of India pays Rs 1,300 for a 5 kg cylinder connection under PMUY.
+  value: Rs 1,300
+  accept:
+  - '1300'
+  - 1,300
+  - ₹1300
+  - ₹1,300
+  question: How much does the government pay for a 5 kg cylinder connection under Ujjwala Yojana?
+  question_hi: उज्ज्वला योजना में 5 किलो सिलेंडर वाले कनेक्शन के लिए सरकार कितने रुपये देती है?
+  question_hi_latn: Ujjwala Yojana me 5 kilo cylinder wale connection ke liye sarkar kitne rupaye deti hai?
+  source: 1
+  status: unverified
+- key: first_refill_and_stove
+  statement: The first LPG refill and the stove (hotplate) are given free with the PMUY connection.
+  value: free
+  accept:
+  - free of cost
+  - muft
+  - 'yes'
+  - haan
+  question: Do I get the first cylinder refill and the stove free under Ujjwala Yojana?
+  question_hi: क्या उज्ज्वला योजना में पहला सिलेंडर रिफिल और चूल्हा मुफ्त मिलता है?
+  question_hi_latn: Kya Ujjwala Yojana me pehla cylinder refill aur chulha muft milta hai?
+  source: 1
+  status: unverified
+situations:
+- question: We are a poor family in a village and still cook on wood because we have no gas connection. Is there a government scheme that gives a free LPG connection to women?
+  language: en
+- question: मेरे घर में अभी तक गैस कनेक्शन नहीं है और हम गरीब परिवार हैं, मुझे मुफ्त गैस कनेक्शन कैसे मिलेगा?
+  language: hi
+sources:
+- title: Pradhan Mantri Ujjwala Yojana 2.0 - Home
+  url: https://pmuy.gov.in/
+  publisher: Ministry of Petroleum and Natural Gas, Government of India
+  accessed: '2026-10-03'
+- title: 'PMUY: About'
+  url: https://pmuy.gov.in/about.html
+  publisher: Ministry of Petroleum and Natural Gas, Government of India
+  accessed: '2026-10-03'
+- title: Apply for New Ujjwala PMUY Connection
+  url: https://pmuy.gov.in/ujjwala2.html
+  publisher: Ministry of Petroleum and Natural Gas, Government of India
+  accessed: '2026-10-03'
+- title: PMUY FAQs
+  url: https://pmuy.gov.in/faq.html
+  publisher: Ministry of Petroleum and Natural Gas, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The official site gives two different amounts. The PMUY home page shows Rs 2,050 for a 14.2 kg connection and Rs 1,300 for a 5 kg connection, with an item-wise break-up that adds up to those totals. The older About page still shows Rs 1,600 and Rs 1,150. This record uses the home page figures. The home page counter showed 10,56,85,306 connections released as of 23 Sep 2026, so connections were still being given out. Whether a new application is approved depends on the current target given to oil companies, so applicants should check with their LPG distributor. Separately, the Union Cabinet has approved a per-refill subsidy for PMUY consumers in recent years (reported as Rs 300 per 14.2 kg cylinder for a limited number of refills a year). PIB and the Petroleum Ministry website could not be opened, so the current amount and refill limit were not checked and are left out of this record. The 14 points of the deprivation declaration were not available on the pages that could be opened.
+    No official Hindi name was found on the pages opened.'
+  - No independent check was returned for this scheme.

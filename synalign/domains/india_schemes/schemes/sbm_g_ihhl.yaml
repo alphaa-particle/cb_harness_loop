@@ -1,0 +1,120 @@
+id: sbm_g_ihhl
+name: Swachh Bharat Mission (Grameen) - Individual Household Latrine (IHHL) incentive
+short_name: SBM-G IHHL
+names_hi: []
+aliases:
+- Swachh Bharat Mission Gramin toilet scheme
+- SBM toilet yojana
+- shauchalay yojana
+- IHHL incentive
+- sauchalay ke liye 12000 rupaye
+- Nirmal Bharat Abhiyan (old name)
+level: central
+state: ''
+ministry: Ministry of Jal Shakti (Department of Drinking Water and Sanitation)
+category: other
+summary: Under Swachh Bharat Mission (Grameen), eligible rural households that do not have a toilet get Rs 12,000 to build and use one. It covers all BPL families and certain poorer APL families. The mission is now in Phase II, which mainly aims to keep villages open-defecation free, and only new eligible households get the incentive.
+sections:
+  eligibility:
+  - All Below Poverty Line (BPL) households in rural areas.
+  - Above Poverty Line (APL) households that belong to a Scheduled Caste or Scheduled Tribe.
+  - APL households of small and marginal farmers.
+  - APL landless labourers who have a homestead.
+  - APL households with a physically handicapped member.
+  - APL households headed by a woman.
+  - The incentive is only for new eligible households, such as new families that do not yet have a toilet.
+  exclusions:
+  - APL households that are not in the listed groups get no incentive. They are encouraged to build a toilet with their own money.
+  - Households already covered earlier do not get the incentive again.
+  benefits:
+  - An incentive of Rs 12,000 to build a household toilet. This also covers water storage for handwashing and keeping the toilet clean.
+  - The Centre pays Rs 7,200 (60%) and the State Rs 4,800 (40%). In North-Eastern and special-category states, the Centre pays Rs 10,800 (90%) and the State Rs 1,200 (10%).
+  - The money is an incentive, not a full refund. It is meant to be enough for a basic twin-pit toilet, and the family pays any extra cost.
+  - Families with no space for their own toilet can use Community Managed Sanitation Complexes built in the village.
+  how_to_apply:
+  - Apply online using the IHHL application form on the SBM portal (sbm.gov.in), logging in with your mobile number and an OTP.
+  - Or ask your Gram Panchayat, which runs toilet building under the mission in the village.
+  - Toilet building is tracked online, and photos of the toilet are geo-tagged and uploaded through a mobile app.
+  documents:
+  - A mobile number, to register and log in with an OTP for the online IHHL application.
+rules:
+  gender: any
+facts:
+- key: ihhl_incentive
+  statement: An eligible rural household gets Rs 12,000 under SBM-G to build a household toilet.
+  value: Rs 12,000
+  accept:
+  - '12000'
+  - 12,000
+  - Rs 12000
+  - twelve thousand
+  question: How much money does Swachh Bharat Mission Gramin give to build a toilet?
+  question_hi: स्वच्छ भारत मिशन ग्रामीण में शौचालय बनाने के लिए कितना पैसा मिलता है?
+  question_hi_latn: Swachh Bharat Mission Gramin me toilet banane ke liye kitna paisa milta hai?
+  source: 1
+  status: unverified
+- key: central_share
+  statement: In most states, the Centre pays Rs 7,200 of the SBM-G toilet incentive.
+  value: Rs 7,200
+  accept:
+  - '7200'
+  - 7,200
+  - Rs 7200
+  question: How much of the Swachh Bharat Mission toilet incentive does the Central government pay?
+  question_hi: स्वच्छ भारत मिशन ग्रामीण में शौचालय की प्रोत्साहन राशि में केंद्र सरकार कितना देती है?
+  question_hi_latn: Swachh Bharat Mission Gramin me toilet ke paise me kendra sarkar kitna deti hai?
+  source: 1
+  status: unverified
+- key: state_share
+  statement: In most states, the State government pays Rs 4,800 of the SBM-G toilet incentive.
+  value: Rs 4,800
+  accept:
+  - '4800'
+  - 4,800
+  - Rs 4800
+  question: How much of the Swachh Bharat Mission toilet incentive does the State government pay?
+  question_hi: स्वच्छ भारत मिशन ग्रामीण में शौचालय की प्रोत्साहन राशि में राज्य सरकार कितना देती है?
+  question_hi_latn: Swachh Bharat Mission Gramin me toilet ke paise me rajya sarkar kitna deti hai?
+  source: 1
+  status: unverified
+- key: ne_central_share
+  statement: In North-Eastern and special-category states, the Centre pays Rs 10,800 of the SBM-G toilet incentive.
+  value: Rs 10,800
+  accept:
+  - '10800'
+  - 10,800
+  - Rs 10800
+  question: In North-Eastern states, how much of the Swachh Bharat toilet incentive does the Centre pay?
+  question_hi: पूर्वोत्तर राज्यों में स्वच्छ भारत मिशन ग्रामीण की शौचालय राशि में केंद्र सरकार कितना देती है?
+  question_hi_latn: North East rajyon me Swachh Bharat Mission Gramin ke toilet ke paise me kendra kitna deta hai?
+  source: 1
+  status: unverified
+situations:
+- language: en
+  question: We are a poor family in a village and we don't have a toilet at home. Can we get money from the government to build one?
+- language: hi
+  question: हमारे गाँव के घर में शौचालय नहीं है और हम गरीब परिवार हैं, शौचालय बनवाने के लिए सरकार से पैसा कैसे मिलेगा?
+sources:
+- title: Swachh Bharat Mission (Grameen) - FAQs
+  url: https://swachhbharatmission.ddws.gov.in/faq
+  publisher: Department of Drinking Water and Sanitation, Ministry of Jal Shakti
+  accessed: '2026-10-03'
+- title: About SBM(G)
+  url: https://swachhbharatmission.ddws.gov.in/about_sbm
+  publisher: Department of Drinking Water and Sanitation, Ministry of Jal Shakti
+  accessed: '2026-10-03'
+- title: Swachh Bharat Mission Phase II - IHHL online application login
+  url: https://sbm.gov.in/sbm_dbt/secure/login.aspx
+  publisher: Department of Drinking Water and Sanitation, Ministry of Jal Shakti
+  accessed: '2026-10-03'
+- title: Swachh Bharat Mission (Grameen) home page
+  url: https://swachhbharatmission.ddws.gov.in/
+  publisher: Department of Drinking Water and Sanitation, Ministry of Jal Shakti
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The official pages give two different end dates for Phase II. The About page says 2020-21 to 2025-26, and the FAQ says 2020-21 to 2024-25. Whether the IHHL incentive is still being given after March 2026 could not be confirmed. The Rs 7,200 / Rs 4,800 split (and Rs 10,800 / Rs 1,200 for North-Eastern and special-category states) comes from the Phase I FAQ. The Phase II FAQ keeps the same 60:40 and 90:10 ratios and says the Centre pays 100% in the remaining UTs. The Phase II Operational Guidelines PDF was too large to open, so these were not confirmed: the full list of documents, and when and in how many instalments the Rs 12,000 is paid (it is usually after the toilet is built and checked). Who counts as BPL or as an eligible APL household is decided locally, and states may add their own money. No official Hindi name for the scheme was found on the official pages.'
+  - No independent check was returned for this scheme.

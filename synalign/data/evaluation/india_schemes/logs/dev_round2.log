@@ -1,0 +1,14 @@
+316 dev questions (sha256 b77812e2d673), min_score 0.5, top_k 3
+search char_tfidf           hit@1 0.8026  in-prompt 0.75  abstain 0.0833  (0.3 ms/q)
+search bm25                 hit@1 0.7664  in-prompt 0.7434  abstain 0.1667  (0.1 ms/q)
+search dense                hit@1 0.9145  in-prompt 0.9145  abstain 0.75  (36.0 ms/q)
+search fusion               hit@1 0.9145  in-prompt 0.9276  abstain 0.75  (35.7 ms/q)
+search fusion_no_glossary   hit@1 0.9013  in-prompt 0.9013  abstain 0.75  (39.4 ms/q)
+  fusion: 50/316
+  fusion: 100/316
+  fusion: 150/316
+  fusion: 200/316
+  fusion: 250/316
+  fusion: 300/316
+answers fusion       correct 0.8196  (1.273 s/answer)
+Report: /Users/vaibhav_joshi/Desktop/cb_harness_loop/synalign/data/evaluation/india_schemes/dev_round2/report.md

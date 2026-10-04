@@ -1,0 +1,136 @@
+id: pms_sc
+name: Post Matric Scholarship to the Students belonging to Scheduled Castes for Studies in India
+short_name: PMS-SC
+names_hi: []
+aliases:
+- Post Matric Scholarship for SC students
+- SC post matric scholarship
+- post matric scholarship sc yojana
+- anusuchit jati post matric chhatravritti
+- SC freeship card scholarship
+level: central
+state: ''
+ministry: Ministry of Social Justice and Empowerment, Department of Social Justice and Empowerment
+category: education
+summary: A centrally sponsored scholarship for Scheduled Caste students studying after Class 10 (from Class 11 up to PhD) whose parents earn up to Rs 2.5 lakh a year. It pays the compulsory non-refundable fees, including tuition, plus a yearly academic allowance of Rs 2,500 to Rs 13,500. The student's home State/UT runs it.
+sections:
+  eligibility:
+  - You must be an Indian national.
+  - You must belong to a Scheduled Caste notified for the State/UT where you are domiciled.
+  - You must have passed Class 10 (matriculation) or a higher exam from a recognised board or university.
+  - Parents' or guardian's income from all sources must not exceed Rs 2,50,000 in the last financial year.
+  - You must study a recognised post-matric course (Class 11-12, ITI, diploma, graduation, postgraduation, PhD etc.) at a recognised institution in India.
+  - All children of the same parents can get the scholarship; there is no limit on the number of children.
+  - To keep getting it each year, you need satisfactory academic performance and at least 75% attendance.
+  exclusions:
+  - Students admitted on management quota, NRI quota, spot admission or other seats not filled on merit.
+  - Students who finish one stage and then study the same stage again in another subject, e.g. B.Com after B.A.
+  - Students who accept another scholarship or stipend at the same time; they must choose one.
+  - Studies abroad are not covered.
+  - Students who got the scholarship through false statements are blacklisted from all scholarships.
+  benefits:
+  - Full compulsory non-refundable fees, including tuition fee, as fixed by the State fee fixation committee. Refundable deposits are not covered.
+  - 'Group 1 (professional degree and PG courses such as medicine, engineering, management, law, MPhil/PhD): Rs 13,500 a year for hostellers and Rs 7,000 for day scholars.'
+  - 'Group 2 (other professional courses such as B.Pharma, B.Nursing, hotel management, and diplomas entered after Class 12): Rs 9,500 a year for hostellers and Rs 6,500 for day scholars.'
+  - 'Group 3 (general degrees such as BA, BSc, BCom, MA, MSc, MCom): Rs 6,000 a year for hostellers and Rs 3,000 for day scholars.'
+  - 'Group 4 (non-degree courses entered after Class 10, such as Class 11-12, ITI and polytechnic diplomas): Rs 4,000 a year for hostellers and Rs 2,500 for day scholars.'
+  - Students with disabilities get 10% extra allowance. Students in correspondence or online courses get only the fees, with no academic allowance.
+  how_to_apply:
+  - Apply on your home State/UT's scholarship portal. The State/UT where you are domiciled selects you and pays the scholarship.
+  - Before admission, register on the portal for a Freeship Card. It lets you join without paying tuition and hostel fees upfront; you pay the institution within 7 working days of receiving the scholarship.
+  - Apply for the scholarship on the day of admission; your institution verifies it. Renewal is automatic, based on promotion and attendance.
+  - The money (Centre's and State's shares) is paid directly into your Aadhaar-linked bank account by DBT.
+  documents:
+  - Caste certificate signed by the authorised officer.
+  - Valid income certificate from the authority named by the State. For courses longer than one year it is needed only once, at admission.
+  - Certificates or mark sheets of all exams passed.
+  - Passport-size photograph.
+  - Aadhaar number (Aadhaar authentication is compulsory at renewal) and an Aadhaar-linked bank account.
+rules:
+  annual_income_max: 250000
+  gender: any
+facts:
+- key: income_limit
+  statement: Parents' income from all sources must not exceed Rs 2,50,000 a year.
+  value: Rs 2,50,000
+  accept:
+  - '250000'
+  - 2,50,000
+  - 2.5 lakh
+  - Rs 2.5 lakh
+  - dhai lakh
+  question: What is the family income limit for the Post Matric Scholarship for SC students?
+  question_hi: अनुसूचित जाति के छात्रों की पोस्ट मैट्रिक छात्रवृत्ति के लिए परिवार की आय सीमा कितनी है?
+  question_hi_latn: SC post matric scholarship ke liye family income limit kitni hai?
+  source: 1
+  status: unverified
+- key: group1_hosteller_allowance
+  statement: Hostellers in Group 1 professional degree and PG courses get Rs 13,500 a year as academic allowance.
+  value: Rs 13,500
+  accept:
+  - '13500'
+  - 13,500
+  - Rs 13500
+  question: How much academic allowance does a hosteller in a professional degree course get under the SC Post Matric Scholarship?
+  question_hi: एससी पोस्ट मैट्रिक छात्रवृत्ति में प्रोफेशनल डिग्री कोर्स के हॉस्टल में रहने वाले छात्र को साल में कितना भत्ता मिलता है?
+  question_hi_latn: SC post matric scholarship me professional course ke hosteller ko saal ka kitna allowance milta hai?
+  source: 1
+  status: unverified
+- key: group3_day_scholar_allowance
+  statement: Day scholars in general degree courses like BA, BSc or BCom get Rs 3,000 a year as academic allowance.
+  value: Rs 3,000
+  accept:
+  - '3000'
+  - 3,000
+  - Rs 3000
+  question: How much allowance does a BA student living at home get under the SC Post Matric Scholarship?
+  question_hi: एससी पोस्ट मैट्रिक छात्रवृत्ति में घर से पढ़ने वाले बीए छात्र को साल में कितना भत्ता मिलता है?
+  question_hi_latn: SC post matric scholarship me ghar se padhne wale BA student ko saal ka kitna allowance milta hai?
+  source: 1
+  status: unverified
+- key: attendance_required
+  statement: The scholarship continues each year only with satisfactory performance and at least 75% attendance.
+  value: 75%
+  accept:
+  - '75'
+  - 75 percent
+  - seventy five percent
+  question: How much attendance is needed to keep getting the SC Post Matric Scholarship?
+  question_hi: एससी पोस्ट मैट्रिक छात्रवृत्ति मिलते रहने के लिए कितनी हाज़िरी ज़रूरी है?
+  question_hi_latn: SC post matric scholarship milte rehne ke liye kitni attendance chahiye?
+  source: 1
+  status: unverified
+- key: disability_extra
+  statement: Students with disabilities get 10% extra academic allowance.
+  value: 10%
+  accept:
+  - '10'
+  - 10 percent
+  - ten percent
+  question: How much extra allowance do students with disabilities get under the SC Post Matric Scholarship?
+  question_hi: एससी पोस्ट मैट्रिक छात्रवृत्ति में दिव्यांग छात्रों को कितना अतिरिक्त भत्ता मिलता है?
+  question_hi_latn: SC post matric scholarship me divyang students ko kitna extra allowance milta hai?
+  source: 1
+  status: unverified
+situations:
+- language: en
+  question: I belong to a Scheduled Caste, just passed Class 10, and my father earns about 2 lakh a year. Which scholarship will pay my fees and give me some money every year for Class 11, 12 and college?
+- language: hi_latn
+  question: Main SC category se hoon, B.Sc me admission liya hai aur ghar ki income 2 lakh se kam hai. College fees aur hostel kharche ke liye kaunsi scholarship milegi?
+sources:
+- title: 'Guidelines: Post Matric Scholarships to the Students belonging to Scheduled Castes for Studies in India (2020-21 to 2025-26), March 2021'
+  url: https://socialjustice.gov.in/writereaddata/UploadFile/PMS_for_SCs_Scheme_Guidelines.pdf
+  publisher: Department of Social Justice & Empowerment, Ministry of Social Justice & Empowerment
+  accessed: '2026-10-03'
+- title: Post-Matric Scholarship for SC students
+  url: https://socialjustice.gov.in/schemes/25
+  publisher: Department of Social Justice & Empowerment, Ministry of Social Justice & Empowerment
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The March 2021 guidelines cover 2020-21 to 2025-26, with funding shared 60:40 between Centre and States (90:10 for North Eastern States). On 3 Oct 2026 the Department''s scheme page (last updated 28 Sept 2026) still listed these as the current guidelines, but I found no official order on continuing or changing the scheme after 2025-26. The academic allowance rates are those that applied from 2021-22. The guidelines link them to the Consumer Price Index for Industrial Workers, with yearly revision from April 2022, so current rates may be higher. States may also top up the allowance from their own funds. Fees are covered as fixed by each State''s fee committee. The portal, deadlines and process differ by State; the scheme is not listed under central schemes on NSP. The guidelines required higher education institutions to have NAAC/NBA accreditation to stay in the scheme from 2025-26. No official Hindi name was found on an official page; the Department site''s Hindi view is a machine
+    translation.'
+  - No independent check was returned for this scheme.

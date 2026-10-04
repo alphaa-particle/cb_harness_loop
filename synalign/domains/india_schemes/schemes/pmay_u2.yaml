@@ -1,0 +1,151 @@
+id: pmay_u2
+name: Pradhan Mantri Awas Yojana - Urban 2.0
+short_name: PMAY-U 2.0
+names_hi:
+- प्रधान मंत्री आवास योजना-शहरी 2.0
+aliases:
+- PM Awas Yojana Urban 2.0
+- PMAY Urban 2.0
+- pradhan mantri awas yojana shahari
+- awas yojana shehri
+- Housing for All Mission (Urban)
+- PMAY-U
+level: central
+state: ''
+ministry: Ministry of Housing and Urban Affairs
+category: housing
+summary: PMAY-U 2.0 helps urban families who own no pucca house anywhere in India and earn up to Rs 9 lakh a year to build, buy or rent a home. Poorer (EWS) families can get about Rs 2.5 lakh of government help per house, and home-loan borrowers can get an interest subsidy of up to Rs 1.80 lakh. It runs for 5 years from 1 September 2024.
+sections:
+  eligibility:
+  - Your family lives in an urban area (a statutory town or a notified planning or development area).
+  - No member of your family owns a pucca house anywhere in India.
+  - Your annual household income is up to Rs 9 lakh (Rs 9,00,000). EWS means up to Rs 3 lakh, LIG means Rs 3 lakh to Rs 6 lakh, and MIG means Rs 6 lakh to Rs 9 lakh.
+  - '''Family'' means husband, wife and unmarried sons and/or unmarried daughters.'
+  - Only EWS families (income up to Rs 3 lakh) can get help to build a house on their own land (BLC) or to own a house in a partnership project (AHP). For BLC you need your own land or a land patta from the state.
+  - The home-loan interest subsidy (ISS) is for EWS, LIG and MIG families. The loan must be up to Rs 25 lakh, the house worth up to Rs 35 lakh and the carpet area up to 120 sq m, and the loan must be sanctioned and paid out on or after 1 September 2024.
+  - Every family member must have Aadhaar or an Aadhaar Virtual ID.
+  exclusions:
+  - You cannot apply if you were given a house under any Central, State or local government housing scheme in the last 20 years, in a town or a village.
+  - You cannot apply if your family owns a pucca house anywhere in India.
+  - Families whose PMAY-U houses were cancelled (curtailed) after 31 December 2023 cannot get them sanctioned again under PMAY-U 2.0.
+  - No interest subsidy if the loan is above Rs 25 lakh or the house is worth more than Rs 35 lakh.
+  - No interest subsidy if an earlier owner already took the subsidy on the same property, or if you claim it again after moving your loan to another lender.
+  benefits:
+  - 'Building your own house (BLC) or a house in a partnership project (AHP): in most states you get Rs 1.5 lakh from the Centre plus at least Rs 1 lakh from the State, so Rs 2.5 lakh in all.'
+  - In North-Eastern states, Himachal Pradesh, Uttarakhand, Jammu and Kashmir, Puducherry and Delhi, the Centre pays Rs 2.25 lakh and the State at least Rs 0.25 lakh. In other UTs the Centre pays Rs 2.50 lakh.
+  - BLC money is paid by DBT in 3 instalments (40:40:20) as building work goes ahead. The house must be 30 to 45 sq m.
+  - 'Home loans (ISS): you get a 4% interest subsidy on the first Rs 8 lakh of the loan, for up to 12 years. The maximum is Rs 1.80 lakh, paid in 5 yearly instalments into your loan account.'
+  - 'Rental housing (ARH): affordable rented homes and dormitories for urban poor, working women, industrial workers and other EWS/LIG families.'
+  - The house is put in the name of the woman head of the family, or jointly with her husband. It cannot be sold or transferred for 5 years.
+  how_to_apply:
+  - Apply online on the PMAY-U 2.0 Unified Web Portal (pmaymis.gov.in, 'Apply for PMAY-U 2.0'), which first checks whether you are eligible.
+  - You can also apply at a Common Service Centre (CSC), or directly at your Urban Local Body or municipality.
+  - For the home-loan subsidy, register on the portal. Your application is sent to your bank or housing finance company.
+  - The ULB or State checks your eligibility, and a district- or ULB-level committee picks the beneficiaries.
+  documents:
+  - Aadhaar card. Every family member must have Aadhaar.
+  - Bank account details.
+  - Income certificate. For the home-loan subsidy, a self-certificate or affidavit of income is accepted.
+  - An undertaking in the official format saying you meet the income limit and own no pucca house.
+  - 'For building on your own land (BLC): proof that you own the land.'
+  - Proof of a preference group (for example SC/ST) only if you claim priority. A caste certificate is not compulsory.
+rules:
+  annual_income_max: 900000
+  gender: any
+facts:
+- key: annual_income_limit
+  statement: To get PMAY-U 2.0, your family's annual income must be up to Rs 9 lakh.
+  value: Rs 9 lakh
+  accept:
+  - 9 lakh
+  - '900000'
+  - 9,00,000
+  - Rs 9,00,000
+  - nine lakh
+  question: What is the highest annual family income allowed for PMAY-U 2.0?
+  question_hi: प्रधानमंत्री आवास योजना शहरी 2.0 के लिए परिवार की सालाना आय अधिकतम कितनी हो सकती है?
+  question_hi_latn: PM Awas Yojana Urban 2.0 ke liye family ki saalana income maximum kitni ho sakti hai?
+  source: 1
+  status: unverified
+- key: iss_max_subsidy
+  statement: The PMAY-U 2.0 home-loan interest subsidy can be at most Rs 1.80 lakh.
+  value: Rs 1.80 lakh
+  accept:
+  - 1.80 lakh
+  - 1.8 lakh
+  - '180000'
+  - 1,80,000
+  - Rs 1,80,000
+  question: What is the maximum home-loan interest subsidy under PMAY-U 2.0?
+  question_hi: प्रधानमंत्री आवास योजना शहरी 2.0 में होम लोन पर अधिकतम कितनी ब्याज सब्सिडी मिलती है?
+  question_hi_latn: PMAY Urban 2.0 me home loan par maximum kitni byaaj subsidy milti hai?
+  source: 1
+  status: unverified
+- key: iss_interest_rate
+  statement: PMAY-U 2.0 gives a 4% interest subsidy on the first Rs 8 lakh of a home loan.
+  value: 4%
+  accept:
+  - 4 percent
+  - 4.0%
+  - 4 per cent
+  - '4'
+  question: What rate of interest subsidy does PMAY-U 2.0 give on a home loan?
+  question_hi: प्रधानमंत्री आवास योजना शहरी 2.0 में होम लोन पर कितने प्रतिशत ब्याज सब्सिडी मिलती है?
+  question_hi_latn: PMAY-U 2.0 me home loan par kitne percent byaaj subsidy milti hai?
+  source: 1
+  status: unverified
+- key: blc_total_assistance
+  statement: In most states, an EWS family building on its own land under PMAY-U 2.0 gets Rs 2.5 lakh in all (Centre plus State).
+  value: Rs 2.5 lakh
+  accept:
+  - 2.5 lakh
+  - 2.50 lakh
+  - '250000'
+  - 2,50,000
+  - Rs 2,50,000
+  question: How much help does PMAY-U 2.0 give to build a house on my own land in a city?
+  question_hi: प्रधानमंत्री आवास योजना शहरी 2.0 में शहर में अपनी ज़मीन पर घर बनाने के लिए कुल कितनी सहायता मिलती है?
+  question_hi_latn: PMAY Urban 2.0 me shahar me apni zameen par ghar banane ke liye kul kitni sahayata milti hai?
+  source: 1
+  status: unverified
+- key: previous_benefit_bar_years
+  statement: You cannot get PMAY-U 2.0 if you were given a house under any government housing scheme in the last 20 years.
+  value: 20 years
+  accept:
+  - '20'
+  - twenty years
+  - 20 saal
+  question: If I got a government house earlier, for how many years am I barred from PMAY-U 2.0?
+  question_hi: अगर पहले सरकारी आवास मिला हो तो कितने साल तक प्रधानमंत्री आवास योजना शहरी 2.0 का लाभ नहीं मिलेगा?
+  question_hi_latn: Agar pehle sarkari awas mila ho to kitne saal tak PMAY Urban 2.0 ka labh nahi milega?
+  source: 1
+  status: unverified
+situations:
+- language: en
+  question: I live on rent in a city, my family earns about 4 lakh a year and we don't own any house. Can the government help me buy a flat or get cheaper interest on a home loan?
+- language: hi_latn
+  question: Main shahar me kiraye par rehta hoon, apna pakka ghar nahi hai aur kamai kam hai, apna ghar banane ya home loan par sarkari madad kaise milegi?
+sources:
+- title: 'Pradhan Mantri Awas Yojana - Urban 2.0: Scheme Guidelines (September 2024)'
+  url: https://pmaymis.gov.in/PMAYMIS2_2024/Operational-Guidelines-of-PMAY-U-2.pdf
+  publisher: Ministry of Housing and Urban Affairs, Government of India
+  accessed: '2026-10-03'
+- title: PMAY-U 2.0 Unified Web Portal
+  url: https://pmaymis.gov.in/PMAYMIS2_2024/PmayDefault.aspx
+  publisher: Ministry of Housing and Urban Affairs, Government of India
+  accessed: '2026-10-03'
+- title: PMAY-U 2.0 FAQs
+  url: https://pmaymis.gov.in/PMAYMIS2_2024/PmayFAQ.aspx
+  publisher: Ministry of Housing and Urban Affairs, Government of India
+  accessed: '2026-10-03'
+- title: Pradhan Mantri Awas Yojana (Urban) website
+  url: https://pmay-urban.gov.in/
+  publisher: Ministry of Housing and Urban Affairs, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is active. It runs for 5 years from 1 September 2024 (to about August 2029), and applications are open on the Unified Web Portal. The pmay-urban.gov.in site says the guidelines were ''updated 15 Apr 2025'', but the copy read here is dated September 2024. Later changes may exist. The Rs 2.5 lakh total for BLC/AHP was worked out from the guidelines'' funding table (Centre plus minimum State share). States can add more money, can redefine the EWS income limit with MoHUA approval, and can set a cut-off date by which you must have lived in the town. The older FAQ page on pmay-urban.gov.in still describes the original PMAY-U (CLSS, MIG-I/MIG-II income up to Rs 18 lakh). Those rules do not apply to PMAY-U 2.0, where the interest subsidy scheme (ISS) replaced CLSS.'
+  - No independent check was returned for this scheme.

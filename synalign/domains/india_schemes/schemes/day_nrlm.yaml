@@ -1,0 +1,139 @@
+id: day_nrlm
+name: Deendayal Antyodaya Yojana - National Rural Livelihoods Mission
+short_name: DAY-NRLM
+names_hi: []
+aliases:
+- Aajeevika
+- NRLM
+- Aajeevika mission
+- ajeevika mission SHG yojana
+- National Rural Livelihoods Mission
+- Swarnajayanti Gram Swarozgar Yojana (SGSY) - old scheme it replaced
+level: central
+state: ''
+ministry: Ministry of Rural Development
+category: credit_enterprise
+summary: DAY-NRLM brings at least one member of each poor rural household, preferably a woman, into a Self Help Group (SHG). It then supports these groups with a Revolving Fund of Rs 20,000 to Rs 30,000, community investment funds, bank loans without collateral, interest subvention and training. The mission is ongoing and is run by the Ministry of Rural Development through State Rural Livelihoods Missions.
+sections:
+  eligibility:
+  - 'Meant for rural poor households: at least one member of each identified poor household, preferably a woman, is brought into a Self Help Group.'
+  - Poor households are identified by the community through the Participatory Identification of Poor (PIP) process, and the list is vetted by the Gram Sabha; the BPL list alone is not used.
+  - SHGs usually have 10 to 20 members, mostly women; special SHGs in remote tribal or difficult areas, or of vulnerable people such as persons with disabilities, may have as few as 5 members.
+  - Groups of persons with disabilities, elderly people or transgender persons may include both men and women; other SHGs are women's groups.
+  - To get the Revolving Fund, an SHG should have existed for at least 3 to 6 months, follow the Panchasutras and not have received a Revolving Fund before.
+  - 'To get a bank loan, an SHG must have been active for at least 6 months as per its books of account and follow the Panchasutras: regular meetings, regular savings, regular inter-loaning, timely repayment and up-to-date books.'
+  - The SHG must qualify under the grading norms fixed by NABARD.
+  - The poorest, single women, women-headed households, persons with disabilities, landless people and migrant labourers get special focus.
+  exclusions:
+  - The mission is for rural areas; the interest subvention is only for women SHGs in rural areas.
+  - An SHG that has already received a Revolving Fund earlier cannot get it again.
+  - Interest subvention is given only while the SHG loan account stays in the standard (regularly repaid) category.
+  - A defunct SHG can get credit only after it is revived and stays active for at least 3 months.
+  benefits:
+  - Revolving Fund of Rs 20,000 to Rs 30,000 per SHG to build its funds and credit history.
+  - Community Investment Fund (CIF) given through village and cluster federations, which lend it to SHGs or use it for joint activities.
+  - No collateral is needed for SHG bank loans up to Rs 20 lakh, and no margin is taken for loans up to Rs 10 lakh.
+  - 'Term loan doses: first dose at least Rs 1.5 lakh (or 6 times the group''s corpus), second dose at least Rs 3 lakh (or 8 times the corpus), third dose at least Rs 6 lakh.'
+  - Women SHGs in rural areas get bank loans up to Rs 3 lakh at a concessional interest rate of 7% per year (terms for 2025-26).
+  - Training and capacity building for members, plus self-employment training through Rural Self Employment Training Institutes (RSETIs) and help to access insurance.
+  how_to_apply:
+  - Contact the State Rural Livelihoods Mission staff at your block office (Block Mission Management Unit) or the SHG / Village Organisation in your village to join or form an SHG.
+  - Existing SHGs can also be brought under the mission; groups that meet its norms become eligible for the Revolving Fund, CIF and interest subvention.
+  - myScheme lists an online registration on the Aajeevika portal (aajeevika.gov.in/en/member/register) using name, email and mobile number and creating a username and password.
+  - Once the SHG meets the conditions, it applies for a loan at a bank branch.
+  documents:
+  - Aadhaar number
+  - Proof of identity
+  - Proof of residence
+  - Voter ID card
+  - Passport size photograph
+rules:
+  gender: any
+facts:
+- key: revolving_fund_amount
+  statement: An eligible SHG gets a Revolving Fund of Rs 20,000 to Rs 30,000.
+  value: Rs 20,000 to Rs 30,000
+  accept:
+  - 20000 to 30000
+  - 20,000-30,000
+  - Rs 20000 - Rs 30000
+  - 20 se 30 hazar
+  question: How much Revolving Fund does a Self Help Group get under DAY-NRLM?
+  question_hi: DAY-NRLM (आजीविका मिशन) में स्वयं सहायता समूह को कितना रिवॉल्विंग फंड मिलता है?
+  question_hi_latn: Aajeevika mission (DAY-NRLM) me SHG ko kitna revolving fund milta hai?
+  source: 2
+  status: unverified
+- key: shg_min_active_period_for_loan
+  statement: An SHG must have been active for at least 6 months before it can get a bank loan.
+  value: 6 months
+  accept:
+  - '6'
+  - six months
+  - 6 mahine
+  - छह महीने
+  question: How old must a Self Help Group be to get a bank loan under DAY-NRLM?
+  question_hi: DAY-NRLM में बैंक लोन लेने के लिए स्वयं सहायता समूह कितना पुराना होना चाहिए?
+  question_hi_latn: DAY-NRLM me bank loan lene ke liye SHG kitne mahine purana hona chahiye?
+  source: 2
+  status: unverified
+- key: concessional_interest_rate
+  statement: Women SHGs in rural areas get loans up to Rs 3 lakh at 7% interest per year.
+  value: 7%
+  accept:
+  - '7'
+  - 7 percent
+  - 7 pratishat
+  - सात प्रतिशत
+  question: What interest rate do women SHGs pay on loans up to Rs 3 lakh under DAY-NRLM?
+  question_hi: DAY-NRLM में महिला स्वयं सहायता समूह को 3 लाख रुपये तक के लोन पर कितना ब्याज देना होता है?
+  question_hi_latn: DAY-NRLM me mahila SHG ko 3 lakh tak ke loan par kitna byaj dena padta hai?
+  source: 2
+  status: unverified
+- key: collateral_free_loan_limit
+  statement: SHG bank loans up to Rs 20 lakh need no collateral.
+  value: Rs 20 lakh
+  accept:
+  - 20 lakh
+  - '2000000'
+  - 20,00,000
+  - बीस लाख
+  question: Up to what amount can an SHG get a bank loan without collateral under DAY-NRLM?
+  question_hi: DAY-NRLM में स्वयं सहायता समूह को बिना गारंटी (कोलैटरल) के कितने तक का बैंक लोन मिल सकता है?
+  question_hi_latn: DAY-NRLM me SHG ko bina guarantee (collateral) kitne tak ka loan mil sakta hai?
+  source: 2
+  status: unverified
+- key: shg_size
+  statement: A regular SHG has 10 to 20 members.
+  value: 10 to 20
+  accept:
+  - 10-20
+  - 10 se 20
+  - ten to twenty
+  - 10 से 20
+  question: How many members are there in a Self Help Group under DAY-NRLM?
+  question_hi: DAY-NRLM में एक स्वयं सहायता समूह में कितने सदस्य होते हैं?
+  question_hi_latn: DAY-NRLM me ek swayam sahayata samooh me kitne sadasya hote hain?
+  source: 1
+  status: unverified
+situations:
+- language: en
+  question: I am a poor woman in a village and want to join a women's group that saves money together and can get a low-interest bank loan so I can start a small business. Which government programme supports this?
+- language: hi
+  question: मैं गाँव की गरीब महिला हूँ। महिलाओं के बचत समूह से जुड़कर बिना गारंटी के सस्ता बैंक लोन लेकर छोटा काम शुरू करना चाहती हूँ, कौन सी सरकारी योजना मदद करेगी?
+sources:
+- title: Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (scheme details, eligibility, application, documents, FAQs)
+  url: https://www.myscheme.gov.in/schemes/day-nrlm
+  publisher: myScheme, Government of India (scheme of the Ministry of Rural Development)
+  accessed: '2026-10-03'
+- title: Master Circular - Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM), RBI/2025-26/02, 1 April 2025
+  url: https://www.rbi.org.in/Scripts/BS_ViewMasCirculardetails.aspx?id=12806
+  publisher: Reserve Bank of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is ongoing. The mission''s own sites (aajeevika.gov.in, nrlm.gov.in) and rural.gov.in could not be loaded, so this record relies on myScheme and the RBI Master Circular of 1 April 2025, the latest DAY-NRLM master circular listed on the RBI site when checked. Interest subvention terms are set again every year. The Rs 3 lakh at 7% figure is for FY 2025-26. The circular also gives a separate subvention for loans above Rs 3 lakh up to Rs 5 lakh, and a 2% prompt-repayment subvention for individual women entrepreneurs on loans up to Rs 1.5 lakh; check the current year''s terms before quoting them. The amount of the Community Investment Fund per SHG was not stated in the pages read, so no figure is given. The Revolving Fund needs the SHG to have existed for 3 or 6 months (''3/6 months'' in the circular); the exact period depends on the state''s norms. The online ''registration'' on myScheme only creates a portal account. In practice a person joins through a local SHG or
+    the block SRLM office. Most SHGs are women-only; mixed groups are allowed only for persons with disabilities, elderly people and transgender persons. No official Hindi name was found on a page that could be opened.'
+  - No independent check was returned for this scheme.

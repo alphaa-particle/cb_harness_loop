@@ -1,0 +1,151 @@
+id: pmmsy
+name: Pradhan Mantri Matsya Sampada Yojana
+short_name: PMMSY
+names_hi:
+- प्रधानमंत्री मत्स्य संपदा योजना
+aliases:
+- PM Matsya Sampada Yojana
+- matsya sampada yojana
+- pradhan mantri matsya sampada
+- PMMSY fisheries subsidy
+- machhli palan subsidy yojana
+level: central
+state: ''
+ministry: Department of Fisheries, Ministry of Fisheries, Animal Husbandry and Dairying
+category: agriculture
+summary: A fisheries scheme that pays up to 40% of the cost of approved fish farming and fisheries projects for general category beneficiaries and up to 60% for SC, ST and women. It also gives livelihood support and accident insurance to fishers. The original scheme period was 2020-21 to 2024-25, so check with your State fisheries department whether new applications are open.
+sections:
+  eligibility:
+  - Fishers, fish farmers, fish workers and fish vendors can apply as individuals.
+  - Scheduled Castes, Scheduled Tribes, women and differently abled persons are listed beneficiaries; SC, ST and women get the higher rate of assistance.
+  - Self Help Groups, Joint Liability Groups, fisheries cooperatives, Fish Farmer Producer Organisations, and entrepreneurs or private firms can also apply.
+  - The project must be a beneficiary-oriented activity listed under the scheme and backed by a Detailed Project Report or self-contained proposal.
+  - The applicant must already have the land or water body, owned or on lease; a land lease should normally be at least 10 years for infrastructure projects and 7 years for other projects.
+  - For livelihood support during the fishing ban, the person must be a full-time active traditional fisher, below the poverty line, aged 18 to 60, and a member of a fishers' cooperative or other registered body.
+  exclusions:
+  - No assistance is given for buying, leasing or acquiring land.
+  - A project that already gets central funding for the same work in the same location is not funded again.
+  - If the beneficiary ends the lease early or transfers the assets before the lease period ends, all central assistance must be paid back with 12% yearly penal interest.
+  - Proposals that are not viable or lack land, clearances or permissions are rejected, and their preparation costs are not reimbursed.
+  benefits:
+  - General category beneficiaries get government assistance of up to 40% of the project or unit cost.
+  - SC, ST and women beneficiaries get government assistance of up to 60% of the project or unit cost.
+  - The beneficiary pays the rest from own money or a bank loan; for example, on a Rs 1 lakh project the government pays at most Rs 40,000 for general category and Rs 60,000 for SC, ST and women.
+  - Each activity has a unit cost ceiling; Himalayan, North-Eastern and island areas may get up to 20% higher unit costs.
+  - 'Livelihood and nutritional support in the fishing ban or lean period: the fisher saves Rs 1,500 a year, the government adds Rs 3,000, and the total of Rs 4,500 is paid at Rs 1,500 a month.'
+  - 'Accident insurance for fishers with the full premium paid by government: Rs 5 lakh for death or permanent total disability, Rs 2.5 lakh for permanent partial disability and Rs 25,000 for accidental hospitalisation.'
+  how_to_apply:
+  - Contact your district fisheries officer or the State/UT Department of Fisheries, which is the nodal department for the scheme.
+  - Prepare a Detailed Project Report with cost estimate, proof of land or water body, sources of funds (own money or bank loan consent) and a timeline.
+  - Projects are put in the district fisheries plan by the District Level Committee and approved by the State Level Approval and Monitoring Committee before central approval; assistance is usually released in two instalments.
+  - Some States publish PMMSY application forms on their fisheries department websites (for example, the Goa Directorate of Fisheries).
+  documents:
+  - Detailed Project Report (DPR) or self-contained proposal.
+  - Proof of land or water body ownership, or a registered lease.
+  - Certificate that the land is free from encroachments and encumbrances.
+  - Statutory clearances, permits and licences where required.
+  - Undertaking that no other government assistance is taken for the same project.
+  - Aadhaar card (stated as mandatory for replacement boats and nets for traditional fishermen).
+rules:
+  gender: any
+facts:
+- key: assistance_general
+  statement: General category beneficiaries get government assistance of up to 40% of the project or unit cost.
+  value: 40%
+  accept:
+  - '40'
+  - 40 percent
+  - 40 per cent
+  - chalis pratishat
+  question: How much subsidy does a general category person get under PM Matsya Sampada Yojana?
+  question_hi: प्रधानमंत्री मत्स्य संपदा योजना में सामान्य वर्ग के लाभार्थी को कितनी सब्सिडी मिलती है?
+  question_hi_latn: PM Matsya Sampada Yojana me general category walon ko kitni subsidy milti hai?
+  source: 1
+  status: verified
+- key: assistance_sc_st_women
+  statement: SC, ST and women beneficiaries get government assistance of up to 60% of the project or unit cost.
+  value: 60%
+  accept:
+  - '60'
+  - 60 percent
+  - 60 per cent
+  - saath pratishat
+  question: How much subsidy do women and SC/ST beneficiaries get under PM Matsya Sampada Yojana?
+  question_hi: मत्स्य संपदा योजना में महिलाओं और अनुसूचित जाति/जनजाति के लाभार्थियों को कितनी सब्सिडी मिलती है?
+  question_hi_latn: Matsya Sampada Yojana me mahilaon aur SC/ST ko kitni subsidy milti hai?
+  source: 1
+  status: verified
+- key: livelihood_support_annual
+  statement: Livelihood support during the fishing ban totals Rs 4,500 a year (Rs 1,500 saved by the fisher plus Rs 3,000 from government).
+  value: Rs 4,500
+  accept:
+  - '4500'
+  - 4,500
+  - Rs 4500
+  question: How much livelihood support does a fisher get in total during the fishing ban under PMMSY?
+  question_hi: मत्स्य संपदा योजना में मछली पकड़ने पर रोक के समय मछुआरे को कुल कितनी आजीविका सहायता मिलती है?
+  question_hi_latn: PMMSY me fishing ban ke samay machhuare ko kul kitni aajeevika sahayata milti hai?
+  source: 1
+  status: verified
+- key: livelihood_monthly
+  statement: The livelihood support is paid to the fisher at Rs 1,500 a month during the ban or lean period.
+  value: Rs 1,500
+  accept:
+  - '1500'
+  - 1,500
+  - Rs 1500
+  question: How much is paid per month to fishers under PM Matsya Sampada Yojana livelihood support?
+  question_hi: मत्स्य संपदा योजना की आजीविका सहायता में मछुआरे को हर महीने कितना पैसा मिलता है?
+  question_hi_latn: Matsya Sampada Yojana ki aajeevika sahayata me har mahine kitna paisa milta hai?
+  source: 1
+  status: verified
+- key: accident_cover_death
+  statement: Fishers' accident insurance pays Rs 5 lakh for death or permanent total disability.
+  value: Rs 5 lakh
+  accept:
+  - 5 lakh
+  - '500000'
+  - 5,00,000
+  - paanch lakh
+  question: What is the accident insurance amount for a fisher's death under PM Matsya Sampada Yojana?
+  question_hi: प्रधानमंत्री मत्स्य संपदा योजना में मछुआरे की दुर्घटना में मृत्यु पर कितना बीमा मिलता है?
+  question_hi_latn: PM Matsya Sampada Yojana me machhuare ki durghatna me maut par kitna bima milta hai?
+  source: 2
+  status: verified
+situations:
+- language: en
+  question: I'm a woman and I want to start a fish pond on my own land. Is there a government scheme that pays part of the cost?
+- language: hi
+  question: मैं पारंपरिक मछुआरा हूँ, पुरानी नाव बदलकर नई नाव और जाल लेना है, क्या सरकार इसमें पैसे से मदद करती है?
+sources:
+- title: Pradhan Mantri Matsya Sampada Yojana - Operational Guidelines (June 2020)
+  url: https://fisheries.goa.gov.in/wp-content/uploads/2026/02/PMMSY-Guidelines24-June2020.pdf
+  publisher: Department of Fisheries, Ministry of Fisheries, Animal Husbandry and Dairying (hosted by Directorate of Fisheries, Government of Goa)
+  accessed: '2026-10-03'
+- title: Beneficiary Oriented Schemes - Pattern of Financial Assistance, PMMSY
+  url: https://fisheries.jk.gov.in/PMMSY/PMMSY-Pattern%20of%20Financial%20Assistance.pdf
+  publisher: Department of Fisheries, Government of Jammu and Kashmir
+  accessed: '2026-10-03'
+- title: Directorate of Fisheries, Goa - PMMSY guidelines and application forms
+  url: https://fisheries.goa.gov.in/
+  publisher: Directorate of Fisheries, Government of Goa
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The national operational guidelines (June 2020) set the scheme period as FY 2020-21 to 2024-25, with a total investment of Rs 20,050 crore. I could not open an official page (dof.gov.in returned 403 and pmmsy.dof.gov.in did not render) to confirm whether PMMSY has been extended beyond 2024-25 or replaced, so citizens should ask their district fisheries office whether new applications are being taken in 2026. Unit cost ceilings vary by activity and region; the J&K document shows higher Himalayan ceilings (for example Rs 8.40 lakh per hectare for a new carp pond), which are not the national figures. Funding for the livelihood support is split 50:50 between Centre and State in general States, 80:20 in North-Eastern and Himalayan States and 100% Centre in UTs; the fisher''s own Rs 1,500 share is the same everywhere. The accident insurance amounts come from the J&K State document. States may add their own top-up assistance. The official Hindi name was not seen on an official page,
+    so names_hi is left empty.'
+  - 'Checker: The summary says the original period was 2020-21 to 2024-25 and asks users to check whether the scheme is still open. This is misleading. The PIB reply of 22 Jul 2026 (PRID 2287585) refers to approvals during 2020-21 to 2026-27. PIB of 10 Mar 2026 (PRID 2237418) shows Rs 2,500 crore in the 2026-27 budget. PIB of 11 Aug 2026 (PRID 2297721) reports insurance releases and fishing-ban support in 2026-27. I did not see the formal extension or 16th Finance Commission approval order.'
+  - 'Checker: The accidental hospitalisation cover is wrong: Rs 25,000 per the central PIB reply, not Rs 20,000. The accident insurance figures should be sourced from the central PIB or DoF, not the J&K document.'
+  - 'Checker: names_hi is empty, but the Department of Fisheries PMMSY page shows प्रधानमंत्री मत्स्य संपदा योजना.'
+  - 'Checker: The current outlay is Rs 20,750 crore (PIB, Mar 2026), not Rs 20,050 crore.'
+  - 'Checker: dof.gov.in lists a document called ''Revisions in the Operational Guidelines of PMMSY'' that I could not open (it returned 403 and then offered a file download). Some figures from the June 2020 guidelines may have been revised.'
+  - 'Checker: Sources 2 and 3 are State government sites (J&K, Goa). The national guidelines are hosted on dof.gov.in and should be cited there.'
+  - 'Checker: The myScheme PMMSY page still says the scheme runs 2020-21 to 2024-25, so that official page is stale.'
+  - 'Checker: Beneficiary selection and approval are done by States/UTs (PIB, Jul 2026). Users should apply through the district fisheries officer, as the record says.'
+  - 'Checker: Process note: opening the DoF revisions PDF in the browser pane brought up a file-save dialog, which I did not complete. The WebFetch tool also automatically cached copies of the guideline PDFs it fetched in the session''s tool-results folder. I did not write or edit any project files.'
+  - Official Hindi name added from https://www.dof.gov.in/offerings/schemes-and-services/details/pmmsy-whats-new-ADO4ATMtQWa.
+  - 'Statement to correct: ''Accident insurance for fishers with the full premium paid by government: Rs 5 lakh ... Rs 2.5 lakh ... Rs 20,000 for accidental hospitalisation''. The checker read ''Rs 5 lakh death or permanent total disability; Rs 2.5 lakh permanent partial disability; Rs 25,000 accidental hospitalisation'' on https://pib.gov.in/PressReleasePage.aspx?PRID=2241147.'
+  - '2026-10-03: the checker''s corrections above were applied to the statements; re-read the official page before relying on them.'

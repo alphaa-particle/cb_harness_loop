@@ -1,0 +1,158 @@
+id: ab_pmjay
+name: Ayushman Bharat Pradhan Mantri Jan Arogya Yojana
+short_name: AB PM-JAY
+names_hi:
+- आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना
+aliases:
+- Ayushman Bharat
+- Ayushman card yojana
+- PMJAY
+- pradhan mantri jan arogya yojana
+- ayushman bharat yojana
+- golden card
+level: central
+state: ''
+ministry: Ministry of Health and Family Welfare (implemented by the National Health Authority)
+category: health
+summary: Free, cashless hospital treatment of up to Rs 5 lakh per family per year at empanelled public and private hospitals across India. It covers poor and vulnerable families listed in the scheme's database (SECC 2011 plus later additions), and all people aged 70 or above.
+sections:
+  eligibility:
+  - Eligibility depends on your family being in the scheme's list of eligible families; most families cannot join just by filling a form.
+  - In rural areas, SECC 2011 families that meet deprivation criteria D1 to D7 (except D6) are covered, for example SC/ST households and families with no adult male member aged 16 to 59.
+  - In urban areas, SECC 2011 families of workers in 11 listed occupation groups are covered.
+  - Households automatically included in SECC 2011, such as destitute families living on alms, are covered.
+  - Families holding an active RSBY card are also covered.
+  - In January 2022 the list was widened from 10.74 crore to 12 crore families, and many states cover extra families at their own cost.
+  - Every person aged 70 or above is covered regardless of income, through the Ayushman Vay Vandana card.
+  - There is no limit on family size, age or gender.
+  exclusions:
+  - Families not in the eligible list cannot get the card simply by applying; only people aged 70 or above can enrol themselves.
+  - Seniors aged 70 or above who already get free treatment under CGHS, ECHS, CAPF or a state government health scheme must choose only one scheme.
+  benefits:
+  - Free, cashless treatment of up to Rs 5 lakh per family per year for secondary and tertiary care hospital stays and day-care procedures.
+  - The cover pays for doctor visits, treatment, medicines, consumables, ICU and non-ICU care, implants, a general-ward bed, the patient's food and complications during treatment.
+  - Tests and medicines for up to 3 days before admission, and medicines for up to 15 days after discharge, are covered.
+  - Illnesses you already had before joining are covered from the first day.
+  - You can get treatment at any empanelled hospital in any state (national portability).
+  - The first PVC Ayushman card is free; reissuing a PVC card costs Rs 15 plus GST.
+  how_to_apply:
+  - Check whether your family is eligible at beneficiary.nha.gov.in, on the Ayushman app, by calling the helpline 14555, or at a Common Service Centre or empanelled hospital.
+  - If eligible, complete Aadhaar e-KYC to get your Ayushman card, either yourself on the app or portal, or with help at a CSC or the hospital's Ayushman Mitra desk.
+  - For treatment, go to an empanelled hospital's Pradhan Mantri Arogya Mitra desk with your Ayushman card; no payment is needed for covered care.
+  documents:
+  - 'Aadhaar: Aadhaar e-KYC is compulsory to make the Ayushman card, except in some emergencies.'
+  - For children up to 5 years, Bal Aadhaar can be used, with a parent's biometric authentication.
+  - During verification you may be asked for an individual photo ID and a family identity document, such as a ration card.
+  - At the hospital, show your Ayushman card; if you do not have it, an accepted ID document can be used.
+rules:
+  gender: any
+facts:
+- key: cover_amount
+  statement: AB PM-JAY gives free treatment of up to Rs 5 lakh per family per year.
+  value: Rs 5 lakh
+  accept:
+  - 5 lakh
+  - '500000'
+  - 5,00,000
+  - ₹5 lakh
+  - 5 lakh rupees
+  - paanch lakh
+  question: How much free treatment does Ayushman Bharat PM-JAY give a family each year?
+  question_hi: आयुष्मान भारत योजना में एक परिवार को साल में कितने रुपये तक का मुफ्त इलाज मिलता है?
+  question_hi_latn: Ayushman Bharat yojana me ek parivar ko saal me kitne rupaye tak ka muft ilaj milta hai?
+  source: 1
+  status: verified
+- key: pre_hospitalisation_days
+  statement: PM-JAY covers tests and medicines for up to 3 days before hospital admission.
+  value: 3 days
+  accept:
+  - '3'
+  - three days
+  - 3 din
+  question: For how many days before admission does Ayushman Bharat PM-JAY pay for tests and medicines?
+  question_hi: आयुष्मान कार्ड से भर्ती होने से पहले कितने दिन की जांच और दवाइयों का खर्च मिलता है?
+  question_hi_latn: Ayushman card se bharti hone se pehle kitne din ki jaanch aur dawaiyon ka kharch milta hai?
+  source: 1
+  status: verified
+- key: post_hospitalisation_days
+  statement: PM-JAY covers medicines for up to 15 days after discharge.
+  value: 15 days
+  accept:
+  - '15'
+  - fifteen days
+  - 15 din
+  question: For how many days after discharge are medicines covered under Ayushman Bharat PM-JAY?
+  question_hi: आयुष्मान भारत योजना में अस्पताल से छुट्टी के बाद कितने दिन की दवाइयां मिलती हैं?
+  question_hi_latn: Ayushman Bharat yojana me hospital se chhutti ke baad kitne din ki dawaiyan milti hain?
+  source: 1
+  status: verified
+- key: helpline
+  statement: The national PM-JAY helpline number is 14555.
+  value: '14555'
+  accept:
+  - 14 555
+  - 1800-111-565
+  - '1800111565'
+  question: What is the Ayushman Bharat PM-JAY helpline number?
+  question_hi: आयुष्मान भारत योजना का हेल्पलाइन नंबर क्या है?
+  question_hi_latn: Ayushman Bharat yojana ka helpline number kya hai?
+  source: 1
+  status: verified
+- key: family_size_limit
+  statement: PM-JAY has no limit on family size, age or gender for entitled families.
+  value: no limit
+  accept:
+  - no cap
+  - no restriction
+  - koi seema nahi
+  - unlimited
+  question: Is there a limit on how many family members are covered under Ayushman Bharat PM-JAY?
+  question_hi: आयुष्मान भारत योजना में परिवार के कितने सदस्य कवर होते हैं, क्या कोई सीमा है?
+  question_hi_latn: Ayushman Bharat yojana me parivar ke kitne sadasya cover hote hain, kya koi seema hai?
+  source: 1
+  status: verified
+situations:
+- question: We are a poor family in a village and my father needs heart surgery that we cannot afford. Is there a government scheme that pays the hospital bill?
+  language: en
+- question: हम गरीब परिवार से हैं और अस्पताल में ऑपरेशन का खर्च नहीं उठा सकते, क्या सरकार की कोई योजना है जिसमें बड़े अस्पताल में मुफ्त इलाज मिले?
+  language: hi
+sources:
+- title: AB PM-JAY Beneficiary Empowerment Guidebook (March 2019)
+  url: https://sha.uk.gov.in/ScannedDocs/WebSite/Uploads/BIS/beneficiary-empowerment-guidebook-2-8-2019.pdf
+  publisher: National Health Authority (hosted by State Health Authority, Uttarakhand)
+  accessed: '2026-10-03'
+- title: Guideline for Ayushman card Creation, No. S-12018/247/2022-NHA, 19 May 2023
+  url: https://sha.uk.gov.in/ScannedDocs/WebSite/Uploads/BIS/Consolidated%20Gudieline%20related%20to%20Ayushman%20card%20creation%20under%20AB%20PM-JAY.pdf
+  publisher: National Health Authority, Ministry of Health and Family Welfare (hosted by State Health Authority, Uttarakhand)
+  accessed: '2026-10-03'
+- title: State Health Authority Uttarakhand – home page
+  url: https://sha.uk.gov.in/
+  publisher: State Health Authority, Government of Uttarakhand
+  accessed: '2026-10-03'
+- title: Ayushman Bharat Niramayam Madhya Pradesh – About Us
+  url: https://ayushmanbharat.mp.gov.in/about-us
+  publisher: State Health Agency (Ayushman Bharat Niramayam), Government of Madhya Pradesh
+  accessed: '2026-10-03'
+- title: e-Shram – Schemes
+  url: https://eshram.gov.in/Schemes
+  publisher: e-Shram, Ministry of Labour and Employment
+  accessed: '2026-10-03'
+- title: Guidelines on expansion of AB PM-JAY to Senior Citizens of 70 years and above
+  url: https://ayushmanbharat.mp.gov.in/uploads/media/Guidelines_on_expansion_of_AB_PMJAY_to_Senior_Citizens_of_70_years_and_above.pdf
+  publisher: National Health Authority (hosted by State Health Agency, Madhya Pradesh)
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The scheme is open. pmjay.gov.in, nha.gov.in, PIB and myScheme pages could not be loaded, so the main facts come from NHA documents (2019, 2023, 2024) published on official state health agency websites. The national list of eligible families was widened in January 2022 to 12 crore families, and states have added more groups at their own cost. For example, Madhya Pradesh lists NFSA ration card holders, construction workers, ASHA and Anganwadi workers, and others. Which extra groups are covered therefore varies by state, and some states run the scheme together with their own state health scheme under a joint name. From late 2024, everyone aged 70 or above is covered regardless of income (see Ayushman Vay Vandana). The number of treatment packages changes when the package list is revised (2019 guidebook: more than 1,350; Madhya Pradesh now lists 1,952), so no package count is given as a fact. Groups added after 2024, and the current list of participating states, were not checked
+    against official pages.'
+  - 'Checker: The eligibility examples ''SC/ST households'', ''no adult male member aged 16 to 59'' and ''destitute families living on alms'' (auto-included) were not seen on any official page I opened. The 16-59 example probably needs the ''female-headed household'' condition.'
+  - 'Checker: The eligibility line ''Every person aged 70 or above is covered'' leaves out two conditions: the Rs 5 lakh is shared per family, not per person, and it applies only where the state or UT implements AB PM-JAY (the Nov 2024 guidelines list 3 non-implementing states, unnamed). I did not verify which states have joined since.'
+  - 'Checker: The helpline accept list includes 1800-111-565, which appears only in the 2019 guidebook. 14555 is the number confirmed in current official material.'
+  - 'Checker: Aadhaar e-KYC exceptions: the NHA 2023 guideline lets someone who has applied for Aadhaar use the enrolment slip once, with a PM-JAY ID valid for only 30 days. The record''s ''except in some emergencies'' is vague.'
+  - 'Checker: Which extra groups are covered (e.g., MP adds NFSA ration-card holders, BoCW workers, ASHA and Anganwadi workers) varies by state. The record says so, which is good.'
+  - 'Checker: pmjay.gov.in refused the connection, so I checked the central facts against NHA documents hosted on state SHA sites and the MP and Uttarakhand SHA pages. All of these are official.'
+  - 'Checker: Still open: the MP SHA site shows card statistics as of 23 July 2026 and empanelment orders dated August 2026.'
+  - 'Statement not confirmed: ...families with no adult male member aged 16 to 59 (None of the official pages I opened lists the individual D-criteria. As commonly stated, this criterion (D3) applies to FEMALE-HEADED households with no adult male aged 16-59, so the record''s paraphrase may drop the ''female-headed'' condition. Check it against pmjay.gov.in.)'

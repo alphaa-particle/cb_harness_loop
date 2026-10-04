@@ -1,0 +1,157 @@
+id: adip
+name: Scheme of Assistance to Persons with Disabilities for Purchase/Fitting of Aids/Appliances (ADIP Scheme)
+short_name: ADIP
+names_hi:
+- एडिप योजना
+aliases:
+- ADIP scheme
+- adip yojana
+- Assistance to Disabled Persons for Purchase/Fitting of Aids/Appliances
+- divyang upkaran yojana
+- ADIP-SSA
+level: central
+state: ''
+ministry: Department of Empowerment of Persons with Disabilities (Divyangjan), Ministry of Social Justice and Empowerment
+category: social_assistance
+summary: ADIP gives people with disabilities durable aids and assistive devices such as wheelchairs, tricycles, artificial limbs, calipers and hearing aids, free or at half cost, depending on income. It is open to Indian citizens of any age with at least 40% disability and a monthly income of Rs 30,000 or less.
+sections:
+  eligibility:
+  - Must be an Indian citizen; there is no age limit.
+  - Must have a disability of at least 40%, shown by a UDID card (or UDID enrolment number) together with a disability certificate.
+  - Must give an Aadhaar number or Aadhaar enrolment ID.
+  - The person's own monthly income from all sources must be Rs 30,000 or less.
+  - For a dependant (such as a child), the monthly income of the parents or guardians must be Rs 30,000 or less.
+  - Must not have received help for the same purpose from any source in the last 3 years; for children below 18, custom items like orthosis, prosthesis and learning material can be given again after 1 year.
+  - 'For a motorised tricycle or motorised wheelchair: aged 16 years or above with at least 80% disability (severe locomotor disability, stroke, cerebral palsy, hemiplegia or similar), given once in five years.'
+  exclusions:
+  - People whose monthly income (or parents'/guardians' income, for dependants) is more than Rs 30,000.
+  - People who received an aid for the same purpose from any source in the last 3 years.
+  - People with disability below 40% (except some school children covered under ADIP-SSA through a joint certificate).
+  - People aged 16 and above with cognitive impairment cannot get a motorised tricycle or motorised wheelchair, for safety reasons.
+  benefits:
+  - The full cost of the aid or appliance is paid if monthly income is up to Rs 22,500; 50% of the cost is paid if monthly income is Rs 22,501 to Rs 30,000.
+  - Aids costing up to Rs 15,000 get full assistance; for aids costing Rs 15,001 to Rs 30,000 the assistance is up to Rs 15,000, and any extra can come from CSR, MP/MLA LAD funds, state or local body funds, or the person.
+  - 'Motorised tricycle or motorised wheelchair: subsidy of Rs 50,000; high-end prosthesis for locomotor disability of 40% or more: subsidy of Rs 30,000.'
+  - 'Cochlear implant with surgery and therapy for children with hearing impairment: up to Rs 7 lakh for children aged 1 to 5 with hearing loss from before speech, and up to Rs 6 lakh for children aged 5 to 18 with acquired hearing loss.'
+  - 'Needed corrective surgery before fitting is also covered: Rs 1,500 for speech and hearing, Rs 3,000 for visual and Rs 15,000 for orthopaedic disability.'
+  - Travel fare of up to Rs 250 each for the person and one escort; for those with monthly income up to Rs 22,500, boarding and lodging of Rs 100 per day (up to 15 days for surgery, 5 days for prosthesis/orthosis or ear mould fitting).
+  how_to_apply:
+  - Apply online for an assistive device on the ARJUN portal of the Department (adip.depwd.gov.in); eligible requests are to be served within 6 months of registration.
+  - Attend an assessment and distribution camp held at district level by implementing agencies such as ALIMCO.
+  - Or visit an ALIMCO centre, National Institute, Composite Regional Centre (CRC) or District Disability Rehabilitation Centre (DDRC) directly.
+  - Devices are given after assessment, prescription and fitting by an RCI-registered rehabilitation professional.
+  documents:
+  - UDID card or UDID enrolment number, with a disability certificate showing at least 40% disability.
+  - Aadhaar number or Aadhaar enrolment ID.
+  - 'Income proof: income certificate from revenue authorities, BPL card, MGNREGA card, disability pension card, or a certificate from an MP, MLA, councillor or gram pradhan.'
+  - If no income proof is available, a self-declaration or notarised affidavit may be accepted by the implementing agency.
+  - For people in orphanages, special schools or special homes, an income certificate from the District Collector or head of the institution.
+rules:
+  monthly_income_max: 30000
+  gender: any
+facts:
+- key: monthly_income_limit
+  statement: To get help under ADIP, the monthly income of the person (or of the parents/guardians for a dependant) must be Rs 30,000 or less.
+  value: Rs 30,000
+  accept:
+  - '30000'
+  - 30,000
+  - Rs 30000
+  - ₹30,000
+  - 30 thousand
+  question: What is the maximum monthly income allowed to get aids under the ADIP scheme?
+  question_hi: ADIP योजना में सहायक उपकरण पाने के लिए महीने की आमदनी अधिकतम कितनी होनी चाहिए?
+  question_hi_latn: ADIP yojana me upkaran pane ke liye mahine ki income maximum kitni honi chahiye?
+  source: 2
+  status: verified
+- key: full_cost_income_limit
+  statement: Under ADIP, the full cost of the aid is paid if monthly income is up to Rs 22,500.
+  value: Rs 22,500
+  accept:
+  - '22500'
+  - 22,500
+  - Rs 22500
+  - ₹22,500
+  question: Up to what monthly income does the ADIP scheme pay the full cost of the aid?
+  question_hi: ADIP योजना में किस मासिक आय तक उपकरण का पूरा खर्च सरकार देती है?
+  question_hi_latn: ADIP yojana me kitni mahine ki aamdani tak upkaran ka poora kharcha milta hai?
+  source: 2
+  status: verified
+- key: min_disability
+  statement: ADIP needs a disability of at least 40%.
+  value: 40%
+  accept:
+  - '40'
+  - 40 percent
+  - 40 per cent
+  - forty percent
+  - 40 pratishat
+  question: How much disability is needed to get aids under the ADIP scheme?
+  question_hi: ADIP योजना के लिए कम से कम कितने प्रतिशत दिव्यांगता होनी चाहिए?
+  question_hi_latn: ADIP yojana ke liye kam se kam kitne pratishat divyangta chahiye?
+  source: 2
+  status: verified
+- key: repeat_gap
+  statement: A person cannot get ADIP help for the same purpose if they received it from any source in the last 3 years.
+  value: 3 years
+  accept:
+  - '3'
+  - three years
+  - 3 saal
+  - teen saal
+  question: After how many years can I get the same aid again under the ADIP scheme?
+  question_hi: ADIP योजना में वही उपकरण दोबारा कितने साल बाद मिल सकता है?
+  question_hi_latn: ADIP yojana me wahi upkaran dobara kitne saal baad mil sakta hai?
+  source: 2
+  status: verified
+- key: motorised_tricycle_subsidy
+  statement: ADIP gives a subsidy of Rs 50,000 for a motorised tricycle or motorised wheelchair.
+  value: Rs 50,000
+  accept:
+  - '50000'
+  - 50,000
+  - Rs 50000
+  - ₹50,000
+  - 50 thousand
+  question: How much subsidy does the ADIP scheme give for a motorised tricycle?
+  question_hi: ADIP योजना में मोटर वाली ट्राइसाइकिल के लिए कितनी सब्सिडी मिलती है?
+  question_hi_latn: ADIP yojana me motorised tricycle ke liye kitni subsidy milti hai?
+  source: 2
+  status: verified
+situations:
+- question: My son has a 60% locomotor disability and needs a wheelchair and calipers, but our family earns only Rs 18,000 a month. Can the government give these to us free?
+  language: en
+- question: मेरी बेटी 12 साल की है और 50% दिव्यांग है, उसे कृत्रिम पैर चाहिए पर हमारी आमदनी कम है। सरकार से मुफ्त उपकरण कैसे मिलेगा?
+  language: hi
+sources:
+- title: ADIP Scheme page
+  url: https://depwd.gov.in/adip/
+  publisher: Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment
+  accessed: '2026-10-03'
+- title: Revised ADIP Scheme (Office Memorandum dated 26.09.2024, applicable w.e.f. 26 September 2024)
+  url: https://cdnbbsr.s3waas.gov.in/s3e58aea67b01fa747687f038dfde066f6/uploads/2024/09/202409271355861874.pdf
+  publisher: Department of Empowerment of Persons with Disabilities, Ministry of Social Justice and Empowerment
+  accessed: '2026-10-03'
+- title: ALIMCO homepage - ADIP scheme eligibility
+  url: https://www.alimco.in/
+  publisher: Artificial Limbs Manufacturing Corporation of India (ALIMCO), Ministry of Social Justice and Empowerment
+  accessed: '2026-10-03'
+- title: ALIMCO Hindi page (एडिप योजना)
+  url: https://www.alimco.in/hi/RVY
+  publisher: Artificial Limbs Manufacturing Corporation of India (ALIMCO)
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The revised scheme (dated 26 September 2024) was approved for the 15th Finance Commission period, 1 April 2022 to 31 March 2026. None of the pages I read confirmed that it continues after March 2026, though the ARJUN portal and ALIMCO pages still show it as active. The scheme gives two money rules: an income rule (full cost up to Rs 22,500 a month; 50% from Rs 22,501 to Rs 30,000) and a ceiling based on what the aid costs (full help up to Rs 15,000; up to Rs 15,000 for aids costing Rs 15,001 to Rs 30,000). The guidelines do not clearly say how the two rules combine. School children are also covered through ADIP-SSA (Samagra Shiksha) with relaxed rules, for example a joint certificate when disability is below 40%, and a motorised tricycle at 40% disability for students in Classes IX to XII aged 16 or above. The myScheme page would not load.'
+  - Whether the scheme is still open to new applicants was not clear.
+  - 'Checker: Status: DEPwD''s own ADIP page (https://depwd.gov.in/adip/) says the scheme was approved for the rest of the 15th Finance Commission period, i.e. up to 31.3.2026. I found no official continuation order for 2026-27 or the 16th FC period on the DEPwD homepage, ADIP page or What''s New page. The ARJUN portal and myScheme pages did not render. So still_open is ''unclear''. The record should not promise availability without this caveat.'
+  - 'Checker: The repeat_gap fact/question (''after how many years can I get the same aid again'' -> 3 years) is wrong for children under 18: custom items such as orthosis, prosthesis and learning material can be given again after 1 year. It is also wrong for motorised tricycles/wheelchairs and smartphones, which are once in 5 years.'
+  - 'Checker: The income rule (full cost up to Rs 22,500; 50% to Rs 30,000) and the cost-ceiling rule (help capped at Rs 15,000 for aids costing Rs 15,001-30,000) both appear in the scheme. A chatbot must not say ''full cost'' for an aid costing more than Rs 15,000.'
+  - 'Checker: The cochlear implant benefit leaves out that the same income-based full/50% split applies (Appendix-I).'
+  - 'Checker: Missing detail: people in orphanages, half-way homes, special schools or special homes, whose income is certified by the District Collector or head of the institution, get aids only through ALIMCO/NIs/CRCs (para 6.0 Note b).'
+  - 'Checker: The exclusion ''below 40%'' leaves out two more exceptions: children up to 18 in special schools, home schooling or walk-in, on a committee''s recommendation; and amputees without a certificate, who can get a high-end prosthesis.'
+  - 'Checker: Source 4 is labelled ''ALIMCO Hindi page (एडिप योजना)'', but its URL (alimco.in/hi/RVY) serves ALIMCO''s Hindi homepage, which mentions both ADIP and RVY. The name is confirmed there, but the label is misleading.'
+  - 'Checker: All sources are official (depwd.gov.in, s3waas.gov.in hosting the DEPwD OM, alimco.in). I saw no copied sentences; the wording is paraphrased.'

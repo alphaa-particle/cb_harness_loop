@@ -29,6 +29,7 @@ fields:
     - "kind of work"
     - "occupation"
     - "worker type"
+    - "work type"
     - "what work do you do"
   epfo:
     - "EPFO"

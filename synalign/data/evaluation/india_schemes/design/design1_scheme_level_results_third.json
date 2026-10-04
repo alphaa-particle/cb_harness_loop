@@ -1,0 +1,462 @@
+[
+ {
+  "size": "54",
+  "name": "F2 lam0 dgap0.03 walk",
+  "in_prompt": "282/304",
+  "abstain": "9/12",
+  "fixed": 0,
+  "broken": 0,
+  "diff": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "ms": 0.08,
+  "by": {
+   "type=eligibility": "52/52",
+   "type=fact": "149/162",
+   "type=situation": "29/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "81/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": []
+ },
+ {
+  "size": "54",
+  "name": "F2 lam0.5 dgap0.03 walk",
+  "in_prompt": "285/304",
+  "abstain": "9/12",
+  "fixed": 3,
+  "broken": 0,
+  "diff": 0.99,
+  "ci": [
+   0.0,
+   2.68
+  ],
+  "ms": 0.08,
+  "by": {
+   "type=eligibility": "52/52",
+   "type=fact": "151/162",
+   "type=situation": "30/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "84/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "nikshay_poshan__monthly_amount__hi",
+    "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi",
+    "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+   ],
+   [
+    "pm_kisan__situation_2",
+    "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F2 lam1 dgap0.03 walk",
+  "in_prompt": "284/304",
+  "abstain": "9/12",
+  "fixed": 3,
+  "broken": 1,
+  "diff": 0.66,
+  "ci": [
+   0.0,
+   2.25
+  ],
+  "ms": 0.09,
+  "by": {
+   "type=eligibility": "52/52",
+   "type=fact": "150/162",
+   "type=situation": "30/36",
+   "type=typo": "52/54",
+   "language=en": "147/152",
+   "language=hi": "84/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [
+   [
+    "pm_kisan__pension_exclusion_limit__en",
+    "From what monthly pension amount is a retired person not eligible for PM-KISAN?",
+    [
+     "pm_kmy__eligibility",
+     "pm_kmy__eligibility_2",
+     "pm_kisan__eligibility"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "nikshay_poshan__monthly_amount__hi",
+    "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi",
+    "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+   ],
+   [
+    "pm_kisan__situation_2",
+    "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F2 lam0.5 dgap0.03 s1first",
+  "in_prompt": "284/304",
+  "abstain": "9/12",
+  "fixed": 3,
+  "broken": 1,
+  "diff": 0.66,
+  "ci": [
+   -0.75,
+   2.4
+  ],
+  "ms": 0.09,
+  "by": {
+   "type=eligibility": "51/52",
+   "type=fact": "151/162",
+   "type=situation": "30/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "83/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [
+   [
+    "pmay_g__eligibility_2",
+    "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+    [
+     "pmay_u2__eligibility",
+     "pmay_u2__eligibility_2",
+     "pmay_u2__overview"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "nikshay_poshan__monthly_amount__hi",
+    "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi",
+    "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+   ],
+   [
+    "pm_kisan__situation_2",
+    "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F2 lam0.5 dgap0.06 walk",
+  "in_prompt": "285/304",
+  "abstain": "9/12",
+  "fixed": 3,
+  "broken": 0,
+  "diff": 0.99,
+  "ci": [
+   0.0,
+   2.68
+  ],
+  "ms": 0.08,
+  "by": {
+   "type=eligibility": "52/52",
+   "type=fact": "151/162",
+   "type=situation": "30/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "84/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "nikshay_poshan__monthly_amount__hi",
+    "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi",
+    "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+   ],
+   [
+    "pm_kisan__situation_2",
+    "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+   ]
+  ]
+ },
+ {
+  "size": "54",
+  "name": "F2 lam0.5 dgap0.03 walk max2",
+  "in_prompt": "285/304",
+  "abstain": "9/12",
+  "fixed": 3,
+  "broken": 0,
+  "diff": 0.99,
+  "ci": [
+   0.0,
+   2.68
+  ],
+  "ms": 0.08,
+  "by": {
+   "type=eligibility": "52/52",
+   "type=fact": "151/162",
+   "type=situation": "30/36",
+   "type=typo": "52/54",
+   "language=en": "148/152",
+   "language=hi": "84/92",
+   "language=hi_latn": "53/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "nikshay_poshan__monthly_amount__hi",
+    "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+   ],
+   [
+    "nikshay_poshan__payment_mode__hi",
+    "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+   ],
+   [
+    "pm_kisan__situation_2",
+    "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F2 lam0 dgap0.03 walk",
+  "in_prompt": "261/304",
+  "abstain": "5/12",
+  "fixed": 0,
+  "broken": 0,
+  "diff": 0.0,
+  "ci": [
+   0.0,
+   0.0
+  ],
+  "ms": 0.25,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "147/162",
+   "type=situation": "16/36",
+   "type=typo": "51/54",
+   "language=en": "136/152",
+   "language=hi": "75/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": []
+ },
+ {
+  "size": "scale",
+  "name": "F2 lam0.5 dgap0.03 walk",
+  "in_prompt": "264/304",
+  "abstain": "5/12",
+  "fixed": 3,
+  "broken": 0,
+  "diff": 0.99,
+  "ci": [
+   0.0,
+   2.86
+  ],
+  "ms": 0.26,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "148/162",
+   "type=situation": "18/36",
+   "type=typo": "51/54",
+   "language=en": "138/152",
+   "language=hi": "76/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "pm_kisan__instalment_amount__hi",
+    "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+   ],
+   [
+    "pm_kisan__situation_1",
+    "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+   ],
+   [
+    "pmay_g__situation_1",
+    "My family lives in a village in a kutcha mud house and we cannot afford to build a pucca h"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F2 lam1 dgap0.03 walk",
+  "in_prompt": "265/304",
+  "abstain": "5/12",
+  "fixed": 4,
+  "broken": 0,
+  "diff": 1.32,
+  "ci": [
+   0.0,
+   3.9600000000000004
+  ],
+  "ms": 0.27,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "149/162",
+   "type=situation": "18/36",
+   "type=typo": "51/54",
+   "language=en": "138/152",
+   "language=hi": "77/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "pm_kisan__instalment_amount__hi",
+    "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+   ],
+   [
+    "pm_kisan__instalments_per_year__hi",
+    "पीएम किसान की साल में कितनी किस्तें आती हैं?"
+   ],
+   [
+    "pm_kisan__situation_1",
+    "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+   ],
+   [
+    "pmay_g__situation_1",
+    "My family lives in a village in a kutcha mud house and we cannot afford to build a pucca h"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F2 lam0.5 dgap0.03 s1first",
+  "in_prompt": "262/304",
+  "abstain": "5/12",
+  "fixed": 2,
+  "broken": 1,
+  "diff": 0.33,
+  "ci": [
+   -0.89,
+   2.07
+  ],
+  "ms": 0.29,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "147/162",
+   "type=situation": "17/36",
+   "type=typo": "51/54",
+   "language=en": "137/152",
+   "language=hi": "75/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [
+   [
+    "jssk__free_diet_normal_delivery__hi",
+    "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?",
+    [
+     "ms__mspynsuwmamc3y6y__rules",
+     "ms__mspynsuwmamc3y6y__application",
+     "jssk__eligibility"
+    ]
+   ]
+  ],
+  "fixed_ex": [
+   [
+    "pm_kisan__instalment_amount__hi",
+    "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+   ],
+   [
+    "pm_kisan__situation_1",
+    "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F2 lam0.5 dgap0.06 walk",
+  "in_prompt": "264/304",
+  "abstain": "5/12",
+  "fixed": 3,
+  "broken": 0,
+  "diff": 0.99,
+  "ci": [
+   0.0,
+   2.86
+  ],
+  "ms": 0.23,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "148/162",
+   "type=situation": "18/36",
+   "type=typo": "51/54",
+   "language=en": "138/152",
+   "language=hi": "76/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "pm_kisan__instalment_amount__hi",
+    "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+   ],
+   [
+    "pm_kisan__situation_1",
+    "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+   ],
+   [
+    "pmay_g__situation_1",
+    "My family lives in a village in a kutcha mud house and we cannot afford to build a pucca h"
+   ]
+  ]
+ },
+ {
+  "size": "scale",
+  "name": "F2 lam0.5 dgap0.03 walk max2",
+  "in_prompt": "264/304",
+  "abstain": "5/12",
+  "fixed": 3,
+  "broken": 0,
+  "diff": 0.99,
+  "ci": [
+   0.0,
+   2.86
+  ],
+  "ms": 0.29,
+  "by": {
+   "type=eligibility": "47/52",
+   "type=fact": "148/162",
+   "type=situation": "18/36",
+   "type=typo": "51/54",
+   "language=en": "138/152",
+   "language=hi": "76/92",
+   "language=hi_latn": "50/60"
+  },
+  "broken_ex": [],
+  "fixed_ex": [
+   [
+    "pm_kisan__instalment_amount__hi",
+    "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+   ],
+   [
+    "pm_kisan__situation_1",
+    "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+   ],
+   [
+    "pmay_g__situation_1",
+    "My family lives in a village in a kutcha mud house and we cannot afford to build a pucca h"
+   ]
+  ]
+ }
+]

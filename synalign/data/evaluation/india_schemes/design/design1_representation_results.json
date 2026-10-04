@@ -1,0 +1,2684 @@
+{
+ "identity": {
+  "54": {
+   "summary": {
+    "in_prompt": "282/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "149/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95_points": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 0,
+   "broken_examples": [],
+   "fixed_examples": []
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "261/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "147/162",
+    "type=situation": "16/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "50/60"
+   },
+   "ms_per_q": 3.4,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95_points": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 0,
+   "broken_examples": [],
+   "fixed_examples": []
+  }
+ },
+ "b_drop_minor_script": {
+  "54": {
+   "summary": {
+    "in_prompt": "278/304",
+    "abstain": "9/12",
+    "type=eligibility": "51/52",
+    "type=fact": "145/162",
+    "type=situation": "29/36",
+    "type=typo": "53/54",
+    "language=en": "149/152",
+    "language=hi": "76/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 5,
+   "broken": 9,
+   "diff_points": -1.32,
+   "ci95_points": [
+    -4.58,
+    1.8499999999999999
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "nikshay_poshan__helpline__hi",
+     "निक्षय पोषण योजना या टीबी मरीज़ों के लिए हेल्पलाइन नंबर क्या है?",
+     [
+      "nfbs__eligibility",
+      "nfbs__overview",
+      "nikshay_poshan__eligibility"
+     ]
+    ],
+    [
+     "nps_vatsalya__partial_withdrawal_limit__hi",
+     "बच्चे की पढ़ाई के लिए एनपीएस वात्सल्य से बीच में कितना पैसा निकाल सकते हैं?",
+     [
+      "pm_usp_csss__eligibility",
+      "pm_usp_csss__overview",
+      "nmmss__eligibility"
+     ]
+    ],
+    [
+     "nps_vatsalya__eligibility_2",
+     "मेरी उम्र 22 साल है। क्या मैं एनपीएस वात्सल्य योजना के लिए आवेदन कर सकता हूँ?",
+     [
+      "ignoaps__eligibility",
+      "ignoaps__how_to_apply",
+      "nfbs__eligibility"
+     ]
+    ],
+    [
+     "pm_kisan__annual_amount__hi",
+     "पीएम किसान योजना में एक साल में कितना पैसा मिलता है?",
+     [
+      "pm_kmy__eligibility",
+      "pm_kmy__eligibility_2",
+      "pm_kmy__overview"
+     ]
+    ],
+    [
+     "pm_kisan__instalment_amount__hi",
+     "पीएम किसान की एक किस्त कितने रुपये की होती है?",
+     [
+      "pm_kmy__eligibility",
+      "pm_kmy__eligibility_2",
+      "pm_kmy__overview"
+     ]
+    ],
+    [
+     "pm_kisan__instalments_per_year__hi",
+     "पीएम किसान की साल में कितनी किस्तें आती हैं?",
+     [
+      "pm_kmy__eligibility",
+      "pm_kmy__eligibility_2",
+      "pm_kmy__overview"
+     ]
+    ],
+    [
+     "pmjdy__accident_insurance_cover__hi",
+     "प्रधानमंत्री जन-धन योजना के रुपे कार्ड पर कितने का दुर्घटना बीमा मिलता है?",
+     [
+      "pmsby__eligibility",
+      "pmsby__overview",
+      "pmjdy__eligibility"
+     ]
+    ],
+    [
+     "pmjdy__overdraft_age_range__hi",
+     "प्रधानमंत्री जन-धन योजना में ओवरड्राफ्ट के लिए उम्र सीमा क्या है?",
+     [
+      "scss__eligibility",
+      "scss__eligibility_2",
+      "scss__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__monthly_pension_40_to_79__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में केंद्र सरकार हर महीने कितनी पेंशन देती है?"
+    ],
+    [
+     "ignwps__monthly_pension_80_plus__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में 80 साल की उम्र के बाद कितनी पेंशन मिलती है?"
+    ],
+    [
+     "jssk__free_diet_normal_delivery__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?"
+    ],
+    [
+     "jssk__free_diet_caesarean__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक खाना मुफ्त मिलता है"
+    ],
+    [
+     "nikshay_poshan__payment_mode__typo",
+     "How is Ni-kshay Poshan Yojana joney pai to TB patients"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "264/304",
+    "abstain": "5/12",
+    "type=eligibility": "50/52",
+    "type=fact": "148/162",
+    "type=situation": "14/36",
+    "type=typo": "52/54",
+    "language=en": "137/152",
+    "language=hi": "77/92",
+    "language=hi_latn": "50/60"
+   },
+   "ms_per_q": 3.8,
+   "fixed": 10,
+   "broken": 7,
+   "diff_points": 0.99,
+   "ci95_points": [
+    -2.86,
+    6.2
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "e_shram__minimum_age__hi",
+     "ई-श्रम पर पंजीकरण के लिए कम से कम कितनी उम्र होनी चाहिए?",
+     [
+      "ms__mnsdsy__rules",
+      "ms__uyegp__rules",
+      "ms__msssy__rules"
+     ]
+    ],
+    [
+     "e_shram__helpline__hi",
+     "ई-श्रम का हेल्पलाइन नंबर क्या है?",
+     [
+      "ms__maftcwsbw__rules",
+      "ms__maftcwsbw__application_2",
+      "ms__lssas__rules"
+     ]
+    ],
+    [
+     "ignwps__situation_2",
+     "मेरे पति की मृत्यु हो चुकी है, मेरी उम्र 52 साल है और हमारा परिवार गरीबी रेखा (BPL) से नीच",
+     [
+      "ignoaps__eligibility",
+      "ignoaps__overview",
+      "ms__ssps__rules"
+     ]
+    ],
+    [
+     "pm_kmy__situation_2",
+     "मैं 25 साल का छोटा किसान हूँ। बुढ़ापे में हर महीने पेंशन पाने के लिए अभी से थोड़ा-थोड़ा पै",
+     [
+      "ignoaps__eligibility",
+      "ignoaps__overview",
+      "ms__pmkmdy__rules"
+     ]
+    ],
+    [
+     "pmjdy__accident_insurance_cover__hi",
+     "प्रधानमंत्री जन-धन योजना के रुपे कार्ड पर कितने का दुर्घटना बीमा मिलता है?",
+     [
+      "ms__jsby__rules",
+      "ms__jsby__benefits",
+      "pmjdy__eligibility"
+     ]
+    ],
+    [
+     "pmsby__accidental_death_cover__hi",
+     "प्रधानमंत्री सुरक्षा बीमा योजना में दुर्घटना से मृत्यु होने पर कितना पैसा मिलता है?",
+     [
+      "ms__jsby__rules",
+      "ms__jsby__benefits",
+      "pmsby__eligibility"
+     ]
+    ],
+    [
+     "pmsby__partial_disability_cover__hi",
+     "प्रधानमंत्री सुरक्षा बीमा योजना में दुर्घटना से आंशिक विकलांगता होने पर कितना पैसा मिलता ह",
+     [
+      "ms__jsby__rules",
+      "ms__jsby__benefits",
+      "pmsby__eligibility"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__min_age__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+    ],
+    [
+     "ignwps__monthly_pension_40_to_79__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में केंद्र सरकार हर महीने कितनी पेंशन देती है?"
+    ],
+    [
+     "ignwps__monthly_pension_80_plus__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में 80 साल की उम्र के बाद कितनी पेंशन मिलती है?"
+    ],
+    [
+     "ignwps__max_processing_days__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना का आवेदन कितने दिनों में मंजूर या खारिज होना चाहि"
+    ],
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+    ],
+    [
+     "ignwps__eligibility_4",
+     "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+    ],
+    [
+     "nikshay_poshan__payment_mode__typo",
+     "How is Ni-kshay Poshan Yojana joney pai to TB patients"
+    ]
+   ]
+  }
+ },
+ "b_char_vocab_only": {
+  "54": {
+   "summary": {
+    "in_prompt": "283/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "149/162",
+    "type=situation": "29/36",
+    "type=typo": "53/54",
+    "language=en": "149/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 1,
+   "broken": 0,
+   "diff_points": 0.33,
+   "ci95_points": [
+    0.0,
+    1.1199999999999999
+   ],
+   "abstain_change": 0,
+   "broken_examples": [],
+   "fixed_examples": [
+    [
+     "nikshay_poshan__payment_mode__typo",
+     "How is Ni-kshay Poshan Yojana joney pai to TB patients"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "261/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "147/162",
+    "type=situation": "16/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "50/60"
+   },
+   "ms_per_q": 3.0,
+   "fixed": 0,
+   "broken": 0,
+   "diff_points": 0.0,
+   "ci95_points": [
+    0.0,
+    0.0
+   ],
+   "abstain_change": 0,
+   "broken_examples": [],
+   "fixed_examples": []
+  }
+ },
+ "b_cov_word": {
+  "54": {
+   "summary": {
+    "in_prompt": "278/304",
+    "abstain": "9/12",
+    "type=eligibility": "49/52",
+    "type=fact": "147/162",
+    "type=situation": "31/36",
+    "type=typo": "51/54",
+    "language=en": "147/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "50/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 6,
+   "broken": 10,
+   "diff_points": -1.32,
+   "ci95_points": [
+    -6.69,
+    3.46
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__min_age__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension ",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "ignwps__eligibility"
+     ]
+    ],
+    [
+     "ignwps__max_processing_days__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना का आवेदन कितने दिनों में मंजूर या खारिज होना चाहि",
+     [
+      "igndps__eligibility",
+      "igndps__how_to_apply",
+      "ignwps__eligibility"
+     ]
+    ],
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_4",
+     "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "pm_kmy__min_monthly_contribution__hi",
+     "किसान मानधन योजना में कम से कम कितना मासिक अंशदान देना होता है?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__benefits"
+     ]
+    ],
+    [
+     "pm_kmy__max_entry_age__hi_latn",
+     "Kisan Maandhan Yojana me kitni umar tak jud sakte hain?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "jssk__free_diet_normal_delivery__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?"
+    ],
+    [
+     "jssk__free_diet_caesarean__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक खाना मुफ्त मिलता है"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "nikshay_poshan__payment_mode__hi",
+     "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ],
+    [
+     "pmay_g__situation_2",
+     "गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "261/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "149/162",
+    "type=situation": "14/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "76/92",
+    "language=hi_latn": "49/60"
+   },
+   "ms_per_q": 3.3,
+   "fixed": 3,
+   "broken": 3,
+   "diff_points": 0.0,
+   "ci95_points": [
+    -1.77,
+    2.78
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__situation_2",
+     "मेरे पति की मृत्यु हो चुकी है, मेरी उम्र 52 साल है और हमारा परिवार गरीबी रेखा (BPL) से नीच",
+     [
+      "ms__ssps__rules",
+      "ms__ssps__overview",
+      "ms__pmkmdy__rules"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi_latn",
+     "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pmmvy__situation_2",
+     "मेरी पहली संतान बेटी है और अब मैं फिर से गर्भवती हूँ। अगर दूसरी भी बेटी हुई तो क्या सरकार ",
+     [
+      "ms__igmpy__rules",
+      "ms__igmpy__rules_2",
+      "ms__igmpy__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "pm_kisan__annual_amount__hi",
+     "पीएम किसान योजना में एक साल में कितना पैसा मिलता है?"
+    ],
+    [
+     "pm_kisan__instalment_amount__hi",
+     "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+    ],
+    [
+     "pm_kisan__instalments_per_year__hi",
+     "पीएम किसान की साल में कितनी किस्तें आती हैं?"
+    ]
+   ]
+  }
+ },
+ "b_cov_word_sq": {
+  "54": {
+   "summary": {
+    "in_prompt": "278/304",
+    "abstain": "9/12",
+    "type=eligibility": "49/52",
+    "type=fact": "147/162",
+    "type=situation": "30/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "49/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 7,
+   "broken": 11,
+   "diff_points": -1.32,
+   "ci95_points": [
+    -6.819999999999999,
+    3.85
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__min_age__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension ",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "ignwps__eligibility"
+     ]
+    ],
+    [
+     "ignwps__max_processing_days__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना का आवेदन कितने दिनों में मंजूर या खारिज होना चाहि",
+     [
+      "igndps__eligibility",
+      "igndps__how_to_apply",
+      "ignwps__eligibility"
+     ]
+    ],
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_4",
+     "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "nfsa_pmgkay__situation_2",
+     "Hamare parivar me 6 log hain aur kamai bahut kam hai, kya har sadasya ke hisaab se ration ",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__min_monthly_contribution__hi",
+     "किसान मानधन योजना में कम से कम कितना मासिक अंशदान देना होता है?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__benefits"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "jssk__free_diet_normal_delivery__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?"
+    ],
+    [
+     "jssk__free_diet_caesarean__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक खाना मुफ्त मिलता है"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "nikshay_poshan__payment_mode__typo",
+     "How is Ni-kshay Poshan Yojana joney pai to TB patients"
+    ],
+    [
+     "nikshay_poshan__payment_mode__hi",
+     "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ],
+    [
+     "pmay_g__situation_2",
+     "गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "260/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "148/162",
+    "type=situation": "14/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "49/60"
+   },
+   "ms_per_q": 6.5,
+   "fixed": 4,
+   "broken": 5,
+   "diff_points": -0.33,
+   "ci95_points": [
+    -3.2199999999999998,
+    2.92
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__situation_2",
+     "मेरे पति की मृत्यु हो चुकी है, मेरी उम्र 52 साल है और हमारा परिवार गरीबी रेखा (BPL) से नीच",
+     [
+      "ms__ssps__rules",
+      "ms__ssps__overview",
+      "ms__pmkmdy__rules"
+     ]
+    ],
+    [
+     "pm_kmy__min_monthly_contribution__hi",
+     "किसान मानधन योजना में कम से कम कितना मासिक अंशदान देना होता है?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__benefits"
+     ]
+    ],
+    [
+     "pm_kmy__max_entry_age__hi_latn",
+     "Kisan Maandhan Yojana me kitni umar tak jud sakte hain?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi_latn",
+     "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pmmvy__situation_2",
+     "मेरी पहली संतान बेटी है और अब मैं फिर से गर्भवती हूँ। अगर दूसरी भी बेटी हुई तो क्या सरकार ",
+     [
+      "ms__igmpy__rules",
+      "ms__igmpy__rules_2",
+      "ms__igmpy__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+     "Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sakte hain?"
+    ],
+    [
+     "pm_kisan__annual_amount__hi",
+     "पीएम किसान योजना में एक साल में कितना पैसा मिलता है?"
+    ],
+    [
+     "pm_kisan__instalment_amount__hi",
+     "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+    ],
+    [
+     "pm_kisan__instalments_per_year__hi",
+     "पीएम किसान की साल में कितनी किस्तें आती हैं?"
+    ]
+   ]
+  }
+ },
+ "b_cov_channel": {
+  "54": {
+   "summary": {
+    "in_prompt": "280/304",
+    "abstain": "9/12",
+    "type=eligibility": "49/52",
+    "type=fact": "149/162",
+    "type=situation": "31/36",
+    "type=typo": "51/54",
+    "language=en": "147/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "52/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 5,
+   "broken": 7,
+   "diff_points": -0.66,
+   "ci95_points": [
+    -5.510000000000001,
+    3.15
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__min_age__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension ",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "ignwps__eligibility"
+     ]
+    ],
+    [
+     "ignwps__max_processing_days__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना का आवेदन कितने दिनों में मंजूर या खारिज होना चाहि",
+     [
+      "igndps__eligibility",
+      "igndps__how_to_apply",
+      "ignwps__eligibility"
+     ]
+    ],
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_4",
+     "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi_latn",
+     "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "jssk__free_diet_normal_delivery__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "nikshay_poshan__payment_mode__hi",
+     "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ],
+    [
+     "pmay_g__situation_2",
+     "गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "261/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "149/162",
+    "type=situation": "14/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "76/92",
+    "language=hi_latn": "49/60"
+   },
+   "ms_per_q": 3.1,
+   "fixed": 3,
+   "broken": 3,
+   "diff_points": 0.0,
+   "ci95_points": [
+    -1.77,
+    2.78
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__situation_2",
+     "मेरे पति की मृत्यु हो चुकी है, मेरी उम्र 52 साल है और हमारा परिवार गरीबी रेखा (BPL) से नीच",
+     [
+      "ms__ssps__rules",
+      "ms__ssps__overview",
+      "ms__pmkmdy__rules"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi_latn",
+     "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pmmvy__situation_2",
+     "मेरी पहली संतान बेटी है और अब मैं फिर से गर्भवती हूँ। अगर दूसरी भी बेटी हुई तो क्या सरकार ",
+     [
+      "ms__igmpy__rules",
+      "ms__igmpy__rules_2",
+      "ms__igmpy__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "pm_kisan__annual_amount__hi",
+     "पीएम किसान योजना में एक साल में कितना पैसा मिलता है?"
+    ],
+    [
+     "pm_kisan__instalment_amount__hi",
+     "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+    ],
+    [
+     "pm_kisan__instalments_per_year__hi",
+     "पीएम किसान की साल में कितनी किस्तें आती हैं?"
+    ]
+   ]
+  }
+ },
+ "a_ctx_vec_0.5": {
+  "54": {
+   "summary": {
+    "in_prompt": "282/304",
+    "abstain": "9/12",
+    "type=eligibility": "50/52",
+    "type=fact": "150/162",
+    "type=situation": "31/36",
+    "type=typo": "51/54",
+    "language=en": "147/152",
+    "language=hi": "82/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 4,
+   "broken": 4,
+   "diff_points": 0.0,
+   "ci95_points": [
+    -2.34,
+    2.34
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_4",
+     "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__typo",
+     "How much land can a farmer own snd still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi_latn",
+     "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ],
+    [
+     "pmay_g__situation_2",
+     "गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "260/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "146/162",
+    "type=situation": "16/36",
+    "type=typo": "51/54",
+    "language=en": "137/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "48/60"
+   },
+   "ms_per_q": 5.6,
+   "fixed": 3,
+   "broken": 4,
+   "diff_points": -0.33,
+   "ci95_points": [
+    -2.0500000000000003,
+    1.4000000000000001
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__min_age__hi_latn",
+     "Indira Gandhi vidhwa pension yojana me kitni umar se pension milti hai?",
+     [
+      "ms__ignvpy__rules",
+      "ms__ignvpy__benefits",
+      "ms__ignvpyrr__rules"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__typo",
+     "How much land can a farmer own snd still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi_latn",
+     "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_vidyalaxmi__situation_2",
+     "Mujhe NIT me admission mila hai, ghar ki saalana kamai 6 lakh hai aur girvi rakhne ko kuch",
+     [
+      "ms__mnbmssy__rules",
+      "ms__mnbmssy__rules_2",
+      "ms__mnbmssy__benefits"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension "
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "nfsa_pmgkay__situation_1",
+     "We are a family of five living on daily wages and we have no ration card. How can each of "
+    ]
+   ]
+  }
+ },
+ "a_ctx_vec_1.0": {
+  "54": {
+   "summary": {
+    "in_prompt": "280/304",
+    "abstain": "9/12",
+    "type=eligibility": "49/52",
+    "type=fact": "149/162",
+    "type=situation": "31/36",
+    "type=typo": "51/54",
+    "language=en": "146/152",
+    "language=hi": "81/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 4,
+   "broken": 6,
+   "diff_points": -0.66,
+   "ci95_points": [
+    -3.91,
+    2.26
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_4",
+     "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__en",
+     "How much land can a farmer own and still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__typo",
+     "How much land can a farmer own snd still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi_latn",
+     "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ],
+    [
+     "pmay_g__situation_2",
+     "गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "257/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "145/162",
+    "type=situation": "14/36",
+    "type=typo": "51/54",
+    "language=en": "134/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "48/60"
+   },
+   "ms_per_q": 4.7,
+   "fixed": 3,
+   "broken": 7,
+   "diff_points": -1.32,
+   "ci95_points": [
+    -4.2,
+    0.96
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__min_age__hi_latn",
+     "Indira Gandhi vidhwa pension yojana me kitni umar se pension milti hai?",
+     [
+      "ms__ignvpy__rules",
+      "ms__ignvpy__benefits",
+      "ms__ignvpyrr__rules"
+     ]
+    ],
+    [
+     "ignwps__monthly_pension_40_to_79__hi_latn",
+     "Indira Gandhi vidhwa pension yojana me kendra sarkar har mahine kitni pension deti hai?",
+     [
+      "ms__ignvpy__rules",
+      "ms__ignvpy__benefits",
+      "ms__ignvpyrr__rules"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__en",
+     "How much land can a farmer own and still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__typo",
+     "How much land can a farmer own snd still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi_latn",
+     "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+     [
+      "ms__pmkmdy__rules",
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2"
+     ]
+    ],
+    [
+     "pm_vidyalaxmi__situation_1",
+     "I got admission to a good engineering college but my family cannot pay the fees and we hav",
+     [
+      "ms__els-delhi__rules",
+      "ms__els-delhi__rules_2",
+      "ms__els-delhi__documents_3"
+     ]
+    ],
+    [
+     "pm_vidyalaxmi__situation_2",
+     "Mujhe NIT me admission mila hai, ghar ki saalana kamai 6 lakh hai aur girvi rakhne ko kuch",
+     [
+      "ms__mnbmssy__rules",
+      "ms__mnbmssy__rules_2",
+      "ms__mnbmssy__benefits"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension "
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+     "Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sakte hain?"
+    ]
+   ]
+  }
+ },
+ "c_generic": {
+  "54": {
+   "summary": {
+    "in_prompt": "283/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "149/162",
+    "type=situation": "30/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "82/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 37.4,
+   "fixed": 7,
+   "broken": 6,
+   "diff_points": 0.33,
+   "ci95_points": [
+    -2.54,
+    3.25
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "e_shram__helpline__hi",
+     "ई-श्रम का हेल्पलाइन नंबर क्या है?",
+     []
+    ],
+    [
+     "nfsa_pmgkay__situation_2",
+     "Hamare parivar me 6 log hain aur kamai bahut kam hai, kya har sadasya ke hisaab se ration ",
+     []
+    ],
+    [
+     "nikshay_poshan__previous_monthly_amount__hi",
+     "निक्षय पोषण योजना में राशि बढ़ने से पहले हर महीने कितना पैसा मिलता था?",
+     [
+      "nfbs__eligibility",
+      "nfbs__overview",
+      "nikshay_poshan__eligibility"
+     ]
+    ],
+    [
+     "nps_vatsalya__partial_withdrawal_limit__hi_latn",
+     "Bacche ki padhai ke liye NPS Vatsalya se beech me kitna paisa nikal sakte hain?",
+     [
+      "nps_vatsalya__eligibility",
+      "nps_vatsalya__overview",
+      "nps_vatsalya__how_to_apply"
+     ]
+    ],
+    [
+     "nps_vatsalya__situation_1",
+     "My son is 6 years old. Is there a government pension account I can open in his name and ad",
+     [
+      "pm_kmy__eligibility",
+      "pm_kmy__eligibility_2",
+      "pm_kmy__benefits"
+     ]
+    ],
+    [
+     "pm_kmy__max_entry_age__hi_latn",
+     "Kisan Maandhan Yojana me kitni umar tak jud sakte hain?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "igndps__situation_2",
+     "Mera bhai 30 saal ka hai, uski viklangta 80 pratishat hai aur hum BPL parivar hain. Kya us"
+    ],
+    [
+     "ignwps__monthly_pension_40_to_79__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में केंद्र सरकार हर महीने कितनी पेंशन देती है?"
+    ],
+    [
+     "ignwps__monthly_pension_80_plus__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में 80 साल की उम्र के बाद कितनी पेंशन मिलती है?"
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "pm_kisan__pension_exclusion_limit__hi_latn",
+     "Kitni mahine ki pension milne par retired vyakti PM Kisan ke liye ayogya ho jata hai?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ],
+    [
+     "pm_svanidhi__situation_1",
+     "I sell vegetables from a handcart in my town and need about 15,000 rupees to buy stock, bu"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "264/304",
+    "abstain": "6/12",
+    "type=eligibility": "47/52",
+    "type=fact": "149/162",
+    "type=situation": "16/36",
+    "type=typo": "52/54",
+    "language=en": "137/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "52/60"
+   },
+   "ms_per_q": 12.0,
+   "fixed": 5,
+   "broken": 2,
+   "diff_points": 0.99,
+   "ci95_points": [
+    -0.75,
+    3.17
+   ],
+   "abstain_change": 1,
+   "broken_examples": [
+    [
+     "pm_vidyalaxmi__situation_1",
+     "I got admission to a good engineering college but my family cannot pay the fees and we hav",
+     [
+      "ms__els-delhi__rules",
+      "ms__els-delhi__rules_2",
+      "ms__els-delhi__documents_3"
+     ]
+    ],
+    [
+     "pmsby__situation_2",
+     "मैं 60 साल का मज़दूर हूँ, क्या बैंक खाते से बहुत कम पैसे में दुर्घटना बीमा मिल सकता है जो ",
+     [
+      "ms__db-gbocwwb__rules",
+      "ms__db-gbocwwb__benefits",
+      "ms__rbwicoaadjkbocwwb__rules"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension "
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "nmmss__situation_1",
+     "My son is in Class 8 at a government school and our family income is about 2 lakh a year. "
+    ],
+    [
+     "nmmss__situation_2",
+     "मेरी बेटी सरकारी स्कूल में आठवीं कक्षा में पढ़ती है और हमारी सालाना आय तीन लाख से कम है। क"
+    ],
+    [
+     "pm_kisan__pension_exclusion_limit__hi_latn",
+     "Kitni mahine ki pension milne par retired vyakti PM Kisan ke liye ayogya ho jata hai?"
+    ]
+   ]
+  }
+ },
+ "c_multilingual": {
+  "54": {
+   "summary": {
+    "in_prompt": "284/304",
+    "abstain": "9/12",
+    "type=eligibility": "51/52",
+    "type=fact": "151/162",
+    "type=situation": "30/36",
+    "type=typo": "52/54",
+    "language=en": "147/152",
+    "language=hi": "82/92",
+    "language=hi_latn": "55/60"
+   },
+   "ms_per_q": 49.8,
+   "fixed": 4,
+   "broken": 2,
+   "diff_points": 0.66,
+   "ci95_points": [
+    -1.04,
+    2.27
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__situation_1",
+     "My husband died last year. I am 45 and our family is on the BPL list. Is there a monthly g",
+     [
+      "ignoaps__eligibility",
+      "ignoaps__overview",
+      "apy__eligibility"
+     ]
+    ],
+    [
+     "pmay_g__eligibility_2",
+     "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+     [
+      "pmay_u2__eligibility",
+      "pmay_u2__eligibility_2",
+      "pmay_u2__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "igndps__situation_2",
+     "Mera bhai 30 saal ka hai, uski viklangta 80 pratishat hai aur hum BPL parivar hain. Kya us"
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "263/304",
+    "abstain": "6/12",
+    "type=eligibility": "47/52",
+    "type=fact": "148/162",
+    "type=situation": "16/36",
+    "type=typo": "52/54",
+    "language=en": "137/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "51/60"
+   },
+   "ms_per_q": 7.4,
+   "fixed": 3,
+   "broken": 1,
+   "diff_points": 0.66,
+   "ci95_points": [
+    -0.5700000000000001,
+    2.08
+   ],
+   "abstain_change": 1,
+   "broken_examples": [
+    [
+     "e_shram__situation_1",
+     "I work as a domestic worker and have no PF or ESI. Where can I register as a worker so I c",
+     [
+      "ms__hhjmhhst__rules",
+      "ms__hhjmhhst__application",
+      "ms__mkku__rules"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension "
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "pm_kisan__situation_1",
+     "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+    ]
+   ]
+  }
+ },
+ "c_identify_scheme": {
+  "54": {
+   "summary": {
+    "in_prompt": "278/304",
+    "abstain": "7/12",
+    "type=eligibility": "50/52",
+    "type=fact": "146/162",
+    "type=situation": "31/36",
+    "type=typo": "51/54",
+    "language=en": "147/152",
+    "language=hi": "78/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 57.8,
+   "fixed": 2,
+   "broken": 6,
+   "diff_points": -1.32,
+   "ci95_points": [
+    -3.7600000000000002,
+    0.67
+   ],
+   "abstain_change": -2,
+   "broken_examples": [
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension ",
+     [
+      "ignwps__eligibility",
+      "ignwps__overview",
+      "ignwps__benefits"
+     ]
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "igndps__benefits"
+     ]
+    ],
+    [
+     "jssk__infant_age_limit__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में बीमार बच्चे का मुफ्त इलाज कितनी उम्र तक होता है?",
+     [
+      "jsy__eligibility",
+      "jsy__eligibility_2",
+      "jsy__overview"
+     ]
+    ],
+    [
+     "jssk__free_diet_caesarean__hi_latn",
+     "Janani Shishu Suraksha Karyakram me operation se delivery hone par kitne din tak khana muf",
+     [
+      "jssk__eligibility",
+      "jssk__overview",
+      "jssk__how_to_apply"
+     ]
+    ],
+    [
+     "nikshay_poshan__previous_monthly_amount__hi",
+     "निक्षय पोषण योजना में राशि बढ़ने से पहले हर महीने कितना पैसा मिलता था?",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "nikshay_poshan__eligibility"
+     ]
+    ],
+    [
+     "pmay_g__eligibility_2",
+     "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+     [
+      "pmay_u2__eligibility",
+      "pmay_u2__eligibility_2",
+      "pmay_u2__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "igndps__situation_2",
+     "Mera bhai 30 saal ka hai, uski viklangta 80 pratishat hai aur hum BPL parivar hain. Kya us"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "262/304",
+    "abstain": "4/12",
+    "type=eligibility": "47/52",
+    "type=fact": "147/162",
+    "type=situation": "17/36",
+    "type=typo": "51/54",
+    "language=en": "137/152",
+    "language=hi": "75/92",
+    "language=hi_latn": "50/60"
+   },
+   "ms_per_q": 3.3,
+   "fixed": 1,
+   "broken": 0,
+   "diff_points": 0.33,
+   "ci95_points": [
+    0.0,
+    0.9900000000000001
+   ],
+   "abstain_change": -1,
+   "broken_examples": [],
+   "fixed_examples": [
+    [
+     "pmsby__situation_1",
+     "I am 62 and work as a daily-wage labourer. Is there a very cheap insurance through my bank"
+    ]
+   ]
+  }
+ },
+ "a_ctx_text_first": {
+  "54": {
+   "summary": {
+    "in_prompt": "276/304",
+    "abstain": "9/12",
+    "type=eligibility": "48/52",
+    "type=fact": "145/162",
+    "type=situation": "31/36",
+    "type=typo": "52/54",
+    "language=en": "147/152",
+    "language=hi": "78/92",
+    "language=hi_latn": "51/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 3,
+   "broken": 9,
+   "diff_points": -1.97,
+   "ci95_points": [
+    -4.92,
+    0.38999999999999996
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "igndps__benefits"
+     ]
+    ],
+    [
+     "ignwps__eligibility_4",
+     "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "igndps__benefits"
+     ]
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "igndps__benefits"
+     ]
+    ],
+    [
+     "jssk__free_diet_caesarean__hi_latn",
+     "Janani Shishu Suraksha Karyakram me operation se delivery hone par kitne din tak khana muf",
+     [
+      "jssk__eligibility",
+      "jssk__overview",
+      "jssk__how_to_apply"
+     ]
+    ],
+    [
+     "pm_kisan__annual_amount__hi",
+     "पीएम किसान योजना में एक साल में कितना पैसा मिलता है?",
+     [
+      "pm_kmy__eligibility",
+      "pm_kmy__eligibility_2",
+      "pm_kmy__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__en",
+     "How much land can a farmer own and still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__typo",
+     "How much land can a farmer own snd still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi_latn",
+     "Kisan Maandhan Yojana me judne ke liye kisan ke paas zyada se zyada kitni zameen honi chah",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "nikshay_poshan__payment_mode__typo",
+     "How is Ni-kshay Poshan Yojana joney pai to TB patients"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ],
+    [
+     "pmay_g__situation_2",
+     "गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के"
+    ]
+   ]
+  }
+ },
+ "a_ctx_text_full": {
+  "54": {
+   "summary": {
+    "in_prompt": "274/304",
+    "abstain": "9/12",
+    "type=eligibility": "49/52",
+    "type=fact": "144/162",
+    "type=situation": "30/36",
+    "type=typo": "51/54",
+    "language=en": "145/152",
+    "language=hi": "78/92",
+    "language=hi_latn": "51/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 2,
+   "broken": 10,
+   "diff_points": -2.63,
+   "ci95_points": [
+    -5.25,
+    -0.36
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__situation_1",
+     "My husband died last year. I am 45 and our family is on the BPL list. Is there a monthly g",
+     [
+      "ignoaps__eligibility",
+      "ignoaps__overview",
+      "ignoaps__documents"
+     ]
+    ],
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "igndps__benefits"
+     ]
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "igndps__benefits"
+     ]
+    ],
+    [
+     "jssk__free_diet_caesarean__hi_latn",
+     "Janani Shishu Suraksha Karyakram me operation se delivery hone par kitne din tak khana muf",
+     [
+      "jssk__eligibility",
+      "jssk__overview",
+      "jssk__how_to_apply"
+     ]
+    ],
+    [
+     "nikshay_poshan__helpline__hi",
+     "निक्षय पोषण योजना या टीबी मरीज़ों के लिए हेल्पलाइन नंबर क्या है?",
+     [
+      "nfbs__eligibility",
+      "nfbs__overview",
+      "nikshay_poshan__eligibility"
+     ]
+    ],
+    [
+     "pm_kisan__annual_amount__hi",
+     "पीएम किसान योजना में एक साल में कितना पैसा मिलता है?",
+     [
+      "pm_kmy__eligibility",
+      "pm_kmy__eligibility_2",
+      "pm_kmy__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__en",
+     "How much land can a farmer own and still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__typo",
+     "How much land can a farmer own snd still join PM Kisan Maandhan Yojana?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ],
+    [
+     "pmay_g__situation_2",
+     "गाँव में हमारा कच्चा मकान है और पक्का घर बनाने के पैसे नहीं हैं, क्या सरकार से घर बनाने के"
+    ]
+   ]
+  }
+ },
+ "d_gloss_dense": {
+  "54": {
+   "summary": {
+    "in_prompt": "280/304",
+    "abstain": "8/12",
+    "type=eligibility": "49/52",
+    "type=fact": "150/162",
+    "type=situation": "29/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "78/92",
+    "language=hi_latn": "54/60"
+   },
+   "ms_per_q": 48.2,
+   "fixed": 3,
+   "broken": 5,
+   "diff_points": -0.66,
+   "ci95_points": [
+    -3.26,
+    1.38
+   ],
+   "abstain_change": -1,
+   "broken_examples": [
+    [
+     "jssk__drop_back_after__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में डिलीवरी के बाद कितने घंटे रुकने पर घर वापस छोड़ने की मुफ्त",
+     [
+      "pmay_u2__eligibility",
+      "pmay_u2__eligibility_2",
+      "pmay_u2__overview"
+     ]
+    ],
+    [
+     "nikshay_poshan__previous_monthly_amount__hi",
+     "निक्षय पोषण योजना में राशि बढ़ने से पहले हर महीने कितना पैसा मिलता था?",
+     [
+      "nfbs__eligibility",
+      "nfbs__overview",
+      "nikshay_poshan__eligibility"
+     ]
+    ],
+    [
+     "nmmss__eligibility_2",
+     "मेरे परिवार की सालाना आय 525000 रुपये है। क्या मैं राष्ट्रीय साधन-सह-योग्यता छात्रवृत्ति य",
+     [
+      "pm_yasasvi__eligibility",
+      "pm_yasasvi__eligibility_2",
+      "pm_yasasvi__overview"
+     ]
+    ],
+    [
+     "nmmss__eligibility_4",
+     "मेरे परिवार की सालाना आय 175000 रुपये है। क्या मैं राष्ट्रीय साधन-सह-योग्यता छात्रवृत्ति य",
+     [
+      "pm_yasasvi__eligibility",
+      "pm_yasasvi__eligibility_2",
+      "pm_yasasvi__overview"
+     ]
+    ],
+    [
+     "pmay_g__eligibility_2",
+     "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+     [
+      "pmay_u2__eligibility",
+      "pmay_u2__eligibility_2",
+      "pmay_u2__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__monthly_pension_40_to_79__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में केंद्र सरकार हर महीने कितनी पेंशन देती है?"
+    ],
+    [
+     "ignwps__monthly_pension_80_plus__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में 80 साल की उम्र के बाद कितनी पेंशन मिलती है?"
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "267/304",
+    "abstain": "5/12",
+    "type=eligibility": "49/52",
+    "type=fact": "153/162",
+    "type=situation": "14/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "79/92",
+    "language=hi_latn": "52/60"
+   },
+   "ms_per_q": 6.7,
+   "fixed": 9,
+   "broken": 3,
+   "diff_points": 1.97,
+   "ci95_points": [
+    -1.47,
+    7.41
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "nikshay_poshan__situation_2",
+     "मुझे टीबी हुई है और इलाज चल रहा है, क्या सरकार खाने-पीने के लिए हर महीने कुछ पैसा देती है?",
+     [
+      "ms__mmsy__rules",
+      "ms__mmsy__overview",
+      "ms__lws-h__rules"
+     ]
+    ],
+    [
+     "pmay_g__eligibility_2",
+     "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+     [
+      "pmay_u2__eligibility",
+      "pmay_u2__eligibility_2",
+      "pmay_u2__overview"
+     ]
+    ],
+    [
+     "pmsby__situation_2",
+     "मैं 60 साल का मज़दूर हूँ, क्या बैंक खाते से बहुत कम पैसे में दुर्घटना बीमा मिल सकता है जो ",
+     [
+      "ms__iacab__rules",
+      "ms__bsakad__rules",
+      "ms__bsakad__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__min_age__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में कितनी उम्र से पेंशन मिलती है?"
+    ],
+    [
+     "ignwps__monthly_pension_40_to_79__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में केंद्र सरकार हर महीने कितनी पेंशन देती है?"
+    ],
+    [
+     "ignwps__monthly_pension_80_plus__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना में 80 साल की उम्र के बाद कितनी पेंशन मिलती है?"
+    ],
+    [
+     "ignwps__max_processing_days__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना का आवेदन कितने दिनों में मंजूर या खारिज होना चाहि"
+    ],
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+    ],
+    [
+     "ignwps__eligibility_4",
+     "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत"
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ]
+   ]
+  }
+ },
+ "a_noalias_dense": {
+  "54": {
+   "summary": {
+    "in_prompt": "266/304",
+    "abstain": "9/12",
+    "type=eligibility": "48/52",
+    "type=fact": "140/162",
+    "type=situation": "28/36",
+    "type=typo": "50/54",
+    "language=en": "144/152",
+    "language=hi": "72/92",
+    "language=hi_latn": "50/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 1,
+   "broken": 17,
+   "diff_points": -5.26,
+   "ci95_points": [
+    -9.46,
+    -1.5599999999999998
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension ",
+     [
+      "igndps__eligibility",
+      "igndps__overview",
+      "ignwps__eligibility"
+     ]
+    ],
+    [
+     "ignwps__situation_1",
+     "My husband died last year. I am 45 and our family is on the BPL list. Is there a monthly g",
+     [
+      "ignoaps__eligibility",
+      "ignoaps__overview",
+      "pm_kmy__eligibility"
+     ]
+    ],
+    [
+     "ignwps__situation_2",
+     "मेरे पति की मृत्यु हो चुकी है, मेरी उम्र 52 साल है और हमारा परिवार गरीबी रेखा (BPL) से नीच",
+     [
+      "ignoaps__eligibility",
+      "ignoaps__overview",
+      "igndps__eligibility"
+     ]
+    ],
+    [
+     "ignwps__eligibility_2",
+     "मेरी उम्र 37 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "ignwps__eligibility_4",
+     "मेरी उम्र 50 साल है। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकत",
+     [
+      "igndps__eligibility",
+      "igndps__benefits",
+      "igndps__overview"
+     ]
+    ],
+    [
+     "jssk__infant_age_limit__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में बीमार बच्चे का मुफ्त इलाज कितनी उम्र तक होता है?",
+     [
+      "jsy__eligibility",
+      "jsy__eligibility_2",
+      "jsy__overview"
+     ]
+    ],
+    [
+     "jssk__free_diet_caesarean__hi_latn",
+     "Janani Shishu Suraksha Karyakram me operation se delivery hone par kitne din tak khana muf",
+     [
+      "jssk__eligibility",
+      "jssk__overview",
+      "jssk__how_to_apply"
+     ]
+    ],
+    [
+     "nikshay_poshan__previous_monthly_amount__hi",
+     "निक्षय पोषण योजना में राशि बढ़ने से पहले हर महीने कितना पैसा मिलता था?",
+     [
+      "nfbs__eligibility",
+      "nfbs__overview",
+      "nikshay_poshan__eligibility"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "igndps__situation_2",
+     "Mera bhai 30 saal ka hai, uski viklangta 80 pratishat hai aur hum BPL parivar hain. Kya us"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "254/304",
+    "abstain": "5/12",
+    "type=eligibility": "46/52",
+    "type=fact": "137/162",
+    "type=situation": "20/36",
+    "type=typo": "51/54",
+    "language=en": "140/152",
+    "language=hi": "71/92",
+    "language=hi_latn": "43/60"
+   },
+   "ms_per_q": 3.1,
+   "fixed": 5,
+   "broken": 12,
+   "diff_points": -2.3,
+   "ci95_points": [
+    -5.99,
+    0.96
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "e_shram__minimum_age__hi",
+     "ई-श्रम पर पंजीकरण के लिए कम से कम कितनी उम्र होनी चाहिए?",
+     [
+      "ms__mnsdsy__rules",
+      "ms__uyegp__rules",
+      "ms__msssy__rules"
+     ]
+    ],
+    [
+     "e_shram__helpline__hi",
+     "ई-श्रम का हेल्पलाइन नंबर क्या है?",
+     [
+      "ms__maftcwsbw__rules",
+      "ms__maftcwsbw__application_2",
+      "e_shram__eligibility"
+     ]
+    ],
+    [
+     "ignwps__min_age__hi_latn",
+     "Indira Gandhi vidhwa pension yojana me kitni umar se pension milti hai?",
+     [
+      "ms__ignvpy__rules",
+      "ms__ignvpy__benefits",
+      "ms__ignvpyrr__rules"
+     ]
+    ],
+    [
+     "ignwps__monthly_pension_40_to_79__hi_latn",
+     "Indira Gandhi vidhwa pension yojana me kendra sarkar har mahine kitni pension deti hai?",
+     [
+      "ms__ignvpyr__rules",
+      "ms__ignvpyr__benefits",
+      "ms__ignvpyrr__rules"
+     ]
+    ],
+    [
+     "pm_kmy__min_monthly_contribution__hi",
+     "किसान मानधन योजना में कम से कम कितना मासिक अंशदान देना होता है?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__land_limit__hi",
+     "किसान मानधन योजना में शामिल होने के लिए किसान के पास अधिकतम कितनी ज़मीन होनी चाहिए?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ],
+    [
+     "pm_kmy__max_entry_age__hi_latn",
+     "Kisan Maandhan Yojana me kitni umar tak jud sakte hain?",
+     [
+      "ms__pmkmdy__rules",
+      "ms__pmkmdy__overview",
+      "pm_kisan__eligibility"
+     ]
+    ],
+    [
+     "pm_kmy__min_monthly_contribution__hi_latn",
+     "Kisan Maandhan Yojana me kam se kam har mahine kitna jama karna hota hai?",
+     [
+      "pm_kisan__eligibility",
+      "pm_kisan__eligibility_2",
+      "pm_kisan__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "igndps__situation_1",
+     "My son is 25 and has a 90% disability certificate. We are a BPL family. Can he get a month"
+    ],
+    [
+     "ignwps__max_processing_days__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना का आवेदन कितने दिनों में मंजूर या खारिज होना चाहि"
+    ],
+    [
+     "pm_kisan__situation_1",
+     "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+    ],
+    [
+     "pm_yasasvi__situation_1",
+     "I am from an OBC family earning under Rs 2 lakh a year and I am in Class 9 at a government"
+    ],
+    [
+     "pmsby__situation_1",
+     "I am 62 and work as a daily-wage labourer. Is there a very cheap insurance through my bank"
+    ]
+   ]
+  }
+ },
+ "t_rom_both": {
+  "54": {
+   "summary": {
+    "in_prompt": "287/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "153/162",
+    "type=situation": "30/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "86/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 0.4,
+   "fixed": 5,
+   "broken": 0,
+   "diff_points": 1.64,
+   "ci95_points": [
+    0.0,
+    3.85
+   ],
+   "abstain_change": 0,
+   "broken_examples": [],
+   "fixed_examples": [
+    [
+     "jssk__free_diet_normal_delivery__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?"
+    ],
+    [
+     "jssk__free_diet_caesarean__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक खाना मुफ्त मिलता है"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "nikshay_poshan__payment_mode__hi",
+     "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "262/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "149/162",
+    "type=situation": "15/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "76/92",
+    "language=hi_latn": "50/60"
+   },
+   "ms_per_q": 4.1,
+   "fixed": 2,
+   "broken": 1,
+   "diff_points": 0.33,
+   "ci95_points": [
+    -0.8699999999999999,
+    2.08
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "pmmvy__situation_2",
+     "मेरी पहली संतान बेटी है और अब मैं फिर से गर्भवती हूँ। अगर दूसरी भी बेटी हुई तो क्या सरकार ",
+     [
+      "ms__igmpy__rules",
+      "ms__igmpy__rules_2",
+      "ms__igmpy__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "pm_kisan__instalment_amount__hi",
+     "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+    ],
+    [
+     "pm_kisan__instalments_per_year__hi",
+     "पीएम किसान की साल में कितनी किस्तें आती हैं?"
+    ]
+   ]
+  }
+ },
+ "t_rom_char": {
+  "54": {
+   "summary": {
+    "in_prompt": "287/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "153/162",
+    "type=situation": "30/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "86/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 0.4,
+   "fixed": 5,
+   "broken": 0,
+   "diff_points": 1.64,
+   "ci95_points": [
+    0.0,
+    3.85
+   ],
+   "abstain_change": 0,
+   "broken_examples": [],
+   "fixed_examples": [
+    [
+     "jssk__free_diet_normal_delivery__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?"
+    ],
+    [
+     "jssk__free_diet_caesarean__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक खाना मुफ्त मिलता है"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "nikshay_poshan__payment_mode__hi",
+     "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "263/304",
+    "abstain": "5/12",
+    "type=eligibility": "47/52",
+    "type=fact": "149/162",
+    "type=situation": "16/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "77/92",
+    "language=hi_latn": "50/60"
+   },
+   "ms_per_q": 4.0,
+   "fixed": 2,
+   "broken": 0,
+   "diff_points": 0.66,
+   "ci95_points": [
+    0.0,
+    2.29
+   ],
+   "abstain_change": 0,
+   "broken_examples": [],
+   "fixed_examples": [
+    [
+     "pm_kisan__instalment_amount__hi",
+     "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+    ],
+    [
+     "pm_kisan__instalments_per_year__hi",
+     "पीएम किसान की साल में कितनी किस्तें आती हैं?"
+    ]
+   ]
+  }
+ },
+ "t_rom_both_gloss": {
+  "54": {
+   "summary": {
+    "in_prompt": "287/304",
+    "abstain": "9/12",
+    "type=eligibility": "52/52",
+    "type=fact": "153/162",
+    "type=situation": "30/36",
+    "type=typo": "52/54",
+    "language=en": "148/152",
+    "language=hi": "86/92",
+    "language=hi_latn": "53/60"
+   },
+   "ms_per_q": 0.4,
+   "fixed": 5,
+   "broken": 0,
+   "diff_points": 1.64,
+   "ci95_points": [
+    0.0,
+    3.85
+   ],
+   "abstain_change": 0,
+   "broken_examples": [],
+   "fixed_examples": [
+    [
+     "jssk__free_diet_normal_delivery__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?"
+    ],
+    [
+     "jssk__free_diet_caesarean__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक खाना मुफ्त मिलता है"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "nikshay_poshan__payment_mode__hi",
+     "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "264/304",
+    "abstain": "5/12",
+    "type=eligibility": "48/52",
+    "type=fact": "150/162",
+    "type=situation": "15/36",
+    "type=typo": "51/54",
+    "language=en": "136/152",
+    "language=hi": "78/92",
+    "language=hi_latn": "50/60"
+   },
+   "ms_per_q": 6.1,
+   "fixed": 4,
+   "broken": 1,
+   "diff_points": 0.99,
+   "ci95_points": [
+    -0.6799999999999999,
+    3.1399999999999997
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "pmmvy__situation_2",
+     "मेरी पहली संतान बेटी है और अब मैं फिर से गर्भवती हूँ। अगर दूसरी भी बेटी हुई तो क्या सरकार ",
+     [
+      "ms__igmpy__rules",
+      "ms__igmpy__rules_2",
+      "ms__igmpy__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__max_processing_days__hi",
+     "इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना का आवेदन कितने दिनों में मंजूर या खारिज होना चाहि"
+    ],
+    [
+     "ignwps__eligibility_6",
+     "मैं पुरुष हूँ। क्या मैं इंदिरा गांधी राष्ट्रीय विधवा पेंशन योजना के लिए आवेदन कर सकता हूँ?"
+    ],
+    [
+     "pm_kisan__instalment_amount__hi",
+     "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+    ],
+    [
+     "pm_kisan__instalments_per_year__hi",
+     "पीएम किसान की साल में कितनी किस्तें आती हैं?"
+    ]
+   ]
+  }
+ },
+ "combo_rom_char+c_multilingual": {
+  "54": {
+   "summary": {
+    "in_prompt": "287/304",
+    "abstain": "9/12",
+    "type=eligibility": "51/52",
+    "type=fact": "154/162",
+    "type=situation": "30/36",
+    "type=typo": "52/54",
+    "language=en": "147/152",
+    "language=hi": "85/92",
+    "language=hi_latn": "55/60"
+   },
+   "ms_per_q": 0.3,
+   "fixed": 7,
+   "broken": 2,
+   "diff_points": 1.64,
+   "ci95_points": [
+    -0.74,
+    4.68
+   ],
+   "abstain_change": 0,
+   "broken_examples": [
+    [
+     "ignwps__situation_1",
+     "My husband died last year. I am 45 and our family is on the BPL list. Is there a monthly g",
+     [
+      "ignoaps__eligibility",
+      "ignoaps__overview",
+      "apy__eligibility"
+     ]
+    ],
+    [
+     "pmay_g__eligibility_2",
+     "मेरी मासिक आय 22500 रुपये है। क्या मैं प्रधान मंत्री आवास योजना-ग्रामीण के लिए पात्र हूँ?",
+     [
+      "pmay_u2__eligibility",
+      "pmay_u2__eligibility_2",
+      "pmay_u2__overview"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "igndps__situation_2",
+     "Mera bhai 30 saal ka hai, uski viklangta 80 pratishat hai aur hum BPL parivar hain. Kya us"
+    ],
+    [
+     "jssk__free_diet_normal_delivery__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?"
+    ],
+    [
+     "jssk__free_diet_caesarean__hi",
+     "जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक खाना मुफ्त मिलता है"
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "nikshay_poshan__monthly_amount__hi",
+     "निक्षय पोषण योजना में टीबी मरीज़ को हर महीने कितने रुपये मिलते हैं?"
+    ],
+    [
+     "nikshay_poshan__payment_mode__hi",
+     "निक्षय पोषण योजना का पैसा टीबी मरीज़ को कैसे मिलता है?"
+    ],
+    [
+     "pm_kisan__situation_2",
+     "मेरे नाम पर खेती की ज़मीन है। क्या सरकार किसानों के बैंक खाते में हर साल सीधे पैसे भेजती ह"
+    ]
+   ]
+  },
+  "scale": {
+   "summary": {
+    "in_prompt": "265/304",
+    "abstain": "6/12",
+    "type=eligibility": "47/52",
+    "type=fact": "150/162",
+    "type=situation": "16/36",
+    "type=typo": "52/54",
+    "language=en": "137/152",
+    "language=hi": "77/92",
+    "language=hi_latn": "51/60"
+   },
+   "ms_per_q": 3.7,
+   "fixed": 5,
+   "broken": 1,
+   "diff_points": 1.32,
+   "ci95_points": [
+    -0.37,
+    3.93
+   ],
+   "abstain_change": 1,
+   "broken_examples": [
+    [
+     "e_shram__situation_1",
+     "I work as a domestic worker and have no PF or ESI. Where can I register as a worker so I c",
+     [
+      "ms__hhjmhhst__rules",
+      "ms__hhjmhhst__application",
+      "ms__mkku__rules"
+     ]
+    ]
+   ],
+   "fixed_examples": [
+    [
+     "ignwps__max_processing_days__typo",
+     "Withi how many dsys should an application under the Indira Gandhi National Widpw PPension "
+    ],
+    [
+     "jssk__drop_back_after__hi_latn",
+     "Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chh"
+    ],
+    [
+     "pm_kisan__instalment_amount__hi",
+     "पीएम किसान की एक किस्त कितने रुपये की होती है?"
+    ],
+    [
+     "pm_kisan__instalments_per_year__hi",
+     "पीएम किसान की साल में कितनी किस्तें आती हैं?"
+    ],
+    [
+     "pm_kisan__situation_1",
+     "I own a small farm in my village. Is there a government scheme that puts money into my ban"
+    ]
+   ]
+  }
+ }
+}

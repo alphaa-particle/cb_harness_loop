@@ -1,0 +1,149 @@
+id: pm_yasasvi
+name: PM Young Achievers Scholarship Award Scheme for Vibrant India for OBCs and Others (PM YASASVI)
+short_name: PM YASASVI
+names_hi: []
+aliases:
+- PM Yashasvi Yojana
+- PM YASASVI scholarship
+- OBC post matric scholarship
+- OBC pre matric scholarship
+- Top Class Education for OBC EBC DNT students
+- yashasvi chhatravriti yojana
+level: central
+state: ''
+ministry: Ministry of Social Justice and Empowerment (Department of Social Justice and Empowerment, Backward Classes Division)
+category: education
+summary: An umbrella scholarship scheme for OBC, EBC and DNT students whose family income is up to Rs 2.5 lakh a year. It covers pre-matric (Class 9-10) and post-matric (Class 11 onward) scholarships run by states, plus full-cost scholarships at notified top class schools and colleges applied for on the National Scholarship Portal.
+sections:
+  eligibility:
+  - Belongs to the OBC, EBC (economically backward class) or DNT (denotified, nomadic or semi-nomadic tribe) category, with a valid certificate.
+  - EBC and DNT students qualify only if they are not already covered as SC, ST or OBC.
+  - Parents' or guardians' annual income from all sources must be Rs 2,50,000 or less.
+  - Indian nationals only.
+  - 'Pre-matric part: studying full-time in Class 9 or 10 in a government school.'
+  - 'Post-matric part: has passed Class 10 or higher and is studying a recognised post-matric course in India (such as Class 11-12, ITI, diploma, graduation or post-graduation).'
+  - 'Top class school part: studying in Class 9 to 12 at a school notified as a Top Class School; scholarships go by state-wise merit lists, with at least 30% for girls.'
+  - 'Top class college part: admitted to a full-time course at a notified top class institution (such as an IIT, IIM, AIIMS, NIT or National Law University); scholarships go by merit within each institute''s slots, with 30% of slots for girls.'
+  exclusions:
+  - 'Pre-matric and post-matric: only two boys from the same parents can get the scholarship; there is no such limit for girls.'
+  - 'Top class college: the benefit is not given to more than 2 siblings in a family.'
+  - A student cannot hold another scholarship for the same purpose at the same time and must choose one.
+  - 'Post-matric: seats filled through management quota, NRI quota or spot admission are not eligible.'
+  - 'Post-matric: a second course at the same level in another subject (for example B.Com after B.A.) is not covered.'
+  benefits:
+  - 'Pre-matric (Class 9-10): Rs 4,000 a year as an academic allowance.'
+  - 'Post-matric: Rs 20,000 a year for Group 1 professional degree and PG courses (Rs 10,000 academic allowance plus Rs 10,000 tuition fee), Rs 13,000 for Group 2 other professional courses, Rs 8,000 for Group 3 general degrees such as BA, BSc and BCom, and Rs 5,000 for Group 4 non-degree courses after Class 10 such as Class 11-12.'
+  - 'Top class school: tuition, hostel and other school charges up to Rs 75,000 a year in Class 9-10 and up to Rs 1,25,000 a year in Class 11-12.'
+  - 'Top class college: full tuition and non-refundable fees (capped at Rs 2.00 lakh a year at private institutions), Rs 3,000 a month for living expenses, Rs 5,000 a year for books and stationery, and a one-time Rs 45,000 for a computer or laptop.'
+  - All payments go directly to the student's bank account (DBT).
+  how_to_apply:
+  - 'Pre-matric and post-matric: apply online on your home state''s scholarship portal (or the National Scholarship Portal where the state uses it), ideally on the day of admission; renewal is automatic after promotion with at least 75% attendance.'
+  - 'Post-matric: eligible students can get a Freeship Card from the state portal so they can take admission without paying tuition and hostel fees in advance.'
+  - 'Top class school and top class college: apply on the National Scholarship Portal (scholarships.gov.in); the school or institute verifies the application, and students must apply again every year for renewal.'
+  - For academic year 2026-27, the top class school and college parts opened on NSP on 1 June 2026 and close for students on 31 October 2026.
+  documents:
+  - OBC, EBC or DNT category certificate.
+  - Income certificate (needed once, at admission).
+  - Aadhaar number (authentication is compulsory at renewal if not given earlier).
+  - Bank account in the student's name.
+  - Marksheets of previous exams; for top class college, admission rank and fee details.
+rules:
+  annual_income_max: 250000
+  gender: any
+facts:
+- key: income_limit
+  statement: Parents' or guardians' annual income from all sources must be Rs 2,50,000 or less.
+  value: Rs 2,50,000
+  accept:
+  - '250000'
+  - 2,50,000
+  - 2.5 lakh
+  - 2.50 lakh
+  - Rs 2.5 lakh
+  question: What is the family income limit for the PM YASASVI scholarship?
+  question_hi: पीएम यशस्वी छात्रवृत्ति के लिए परिवार की सालाना आय की सीमा क्या है?
+  question_hi_latn: PM YASASVI scholarship ke liye family ki saalana income limit kitni hai?
+  source: 1
+  status: unverified
+- key: prematric_amount
+  statement: The pre-matric scholarship for Class 9-10 pays Rs 4,000 a year.
+  value: Rs 4,000
+  accept:
+  - '4000'
+  - 4,000
+  - Rs 4000
+  question: How much does the PM YASASVI pre-matric scholarship pay per year for Class 9 and 10?
+  question_hi: पीएम यशस्वी प्री-मैट्रिक छात्रवृत्ति में कक्षा 9 और 10 के छात्रों को साल में कितना पैसा मिलता है?
+  question_hi_latn: PM YASASVI pre-matric scholarship me class 9 aur 10 ke students ko saal ka kitna paisa milta hai?
+  source: 1
+  status: unverified
+- key: postmatric_group1_amount
+  statement: The post-matric scholarship for Group 1 professional degree and PG courses is Rs 20,000 a year.
+  value: Rs 20,000
+  accept:
+  - '20000'
+  - 20,000
+  - Rs 20000
+  question: How much is the PM YASASVI post-matric scholarship per year for professional courses like engineering or medicine?
+  question_hi: पीएम यशस्वी पोस्ट-मैट्रिक छात्रवृत्ति में इंजीनियरिंग या मेडिकल जैसे प्रोफेशनल कोर्स के लिए साल में कितना मिलता है?
+  question_hi_latn: PM YASASVI post-matric scholarship me engineering ya medical jaise professional course ke liye saal ka kitna milta hai?
+  source: 1
+  status: unverified
+- key: top_class_college_living_allowance
+  statement: Top class college scholars get Rs 3,000 a month for living expenses.
+  value: Rs 3,000
+  accept:
+  - '3000'
+  - 3,000
+  - Rs 3000
+  question: How much monthly living allowance does the PM YASASVI top class college scholarship give?
+  question_hi: पीएम यशस्वी टॉप क्लास कॉलेज छात्रवृत्ति में रहने के खर्च के लिए हर महीने कितना मिलता है?
+  question_hi_latn: PM YASASVI top class college scholarship me rehne ke kharch ke liye mahine ka kitna milta hai?
+  source: 4
+  status: unverified
+- key: top_class_school_class_11_12_cap
+  statement: Top class school scholarship covers up to Rs 1,25,000 a year in Class 11-12.
+  value: Rs 1,25,000
+  accept:
+  - '125000'
+  - 1,25,000
+  - 1.25 lakh
+  - Rs 1.25 lakh
+  question: What is the maximum yearly amount under the PM YASASVI top class school scholarship for Class 11 and 12?
+  question_hi: पीएम यशस्वी टॉप क्लास स्कूल छात्रवृत्ति में कक्षा 11 और 12 के लिए साल में अधिकतम कितना मिलता है?
+  question_hi_latn: PM YASASVI top class school scholarship me class 11 aur 12 ke liye saal me maximum kitna milta hai?
+  source: 3
+  status: unverified
+situations:
+- language: en
+  question: I am from an OBC family earning under Rs 2 lakh a year and I am in Class 9 at a government school. What scholarship can I get from the government?
+- language: hi_latn
+  question: Main OBC category se hoon, ghar ki kamai 2 lakh se kam hai aur maine BA me admission liya hai. Padhai ke liye kaun si sarkari scholarship milegi?
+sources:
+- title: PM Young Achievers Scholarship Award Scheme for Vibrant India for OBCs and Others (PM-YASASVI) Guidelines 2021-22 to 2025-26
+  url: https://socialjustice.gov.in/public/ckeditor/upload/65661651839791.pdf
+  publisher: Department of Social Justice & Empowerment, Ministry of Social Justice & Empowerment
+  accessed: '2026-10-03'
+- title: PM YASASVI - Scheme page
+  url: https://socialjustice.gov.in/schemes/101
+  publisher: Department of Social Justice & Empowerment, Ministry of Social Justice & Empowerment
+  accessed: '2026-10-03'
+- title: Central Sector Scheme of Top Class Education in Schools for OBC, EBC and DNT Students - Guidelines
+  url: https://scholarships.gov.in/public/schemeGuidelines/3061_G.pdf
+  publisher: National Scholarship Portal / Ministry of Social Justice & Empowerment
+  accessed: '2026-10-03'
+- title: Central Sector Scheme of Top Class Education in College for OBC, EBC and DNT Students (as amended from 2023-24)
+  url: https://scholarships.gov.in/public/schemeGuidelines/ApprovedmodifieddraftofTopClassCollege.pdf
+  publisher: National Scholarship Portal / Ministry of Social Justice & Empowerment
+  accessed: '2026-10-03'
+- title: National Scholarship Portal - All Scholarships (AY 2026-27)
+  url: https://scholarships.gov.in/All-Scholarships
+  publisher: National Scholarship Portal, Government of India
+  accessed: '2026-10-03'
+review:
+  status: needs_review
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: The PM YASASVI guidelines cover 2021-22 to 2025-26. No central page was found that formally extends the scheme beyond March 2026. However, NSP lists the top class school and top class college parts as open for AY 2026-27 (closing 31-10-2026), and West Bengal''s OASIS portal shows OBC post-matric applications open for 2026-27, so the scheme appears to be running. The pre-matric and post-matric parts are run by states on a funds-limited basis: if money runs short, states may select by merit-cum-means and may add their own top-ups. Pre-matric covers government schools only. The top class school rules say household income must be less than Rs 2.5 lakh, while the other parts say up to Rs 2.5 lakh. The YASASVI Entrance Test (YET) held by NTA in 2022 no longer appears active (yet.nta.ac.in did not resolve); selection now uses merit lists. The hostel construction part of the umbrella scheme is not covered in this record. No official Hindi name was found on the pages read.'
+  - No independent check was returned for this scheme.

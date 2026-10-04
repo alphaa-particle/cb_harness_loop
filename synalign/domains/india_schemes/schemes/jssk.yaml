@@ -1,0 +1,114 @@
+id: jssk
+name: Janani Shishu Suraksha Karyakram
+short_name: JSSK
+names_hi: []
+aliases:
+- Janani-Shishu Suraksha Karyakram
+- janani shishu suraksha yojana
+- JSSK yojana
+- free delivery scheme
+level: central
+state: ''
+ministry: Ministry of Health and Family Welfare (National Health Mission)
+category: health
+summary: Makes childbirth, including caesarean section, and care for pregnancy complications completely free in government health facilities. This includes free medicines, tests, blood, food and transport. Sick newborns and infants up to 1 year of age get similar free care in public facilities.
+sections:
+  eligibility:
+  - Any pregnant woman who gives birth in a public (government) health institution.
+  - Pregnant women and new mothers with complications before or after delivery who are treated in a public health institution (added in 2014).
+  - Sick newborns and infants up to 1 year of age who are treated in a public health institution.
+  - It covers all pregnant women using public health institutions, not only poor or BPL families.
+  exclusions:
+  - Deliveries and treatment in private hospitals are not covered.
+  benefits:
+  - Delivery is completely free, including caesarean section, with no user charges of any kind.
+  - Free medicines and consumables, and free essential tests such as blood and urine tests and ultrasound.
+  - 'Free food during the hospital stay: up to 3 days after a normal delivery and up to 7 days after a caesarean section.'
+  - Free blood when it is needed.
+  - Free transport from home to the hospital, between hospitals if referred, and a free drop back home after a 48 hours stay.
+  - Sick newborns and infants get the same kind of free treatment, medicines, tests, blood and transport.
+  how_to_apply:
+  - No application form is needed; go to any government health facility (sub-centre, PHC, CHC, district hospital) for delivery or treatment.
+  - Ask your ASHA or ANM to help arrange the free transport to the facility.
+  - If anyone asks you to pay, you can complain through the grievance redressal system the state must set up under the scheme.
+  documents: []
+rules:
+  gender: any
+facts:
+- key: free_diet_normal_delivery
+  statement: Under JSSK, food is free for up to 3 days after a normal delivery.
+  value: 3 days
+  accept:
+  - '3'
+  - three days
+  - teen din
+  - 3 din
+  question: Under JSSK, for how many days is hospital food free after a normal delivery?
+  question_hi: जननी शिशु सुरक्षा कार्यक्रम में नॉर्मल डिलीवरी के बाद कितने दिन तक खाना मुफ्त मिलता है?
+  question_hi_latn: Janani Shishu Suraksha Karyakram me normal delivery ke baad kitne din tak khana muft milta hai?
+  source: 1
+  status: verified
+- key: free_diet_caesarean
+  statement: Under JSSK, food is free for up to 7 days after a caesarean section.
+  value: 7 days
+  accept:
+  - '7'
+  - seven days
+  - saat din
+  - 7 din
+  question: Under JSSK, for how many days is food free after a caesarean (operation) delivery?
+  question_hi: जननी शिशु सुरक्षा कार्यक्रम में ऑपरेशन से डिलीवरी होने पर कितने दिन तक खाना मुफ्त मिलता है?
+  question_hi_latn: Janani Shishu Suraksha Karyakram me operation se delivery hone par kitne din tak khana muft milta hai?
+  source: 1
+  status: verified
+- key: infant_age_limit
+  statement: Sick newborns and infants up to 1 year of age get free treatment in public health institutions.
+  value: 1 year
+  accept:
+  - one year
+  - 12 months
+  - 1 saal
+  - ek saal
+  question: Up to what age does JSSK give free treatment to a sick baby?
+  question_hi: जननी शिशु सुरक्षा कार्यक्रम में बीमार बच्चे का मुफ्त इलाज कितनी उम्र तक होता है?
+  question_hi_latn: Janani Shishu Suraksha Karyakram me bimar bachche ka muft ilaaj kitni umar tak hota hai?
+  source: 1
+  status: verified
+- key: drop_back_after
+  statement: The mother gets a free drop back home after a 48 hours stay in the facility.
+  value: 48 hours
+  accept:
+  - '48'
+  - 48 ghante
+  - 2 days
+  - two days
+  question: Under JSSK, after how long a stay does the hospital give a free drop back home after delivery?
+  question_hi: जननी शिशु सुरक्षा कार्यक्रम में डिलीवरी के बाद कितने घंटे रुकने पर घर वापस छोड़ने की मुफ्त सुविधा मिलती है?
+  question_hi_latn: Janani Shishu Suraksha Karyakram me delivery ke baad kitne ghante rukne par ghar wapas chhodne ki muft suvidha milti hai?
+  source: 2
+  status: verified
+situations:
+- question: My wife is due to deliver soon and we cannot afford hospital bills. Will the government hospital charge us for a caesarean, medicines or food?
+  language: en
+- question: Mera 6 mahine ka bachcha bimar hai, kya sarkari aspatal me uska ilaaj, dawai aur jaanch muft milegi?
+  language: hi_latn
+sources:
+- title: Janani Shishu Suraksha Karyakram (JSSK)
+  url: https://nhm.gov.in/index1.php?lang=1&level=3&sublinkid=842&lid=308
+  publisher: National Health Mission, Ministry of Health and Family Welfare
+  accessed: '2026-10-03'
+- title: Guidelines for Janani-Shishu Suraksha Karyakram (JSSK)
+  url: https://nhm.gov.in/images/pdf/programmes/jssk/guidelines/guidelines_for_jssk.pdf
+  publisher: Maternal Health Division, Ministry of Health and Family Welfare
+  accessed: '2026-10-03'
+review:
+  status: verified
+  checked_on: '2026-10-03'
+  method: Written from official pages by one research agent; every fact, rule number and Hindi name re-checked against official pages by a second agent; disagreements decided by a third.
+  notes:
+  - 'Writer: Ongoing under the National Health Mission (launched 1 June 2011). The original 2011 guidelines covered sick newborns only up to 30 days after birth; the current NHM page says sick newborns and infants up to one year, and that care for complications before and after delivery was added in 2014. The 48-hour drop-back detail comes from the 2011 guidelines; the NHM page just says free drop back home. Free transport is run by each state (ambulance numbers and arrangements differ). Only government or public facilities are covered. JSSK gives free services, not cash; the cash incentive for institutional delivery is under JSY.'
+  - 'Checker: names_hi is empty.'
+  - 'Checker: The free tests named (blood, urine, ultrasound) and the grievance system (help desks, complaint boxes, displayed contact details, fixed hearing hours) come from the 2011 guidelines and are confirmed there. The guidelines do not set a timeframe for resolving complaints.'
+  - 'Checker: The 48-hour drop-back appears only in the 2011 guidelines. The current NHM page just says free drop-back home.'
+  - 'Checker: The current pages do not say how long after delivery a ''postnatal complication'' is covered. The 2011 guidelines describe free drugs and tests up to 6 weeks after delivery; the record leaves this out.'
+  - 'Checker: DBT Bharat''s central scheme list still shows ''Janani Shishu Suraksha Karyakram'' (in kind) under MoHFW, which supports that the scheme is still running. I saw no explicit statement dated 2025-26.'

@@ -1,0 +1,39 @@
+weights:
+  coverage: 0.35        # mentioned the right schemes
+  followup: 0.25        # asked about the missing facts that matter
+  groundedness: 0.25    # answer claims supported by retrieved evidence
+  actionability: 0.15   # gave a concrete next step
+
+# GATES: any violation fails the case outright, regardless of score.
+gates:
+  - forbidden_claim
+  - false_confirmation
+
+thresholds:
+  pass_score: 0.75
+  groundedness_support: 0.5
+
+retrieval:
+  method: fusion        # word ranking + letter runs + meaning, merged by rank
+  top_k: 3              # sections in the model's prompt, each scheme's rules first
+  # Meaning similarity below which nothing is retrieved and the model is not asked. Chosen on dev:
+  # 0.50 keeps every answerable dev question search can serve and refuses 9 of 12 unanswerable
+  # ones (0.54 would be the strictest loss-free value; 0.50 leaves a margin towards answering).
+  min_score: 0.50
+  # Chosen on the dev questions only (scripts/evaluate_pipeline.py --split dev): word matching
+  # counting a quarter as much as meaning search kept meaning search's Hindi results (0.88)
+  # and added romanised-Hindi gains (0.82 -> 0.88); right text in the prompt 0.928 overall.
+  fusion_weights: {bm25: 0.25, char: 0.25, dense: 1.0}
+  rrf_k: 20
+  fusion_depth: 50
+  # A scheme the question names but the evidence lacks gets its rules in place of the last slot;
+  # every other question keeps exactly its evidence. Kept in SynAlign round 4 (dev, both sizes):
+  # right text in prompt 428 -> 435 and 398 -> 410 of 482, no question broken; answers: comparisons
+  # 80% -> 100%, no type or language lost an answer, no new wrong "yes". Rounds 1-3 (rules_count_once,
+  # named_schemes, overview_last) improved search more but were undone at the answer check; see
+  # docs/results/SYNALIGN_RETRIEVAL_ROUNDS.md.
+  add_named_schemes: true
+  # Name rules 2 (round 5b: corrections from a code review) passed the practice checks but broke 6
+  # exam answers at 4,600 schemes (everyday background titles matched as names; " - " cut real titles),
+  # so it was undone at close-out; see docs/results/SYNALIGN_RETRIEVAL_ROUNDS.md.
+  name_rules: 1
